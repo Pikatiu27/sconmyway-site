@@ -1,0 +1,124 @@
+{
+  "date": "2026-06-19",
+  "edition": {
+    "zh": "晨间简报",
+    "en": "Morning Brief"
+  },
+  "liveUpdates": [
+    {
+      "topic": {
+        "zh": "AI",
+        "en": "AI"
+      },
+      "title": {
+        "zh": "多模态智能体进入办公主流程",
+        "en": "Multimodal agents enter office workflows"
+      },
+      "summary": {
+        "zh": "AI产品正从聊天窗口走向邮件、表格、文档和会议场景，企业更关注权限、数据安全和流程集成。短期看是效率工具竞争，长期看会改变知识工作者组织资料、写作和决策的方式。",
+        "en": "AI products are moving from chat windows into email, spreadsheets, documents, and meetings. Companies are paying more attention to permissions, data security, and workflow integration, turning AI from a helper into infrastructure."
+      },
+      "reference": "Daily industry scan; company product updates; major technology media"
+    },
+    {
+      "topic": {
+        "zh": "机器人",
+        "en": "Robotics"
+      },
+      "title": {
+        "zh": "人形机器人供应链继续扩产",
+        "en": "Humanoid supply chains keep expanding"
+      },
+      "summary": {
+        "zh": "机器人公司正在把重点从单机演示转向量产能力，核心环节包括关节模组、灵巧手、传感器和运动控制。真正值得关注的是成本下降后，仓储、制造和巡检场景能否形成稳定订单。",
+        "en": "Robotics firms are shifting from demos toward manufacturability, with attention on actuators, dexterous hands, sensors, and motion control. The key question is whether lower costs can unlock stable orders in warehouses, factories, and inspection."
+      },
+      "reference": "Daily industry scan; robotics company releases; IEEE Spectrum robotics coverage"
+    },
+    {
+      "topic": {
+        "zh": "半导体",
+        "en": "Chips"
+      },
+      "title": {
+        "zh": "先进封装成为芯片竞争焦点",
+        "en": "Advanced packaging becomes a chip battleground"
+      },
+      "summary": {
+        "zh": "AI算力需求推动芯片竞争从单纯制程推进到系统级封装，HBM、Chiplet和散热能力变得更重要。它影响的不只是芯片厂，也会带动材料、设备、数据中心和能源基础设施投资。",
+        "en": "AI computing demand is pushing chip competition from process nodes toward system-level packaging. HBM, chiplets, and thermal design now matter more, with spillover effects on materials, equipment, data centers, and power infrastructure."
+      },
+      "reference": "Daily industry scan; semiconductor industry reports; IEEE Spectrum"
+    }
+  ],
+  "insights": [
+    {
+      "area": {
+        "zh": "结构可靠度",
+        "en": "Structural Reliability"
+      },
+      "title": {
+        "zh": "可靠度评估正在接近实时化",
+        "en": "Reliability assessment is becoming more real-time"
+      },
+      "summary": {
+        "zh": "结构健康监测、贝叶斯更新和数字孪生正在把可靠度分析从论文、验算表推进到桥梁、高层和基础设施运营阶段。行业真正需要的不是单纯安装传感器，而是把监测噪声、结构模型误差、荷载不确定性和维修决策放进同一个风险框架。未来结构工程师如果能同时理解有限元、概率模型、数据质量和寿命周期成本，就更容易进入资产管理、风险咨询和智慧基础设施方向。",
+        "en": "Structural health monitoring, Bayesian updating, and digital twins are pushing reliability analysis from papers and checksheets into real infrastructure operation. The need is not simply more sensors, but a risk framework that connects measurement noise, model error, load uncertainty, and maintenance decisions. Engineers who understand finite elements, probability, data quality, and life-cycle cost will be better positioned for asset management, risk advisory, and smart infrastructure."
+      },
+      "why": {
+        "zh": "建议把概率模型、结构动力学和数据处理放在同一条学习线上。",
+        "en": "A strong skill path is to connect probabilistic modeling, structural dynamics, and data handling."
+      },
+      "reference": "ASCE Journal of Structural Engineering; Structural Safety; Engineering Structures"
+    },
+    {
+      "area": {
+        "zh": "新型材料",
+        "en": "Advanced Materials"
+      },
+      "title": {
+        "zh": "材料创新正在重写耐久性问题",
+        "en": "Material innovation is reshaping durability"
+      },
+      "summary": {
+        "zh": "UHPC、FRP、低碳混凝土和再生材料的讨论正在从“强度更高”转向“耐久性、施工性、碳排放和全寿命成本是否更优”。这对结构工程很关键，因为材料创新只有进入设计方法、验收指标和规范条文，才会真正改变项目选择。未来值得关注的能力，是能读懂材料试验、理解耐久性机理，并把实验数据转译成加固、桥梁、海工和既有建筑改造中的工程判断。",
+        "en": "Discussion around UHPC, FRP, low-carbon concrete, and recycled materials is shifting from higher strength toward durability, constructability, carbon, and life-cycle cost. For structural engineering, material innovation matters only when it becomes design method, acceptance criteria, and code language. A valuable skill is reading material tests, understanding deterioration mechanisms, and translating data into retrofit, bridge, marine, and existing-building decisions."
+      },
+      "why": {
+        "zh": "材料方向值得和耐久性设计、碳评估、加固改造一起学习。",
+        "en": "Materials are best studied alongside durability design, carbon assessment, and retrofit practice."
+      },
+      "reference": "Cement and Concrete Composites; Construction and Building Materials; ACI"
+    },
+    {
+      "area": {
+        "zh": "计算与AI",
+        "en": "Computation & AI"
+      },
+      "title": {
+        "zh": "AI会先改变方案比选和参数研究",
+        "en": "AI will first change option studies"
+      },
+      "summary": {
+        "zh": "AI在结构工程里最先落地的地方，可能不是直接替代设计师，而是压缩方案比选、截面优化、抗震参数研究和不确定性分析的时间。代理模型、自动化有限元和生成式搜索可以更快探索设计空间，但结果仍需要工程机理、规范边界和可施工性校核。对个人发展来说，懂结构概念又会Python、参数化建模和可靠度分析的人，会比只会点选软件的人更有优势。",
+        "en": "AI is likely to affect structural engineering first by reducing time spent on option studies, section optimization, seismic parameter studies, and uncertainty analysis. Surrogate models, automated finite-element workflows, and generative search can explore design space quickly, but results still need mechanics, code limits, and constructability checks. Engineers who combine structural concepts with Python, parametric modeling, and reliability analysis will have a clearer edge."
+      },
+      "why": {
+        "zh": "把有限元、Python和结构可靠度结合起来，会更接近未来工程岗位。",
+        "en": "Combining finite elements, Python, and reliability methods is a practical future-facing path."
+      },
+      "reference": "Reliability Engineering & System Safety; Earthquake Engineering & Structural Dynamics"
+    }
+  ],
+  "classroom": {
+    "title": {
+      "zh": "钢材强度的一个小差异",
+      "en": "One Difference in Steel Strength"
+    },
+    "text": {
+      "zh": "中国、澳洲、美国和欧洲规范都使用屈服强度作为钢结构设计的核心参数，但材料等级命名和设计取值并不完全等价。中国常见 Q355 以名义屈服强度约 355 MPa 表达；澳洲常见 Grade 300、350、450 按产品类型对应不同最低屈服强度；美国常见 ASTM A36、A572 Gr.50 等以标准牌号和 ksi 强度区分；欧洲 S355、S460 则常按 EN 10025 体系表达。跨国项目不能只看数字相近，还要核对厚度效应、韧性等级、焊接要求和分项系数体系。",
+      "en": "Chinese, Australian, US, and European steel design systems all rely on yield strength, but grade names and design values are not directly interchangeable. China often uses Q355 to express a nominal yield strength around 355 MPa; Australia uses grades such as 300, 350, and 450 depending on product type; the US often distinguishes ASTM grades such as A36 and A572 Gr.50, commonly expressed in ksi; Europe uses grades such as S355 and S460 under EN 10025. For international projects, similar numbers are not enough: thickness effects, toughness class, welding requirements, and partial-factor systems also matter."
+    },
+    "references": "GB 50017; AS 4100; AISC 360; Eurocode 3 / EN 1993"
+  }
+}

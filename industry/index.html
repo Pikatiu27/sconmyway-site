@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industry Updates</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fff8ed;
+      --ink: #22303a;
+      --muted: #67727a;
+      --line: rgba(70, 88, 98, 0.16);
+      --panel: rgba(255, 255, 255, 0.9);
+      --mint: #9bdac8;
+      --peach: #ffc8a8;
+      --sky: #a9d8ff;
+      --lemon: #ffe89a;
+      --rose: #f7b7c8;
+      --lavender: #cfc3ff;
+      --shadow: 0 18px 42px rgba(76, 97, 112, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Noto Sans SC", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      letter-spacing: 0;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .app {
+      min-height: 100svh;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .phone {
+      position: relative;
+      width: min(100%, 520px);
+      min-height: 100svh;
+      background: linear-gradient(180deg, #fffaf1 0%, #f3fbff 44%, #fff7fb 100%);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 14px 11px 18px;
+      background: rgba(255, 250, 241, 0.9);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      min-width: 0;
+      font-size: 17px;
+      font-weight: 760;
+      line-height: 1;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .lang-toggle {
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr;
+      width: 74px;
+      height: 30px;
+      padding: 2px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+    }
+
+    .lang-toggle button {
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 760;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .lang-toggle button.active {
+      background: var(--ink);
+      color: white;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 315px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--line);
+      background: #d9f0ff;
+    }
+
+    .hero img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 248, 237, 0.08), rgba(39, 55, 65, 0.2) 44%, rgba(34, 48, 58, 0.72));
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+      padding: 24px 20px 28px;
+      color: white;
+      text-shadow: 0 1px 18px rgba(0, 0, 0, 0.4);
+    }
+
+    .eyebrow {
+      display: none;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 11ch;
+      font-family: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      font-size: clamp(38px, 10.5vw, 56px);
+      line-height: 0.98;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .deck {
+      display: none;
+    }
+
+    .watermark {
+      position: absolute;
+      right: 14px;
+      bottom: 12px;
+      z-index: 2;
+      padding: 5px 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.24);
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-shadow: 0 1px 12px rgba(20, 30, 36, 0.34);
+    }
+
+    main {
+      padding: 18px 16px 34px;
+    }
+
+    section {
+      margin: 0 0 24px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 2px 10px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .count {
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .lead-card {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .ticker {
+      display: grid;
+    }
+
+    .news-row {
+      min-height: 108px;
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .news-row:last-child { border-bottom: 0; }
+
+    .topic {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 30px;
+      padding: 0 9px;
+      border-radius: 999px;
+      color: #22303a;
+      font-size: 13px;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+
+    .topic.ai { background: var(--mint); }
+    .topic.robot { background: var(--sky); }
+    .topic.chip { background: var(--lemon); }
+    .topic.trade { background: var(--peach); }
+    .topic.bio { background: var(--rose); }
+
+    .headline {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.34;
+      font-weight: 720;
+    }
+
+    .summary {
+      margin: 7px 0 0;
+      color: #3b4a54;
+      font-size: 14px;
+      line-height: 1.62;
+      font-weight: 520;
+    }
+
+    .insight-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .insight-item,
+    .classroom {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.86);
+      padding: 16px;
+    }
+
+    .area {
+      margin: 0 0 7px;
+      color: #28745f;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .signal {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.42;
+      font-weight: 720;
+    }
+
+    .why {
+      margin: 8px 0 0;
+      color: #3b4a54;
+      font-size: 14px;
+      line-height: 1.58;
+      font-weight: 520;
+    }
+
+    .ref {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.45;
+    }
+
+    .classroom {
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 12px 34px rgba(39, 42, 38, 0.09);
+    }
+
+    .class-title {
+      margin: 0 0 9px;
+      color: #28745f;
+      font-size: 13px;
+      line-height: 1.35;
+      font-weight: 800;
+    }
+
+    .class-text {
+      margin: 0;
+      color: #3b4a54;
+      font-size: 14.5px;
+      line-height: 1.68;
+      font-weight: 520;
+    }
+
+    .footer-note {
+      color: var(--muted);
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.45;
+      padding: 6px 18px 22px;
+    }
+
+    .signature {
+      margin: 0;
+      padding: 0 18px 16px;
+      text-align: center;
+      color: rgba(22, 22, 22, 0.28);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 370px) {
+      header {
+        grid-template-columns: 1fr auto;
+      }
+
+      .date {
+        display: none;
+      }
+
+      .news-row {
+        grid-template-columns: 72px 1fr;
+        padding-inline: 12px;
+      }
+    }
+
+    @media (min-width: 780px) {
+      .app {
+        padding: 28px 0;
+      }
+
+      .phone {
+        min-height: auto;
+        border-radius: 18px;
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="phone">
+      <header>
+        <div class="brand">Industry Updates</div>
+        <div class="date" id="today">Loading</div>
+        <div class="lang-toggle" aria-label="Language switch">
+          <button type="button" id="langZh" class="active">中</button>
+          <button type="button" id="langEn">EN</button>
+        </div>
+      </header>
+
+      <article class="hero">
+        <img src="industry-cover.png" alt="Structural engineering and technology industry cover">
+        <div class="hero-copy">
+          <p class="eyebrow" id="edition">晨间简报</p>
+          <h1 id="heroTitle">Daily Intelligence</h1>
+          <p class="deck" id="heroDeck">实时行业消息、面向结构工程未来的专业洞察，以及一条跨规范设计知识点。</p>
+        </div>
+        <div class="watermark">SConmyway</div>
+      </article>
+
+      <main>
+        <section>
+          <div class="section-head">
+            <h2 id="liveTitle">实时消息</h2>
+            <span class="count" id="liveCount">3 updates</span>
+          </div>
+          <div class="lead-card ticker" id="liveUpdates"></div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2 id="insightTitle">专业趋势洞察</h2>
+            <span class="count" id="insightCount">3 insights</span>
+          </div>
+          <div class="insight-list" id="insights"></div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2 id="classroomTitle">每日知识课堂</h2>
+          </div>
+          <div class="classroom" id="classroom"></div>
+        </section>
+      </main>
+
+      <p class="footer-note" id="footerNote">页面数据来自 daily-data.json。每日自动任务会更新同一入口。</p>
+      <p class="signature">SConmyway</p>
+    </div>
+  </div>
+
+  <script>
+    const fallback = {
+      "date": "2026-06-19",
+      "edition": { "zh": "晨间简报", "en": "Morning Brief" },
+      "liveUpdates": [
+        {
+          "topic": { "zh": "AI", "en": "AI" },
+          "title": { "zh": "多模态智能体进入办公主流程", "en": "Multimodal agents enter office workflows" },
+          "summary": {
+            "zh": "AI产品正从聊天窗口走向邮件、表格、文档和会议场景，企业更关注权限、数据安全和流程集成。短期看是效率工具竞争，长期看会改变知识工作者组织资料、写作和决策的方式。",
+            "en": "AI products are moving from chat windows into email, spreadsheets, documents, and meetings. Companies are paying more attention to permissions, data security, and workflow integration, turning AI from a helper into infrastructure."
+          },
+          "reference": "Daily industry scan; company product updates; major technology media"
+        },
+        {
+          "topic": { "zh": "机器人", "en": "Robotics" },
+          "title": { "zh": "人形机器人供应链继续扩产", "en": "Humanoid supply chains keep expanding" },
+          "summary": {
+            "zh": "机器人公司正在把重点从单机演示转向量产能力，核心环节包括关节模组、灵巧手、传感器和运动控制。真正值得关注的是成本下降后，仓储、制造和巡检场景能否形成稳定订单。",
+            "en": "Robotics firms are shifting from demos toward manufacturability, with attention on actuators, dexterous hands, sensors, and motion control. The key question is whether lower costs can unlock stable orders in warehouses, factories, and inspection."
+          },
+          "reference": "Daily industry scan; robotics company releases; IEEE Spectrum robotics coverage"
+        },
+        {
+          "topic": { "zh": "半导体", "en": "Chips" },
+          "title": { "zh": "先进封装成为芯片竞争焦点", "en": "Advanced packaging becomes a chip battleground" },
+          "summary": {
+            "zh": "AI算力需求推动芯片竞争从单纯制程推进到系统级封装，HBM、Chiplet和散热能力变得更重要。它影响的不只是芯片厂，也会带动材料、设备、数据中心和能源基础设施投资。",
+            "en": "AI computing demand is pushing chip competition from process nodes toward system-level packaging. HBM, chiplets, and thermal design now matter more, with spillover effects on materials, equipment, data centers, and power infrastructure."
+          },
+          "reference": "Daily industry scan; semiconductor industry reports; IEEE Spectrum"
+        }
+      ],
+      "insights": [
+        {
+          "area": { "zh": "结构可靠度", "en": "Structural Reliability" },
+          "title": { "zh": "可靠度评估正在接近实时化", "en": "Reliability assessment is becoming more real-time" },
+          "summary": {
+            "zh": "结构健康监测、贝叶斯更新和数字孪生正在把可靠度分析从论文、验算表推进到桥梁、高层和基础设施运营阶段。行业真正需要的不是单纯安装传感器，而是把监测噪声、结构模型误差、荷载不确定性和维修决策放进同一个风险框架。未来结构工程师如果能同时理解有限元、概率模型、数据质量和寿命周期成本，就更容易进入资产管理、风险咨询和智慧基础设施方向。",
+            "en": "Structural health monitoring, Bayesian updating, and digital twins are pushing reliability analysis from papers and checksheets into real infrastructure operation. The need is not simply more sensors, but a risk framework that connects measurement noise, model error, load uncertainty, and maintenance decisions. Engineers who understand finite elements, probability, data quality, and life-cycle cost will be better positioned for asset management, risk advisory, and smart infrastructure."
+          },
+          "why": { "zh": "建议把概率模型、结构动力学和数据处理放在同一条学习线上。", "en": "A strong skill path is to connect probabilistic modeling, structural dynamics, and data handling." },
+          "reference": "ASCE Journal of Structural Engineering; Structural Safety; Engineering Structures"
+        },
+        {
+          "area": { "zh": "新型材料", "en": "Advanced Materials" },
+          "title": { "zh": "材料创新正在重写耐久性问题", "en": "Material innovation is reshaping durability" },
+          "summary": {
+            "zh": "UHPC、FRP、低碳混凝土和再生材料的讨论正在从“强度更高”转向“耐久性、施工性、碳排放和全寿命成本是否更优”。这对结构工程很关键，因为材料创新只有进入设计方法、验收指标和规范条文，才会真正改变项目选择。未来值得关注的能力，是能读懂材料试验、理解耐久性机理，并把实验数据转译成加固、桥梁、海工和既有建筑改造中的工程判断。",
+            "en": "Discussion around UHPC, FRP, low-carbon concrete, and recycled materials is shifting from higher strength toward durability, constructability, carbon, and life-cycle cost. For structural engineering, material innovation matters only when it becomes design method, acceptance criteria, and code language. A valuable skill is reading material tests, understanding deterioration mechanisms, and translating data into retrofit, bridge, marine, and existing-building decisions."
+          },
+          "why": { "zh": "材料方向值得和耐久性设计、碳评估、加固改造一起学习。", "en": "Materials are best studied alongside durability design, carbon assessment, and retrofit practice." },
+          "reference": "Cement and Concrete Composites; Construction and Building Materials; ACI"
+        },
+        {
+          "area": { "zh": "计算与AI", "en": "Computation & AI" },
+          "title": { "zh": "AI会先改变方案比选和参数研究", "en": "AI will first change option studies" },
+          "summary": {
+            "zh": "AI在结构工程里最先落地的地方，可能不是直接替代设计师，而是压缩方案比选、截面优化、抗震参数研究和不确定性分析的时间。代理模型、自动化有限元和生成式搜索可以更快探索设计空间，但结果仍需要工程机理、规范边界和可施工性校核。对个人发展来说，懂结构概念又会Python、参数化建模和可靠度分析的人，会比只会点选软件的人更有优势。",
+            "en": "AI is likely to affect structural engineering first by reducing time spent on option studies, section optimization, seismic parameter studies, and uncertainty analysis. Surrogate models, automated finite-element workflows, and generative search can explore design space quickly, but results still need mechanics, code limits, and constructability checks. Engineers who combine structural concepts with Python, parametric modeling, and reliability analysis will have a clearer edge."
+          },
+          "why": { "zh": "把有限元、Python和结构可靠度结合起来，会更接近未来工程岗位。", "en": "Combining finite elements, Python, and reliability methods is a practical future-facing path." },
+          "reference": "Reliability Engineering & System Safety; Earthquake Engineering & Structural Dynamics"
+        }
+      ],
+      "classroom": {
+        "title": { "zh": "钢材强度的一个小差异", "en": "One Difference in Steel Strength" },
+        "text": {
+          "zh": "中国、澳洲、美国和欧洲规范都使用屈服强度作为钢结构设计的核心参数，但材料等级命名和设计取值并不完全等价。中国常见 Q355 以名义屈服强度约 355 MPa 表达；澳洲常见 Grade 300、350、450 按产品类型对应不同最低屈服强度；美国常见 ASTM A36、A572 Gr.50 等以标准牌号和 ksi 强度区分；欧洲 S355、S460 则常按 EN 10025 体系表达。跨国项目不能只看数字相近，还要核对厚度效应、韧性等级、焊接要求和分项系数体系。",
+          "en": "Chinese, Australian, US, and European steel design systems all rely on yield strength, but grade names and design values are not directly interchangeable. China often uses Q355 to express a nominal yield strength around 355 MPa; Australia uses grades such as 300, 350, and 450 depending on product type; the US often distinguishes ASTM grades such as A36 and A572 Gr.50, commonly expressed in ksi; Europe uses grades such as S355 and S460 under EN 10025. For international projects, similar numbers are not enough: thickness effects, toughness class, welding requirements, and partial-factor systems also matter."
+        },
+        "references": "GB 50017; AS 4100; AISC 360; Eurocode 3 / EN 1993"
+      }
+    };
+
+    const copy = {
+      zh: {
+        htmlLang: "zh-CN",
+        dateLocale: "zh-CN",
+        heroTitle: "今日行业观察",
+        heroDeck: "实时行业消息、面向结构工程未来的专业洞察，以及一条跨规范设计知识点。",
+        liveTitle: "实时消息",
+        liveCount: "3 updates",
+        insightTitle: "专业趋势洞察",
+        insightCount: "3 insights",
+        classroomTitle: "每日知识课堂",
+        whyLabel: "对你意味着什么",
+        refLabel: "Reference",
+        footer: "页面数据来自 daily-data.json。每日自动任务会更新同一入口。"
+      },
+      en: {
+        htmlLang: "en",
+        dateLocale: "en-AU",
+        heroTitle: "Industry Briefing",
+        heroDeck: "Industry signals, future-facing structural engineering insight, and one cross-code design lesson.",
+        liveTitle: "Live Updates",
+        liveCount: "3 updates",
+        insightTitle: "Professional Trend Insight",
+        insightCount: "3 insights",
+        classroomTitle: "Daily Classroom",
+        whyLabel: "Why it matters to you",
+        refLabel: "Reference",
+        footer: "Data comes from daily-data.json. The daily automation updates the same page."
+      }
+    };
+
+    const topicClass = {
+      "AI": "ai",
+      "机器人": "robot",
+      "Robotics": "robot",
+      "半导体": "chip",
+      "Chips": "chip",
+      "跨境电商": "trade",
+      "Commerce": "trade",
+      "生物医药": "bio",
+      "Biotech": "bio"
+    };
+
+    let dailyData = fallback;
+    let lang = localStorage.getItem("industryUpdatesLang") || "zh";
+
+    function pick(value) {
+      if (!value || typeof value === "string") return value || "";
+      return value[lang] || value.zh || value.en || "";
+    }
+
+    async function loadData() {
+      try {
+        const response = await fetch("daily-data.json", { cache: "no-store" });
+        if (!response.ok) throw new Error("Cannot load daily data");
+        return await response.json();
+      } catch {
+        return fallback;
+      }
+    }
+
+    function formatDate(value) {
+      const date = new Date(`${value}T08:00:00`);
+      return new Intl.DateTimeFormat(copy[lang].dateLocale, {
+        month: "short",
+        day: "numeric",
+        weekday: "short"
+      }).format(date);
+    }
+
+    function renderLive(items) {
+      document.querySelector("#liveUpdates").innerHTML = items.map(item => {
+        const topic = pick(item.topic);
+        return `
+          <div class="news-row">
+            <span class="topic ${topicClass[topic] || "chip"}">${topic}</span>
+            <div>
+              <p class="headline">${pick(item.title || item.text)}</p>
+              <p class="summary">${pick(item.summary)}</p>
+              <p class="ref">${copy[lang].refLabel}: ${item.reference || item.source || ""}</p>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderInsights(items) {
+      document.querySelector("#insights").innerHTML = items.map(item => `
+        <article class="insight-item">
+          <p class="area">${pick(item.area)}</p>
+          <p class="signal">${pick(item.title || item.signal)}</p>
+          <p class="summary">${pick(item.summary)}</p>
+          <p class="why"><strong>${copy[lang].whyLabel}:</strong> ${pick(item.why)}</p>
+          <p class="ref">${copy[lang].refLabel}: ${item.reference}</p>
+        </article>
+      `).join("");
+    }
+
+    function renderClassroom(item) {
+      document.querySelector("#classroom").innerHTML = `
+        <h3 class="class-title">${pick(item.title)}</h3>
+        <p class="class-text">${pick(item.text)}</p>
+        <p class="ref">${copy[lang].refLabel}: ${item.references}</p>
+      `;
+    }
+
+    function setLanguage(nextLang) {
+      lang = nextLang;
+      localStorage.setItem("industryUpdatesLang", lang);
+      document.documentElement.lang = copy[lang].htmlLang;
+      document.querySelector("#langZh").classList.toggle("active", lang === "zh");
+      document.querySelector("#langEn").classList.toggle("active", lang === "en");
+      render();
+    }
+
+    function render() {
+      document.querySelector("#today").textContent = formatDate(dailyData.date);
+      document.querySelector("#edition").textContent = pick(dailyData.edition);
+      document.querySelector("#heroTitle").textContent = copy[lang].heroTitle;
+      document.querySelector("#heroDeck").textContent = copy[lang].heroDeck;
+      document.querySelector("#liveTitle").textContent = copy[lang].liveTitle;
+      document.querySelector("#liveCount").textContent = copy[lang].liveCount;
+      document.querySelector("#insightTitle").textContent = copy[lang].insightTitle;
+      document.querySelector("#insightCount").textContent = copy[lang].insightCount;
+      document.querySelector("#classroomTitle").textContent = copy[lang].classroomTitle;
+      document.querySelector("#footerNote").textContent = copy[lang].footer;
+      renderLive(dailyData.liveUpdates || []);
+      renderInsights(dailyData.insights || dailyData.technical || []);
+      renderClassroom(dailyData.classroom || fallback.classroom);
+    }
+
+    document.querySelector("#langZh").addEventListener("click", () => setLanguage("zh"));
+    document.querySelector("#langEn").addEventListener("click", () => setLanguage("en"));
+
+    loadData().then(data => {
+      dailyData = data;
+      setLanguage(lang);
+    });
+  </script>
+</body>
+</html>
