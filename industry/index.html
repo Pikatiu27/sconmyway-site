@@ -120,13 +120,14 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      opacity: 0.82;
     }
 
     .hero::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(255, 248, 237, 0.08), rgba(39, 55, 65, 0.2) 44%, rgba(34, 48, 58, 0.72));
+      background: linear-gradient(180deg, rgba(255, 250, 241, 0.2), rgba(117, 153, 171, 0.16) 44%, rgba(34, 48, 58, 0.5));
     }
 
     .hero-copy {
@@ -160,19 +161,19 @@
       right: 14px;
       bottom: 12px;
       z-index: 2;
-      padding: 5px 8px;
+      padding: 4px 7px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.24);
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 11.5px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
+      background: rgba(255, 255, 255, 0.16);
+      color: rgba(255, 255, 255, 0.64);
+      font-size: 10px;
+      font-weight: 760;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      text-shadow: 0 1px 12px rgba(20, 30, 36, 0.34);
+      text-shadow: 0 1px 8px rgba(20, 30, 36, 0.22);
     }
 
     main {
-      padding: 18px 16px 34px;
+      padding: 18px 12px 34px;
     }
 
     section {
@@ -223,17 +224,16 @@
 
     .news-row {
       min-height: 108px;
-      display: grid;
-      grid-template-columns: 74px 1fr;
-      align-items: flex-start;
-      gap: 13px;
-      padding: 17px 15px;
+      display: block;
+      padding: 16px 13px;
       border-bottom: 1px solid var(--line);
     }
 
     .news-row:last-child { border-bottom: 0; }
 
-    .topic {
+    .topic,
+    .area,
+    .class-label {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -254,7 +254,7 @@
     .topic.bio { background: var(--rose); }
 
     .headline {
-      margin: 0;
+      margin: 9px 0 0;
       font-size: 16.8px;
       line-height: 1.34;
       font-weight: 780;
@@ -278,24 +278,18 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.86);
-      padding: 17px;
+      padding: 16px 14px;
     }
 
     .area {
-      display: inline-flex;
-      align-items: center;
-      min-height: 25px;
       margin: 0 0 9px;
-      padding: 0 9px;
-      border-radius: 999px;
       background: rgba(155, 218, 200, 0.46);
       color: #28745f;
-      font-size: 11.5px;
       font-weight: 820;
-      line-height: 1;
     }
 
-    .signal {
+    .signal,
+    .class-title {
       margin: 0;
       font-size: 17px;
       line-height: 1.36;
@@ -328,16 +322,19 @@
       box-shadow: var(--soft-shadow);
     }
 
+    .class-label {
+      margin: 0 0 9px;
+      background: rgba(255, 232, 154, 0.6);
+      color: #746124;
+      font-weight: 820;
+    }
+
     .class-title {
-      margin: 0 0 8px;
       color: var(--ink);
-      font-size: 17px;
-      line-height: 1.36;
-      font-weight: 790;
     }
 
     .class-text {
-      margin: 0;
+      margin: 8px 0 0;
       color: #3b4a54;
       font-size: 14.5px;
       line-height: 1.72;
@@ -357,8 +354,10 @@
     html[lang="en"] .summary,
     html[lang="en"] .why,
     html[lang="en"] .class-text {
-      text-align: left;
-      hyphens: auto;
+      text-align: justify;
+      text-align-last: left;
+      hyphens: none;
+      word-break: normal;
       overflow-wrap: break-word;
     }
 
@@ -391,8 +390,7 @@
       }
 
       .news-row {
-        grid-template-columns: 72px 1fr;
-        padding-inline: 12px;
+        padding-inline: 11px;
       }
     }
 
@@ -464,75 +462,126 @@
   <script>
     const fallback = {
       "date": "2026-06-19",
-      "edition": { "zh": "晨间简报", "en": "Morning Brief" },
+      "edition": {
+        "zh": "晨间简报",
+        "en": "Morning Brief"
+      },
       "liveUpdates": [
         {
-          "topic": { "zh": "AI", "en": "AI" },
-          "title": { "zh": "多模态智能体进入办公主流程", "en": "Multimodal agents enter office workflows" },
-          "summary": {
-            "zh": "AI产品正从聊天窗口走向邮件、表格、文档和会议场景，企业更关注权限、数据安全和流程集成。短期看是效率工具竞争，长期看会改变知识工作者组织资料、写作和决策的方式。",
-            "en": "AI products are moving from chat windows into email, spreadsheets, documents, and meetings. Companies are paying more attention to permissions, data security, and workflow integration, turning AI from a helper into infrastructure."
+          "topic": {
+            "zh": "AI",
+            "en": "AI"
           },
-          "reference": "Daily industry scan; company product updates; major technology media"
+          "title": {
+            "zh": "企业AI智能体进入并购加速期",
+            "en": "Enterprise AI agents enter an M&A phase"
+          },
+          "summary": {
+            "zh": "Salesforce以36亿美元收购AI客服智能体公司Fin，说明企业软件竞争正在从“加AI功能”转向“买下可落地的智能体流程”。短期看客服、销售和知识库会最先被重塑，长期看SaaS公司必须证明AI能带来可计量结果。",
+            "en": "Salesforce's $3.6 billion deal for AI agent maker Fin shows enterprise software moving from adding AI features to owning deployable agent workflows. Customer support, sales, and knowledge bases are likely to change first."
+          },
+          "reference": "Investor's Business Daily, Salesforce-Fin acquisition coverage, June 2026"
         },
         {
-          "topic": { "zh": "机器人", "en": "Robotics" },
-          "title": { "zh": "人形机器人供应链继续扩产", "en": "Humanoid supply chains keep expanding" },
-          "summary": {
-            "zh": "机器人公司正在把重点从单机演示转向量产能力，核心环节包括关节模组、灵巧手、传感器和运动控制。真正值得关注的是成本下降后，仓储、制造和巡检场景能否形成稳定订单。",
-            "en": "Robotics firms are shifting from demos toward manufacturability, with attention on actuators, dexterous hands, sensors, and motion control. The key question is whether lower costs can unlock stable orders in warehouses, factories, and inspection."
+          "topic": {
+            "zh": "机器人",
+            "en": "Robotics"
           },
-          "reference": "Daily industry scan; robotics company releases; IEEE Spectrum robotics coverage"
+          "title": {
+            "zh": "人形机器人从展示走向产线验证",
+            "en": "Humanoids move toward factory validation"
+          },
+          "summary": {
+            "zh": "人形机器人热点正在从发布会演示转向真实产线和供应链验证。Tesla披露Optimus产线准备，Nvidia与制造伙伴也被报道探索机器人参与AI服务器生产。真正关键不只是能走能拿，而是稳定性、维护成本和任务复用率。",
+            "en": "Humanoid robotics is shifting from demonstrations toward production-line validation. Tesla has discussed Optimus production preparation, while Nvidia-linked manufacturing plans point to robots entering server assembly."
+          },
+          "reference": "Tesla Q1 2026 Update; Reuters reporting cited by TechRadar on Nvidia-Foxconn humanoid deployment"
         },
         {
-          "topic": { "zh": "半导体", "en": "Chips" },
-          "title": { "zh": "先进封装成为芯片竞争焦点", "en": "Advanced packaging becomes a chip battleground" },
-          "summary": {
-            "zh": "AI算力需求推动芯片竞争从单纯制程推进到系统级封装，HBM、Chiplet和散热能力变得更重要。它影响的不只是芯片厂，也会带动材料、设备、数据中心和能源基础设施投资。",
-            "en": "AI computing demand is pushing chip competition from process nodes toward system-level packaging. HBM, chiplets, and thermal design now matter more, with spillover effects on materials, equipment, data centers, and power infrastructure."
+          "topic": {
+            "zh": "加密货币",
+            "en": "Crypto"
           },
-          "reference": "Daily industry scan; semiconductor industry reports; IEEE Spectrum"
+          "title": {
+            "zh": "稳定币与CBDC竞争进入政治层面",
+            "en": "Stablecoins and CBDCs become political"
+          },
+          "summary": {
+            "zh": "英国围绕“Britcoin”的争论显示，央行数字货币和私人稳定币的竞争已经不只是技术问题。监管、隐私、支付主权和利益冲突会一起进入公共讨论。对行业来说，合规可信度可能比短期交易热度更重要。",
+            "en": "The UK debate over Britcoin shows that CBDCs and private stablecoins are no longer just technical payment tools. Regulation, privacy, monetary sovereignty, and conflicts of interest are becoming central issues."
+          },
+          "reference": "The Guardian, Britcoin and stablecoin politics, June 18 2026; Bank of England stablecoin policy materials"
         }
       ],
       "insights": [
         {
-          "area": { "zh": "结构可靠度", "en": "Structural Reliability" },
-          "title": { "zh": "可靠度评估正在接近实时化", "en": "Reliability assessment is becoming more real-time" },
-          "summary": {
-            "zh": "结构健康监测、贝叶斯更新和数字孪生正在把可靠度分析从论文、验算表推进到桥梁、高层和基础设施运营阶段。行业真正需要的不是单纯安装传感器，而是把监测噪声、结构模型误差、荷载不确定性和维修决策放进同一个风险框架。未来结构工程师如果能同时理解有限元、概率模型、数据质量和寿命周期成本，就更容易进入资产管理、风险咨询和智慧基础设施方向。",
-            "en": "Structural health monitoring, Bayesian updating, and digital twins are pushing reliability analysis from papers and checksheets into real infrastructure operation. The need is not simply more sensors, but a risk framework that connects measurement noise, model error, load uncertainty, and maintenance decisions. Engineers who understand finite elements, probability, data quality, and life-cycle cost will be better positioned for asset management, risk advisory, and smart infrastructure."
+          "area": {
+            "zh": "结构可靠度",
+            "en": "Structural Reliability"
           },
-          "why": { "zh": "建议把概率模型、结构动力学和数据处理放在同一条学习线上。", "en": "A strong skill path is to connect probabilistic modeling, structural dynamics, and data handling." },
-          "reference": "ASCE Journal of Structural Engineering; Structural Safety; Engineering Structures"
+          "title": {
+            "zh": "数字孪生正在向“风险孪生”演化",
+            "en": "Digital twins evolve toward risk twins"
+          },
+          "summary": {
+            "zh": "结构数字孪生的重点正在从可视化模型转向风险更新：传感器数据、贝叶斯推断、模型误差和构件可靠指标被放进同一套实时框架。对结构工程师来说，这意味着未来的监测系统不能只回答“有没有损伤”，还要回答“风险是否变化、是否需要限载、何时维护最划算”。如果你想往可靠度和智慧基础设施方向发展，概率建模、结构动力学、传感数据清洗和决策分析会越来越像一组技能，而不是互相分开的课程。",
+            "en": "Structural digital twins are moving from visualization toward risk updating, where sensor data, Bayesian inference, model error, and component reliability indices sit in one real-time framework. Future monitoring systems must answer not only whether damage exists, but whether risk has changed, whether load limits are needed, and when maintenance is economically justified."
+          },
+          "why": {
+            "zh": "建议把可靠度、贝叶斯更新和结构健康监测作为一个组合方向学习。",
+            "en": "Study reliability, Bayesian updating, and structural health monitoring as one connected track."
+          },
+          "reference": "Risk Twin: Real-time Risk Visualization and Control for Structural Systems; A Digital Twin Framework for Civil Engineering Structures; Structural Safety"
         },
         {
-          "area": { "zh": "新型材料", "en": "Advanced Materials" },
-          "title": { "zh": "材料创新正在重写耐久性问题", "en": "Material innovation is reshaping durability" },
-          "summary": {
-            "zh": "UHPC、FRP、低碳混凝土和再生材料的讨论正在从“强度更高”转向“耐久性、施工性、碳排放和全寿命成本是否更优”。这对结构工程很关键，因为材料创新只有进入设计方法、验收指标和规范条文，才会真正改变项目选择。未来值得关注的能力，是能读懂材料试验、理解耐久性机理，并把实验数据转译成加固、桥梁、海工和既有建筑改造中的工程判断。",
-            "en": "Discussion around UHPC, FRP, low-carbon concrete, and recycled materials is shifting from higher strength toward durability, constructability, carbon, and life-cycle cost. For structural engineering, material innovation matters only when it becomes design method, acceptance criteria, and code language. A valuable skill is reading material tests, understanding deterioration mechanisms, and translating data into retrofit, bridge, marine, and existing-building decisions."
+          "area": {
+            "zh": "新型材料",
+            "en": "Advanced Materials"
           },
-          "why": { "zh": "材料方向值得和耐久性设计、碳评估、加固改造一起学习。", "en": "Materials are best studied alongside durability design, carbon assessment, and retrofit practice." },
-          "reference": "Cement and Concrete Composites; Construction and Building Materials; ACI"
+          "title": {
+            "zh": "UHPC设计焦点从强度转向延性",
+            "en": "UHPC design shifts from strength to ductility"
+          },
+          "summary": {
+            "zh": "UHPC的高强度和裂后性能让它很适合桥梁、加固和薄壁构件，但研究也提醒：预应力UHPC梁可能在裂缝局部化后快速失效，预警不足。行业下一步不只是追求更高抗压强度，而是控制配筋、预应力、截面和拉伸软化行为，让构件出现可识别、可设计的延性破坏。对你来说，材料创新要和极限状态设计、失效模式识别、施工质量控制一起理解，才会变成真正可用的工程判断。",
+            "en": "UHPC's high strength and post-cracking performance make it attractive for bridges, retrofit, and thin members, but research on prestressed UHPC beams warns that crack localization can lead to rapid failure with limited warning. The design focus is shifting toward reinforcement configuration, prestress level, section proportion, and tensile behavior that promote ductile failure modes."
+          },
+          "why": {
+            "zh": "材料方向要从“性能很强”进一步学到“失效模式是否可控”。",
+            "en": "Move from asking whether a material is strong to whether its failure mode is controllable."
+          },
+          "reference": "Flexural Behavior and Design of Prestressed UHPC Beams, 2024; Cement and Concrete Composites; Construction and Building Materials"
         },
         {
-          "area": { "zh": "计算与AI", "en": "Computation & AI" },
-          "title": { "zh": "AI会先改变方案比选和参数研究", "en": "AI will first change option studies" },
-          "summary": {
-            "zh": "AI在结构工程里最先落地的地方，可能不是直接替代设计师，而是压缩方案比选、截面优化、抗震参数研究和不确定性分析的时间。代理模型、自动化有限元和生成式搜索可以更快探索设计空间，但结果仍需要工程机理、规范边界和可施工性校核。对个人发展来说，懂结构概念又会Python、参数化建模和可靠度分析的人，会比只会点选软件的人更有优势。",
-            "en": "AI is likely to affect structural engineering first by reducing time spent on option studies, section optimization, seismic parameter studies, and uncertainty analysis. Surrogate models, automated finite-element workflows, and generative search can explore design space quickly, but results still need mechanics, code limits, and constructability checks. Engineers who combine structural concepts with Python, parametric modeling, and reliability analysis will have a clearer edge."
+          "area": {
+            "zh": "AI与计算",
+            "en": "AI & Computation"
           },
-          "why": { "zh": "把有限元、Python和结构可靠度结合起来，会更接近未来工程岗位。", "en": "Combining finite elements, Python, and reliability methods is a practical future-facing path." },
-          "reference": "Reliability Engineering & System Safety; Earthquake Engineering & Structural Dynamics"
+          "title": {
+            "zh": "AI辅助有限元要重视不确定性",
+            "en": "AI-assisted FEA needs uncertainty control"
+          },
+          "summary": {
+            "zh": "AI和代理模型能显著降低有限元参数研究成本，但工程优化里的关键风险是“低成本预测看起来很准，实际却落在训练数据之外”。近期多智能体FEA-AI混合优化研究强调，用AI生成方案、用代理模型筛选，再把高不确定性或关键候选点送回高保真有限元校核。这个思路对结构工程也很有启发：未来AI不是替代结构判断，而是帮助你更快探索设计空间，同时必须保留可靠度、规范边界和高保真校核。",
+            "en": "AI and surrogate models can reduce the cost of finite-element studies, but the central risk is confident-looking prediction outside the training domain. Recent FEA-AI hybrid optimization work uses agents to define problems, surrogates to screen candidates, and high-fidelity FEA to correct uncertain or critical options. The same logic applies to structural engineering."
+          },
+          "why": {
+            "zh": "有限元、Python、代理模型和不确定性量化值得一起练。",
+            "en": "Practice finite elements, Python, surrogate modeling, and uncertainty quantification together."
+          },
+          "reference": "A Multi-Agent System for IPMSM Design Optimization via an FEA-AI Hybrid Approach, 2026; Reliability Engineering & System Safety"
         }
       ],
       "classroom": {
-        "title": { "zh": "钢材强度的一个小差异", "en": "One Difference in Steel Strength" },
-        "text": {
-          "zh": "中国、澳洲、美国和欧洲规范都使用屈服强度作为钢结构设计的核心参数，但材料等级命名和设计取值并不完全等价。中国常见 Q355 以名义屈服强度约 355 MPa 表达；澳洲常见 Grade 300、350、450 按产品类型对应不同最低屈服强度；美国常见 ASTM A36、A572 Gr.50 等以标准牌号和 ksi 强度区分；欧洲 S355、S460 则常按 EN 10025 体系表达。跨国项目不能只看数字相近，还要核对厚度效应、韧性等级、焊接要求和分项系数体系。",
-          "en": "Chinese, Australian, US, and European steel design systems all rely on yield strength, but grade names and design values are not directly interchangeable. China often uses Q355 to express a nominal yield strength around 355 MPa; Australia uses grades such as 300, 350, and 450 depending on product type; the US often distinguishes ASTM grades such as A36 and A572 Gr.50, commonly expressed in ksi; Europe uses grades such as S355 and S460 under EN 10025. For international projects, similar numbers are not enough: thickness effects, toughness class, welding requirements, and partial-factor systems also matter."
+        "title": {
+          "zh": "荷载组合里的分项系数差异",
+          "en": "Partial Factors in Load Combinations"
         },
-        "references": "GB 50017; AS 4100; AISC 360; Eurocode 3 / EN 1993"
+        "text": {
+          "zh": "中国、澳洲、美国和欧洲规范都会把永久荷载、可变荷载、风荷载和地震作用组合起来，但背后的安全表达不同。中国GB体系和澳洲AS体系常用极限状态设计与分项系数组合；美国ASCE 7/AISC常见LRFD与ASD两套表达；欧洲Eurocode使用作用分项系数、组合系数和材料分项系数配合。跨规范比较时不能只看某个1.2或1.5是否相近，还要同时看目标可靠指标、荷载统计来源、组合系数、材料抗力折减和服务性限值。",
+          "en": "Chinese, Australian, US, and European codes all combine permanent, variable, wind, and seismic actions, but their safety formats differ. China and Australia commonly use limit-state combinations with partial factors; the US often presents LRFD and ASD formats through ASCE 7 and AISC; Europe combines action factors, combination factors, and material partial factors under Eurocode. Similar-looking numbers are not enough: target reliability, load statistics, combination factors, resistance factors, and serviceability limits must be read together."
+        },
+        "references": "GB 50009; AS/NZS 1170; ASCE 7; AISC 360; EN 1990 / Eurocode Basis of Structural Design"
       }
     };
 
@@ -547,6 +596,7 @@
         insightTitle: "专业趋势洞察",
         insightCount: "3 insights",
         classroomTitle: "每日知识课堂",
+        classroomLabel: "设计对比",
         whyLabel: "对你意味着什么",
         refLabel: "Reference",
         footer: "页面数据来自 daily-data.json。每日自动任务会更新同一入口。"
@@ -561,6 +611,7 @@
         insightTitle: "Professional Trend Insight",
         insightCount: "3 insights",
         classroomTitle: "Daily Classroom",
+        classroomLabel: "Design Note",
         whyLabel: "Why it matters to you",
         refLabel: "Reference",
         footer: "Data comes from daily-data.json. The daily automation updates the same page."
@@ -636,6 +687,7 @@
 
     function renderClassroom(item) {
       document.querySelector("#classroom").innerHTML = `
+        <p class="class-label">${copy[lang].classroomLabel}</p>
         <h3 class="class-title">${pick(item.title)}</h3>
         <p class="class-text">${pick(item.text)}</p>
         <p class="ref">${copy[lang].refLabel}: ${item.references}</p>
