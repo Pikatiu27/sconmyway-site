@@ -252,6 +252,7 @@
     .topic.chip { background: var(--lemon); }
     .topic.trade { background: var(--peach); }
     .topic.bio { background: var(--rose); }
+    .topic.crypto { background: var(--lavender); }
 
     .headline {
       margin: 9px 0 0;
@@ -420,11 +421,11 @@
       </header>
 
       <article class="hero">
-        <img src="industry-cover.png" alt="Structural engineering and technology industry cover">
+        <img src="industry-cover.png" alt="Industry briefing cover">
         <div class="hero-copy">
           <p class="eyebrow" id="edition">晨间简报</p>
-          <h1 id="heroTitle">Daily Intelligence</h1>
-          <p class="deck" id="heroDeck">实时行业消息、面向结构工程未来的专业洞察，以及一条跨规范设计知识点。</p>
+          <h1 id="heroTitle">今日行业观察</h1>
+          <p class="deck" id="heroDeck">实时行业消息、结构工程视角的职业洞察，以及一条跨规范课堂笔记。</p>
         </div>
         <div class="watermark">SConmyway</div>
       </article>
@@ -454,14 +455,14 @@
         </section>
       </main>
 
-      <p class="footer-note" id="footerNote">页面数据来自 daily-data.json。每日自动任务会更新同一入口。</p>
+      <p class="footer-note" id="footerNote">内容每日更新，资料来源见各条 Reference。</p>
       <p class="signature">SConmyway</p>
     </div>
   </div>
 
   <script>
     const fallback = {
-      "date": "2026-06-19",
+      "date": "2026-06-20",
       "edition": {
         "zh": "晨间简报",
         "en": "Morning Brief"
@@ -473,29 +474,29 @@
             "en": "AI"
           },
           "title": {
-            "zh": "企业AI智能体进入并购加速期",
-            "en": "Enterprise AI agents enter an M&A phase"
+            "zh": "企业AI并购开始转向可落地客服智能体",
+            "en": "Enterprise AI M&A shifts to deployable service agents"
           },
           "summary": {
-            "zh": "Salesforce以36亿美元收购AI客服智能体公司Fin，说明企业软件竞争正在从“加AI功能”转向“买下可落地的智能体流程”。短期看客服、销售和知识库会最先被重塑，长期看SaaS公司必须证明AI能带来可计量结果。",
-            "en": "Salesforce's $3.6 billion deal for AI agent maker Fin shows enterprise software moving from adding AI features to owning deployable agent workflows. Customer support, sales, and knowledge bases are likely to change first."
+            "zh": "Salesforce于6月16日宣布以36亿美元收购Fin，显示企业AI竞争正从“加一个聊天功能”转向“拿下可直接部署的服务智能体流程”。客服场景率先成为主战场，因为客户现在更看重解决率、系统集成深度和按结果计价的可衡量回报。",
+            "en": "Salesforce's June 16 agreement to buy Fin for $3.6 billion shows enterprise AI moving from feature add-ons to deployable service-agent workflows. Customer support is becoming the first proving ground because buyers now want measurable resolution, integration depth, and outcome-based pricing."
           },
-          "reference": "Investor's Business Daily, Salesforce-Fin acquisition coverage, June 2026"
+          "reference": "Investors.com, Salesforce to acquire Fin, 2026-06-16"
         },
         {
           "topic": {
-            "zh": "机器人",
-            "en": "Robotics"
+            "zh": "半导体",
+            "en": "Semiconductors"
           },
           "title": {
-            "zh": "人形机器人从展示走向产线验证",
-            "en": "Humanoids move toward factory validation"
+            "zh": "先进封装成为AI芯片竞争的真实瓶颈",
+            "en": "Advanced packaging emerges as the real AI chip bottleneck"
           },
           "summary": {
-            "zh": "人形机器人热点正在从发布会演示转向真实产线和供应链验证。Tesla披露Optimus产线准备，Nvidia与制造伙伴也被报道探索机器人参与AI服务器生产。真正关键不只是能走能拿，而是稳定性、维护成本和任务复用率。",
-            "en": "Humanoid robotics is shifting from demonstrations toward production-line validation. Tesla has discussed Optimus production preparation, while Nvidia-linked manufacturing plans point to robots entering server assembly."
+            "zh": "TSMC在欧洲技术论坛上强调，面板级封装短期不会取代CoWoS，说明AI芯片竞争已从算力本身延伸到先进封装与量产良率。对产业链而言，真正稀缺的不只是GPU设计能力，而是能稳定交付高带宽、低延迟、可规模化封装的制造与工艺整合能力。",
+            "en": "TSMC's latest European symposium remarks suggest panel-level packaging will not replace CoWoS soon, underscoring that AI chip competition now depends on packaging yield and scale as much as compute design. The scarce capability is stable high-bandwidth packaging, not chip logic alone."
           },
-          "reference": "Tesla Q1 2026 Update; Reuters reporting cited by TechRadar on Nvidia-Foxconn humanoid deployment"
+          "reference": "Tom's Hardware on TSMC European Technology Symposium remarks, 2026-06-17"
         },
         {
           "topic": {
@@ -503,14 +504,14 @@
             "en": "Crypto"
           },
           "title": {
-            "zh": "稳定币与CBDC竞争进入政治层面",
-            "en": "Stablecoins and CBDCs become political"
+            "zh": "稳定币与CBDC进入政策与利益博弈期",
+            "en": "Stablecoins and CBDCs enter a policy contest"
           },
           "summary": {
-            "zh": "英国围绕“Britcoin”的争论显示，央行数字货币和私人稳定币的竞争已经不只是技术问题。监管、隐私、支付主权和利益冲突会一起进入公共讨论。对行业来说，合规可信度可能比短期交易热度更重要。",
-            "en": "The UK debate over Britcoin shows that CBDCs and private stablecoins are no longer just technical payment tools. Regulation, privacy, monetary sovereignty, and conflicts of interest are becoming central issues."
+            "zh": "英国围绕“Britcoin”和稳定币监管的最新争论表明，数字货币竞争已进入政策与利益协调阶段。市场不再只看支付技术是否可行，而更看隐私、货币主权、银行存款迁移风险与政治游说如何共同塑造最终制度安排。",
+            "en": "The UK's latest Britcoin debate shows digital-currency competition has moved into policy and interest alignment. Markets are no longer judging only technical feasibility, but also privacy, monetary sovereignty, deposit-migration risk, and how politics shapes the final rules."
           },
-          "reference": "The Guardian, Britcoin and stablecoin politics, June 18 2026; Bank of England stablecoin policy materials"
+          "reference": "The Guardian, Britcoin politics, 2026-06-18; Bank of England systemic stablecoin proposal, 2026-03-27"
         }
       ],
       "insights": [
@@ -520,68 +521,68 @@
             "en": "Structural Reliability"
           },
           "title": {
-            "zh": "数字孪生正在向“风险孪生”演化",
-            "en": "Digital twins evolve toward risk twins"
+            "zh": "数字孪生开始要求“可信不确定性”",
+            "en": "Digital twins now need trustworthy uncertainty"
           },
           "summary": {
-            "zh": "结构数字孪生的重点正在从可视化模型转向风险更新：传感器数据、贝叶斯推断、模型误差和构件可靠指标被放进同一套实时框架。对结构工程师来说，这意味着未来的监测系统不能只回答“有没有损伤”，还要回答“风险是否变化、是否需要限载、何时维护最划算”。如果你想往可靠度和智慧基础设施方向发展，概率建模、结构动力学、传感数据清洗和决策分析会越来越像一组技能，而不是互相分开的课程。",
-            "en": "Structural digital twins are moving from visualization toward risk updating, where sensor data, Bayesian inference, model error, and component reliability indices sit in one real-time framework. Future monitoring systems must answer not only whether damage exists, but whether risk has changed, whether load limits are needed, and when maintenance is economically justified."
+            "zh": "近年的结构数字孪生研究不再满足于把传感数据贴到三维模型上，而是要求把测量噪声、模型误差、损伤演化和维护决策一起纳入贝叶斯更新框架。实时SHM中的贝叶斯神经网络，以及面向土木结构的动态贝叶斯网络数字孪生，都在强调“先说明不确定性，再输出判断”。这对你很重要，因为未来监测与评估岗位更看重能否把数据、概率、力学模型和养护决策串成一套可追溯流程，而不是只会做漂亮的可视化展示。",
+            "en": "Recent structural digital-twin work is moving beyond attaching sensor streams to 3D models. The stronger direction is to embed measurement noise, model error, damage evolution, and maintenance choices into Bayesian updating workflows. For your development, the key skill is turning data, probability, mechanics, and decisions into one traceable process."
           },
           "why": {
-            "zh": "建议把可靠度、贝叶斯更新和结构健康监测作为一个组合方向学习。",
-            "en": "Study reliability, Bayesian updating, and structural health monitoring as one connected track."
+            "zh": "把可靠度、贝叶斯更新、结构健康监测和养护决策当成一条连续能力链来学习。",
+            "en": "Treat reliability, Bayesian updating, SHM, and maintenance decisions as one connected capability stack."
           },
-          "reference": "Risk Twin: Real-time Risk Visualization and Control for Structural Systems; A Digital Twin Framework for Civil Engineering Structures; Structural Safety"
+          "reference": "Real-Time Structural Health Monitoring with Bayesian Neural Networks, 2025; A Digital Twin Framework for Civil Engineering Structures, 2023"
         },
         {
           "area": {
-            "zh": "新型材料",
+            "zh": "先进材料",
             "en": "Advanced Materials"
           },
           "title": {
-            "zh": "UHPC设计焦点从强度转向延性",
-            "en": "UHPC design shifts from strength to ductility"
+            "zh": "UHPC设计重点转向可预警延性",
+            "en": "UHPC design is shifting toward warning-rich ductility"
           },
           "summary": {
-            "zh": "UHPC的高强度和裂后性能让它很适合桥梁、加固和薄壁构件，但研究也提醒：预应力UHPC梁可能在裂缝局部化后快速失效，预警不足。行业下一步不只是追求更高抗压强度，而是控制配筋、预应力、截面和拉伸软化行为，让构件出现可识别、可设计的延性破坏。对你来说，材料创新要和极限状态设计、失效模式识别、施工质量控制一起理解，才会变成真正可用的工程判断。",
-            "en": "UHPC's high strength and post-cracking performance make it attractive for bridges, retrofit, and thin members, but research on prestressed UHPC beams warns that crack localization can lead to rapid failure with limited warning. The design focus is shifting toward reinforcement configuration, prestress level, section proportion, and tensile behavior that promote ductile failure modes."
+            "zh": "UHPC的行业关注点正在从“材料很强”转向“构件是否有足够预警和延性”。关于预应力UHPC梁的近期研究表明，裂缝局部化后若配筋、预应力和截面比例不当，构件可能在很少外部征兆下快速失效。对结构工程学习者而言，这提醒你研究新材料时不能只看抗压强度和试验峰值，更要看失效模式、拉伸软化、构造细节和施工质量如何共同决定可设计、可检查、可维护的安全储备。",
+            "en": "The UHPC conversation is shifting from headline strength to whether members retain enough warning and ductility. Recent work on prestressed UHPC beams shows that poor reinforcement, prestress, or section proportion can trigger rapid failure after crack localization. For your career, new materials matter only when their failure modes stay designable and inspectable."
           },
           "why": {
-            "zh": "材料方向要从“性能很强”进一步学到“失效模式是否可控”。",
-            "en": "Move from asking whether a material is strong to whether its failure mode is controllable."
+            "zh": "研究新材料时，把强度、延性、失效模式和施工可控性放在同一个判断框架里。",
+            "en": "Judge new materials through strength, ductility, failure mode, and construction controllability together."
           },
-          "reference": "Flexural Behavior and Design of Prestressed UHPC Beams, 2024; Cement and Concrete Composites; Construction and Building Materials"
+          "reference": "Flexural Behavior and Design of Prestressed UHPC Beams: Failure Mode and Ductility, 2024"
         },
         {
           "area": {
-            "zh": "AI与计算",
-            "en": "AI & Computation"
+            "zh": "AI辅助工程",
+            "en": "AI-Assisted Engineering"
           },
           "title": {
-            "zh": "AI辅助有限元要重视不确定性",
-            "en": "AI-assisted FEA needs uncertainty control"
+            "zh": "AI辅助分析必须保留高保真校核",
+            "en": "AI-assisted analysis still needs high-fidelity checks"
           },
           "summary": {
-            "zh": "AI和代理模型能显著降低有限元参数研究成本，但工程优化里的关键风险是“低成本预测看起来很准，实际却落在训练数据之外”。近期多智能体FEA-AI混合优化研究强调，用AI生成方案、用代理模型筛选，再把高不确定性或关键候选点送回高保真有限元校核。这个思路对结构工程也很有启发：未来AI不是替代结构判断，而是帮助你更快探索设计空间，同时必须保留可靠度、规范边界和高保真校核。",
-            "en": "AI and surrogate models can reduce the cost of finite-element studies, but the central risk is confident-looking prediction outside the training domain. Recent FEA-AI hybrid optimization work uses agents to define problems, surrogates to screen candidates, and high-fidelity FEA to correct uncertain or critical options. The same logic applies to structural engineering."
+            "zh": "AI正在加速有限元前处理、参数搜索和方案筛选，但当前更可靠的工程路线不是让模型直接替代结构判断，而是让它承担低成本探索，再把关键工况、边界条件敏感点和超出训练分布的候选方案送回高保真模型复核。ASCE近年的技能讨论也把AI实践、处理不确定性和感测能力并列提出。对你来说，真正有价值的能力组合是Python、有限元、代理模型、误差识别与可追溯工程表达，而不是只会写提示词。",
+            "en": "AI is speeding up pre-processing, parameter search, and early option screening, but the safer workflow is not to let models replace structural judgment. The stronger pattern is cheap exploration first, then high-fidelity verification for critical cases, sensitive boundaries, and out-of-distribution candidates. The valuable skill stack is Python, FEA, surrogate thinking, error recognition, and traceable engineering communication."
           },
           "why": {
-            "zh": "有限元、Python、代理模型和不确定性量化值得一起练。",
-            "en": "Practice finite elements, Python, surrogate modeling, and uncertainty quantification together."
+            "zh": "把AI当成前端加速器，而把高保真分析、校核与责任判断留在你的核心能力里。",
+            "en": "Use AI as a front-end accelerator, while keeping verification and accountable judgment in your core toolkit."
           },
-          "reference": "A Multi-Agent System for IPMSM Design Optimization via an FEA-AI Hybrid Approach, 2026; Reliability Engineering & System Safety"
+          "reference": "ASCE, The Top 5 Technical Skills Civil Engineers Need, 2025-09-04; GeoMCP: A Trustworthy Framework for AI-Assisted Analytical Geotechnical Engineering, 2026"
         }
       ],
       "classroom": {
         "title": {
-          "zh": "荷载组合里的分项系数差异",
-          "en": "Partial Factors in Load Combinations"
+          "zh": "钢材名义屈服强度的一个小差异",
+          "en": "One Small Difference in Steel Yield Strength"
         },
         "text": {
-          "zh": "中国、澳洲、美国和欧洲规范都会把永久荷载、可变荷载、风荷载和地震作用组合起来，但背后的安全表达不同。中国GB体系和澳洲AS体系常用极限状态设计与分项系数组合；美国ASCE 7/AISC常见LRFD与ASD两套表达；欧洲Eurocode使用作用分项系数、组合系数和材料分项系数配合。跨规范比较时不能只看某个1.2或1.5是否相近，还要同时看目标可靠指标、荷载统计来源、组合系数、材料抗力折减和服务性限值。",
-          "en": "Chinese, Australian, US, and European codes all combine permanent, variable, wind, and seismic actions, but their safety formats differ. China and Australia commonly use limit-state combinations with partial factors; the US often presents LRFD and ASD formats through ASCE 7 and AISC; Europe combines action factors, combination factors, and material partial factors under Eurocode. Similar-looking numbers are not enough: target reliability, load statistics, combination factors, resistance factors, and serviceability limits must be read together."
+          "zh": "中国常见结构钢会用Q235、Q355这类牌号表示名义屈服强度，并且厚度变化会影响取值；澳大利亚常见板材和型钢常见Grade 250、300、350；美国建筑宽翼缘最常见的是ASTM A992，名义屈服强度约345 MPa；欧洲则常见S275、S355，并同样随厚度出现屈服强度调整。跨规范比较时，不能只把牌号里的数字直接当成“完全等价强度”，还要同时核对产品标准、厚度范围、韧性要求和对应设计规范中的抗力折减表达。",
+          "en": "Chinese structural steels often use grades such as Q235 and Q355, with yield values affected by thickness. Australia commonly uses Grade 250, 300, and 350 products, while the most common US wide-flange building steel is ASTM A992 with nominal yield strength of about 345 MPa. Europe often uses S275 and S355, again with thickness-related adjustments. When comparing across codes, do not treat grade numbers as perfectly equivalent strengths; check product standard, thickness range, toughness requirements, and the resistance format used in design."
         },
-        "references": "GB 50009; AS/NZS 1170; ASCE 7; AISC 360; EN 1990 / Eurocode Basis of Structural Design"
+        "references": "GB/T 1591; AS/NZS 3678 and AS/NZS 3679.1; ASTM A992/A992M; EN 10025-2"
       }
     };
 
@@ -590,7 +591,7 @@
         htmlLang: "zh-CN",
         dateLocale: "zh-CN",
         heroTitle: "今日行业观察",
-        heroDeck: "实时行业消息、面向结构工程未来的专业洞察，以及一条跨规范设计知识点。",
+        heroDeck: "实时行业消息、结构工程视角的职业洞察，以及一条跨规范课堂笔记。",
         liveTitle: "实时消息",
         liveCount: "3 updates",
         insightTitle: "专业趋势洞察",
@@ -599,13 +600,13 @@
         classroomLabel: "设计对比",
         whyLabel: "对你意味着什么",
         refLabel: "Reference",
-        footer: "页面数据来自 daily-data.json。每日自动任务会更新同一入口。"
+        footer: "内容每日更新，资料来源见各条 Reference。"
       },
       en: {
         htmlLang: "en",
         dateLocale: "en-AU",
         heroTitle: "Industry Briefing",
-        heroDeck: "Industry signals, future-facing structural engineering insight, and one cross-code design lesson.",
+        heroDeck: "Current industry updates, structural-engineering career signals, and one cross-code classroom note.",
         liveTitle: "Live Updates",
         liveCount: "3 updates",
         insightTitle: "Professional Trend Insight",
@@ -614,20 +615,23 @@
         classroomLabel: "Design Note",
         whyLabel: "Why it matters to you",
         refLabel: "Reference",
-        footer: "Data comes from daily-data.json. The daily automation updates the same page."
+        footer: "Updated daily. Sources are listed under each Reference."
       }
     };
 
     const topicClass = {
       "AI": "ai",
-      "机器人": "robot",
       "Robotics": "robot",
+      "机器人": "robot",
+      "Semiconductors": "chip",
       "半导体": "chip",
       "Chips": "chip",
+      "Cross-border E-commerce": "trade",
       "跨境电商": "trade",
-      "Commerce": "trade",
+      "Biomedicine": "bio",
       "生物医药": "bio",
-      "Biotech": "bio"
+      "Crypto": "crypto",
+      "加密货币": "crypto"
     };
 
     let dailyData = fallback;
@@ -636,6 +640,15 @@
     function pick(value) {
       if (!value || typeof value === "string") return value || "";
       return value[lang] || value.zh || value.en || "";
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
     }
 
     async function loadData() {
@@ -662,11 +675,11 @@
         const topic = pick(item.topic);
         return `
           <div class="news-row">
-            <span class="topic ${topicClass[topic] || "chip"}">${topic}</span>
+            <span class="topic ${escapeHtml(topicClass[topic] || "chip")}">${escapeHtml(topic)}</span>
             <div>
-              <p class="headline">${pick(item.title || item.text)}</p>
-              <p class="summary">${pick(item.summary)}</p>
-              <p class="ref">${copy[lang].refLabel}: ${item.reference || item.source || ""}</p>
+              <p class="headline">${escapeHtml(pick(item.title || item.text))}</p>
+              <p class="summary">${escapeHtml(pick(item.summary))}</p>
+              <p class="ref">${escapeHtml(copy[lang].refLabel)}: ${escapeHtml(item.reference || item.source || "")}</p>
             </div>
           </div>
         `;
@@ -676,21 +689,21 @@
     function renderInsights(items) {
       document.querySelector("#insights").innerHTML = items.map(item => `
         <article class="insight-item">
-          <p class="area">${pick(item.area)}</p>
-          <p class="signal">${pick(item.title || item.signal)}</p>
-          <p class="summary">${pick(item.summary)}</p>
-          <p class="why"><strong>${copy[lang].whyLabel}:</strong> ${pick(item.why)}</p>
-          <p class="ref">${copy[lang].refLabel}: ${item.reference}</p>
+          <p class="area">${escapeHtml(pick(item.area))}</p>
+          <p class="signal">${escapeHtml(pick(item.title || item.signal))}</p>
+          <p class="summary">${escapeHtml(pick(item.summary))}</p>
+          <p class="why"><strong>${escapeHtml(copy[lang].whyLabel)}:</strong> ${escapeHtml(pick(item.why))}</p>
+          <p class="ref">${escapeHtml(copy[lang].refLabel)}: ${escapeHtml(item.reference || "")}</p>
         </article>
       `).join("");
     }
 
     function renderClassroom(item) {
       document.querySelector("#classroom").innerHTML = `
-        <p class="class-label">${copy[lang].classroomLabel}</p>
-        <h3 class="class-title">${pick(item.title)}</h3>
-        <p class="class-text">${pick(item.text)}</p>
-        <p class="ref">${copy[lang].refLabel}: ${item.references}</p>
+        <p class="class-label">${escapeHtml(copy[lang].classroomLabel)}</p>
+        <h3 class="class-title">${escapeHtml(pick(item.title))}</h3>
+        <p class="class-text">${escapeHtml(pick(item.text))}</p>
+        <p class="ref">${escapeHtml(copy[lang].refLabel)}: ${escapeHtml(item.references || "")}</p>
       `;
     }
 
