@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今天带娃去哪儿？</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #29343b;
+      --muted: #5f707b;
+      --paper: rgba(255, 255, 255, 0.88);
+      --line: rgba(41, 52, 59, 0.12);
+      --mint: #bdf3d2;
+      --peach: #ffcdbb;
+      --sky: #bfe3ff;
+      --lemon: #ffe985;
+      --pink: #ffcae2;
+      --lilac: #d4c8ff;
+      --shadow: 0 18px 44px rgba(72, 86, 96, 0.13);
+      --paper-shadow: 0 18px 34px rgba(89, 101, 112, 0.16), inset 0 2px 0 rgba(255, 255, 255, 0.92);
+      --font-en: "Nunito", "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+      --font-zh: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
+      --font-display: "Arial Rounded MT Bold", "Nunito", "PingFang SC", "Microsoft YaHei UI", sans-serif;
+      font-family: var(--font-en);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 6% 4%, rgba(189, 243, 210, 0.86), transparent 21rem),
+        radial-gradient(circle at 94% 0%, rgba(255, 203, 226, 0.76), transparent 22rem),
+        radial-gradient(circle at 88% 78%, rgba(212, 200, 255, 0.62), transparent 22rem),
+        linear-gradient(180deg, #fff8e8 0%, #f2fbff 52%, #fff2fa 100%);
+      font-size: 15px;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .zh {
+      font-family: var(--font-zh);
+    }
+
+    .en {
+      font-family: var(--font-en);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .shell {
+      position: relative;
+      width: min(100%, 560px);
+      margin: 0 auto;
+      padding: 12px 10px 32px;
+      overflow: hidden;
+    }
+
+    .watermark {
+      position: fixed;
+      inset: auto -44px 11vh auto;
+      z-index: -1;
+      color: rgba(41, 52, 59, 0.045);
+      font-size: clamp(66px, 18vw, 174px);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: 0;
+      transform: rotate(-12deg);
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .sticker {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      width: 48px;
+      aspect-ratio: 1;
+      border: 2px solid rgba(255, 255, 255, 0.86);
+      border-radius: 16px;
+      background: var(--paper);
+      box-shadow: 0 12px 24px rgba(72, 86, 96, 0.12);
+      font-size: 25px;
+      transform: rotate(var(--turn, -8deg));
+      user-select: none;
+    }
+
+    .sticker.one {
+      top: 82px;
+      right: 18px;
+      --turn: 10deg;
+    }
+
+    .sticker.two {
+      top: 290px;
+      left: 4px;
+      --turn: -12deg;
+    }
+
+    .sticker.three {
+      right: 6px;
+      bottom: 96px;
+      --turn: 8deg;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 6px 0 12px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      aspect-ratio: 1;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--mint), var(--sky) 48%, var(--pink));
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.68), var(--shadow);
+      font-size: 22px;
+      flex: 0 0 auto;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1.08;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      margin-top: 3px;
+    }
+
+    .lang-toggle {
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 3px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.74);
+      box-shadow: 0 8px 22px rgba(72, 86, 96, 0.08);
+      backdrop-filter: blur(14px);
+    }
+
+    .lang-toggle button {
+      min-width: 42px;
+      border: 0;
+      border-radius: 999px;
+      padding: 8px 10px;
+      color: var(--muted);
+      background: transparent;
+      font: inherit;
+      font-size: 12px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .lang-toggle button[aria-pressed="true"] {
+      color: var(--ink);
+      background: #ffffff;
+      box-shadow: 0 4px 13px rgba(72, 86, 96, 0.13);
+    }
+
+    .hero {
+      padding: 16px 0 10px;
+    }
+
+    h1 {
+      max-width: 100%;
+      margin: 14px 0 8px;
+      font-family: var(--font-display);
+      font-size: clamp(38px, 12.5vw, 78px);
+      font-weight: 900;
+      line-height: 1.02;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 520;
+      line-height: 1.74;
+    }
+
+    .meta-bar {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin: 14px 0 14px;
+    }
+
+    .pill {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.82);
+      color: #40515d;
+      font-size: 13px;
+      font-weight: 650;
+      box-shadow: 0 10px 26px rgba(72, 86, 96, 0.08);
+    }
+
+    .cards {
+      display: grid;
+      gap: 14px;
+    }
+
+    .card {
+      position: relative;
+      padding: 17px 16px 16px 20px;
+      border: 1px solid rgba(41, 52, 59, 0.1);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: var(--paper-shadow);
+      backdrop-filter: blur(18px);
+      overflow: hidden;
+      transform: rotate(var(--tilt, -0.55deg));
+      transform-origin: center;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .card:nth-child(even) {
+      --tilt: 0.55deg;
+    }
+
+    .card:nth-child(3n) {
+      --tilt: -0.35deg;
+    }
+
+    .card:hover {
+      box-shadow: 0 22px 44px rgba(89, 101, 112, 0.18), inset 0 2px 0 rgba(255, 255, 255, 0.9);
+      transform: translateY(-2px) rotate(var(--tilt, -0.55deg));
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 8px;
+      background: var(--accent, var(--mint));
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 27px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #263a45;
+      background: var(--accent-soft, rgba(201, 239, 217, 0.76));
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .score {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      min-height: 27px;
+      color: #b17800;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .card h2 {
+      margin: 14px 0 10px;
+      font-family: var(--font-display);
+      font-size: 22px;
+      line-height: 1.14;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .summary {
+      margin: 0 0 15px;
+      color: #465964;
+      font-size: 14.5px;
+      font-weight: 480;
+      line-height: 1.72;
+    }
+
+    .facts {
+      display: grid;
+      gap: 8px;
+      margin: 0 0 14px;
+      padding: 10px;
+      border: 1px solid rgba(41, 52, 59, 0.08);
+      border-radius: 8px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 248, 232, 0.52));
+    }
+
+    .fact {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      align-items: start;
+      gap: 8px;
+      color: #44535d;
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1.48;
+    }
+
+    .fact span:first-child {
+      width: 24px;
+      text-align: center;
+      filter: drop-shadow(0 2px 2px rgba(72, 86, 96, 0.08));
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      margin-top: 14px;
+    }
+
+    .action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 42px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: #2e3e48;
+      background: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.1;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(72, 86, 96, 0.1);
+    }
+
+    .action.primary {
+      border-color: transparent;
+      background: linear-gradient(135deg, var(--accent, var(--mint)), rgba(255, 255, 255, 0.42));
+      box-shadow: 0 10px 20px rgba(72, 86, 96, 0.13);
+    }
+
+    .reference {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      color: #6d7b84;
+      font-size: 10.5px;
+      font-weight: 560;
+      line-height: 1.58;
+    }
+
+    .reference b {
+      color: #3b4a54;
+    }
+
+    .more-panel {
+      margin-top: 14px;
+      border: 1px solid rgba(41, 52, 59, 0.1);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.76);
+      box-shadow: 0 12px 26px rgba(89, 101, 112, 0.1);
+      overflow: hidden;
+    }
+
+    .more-panel summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 48px;
+      padding: 12px 14px;
+      color: #2f414b;
+      background: linear-gradient(135deg, rgba(255, 233, 133, 0.78), rgba(191, 227, 255, 0.72));
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .more-panel summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .more-panel summary::after {
+      content: "+";
+      display: grid;
+      place-items: center;
+      width: 26px;
+      aspect-ratio: 1;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.78);
+      font-family: var(--font-en);
+      font-size: 18px;
+      line-height: 1;
+      box-shadow: 0 6px 14px rgba(72, 86, 96, 0.1);
+    }
+
+    .more-panel[open] summary::after {
+      content: "-";
+    }
+
+    .more-links {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+    }
+
+    .more-links a {
+      display: flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 10px 11px;
+      border: 1px solid rgba(41, 52, 59, 0.1);
+      border-radius: 8px;
+      color: #354651;
+      background: rgba(255, 255, 255, 0.8);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.25;
+      text-decoration: none;
+    }
+
+    .source-panel {
+      margin-top: 10px;
+    }
+
+    .source-panel summary {
+      background: linear-gradient(135deg, rgba(255, 202, 226, 0.78), rgba(189, 243, 210, 0.72));
+    }
+
+    .source-groups {
+      display: grid;
+      gap: 10px;
+      padding: 12px;
+    }
+
+    .source-group {
+      padding: 11px;
+      border: 1px solid rgba(41, 52, 59, 0.1);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .source-group h3 {
+      margin: 0 0 8px;
+      color: #2f414b;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .source-group p {
+      margin: 0 0 9px;
+      color: #5f707b;
+      font-size: 12px;
+      font-weight: 620;
+      line-height: 1.5;
+    }
+
+    .source-group a {
+      display: inline-flex;
+      margin: 0 6px 7px 0;
+      padding: 7px 9px;
+      border-radius: 999px;
+      color: #344550;
+      background: rgba(255, 248, 232, 0.82);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.1;
+      text-decoration: none;
+    }
+
+    .note {
+      margin-top: 16px;
+      padding: 14px;
+      border: 1px dashed rgba(41, 52, 59, 0.18);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.58);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 540;
+      line-height: 1.6;
+    }
+
+    [data-lang="en"] .zh,
+    [data-lang="zh"] .en {
+      display: none;
+    }
+
+    @media (min-width: 720px) {
+      .shell {
+        padding: 18px 18px 52px;
+      }
+
+      header {
+        padding-bottom: 26px;
+      }
+
+      .hero {
+        padding-top: 24px;
+      }
+
+      .hero p {
+        font-size: 16px;
+        line-height: 1.76;
+      }
+
+      .meta-bar {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .card {
+        padding: 20px 20px 19px 26px;
+      }
+
+      .card h2 {
+        font-size: 24px;
+      }
+
+      .summary {
+        font-size: 15px;
+      }
+
+      .card.featured {
+        grid-column: auto;
+      }
+
+      .sticker {
+        width: 58px;
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .shell {
+        padding: 10px 8px 30px;
+      }
+
+      header {
+        align-items: flex-start;
+        padding-bottom: 10px;
+      }
+
+      .brand {
+        gap: 8px;
+      }
+
+      .mark {
+        width: 36px;
+        border-radius: 10px;
+        font-size: 19px;
+      }
+
+      .brand-text strong {
+        font-size: 14px;
+      }
+
+      .brand-text span {
+        font-size: 11px;
+      }
+
+      .lang-toggle button {
+        min-width: 38px;
+        padding: 8px 9px;
+      }
+
+      .hero {
+        padding-top: 12px;
+      }
+
+      h1 {
+        margin-top: 12px;
+        font-size: clamp(34px, 11.2vw, 42px);
+        line-height: 1.06;
+      }
+
+      .hero p {
+        font-size: 14px;
+        line-height: 1.68;
+      }
+
+      .pill {
+        align-items: flex-start;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .card {
+        padding: 16px 13px 15px 18px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+        line-height: 1.18;
+      }
+
+      .summary {
+        font-size: 14px;
+        line-height: 1.68;
+      }
+
+      .actions {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .action {
+        min-height: 40px;
+        padding: 9px 10px;
+      }
+
+      .more-panel summary {
+        min-height: 44px;
+        padding: 11px 12px;
+        font-size: 17px;
+      }
+
+      .more-links {
+        padding: 10px;
+      }
+
+      .source-groups {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body data-lang="zh">
+  <div class="watermark" aria-hidden="true">SConmyway</div>
+  <div class="shell">
+    <div class="sticker one" aria-hidden="true">🧃</div>
+    <div class="sticker two" aria-hidden="true">⭐</div>
+    <div class="sticker three" aria-hidden="true">🧸</div>
+
+    <header>
+      <div class="brand">
+        <div class="mark" aria-hidden="true">🌈</div>
+        <div class="brand-text">
+          <strong class="zh">悉尼溜娃随手查</strong>
+          <strong class="en">Sydney Kids Finder</strong>
+          <span class="zh">本周 8 条 · 官方链接 · 一键导航</span>
+          <span class="en">8 picks · official links · map-ready</span>
+        </div>
+      </div>
+
+      <div class="lang-toggle" aria-label="Language switch">
+        <button type="button" data-set-lang="zh" aria-pressed="true">中</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <h1 id="page-title">
+          <span class="zh">今天带娃去哪儿？</span>
+          <span class="en">Where to take the kids today?</span>
+        </h1>
+      </section>
+
+      <section class="meta-bar" aria-label="Page status">
+        <div class="pill">
+          <span aria-hidden="true">📅</span>
+          <span class="zh">今天：<span data-today-zh>2026 年 6 月 19 日</span> · 本周：<span data-week-zh>6 月 19 日至 6 月 25 日</span></span>
+          <span class="en">Today: <span data-today-en>19 Jun 2026</span> · Week: <span data-week-en>19 Jun to 25 Jun</span></span>
+        </div>
+      </section>
+
+      <section class="cards" aria-label="Recommended activities">
+        <!-- EVENTS_START -->
+        <article class="card featured" style="--accent:#bdf3d2;--accent-soft:rgba(189,243,210,.78);">
+          <div class="card-top">
+            <span class="tag zh">文化手作 · 周末</span>
+            <span class="tag en">Culture + craft · Weekend</span>
+            <span class="score">★★★★★</span>
+          </div>
+          <h2>
+            <span class="zh">Dragon Boat Festival 端午文化小集市</span>
+            <span class="en">Dragon Boat Festival Cultural Fair</span>
+          </h2>
+          <p class="summary zh">在 Chinese Garden of Friendship 逛两天端午活动：木版画、香包、锡箔画、竹龙舟、粽子示范、茶体验和表演。动手项目多，适合想让孩子边玩边接触传统文化的家庭。</p>
+          <p class="summary en">A two-day cultural fair at the Chinese Garden of Friendship with woodblock printing, tiger pouch craft, foil painting, bamboo dragon boats, zongzi demos, tea tasting and live performances.</p>
+          <div class="facts">
+            <div class="fact"><span>⏰</span><span class="zh">6 月 20 日周六至 6 月 21 日周日，10am-4pm</span><span class="en">Sat 20 Jun to Sun 21 Jun, 10am-4pm</span></div>
+            <div class="fact"><span>📍</span><span class="zh">Chinese Garden of Friendship, Pier Street / Darling Harbour</span><span class="en">Chinese Garden of Friendship, Pier Street / Darling Harbour</span></div>
+            <div class="fact"><span>🎟️</span><span class="zh">花园门票内含，页面标价 $12</span><span class="en">Included with garden entry, listed price $12</span></div>
+          </div>
+          <div class="actions">
+            <a class="action primary" href="https://www.darlingharbour.com/whats-on/events/dragon-boat-festival" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a>
+            <a class="action" href="https://www.google.com/maps/search/?api=1&query=Chinese%20Garden%20of%20Friendship%20Darling%20Harbour%20Sydney" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a>
+          </div>
+          <div class="reference"><b>Reference:</b> Darling Harbour 官方活动页列出 20-21 Jun、10am-4pm、Chinese Garden of Friendship，以及多项全龄手作和表演。</div>
+        </article>
+
+        <article class="card" style="--accent:#ffcdbb;--accent-soft:rgba(255,205,187,.78);">
+          <div class="card-top">
+            <span class="tag zh">电影 · 3-12 岁</span>
+            <span class="tag en">Cinema · Ages 3-12</span>
+            <span class="score">★★★★☆</span>
+          </div>
+          <h2>
+            <span class="zh">Children’s International Film Festival</span>
+            <span class="en">Children’s International Film Festival</span>
+          </h2>
+          <p class="summary zh">给小影迷的国际儿童电影节，30 部儿童电影横跨动画、冒险和温柔故事。适合雨天、精力保守型出门，也方便按年龄挑片。</p>
+          <p class="summary en">A dedicated kids film festival with 30 children’s films, from animation to adventure. Good for rainy days and easy to choose by age recommendation.</p>
+          <div class="facts">
+            <div class="fact"><span>⏰</span><span class="zh">6 月 6 日至 7 月 10 日，每天 10:30am-2:20pm</span><span class="en">6 Jun to 10 Jul, daily 10:30am-2:20pm</span></div>
+            <div class="fact"><span>📍</span><span class="zh">The Ritz Cinema, 47 St Pauls Street, Randwick</span><span class="en">The Ritz Cinema, 47 St Pauls Street, Randwick</span></div>
+            <div class="fact"><span>🎟️</span><span class="zh">票价 from $15</span><span class="en">Tickets from $15</span></div>
+          </div>
+          <div class="actions">
+            <a class="action primary" href="https://whatson.cityofsydney.nsw.gov.au/events/childrens-international-film-festival" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a>
+            <a class="action" href="https://www.google.com/maps/search/?api=1&query=The%20Ritz%20Cinema%2047%20St%20Pauls%20Street%20Randwick%20NSW" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a>
+          </div>
+          <div class="reference"><b>Reference:</b> City of Sydney What’s On 标注活动日期、地点、票价，并说明 CHIFF 面向 3-12 岁儿童。</div>
+        </article>
+
+        <article class="card" style="--accent:#bfe3ff;--accent-soft:rgba(191,227,255,.8);">
+          <div class="card-top">
+            <span class="tag zh">免费 · 绘本互动</span>
+            <span class="tag en">Free · Picture books</span>
+            <span class="score">★★★★★</span>
+          </div>
+          <h2>
+            <span class="zh">The Curious World of Pamela Allen</span>
+            <span class="en">The Curious World of Pamela Allen</span>
+          </h2>
+          <p class="summary zh">State Library 的免费亲子展，把 Pamela Allen 的绘本世界做成可探索空间：树屋、巨型书页、阅读角和角色帽子。适合低龄孩子和喜欢绘本的家庭。</p>
+          <p class="summary en">A free family exhibition at the State Library, turning Pamela Allen’s picture books into playable spaces with a tree, giant pages, reading nooks and character hats.</p>
+          <div class="facts">
+            <div class="fact"><span>⏰</span><span class="zh">持续至 2026 年 7 月 18 日；周五 9am-5pm，周末 10am-5pm</span><span class="en">Until 18 Jul 2026; Fri 9am-5pm, weekends 10am-5pm</span></div>
+            <div class="fact"><span>📍</span><span class="zh">State Library of NSW, Macquarie Street, Sydney</span><span class="en">State Library of NSW, Macquarie Street, Sydney</span></div>
+            <div class="fact"><span>🎟️</span><span class="zh">免费</span><span class="en">Free</span></div>
+          </div>
+          <div class="actions">
+            <a class="action primary" href="https://whatson.cityofsydney.nsw.gov.au/events/the-curious-world-of-pamela-allen" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a>
+            <a class="action" href="https://www.google.com/maps/search/?api=1&query=State%20Library%20of%20NSW%20Macquarie%20Street%20Sydney" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a>
+          </div>
+          <div class="reference"><b>Reference:</b> City of Sydney What’s On 列出开放时间、免费入场，并描述互动绘本展内容。</div>
+        </article>
+
+        <article class="card" style="--accent:#ffe985;--accent-soft:rgba(255,233,133,.78);">
+          <div class="card-top">
+            <span class="tag zh">博物馆 · 科学</span>
+            <span class="tag en">Museum · Science</span>
+            <span class="score">★★★★☆</span>
+          </div>
+          <h2>
+            <span class="zh">Bloodsuckers: Nature’s Vampires</span>
+            <span class="en">Bloodsuckers: Nature’s Vampires</span>
+          </h2>
+          <p class="summary zh">Australian Museum 的吸血生物主题展，内容有蚊群模拟、显微镜、可触摸模型和传说里的“吸血鬼”。有一点点怪，但很适合好奇心强的孩子。</p>
+          <p class="summary en">A family-friendly Australian Museum exhibition with a mozzie swarm simulator, microscopes, touchable models and the science behind real and mythical bloodsuckers.</p>
+          <div class="facts">
+            <div class="fact"><span>⏰</span><span class="zh">4 月 3 日至 10 月 11 日；每日 10am-4pm</span><span class="en">3 Apr to 11 Oct; daily 10am-4pm</span></div>
+            <div class="fact"><span>📍</span><span class="zh">Australian Museum, Cnr William & College Streets, Sydney</span><span class="en">Australian Museum, Cnr William & College Streets, Sydney</span></div>
+            <div class="fact"><span>🎟️</span><span class="zh">成人 $31，儿童 $20，4 岁以下免费</span><span class="en">Adult $31, child $20, under 4 free</span></div>
+          </div>
+          <div class="actions">
+            <a class="action primary" href="https://whatson.cityofsydney.nsw.gov.au/events/bloodsuckers-natures-vampires" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a>
+            <a class="action" href="https://www.google.com/maps/search/?api=1&query=Australian%20Museum%20Cnr%20William%20and%20College%20Streets%20Sydney" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a>
+          </div>
+          <div class="reference"><b>Reference:</b> City of Sydney What’s On 标注每日开放、票价和家庭友好互动内容。</div>
+        </article>
+
+        <article class="card" style="--accent:#d4c8ff;--accent-soft:rgba(212,200,255,.78);">
+          <div class="card-top">
+            <span class="tag zh">天文 · 6 岁+</span>
+            <span class="tag en">Astronomy · 6+</span>
+            <span class="score">★★★★☆</span>
+          </div>
+          <h2>
+            <span class="zh">Sydney Observatory Family Tours</span>
+            <span class="en">Sydney Observatory Family Tours</span>
+          </h2>
+          <p class="summary zh">面向含 6 岁以上儿童小团体的 Observatory 导览，可以看信号旗、气象测量、历史和望远镜。下午到晚上都有场次，适合想做一点“认真但不无聊”的亲子活动。</p>
+          <p class="summary en">A family-friendly Observatory tour for groups with children aged six and older, covering flag signalling, weather, history and telescopes with harbour views.</p>
+          <div class="facts">
+            <div class="fact"><span>⏰</span><span class="zh">周五、周六 12:30pm-8pm；持续至 2027 年 8 月</span><span class="en">Fridays and Saturdays, 12:30pm-8pm; running to Aug 2027</span></div>
+            <div class="fact"><span>📍</span><span class="zh">Sydney Observatory, Watson Road, The Rocks</span><span class="en">Sydney Observatory, Watson Road, The Rocks</span></div>
+            <div class="fact"><span>🎟️</span><span class="zh">成人 $36，儿童 $24</span><span class="en">Adult $36, child $24</span></div>
+          </div>
+          <div class="actions">
+            <a class="action primary" href="https://whatson.cityofsydney.nsw.gov.au/events/sydney-observatory-family-tours" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a>
+            <a class="action" href="https://www.google.com/maps/search/?api=1&query=Sydney%20Observatory%20Watson%20Road%20The%20Rocks%20NSW" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a>
+          </div>
+          <div class="reference"><b>Reference:</b> City of Sydney What’s On 列明周五周六时段、6 岁以上儿童友好导览和票价。</div>
+        </article>
+
+        <article class="card" style="--accent:#ffcae2;--accent-soft:rgba(255,202,226,.78);">
+          <div class="card-top">
+            <span class="tag zh">海洋 · 手作</span>
+            <span class="tag en">Ocean · Hands-on</span>
+            <span class="score">★★★★☆</span>
+          </div>
+          <h2>
+            <span class="zh">World Oceans Day at SEA LIFE Sydney Aquarium</span>
+            <span class="en">World Oceans Day at SEA LIFE Sydney Aquarium</span>
+          </h2>
+          <p class="summary zh">SEA LIFE 的海洋主题活动持续到本周末，有感官和手作活动、海洋故事时间、Ocean Explorer Station 和保育内容。适合喜欢动物、海洋和室内活动的小朋友。</p>
+          <p class="summary en">SEA LIFE’s ocean-themed program runs through the weekend, with sensory craft activities, storytime, an Ocean Explorer Station and conservation storytelling.</p>
+          <div class="facts">
+            <div class="fact"><span>⏰</span><span class="zh">6 月 1 日至 6 月 21 日；每日 10am-5pm，4pm 最后入场</span><span class="en">1 Jun to 21 Jun; daily 10am-5pm, last entry 4pm</span></div>
+            <div class="fact"><span>📍</span><span class="zh">SEA LIFE Sydney Aquarium, 1-5 Wheat Road, Darling Harbour</span><span class="en">SEA LIFE Sydney Aquarium, 1-5 Wheat Road, Darling Harbour</span></div>
+            <div class="fact"><span>🎟️</span><span class="zh">票价见官网</span><span class="en">See official page for tickets</span></div>
+          </div>
+          <div class="actions">
+            <a class="action primary" href="https://www.darlingharbour.com/whats-on/events/world-oceans-day-at-sea-life-sydney-aquarium" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a>
+            <a class="action" href="https://www.google.com/maps/search/?api=1&query=SEA%20LIFE%20Sydney%20Aquarium%201-5%20Wheat%20Road%20Darling%20Harbour" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a>
+          </div>
+          <div class="reference"><b>Reference:</b> Darling Harbour 官方活动页列出 1-21 Jun、每日 10am-5pm、SEA LIFE Sydney Aquarium，以及儿童手作和海洋保育活动。</div>
+        </article>
+
+        <article class="card" style="--accent:#aeece8;--accent-soft:rgba(174,236,232,.78);">
+          <div class="card-top">
+            <span class="tag zh">免费 · 艺术游乐场</span>
+            <span class="tag en">Free · Art playground</span>
+            <span class="score">★★★★★</span>
+          </div>
+          <h2>
+            <span class="zh">Mike Hewson: The Key’s Under the Mat</span>
+            <span class="en">Mike Hewson: The Key’s Under the Mat</span>
+          </h2>
+          <p class="summary zh">Art Gallery of NSW 的地下艺术公园，把展厅变成可进入、可停留、可玩的空间：秋千、monkey bars、水区和公共空间感。免费、全天候，适合想放电又想看点艺术的家庭。</p>
+          <p class="summary en">An underground art park at the Art Gallery of NSW, with swings, monkey bars, a water zone and playful social sculpture. Free, indoor-friendly and made for all ages.</p>
+          <div class="facts">
+            <div class="fact"><span>⏰</span><span class="zh">持续至 2026 年 8 月 23 日；多数日 10am-5pm，周三至 10pm</span><span class="en">Until 23 Aug 2026; most days 10am-5pm, Wednesdays until 10pm</span></div>
+            <div class="fact"><span>📍</span><span class="zh">Art Gallery of NSW, Art Gallery Road, Sydney</span><span class="en">Art Gallery of NSW, Art Gallery Road, Sydney</span></div>
+            <div class="fact"><span>🎟️</span><span class="zh">免费</span><span class="en">Free</span></div>
+          </div>
+          <div class="actions">
+            <a class="action primary" href="https://whatson.cityofsydney.nsw.gov.au/events/mike-hewson-the-keys-under-the-mat" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a>
+            <a class="action" href="https://www.google.com/maps/search/?api=1&query=Art%20Gallery%20of%20NSW%20Art%20Gallery%20Road%20Sydney" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a>
+          </div>
+          <div class="reference"><b>Reference:</b> City of Sydney What’s On 标注免费、全龄，并描述 Art Gallery of NSW 内的互动艺术公园元素。</div>
+        </article>
+
+        <article class="card" style="--accent:#ffc978;--accent-soft:rgba(255,201,120,.78);">
+          <div class="card-top">
+            <span class="tag zh">室内 · 拍照互动</span>
+            <span class="tag en">Indoor · Photo fun</span>
+            <span class="score">★★★★☆</span>
+          </div>
+          <h2>
+            <span class="zh">Museum of Illusions Sydney</span>
+            <span class="en">Museum of Illusions Sydney</span>
+          </h2>
+          <p class="summary zh">70 多个错觉展项，包含倾斜房间、旋转隧道、无限镜、全息影像和万花筒。位置在 George St，适合城市里临时安排、下雨天或想拍可爱照片的家庭。</p>
+          <p class="summary en">More than 70 illusion exhibits, including a tilted room, vortex tunnel, infinity mirrors, holograms and kaleidoscopes. Central, indoor and highly photogenic.</p>
+          <div class="facts">
+            <div class="fact"><span>⏰</span><span class="zh">持续至 2027 年 11 月；周五周六 10am-8pm，其他日期见官网</span><span class="en">Until Nov 2027; Fri-Sat 10am-8pm, see official page for other days</span></div>
+            <div class="fact"><span>📍</span><span class="zh">Museum of Illusions Sydney, 413 George St, Sydney</span><span class="en">Museum of Illusions Sydney, 413 George St, Sydney</span></div>
+            <div class="fact"><span>🎟️</span><span class="zh">成人 $38，儿童 $30</span><span class="en">Adult $38, child $30</span></div>
+          </div>
+          <div class="actions">
+            <a class="action primary" href="https://whatson.cityofsydney.nsw.gov.au/events/museum-of-illusions-sydney" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a>
+            <a class="action" href="https://www.google.com/maps/search/?api=1&query=Museum%20of%20Illusions%20Sydney%20413%20George%20St%20Sydney" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a>
+          </div>
+          <div class="reference"><b>Reference:</b> City of Sydney What’s On 列出地址、开放时段、票价和 70 多个沉浸式错觉展项。</div>
+        </article>
+        <!-- EVENTS_END -->
+      </section>
+
+      <details class="more-panel">
+        <summary>
+          <span class="zh">More · 更多活动</span>
+          <span class="en">More activities</span>
+        </summary>
+        <div class="more-links">
+          <a href="https://whatson.cityofsydney.nsw.gov.au/categories/kids-and-family" target="_blank" rel="noreferrer">
+            <span class="zh">City of Sydney · Kids & family 活动</span>
+            <span class="en">City of Sydney · Kids & family events</span>
+          </a>
+          <a href="https://www.darlingharbour.com/whats-on" target="_blank" rel="noreferrer">
+            <span class="zh">Darling Harbour · 本周活动</span>
+            <span class="en">Darling Harbour · What's on</span>
+          </a>
+          <a href="https://www.sydneyoperahouse.com/kids-families" target="_blank" rel="noreferrer">
+            <span class="zh">Sydney Opera House · Kids & families</span>
+            <span class="en">Sydney Opera House · Kids & families</span>
+          </a>
+          <a href="https://australian.museum/whats-on/" target="_blank" rel="noreferrer">
+            <span class="zh">Australian Museum · What's on</span>
+            <span class="en">Australian Museum · What's on</span>
+          </a>
+          <a href="https://www.sl.nsw.gov.au/whats-on" target="_blank" rel="noreferrer">
+            <span class="zh">State Library of NSW · What's on</span>
+            <span class="en">State Library of NSW · What's on</span>
+          </a>
+        </div>
+      </details>
+
+      <details class="more-panel source-panel">
+        <summary>
+          <span class="zh">Sources · 信息来源</span>
+          <span class="en">Sources</span>
+        </summary>
+        <div class="source-groups">
+          <section class="source-group">
+            <h3>
+              <span class="zh">A级：官方活动页 / Council</span>
+              <span class="en">Tier A: official event pages / councils</span>
+            </h3>
+            <p class="zh">优先采用。日期、地点、票价、年龄限制以这里为准。</p>
+            <p class="en">Primary sources. Dates, venue, price and age limits should be verified here.</p>
+            <a href="https://whatson.cityofsydney.nsw.gov.au/categories/kids-and-family" target="_blank" rel="noreferrer">City of Sydney</a>
+            <a href="https://www.innerwest.nsw.gov.au/explore/whats-on" target="_blank" rel="noreferrer">Inner West</a>
+            <a href="https://www.randwick.nsw.gov.au/about-council/news/events" target="_blank" rel="noreferrer">Randwick</a>
+            <a href="https://atparramatta.com/whats-on" target="_blank" rel="noreferrer">Parramatta</a>
+            <a href="https://www.canadabay.nsw.gov.au/lifestyle/events" target="_blank" rel="noreferrer">Canada Bay</a>
+          </section>
+
+          <section class="source-group">
+            <h3>
+              <span class="zh">B级：亲子友好场馆官网</span>
+              <span class="en">Tier B: family-friendly venue sites</span>
+            </h3>
+            <p class="zh">适合补足博物馆、剧场、图书馆、水族馆和节假日项目。</p>
+            <p class="en">Good for museums, theatres, libraries, aquariums and school-holiday programs.</p>
+            <a href="https://www.darlingharbour.com/whats-on" target="_blank" rel="noreferrer">Darling Harbour</a>
+            <a href="https://www.sydneyoperahouse.com/kids-families" target="_blank" rel="noreferrer">Opera House</a>
+            <a href="https://australian.museum/whats-on/" target="_blank" rel="noreferrer">Australian Museum</a>
+            <a href="https://www.artgallery.nsw.gov.au/whats-on/" target="_blank" rel="noreferrer">Art Gallery NSW</a>
+            <a href="https://www.sl.nsw.gov.au/whats-on" target="_blank" rel="noreferrer">State Library NSW</a>
+            <a href="https://www.sydneyolympicpark.com.au/Things-to-Do/Events" target="_blank" rel="noreferrer">Sydney Olympic Park</a>
+          </section>
+
+          <section class="source-group">
+            <h3>
+              <span class="zh">C级：票务与聚合平台</span>
+              <span class="en">Tier C: ticketing and aggregators</span>
+            </h3>
+            <p class="zh">用于发现更多活动，但入选前要回到主办方官网二次核验。</p>
+            <p class="en">Useful for discovery, but shortlisted events should be checked against the organiser site.</p>
+            <a href="https://www.eventbrite.com.au/d/australia--sydney/kids-events/" target="_blank" rel="noreferrer">Eventbrite Kids</a>
+            <a href="https://www.timeout.com/sydney/kids" target="_blank" rel="noreferrer">Time Out Kids</a>
+            <a href="https://ellaslist.com.au/sydney/events" target="_blank" rel="noreferrer">Ellaslist</a>
+          </section>
+
+          <section class="source-group">
+            <h3>
+              <span class="zh">D级：小红书 / Facebook / 社群</span>
+              <span class="en">Tier D: Xiaohongshu / Facebook / community tips</span>
+            </h3>
+            <p class="zh">只作为发现线索。除非能找到官网、主办方页面或清晰报名页，否则不进入推荐。</p>
+            <p class="en">Discovery only. A tip should not become a recommendation without an organiser page, official listing or clear booking page.</p>
+          </section>
+        </div>
+      </details>
+
+      <p class="note zh">说明：这是一个静态网页原型，已按 2026 年 6 月 19 日检索结果填入。本地静态页不能自动抓取小红书、Facebook 或 council 最新帖子；若要做到“每天打开自动更新”，下一步需要接入后端抓取、RSS/API、人工审核队列或可编辑数据源。</p>
+      <p class="note en">Note: this is a static prototype populated from checks on 19 Jun 2026. A local static page cannot automatically scrape Xiaohongshu, Facebook or council updates; true daily refresh needs a backend feed, API/RSS integrations, review queue or editable data source.</p>
+    </main>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll("[data-set-lang]");
+    const root = document.body;
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const lang = button.dataset.setLang;
+        root.dataset.lang = lang;
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        document.title = lang === "zh" ? "今天带娃去哪儿？" : "Where to take the kids today?";
+        buttons.forEach((item) => {
+          item.setAttribute("aria-pressed", String(item === button));
+        });
+      });
+    });
+
+    const now = new Date();
+    const weekEnd = new Date(now);
+    weekEnd.setDate(now.getDate() + 6);
+
+    document.querySelector("[data-today-zh]").textContent = new Intl.DateTimeFormat("zh-CN", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    }).format(now);
+    document.querySelector("[data-today-en]").textContent = new Intl.DateTimeFormat("en-AU", {
+      day: "numeric",
+      month: "short",
+      year: "numeric"
+    }).format(now);
+    document.querySelector("[data-week-zh]").textContent = `${new Intl.DateTimeFormat("zh-CN", {
+      month: "long",
+      day: "numeric"
+    }).format(now)}至${new Intl.DateTimeFormat("zh-CN", {
+      month: "long",
+      day: "numeric"
+    }).format(weekEnd)}`;
+    document.querySelector("[data-week-en]").textContent = `${new Intl.DateTimeFormat("en-AU", {
+      day: "numeric",
+      month: "short"
+    }).format(now)} to ${new Intl.DateTimeFormat("en-AU", {
+      day: "numeric",
+      month: "short"
+    }).format(weekEnd)}`;
+  </script>
+</body>
+</html>

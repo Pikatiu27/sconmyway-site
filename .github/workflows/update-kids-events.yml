@@ -1,0 +1,34 @@
+name: Weekly kids event refresh
+
+on:
+  schedule:
+    # Friday early morning in Sydney: 19:00 UTC Thu is 5am/6am depending DST.
+    - cron: "0 19 * * 4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-kids-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update kids activities
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+        run: npm run update:kids
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update Sydney kids activities"
+          file_pattern: kids/index.html kids/data/*.json

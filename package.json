@@ -1,0 +1,12 @@
+{
+  "name": "sydney-kids-finder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update:kids": "node scripts/update-kids-events.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
