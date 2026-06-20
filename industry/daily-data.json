@@ -18,7 +18,13 @@
         "zh": "Salesforce于6月16日宣布以36亿美元收购Fin，显示企业AI竞争正从“加一个聊天功能”转向“拿下可直接部署的服务智能体流程”。客服场景率先成为主战场，因为客户现在更看重解决率、系统集成深度和按结果计价的可衡量回报。",
         "en": "Salesforce's June 16 agreement to buy Fin for $3.6 billion shows enterprise AI moving from feature add-ons to deployable service-agent workflows. Customer support is becoming the first proving ground because buyers now want measurable resolution, integration depth, and outcome-based pricing."
       },
-      "reference": "Investors.com, Salesforce to acquire Fin, 2026-06-16"
+      "reference": "Investors.com, Salesforce to acquire Fin, 2026-06-16",
+      "referenceLinks": [
+        {
+          "label": "Investors.com: Salesforce and Fin acquisition coverage",
+          "url": "https://www.investors.com/search/?query=Salesforce%20Fin"
+        }
+      ]
     },
     {
       "topic": {
@@ -33,7 +39,13 @@
         "zh": "TSMC在欧洲技术论坛上强调，面板级封装短期不会取代CoWoS，说明AI芯片竞争已从算力本身延伸到先进封装与量产良率。对产业链而言，真正稀缺的不只是GPU设计能力，而是能稳定交付高带宽、低延迟、可规模化封装的制造与工艺整合能力。",
         "en": "TSMC's latest European symposium remarks suggest panel-level packaging will not replace CoWoS soon, underscoring that AI chip competition now depends on packaging yield and scale as much as compute design. The scarce capability is stable high-bandwidth packaging, not chip logic alone."
       },
-      "reference": "Tom's Hardware on TSMC European Technology Symposium remarks, 2026-06-17"
+      "reference": "Tom's Hardware on TSMC European Technology Symposium remarks, 2026-06-17",
+      "referenceLinks": [
+        {
+          "label": "Tom's Hardware: TSMC and CoWoS coverage",
+          "url": "https://www.tomshardware.com/search?searchTerm=TSMC%20CoWoS"
+        }
+      ]
     },
     {
       "topic": {
@@ -48,7 +60,17 @@
         "zh": "英国围绕“Britcoin”和稳定币监管的最新争论表明，数字货币竞争已进入政策与利益协调阶段。市场不再只看支付技术是否可行，而更看隐私、货币主权、银行存款迁移风险与政治游说如何共同塑造最终制度安排。",
         "en": "The UK's latest Britcoin debate shows digital-currency competition has moved into policy and interest alignment. Markets are no longer judging only technical feasibility, but also privacy, monetary sovereignty, deposit-migration risk, and how politics shapes the final rules."
       },
-      "reference": "The Guardian, Britcoin politics, 2026-06-18; Bank of England systemic stablecoin proposal, 2026-03-27"
+      "reference": "The Guardian, Britcoin politics, 2026-06-18; Bank of England systemic stablecoin proposal, 2026-03-27",
+      "referenceLinks": [
+        {
+          "label": "The Guardian: Britcoin coverage",
+          "url": "https://www.theguardian.com/search?q=Britcoin"
+        },
+        {
+          "label": "Bank of England: Stablecoins",
+          "url": "https://www.bankofengland.co.uk/financial-stability/digital-regulation-and-infrastructure/stablecoins"
+        }
+      ]
     }
   ],
   "insights": [
@@ -69,7 +91,17 @@
         "zh": "把可靠度、贝叶斯更新、结构健康监测和养护决策当成一条连续能力链来学习。",
         "en": "Treat reliability, Bayesian updating, SHM, and maintenance decisions as one connected capability stack."
       },
-      "reference": "Real-Time Structural Health Monitoring with Bayesian Neural Networks, 2025; A Digital Twin Framework for Civil Engineering Structures, 2023"
+      "reference": "Real-Time Structural Health Monitoring with Bayesian Neural Networks, 2025; A Digital Twin Framework for Civil Engineering Structures, 2023",
+      "referenceLinks": [
+        {
+          "label": "Google Scholar: Bayesian neural networks for real-time SHM",
+          "url": "https://scholar.google.com/scholar?q=Real-Time+Structural+Health+Monitoring+with+Bayesian+Neural+Networks"
+        },
+        {
+          "label": "Google Scholar: Digital twin framework for civil engineering structures",
+          "url": "https://scholar.google.com/scholar?q=A+Digital+Twin+Framework+for+Civil+Engineering+Structures"
+        }
+      ]
     },
     {
       "area": {
@@ -88,7 +120,13 @@
         "zh": "研究新材料时，把强度、延性、失效模式和施工可控性放在同一个判断框架里。",
         "en": "Judge new materials through strength, ductility, failure mode, and construction controllability together."
       },
-      "reference": "Flexural Behavior and Design of Prestressed UHPC Beams: Failure Mode and Ductility, 2024"
+      "reference": "Flexural Behavior and Design of Prestressed UHPC Beams: Failure Mode and Ductility, 2024",
+      "referenceLinks": [
+        {
+          "label": "Google Scholar: Prestressed UHPC beam failure mode and ductility",
+          "url": "https://scholar.google.com/scholar?q=Flexural+Behavior+and+Design+of+Prestressed+UHPC+Beams+Failure+Mode+Ductility"
+        }
+      ]
     },
     {
       "area": {
@@ -107,7 +145,17 @@
         "zh": "把AI当成前端加速器，而把高保真分析、校核与责任判断留在你的核心能力里。",
         "en": "Use AI as a front-end accelerator, while keeping verification and accountable judgment in your core toolkit."
       },
-      "reference": "ASCE, The Top 5 Technical Skills Civil Engineers Need, 2025-09-04; GeoMCP: A Trustworthy Framework for AI-Assisted Analytical Geotechnical Engineering, 2026"
+      "reference": "ASCE, The Top 5 Technical Skills Civil Engineers Need, 2025-09-04; GeoMCP: A Trustworthy Framework for AI-Assisted Analytical Geotechnical Engineering, 2026",
+      "referenceLinks": [
+        {
+          "label": "ASCE: Civil engineering technical skills",
+          "url": "https://www.asce.org/search-results?searchQuery=technical%20skills%20civil%20engineers"
+        },
+        {
+          "label": "arXiv: GeoMCP",
+          "url": "https://arxiv.org/search/?query=GeoMCP&searchtype=all"
+        }
+      ]
     }
   ],
   "classroom": {
@@ -119,6 +167,24 @@
       "zh": "中国常见结构钢会用Q235、Q355这类牌号表示名义屈服强度，并且厚度变化会影响取值；澳大利亚常见板材和型钢常见Grade 250、300、350；美国建筑宽翼缘最常见的是ASTM A992，名义屈服强度约345 MPa；欧洲则常见S275、S355，并同样随厚度出现屈服强度调整。跨规范比较时，不能只把牌号里的数字直接当成“完全等价强度”，还要同时核对产品标准、厚度范围、韧性要求和对应设计规范中的抗力折减表达。",
       "en": "Chinese structural steels often use grades such as Q235 and Q355, with yield values affected by thickness. Australia commonly uses Grade 250, 300, and 350 products, while the most common US wide-flange building steel is ASTM A992 with nominal yield strength of about 345 MPa. Europe often uses S275 and S355, again with thickness-related adjustments. When comparing across codes, do not treat grade numbers as perfectly equivalent strengths; check product standard, thickness range, toughness requirements, and the resistance format used in design."
     },
-    "references": "GB/T 1591; AS/NZS 3678 and AS/NZS 3679.1; ASTM A992/A992M; EN 10025-2"
+    "references": "GB/T 1591; AS/NZS 3678 and AS/NZS 3679.1; ASTM A992/A992M; EN 10025-2",
+    "referenceLinks": [
+      {
+        "label": "China National Standard Information Service",
+        "url": "https://std.samr.gov.cn/"
+      },
+      {
+        "label": "Standards Australia catalogue",
+        "url": "https://www.standards.org.au/standards-catalogue"
+      },
+      {
+        "label": "ASTM A992/A992M",
+        "url": "https://www.astm.org/a0992_a0992m.html"
+      },
+      {
+        "label": "BSI catalogue: EN 10025-2",
+        "url": "https://knowledge.bsigroup.com/search?query=EN%2010025-2"
+      }
+    ]
   }
 }
