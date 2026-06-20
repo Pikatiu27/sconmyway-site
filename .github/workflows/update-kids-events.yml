@@ -2,8 +2,8 @@ name: Weekly kids event refresh
 
 on:
   schedule:
-    # Friday early morning in Sydney: 19:00 UTC Thu is 5am/6am depending DST.
-    - cron: "0 19 * * 4"
+    # Covers 06:00 and 07:00 Friday locally across AEST/AEDT.
+    - cron: "0 19,20,21 * * 4"
   workflow_dispatch:
 
 permissions:
@@ -21,14 +21,50 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Check local refresh window
+        id: gate
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: node scripts/check-kids-update.mjs gate kids/data/events.json
+
+      - name: Show refresh decision
+        run: echo "${{ steps.gate.outputs.reason }}"
+
       - name: Update kids activities
+        if: steps.gate.outputs.should_run == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
         run: npm run update:kids
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Update Sydney kids activities"
-          file_pattern: kids/index.html kids/data/*.json
+      - name: Validate UTF-8 and generated JSON
+        if: steps.gate.outputs.should_run == 'true'
+        run: node scripts/check-kids-update.mjs validate kids/data/events.json
+
+      - name: Commit and push with retry
+        if: steps.gate.outputs.should_run == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kids/index.html kids/data/events.json
+          if git diff --cached --quiet; then
+            echo "No content changes to commit."
+          else
+            git commit -m "Update weekly kids activities"
+          fi
+          pushed=false
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then pushed=true; break; fi
+            echo "Push attempt $attempt failed; retrying in 15 seconds."
+            sleep 15
+          done
+          test "$pushed" = true
+
+      - name: Confirm remote update
+        if: steps.gate.outputs.should_run == 'true'
+        shell: bash
+        run: |
+          git fetch origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
+          echo "Remote main confirmed at $(git rev-parse --short HEAD)."
