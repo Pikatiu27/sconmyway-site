@@ -125,6 +125,10 @@
       min-width: 0;
     }
 
+    .brand-text {
+      min-width: 0;
+    }
+
     .mark {
       display: grid;
       place-items: center;
@@ -140,17 +144,26 @@
     .brand-text strong {
       display: block;
       font-family: var(--font-display);
-      font-size: 16px;
-      font-weight: 900;
-      line-height: 1.08;
+      color: #26353d;
+      font-size: 17px;
+      font-weight: 950;
+      line-height: 1.04;
     }
 
-    .brand-text span {
+    .brand-text > span {
       display: block;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 650;
-      margin-top: 3px;
+      color: #7a8890;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 5px;
+    }
+
+    .brand-text strong span {
+      display: inline;
+      color: inherit;
+      font: inherit;
+      margin: 0;
     }
 
     .lang-toggle {
@@ -167,23 +180,28 @@
     .header-tools {
       display: flex;
       align-items: center;
-      gap: 7px;
+      gap: 8px;
       flex: 0 0 auto;
     }
 
     .city-select {
-      min-height: 38px;
-      max-width: 126px;
-      padding: 0 30px 0 12px;
-      border: 1px solid var(--line);
+      width: 148px;
+      min-height: 44px;
+      padding: 0 34px 0 15px;
+      border: 1px solid rgba(45, 59, 68, 0.16);
       border-radius: 999px;
       color: var(--ink);
-      background: rgba(255, 255, 255, 0.82);
-      box-shadow: 0 8px 22px rgba(72, 86, 96, 0.08);
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 9px 24px rgba(72, 86, 96, 0.12);
       font: inherit;
-      font-size: 12px;
-      font-weight: 850;
+      font-size: 14px;
+      font-weight: 900;
       cursor: pointer;
+    }
+
+    .city-select:focus-visible {
+      outline: 3px solid rgba(119, 205, 194, 0.34);
+      outline-offset: 2px;
     }
 
     [data-city="sydney"] [data-city-panel="melbourne"],
@@ -223,6 +241,10 @@
       line-height: 1.02;
       letter-spacing: 0;
       text-wrap: balance;
+    }
+
+    h1 .zh {
+      font-size: 0.88em;
     }
 
     .hero p {
@@ -625,11 +647,12 @@
       }
 
       .brand-text strong {
-        font-size: 14px;
+        font-size: 15px;
       }
 
-      .brand-text span {
-        font-size: 11px;
+      .brand-text > span {
+        font-size: 10px;
+        margin-top: 4px;
       }
 
       .lang-toggle button {
@@ -644,9 +667,10 @@
       }
 
       .city-select {
-        min-height: 34px;
-        max-width: 112px;
-        padding-left: 10px;
+        width: 134px;
+        min-height: 40px;
+        padding-left: 13px;
+        font-size: 13px;
       }
 
       .hero {
