@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -11,39 +11,39 @@
         "en": "AI"
       },
       "title": {
-        "zh": "企业AI并购开始转向可落地客服智能体",
-        "en": "Enterprise AI M&A shifts to deployable service agents"
+        "zh": "IEA警示AI扩张将把数据中心电力推到竞争核心",
+        "en": "IEA puts data-centre electricity at the center of the AI race"
       },
       "summary": {
-        "zh": "Salesforce于6月16日宣布以36亿美元收购Fin，显示企业AI竞争正从“加一个聊天功能”转向“拿下可直接部署的服务智能体流程”。客服场景率先成为主战场，因为客户现在更看重解决率、系统集成深度和按结果计价的可衡量回报。",
-        "en": "Salesforce's June 16 agreement to buy Fin for $3.6 billion shows enterprise AI moving from feature add-ons to deployable service-agent workflows. Customer support is becoming the first proving ground because buyers now want measurable resolution, integration depth, and outcome-based pricing."
+        "zh": "IEA最新《Energy and AI》指出，AI普及将显著抬高数据中心用电需求，竞争焦点正从模型能力延伸到电力接入、冷却效率与低碳电源匹配，谁能更快锁定稳定电力，谁就更有扩张优势。",
+        "en": "The IEA's latest Energy and AI report argues that widespread AI deployment will materially lift data-centre electricity demand. Competition is therefore widening from model capability to grid access, cooling efficiency, and reliable low-carbon power procurement."
       },
-      "reference": "Investors.com, Salesforce to acquire Fin, 2026-06-16",
+      "reference": "IEA, Energy and AI, published 2025-04-10",
       "referenceLinks": [
         {
-          "label": "Investors.com: Salesforce and Fin acquisition coverage",
-          "url": "https://www.investors.com/search/?query=Salesforce%20Fin"
+          "label": "IEA: Energy and AI",
+          "url": "https://www.iea.org/reports/energy-and-ai"
         }
       ]
     },
     {
       "topic": {
-        "zh": "半导体",
-        "en": "Semiconductors"
+        "zh": "AI",
+        "en": "AI"
       },
       "title": {
-        "zh": "先进封装成为AI芯片竞争的真实瓶颈",
-        "en": "Advanced packaging emerges as the real AI chip bottleneck"
+        "zh": "美国Genesis Mission把AI竞争推向科研与制造基础设施",
+        "en": "US Genesis Mission shifts AI competition toward research infrastructure"
       },
       "summary": {
-        "zh": "TSMC在欧洲技术论坛上强调，面板级封装短期不会取代CoWoS，说明AI芯片竞争已从算力本身延伸到先进封装与量产良率。对产业链而言，真正稀缺的不只是GPU设计能力，而是能稳定交付高带宽、低延迟、可规模化封装的制造与工艺整合能力。",
-        "en": "TSMC's latest European symposium remarks suggest panel-level packaging will not replace CoWoS soon, underscoring that AI chip competition now depends on packaging yield and scale as much as compute design. The scarce capability is stable high-bandwidth packaging, not chip logic alone."
+        "zh": "美国Genesis Mission把超算、实验设施、数据集与AI系统打通，说明下一阶段AI竞争不只看模型发布频率，更看谁能把算力、科研仪器和材料制造流程连成国家级创新平台。",
+        "en": "The US Genesis Mission links supercomputers, experimental facilities, scientific datasets, and AI systems, signalling that the next phase of AI competition will hinge on integrated national research infrastructure rather than model releases alone."
       },
-      "reference": "Tom's Hardware on TSMC European Technology Symposium remarks, 2026-06-17",
+      "reference": "US Department of Energy, Genesis Mission",
       "referenceLinks": [
         {
-          "label": "Tom's Hardware: TSMC and CoWoS coverage",
-          "url": "https://www.tomshardware.com/search?searchTerm=TSMC%20CoWoS"
+          "label": "US DOE: Genesis Mission",
+          "url": "https://genesis.energy.gov/"
         }
       ]
     },
@@ -53,22 +53,18 @@
         "en": "Crypto"
       },
       "title": {
-        "zh": "稳定币与CBDC进入政策与利益博弈期",
-        "en": "Stablecoins and CBDCs enter a policy contest"
+        "zh": "数字欧元进入下一阶段，支付主权与隐私设计成主战场",
+        "en": "Digital euro moves into its next phase as payments sovereignty becomes the battleground"
       },
       "summary": {
-        "zh": "英国围绕“Britcoin”和稳定币监管的最新争论表明，数字货币竞争已进入政策与利益协调阶段。市场不再只看支付技术是否可行，而更看隐私、货币主权、银行存款迁移风险与政治游说如何共同塑造最终制度安排。",
-        "en": "The UK's latest Britcoin debate shows digital-currency competition has moved into policy and interest alignment. Markets are no longer judging only technical feasibility, but also privacy, monetary sovereignty, deposit-migration risk, and how politics shapes the final rules."
+        "zh": "ECB称数字欧元项目已进入下一阶段，并计划在2029年前具备首发准备。行业竞争重点因此转向支付主权、离线可用性、隐私标准和与银行体系协同，而不再只是稳定币概念之争。",
+        "en": "The ECB says the digital euro project has entered its next phase and aims to be ready for possible first issuance by 2029. The competitive focus is moving toward payments sovereignty, offline usability, privacy standards, and integration with banking rails."
       },
-      "reference": "The Guardian, Britcoin politics, 2026-06-18; Bank of England systemic stablecoin proposal, 2026-03-27",
+      "reference": "European Central Bank, Digital euro project page, updated 2026",
       "referenceLinks": [
         {
-          "label": "The Guardian: Britcoin coverage",
-          "url": "https://www.theguardian.com/search?q=Britcoin"
-        },
-        {
-          "label": "Bank of England: Stablecoins",
-          "url": "https://www.bankofengland.co.uk/financial-stability/digital-regulation-and-infrastructure/stablecoins"
+          "label": "ECB: Digital euro",
+          "url": "https://www.ecb.europa.eu/euro/digital_euro/html/index.en.html"
         }
       ]
     }
@@ -80,26 +76,47 @@
         "en": "Structural Reliability"
       },
       "title": {
-        "zh": "数字孪生开始要求“可信不确定性”",
-        "en": "Digital twins now need trustworthy uncertainty"
+        "zh": "数字孪生正在从“看得到”升级到“解释得清”",
+        "en": "Digital twins are moving from visibility to defensible uncertainty"
       },
       "summary": {
-        "zh": "近年的结构数字孪生研究不再满足于把传感数据贴到三维模型上，而是要求把测量噪声、模型误差、损伤演化和维护决策一起纳入贝叶斯更新框架。实时SHM中的贝叶斯神经网络，以及面向土木结构的动态贝叶斯网络数字孪生，都在强调“先说明不确定性，再输出判断”。这对你很重要，因为未来监测与评估岗位更看重能否把数据、概率、力学模型和养护决策串成一套可追溯流程，而不是只会做漂亮的可视化展示。",
-        "en": "Recent structural digital-twin work is moving beyond attaching sensor streams to 3D models. The stronger direction is to embed measurement noise, model error, damage evolution, and maintenance choices into Bayesian updating workflows. For your development, the key skill is turning data, probability, mechanics, and decisions into one traceable process."
+        "zh": "这篇2025预印本把PCA、贝叶斯神经网络和HMC结合，用稀疏应变计重建全场应变并区分随机不确定性与认知不确定性，说明下一代结构数字孪生的门槛不是界面更炫，而是能否把低置信度区域解释给检修和决策环节听。职业上，懂监测数据、概率推断和可追溯风险表达的人，会比只会做传感可视化的人更有竞争力。",
+        "en": "This 2025 preprint combines PCA, Bayesian neural networks, and HMC to reconstruct full-field strain from sparse gauges while separating aleatoric from epistemic uncertainty. The signal for practice is that next-generation digital twins must explain confidence, not just display data. Career-wise, engineers who can connect sensing, probabilistic inference, and auditable risk communication will outperform those focused only on dashboards."
       },
       "why": {
-        "zh": "把可靠度、贝叶斯更新、结构健康监测和养护决策当成一条连续能力链来学习。",
-        "en": "Treat reliability, Bayesian updating, SHM, and maintenance decisions as one connected capability stack."
+        "zh": "把SHM、贝叶斯更新和维修决策连成一套可审计工作流。",
+        "en": "Link SHM, Bayesian updating, and maintenance decisions into one auditable workflow."
       },
-      "reference": "Real-Time Structural Health Monitoring with Bayesian Neural Networks, 2025; A Digital Twin Framework for Civil Engineering Structures, 2023",
+      "reference": "arXiv:2512.03115, submitted 2025-12-02",
       "referenceLinks": [
         {
-          "label": "Google Scholar: Bayesian neural networks for real-time SHM",
-          "url": "https://scholar.google.com/scholar?q=Real-Time+Structural+Health+Monitoring+with+Bayesian+Neural+Networks"
-        },
+          "label": "arXiv: Real-Time SHM with Bayesian Neural Networks",
+          "url": "https://arxiv.org/abs/2512.03115"
+        }
+      ]
+    },
+    {
+      "area": {
+        "zh": "低碳结构",
+        "en": "Low-Carbon Structures"
+      },
+      "title": {
+        "zh": "最低碳方案只有在可施工时才有工程价值",
+        "en": "Minimum-carbon design matters only when it remains buildable"
+      },
+      "summary": {
+        "zh": "这篇2026研究把最低碳排目标与可施工性、构件类型、节点复杂度一起放进混合整数优化里，结果显示只追求理论最小碳排常会给出现场难以建造的解，真正可落地的低碳结构必须同时约束连接复杂度、材料兼容性和截面边界。对职业发展而言，会把碳、造价和施工逻辑一起建模的人，会更接近未来方案总工的角色。",
+        "en": "This 2026 study puts embodied-carbon minimisation, constructability, component choice, and joint complexity into one mixed-integer optimisation workflow. The key lesson is that the lowest theoretical carbon option often fails on site practicality. Engineers who can model carbon, cost, and buildability together will be better positioned for lead concept-design roles."
+      },
+      "why": {
+        "zh": "把 embodied carbon 和 constructability 放进同一轮早期方案优化。",
+        "en": "Optimise embodied carbon and constructability in the same early-stage loop."
+      },
+      "reference": "arXiv:2602.07185, submitted 2026-02-06",
+      "referenceLinks": [
         {
-          "label": "Google Scholar: Digital twin framework for civil engineering structures",
-          "url": "https://scholar.google.com/scholar?q=A+Digital+Twin+Framework+for+Civil+Engineering+Structures"
+          "label": "arXiv: Minimum Carbon Trusses",
+          "url": "https://arxiv.org/abs/2602.07185"
         }
       ]
     },
@@ -109,68 +126,39 @@
         "en": "Advanced Materials"
       },
       "title": {
-        "zh": "UHPC设计重点转向可预警延性",
-        "en": "UHPC design is shifting toward warning-rich ductility"
+        "zh": "UHPC设计的关键不只是强度，而是失效是否可预警",
+        "en": "UHPC design is defined by warning-rich failure, not strength alone"
       },
       "summary": {
-        "zh": "UHPC的行业关注点正在从“材料很强”转向“构件是否有足够预警和延性”。关于预应力UHPC梁的近期研究表明，裂缝局部化后若配筋、预应力和截面比例不当，构件可能在很少外部征兆下快速失效。对结构工程学习者而言，这提醒你研究新材料时不能只看抗压强度和试验峰值，更要看失效模式、拉伸软化、构造细节和施工质量如何共同决定可设计、可检查、可维护的安全储备。",
-        "en": "The UHPC conversation is shifting from headline strength to whether members retain enough warning and ductility. Recent work on prestressed UHPC beams shows that poor reinforcement, prestress, or section proportion can trigger rapid failure after crack localization. For your career, new materials matter only when their failure modes stay designable and inspectable."
+        "zh": "这篇关于预应力UHPC梁的研究指出，UHPC并不天然等于“更安全”，裂缝局部化后若配筋比例、预应力水平和截面比例失衡，构件可能在很少预警下迅速失效；相反，若能促成钢筋逐步硬化与UHPC压碎前的缓变破坏，才更接近可检查、可维护的韧性结构。对职业发展而言，研究新材料时必须把强度、延性、失效模式和细部构造一起看。",
+        "en": "This UHPC beam study shows that higher strength does not automatically mean safer behavior. After crack localisation, poor reinforcement, prestress, or section proportion can trigger abrupt failure with little warning. The stronger design path is to promote gradual yielding and visible damage before crushing. Career-wise, treat material strength, ductility, failure mode, and detailing as one integrated judgment."
       },
       "why": {
-        "zh": "研究新材料时，把强度、延性、失效模式和施工可控性放在同一个判断框架里。",
-        "en": "Judge new materials through strength, ductility, failure mode, and construction controllability together."
+        "zh": "评价新材料时，先问失效是否可预警、可检查、可维修。",
+        "en": "When assessing new materials, start with whether failure stays warnable, inspectable, and repairable."
       },
-      "reference": "Flexural Behavior and Design of Prestressed UHPC Beams: Failure Mode and Ductility, 2024",
+      "reference": "arXiv:2411.01113 / Journal of Structural Engineering, 2025",
       "referenceLinks": [
         {
-          "label": "Google Scholar: Prestressed UHPC beam failure mode and ductility",
-          "url": "https://scholar.google.com/scholar?q=Flexural+Behavior+and+Design+of+Prestressed+UHPC+Beams+Failure+Mode+Ductility"
-        }
-      ]
-    },
-    {
-      "area": {
-        "zh": "AI辅助工程",
-        "en": "AI-Assisted Engineering"
-      },
-      "title": {
-        "zh": "AI辅助分析必须保留高保真校核",
-        "en": "AI-assisted analysis still needs high-fidelity checks"
-      },
-      "summary": {
-        "zh": "AI正在加速有限元前处理、参数搜索和方案筛选，但当前更可靠的工程路线不是让模型直接替代结构判断，而是让它承担低成本探索，再把关键工况、边界条件敏感点和超出训练分布的候选方案送回高保真模型复核。ASCE近年的技能讨论也把AI实践、处理不确定性和感测能力并列提出。对你来说，真正有价值的能力组合是Python、有限元、代理模型、误差识别与可追溯工程表达，而不是只会写提示词。",
-        "en": "AI is speeding up pre-processing, parameter search, and early option screening, but the safer workflow is not to let models replace structural judgment. The stronger pattern is cheap exploration first, then high-fidelity verification for critical cases, sensitive boundaries, and out-of-distribution candidates. The valuable skill stack is Python, FEA, surrogate thinking, error recognition, and traceable engineering communication."
-      },
-      "why": {
-        "zh": "把AI当成前端加速器，而把高保真分析、校核与责任判断留在你的核心能力里。",
-        "en": "Use AI as a front-end accelerator, while keeping verification and accountable judgment in your core toolkit."
-      },
-      "reference": "ASCE, The Top 5 Technical Skills Civil Engineers Need, 2025-09-04; GeoMCP: A Trustworthy Framework for AI-Assisted Analytical Geotechnical Engineering, 2026",
-      "referenceLinks": [
-        {
-          "label": "ASCE: Civil engineering technical skills",
-          "url": "https://www.asce.org/search-results?searchQuery=technical%20skills%20civil%20engineers"
-        },
-        {
-          "label": "arXiv: GeoMCP",
-          "url": "https://arxiv.org/search/?query=GeoMCP&searchtype=all"
+          "label": "arXiv: Prestressed UHPC beam failure mode and ductility",
+          "url": "https://arxiv.org/abs/2411.01113"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "钢材名义屈服强度的一个小差异",
-      "en": "One Small Difference in Steel Yield Strength"
+      "zh": "钢材牌号数字不等于可直接换算的设计强度",
+      "en": "Steel Grade Numbers Are Not Directly Interchangeable"
     },
     "text": {
-      "zh": "中国常见结构钢会用Q235、Q355这类牌号表示名义屈服强度，并且厚度变化会影响取值；澳大利亚常见板材和型钢常见Grade 250、300、350；美国建筑宽翼缘最常见的是ASTM A992，名义屈服强度约345 MPa；欧洲则常见S275、S355，并同样随厚度出现屈服强度调整。跨规范比较时，不能只把牌号里的数字直接当成“完全等价强度”，还要同时核对产品标准、厚度范围、韧性要求和对应设计规范中的抗力折减表达。",
-      "en": "Chinese structural steels often use grades such as Q235 and Q355, with yield values affected by thickness. Australia commonly uses Grade 250, 300, and 350 products, while the most common US wide-flange building steel is ASTM A992 with nominal yield strength of about 345 MPa. Europe often uses S275 and S355, again with thickness-related adjustments. When comparing across codes, do not treat grade numbers as perfectly equivalent strengths; check product standard, thickness range, toughness requirements, and the resistance format used in design."
+      "zh": "Q355、Grade 350和S355看起来都接近“350级”，但对应的产品范围、厚度条件、韧性要求和适用构件并不相同。跨规范比选时，先核对材料产品标准与厚度分档，再回到各自设计规范里的抗力表达，别只按牌号数字做一对一替换。",
+      "en": "Q355, Grade 350, and S355 may all look like \"350-class\" steels, but they do not map directly across product scope, thickness conditions, toughness requirements, or intended member types. When comparing across codes, verify the product standard and thickness class first, then return to each design code's resistance format instead of doing a simple number-for-number substitution."
     },
-    "references": "GB/T 1591; AS/NZS 3678 and AS/NZS 3679.1; ASTM A992/A992M; EN 10025-2",
+    "references": "SAMR national standards platform; Standards Australia catalogue; BSI search for EN 10025-2",
     "referenceLinks": [
       {
-        "label": "China National Standard Information Service",
+        "label": "SAMR national standards platform",
         "url": "https://std.samr.gov.cn/"
       },
       {
@@ -178,11 +166,7 @@
         "url": "https://www.standards.org.au/standards-catalogue"
       },
       {
-        "label": "ASTM A992/A992M",
-        "url": "https://www.astm.org/a0992_a0992m.html"
-      },
-      {
-        "label": "BSI catalogue: EN 10025-2",
+        "label": "BSI search: EN 10025-2",
         "url": "https://knowledge.bsigroup.com/search?query=EN%2010025-2"
       }
     ]
