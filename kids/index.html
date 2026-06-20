@@ -164,6 +164,33 @@
       backdrop-filter: blur(14px);
     }
 
+    .header-tools {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex: 0 0 auto;
+    }
+
+    .city-select {
+      min-height: 38px;
+      max-width: 126px;
+      padding: 0 30px 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: 0 8px 22px rgba(72, 86, 96, 0.08);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    [data-city="sydney"] [data-city-panel="melbourne"],
+    [data-city="melbourne"] [data-city-panel="sydney"] {
+      display: none;
+    }
+
     .lang-toggle button {
       min-width: 42px;
       border: 0;
@@ -610,6 +637,18 @@
         padding: 8px 9px;
       }
 
+      .header-tools {
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        gap: 6px;
+      }
+
+      .city-select {
+        min-height: 34px;
+        max-width: 112px;
+        padding-left: 10px;
+      }
+
       .hero {
         padding-top: 12px;
       }
@@ -671,7 +710,7 @@
     }
   </style>
 </head>
-<body data-lang="zh">
+<body data-lang="zh" data-city="sydney">
   <div class="watermark" aria-hidden="true">SConmyway</div>
   <div class="shell">
     <div class="sticker one" aria-hidden="true">🧃</div>
@@ -682,16 +721,22 @@
       <div class="brand">
         <div class="mark" aria-hidden="true">🌈</div>
         <div class="brand-text">
-          <strong class="zh">悉尼溜娃随手查</strong>
-          <strong class="en">Sydney Kids Finder</strong>
+          <strong class="zh"><span data-city-name-zh>悉尼</span>溜娃随手查</strong>
+          <strong class="en"><span data-city-name-en>Sydney</span> Kids Finder</strong>
           <span class="zh">本周 8 条 · 官方链接 · 一键导航</span>
           <span class="en">8 picks · official links · map-ready</span>
         </div>
       </div>
 
-      <div class="lang-toggle" aria-label="Language switch">
-        <button type="button" data-set-lang="zh" aria-pressed="true">中</button>
-        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      <div class="header-tools">
+        <select class="city-select" data-city-select aria-label="选择城市 / Select city">
+          <option value="sydney">Sydney</option>
+          <option value="melbourne">Melbourne</option>
+        </select>
+        <div class="lang-toggle" aria-label="Language switch">
+          <button type="button" data-set-lang="zh" aria-pressed="true">中</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
       </div>
     </header>
 
@@ -711,7 +756,7 @@
         </div>
       </section>
 
-      <section class="cards" aria-label="Recommended activities">
+      <section class="cards" data-city-panel="sydney" aria-label="Sydney recommended activities">
         <!-- EVENTS_START -->
         <article class="card featured" style="--accent:#bdf3d2;--accent-soft:rgba(189,243,210,.78);">
           <div class="card-top">
@@ -907,7 +952,91 @@
         <!-- EVENTS_END -->
       </section>
 
-      <details class="more-panel">
+      <section class="cards" data-city-panel="melbourne" aria-label="Melbourne recommended activities">
+        <!-- MELBOURNE_EVENTS_START -->
+        <article class="card featured" style="--accent:#bdf3d2;--accent-soft:rgba(189,243,210,.78);">
+          <div class="card-top"><span class="tag zh">博物馆 · 0-5 岁</span><span class="tag en">Museum · Ages 0-5</span><span class="score">★★★★★</span></div>
+          <h2><span class="zh">Pauline Gandel 儿童馆</span><span class="en">Pauline Gandel Children's Gallery</span></h2>
+          <p class="summary zh">Melbourne Museum 的低龄儿童专属空间，有攀爬、化石探索、光影和户外发现区。适合需要自由活动、又想兼顾学习体验的家庭。</p>
+          <p class="summary en">A dedicated early-years space at Melbourne Museum with climbing, fossil discovery, light play and an outdoor discovery area.</p>
+          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">本周开放；具体场次见官网</span><span class="en">Open this week; check official session times</span></div><div class="fact"><span>📍</span><span>Melbourne Museum, Carlton Gardens</span></div><div class="fact"><span>🎟️</span><span class="zh">门票及预约见官网</span><span class="en">See official page for entry and bookings</span></div></div>
+          <div class="actions"><a class="action primary" href="https://museumsvictoria.com.au/melbournemuseum/whats-on/childrens-gallery/" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="https://www.google.com/maps/search/?api=1&query=Melbourne%20Museum%20Carlton%20Gardens" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
+          <div class="reference"><b>Reference:</b> <span class="zh">Museums Victoria 官方儿童馆页面提供适龄范围、开放安排和入场信息。</span><span class="en">The official Museums Victoria page provides age guidance, opening arrangements and entry information.</span></div>
+        </article>
+
+        <article class="card" style="--accent:#ffcdbb;--accent-soft:rgba(255,205,187,.78);">
+          <div class="card-top"><span class="tag zh">恐龙 · 室内</span><span class="tag en">Dinosaurs · Indoor</span><span class="score">★★★★★</span></div>
+          <h2><span class="zh">Triceratops: Fate of the Dinosaurs</span><span class="en">Triceratops: Fate of the Dinosaurs</span></h2>
+          <p class="summary zh">近距离看三角龙化石与史前生态展示，适合喜欢恐龙、自然历史和大型骨架的小朋友。</p>
+          <p class="summary en">See Triceratops fossils and prehistoric ecosystems up close, ideal for children interested in dinosaurs and natural history.</p>
+          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">本周开放；时间见官网</span><span class="en">Open this week; check official hours</span></div><div class="fact"><span>📍</span><span>Melbourne Museum, Carlton Gardens</span></div><div class="fact"><span>🎟️</span><span class="zh">票价见官网</span><span class="en">See official page for tickets</span></div></div>
+          <div class="actions"><a class="action primary" href="https://museumsvictoria.com.au/melbournemuseum/whats-on/triceratops-fate-of-the-dinosaurs/" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="https://www.google.com/maps/search/?api=1&query=Melbourne%20Museum%20Carlton%20Gardens" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
+          <div class="reference"><b>Reference:</b> <span class="zh">Melbourne Museum 官方展览页提供开放时间、展览介绍和票务信息。</span><span class="en">The official Melbourne Museum exhibition page provides opening hours, exhibition details and ticket information.</span></div>
+        </article>
+
+        <article class="card" style="--accent:#bfe3ff;--accent-soft:rgba(191,227,255,.8);">
+          <div class="card-top"><span class="tag zh">免费 · 电影互动</span><span class="tag en">Free · Screen culture</span><span class="score">★★★★★</span></div>
+          <h2><span class="zh">The Story of the Moving Image</span><span class="en">The Story of the Moving Image</span></h2>
+          <p class="summary zh">ACMI 的常设互动展，从动画、电影到电子游戏都有可看可玩的内容，适合雨天和不同年龄孩子一起参观。</p>
+          <p class="summary en">ACMI's interactive permanent exhibition explores animation, film and video games, with hands-on experiences for mixed-age families.</p>
+          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">本周开放；时间见官网</span><span class="en">Open this week; check official hours</span></div><div class="fact"><span>📍</span><span>ACMI, Federation Square</span></div><div class="fact"><span>🎟️</span><span class="zh">免费，部分时段需预约</span><span class="en">Free; booking may be required</span></div></div>
+          <div class="actions"><a class="action primary" href="https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="https://www.google.com/maps/search/?api=1&query=ACMI%20Federation%20Square%20Melbourne" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
+          <div class="reference"><b>Reference:</b> <span class="zh">ACMI 官方页面说明展览内容、免费入场和最新开放安排。</span><span class="en">The official ACMI page confirms the exhibition content, free entry and current opening arrangements.</span></div>
+        </article>
+
+        <article class="card" style="--accent:#ffe985;--accent-soft:rgba(255,233,133,.78);">
+          <div class="card-top"><span class="tag zh">艺术 · 家庭</span><span class="tag en">Art · Families</span><span class="score">★★★★☆</span></div>
+          <h2><span class="zh">NGV Kids 亲子艺术活动</span><span class="en">NGV Kids</span></h2>
+          <p class="summary zh">从儿童展览到周末创作活动，适合想看艺术又希望孩子有互动环节的家庭；当天项目以官网为准。</p>
+          <p class="summary en">Family exhibitions and creative activities for children, combining gallery visits with hands-on art experiences.</p>
+          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">本周项目见官网日历</span><span class="en">Check the official calendar for this week's program</span></div><div class="fact"><span>📍</span><span>NGV International / The Ian Potter Centre</span></div><div class="fact"><span>🎟️</span><span class="zh">免费及收费项目均有</span><span class="en">Free and ticketed programs available</span></div></div>
+          <div class="actions"><a class="action primary" href="https://www.ngv.vic.gov.au/kids/" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="https://www.google.com/maps/search/?api=1&query=NGV%20International%20Melbourne" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
+          <div class="reference"><b>Reference:</b> <span class="zh">NGV Kids 官方页面汇总当前儿童展览、家庭活动和预约信息。</span><span class="en">The official NGV Kids page lists current children's exhibitions, family activities and booking information.</span></div>
+        </article>
+
+        <article class="card" style="--accent:#d4c8ff;--accent-soft:rgba(212,200,255,.78);">
+          <div class="card-top"><span class="tag zh">户外 · 免费</span><span class="tag en">Outdoors · Free</span><span class="score">★★★★☆</span></div>
+          <h2><span class="zh">Ian Potter Foundation Children's Garden</span><span class="en">Ian Potter Foundation Children's Garden</span></h2>
+          <p class="summary zh">Royal Botanic Gardens 内的儿童自然游乐花园，有水、植物、探索路径和可自由活动的空间，晴天很适合放电。</p>
+          <p class="summary en">A nature-play garden with water, plants, discovery paths and room to explore inside the Royal Botanic Gardens.</p>
+          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">开放安排受季节和维护影响，出发前查官网</span><span class="en">Hours vary by season and maintenance; check before visiting</span></div><div class="fact"><span>📍</span><span>Royal Botanic Gardens Melbourne</span></div><div class="fact"><span>🎟️</span><span class="zh">免费</span><span class="en">Free</span></div></div>
+          <div class="actions"><a class="action primary" href="https://www.rbg.vic.gov.au/melbourne-gardens/discover-melbourne-gardens/ian-potter-foundation-childrens-garden/" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="https://www.google.com/maps/search/?api=1&query=Ian%20Potter%20Foundation%20Children%27s%20Garden%20Melbourne" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
+          <div class="reference"><b>Reference:</b> <span class="zh">Royal Botanic Gardens Victoria 官方页面提供花园开放、关闭和到访信息。</span><span class="en">The official Royal Botanic Gardens Victoria page provides opening, closure and visitor information.</span></div>
+        </article>
+
+        <article class="card" style="--accent:#ffcae2;--accent-soft:rgba(255,202,226,.78);">
+          <div class="card-top"><span class="tag zh">免费 · 阅读游戏</span><span class="tag en">Free · Read and play</span><span class="score">★★★★☆</span></div>
+          <h2><span class="zh">State Library 儿童空间</span><span class="en">Children's Quarter at State Library Victoria</span></h2>
+          <p class="summary zh">市中心室内亲子空间，可以读绘本、玩互动设施、安静休息，也方便和图书馆当周活动一起安排。</p>
+          <p class="summary en">A central indoor family space for picture books, interactive play and quiet breaks, close to the library's weekly programs.</p>
+          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">本周开放；时间见官网</span><span class="en">Open this week; check official hours</span></div><div class="fact"><span>📍</span><span>State Library Victoria, Swanston Street</span></div><div class="fact"><span>🎟️</span><span class="zh">免费</span><span class="en">Free</span></div></div>
+          <div class="actions"><a class="action primary" href="https://www.slv.vic.gov.au/visit/our-magnificent-spaces/childrens-quarter" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="https://www.google.com/maps/search/?api=1&query=State%20Library%20Victoria%20Melbourne" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
+          <div class="reference"><b>Reference:</b> <span class="zh">State Library Victoria 官方页面说明儿童空间设施、位置和开放信息。</span><span class="en">The official State Library Victoria page describes the children's facilities, location and opening information.</span></div>
+        </article>
+
+        <article class="card" style="--accent:#aeece8;--accent-soft:rgba(174,236,232,.78);">
+          <div class="card-top"><span class="tag zh">动物 · 户外</span><span class="tag en">Animals · Outdoors</span><span class="score">★★★★☆</span></div>
+          <h2><span class="zh">Collingwood Children's Farm</span><span class="en">Collingwood Children's Farm</span></h2>
+          <p class="summary zh">在城市里看农场动物、沿河散步，适合喜欢户外和动物的小朋友；喂养或特别活动以当天安排为准。</p>
+          <p class="summary en">Meet farm animals and walk beside the river at an urban working farm, with daily activities subject to the farm schedule.</p>
+          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">本周开放；时间及活动见官网</span><span class="en">Open this week; check hours and activities online</span></div><div class="fact"><span>📍</span><span>18 St Heliers Street, Abbotsford</span></div><div class="fact"><span>🎟️</span><span class="zh">票价见官网</span><span class="en">See official page for admission</span></div></div>
+          <div class="actions"><a class="action primary" href="https://www.farm.org.au/" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="https://www.google.com/maps/search/?api=1&query=Collingwood%20Children%27s%20Farm" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
+          <div class="reference"><b>Reference:</b> <span class="zh">Collingwood Children's Farm 官网提供开放时间、票价和当日活动安排。</span><span class="en">The official Collingwood Children's Farm site provides opening hours, admission prices and daily activity information.</span></div>
+        </article>
+
+        <article class="card" style="--accent:#ffc978;--accent-soft:rgba(255,201,120,.78);">
+          <div class="card-top"><span class="tag zh">海洋 · 室内</span><span class="tag en">Ocean · Indoor</span><span class="score">★★★★☆</span></div>
+          <h2><span class="zh">SEA LIFE Melbourne Aquarium</span><span class="en">SEA LIFE Melbourne Aquarium</span></h2>
+          <p class="summary zh">企鹅、鲨鱼、鳐鱼和海洋主题展区集中在室内，适合下雨天或需要稳定半日行程的家庭。</p>
+          <p class="summary en">An indoor half-day option with penguins, sharks, rays and ocean-themed zones, especially useful for wet-weather plans.</p>
+          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">本周开放；入场时段见官网</span><span class="en">Open this week; check official entry sessions</span></div><div class="fact"><span>📍</span><span>King Street, Melbourne</span></div><div class="fact"><span>🎟️</span><span class="zh">票价见官网，建议预约</span><span class="en">See official prices; advance booking recommended</span></div></div>
+          <div class="actions"><a class="action primary" href="https://www.visitsealife.com/melbourne/" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="https://www.google.com/maps/search/?api=1&query=SEA%20LIFE%20Melbourne%20Aquarium" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
+          <div class="reference"><b>Reference:</b> <span class="zh">SEA LIFE Melbourne 官方网站提供开放时间、入场时段、展区和票务信息。</span><span class="en">The official SEA LIFE Melbourne site provides opening hours, entry sessions, attraction details and ticket information.</span></div>
+        </article>
+        <!-- MELBOURNE_EVENTS_END -->
+      </section>
+
+      <details class="more-panel" data-city-panel="sydney">
         <summary>
           <span class="zh">More · 更多活动</span>
           <span class="en">More activities</span>
@@ -936,7 +1065,7 @@
         </div>
       </details>
 
-      <details class="more-panel source-panel">
+      <details class="more-panel source-panel" data-city-panel="sydney">
         <summary>
           <span class="zh">Sources · 信息来源</span>
           <span class="en">Sources</span>
@@ -994,8 +1123,49 @@
         </div>
       </details>
 
-      <p class="note zh">说明：这是一个静态网页原型，已按 2026 年 6 月 19 日检索结果填入。本地静态页不能自动抓取小红书、Facebook 或 council 最新帖子；若要做到“每天打开自动更新”，下一步需要接入后端抓取、RSS/API、人工审核队列或可编辑数据源。</p>
-      <p class="note en">Note: this is a static prototype populated from checks on 19 Jun 2026. A local static page cannot automatically scrape Xiaohongshu, Facebook or council updates; true daily refresh needs a backend feed, API/RSS integrations, review queue or editable data source.</p>
+      <details class="more-panel" data-city-panel="melbourne">
+        <summary><span class="zh">More · 更多活动</span><span class="en">More activities</span></summary>
+        <div class="more-links">
+          <a href="https://whatson.melbourne.vic.gov.au/things-to-do/family-and-kids" target="_blank" rel="noreferrer">City of Melbourne · Family and kids</a>
+          <a href="https://museumsvictoria.com.au/scienceworks/whats-on/" target="_blank" rel="noreferrer">Scienceworks · What's on</a>
+          <a href="https://www.acmi.net.au/whats-on/family/" target="_blank" rel="noreferrer">ACMI · Family</a>
+          <a href="https://www.slv.vic.gov.au/whats-on" target="_blank" rel="noreferrer">State Library Victoria · What's on</a>
+          <a href="https://www.melbourne.vic.gov.au/libraries/whats-on" target="_blank" rel="noreferrer">City of Melbourne Libraries</a>
+        </div>
+      </details>
+
+      <details class="more-panel source-panel" data-city-panel="melbourne">
+        <summary><span class="zh">Sources · 信息来源</span><span class="en">Sources</span></summary>
+        <div class="source-groups">
+          <section class="source-group">
+            <h3><span class="zh">A级：官方活动页 / Council</span><span class="en">Tier A: official event pages / councils</span></h3>
+            <p class="zh">优先采用。日期、地点、票价和年龄限制以主办方页面为准。</p>
+            <p class="en">Primary sources for dates, venues, prices and age restrictions.</p>
+            <a href="https://whatson.melbourne.vic.gov.au/things-to-do/family-and-kids" target="_blank" rel="noreferrer">City of Melbourne</a>
+            <a href="https://www.yarracity.vic.gov.au/things-to-do/events" target="_blank" rel="noreferrer">City of Yarra</a>
+            <a href="https://www.portphillip.vic.gov.au/explore-the-city/events-and-activities" target="_blank" rel="noreferrer">Port Phillip</a>
+            <a href="https://www.merri-bek.vic.gov.au/exploring-merri-bek/events/" target="_blank" rel="noreferrer">Merri-bek</a>
+          </section>
+          <section class="source-group">
+            <h3><span class="zh">B级：亲子友好场馆官网</span><span class="en">Tier B: family-friendly venue sites</span></h3>
+            <p class="zh">用于补足博物馆、美术馆、图书馆、花园和动物体验。</p>
+            <p class="en">Used for museums, galleries, libraries, gardens and animal experiences.</p>
+            <a href="https://museumsvictoria.com.au/melbournemuseum/whats-on/" target="_blank" rel="noreferrer">Melbourne Museum</a>
+            <a href="https://www.ngv.vic.gov.au/kids/" target="_blank" rel="noreferrer">NGV Kids</a>
+            <a href="https://www.acmi.net.au/whats-on/family/" target="_blank" rel="noreferrer">ACMI</a>
+            <a href="https://www.slv.vic.gov.au/whats-on" target="_blank" rel="noreferrer">State Library Victoria</a>
+            <a href="https://www.rbg.vic.gov.au/whats-on/" target="_blank" rel="noreferrer">Royal Botanic Gardens</a>
+          </section>
+          <section class="source-group">
+            <h3><span class="zh">C级：发现平台</span><span class="en">Tier C: discovery platforms</span></h3>
+            <p class="zh">只用于发现线索，入选前必须回到官方页面核验。</p>
+            <p class="en">Discovery only; every recommendation must be checked against an official page.</p>
+            <a href="https://www.eventbrite.com.au/d/australia--melbourne/kids-events/" target="_blank" rel="noreferrer">Eventbrite Kids</a>
+            <a href="https://www.timeout.com/melbourne/kids" target="_blank" rel="noreferrer">Time Out Kids</a>
+          </section>
+        </div>
+      </details>
+
     </main>
   </div>
 
@@ -1014,6 +1184,29 @@
         });
       });
     });
+
+    const citySelect = document.querySelector("[data-city-select]");
+    const cityNames = {
+      sydney: { zh: "悉尼", en: "Sydney" },
+      melbourne: { zh: "墨尔本", en: "Melbourne" }
+    };
+
+    function setCity(city) {
+      const nextCity = cityNames[city] ? city : "sydney";
+      root.dataset.city = nextCity;
+      citySelect.value = nextCity;
+      document.querySelector("[data-city-name-zh]").textContent = cityNames[nextCity].zh;
+      document.querySelector("[data-city-name-en]").textContent = cityNames[nextCity].en;
+      document.querySelectorAll("details[data-city-panel]").forEach((panel) => {
+        if (panel.dataset.cityPanel !== nextCity) panel.open = false;
+      });
+      try { localStorage.setItem("kids-city", nextCity); } catch {}
+    }
+
+    citySelect.addEventListener("change", () => setCity(citySelect.value));
+    let savedCity = "sydney";
+    try { savedCity = localStorage.getItem("kids-city") || "sydney"; } catch {}
+    setCity(savedCity);
 
     const now = new Date();
     const weekEnd = new Date(now);

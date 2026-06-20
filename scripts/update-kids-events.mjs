@@ -1,22 +1,48 @@
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const siteDir = "kids";
 const indexPath = `${siteDir}/index.html`;
 const dataDir = `${siteDir}/data`;
-const dataPath = `${dataDir}/events.json`;
+const now = new Date();
 
-const sources = [
-  { name: "City of Sydney", url: "https://whatson.cityofsydney.nsw.gov.au/categories/kids-and-family", tier: "A" },
-  { name: "Darling Harbour", url: "https://www.darlingharbour.com/whats-on", tier: "B" },
-  { name: "Sydney Opera House", url: "https://www.sydneyoperahouse.com/kids-families", tier: "B" },
-  { name: "Australian Museum", url: "https://australian.museum/whats-on/", tier: "B" },
-  { name: "Art Gallery NSW", url: "https://www.artgallery.nsw.gov.au/whats-on/", tier: "B" },
-  { name: "State Library NSW", url: "https://www.sl.nsw.gov.au/whats-on", tier: "B" },
-  { name: "Sydney Olympic Park", url: "https://www.sydneyolympicpark.com.au/Things-to-Do/Events", tier: "B" },
-  { name: "Inner West", url: "https://www.innerwest.nsw.gov.au/explore/whats-on", tier: "A" },
-  { name: "Randwick", url: "https://www.randwick.nsw.gov.au/about-council/news/events", tier: "A" },
-  { name: "Parramatta", url: "https://atparramatta.com/whats-on", tier: "A" },
-  { name: "Canada Bay", url: "https://www.canadabay.nsw.gov.au/lifestyle/events", tier: "A" }
+const cityConfigs = [
+  {
+    key: "melbourne",
+    name: "Melbourne",
+    marker: "MELBOURNE_EVENTS",
+    dataPath: `${dataDir}/melbourne-events.json`,
+    sources: [
+      { name: "City of Melbourne", url: "https://whatson.melbourne.vic.gov.au/things-to-do/family-and-kids", tier: "A" },
+      { name: "Melbourne Museum", url: "https://museumsvictoria.com.au/melbournemuseum/whats-on/", tier: "B" },
+      { name: "Scienceworks", url: "https://museumsvictoria.com.au/scienceworks/whats-on/", tier: "B" },
+      { name: "NGV Kids", url: "https://www.ngv.vic.gov.au/kids/", tier: "B" },
+      { name: "ACMI Family", url: "https://www.acmi.net.au/whats-on/family/", tier: "B" },
+      { name: "State Library Victoria", url: "https://www.slv.vic.gov.au/whats-on", tier: "B" },
+      { name: "Royal Botanic Gardens Victoria", url: "https://www.rbg.vic.gov.au/whats-on/", tier: "B" },
+      { name: "City of Yarra", url: "https://www.yarracity.vic.gov.au/things-to-do/events", tier: "A" },
+      { name: "City of Port Phillip", url: "https://www.portphillip.vic.gov.au/explore-the-city/events-and-activities", tier: "A" },
+      { name: "Merri-bek City Council", url: "https://www.merri-bek.vic.gov.au/exploring-merri-bek/events/", tier: "A" }
+    ]
+  },
+  {
+    key: "sydney",
+    name: "Sydney",
+    marker: "EVENTS",
+    dataPath: `${dataDir}/events.json`,
+    sources: [
+      { name: "City of Sydney", url: "https://whatson.cityofsydney.nsw.gov.au/categories/kids-and-family", tier: "A" },
+      { name: "Darling Harbour", url: "https://www.darlingharbour.com/whats-on", tier: "B" },
+      { name: "Sydney Opera House", url: "https://www.sydneyoperahouse.com/kids-families", tier: "B" },
+      { name: "Australian Museum", url: "https://australian.museum/whats-on/", tier: "B" },
+      { name: "Art Gallery NSW", url: "https://www.artgallery.nsw.gov.au/whats-on/", tier: "B" },
+      { name: "State Library NSW", url: "https://www.sl.nsw.gov.au/whats-on", tier: "B" },
+      { name: "Sydney Olympic Park", url: "https://www.sydneyolympicpark.com.au/Things-to-Do/Events", tier: "B" },
+      { name: "Inner West", url: "https://www.innerwest.nsw.gov.au/explore/whats-on", tier: "A" },
+      { name: "Randwick", url: "https://www.randwick.nsw.gov.au/about-council/news/events", tier: "A" },
+      { name: "Parramatta", url: "https://atparramatta.com/whats-on", tier: "A" },
+      { name: "Canada Bay", url: "https://www.canadabay.nsw.gov.au/lifestyle/events", tier: "A" }
+    ]
+  }
 ];
 
 const accents = [
@@ -30,9 +56,8 @@ const accents = [
   ["#ffc978", "rgba(255,201,120,.78)"]
 ];
 
-const kidsKeywords = ["kids", "children", "family", "families", "school holiday", "workshop", "story", "play", "craft", "baby", "toddler", "all ages", "free", "小朋友", "亲子", "儿童", "家庭"];
+const kidsKeywords = ["kids", "children", "family", "families", "school holiday", "workshop", "story", "play", "craft", "baby", "toddler", "all ages", "free"];
 const rejectKeywords = ["whisky", "wine", "cocktail", "bar", "18+", "adults only", "gambling", "race day", "nightclub"];
-const now = new Date();
 
 function decodeHtml(value) {
   return value.replace(/&amp;/g, "&").replace(/&quot;/g, "\"").replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\s+/g, " ").trim();
@@ -42,8 +67,8 @@ function stripTags(value) {
   return decodeHtml(value.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " "));
 }
 
-async function fetchText(url) {
-  const response = await fetch(url, { headers: { "user-agent": "Sydney Kids Finder weekly updater (+https://github.com/Pikatiu27/sconmyway-site)" } });
+async function fetchText(url, city) {
+  const response = await fetch(url, { headers: { "user-agent": `${city} Kids Finder weekly updater (+https://github.com/Pikatiu27/sconmyway-site)` } });
   if (!response.ok) throw new Error(`${response.status} ${url}`);
   return response.text();
 }
@@ -54,7 +79,7 @@ function scoreCandidate(text, source) {
   let score = source.tier === "A" ? 8 : 5;
   for (const word of kidsKeywords) if (lower.includes(word)) score += 6;
   if (/\b(free|\$|ticket|book|register)\b/i.test(text)) score += 2;
-  if (/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|\d{1,2}\s*[–-]\s*\d{1,2}|\d{1,2}:\d{2}|am|pm)\b/i.test(text)) score += 3;
+  if (/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|\d{1,2}:\d{2}|am|pm)\b/i.test(text)) score += 3;
   return score;
 }
 
@@ -70,7 +95,7 @@ function extractLinks(html, source) {
     const context = stripTags(html.slice(Math.max(0, match.index - 450), Math.min(html.length, match.index + 950)));
     const text = `${label}. ${context}`;
     const score = scoreCandidate(text, source);
-    if (score > 8) links.push({ title: label, url, source: source.name, sourceUrl: source.url, score, text });
+    if (score > 8) links.push({ title: label, url, source: source.name, score, text });
   }
   return links;
 }
@@ -86,7 +111,7 @@ function uniqueCandidates(candidates) {
 }
 
 function extractDate(text) {
-  const match = text.match(/\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\s*\d{1,2}\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s*(?:[–-]\s*\d{1,2}\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*)?(?:,\s*\d{4})?(?:[^.]{0,28}(?:am|pm))?/i);
+  const match = text.match(/\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\s*\d{1,2}\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*(?:[^.]{0,28}(?:am|pm))?/i);
   return match ? match[0].trim() : "See official page";
 }
 
@@ -96,52 +121,45 @@ function extractPrice(text) {
   return match ? `${match[0]} / see official page` : "See official page";
 }
 
-function summarizeFallback(candidate, detailText) {
-  const sentences = (detailText || candidate.text).split(/(?<=[.!?])\s+/).filter((line) => line.length > 40 && line.length < 220);
-  return sentences.slice(0, 2).join(" ") || "Family-friendly activity found from an official Sydney event source. Check the official page before heading out.";
+function summarizeFallback(candidate, city) {
+  const sentences = candidate.detailText.split(/(?<=[.!?])\s+/).filter((line) => line.length > 40 && line.length < 220);
+  return sentences.slice(0, 2).join(" ") || `Family-friendly activity from an official ${city} source. Check the official page before heading out.`;
 }
 
-async function enrichWithOpenAI(candidates) {
+async function enrichWithOpenAI(candidates, city) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) return null;
-  const payload = candidates.map((candidate) => ({ title: candidate.title, url: candidate.url, source: candidate.source, text: candidate.detailText.slice(0, 4500) }));
+  const payload = candidates.map(({ title, url, source, detailText }) => ({ title, url, source, text: detailText.slice(0, 4500) }));
   const response = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
     headers: { authorization: `Bearer ${apiKey}`, "content-type": "application/json" },
     body: JSON.stringify({
       model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       input: [
-        { role: "system", content: "You turn Sydney family event page text into accurate bilingual JSON. Use only provided text. Every field ending in En must be entirely in English and contain no Chinese characters, including referenceEn. If time, venue, price, or age are missing, say 'See official page'. Do not invent." },
-        { role: "user", content: `Today is ${now.toISOString().slice(0, 10)}. Select the best 8 kid/family-friendly Sydney activities for the next 7 days. Return only JSON object with key events. Each event: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
+        { role: "system", content: `Create accurate bilingual family event JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including referenceEn. If a fact is missing, say 'See official page'. Never invent details.` },
+        { role: "user", content: `Today is ${now.toISOString().slice(0, 10)}. Select the best 8 kid-friendly ${city} activities for the next 7 days. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
       ],
       text: { format: { type: "json_object" } }
     })
   });
   if (!response.ok) throw new Error(`OpenAI ${response.status}: ${await response.text()}`);
   const data = await response.json();
-  const text = data.output_text || data.output?.flatMap((item) => item.content || []).map((part) => part.text || "").join("");
-  const parsed = JSON.parse(text);
+  const output = data.output_text || data.output?.flatMap((item) => item.content || []).map((part) => part.text || "").join("");
+  const parsed = JSON.parse(output);
   return Array.isArray(parsed) ? parsed : parsed.events;
 }
 
-function fallbackEvents(candidates) {
+function fallbackEvents(candidates, city) {
   return candidates.slice(0, 8).map((candidate) => ({
-    tagZh: `${candidate.source} · 亲子`,
-    tagEn: `${candidate.source} · Family`,
-    titleZh: candidate.title,
-    titleEn: candidate.title,
-    summaryZh: "从官方活动来源筛选出的亲子友好候选。出发前请点官网确认最新时间、票价和年龄要求。",
-    summaryEn: summarizeFallback(candidate, candidate.detailText),
-    timeZh: extractDate(candidate.detailText),
-    timeEn: extractDate(candidate.detailText),
-    placeZh: candidate.source,
-    placeEn: candidate.source,
-    priceZh: extractPrice(candidate.detailText),
-    priceEn: extractPrice(candidate.detailText),
-    url: candidate.url,
-    mapQuery: candidate.source,
-    referenceZh: `${candidate.source} official event listing.`,
-    referenceEn: `${candidate.source} official event listing.`
+    tagZh: `${candidate.source} · 亲子`, tagEn: `${candidate.source} · Family`,
+    titleZh: candidate.title, titleEn: candidate.title,
+    summaryZh: `来自 ${city} 官方活动来源的亲子友好候选。出发前请点击官网确认最新时间、票价和年龄要求。`,
+    summaryEn: summarizeFallback(candidate, city),
+    timeZh: extractDate(candidate.detailText), timeEn: extractDate(candidate.detailText),
+    placeZh: candidate.source, placeEn: candidate.source,
+    priceZh: extractPrice(candidate.detailText), priceEn: extractPrice(candidate.detailText),
+    url: candidate.url, mapQuery: `${candidate.source} ${city}`,
+    referenceZh: `${candidate.source} 官方活动页面。`, referenceEn: `${candidate.source} official event listing.`
   }));
 }
 
@@ -154,71 +172,51 @@ function renderEvent(event, index) {
   const featured = index === 0 ? " featured" : "";
   const map = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.mapQuery || event.placeEn || event.titleEn)}`;
   return `        <article class="card${featured}" style="--accent:${accent};--accent-soft:${soft};">
-          <div class="card-top">
-            <span class="tag zh">${esc(event.tagZh)}</span>
-            <span class="tag en">${esc(event.tagEn)}</span>
-            <span class="score">${index < 3 ? "★★★★★" : "★★★★☆"}</span>
-          </div>
-          <h2>
-            <span class="zh">${esc(event.titleZh)}</span>
-            <span class="en">${esc(event.titleEn)}</span>
-          </h2>
-          <p class="summary zh">${esc(event.summaryZh)}</p>
-          <p class="summary en">${esc(event.summaryEn)}</p>
-          <div class="facts">
-            <div class="fact"><span>⏰</span><span class="zh">${esc(event.timeZh)}</span><span class="en">${esc(event.timeEn)}</span></div>
-            <div class="fact"><span>📍</span><span class="zh">${esc(event.placeZh)}</span><span class="en">${esc(event.placeEn)}</span></div>
-            <div class="fact"><span>🎟️</span><span class="zh">${esc(event.priceZh)}</span><span class="en">${esc(event.priceEn)}</span></div>
-          </div>
-          <div class="actions">
-            <a class="action primary" href="${esc(event.url)}" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a>
-            <a class="action" href="${esc(map)}" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a>
-          </div>
+          <div class="card-top"><span class="tag zh">${esc(event.tagZh)}</span><span class="tag en">${esc(event.tagEn)}</span><span class="score">${index < 3 ? "★★★★★" : "★★★★☆"}</span></div>
+          <h2><span class="zh">${esc(event.titleZh)}</span><span class="en">${esc(event.titleEn)}</span></h2>
+          <p class="summary zh">${esc(event.summaryZh)}</p><p class="summary en">${esc(event.summaryEn)}</p>
+          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">${esc(event.timeZh)}</span><span class="en">${esc(event.timeEn)}</span></div><div class="fact"><span>📍</span><span class="zh">${esc(event.placeZh)}</span><span class="en">${esc(event.placeEn)}</span></div><div class="fact"><span>🎟️</span><span class="zh">${esc(event.priceZh)}</span><span class="en">${esc(event.priceEn)}</span></div></div>
+          <div class="actions"><a class="action primary" href="${esc(event.url)}" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="${esc(map)}" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
           <div class="reference"><b>Reference:</b> <span class="zh">${esc(event.referenceZh)}</span><span class="en">${esc(event.referenceEn)}</span></div>
         </article>`;
 }
 
-async function main() {
+async function buildCity(config) {
   const candidates = [];
-  for (const source of sources) {
+  for (const source of config.sources) {
     try {
-      const html = await fetchText(source.url);
-      candidates.push(...extractLinks(html, source));
+      candidates.push(...extractLinks(await fetchText(source.url, config.name), source));
     } catch (error) {
-      console.warn(`Source skipped: ${source.name}: ${error.message}`);
+      console.warn(`${config.name} source skipped: ${source.name}: ${error.message}`);
     }
   }
-
-  const selected = uniqueCandidates(candidates).slice(0, 14);
+  const selected = uniqueCandidates(candidates).slice(0, 16);
   for (const candidate of selected) {
-    try {
-      candidate.detailText = stripTags(await fetchText(candidate.url)).slice(0, 7000);
-    } catch {
-      candidate.detailText = candidate.text;
-    }
+    try { candidate.detailText = stripTags(await fetchText(candidate.url, config.name)).slice(0, 7000); }
+    catch { candidate.detailText = candidate.text; }
   }
-
   let events = null;
-  try {
-    events = await enrichWithOpenAI(selected);
-  } catch (error) {
-    console.warn(`OpenAI enrichment skipped: ${error.message}`);
-  }
-  if (!Array.isArray(events) || events.length < 3) events = fallbackEvents(selected);
+  try { events = await enrichWithOpenAI(selected, config.name); }
+  catch (error) { console.warn(`${config.name} AI enrichment skipped: ${error.message}`); }
+  if (!Array.isArray(events) || events.length < 3) events = fallbackEvents(selected, config.name);
   events = events.slice(0, 8);
-  if (events.length === 0) throw new Error("No candidate events found; leaving site unchanged.");
-
-  await mkdir(dataDir, { recursive: true });
-  await writeFile(dataPath, `${JSON.stringify({ updatedAt: new Date().toISOString(), events }, null, 2)}\n`, "utf8");
-
-  const index = await readFile(indexPath, "utf8");
-  const start = "<!-- EVENTS_START -->";
-  const end = "<!-- EVENTS_END -->";
-  const next = index.replace(new RegExp(`${start}[\\s\\S]*?${end}`), `${start}\n${events.map(renderEvent).join("\n\n")}\n        ${end}`);
-  await writeFile(indexPath, next, "utf8");
+  if (events.length < 3) throw new Error(`Not enough ${config.name} event candidates; site left unchanged.`);
+  return events;
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+async function main() {
+  await mkdir(dataDir, { recursive: true });
+  let index = await readFile(indexPath, "utf8");
+  for (const config of cityConfigs) {
+    const events = await buildCity(config);
+    await writeFile(config.dataPath, `${JSON.stringify({ city: config.name, updatedAt: new Date().toISOString(), events }, null, 2)}\n`, "utf8");
+    const start = `<!-- ${config.marker}_START -->`;
+    const end = `<!-- ${config.marker}_END -->`;
+    const pattern = new RegExp(`${start}[\\s\\S]*?${end}`);
+    if (!pattern.test(index)) throw new Error(`Missing ${config.name} event markers in ${indexPath}`);
+    index = index.replace(pattern, `${start}\n${events.map(renderEvent).join("\n\n")}\n        ${end}`);
+  }
+  await writeFile(indexPath, index, "utf8");
+}
+
+main().catch((error) => { console.error(error); process.exit(1); });
