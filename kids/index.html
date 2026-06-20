@@ -399,8 +399,8 @@
 
     .actions {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 9px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 7px;
       margin-top: 14px;
     }
 
@@ -417,15 +417,32 @@
       background: #fff;
       font-size: 13px;
       font-weight: 800;
+      font-family: inherit;
       line-height: 1.1;
       text-decoration: none;
       box-shadow: 0 8px 18px rgba(72, 86, 96, 0.1);
+      cursor: pointer;
     }
 
     .action.primary {
       border-color: transparent;
       background: linear-gradient(135deg, var(--accent, var(--mint)), rgba(255, 255, 255, 0.42));
       box-shadow: 0 10px 20px rgba(72, 86, 96, 0.13);
+    }
+
+    .share-action[data-copied="true"] {
+      border-color: rgba(59, 157, 127, 0.28);
+      background: rgba(189, 243, 210, 0.72);
+    }
+
+    .card.shared-target {
+      scroll-margin-top: 18px;
+      animation: shared-card-highlight 2.8s ease-out 1;
+    }
+
+    @keyframes shared-card-highlight {
+      0%, 24% { box-shadow: 0 0 0 4px rgba(255, 184, 209, 0.7), 0 20px 42px rgba(72, 86, 96, 0.2); }
+      100% { box-shadow: var(--shadow); }
     }
 
     .reference {
@@ -715,7 +732,8 @@
 
       .action {
         min-height: 40px;
-        padding: 9px 10px;
+        padding: 9px 6px;
+        font-size: 12px;
       }
 
       .more-panel summary {
@@ -1196,18 +1214,31 @@
   <script>
     const buttons = document.querySelectorAll("[data-set-lang]");
     const root = document.body;
+    const deepLinkParams = new URLSearchParams(window.location.search);
+
+    function setLanguage(lang, persist = true) {
+      const nextLang = lang === "en" ? "en" : "zh";
+      root.dataset.lang = nextLang;
+      document.documentElement.lang = nextLang === "zh" ? "zh-CN" : "en";
+      document.title = nextLang === "zh" ? "今天带娃去哪儿？" : "Where to take the kids today?";
+      buttons.forEach((item) => {
+        item.setAttribute("aria-pressed", String(item.dataset.setLang === nextLang));
+      });
+      document.querySelectorAll(".share-action").forEach((item) => {
+        item.setAttribute("aria-label", nextLang === "zh" ? "复制活动链接" : "Copy activity link");
+      });
+      if (persist) {
+        try { localStorage.setItem("kids-lang", nextLang); } catch {}
+      }
+    }
 
     buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const lang = button.dataset.setLang;
-        root.dataset.lang = lang;
-        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
-        document.title = lang === "zh" ? "今天带娃去哪儿？" : "Where to take the kids today?";
-        buttons.forEach((item) => {
-          item.setAttribute("aria-pressed", String(item === button));
-        });
-      });
+      button.addEventListener("click", () => setLanguage(button.dataset.setLang));
     });
+
+    let savedLanguage = "zh";
+    try { savedLanguage = localStorage.getItem("kids-lang") || "zh"; } catch {}
+    setLanguage(deepLinkParams.get("lang") || savedLanguage, false);
 
     const citySelect = document.querySelector("[data-city-select]");
     const cityNames = {
@@ -1230,7 +1261,83 @@
     citySelect.addEventListener("change", () => setCity(citySelect.value));
     let savedCity = "sydney";
     try { savedCity = localStorage.getItem("kids-city") || "sydney"; } catch {}
-    setCity(savedCity);
+    setCity(deepLinkParams.get("city") || savedCity);
+
+    function stableHash(value) {
+      let hash = 5381;
+      for (let index = 0; index < value.length; index += 1) {
+        hash = ((hash << 5) + hash) ^ value.charCodeAt(index);
+      }
+      return (hash >>> 0).toString(36);
+    }
+
+    async function copyShareLink(value) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(value);
+        return;
+      }
+      const input = document.createElement("textarea");
+      input.value = value;
+      input.setAttribute("readonly", "");
+      input.style.position = "fixed";
+      input.style.opacity = "0";
+      document.body.appendChild(input);
+      input.select();
+      const copied = document.execCommand("copy");
+      input.remove();
+      if (!copied) throw new Error("Copy failed");
+    }
+
+    document.querySelectorAll(".cards[data-city-panel]").forEach((section) => {
+      const city = section.dataset.cityPanel;
+      section.querySelectorAll(".card").forEach((card) => {
+        const official = card.querySelector(".actions .action.primary");
+        if (!official) return;
+        const officialUrl = new URL(official.href, window.location.href);
+        const eventId = `event-${city}-${stableHash(`${officialUrl.hostname}${officialUrl.pathname}`)}`;
+        card.id = eventId;
+
+        const shareButton = document.createElement("button");
+        shareButton.type = "button";
+        shareButton.className = "action share-action";
+        shareButton.innerHTML = '<span class="zh">分享</span><span class="en">Share</span>';
+        shareButton.setAttribute("aria-label", root.dataset.lang === "zh" ? "复制活动链接" : "Copy activity link");
+        card.querySelector(".actions").appendChild(shareButton);
+
+        shareButton.addEventListener("click", async () => {
+          const shareUrl = new URL(window.location.href);
+          shareUrl.search = "";
+          shareUrl.hash = "";
+          shareUrl.searchParams.set("city", city);
+          shareUrl.searchParams.set("lang", root.dataset.lang);
+          shareUrl.searchParams.set("event", eventId);
+          try {
+            await copyShareLink(shareUrl.href);
+            shareButton.dataset.copied = "true";
+            shareButton.querySelector(".zh").textContent = "已复制";
+            shareButton.querySelector(".en").textContent = "Copied";
+            window.setTimeout(() => {
+              shareButton.dataset.copied = "false";
+              shareButton.querySelector(".zh").textContent = "分享";
+              shareButton.querySelector(".en").textContent = "Share";
+            }, 1800);
+          } catch {
+            shareButton.querySelector(".zh").textContent = "复制失败";
+            shareButton.querySelector(".en").textContent = "Copy failed";
+          }
+        });
+      });
+    });
+
+    const sharedEvent = deepLinkParams.get("event");
+    if (sharedEvent) {
+      window.setTimeout(() => {
+        const target = document.getElementById(sharedEvent);
+        if (!target) return;
+        target.classList.add("shared-target");
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 120);
+    }
 
     const now = new Date();
     const weekEnd = new Date(now);
