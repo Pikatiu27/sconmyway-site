@@ -111,7 +111,7 @@ async function enrichWithOpenAI(candidates) {
     body: JSON.stringify({
       model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       input: [
-        { role: "system", content: "You turn Sydney family event page text into accurate bilingual JSON. Use only provided text. If time, venue, price, or age are missing, say 'See official page'. Do not invent." },
+        { role: "system", content: "You turn Sydney family event page text into accurate bilingual JSON. Use only provided text. Every field ending in En must be entirely in English and contain no Chinese characters, including referenceEn. If time, venue, price, or age are missing, say 'See official page'. Do not invent." },
         { role: "user", content: `Today is ${now.toISOString().slice(0, 10)}. Select the best 8 kid/family-friendly Sydney activities for the next 7 days. Return only JSON object with key events. Each event: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
       ],
       text: { format: { type: "json_object" } }

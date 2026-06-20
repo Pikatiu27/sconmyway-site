@@ -36,6 +36,14 @@ async function readData() {
         throw new Error(`events[${index}].${field} is missing`);
       }
     }
+    for (const field of ["tagEn", "titleEn", "summaryEn", "timeEn", "placeEn", "priceEn", "referenceEn"]) {
+      if (typeof event[field] !== "string" || !event[field].trim()) {
+        throw new Error(`events[${index}].${field} is missing`);
+      }
+      if (/\p{Script=Han}/u.test(event[field])) {
+        throw new Error(`events[${index}].${field} contains Chinese text`);
+      }
+    }
   }
   return data;
 }
