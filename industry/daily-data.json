@@ -148,22 +148,30 @@
   ],
   "classroom": {
     "title": {
-      "zh": "钢材牌号数字不等于可直接换算的设计强度",
-      "en": "Steel Grade Numbers Are Not Directly Interchangeable"
+      "zh": "各国规范里的风速为什么不能直接比较",
+      "en": "Why Code Wind Speeds Are Not Directly Comparable"
     },
     "text": {
-      "zh": "Q355、Grade 350和S355看起来都接近“350级”，但对应的产品范围、厚度条件、韧性要求和适用构件并不相同。跨规范比选时，先核对材料产品标准与厚度分档，再回到各自设计规范里的抗力表达，别只按牌号数字做一对一替换。",
-      "en": "Q355, Grade 350, and S355 may all look like \"350-class\" steels, but they do not map directly across product scope, thickness conditions, toughness requirements, or intended member types. When comparing across codes, verify the product standard and thickness class first, then return to each design code's resistance format instead of doing a simple number-for-number substitution."
+      "zh": "中国、澳大利亚、美国和欧洲规范都会从一个基准风速或风压出发，但这些数值不能只看单位后直接比较。中国GB 50009常以基本风压组织计算；澳大利亚AS/NZS 1170.2从区域阵风风速出发；美国ASCE 7采用与风险类别相关的基本风速图；欧洲EN 1991-1-4则使用基本风速并配合方向、季节、地形和高度修正。真正比较时要先核对平均时间、重现期或超越概率、地形类别、高度基准、重要性水平和压力系数。相同的风速数字，在不同定义下可能代表完全不同的设计作用。",
+      "en": "Chinese, Australian, US, and European standards all begin with a reference wind speed or pressure, but the published values are not directly comparable. GB 50009 commonly structures the calculation around basic wind pressure; AS/NZS 1170.2 begins with regional gust wind speed; ASCE 7 uses mapped basic wind speeds linked to risk category; and EN 1991-1-4 uses basic wind velocity with direction, season, terrain, and height adjustments. A valid comparison must first align averaging time, return period or exceedance probability, terrain category, reference height, importance level, and pressure coefficients. The same numerical wind speed can therefore represent a different design action."
     },
-    "references": "SAMR national standards platform; Standards Australia catalogue",
+    "references": "GB 50009; AS/NZS 1170.2; ASCE 7; EN 1991-1-4",
     "referenceLinks": [
       {
-        "label": "SAMR national standards platform",
+        "label": "China National Standard Information Service: GB 50009",
         "url": "https://std.samr.gov.cn/"
       },
       {
-        "label": "Standards Australia catalogue",
+        "label": "Standards Australia catalogue: AS/NZS 1170.2",
         "url": "https://www.standards.org.au/standards-catalogue"
+      },
+      {
+        "label": "ASCE 7",
+        "url": "https://www.asce.org/publications-and-news/asce-7"
+      },
+      {
+        "label": "European Commission JRC: Eurocode 1",
+        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-1-actions-structures"
       }
     ]
   }
