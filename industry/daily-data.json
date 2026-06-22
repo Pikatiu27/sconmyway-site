@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,72 +7,72 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "AI",
-        "en": "AI"
+        "zh": "AI基础设施",
+        "en": "AI Infrastructure"
       },
       "title": {
-        "zh": "IEA把AI竞赛重新定义为电力与数据中心约束之争",
-        "en": "IEA reframes the AI race around power and data-centre constraints"
+        "zh": "FERC要求电网运营商加快AI数据中心并网，算力竞争正式进入电力审批",
+        "en": "FERC orders faster AI data-center interconnection, pushing compute competition into grid approvals"
       },
       "summary": {
-        "zh": "IEA《Energy and AI》指出，AI扩张首先受制于数据中心用电、冷却与并网速度。行业竞争正在从单纯堆模型，转向谁能更快拿到稳定低碳电力、建设可扩展基础设施。",
-        "en": "The IEA's Energy and AI analysis argues that AI expansion is increasingly limited by data-centre electricity, cooling, and grid-connection speed. Competitive advantage is shifting from model scale alone toward securing reliable low-carbon power and deployable infrastructure."
+        "zh": "美国联邦能源监管委员会于2026年6月18日要求六大区域电网运营商加快大型负荷接入规则改革，直接回应AI数据中心的爆发式用电需求。信号很明确：下一阶段AI竞争不只看芯片和模型，还取决于谁能更快拿到并网容量、承担升级成本并证明负荷可调度。",
+        "en": "On June 18, 2026, the US Federal Energy Regulatory Commission directed six regional grid operators to accelerate rule changes for very large power users in direct response to AI data-centre demand. The signal is clear: the next phase of AI competition depends not only on chips and models, but also on who can secure interconnection capacity, absorb upgrade costs, and offer flexible load behaviour."
       },
       "watch": {
-        "zh": "观察数据中心并网周期、电力采购协议，以及核能、储能和液冷方案能否真正缩短部署时间。",
-        "en": "Watch grid-connection lead times, power-purchase agreements, and whether nuclear, storage, and liquid cooling actually shorten deployment."
+        "zh": "观察30至60天内各区域电网提交的改革方案，尤其是自备电源、可中断负荷和升级费用分摊机制。",
+        "en": "Watch the regional grid proposals due within 30 to 60 days, especially around on-site power, interruptible load, and cost allocation for upgrades."
       },
-      "reference": "IEA, Energy and AI, accessed 2026-06-22",
+      "reference": "AP, Federal regulators order grid operators to speed power to energy-hungry AI data centers, published 2026-06-18",
       "referenceLinks": [
         {
-          "label": "IEA: Energy and AI",
-          "url": "https://www.iea.org/reports/energy-and-ai"
+          "label": "AP: FERC orders faster power access for AI data centers",
+          "url": "https://apnews.com/article/506e3d206871111f15c3c62fc5368be5"
         }
       ]
     },
     {
       "topic": {
-        "zh": "AI",
-        "en": "AI"
+        "zh": "国家科研平台",
+        "en": "National Research Platforms"
       },
       "title": {
-        "zh": "美国Genesis Mission把AI竞争推向国家级科研与制造平台",
-        "en": "US Genesis Mission pushes AI competition toward national research platforms"
+        "zh": "Genesis Mission继续把AI竞赛推向“超算+实验设施+数据”一体化平台",
+        "en": "Genesis Mission keeps shifting AI competition toward integrated compute, facilities, and data platforms"
       },
       "summary": {
-        "zh": "美国Genesis Mission将超算、实验装置、AI系统和数据平台联成一体，目标十年内把科研产出翻倍。竞争焦点因此上移到算力、仪器、材料与制造协同，而不只是模型发布节奏。",
-        "en": "The US Genesis Mission links supercomputers, experimental facilities, AI systems, and scientific datasets into one national platform aimed at doubling research productivity within a decade. The signal is that AI competition is moving toward integrated compute, instrumentation, materials, and manufacturing ecosystems."
+        "zh": "Genesis Mission官网继续把其目标定义为把全球最强超算、实验设施、AI系统与独特数据集连成统一科研平台，并明确列出NVIDIA、OpenAI for Government、AMD、AWS、Google和Oracle等协作方。对产业判断而言，领先优势正从单点模型能力转向国家级科研基础设施与跨机构协同效率。",
+        "en": "The Genesis Mission site continues to frame its goal as connecting the world’s most powerful supercomputers, experimental facilities, AI systems, and unique datasets into one scientific platform, while listing collaborators such as NVIDIA, OpenAI for Government, AMD, AWS, Google, and Oracle. The industry implication is that durable advantage is shifting from stand-alone model capability toward national-scale research infrastructure and cross-institution execution."
       },
       "watch": {
-        "zh": "观察算力和实验数据如何开放、科研成果怎样转入制造，以及项目是否形成可量化产出。",
-        "en": "Watch how compute and experimental data are allocated, how discoveries transfer into manufacturing, and whether measurable outputs emerge."
+        "zh": "观察参与机构如何把平台目标落到具体算力分配、实验接口和可量化科研产出上。",
+        "en": "Watch how the platform vision turns into concrete compute allocation, experimental interfaces, and measurable research output."
       },
-      "reference": "US Department of Energy, Genesis Mission overview, accessed 2026-06-22",
+      "reference": "Genesis Mission official website, accessed 2026-06-23",
       "referenceLinks": [
         {
-          "label": "US DOE: Genesis Mission",
+          "label": "Genesis Mission",
           "url": "https://genesis.energy.gov/"
         }
       ]
     },
     {
       "topic": {
-        "zh": "加密货币",
-        "en": "Crypto"
+        "zh": "数字支付",
+        "en": "Digital Payments"
       },
       "title": {
-        "zh": "数字欧元继续推进，欧洲把支付主权做成产业基础设施",
-        "en": "Digital euro keeps advancing as Europe treats payments sovereignty as infrastructure"
+        "zh": "数字欧元仍按“主权支付基础设施”逻辑推进，欧洲押注线上线下一体化",
+        "en": "The digital euro still advances as sovereignty infrastructure, with Europe betting on unified online and offline payments"
       },
       "summary": {
-        "zh": "ECB称数字欧元将支持线上与线下支付，并以2029年具备潜在首发准备为目标。竞争重点随之转向支付主权、可及性、隐私设计，以及与现有银行体系的协同能力。",
-        "en": "The ECB says the digital euro is being built for both online and offline payments, with the Eurosystem aiming to be ready for a potential first issuance during 2029. The strategic focus is shifting toward payments sovereignty, accessibility, privacy design, and integration with existing banking rails."
+        "zh": "欧洲央行的数字欧元页面仍把项目定位为补充现金和现有电子支付的公共基础设施，并持续强调线上与线下可用、欧洲支付自主性和统一规则体系。对加密与支付行业而言，这说明欧洲的竞争重点不是追逐投机叙事，而是把可及性、隐私边界和公共货币入口做成长期制度能力。",
+        "en": "The ECB’s digital euro page still positions the project as public infrastructure that complements cash and existing electronic payments, with continued emphasis on online and offline usability, European payments autonomy, and a common rulebook. For crypto and payments, that suggests Europe’s priority is not speculative momentum but long-run institutional capacity around access, privacy boundaries, and public-money entry points."
       },
       "watch": {
-        "zh": "观察欧盟立法进度、离线支付的隐私实现，以及商业银行和支付机构的接入与补偿机制。",
-        "en": "Watch EU legislation, offline-payment privacy, and the access and compensation model for banks and payment providers."
+        "zh": "观察立法通过节奏、规则手册定稿，以及支付服务提供商试点准备如何影响2027至2029时间表。",
+        "en": "Watch the legislation timeline, rulebook completion, and pilot readiness for payment service providers as the 2027 to 2029 path firms up."
       },
-      "reference": "European Central Bank, Digital euro project page, accessed 2026-06-22",
+      "reference": "European Central Bank, Digital euro, accessed 2026-06-23",
       "referenceLinks": [
         {
           "label": "ECB: Digital euro",
@@ -84,301 +84,320 @@
   "insights": [
     {
       "area": {
-        "zh": "结构可靠度",
-        "en": "Structural Reliability"
+        "zh": "抗震韧性",
+        "en": "Seismic Resilience"
       },
       "title": {
-        "zh": "数字孪生正在从“看得到”升级到“解释得清”",
-        "en": "Digital twins are moving from visibility to defensible uncertainty"
+        "zh": "下一代PBEE正在把“可靠度”和“恢复力”放进同一套时变框架",
+        "en": "Next-generation PBEE is putting reliability and recovery into one time-dependent framework"
       },
       "evidence": {
-        "zh": "研究类型：2025预印本；方法：PCA降维、贝叶斯神经网络、HMC推断与稀疏应变重建。",
-        "en": "Evidence: 2025 preprint using PCA reduction, Bayesian neural networks, HMC inference, and sparse-gauge strain reconstruction."
+        "zh": "研究类型：2026年预印本；方法：连续时间马尔可夫链、时变失效概率、恢复过程显式建模。",
+        "en": "Evidence: 2026 preprint using continuous-time Markov chains, time-dependent failure probabilities, and explicit recovery modeling."
       },
       "summary": {
-        "zh": "这篇2025预印本把PCA、贝叶斯神经网络和HMC结合，用稀疏应变计重建全场应变，并区分随机不确定性与认知不确定性。真正有用的下一代数字孪生，不只是把监测结果做成漂亮界面，而是能把低置信度区域、模型盲点和决策风险一起解释清楚。职业与研究上，懂传感、概率推断和可审计风险表达的人，会比只做可视化的人更有优势。",
-        "en": "This 2025 preprint combines PCA, Bayesian neural networks, and HMC to reconstruct full-field strain from sparse gauges while separating aleatoric and epistemic uncertainty. The practice signal is that useful digital twins must explain low-confidence regions, model blind spots, and decision risk rather than just display monitoring data. For careers and research, engineers who can connect sensing, probabilistic inference, and auditable risk communication will stand out beyond dashboard-only work."
+        "zh": "这篇2026年预印本把地震后的损伤演化与恢复过程直接嵌入PBEE状态转移，而不是把恢复力留到事后解释。对专业实践的启发是，真正可辩护的全寿命抗震设计需要同时描述失效概率、停运时间和恢复路径；只会算一次性极限状态已不够，能够把可靠度指标和运营恢复放进同一决策框架的工程师更有价值。",
+        "en": "This 2026 preprint embeds post-earthquake damage evolution and recovery directly into PBEE state transitions instead of treating resilience as a post-processing add-on. The professional signal is that defensible life-cycle seismic design must describe failure probability, downtime, and recovery pathways together; one-off limit-state checks are no longer enough, and engineers who can place reliability and operational recovery in the same decision frame will be more valuable."
       },
       "why": {
-        "zh": "把SHM、贝叶斯更新和维修决策连成一套可审计工作流。",
-        "en": "Link SHM, Bayesian updating, and maintenance decisions into one auditable workflow."
+        "zh": "把抗震性能评估从“是否破坏”推进到“多久恢复到可用状态”。",
+        "en": "It advances seismic assessment from simple failure checks toward time-to-recovery thinking."
       },
       "caveat": {
-        "zh": "预印本结论仍需更多真实结构、长期漂移和不同传感器布置验证；低不确定性不等于模型一定正确。",
-        "en": "Preprint findings still need wider validation across real structures, long-term drift, and sensor layouts; low uncertainty does not guarantee a correct model."
+        "zh": "当前示例规模仍受限，复杂建筑群、社会恢复与供应链耦合还需进一步验证。",
+        "en": "The present demonstrations are still limited in scale, and broader building portfolios plus social recovery coupling need more validation."
       },
-      "reference": "arXiv:2512.03115, submitted 2025-12-02",
+      "reference": "arXiv:2606.12448, submitted 2026-05-30",
       "referenceLinks": [
         {
-          "label": "arXiv: Real-Time SHM with Bayesian Neural Networks",
-          "url": "https://arxiv.org/abs/2512.03115"
+          "label": "arXiv: Integrated assessment of structural reliability and resilience in PBEE",
+          "url": "https://arxiv.org/abs/2606.12448"
         }
       ]
     },
     {
       "area": {
-        "zh": "低碳结构",
-        "en": "Low-Carbon Structures"
+        "zh": "桥梁运维",
+        "en": "Bridge Maintenance"
       },
       "title": {
-        "zh": "最低碳方案只有在可施工时才有工程价值",
-        "en": "Minimum-carbon design matters only when it remains buildable"
+        "zh": "老桥数字孪生开始借用现成交通相机和天气数据，而不只依赖加装传感器",
+        "en": "Bridge digital twins are starting to reuse traffic cameras and weather feeds instead of relying only on new sensors"
       },
       "evidence": {
-        "zh": "研究类型：2026优化研究；方法：把隐含碳、材料兼容性、构件选择和节点复杂度纳入混合整数模型。",
-        "en": "Evidence: 2026 optimisation study combining embodied carbon, material compatibility, member choice, and joint complexity in a mixed-integer model."
+        "zh": "研究类型：2026年预印本；方法：交通视觉识别、LWR交通流模型、天气退化指标、蒙特卡洛不确定性分析。",
+        "en": "Evidence: 2026 preprint combining traffic vision, an LWR traffic-flow model, weather deterioration indicators, and Monte Carlo uncertainty analysis."
       },
       "summary": {
-        "zh": "这篇2026研究把最低碳排目标与可施工性、材料兼容性、构件类型和节点复杂度一起放进混合整数优化。结果说明，理论上最小碳排的解经常并不适合现场实施；真正可落地的低碳结构，必须把连接复杂度、截面边界和施工逻辑同时纳入早期方案。对职业与研究而言，会把碳、造价和施工一起建模的人，更接近未来方案总工与方法开发者的角色。",
-        "en": "This 2026 study places embodied-carbon minimisation, constructability, material compatibility, member choice, and joint complexity into one mixed-integer optimisation workflow. It shows that the lowest-theoretical-carbon answer often fails on buildability, so viable low-carbon structures must include connection complexity, section limits, and construction logic from the start. For careers and research, engineers who can model carbon, cost, and constructability together are moving toward lead concept-design and methodology roles."
+        "zh": "这篇研究把现有桥面相机、交通流推断和天气API组合成混合数字孪生，用于高龄桥梁的疲劳与维护分类。行业意义在于，数字化养护不一定先从昂贵的新硬件开始，而可能先从已有视频、环境和运营数据里榨出更可靠的风险信号；懂监测、数据融合和维护策略的人，会比只会做单一传感系统的人更贴近资产管理一线。",
+        "en": "This study combines existing bridge-deck cameras, traffic-flow inference, and weather APIs into a hybrid digital twin for fatigue and maintenance classification on an aging bridge. The practice signal is that digital maintenance may start by extracting stronger risk signals from existing video, environmental, and operational data rather than from expensive new hardware first; engineers who can fuse monitoring, data integration, and maintenance strategy will be closer to frontline asset management."
       },
       "why": {
-        "zh": "把 embodied carbon 和 constructability 放进同一轮早期方案优化。",
-        "en": "Optimise embodied carbon and constructability in the same early-stage loop."
+        "zh": "它把“低成本数据源”变成可持续的桥梁运维入口。",
+        "en": "It turns low-cost data sources into a practical entry point for bridge maintenance analytics."
       },
       "caveat": {
-        "zh": "结果受EPD边界、运输距离、连接假设和供应链可得性影响，不能把单个最优解直接复制到另一项目。",
-        "en": "Results depend on EPD boundaries, transport, connection assumptions, and supply availability; one optimum cannot be copied directly to another project."
+        "zh": "模型仍依赖场景迁移能力，交通代理量与真实应力响应之间需要现场校核。",
+        "en": "The method still depends on transferability, and the link from traffic proxies to real stress response needs site calibration."
       },
-      "reference": "arXiv:2602.07185, submitted 2026-02-06",
+      "reference": "arXiv:2603.14028, submitted 2026-03-14",
       "referenceLinks": [
         {
-          "label": "arXiv: Minimum Carbon Trusses",
-          "url": "https://arxiv.org/abs/2602.07185"
+          "label": "arXiv: Traffic and weather driven hybrid digital twin for bridge monitoring",
+          "url": "https://arxiv.org/abs/2603.14028"
         }
       ]
     },
     {
       "area": {
-        "zh": "基础设施系统",
-        "en": "Infrastructure Systems"
+        "zh": "岩土数字校核",
+        "en": "Geotechnical Digital Verification"
       },
       "title": {
-        "zh": "大负荷时代，结构工程也要学会电网与站址逻辑",
-        "en": "Large-load infrastructure makes grid logic a structural-engineering skill"
+        "zh": "AI进入岩土计算的真正门槛不是会不会聊天，而是能否把方法卡、单位与适用边界锁死",
+        "en": "The real threshold for AI in geotechnical calculation is not conversation quality but locked methods, units, and applicability limits"
       },
       "evidence": {
-        "zh": "研究类型：2026系统规划论文；方法：用多年期情景模型联动发电、储能、输电和大负荷建设时序。",
-        "en": "Evidence: 2026 systems-planning paper coupling generation, storage, transmission, and large-load construction timing in a multi-year scenario model."
+        "zh": "研究类型：2026年预印本；方法：以JSON方法卡表达公式、单位、一致性和文献引用，再由受约束符号引擎执行。",
+        "en": "Evidence: 2026 preprint representing engineering methods as JSON method cards with formulas, units, consistency rules, and literature citations, executed by a constrained symbolic engine."
       },
       "summary": {
-        "zh": "这篇2026论文把数据中心与电气化制造带来的大负荷需求放进多年期电网扩容模型，结果显示发电、储能和输电必须同步规划，施工时间还会直接改变投资节奏与技术组合。对土木与结构工程来说，未来项目不再只是算楼和算构件，还要理解负荷时序、并网条件和区域基础设施联动。职业与研究上，懂结构系统又懂能源约束的人，会更吃香。",
-        "en": "This 2026 paper models grid expansion under large loads from data centres and electrified manufacturing, showing that generation, storage, and transmission must be planned together and that asset construction time materially changes investment timing and technology mix. For civil and structural engineers, future projects will require understanding load profiles, interconnection constraints, and regional infrastructure coupling, not just the building itself. Career-wise, hybrid fluency across structures and energy systems will become more valuable."
+        "zh": "GeoMCP把岩土解析方法从散落电子表格转成带适用范围与引用的结构化方法卡，再由受约束执行层计算，核心思想是把LLM从“计算器”降级为“编排者”。这对土木与结构工程是个重要提醒：AI真正可审计的落地方向，不是让模型直接产出最后答案，而是让它调度已验证的方法、暴露假定并保留工程师签字责任。",
+        "en": "GeoMCP converts analytical geotechnical methods from scattered spreadsheets into structured method cards with applicability bounds and citations, then computes them through a constrained execution layer, effectively demoting the LLM from calculator to orchestrator. For civil and structural practice, that is a useful signal: the auditable path for AI is not letting the model invent final answers, but letting it call verified methods, expose assumptions, and preserve signed engineering responsibility."
       },
       "why": {
-        "zh": "站址、并网和结构方案会越来越早地耦合决策。",
-        "en": "Site, interconnection, and structural choices will be coupled earlier in design."
+        "zh": "它给“AI辅助计算”与“工程责任边界”之间画出更清楚的接口。",
+        "en": "It draws a clearer interface between AI assistance and professional responsibility."
       },
       "caveat": {
-        "zh": "这是区域系统规划模型，不是结构设计条文；需求增长、政策和能源价格变化会显著改变结果。",
-        "en": "This is a regional planning model, not a structural design rule; demand, policy, and energy-price assumptions materially change the result."
+        "zh": "框架价值仍取决于方法卡覆盖范围与维护质量，不能替代最终专业判断。",
+        "en": "Its value still depends on the coverage and maintenance quality of the method cards, and it does not replace final professional judgment."
       },
-      "reference": "arXiv:2605.29053, submitted 2026-05-27",
+      "reference": "arXiv:2603.01022, submitted 2026-03-01",
       "referenceLinks": [
         {
-          "label": "arXiv: Grid Capacity Expansion under Data Centers and Electrified Manufacturing Large Loads",
-          "url": "https://arxiv.org/abs/2605.29053"
+          "label": "arXiv: GeoMCP",
+          "url": "https://arxiv.org/abs/2603.01022"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "各国规范里的风速为什么不能直接比较",
-      "en": "Why Code Wind Speeds Are Not Directly Comparable"
+      "zh": "基础偏心受压：为什么中外审核都先看合力位置？",
+      "en": "Eccentric footing pressure: why do both Chinese and international reviews start with the resultant location?"
     },
     "text": {
-      "zh": "四套规范都在把自然风转换成结构表面的设计压力，但“基本风速”并不是全球统一的测量值。中国GB 50009常以基本风压作为计算入口；澳大利亚AS/NZS 1170.2从区域阵风风速开始；美国ASCE 7使用与风险类别相关的基本风速图；欧洲EN 1991-1-4则从基本风速出发，再结合国家附录与场地修正。若只把图上的m/s数值并排比较，很容易把统计口径差异误当成安全水平差异。",
-      "en": "All four systems convert natural wind into design pressure on a structure, but basic wind speed is not a globally uniform measurement. GB 50009 commonly enters the calculation through basic wind pressure; AS/NZS 1170.2 begins with regional gust wind speed; ASCE 7 uses mapped basic wind speeds linked to risk category; and EN 1991-1-4 starts from basic wind velocity before applying National Annex and site adjustments. Comparing the mapped values in metres per second alone can therefore mistake a difference in statistical definition for a difference in safety level."
+      "zh": "无论在中国项目还是国际项目里，独立基础在竖向力与弯矩共同作用下，第一步通常都不是直接套复杂地基模型，而是先看合力偏心距是否仍落在可接受压应力范围内。中国常见审查会先把基础底面平均压力、最大最小压力与地基承载力、沉降控制联系起来；国际常见流程则更明确地区分作用效应、接触应力分布、无拉应力条件以及承载力或使用状态验算。入口语言不同，但最先筛查的物理问题其实是同一个：合力是否还在“可压可用”的核内。",
+      "en": "In both Chinese and international practice, the first step for a spread footing under axial load plus moment is usually not a sophisticated soil model but a check on whether the load resultant still falls within an acceptable compression zone. Chinese reviews often link average, maximum, and minimum base pressures directly to bearing-capacity and settlement screening, while international workflows more explicitly separate action effects, contact-stress distribution, no-tension checks, and bearing or serviceability verification. The language differs, but the first physical question is the same: does the resultant remain within a usable compression kern?"
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "统计口径",
-          "en": "Statistical basis"
+          "zh": "筛查顺序",
+          "en": "Screening order"
         },
         "text": {
-          "zh": "澳洲和美国的基准值通常以短时阵风表达，而欧洲体系更强调规定平均时段下的基本风速；中国则把规定地貌、规定高度和重现期下的风速转换为基本风压。平均时间不同，峰值程度就不同，因此不能直接换算牌面数值。",
-          "en": "Australian and US reference values are generally expressed through short-duration gusts, while the Eurocode framework emphasises basic velocity over a defined averaging period. China converts wind defined for specified terrain, height, and recurrence conditions into basic wind pressure. Different averaging periods capture different peak levels, so the headline values are not interchangeable."
+          "zh": "两种体系都会先从偏心距和接地压力分布入手，因为这一步最便宜、最透明，也最快暴露“局部拉应力、边缘压应力过大、基础尺寸不足”等问题。差别主要在于后续如何接入各自的荷载分项、承载力分项和沉降控制框架。",
+          "en": "Both systems start with eccentricity and contact-pressure distribution because it is the cheapest and most transparent screen, and it quickly reveals tension, edge overstress, or undersized footing geometry. The main difference lies in how each workflow then connects to load factors, resistance formats, and settlement control."
         }
       },
       {
         "label": {
-          "zh": "风险水平",
-          "en": "Risk level"
+          "zh": "无拉应力条件",
+          "en": "No-tension condition"
         },
         "text": {
-          "zh": "中国通过重现期和建筑重要性调整设计取值；澳洲把年超越概率与极限状态、重要性等级联系起来；美国的风速图随风险类别变化；欧洲则由特征值、分项系数和国家附录共同完成安全校准。相同的名义重现期，也未必对应相同的目标可靠度。",
-          "en": "China adjusts design values through recurrence period and building importance; Australia links annual probability of exceedance to limit state and importance level; US maps vary with risk category; and Europe combines characteristic values, partial factors, and National Annex choices. Even a similar nominal return period may not imply the same target reliability."
+          "zh": "对矩形基础，合力落在中三分之一范围内通常意味着底面仍保持全压接触；一旦超出，中外工程师都会警惕接触面积缩减、应力重分布和服务性能恶化。是否允许局部脱空以及如何进入非线性地基分析，才是后续细化差异所在。",
+          "en": "For a rectangular footing, keeping the resultant within the middle third generally means the base remains fully in compression. Once it moves outside, engineers everywhere become cautious about reduced contact area, stress redistribution, and serviceability degradation. The later divergence is in whether local uplift is permitted and how the problem moves into nonlinear soil analysis."
         }
       },
       {
         "label": {
-          "zh": "压力链条",
-          "en": "Pressure chain"
+          "zh": "审批表达",
+          "en": "Approval language"
         },
         "text": {
-          "zh": "风压与风速平方相关，之后还要经过方向、地形、地貌、高度、动力效应、体型系数、内压和局部峰值等多层修正。入口定义的一点差别会沿计算链被放大；真正应比较的是最终作用效应及其组合方式，而不是某一个风速数字。",
-          "en": "Pressure varies with the square of wind speed and is then modified for direction, terrain, topography, height, dynamic response, external shape, internal pressure, and local peaks. A small difference at the input can grow through the calculation chain. The meaningful comparison is the final action effect and combination format, not one wind-speed number."
+          "zh": "中国项目文件常更强调“地基承载力特征值、基础底面压力、沉降控制”的审图表达；国际文件常更强调“ULS/SLS、接触压力、bearing resistance、serviceability”的分层术语。写法不同，但给审批人看的核心仍是：受力路径清楚、假定边界清楚、结果是否落在可接受区间。",
+          "en": "Chinese project documents often foreground bearing-capacity characteristic values, base pressure, and settlement control, while international files more often separate ULS/SLS, contact pressure, bearing resistance, and serviceability language. The writing differs, but the message to reviewers is still the same: the load path is clear, the assumptions are bounded, and the result sits inside an acceptable range."
         }
       }
     ],
     "takeaway": {
-      "zh": "跨规范复核时，按“平均时段 → 基准高度与地貌 → 重现期或超越概率 → 风压与体型系数 → 荷载组合”的顺序建立转换表，再讨论哪套结果更保守。",
-      "en": "For a cross-code check, build the comparison in this order: averaging period, reference height and terrain, return period or exceedance probability, pressure and shape coefficients, then load combinations. Only then judge which result is more conservative."
+      "zh": "跨体系复核时，先用偏心距和弹性接地压力把问题讲清楚，再进入各自规范的承载力、沉降和荷载组合框架，会比一开始就争论哪本规范“更保守”更高效。",
+      "en": "For cross-system checking, explain the problem first through eccentricity and elastic contact pressure, then enter each code’s bearing, settlement, and load-combination framework. That is more productive than arguing too early about which code is more conservative."
     },
     "example": {
       "title": {
-        "zh": "实例：40 m/s 怎样变成规范入口压力",
-        "en": "Example: turning 40 m/s into an entry pressure"
+        "zh": "实例：2.4 m × 2.4 m独立基础在轴力与弯矩下的底面压力",
+        "en": "Example: base pressure for a 2.4 m × 2.4 m footing under axial load and moment"
       },
       "intro": {
-        "zh": "假设空气密度取1.225 kg/m³，并暂时忽略地形、高度、方向、动力、体型和内压等修正。这个例子只比较各体系进入风压计算时的基础表达，不代表最终设计风压。",
-        "en": "Assume air density of 1.225 kg/m³ and temporarily omit terrain, height, direction, dynamic, shape, and internal-pressure adjustments. This compares only the entry expression, not final design pressure."
+        "zh": "假设基础尺寸B = L = 2.4 m，竖向压力N = 1800 kN，绕一轴弯矩M = 360 kN·m，接触面按刚性基础上线性应力分布近似，暂不引入地基非线性、双向弯矩、沉降差和分项系数。该例仅用于说明偏心受压筛查逻辑，不替代正式地基基础设计。",
+        "en": "Assume a footing with B = L = 2.4 m, axial load N = 1800 kN, and uniaxial moment M = 360 kN·m. Approximate the contact stress with a rigid-footing linear distribution and omit soil nonlinearity, biaxial bending, differential settlement, and load factors. This example illustrates screening logic only and does not replace formal foundation design."
       },
       "equations": [
         {
           "label": {
-            "zh": "基础物理",
-            "en": "Basic physics"
+            "zh": "偏心距",
+            "en": "Eccentricity"
           },
-          "formula": "q = 1/2 ρ V²",
+          "formula": "e = M / N",
           "formulaTokens": [
-            { "var": "q" },
-            { "text": " = 1/2 " },
-            { "var": "ρ" },
-            { "text": " " },
-            { "var": "V" },
-            { "sup": "2" }
+            {
+              "var": "e"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "M"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "N"
+            }
           ],
+          "citation": {
+            "zh": "推导关系：偏心受压合力位置的静力学定义；依据 Das, Principles of Foundation Engineering, eccentric loading discussion（导出式，非规范原编号公式）",
+            "en": "Derived relation: statics definition of resultant eccentricity; based on Das, Principles of Foundation Engineering, eccentric loading discussion (derived, not a numbered code equation)"
+          },
           "result": {
-            "zh": "q = 0.5 × 1.225 × 40² = 980 Pa ≈ 0.98 kPa。",
-            "en": "q = 0.5 × 1.225 × 40² = 980 Pa ≈ 0.98 kPa."
+            "zh": "e = 360 / 1800 = 0.20 m。",
+            "en": "e = 360 / 1800 = 0.20 m."
           }
         },
         {
           "label": {
-            "zh": "中国入口",
-            "en": "China entry"
+            "zh": "平均压力",
+            "en": "Average pressure"
           },
-          "formula": "w₀ ≈ V₀² / 1600",
+          "formula": "q_avg = N / A",
           "formulaTokens": [
-            { "var": "w" },
-            { "sub": "0" },
-            { "text": " ≈ " },
-            { "var": "V" },
-            { "sub": "0" },
-            { "sup": "2" },
-            { "text": " / 1600" }
+            {
+              "var": "q"
+            },
+            {
+              "sub": "avg"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "N"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "A"
+            }
           ],
+          "citation": {
+            "zh": "推导关系：基础底面平均接触压力；依据 Budhu, Soil Mechanics and Foundations, bearing-pressure fundamentals（导出式，非规范原编号公式）",
+            "en": "Derived relation: average footing contact pressure; based on Budhu, Soil Mechanics and Foundations, bearing-pressure fundamentals (derived, not a numbered code equation)"
+          },
           "result": {
-            "zh": "V0 = 40 m/s 时，w0 ≈ 1.00 kPa；之后再乘高度、体型、阵风等相关系数。",
-            "en": "At V0 = 40 m/s, w0 ≈ 1.00 kPa, before height, shape, gust-related, and other coefficients."
+            "zh": "A = 2.4 × 2.4 = 5.76 m²，因此 qavg = 1800 / 5.76 = 312.5 kPa。",
+            "en": "A = 2.4 × 2.4 = 5.76 m², so qavg = 1800 / 5.76 = 312.5 kPa."
           }
         },
         {
           "label": {
-            "zh": "澳洲入口",
-            "en": "Australia entry"
+            "zh": "无拉应力筛查",
+            "en": "No-tension screen"
           },
-          "formula": "q = 0.5 ρair Vdes,θ²",
+          "formula": "e ≤ B / 6",
           "formulaTokens": [
-            { "var": "q" },
-            { "text": " = 0.5 " },
-            { "var": "ρ" },
-            { "sub": "air" },
-            { "text": " " },
-            { "var": "V" },
-            { "sub": "des,θ" },
-            { "sup": "2" }
+            {
+              "var": "e"
+            },
+            {
+              "text": " ≤ "
+            },
+            {
+              "var": "B"
+            },
+            {
+              "text": " / 6"
+            }
           ],
+          "citation": {
+            "zh": "推导关系：矩形截面中三分之一准则；依据 Das, Principles of Foundation Engineering, middle-third rule discussion（导出式，非规范原编号公式）",
+            "en": "Derived relation: middle-third rule for rectangular compression zones; based on Das, Principles of Foundation Engineering (derived, not a numbered code equation)"
+          },
           "result": {
-            "zh": "若rho_air取1.2 kg/m³，则q ≈ 0.96 kPa；最终压力还需结合Cfig与Cdyn。",
-            "en": "With rho_air = 1.2 kg/m³, q ≈ 0.96 kPa; final pressure still requires Cfig and Cdyn."
+            "zh": "B / 6 = 2.4 / 6 = 0.40 m，而 e = 0.20 m < 0.40 m，因此该简化筛查下底面仍可视为全压接触。",
+            "en": "B / 6 = 2.4 / 6 = 0.40 m, and e = 0.20 m < 0.40 m, so the base remains fully in compression under this simplified screen."
           }
         },
         {
           "label": {
-            "zh": "美国入口",
-            "en": "US entry"
+            "zh": "最大与最小压力",
+            "en": "Maximum and minimum pressure"
           },
-          "formula": "q_z = 0.613 K_z K_zt K_d K_e V²",
+          "formula": "q_max,min = (N / A) (1 ± 6e / B)",
           "formulaTokens": [
-            { "var": "q" },
-            { "sub": "z" },
-            { "text": " = 0.613 " },
-            { "var": "K" },
-            { "sub": "z" },
-            { "text": " " },
-            { "var": "K" },
-            { "sub": "zt" },
-            { "text": " " },
-            { "var": "K" },
-            { "sub": "d" },
-            { "text": " " },
-            { "var": "K" },
-            { "sub": "e" },
-            { "text": " " },
-            { "var": "V" },
-            { "sup": "2" }
+            {
+              "var": "q"
+            },
+            {
+              "sub": "max,min"
+            },
+            {
+              "text": " = ("
+            },
+            {
+              "var": "N"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "A"
+            },
+            {
+              "text": ") (1 ± 6"
+            },
+            {
+              "var": "e"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "B"
+            },
+            {
+              "text": ")"
+            }
           ],
-          "result": {
-            "zh": "若示意性地把修正系数暂取1，则qz ≈ 0.98 kPa；正式计算必须按场地和构件恢复全部系数。",
-            "en": "If correction factors are illustratively set to 1, qz ≈ 0.98 kPa; formal design must restore all site and component factors."
-          }
-        },
-        {
-          "label": {
-            "zh": "欧洲入口",
-            "en": "Europe entry"
+          "citation": {
+            "zh": "推导关系：刚性基础在单向偏心下的线性接触压力分布；依据 Budhu, Soil Mechanics and Foundations, rectangular footing stress distribution（导出式，非规范原编号公式）",
+            "en": "Derived relation: linear contact-stress distribution for a rigid footing under uniaxial eccentricity; based on Budhu, Soil Mechanics and Foundations, rectangular footing stress distribution (derived, not a numbered code equation)"
           },
-          "formula": "q_b = 0.5 ρ v_b²",
-          "formulaTokens": [
-            { "var": "q" },
-            { "sub": "b" },
-            { "text": " = 0.5 " },
-            { "var": "ρ" },
-            { "text": " " },
-            { "var": "v" },
-            { "sub": "b" },
-            { "sup": "2" }
-          ],
           "result": {
-            "zh": "qb ≈ 0.98 kPa；峰值速度压还要引入平均风、湍流强度、地貌和高度影响。",
-            "en": "qb ≈ 0.98 kPa; peak velocity pressure still adds mean-wind, turbulence, terrain, and height effects."
+            "zh": "qmax = 312.5 × (1 + 6 × 0.20 / 2.4) = 468.8 kPa；qmin = 312.5 × (1 - 6 × 0.20 / 2.4) = 156.3 kPa。",
+            "en": "qmax = 312.5 × (1 + 6 × 0.20 / 2.4) = 468.8 kPa, and qmin = 312.5 × (1 - 6 × 0.20 / 2.4) = 156.3 kPa."
           }
         }
       ],
       "note": {
-        "zh": "四个入口结果接近，是因为都源于动压关系；但40 m/s在四套规范中未必代表同一种平均时段、重现期或风险水平，所以不能据此宣布规范等价。",
-        "en": "The entry values are close because they share dynamic-pressure physics, but 40 m/s may represent different averaging periods, return periods, and risk levels, so this does not establish code equivalence."
+        "zh": "本例说明的是偏心受压的第一道筛查：合力位置与弹性接触压力。正式设计仍需把该压力区间与地基承载力、沉降、基础刚度、双向受力和规范荷载组合一起复核。",
+        "en": "This example covers only the first screening step for eccentric compression: resultant location and elastic contact pressure. Formal design must still check the pressure range against bearing resistance, settlement, footing stiffness, biaxial actions, and the governing code load combinations."
       }
     },
-    "references": "GB 50009; AS/NZS 1170.2; ASCE 7; EN 1991-1-4",
+    "references": "Das, Principles of Foundation Engineering; Budhu, Soil Mechanics and Foundations",
     "referenceLinks": [
       {
-        "label": "GB 50009",
-        "url": "https://std.samr.gov.cn/"
+        "label": "Cengage: Das, Principles of Foundation Engineering",
+        "url": "https://www.abebooks.com/9781337705028/Principles-Foundation-Engineering-Braja-M-Das-133770502X/plp"
       },
       {
-        "label": "AS/NZS 1170.2",
-        "url": "https://www.standards.org.au/standards-catalogue"
-      },
-      {
-        "label": "ASCE 7",
-        "url": "https://www.asce.org/publications-and-news/asce-7"
-      },
-      {
-        "label": "EN 1991-1-4 / Eurocode 1",
-        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-1-actions-structures"
-      },
-      {
-        "label": "Calcs.com: ASCE 7-22 wind worked calculator",
-        "url": "https://calcs.com/docs/calculations/us/wind_loads_asce_7_22_components_and_cladding_overview"
-      },
-      {
-        "label": "ASCE Press: Guide to Wind Load Provisions of ASCE 7-22",
-        "url": "https://pubs.asce.org/Product?isbn=9780784484944"
+        "label": "Wiley: Budhu, Soil Mechanics and Foundations",
+        "url": "https://www.abebooks.com/9781119524120/Soil-Mechanics-Foundations-Muni-Budhu-1119524122/plp"
       }
     ]
   }
