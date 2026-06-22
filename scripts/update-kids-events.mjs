@@ -3,6 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const siteDir = "kids";
 const indexPath = `${siteDir}/index.html`;
 const dataDir = `${siteDir}/data`;
+const usageReportPath = `${siteDir}/TOKEN_USAGE.md`;
 const now = new Date();
 
 const cityConfigs = [
@@ -146,7 +147,10 @@ async function enrichWithOpenAI(candidates, city) {
   const data = await response.json();
   const output = data.output_text || data.output?.flatMap((item) => item.content || []).map((part) => part.text || "").join("");
   const parsed = JSON.parse(output);
-  return Array.isArray(parsed) ? parsed : parsed.events;
+  return {
+    events: Array.isArray(parsed) ? parsed : parsed.events,
+    usage: data.usage || null
+  };
 }
 
 function fallbackEvents(candidates, city) {
@@ -195,20 +199,55 @@ async function buildCity(config) {
     try { candidate.detailText = stripTags(await fetchText(candidate.url, config.name)).slice(0, 7000); }
     catch { candidate.detailText = candidate.text; }
   }
-  let events = null;
-  try { events = await enrichWithOpenAI(selected, config.name); }
+  let enrichment = null;
+  try { enrichment = await enrichWithOpenAI(selected, config.name); }
   catch (error) { console.warn(`${config.name} AI enrichment skipped: ${error.message}`); }
+  let events = enrichment?.events || null;
   if (!Array.isArray(events) || events.length < 3) events = fallbackEvents(selected, config.name);
   events = events.slice(0, 8);
   if (events.length < 3) throw new Error(`Not enough ${config.name} event candidates; site left unchanged.`);
-  return events;
+  return { events, usage: enrichment?.usage || null };
+}
+
+function usageNumbers(result) {
+  const input = Number(result?.usage?.input_tokens || 0);
+  const output = Number(result?.usage?.output_tokens || 0);
+  const total = Number(result?.usage?.total_tokens || input + output);
+  return { input, output, total };
+}
+
+async function writeUsageReport(results) {
+  const melbourne = usageNumbers(results.get("melbourne"));
+  const sydney = usageNumbers(results.get("sydney"));
+  const total = melbourne.total + sydney.total;
+  const model = total > 0 ? (process.env.OPENAI_MODEL || "gpt-4.1-mini") : "Fallback (no API tokens)";
+  const runTime = new Intl.DateTimeFormat("en-AU", {
+    timeZone: "Australia/Sydney",
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  }).format(new Date()).replace(",", "");
+  const newRow = `| ${runTime} | ${model} | ${melbourne.input} | ${melbourne.output} | ${sydney.input} | ${sydney.output} | ${total} |`;
+  const header = `| Run time (Sydney) | Model / mode | Melbourne input | Melbourne output | Sydney input | Sydney output | Total tokens |\n| --- | --- | ---: | ---: | ---: | ---: | ---: |`;
+  let existing = "";
+  try { existing = await readFile(usageReportPath, "utf8"); } catch {}
+  const oldRows = [...existing.matchAll(/^\| (?!Run time|---|No recorded)(.+) \|$/gm)].map((match) => match[0]);
+  const rows = [...oldRows, newRow].slice(-26);
+  const report = `# Kids Finder Token Usage\n\nThis report tracks OpenAI API tokens used by the weekly Sydney and Melbourne event updater.\n\nIt does **not** include Codex/ChatGPT conversation tokens, GitHub Actions runtime, GitHub Pages visits, map clicks, official-site clicks, or shared-link visits.\n\n<!-- TOKEN_USAGE_ROWS_START -->\n${header}\n${rows.join("\n")}\n<!-- TOKEN_USAGE_ROWS_END -->\n\nOnly the latest 26 runs are retained. Token counts come directly from the OpenAI Responses API \`usage\` object.\n`;
+  await writeFile(usageReportPath, report, "utf8");
 }
 
 async function main() {
   await mkdir(dataDir, { recursive: true });
   let index = await readFile(indexPath, "utf8");
+  const results = new Map();
   for (const config of cityConfigs) {
-    const events = await buildCity(config);
+    const result = await buildCity(config);
+    const { events } = result;
+    results.set(config.key, result);
     await writeFile(config.dataPath, `${JSON.stringify({ city: config.name, updatedAt: new Date().toISOString(), events }, null, 2)}\n`, "utf8");
     const start = `<!-- ${config.marker}_START -->`;
     const end = `<!-- ${config.marker}_END -->`;
@@ -217,6 +256,7 @@ async function main() {
     index = index.replace(pattern, `${start}\n${events.map(renderEvent).join("\n\n")}\n        ${end}`);
   }
   await writeFile(indexPath, index, "utf8");
+  await writeUsageReport(results);
 }
 
 main().catch((error) => { console.error(error); process.exit(1); });
