@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-24",
+  "date": "2026-06-25",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,51 +7,55 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "机器人",
-        "en": "Robotics"
+        "zh": "AI基础设施",
+        "en": "AI Infrastructure"
       },
       "title": {
-        "zh": "Agility拟以25亿美元SPAC上市，仓储人形机器人进入资本验证阶段",
-        "en": "Agility plans a $2.5bn SPAC listing, moving warehouse humanoids into a capital-market test"
+        "zh": "FERC要求电网运营商加快AI数据中心接入，算力竞争进一步变成电力审批竞争",
+        "en": "FERC orders faster AI data-center interconnection, turning compute competition further into a grid-approval race"
       },
       "summary": {
-        "zh": "Agility Robotics计划通过Churchill Capital Corp. XI合并上市，估值约25亿美元，预计获得超过6亿美元资金。核心信号不是“人形机器人突然成熟”，而是仓储、制造和物流场景开始把安全、产能、客户订单和单位经济性放到同一张资本市场答卷里。",
-        "en": "Agility Robotics plans to go public through a merger with Churchill Capital Corp. XI at an implied value of about $2.5bn, with more than $600m of expected proceeds. The signal is not that humanoids are suddenly mature; it is that warehouse, manufacturing, and logistics users are now asking safety, production capacity, customer demand, and unit economics to stand up in one capital-market test."
+        "zh": "美国联邦能源监管委员会于2026年6月18日一致要求六大区域电网运营商在30至60天内提交大型负荷接入改进方案，以应对AI数据中心迅速增长的用电需求。对行业更关键的信号是，下一阶段AI扩张不仅比GPU和模型，还比谁能更快锁定并网容量、承担升级成本并证明负荷可以在高峰时段被管理。",
+        "en": "On June 18, 2026, the US Federal Energy Regulatory Commission unanimously directed six regional grid operators to submit large-load interconnection improvements within 30 to 60 days to respond to accelerating AI data-centre demand. The more important signal for industry is that the next phase of AI expansion will be judged not only by GPUs and models, but by who can secure grid capacity faster, absorb upgrade costs, and show that load can be managed under peak-system stress."
       },
       "watch": {
-        "zh": "接下来要看Digit量产良率、真实工时替代率、现场安全认证，以及Amazon、Toyota、Schaeffler等客户是否扩大部署。",
-        "en": "Watch Digit production yield, real labour-substitution hours, field safety certification, and whether customers such as Amazon, Toyota, and Schaeffler expand deployment."
+        "zh": "接下来要看各区域电网如何细化自备电源、可中断负荷和升级费用分摊规则，以及这些规则会不会改变站址与融资优先级。",
+        "en": "Watch how the regional grids define behind-the-meter generation, interruptible load, and upgrade-cost allocation, and whether those rules start to reshape siting and financing priorities."
       },
-      "reference": "Wall Street Journal, Agility, Maker of Humanlike Robots, to Go Public in $2.5 Billion SPAC Deal, 2026-06-24",
+      "reference": "AP, Grid operators are ordered to speed power to energy-hungry AI data centers, published 2026-06-18",
       "referenceLinks": [
         {
-          "label": "WSJ: Agility to go public in $2.5bn SPAC deal",
-          "url": "https://www.wsj.com/finance/agility-maker-of-humanlike-robots-to-go-public-in-2-5-billion-spac-deal-62c3cb32"
+          "label": "AP: Grid operators are ordered to speed power to AI data centers",
+          "url": "https://apnews.com/article/506e3d206871111f15c3c62fc5368be5"
         }
       ]
     },
     {
       "topic": {
-        "zh": "AI基础设施",
-        "en": "AI Infrastructure"
+        "zh": "数字支付",
+        "en": "Digital Payments"
       },
       "title": {
-        "zh": "Nvidia推出机器人安全软件，物理AI竞争从模型扩展到认证体系",
-        "en": "Nvidia launches robotics safety software, shifting physical-AI competition toward certification systems"
+        "zh": "数字欧元进入新一轮立法审议，欧洲继续把支付主权当成公共基础设施建设",
+        "en": "The digital euro enters a new legislative phase, with Europe continuing to treat payments sovereignty as public infrastructure"
       },
       "summary": {
-        "zh": "Nvidia推出Halos for Robotics，把软件、算力、传感器与检查流程组合成面向人形机器人的安全系统。对行业的含义是，物理AI的护城河正在从“能不能动作”转向“能否在有人环境中被验证、被审计、被保险和被规模化采购”。",
-        "en": "Nvidia introduced Halos for Robotics, combining software, compute, sensors, and inspection capability into a safety system for humanoid robots. The industry signal is that the moat in physical AI is moving from whether a robot can perform a task to whether it can be verified, audited, insured, and purchased at scale for human-occupied workplaces."
+        "zh": "围绕2026年6月23日欧洲议会讨论的数字欧元方案，重点已经不再只是概念争论，而是线上线下一体化、隐私边界、商户成本和欧洲对Visa、Mastercard等外部支付轨道的依赖如何被制度化重构。对支付和金融科技行业来说，这意味着竞争正在从产品便利性延伸到规则制定权、韧性和清算基础设施控制。",
+        "en": "Around the digital-euro proposal discussed in the European Parliament on June 23, 2026, the issue is no longer merely conceptual. It is now about how online and offline use, privacy boundaries, merchant economics, and Europe’s dependence on external payment rails such as Visa and Mastercard are redesigned through legislation. For payments and fintech, that means competition is expanding from product convenience into rule-setting power, resilience, and control of settlement infrastructure."
       },
       "watch": {
-        "zh": "观察首批采用者是否把Halos写入采购规范，以及汽车自动驾驶安全方法能否迁移到工厂和仓储机器人。",
-        "en": "Watch whether early adopters write Halos into procurement specifications and whether autonomous-vehicle safety methods transfer to factories and warehouses."
+        "zh": "接下来要看全会审议节奏、最终规则是否收紧中介义务，以及离线支付和隐私承诺会不会被保留到落地阶段。",
+        "en": "The next checkpoint is the plenary timetable, whether intermediary obligations tighten in the final text, and whether offline capability plus privacy commitments survive into implementation."
       },
-      "reference": "Axios, Nvidia debuts AI humanoid software to advance robotics safety, 2026-06-22",
+      "reference": "Le Monde, How the digital euro works: The currency's new form promises cheaper, faster transactions, published 2026-06-23; ECB digital euro project page, accessed 2026-06-25",
       "referenceLinks": [
         {
-          "label": "Axios: Nvidia debuts AI humanoid software",
-          "url": "https://www.axios.com/2026/06/22/nvidia-humanoid-ai-robotics"
+          "label": "Le Monde: How the digital euro works",
+          "url": "https://www.lemonde.fr/en/economy/article/2026/06/23/how-the-digital-euro-works-the-currency-s-new-form-promises-cheaper-faster-transactions_6754794_19.html"
+        },
+        {
+          "label": "ECB: Digital euro",
+          "url": "https://www.ecb.europa.eu/euro/digital_euro/html/index.en.html"
         }
       ]
     },
@@ -61,26 +65,22 @@
         "en": "Semiconductors"
       },
       "title": {
-        "zh": "Micron财报成为AI硬件行情压力测试，内存短缺继续牵动算力扩张",
-        "en": "Micron earnings become a stress test for the AI-hardware trade as memory scarcity drives compute expansion"
+        "zh": "Micron与Anthropic的新合作让AI内存从通用器件更像长期基础设施配套",
+        "en": "Micron’s new Anthropic deal makes AI memory look less like a commodity and more like long-horizon infrastructure"
       },
       "summary": {
-        "zh": "市场在6月24日等待Micron财报，重点不是单家公司业绩，而是HBM、DRAM和SSD能否继续支撑AI数据中心扩张。Micron刚宣布与Anthropic合作供应内存和存储，说明模型公司正在把关键硬件供应链纳入长期基础设施安排。",
-        "en": "Markets are watching Micron’s June 24 earnings not just as a single-company result, but as a test of whether HBM, DRAM, and SSD supply can keep supporting AI data-centre expansion. Micron’s new partnership with Anthropic shows model developers increasingly treating memory and storage as long-term infrastructure rather than commodity inputs."
+        "zh": "6月22日披露的Micron与Anthropic合作，把HBM、DRAM和SSD直接绑定到前沿模型开发的长期路线图，也让6月24日的Micron财报更像一次AI基础设施定价与供需验证。行业含义是，内存不再只是被动跟随GPU出货，而是在多年度供货、系统效率和成本曲线里成为前置战略资源。",
+        "en": "The Micron-Anthropic partnership disclosed on June 22 ties HBM, DRAM, and SSD supply directly to a frontier-model roadmap and turns Micron’s June 24 earnings event into a broader test of AI-infrastructure pricing and supply discipline. The industry implication is that memory is no longer merely a passive add-on to GPU shipments; it is becoming an early strategic resource embedded in multiyear supply, system efficiency, and cost curves."
       },
       "watch": {
-        "zh": "重点看HBM定价、长期供货合约、先进封装瓶颈，以及财报是否验证AI支出仍能转化为真实订单。",
-        "en": "Focus on HBM pricing, long-term supply agreements, advanced-packaging bottlenecks, and whether earnings confirm that AI capex is still becoming real orders."
+        "zh": "重点看多年度供货协议是否增多，以及内存涨价、封装瓶颈和客户锁量会不会继续重塑AI资本开支排序。",
+        "en": "Watch whether multiyear supply deals proliferate and whether memory pricing, packaging bottlenecks, and customer lock-ins keep reshaping AI capex priorities."
       },
-      "reference": "MarketWatch, Micron stock momentum builds as the company inks a new Anthropic partnership, 2026-06-22; MarketWatch live coverage, 2026-06-24",
+      "reference": "MarketWatch, Micron’s stock momentum builds as the company inks a new Anthropic partnership, published 2026-06-22",
       "referenceLinks": [
         {
-          "label": "MarketWatch: Micron-Anthropic partnership",
+          "label": "MarketWatch: Micron inks a new Anthropic partnership",
           "url": "https://www.marketwatch.com/story/microns-stock-momentum-builds-as-the-company-inks-a-new-anthropic-partnership-484e3845"
-        },
-        {
-          "label": "MarketWatch: Micron headlines June 24 earnings",
-          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-tech-rout-micron-earnings-results/card/micron-headlines-wednesday-s-earnings-O4JomNBgkVEYS4wISWP2"
         }
       ]
     }
@@ -88,399 +88,289 @@
   "insights": [
     {
       "area": {
-        "zh": "可靠度与韧性",
-        "en": "Reliability and Resilience"
+        "zh": "施工火灾安全",
+        "en": "Construction Fire Safety"
       },
       "title": {
-        "zh": "PBEE下一步：把失效概率、损伤记忆和恢复过程合成一个动力系统",
-        "en": "The next PBEE step is to model failure probability, damage memory, and recovery as one dynamical system"
+        "zh": "下一代工地火灾监测的价值不只是识别火焰，而是即时排序谁最暴露、谁先处置",
+        "en": "The next value step in site fire monitoring is not flame detection alone, but instant ranking of who is most exposed"
       },
       "evidence": {
-        "zh": "研究类型：2026预印本；方法：连续时间马尔可夫链、瞬态失效概率、可靠指标与震后恢复状态转移。",
-        "en": "Evidence: 2026 preprint using continuous-time Markov chains, transient failure probabilities, reliability indices, and post-earthquake recovery state transitions."
+        "zh": "研究类型：2026年预印本；方法：双模型YOLOv8、火烟分割、周边目标识别、像素到米换算与风险评分。",
+        "en": "Evidence: 2026 preprint using dual-model YOLOv8, fire-smoke segmentation, nearby-object detection, pixel-to-metre conversion, and risk scoring."
       },
       "summary": {
-        "zh": "这篇研究把性能化抗震工程从“地震后再评估恢复力”推进到“把损伤累积与恢复过程直接嵌入状态转移”。对结构工程师的价值在于，它把可靠度、停运时间和恢复能力放进同一套可计算框架，避免只用一次性超越概率描述长期风险。未来更有竞争力的抗震方案，可能不仅要说明构件是否满足极限状态，还要说明系统在反复地震和维修干预后如何演化。对职业发展而言，可靠度、韧性和运维数据将越来越难分开。",
-        "en": "This study moves performance-based earthquake engineering from treating recovery as a post-event add-on to embedding damage accumulation and recovery directly into state transitions. For structural engineers, the value is that reliability, downtime, and recoverability can be discussed within one computable framework instead of relying only on one-time exceedance probabilities. More competitive seismic design will increasingly need to show not only whether members satisfy limit states, but also how the system evolves under repeated earthquakes and repair interventions. Professionally, reliability, resilience, and operational data are becoming inseparable."
+        "zh": "这篇研究把视觉火灾监测从“有火/没火”推进到“火源距离人员、车辆和设施还有多近”，输出可以直接支持现场优先级调度。对土木和施工管理的启发是，真正有用的数字安全系统不是多装一个摄像头，而是把识别、距离、暴露对象和响应顺序串成可执行流程。",
+        "en": "This study pushes vision-based fire monitoring from a binary 'fire or no fire' question into an actionable estimate of how close the hazard is to people, vehicles, and infrastructure. For civil and construction management, the useful digital-safety system is not the extra camera itself, but the workflow that connects detection, distance, exposed assets, and response order into something crews can act on."
       },
       "caveat": {
-        "zh": "当前案例仍偏方法验证，复杂建筑群、社会恢复耦合和资产组合级决策还需要更多实证校准。",
-        "en": "The current examples remain method-oriented; complex portfolios, social-recovery coupling, and asset-level decision rules still need stronger empirical calibration."
+        "zh": "方法仍依赖现场标定、遮挡条件和摄像视角，实验室指标高并不等于复杂施工现场已经具备审计级可靠性。",
+        "en": "The method still depends on site calibration, occlusion, and camera angle, so strong laboratory metrics do not yet guarantee audit-grade reliability on complex live sites."
       },
-      "reference": "Nardin, Marelli, Sudret and Broccardo, arXiv:2606.12448, submitted 2026-05-30",
+      "reference": "arXiv:2603.09069, submitted 2026-03-10",
       "referenceLinks": [
         {
-          "label": "arXiv: Reliability and resilience in PBEE",
-          "url": "https://arxiv.org/abs/2606.12448"
+          "label": "arXiv: Intelligent Spatial Estimation for Fire Hazards in Engineering Sites",
+          "url": "https://arxiv.org/abs/2603.09069"
         }
       ]
     },
     {
       "area": {
-        "zh": "城市风险",
-        "en": "Urban Risk"
+        "zh": "桥梁养护",
+        "en": "Bridge Maintenance"
       },
       "title": {
-        "zh": "城市结构损伤可能有“相变”：中等地震下风险不是线性增加",
-        "en": "Urban structural damage may show phase transitions, so risk does not rise linearly under moderate earthquakes"
+        "zh": "老桥数字孪生开始重用交通相机和天气数据，而不是先假设必须新增大量传感器",
+        "en": "Bridge digital twins are beginning to reuse traffic cameras and weather data instead of assuming new sensors come first"
       },
       "evidence": {
-        "zh": "研究类型：2026预印本；方法：随机场Ising模型、城市建筑组合、损伤聚集与自然灾害风险指标偏差分析。",
-        "en": "Evidence: 2026 preprint using a random-field Ising model, urban building portfolios, damage clustering, and bias analysis of natural-hazard risk metrics."
+        "zh": "研究类型：2026年预印本；方法：交通视觉识别、LWR交通流模型、天气退化指标与蒙特卡洛不确定性分析。",
+        "en": "Evidence: 2026 preprint combining traffic vision, an LWR traffic-flow model, weather deterioration indicators, and Monte Carlo uncertainty analysis."
       },
       "summary": {
-        "zh": "这项研究把城市建筑损伤解释为集体行为：当灾害强度提高时，系统可能从“大部分安全”突然跳到“大范围受损”，而建筑类型多样性会改变这种跃迁的陡峭程度。它对结构与城市风险工作的启发很直接：如果只把每栋楼当成独立样本，可能低估中等地震下的损伤同步性和修复成本。未来做区域评估、保险定价或韧性规划时，建筑组合的相关性、空间聚集和模型不确定性应当被显式表达，而不是被平均值掩盖。",
-        "en": "This work treats urban structural damage as a collective phenomenon: as hazard intensity rises, a city may move abruptly from mostly safe to widely damaged, while portfolio diversity changes the sharpness of that transition. The implication for structural and urban-risk practice is direct: if buildings are treated as independent samples, synchronized damage and repair costs under moderate earthquakes may be underestimated. Future regional assessment, insurance pricing, and resilience planning will need to express portfolio correlation, spatial clustering, and modelling uncertainty explicitly rather than hiding them inside averages."
+        "zh": "这项工作把既有桥面相机、交通流推断和天气API组合成面向疲劳与维护分类的混合数字孪生，说明预测性养护不一定从昂贵的新硬件开始。对桥梁与资产管理实践而言，能把现有视频、环境和运营数据转化为更稳健风险信号的人，会比只会布设单一传感系统的人更接近项目决策层。",
+        "en": "This work combines existing bridge-deck cameras, traffic-flow inference, and weather APIs into a hybrid digital twin for fatigue and maintenance classification, showing that predictive maintenance does not always need to start with expensive new hardware. For bridge and asset-management practice, people who can turn existing video, environmental, and operational data into stronger risk signals will sit closer to the decision layer than those focused only on deploying one more sensor family."
       },
       "caveat": {
-        "zh": "相变类比有解释力，但落到具体城市仍需要高质量建筑清单、场地效应、脆弱性曲线与灾后损伤数据校准。",
-        "en": "The phase-transition analogy is useful, but application to a specific city still requires strong building inventories, site effects, fragility curves, and post-event damage calibration."
+        "zh": "交通代理量与真实结构应力之间仍需现场校核，跨桥型迁移能力也还没有被完全证明。",
+        "en": "The link from traffic proxies to true structural stress still needs site calibration, and transferability across bridge types is not yet fully demonstrated."
       },
-      "reference": "Oh, Zhao, Rincon, Padgett and Wang, arXiv:2602.16195, submitted 2026-02-18",
+      "reference": "arXiv:2603.14028, submitted 2026-03-14",
       "referenceLinks": [
         {
-          "label": "arXiv: Phase transitions in collective damage of civil structures",
-          "url": "https://arxiv.org/abs/2602.16195"
+          "label": "arXiv: Traffic and weather driven hybrid digital twin for bridge monitoring",
+          "url": "https://arxiv.org/abs/2603.14028"
         }
       ]
     },
     {
       "area": {
-        "zh": "基础设施能源",
-        "en": "Infrastructure Energy"
+        "zh": "岩土数字校核",
+        "en": "Geotechnical Digital Verification"
       },
       "title": {
-        "zh": "AI数据中心已经成为土木与电力系统共同问题，不再只是IT设施问题",
-        "en": "AI data centres are now a civil-and-power-system problem, not only an IT-facility problem"
+        "zh": "AI进入岩土计算真正需要的不是聊天能力，而是把公式、单位和适用边界锁成可审计方法卡",
+        "en": "What AI really needs in geotechnical calculation is not conversation quality, but auditable method cards for formulas, units, and limits"
       },
       "evidence": {
-        "zh": "研究类型：2026综述预印本；方法：AI数据中心负荷行为、电力供应配置、碳排机制、灵活性与辅助服务潜力分析。",
-        "en": "Evidence: 2026 review preprint on AI data-centre load behaviour, power-supply configurations, carbon mechanisms, flexibility, and ancillary-service potential."
+        "zh": "研究类型：2026年预印本；方法：以JSON方法卡表达公式、单位、适用范围和文献引用，再由受约束符号引擎执行。",
+        "en": "Evidence: 2026 preprint representing methods as JSON cards with formulas, units, applicability limits, and literature citations, executed by a constrained symbolic engine."
       },
       "summary": {
-        "zh": "这篇综述把AI数据中心放入电力系统可持续性框架，讨论负荷增长、清洁能源匹配、碳核算、区域电网约束和需求侧灵活性。对结构和土木方向的启发是，未来大型算力园区并不是简单的机房设计，而是变电站、冷却、备用电源、给排水、场地许可、抗灾韧性和运营碳管理的复合基础设施。工程师如果只懂单体结构，会错过项目早期最关键的约束；能同时理解结构、安全、能源与审批的人，会更接近项目决策层。",
-        "en": "This review places AI data centres inside a power-system sustainability framework, covering load growth, clean-energy matching, carbon accounting, regional grid constraints, and demand-side flexibility. For structural and civil engineers, the message is that large compute campuses are not merely server-room projects; they combine substations, cooling, backup power, water systems, permitting, disaster resilience, and operational carbon management. Engineers who only understand the individual building may miss the binding constraints at project inception; those who can connect structure, safety, energy, and approvals will sit closer to the decision layer."
+        "zh": "GeoMCP的核心不是让LLM直接充当计算器，而是把岩土解析方法结构化为带适用边界和引用的可验证卡片，再由受约束执行层完成计算。对土木和结构工程的职业含义很明确：未来更可信的AI工作流，不是把责任交给黑箱回答，而是让模型编排已验证方法、暴露假定并保留工程师签字责任。",
+        "en": "The core contribution of GeoMCP is not using an LLM as the calculator, but structuring geotechnical analytical methods into verifiable cards with applicability bounds and citations, then executing them through a constrained layer. The professional implication for civil and structural work is clear: trustworthy AI workflows will not hand responsibility to a black-box answer, but will orchestrate verified methods, expose assumptions, and preserve engineer sign-off responsibility."
       },
       "caveat": {
-        "zh": "论文关注系统层面，具体项目仍需当地电价、并网容量、水资源、噪声、消防和规划审批条件共同校核。",
-        "en": "The paper is system-level; project decisions still require local checks on tariffs, interconnection capacity, water, noise, fire safety, and planning approvals."
+        "zh": "框架证明了可审计方向，但要覆盖更广方法库、企业流程和审批接口，还需要持续治理和行业接受度。",
+        "en": "The framework proves a more auditable direction, but broader method libraries, company workflows, and approval interfaces still require sustained governance and industry adoption."
       },
-      "reference": "Huang, Deb and Zareipour, arXiv:2606.21064, submitted 2026-06-19",
+      "reference": "arXiv:2603.01022, submitted 2026-03-01",
       "referenceLinks": [
         {
-          "label": "arXiv: AI Data Centers and Power System Sustainability",
-          "url": "https://arxiv.org/abs/2606.21064"
+          "label": "arXiv: GeoMCP",
+          "url": "https://arxiv.org/abs/2603.01022"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "风荷载基本量：为什么中外规范都从速度压力开始，但设计语境不同？",
-      "en": "Wind-load fundamentals: why do Chinese and international codes start from velocity pressure but use different design language?"
+      "zh": "结构耐火暴露：为什么中外审核都会先区分采用哪一条火灾曲线？",
+      "en": "Structural fire exposure: why do both Chinese and international reviews start by asking which fire curve applies?"
     },
     "text": {
-      "zh": "风荷载对比最容易出现误解的地方，是把“风速”“风压”“体型系数”和“高度变化”混在一起比较。中国、澳洲、美国和欧洲规范都承认同一个基本物理：流体动压与空气密度及风速平方相关。但工程表达并不相同。中国规范常以基本风压和高度变化系数为入口；澳洲规范把区域风速、方向、地形、屏蔽和地貌等因素逐层修正为设计风速，再进入压力计算；美国ASCE体系强调速度压力、方向性、暴露类别、地形与阵风效应；欧洲体系则通过平均风速、湍流强度和峰值速度压力表达。跨规范复核时，不能只比较一个数字，而要追踪“风速定义、平均时间、重现期、地貌/暴露、峰值处理、系数位置”是否对应。",
-      "en": "Wind-load comparisons are often confused because wind speed, wind pressure, shape coefficients, and height variation are compared as if they were the same quantity. Chinese, Australian, US, and European codes share the same physical basis: dynamic pressure is related to air density and the square of wind speed. Their engineering language, however, differs. Chinese practice often enters through basic wind pressure and height-related modification factors. Australian practice progressively modifies regional wind speed through direction, terrain, shielding, and topographic factors before calculating pressure. ASCE 7 emphasises velocity pressure, directionality, exposure category, topography, and gust effects. Eurocode expresses the problem through mean wind velocity, turbulence intensity, and peak velocity pressure. In a cross-code review, the task is not to compare one number, but to trace whether wind-speed definition, averaging time, return period, exposure, peak treatment, and coefficient placement are genuinely equivalent."
+      "zh": "结构耐火设计最容易被简化成“耐火极限多少分钟”，但真正决定校核起点的往往是火灾暴露曲线本身。无论在中国审图还是国际项目复核里，第一步通常都要先判断项目面对的是标准建筑火、烃类火还是更复杂的性能化火情，因为温升速度会直接改变构件升温、保护层需求和审批边界。中国常见流程更强调按建筑使用功能、防火分区和耐火等级建立合规底线；国际实践则更常把标准火、烃类火、自然火和性能化情景拆开说明。语言不同，但首先要讲清楚的物理问题是一致的：你在按哪一条时间-温度曲线评估结构。",
+      "en": "Structural fire design is often reduced to a single fire-resistance rating in minutes, but the real first decision is usually the fire-exposure curve itself. In both Chinese reviews and international project checks, the opening question is commonly whether the structure faces a standard building fire, a hydrocarbon fire, or a more complex performance-based scenario, because the heating rate directly changes member temperature rise, protection demand, and the approval boundary. Chinese workflows more often foreground occupancy, compartmentation, and required fire-rating compliance, while international practice more often separates standard, hydrocarbon, natural, and performance-based fires explicitly. The language differs, but the first physical question is the same: which time-temperature curve is actually being used to assess the structure?"
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "中国入口",
-          "en": "Chinese entry point"
+          "zh": "标准建筑火",
+          "en": "Standard building fire"
         },
         "text": {
-          "zh": "GB 50009的常见设计语言是先确定基本风压，再通过高度变化系数、体型系数、风振系数等把场地和结构效应引入。这个路径适合审查图纸和计算书，因为能直接看到基本风压取值、地面粗糙度、高度修正和体型分区是否一致。",
-          "en": "GB 50009 commonly starts from basic wind pressure and then introduces site and structural effects through height-variation, shape, and dynamic-response factors. This route is efficient for drawing and calculation review because the basic pressure, terrain roughness, height correction, and pressure-zone assumptions are visible."
+          "zh": "标准火曲线适合表达办公、住宅和一般民用建筑中用于构件耐火评级的统一加热情景，优点是可比性强、审批语言稳定，但它并不自动代表所有真实火灾过程。",
+          "en": "The standard fire curve is suited to the unified heating scenario used for member fire ratings in offices, housing, and general buildings. Its strength is comparability and stable approval language, but it does not automatically represent every real fire development."
         }
       },
       {
         "label": {
-          "zh": "澳洲入口",
-          "en": "Australian entry point"
+          "zh": "烃类与特殊火",
+          "en": "Hydrocarbon and special fires"
         },
         "text": {
-          "zh": "AS/NZS 1170.2更强调先把区域风速修正为某一方向和高度的设计风速，再用空气密度项和气动系数求压力。它的优势是把地形、地貌、屏蔽和方向效应的来源拆得很清楚，适合复杂场地和风向敏感结构。",
-          "en": "AS/NZS 1170.2 more explicitly modifies regional wind speed into a design wind speed for a given direction and height before pressure is calculated using air density and aerodynamic coefficients. Its strength is the transparent separation of terrain, shielding, topography, and direction effects, which is useful for complex sites and direction-sensitive structures."
+          "zh": "油气、隧道或高燃料负荷场景常需要考虑更陡的升温曲线，因为前期温升更快，保护层厚度、节点细部和关键构件冗余会更快变成控制条件。",
+          "en": "Oil and gas, tunnel, or high-fuel-load scenarios often need steeper heating curves because the early temperature rise is much faster, which makes protection thickness, connection detailing, and reserve capacity of critical members become controlling sooner."
         }
       },
       {
         "label": {
-          "zh": "美国与欧洲",
-          "en": "US and Europe"
+          "zh": "审批表达",
+          "en": "Approval language"
         },
         "text": {
-          "zh": "ASCE 7通过速度压力qz组织风荷载，再把方向性、暴露、地形和阵风系数纳入；EN 1991-1-4则用峰值速度压力qp(z)把平均风与湍流放在同一表达里。两者都不是简单“风速平方乘常数”，而是把统计风环境和结构气动响应分层表达。",
-          "en": "ASCE 7 organises wind loading through velocity pressure qz and then applies directionality, exposure, topography, and gust effects. EN 1991-1-4 uses peak velocity pressure qp(z) to combine mean wind and turbulence in one expression. Neither is merely “wind speed squared times a constant”; both layer statistical wind climate and structural aerodynamic response."
+          "zh": "真正能帮助审查通过的，不是笼统写“满足2小时耐火”，而是明确说明采用的火灾曲线、受火边界、构件保护做法、荷载水平和例题是否只作筛查而非正式设计。",
+          "en": "What actually helps approval is not a generic statement that a structure achieves a two-hour rating, but a bounded statement of the fire curve, exposed faces, protection strategy, load level, and whether a worked example is only a screen rather than a formal design."
         }
       }
     ],
     "takeaway": {
-      "zh": "做中外风荷载复核时，先建立一张量纲和定义对照表，再比较压力结果。尤其要标明风速平均时间、设计重现期、地貌/暴露类别、空气密度假定、峰值或阵风处理，以及体型系数是否已经包含局部压力效应。",
-      "en": "For cross-code wind review, build a definition-and-units table before comparing pressures. State the wind-speed averaging time, return period, terrain or exposure class, air-density assumption, peak or gust treatment, and whether shape coefficients already include local pressure effects."
+      "zh": "做中外耐火复核时，先把火灾曲线类型、适用场景和受火边界讲清楚，再讨论耐火极限和保护厚度，会比一开始就比较“多少分钟更安全”更有效。",
+      "en": "For cross-system fire review, explain the fire-curve type, applicable scenario, and exposure boundary first, then discuss fire-resistance time and protection thickness. That is more useful than starting with a raw comparison of minutes."
     },
     "example": {
       "title": {
-        "zh": "实例：40 m/s 设计风速下，速度压力量级如何在不同规范语言中表达",
-        "en": "Example: how velocity-pressure magnitude is expressed under a 40 m/s design wind speed"
+        "zh": "实例：30分钟时，标准建筑火与烃类火的气体温度能差多少？",
+        "en": "Example: at 30 minutes, how far apart can standard-building and hydrocarbon fire gas temperatures be?"
       },
       "intro": {
-        "zh": "为说明量级，取设计风速 V = 40 m/s，空气密度 ρ = 1.2 kg/m³。示例只比较速度压力入口，不替代完整风荷载设计；实际工程还必须加入方向、地形、地貌/暴露、体型、阵风、内压、局部构件与可靠度水平。",
-        "en": "For magnitude only, take design wind speed V = 40 m/s and air density ρ = 1.2 kg/m³. The example compares the velocity-pressure entry point only and does not replace a full wind design; real projects must still include direction, topography, terrain or exposure, shape, gust, internal pressure, local components, and reliability level."
+        "zh": "为说明火灾曲线本身的差异，取受火时间 t = 30 min，仅比较理想化气体温度，不进一步推到构件钢温或耐火承载力。假设分别采用Eurocode标准火曲线和烃类火曲线，且不考虑冷却段、保护层传热、通风控制、局部火焰冲刷和构件约束效应。该例仅用于说明筛查逻辑，不替代正式耐火设计。",
+        "en": "To isolate the difference in the fire curves themselves, take exposure time t = 30 min and compare idealised gas temperature only, without extending the calculation to steel temperature or fire resistance. Assume the Eurocode standard fire curve and hydrocarbon fire curve are used, and ignore cooling, protection-layer heat transfer, ventilation control, local flame impingement, and restraint effects. This example is a screening illustration only and does not replace formal fire design."
       },
       "equations": [
         {
           "label": {
-            "zh": "基本物理",
-            "en": "Basic physics"
+            "zh": "标准火曲线",
+            "en": "Standard fire curve"
           },
-          "formula": "q = 0.5 ρ V²",
+          "formula": "θ_g = 20 + 345 log10(8 t + 1)",
           "formulaTokens": [
             {
-              "var": "q"
+              "var": "θ"
             },
             {
-              "text": " = 0.5 "
+              "sub": "g"
             },
             {
-              "var": "ρ"
+              "text": " = 20 + 345 log"
             },
             {
-              "text": " "
+              "sub": "10"
             },
             {
-              "var": "V"
+              "text": "(8 "
             },
             {
-              "sup": "2"
+              "var": "t"
+            },
+            {
+              "text": " + 1)"
             }
           ],
           "citation": {
-            "zh": "基础关系：伯努利动压表达式；工程流体力学通用关系（非规范条文）",
-            "en": "Basis: Bernoulli dynamic-pressure relation; standard engineering-fluid-mechanics relation (not a code clause)"
+            "zh": "规范出处：EN 1991-1-2:2002，第3.2.1(1)条，式(3.1)。",
+            "en": "Code reference: EN 1991-1-2:2002, Cl. 3.2.1(1), Eq. (3.1)."
           },
           "result": {
-            "zh": "q = 0.5 × 1.2 × 40² = 960 N/m² = 0.96 kPa。这个值只是速度压力基准，还不是构件最终设计风压。",
-            "en": "q = 0.5 × 1.2 × 40² = 960 N/m² = 0.96 kPa. This is only the velocity-pressure baseline, not the final design pressure on a member."
+            "zh": "代入 t = 30 min，可得 θ_g = 20 + 345 log10(241) = 841.8 °C。",
+            "en": "Substituting t = 30 min gives θ_g = 20 + 345 log10(241) = 841.8 °C."
           }
         },
         {
           "label": {
-            "zh": "澳洲表达",
-            "en": "Australian form"
+            "zh": "烃类火曲线",
+            "en": "Hydrocarbon fire curve"
           },
-          "formula": "p = (0.5 ρair) Vdes,θ² Cfig Cdyn",
+          "formula": "θ_g = 20 + 1080 [1 - 0.325 e^(-0.167 t) - 0.675 e^(-2.5 t)]",
           "formulaTokens": [
             {
-              "var": "p"
+              "var": "θ"
             },
             {
-              "text": " = (0.5 "
+              "sub": "g"
             },
             {
-              "var": "ρ"
+              "text": " = 20 + 1080 [1 - 0.325 "
             },
             {
-              "sub": "air"
+              "var": "e"
             },
             {
-              "text": ") "
+              "sup": "-0.167 t"
             },
             {
-              "var": "V"
+              "text": " - 0.675 "
             },
             {
-              "sub": "des,θ"
+              "var": "e"
             },
             {
-              "sup": "2"
+              "sup": "-2.5 t"
             },
             {
-              "text": " "
-            },
-            {
-              "var": "C"
-            },
-            {
-              "sub": "fig"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "C"
-            },
-            {
-              "sub": "dyn"
+              "text": "]"
             }
           ],
           "citation": {
-            "zh": "规范出处：AS/NZS 1170.2:2021，式2.4(1)。",
-            "en": "Code reference: AS/NZS 1170.2:2021, Eq. 2.4(1)."
+            "zh": "规范出处：EN 1991-1-2:2002，附录A，式(A.1)。",
+            "en": "Code reference: EN 1991-1-2:2002, Annex A, Eq. (A.1)."
           },
           "result": {
-            "zh": "若只为量级比较取 Cfig = 1.0、Cdyn = 1.0，则 p ≈ 0.96 kPa。实际设计中 Vdes,θ 已包含方向、高度和场地修正，Cfig 与 Cdyn 不能省略。",
-            "en": "If Cfig = 1.0 and Cdyn = 1.0 are used only for magnitude comparison, p ≈ 0.96 kPa. In real design, Vdes,θ already contains direction, height, and site modifiers, and Cfig and Cdyn must not be omitted."
+            "zh": "代入 t = 30 min，可得 θ_g = 1097.7 °C。也就是说，在同样30分钟内，烃类火曲线已经明显高于标准建筑火。",
+            "en": "Substituting t = 30 min gives θ_g = 1097.7 °C. In the same 30-minute window, the hydrocarbon curve is already much hotter than the standard building fire."
           }
         },
         {
           "label": {
-            "zh": "美国表达",
-            "en": "US form"
+            "zh": "温度对比量",
+            "en": "Temperature comparison metric"
           },
-          "formula": "qz = 0.00256 Kz Kzt Kd Ke V²",
+          "formula": "r_θ = θ_HC / θ_ISO",
           "formulaTokens": [
             {
-              "var": "q"
+              "var": "r"
             },
             {
-              "sub": "z"
+              "sub": "θ"
             },
             {
-              "text": " = 0.00256 "
+              "text": " = "
             },
             {
-              "var": "K"
+              "var": "θ"
             },
             {
-              "sub": "z"
+              "sub": "HC"
             },
             {
-              "text": " "
+              "text": " / "
             },
             {
-              "var": "K"
+              "var": "θ"
             },
             {
-              "sub": "zt"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "K"
-            },
-            {
-              "sub": "d"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "K"
-            },
-            {
-              "sub": "e"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "V"
-            },
-            {
-              "sup": "2"
+              "sub": "ISO"
             }
           ],
           "citation": {
-            "zh": "规范出处：ASCE/SEI 7-22，式(26.10-1)；该式采用英制单位，V单位为mph，qz单位为psf。",
-            "en": "Code reference: ASCE/SEI 7-22, Eq. (26.10-1); the equation is in US customary units, with V in mph and qz in psf."
+            "zh": "推导关系：由标准火与烃类火温度结果直接比较得到；依据 EN 1991-1-2:2002 式(3.1) 与附录A式(A.1)（导出式，非规范原编号公式）。",
+            "en": "Derived relation: direct comparison of the standard-fire and hydrocarbon-fire temperatures; based on EN 1991-1-2:2002 Eq. (3.1) and Annex A Eq. (A.1) (derived, not a numbered code equation)."
           },
           "result": {
-            "zh": "ASCE公式不能直接代入40 m/s；需先换算 V = 89.5 mph，并按暴露、高度、方向和地形取K系数。若各K示意取1.0，则 qz ≈ 20.5 psf ≈ 0.98 kPa。",
-            "en": "The ASCE equation cannot take 40 m/s directly; first convert V = 89.5 mph and select K factors for exposure, height, directionality, and topography. If all K factors are illustratively set to 1.0, qz ≈ 20.5 psf ≈ 0.98 kPa."
-          }
-        },
-        {
-          "label": {
-            "zh": "欧洲表达",
-            "en": "Eurocode form"
-          },
-          "formula": "qp(z) = [1 + 7 Iv(z)] 0.5 ρ vm²(z)",
-          "formulaTokens": [
-            {
-              "var": "q"
-            },
-            {
-              "sub": "p"
-            },
-            {
-              "text": "("
-            },
-            {
-              "var": "z"
-            },
-            {
-              "text": ") = [1 + 7 "
-            },
-            {
-              "var": "I"
-            },
-            {
-              "sub": "v"
-            },
-            {
-              "text": "("
-            },
-            {
-              "var": "z"
-            },
-            {
-              "text": ")] 0.5 "
-            },
-            {
-              "var": "ρ"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "v"
-            },
-            {
-              "sub": "m"
-            },
-            {
-              "sup": "2"
-            },
-            {
-              "text": "("
-            },
-            {
-              "var": "z"
-            },
-            {
-              "text": ")"
-            }
-          ],
-          "citation": {
-            "zh": "规范出处：EN 1991-1-4:2005+A1:2010，第4.5(1)条，式(4.10)。",
-            "en": "Code reference: EN 1991-1-4:2005+A1:2010, Cl. 4.5(1), Eq. (4.10)."
-          },
-          "result": {
-            "zh": "若只看平均风速项，0.5ρvm² = 0.96 kPa；但Eurocode的qp(z)还乘以[1 + 7Iv(z)]，所以峰值速度压力通常高于平均动压。",
-            "en": "If only the mean-wind term is considered, 0.5ρvm² = 0.96 kPa; however, Eurocode qp(z) also multiplies by [1 + 7Iv(z)], so peak velocity pressure is normally higher than mean dynamic pressure."
+            "zh": "r_θ = 1097.7 / 841.8 = 1.304，因此30分钟时烃类火温度约高30.4%，温差约255.9 °C。",
+            "en": "r_θ = 1097.7 / 841.8 = 1.304, so at 30 minutes the hydrocarbon fire temperature is about 30.4% higher, with a temperature difference of about 255.9 °C."
           }
         }
       ],
       "note": {
-        "zh": "同样40 m/s风速会给出约0.96 kPa的基本动压量级，但各规范的设计压力不应因此被认为相同。真正需要复核的是这个40 m/s在各体系中代表什么统计风速，以及后续系数是否已经包含峰值、阵风、体型、局部压力和可靠度调整。",
-        "en": "The same 40 m/s wind speed gives a basic dynamic-pressure magnitude of about 0.96 kPa, but the design pressures in different codes should not therefore be treated as identical. The real review question is what statistical wind speed the 40 m/s represents in each system, and whether later coefficients already include peak, gust, shape, local pressure, and reliability adjustments."
+        "zh": "这个结果说明，首先选错火灾曲线就可能让后续保护层和耐火判断整体偏离。正式设计仍需继续复核构件升温、截面因子、保护材料性能、荷载水平、约束效应和冷却阶段，而不能把气体温度差直接等同于构件安全裕度。",
+        "en": "This result shows that choosing the wrong fire curve at the start can shift the entire later judgment on protection and fire resistance. Formal design still needs member-temperature rise, section factor, protection-material properties, load level, restraint effects, and cooling-phase checks, so the gas-temperature difference must not be treated as the structural safety margin itself."
       }
     },
-    "references": "GB 50009-2012; AS/NZS 1170.2:2021; ASCE/SEI 7-22; EN 1991-1-4:2005+A1:2010; Engineering ToolBox, Dynamic Pressure",
+    "references": "Chinese standards platform; Eurocode 1 fire actions; public fire-design references",
     "referenceLinks": [
       {
-        "label": "Engineering ToolBox: Dynamic pressure",
-        "url": "https://www.engineeringtoolbox.com/dynamic-pressure-d_1037.html"
+        "label": "SAMR national standards platform",
+        "url": "https://std.samr.gov.cn/"
       },
       {
-        "label": "ASCE 7 hazard tool",
-        "url": "https://ascehazardtool.org/"
-      },
-      {
-        "label": "Eurocodes: EN 1991 actions on structures",
+        "label": "European Commission JRC: Eurocode 1 actions on structures",
         "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-1-actions-structures"
+      },
+      {
+        "label": "European Commission JRC: EN 1991 overview page",
+        "url": "https://eurocodes.jrc.ec.europa.eu/showpage.php?id=131"
       }
     ]
   }
