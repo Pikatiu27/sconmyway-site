@@ -1,25 +1,39 @@
 # SConmyway Site
 
-Public GitHub Pages site for SConmyway.
+Public GitHub Pages repo for SConmyway.
 
-## Main Page
+## Pages
 
+- Kids finder: `kids/`
+  - Public URL: `https://pikatiu27.github.io/sconmyway-site/kids/`
+  - Guide: `kids/KIDS_PAGE_GUIDE.md`
 - Industry brief: `industry/`
-- Public URL: `https://pikatiu27.github.io/sconmyway-site/industry/`
-- Local repo: `C:\Users\silin\Documents\Codex\sconmyway-site`
+  - Public URL: `https://pikatiu27.github.io/sconmyway-site/industry/`
+  - Guide: `industry/INDUSTRY_BRIEFING_GUIDE.md`
 
-## Industry Brief
+## Kids Update Rule
 
-Key files:
+Every Friday at 0:00 Australia/Sydney, the kids page must refresh the new Friday-to-Friday week.
 
-- `industry/index.html`
-- `industry/daily-data.json`
-- `industry/INDUSTRY_BRIEFING_GUIDE.md`
-- `scripts/update-industry-briefing.py`
+The weekly job must:
 
-Update rule:
+- Re-fetch sources.
+- Re-screen and re-rank activities.
+- Delete expired activities.
+- Add the newest relevant activities.
+- Put new / short-date events first and ongoing activities later.
+- Regenerate JSON data.
+- Sync the HTML fallback cards.
+- Validate UTF-8, JSON, English text, card counts and Friday-to-Friday dates.
+- Commit, push and confirm `origin/main`.
 
-- Refresh all industry brief content every day at 05:00 Australia/Sydney.
-- Do not only change the date.
-- After rewriting `daily-data.json`, run the sync script to update the embedded fallback and validate the page.
+Do not reuse old static DATA as this week’s content, and do not only change the date.
+
+## Commands
+
+```bash
+npm run update:kids
+```
+
+GitHub Actions uses Node 20.
 
