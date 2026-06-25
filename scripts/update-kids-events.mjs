@@ -208,8 +208,8 @@ async function enrichWithOpenAI(candidates, city) {
     body: JSON.stringify({
       model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       input: [
-        { role: "system", content: `Create accurate bilingual family event JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including referenceEn. If a fact is missing, say 'See official page'. Never invent details.` },
-        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 kid-friendly ${city} activities active during this Friday-to-Friday week. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
+        { role: "system", content: `Create accurate bilingual family event JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including referenceEn. If a fact is missing, say 'See official page'. Never invent details. Exclude expired events. Put newly starting, one-off, or short-date events first, then ongoing long-run activities.` },
+        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 kid-friendly ${city} activities active during this Friday-to-Friday week. Delete expired events, add the newest relevant activities, rank new or short-date activities first, and place still-running ongoing activities later. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
       ],
       text: { format: { type: "json_object" } }
     })
