@@ -12,13 +12,14 @@ const cityConfigs = [
     key: "melbourne",
     name: "Melbourne",
     marker: "MELBOURNE_EVENTS",
+    moreMarker: "MELBOURNE_MORE",
     dataPath: `${dataDir}/melbourne-events.json`,
     sources: [
       { name: "City of Melbourne", url: "https://whatson.melbourne.vic.gov.au/things-to-do/family-and-kids", tier: "A" },
       { name: "Melbourne Museum", url: "https://museumsvictoria.com.au/melbournemuseum/whats-on/", tier: "B" },
       { name: "Scienceworks", url: "https://museumsvictoria.com.au/scienceworks/whats-on/", tier: "B" },
       { name: "NGV Kids", url: "https://www.ngv.vic.gov.au/kids/", tier: "B" },
-      { name: "ACMI Family", url: "https://www.acmi.net.au/whats-on/family/", tier: "B" },
+      { name: "ACMI", url: "https://www.acmi.net.au/whats-on/", tier: "B" },
       { name: "State Library Victoria", url: "https://www.slv.vic.gov.au/whats-on", tier: "B" },
       { name: "Royal Botanic Gardens Victoria", url: "https://www.rbg.vic.gov.au/whats-on/", tier: "B" },
       { name: "City of Yarra", url: "https://www.yarracity.vic.gov.au/things-to-do/events", tier: "A" },
@@ -53,7 +54,7 @@ const cityConfigs = [
       { name: "CERES", url: "https://ceres.org.au/whats-on/", tier: "B" },
       { name: "Collingwood Children's Farm", url: "https://www.farm.org.au/whats-on", tier: "B" },
       { name: "Open House Melbourne", url: "https://openhousemelbourne.org/", tier: "B" },
-      { name: "City of Melbourne Libraries", url: "https://www.melbourne.vic.gov.au/libraries/whats-on", tier: "B" }
+      { name: "City of Melbourne Libraries", url: "https://www.melbourne.vic.gov.au/libraries/whats-on", tier: "B" },
       { name: "Melbourne Recital Centre", url: "https://www.melbournerecital.com.au/events/", tier: "B" },
     ]
   },
@@ -61,13 +62,14 @@ const cityConfigs = [
     key: "sydney",
     name: "Sydney",
     marker: "EVENTS",
+    moreMarker: "SYDNEY_MORE",
     dataPath: `${dataDir}/events.json`,
     sources: [
       { name: "City of Sydney", url: "https://whatson.cityofsydney.nsw.gov.au/categories/kids-and-family", tier: "A" },
       { name: "Darling Harbour", url: "https://www.darlingharbour.com/whats-on", tier: "B" },
       { name: "Sydney Opera House", url: "https://www.sydneyoperahouse.com/kids-families", tier: "B" },
       { name: "Australian Museum", url: "https://australian.museum/whats-on/", tier: "B" },
-      { name: "Powerhouse Museum", url: "https://powerhouse.com.au/program/", tier: "B" },
+      { name: "Powerhouse Museum", url: "https://powerhouse.com.au/program", tier: "B" },
       { name: "Art Gallery NSW", url: "https://www.artgallery.nsw.gov.au/whats-on/", tier: "B" },
       { name: "Museum of Contemporary Art Australia", url: "https://www.mca.com.au/whats-on/", tier: "B" },
       { name: "State Library NSW", url: "https://www.sl.nsw.gov.au/whats-on", tier: "B" },
@@ -283,6 +285,16 @@ function renderEvent(event, index) {
         </article>`;
 }
 
+function renderMoreLink(candidate) {
+  const title = esc(candidate.title || candidate.source || "More activity");
+  const source = esc(candidate.source || "Official source");
+  const url = esc(candidate.url);
+  return `          <a href="${url}" target="_blank" rel="noreferrer">
+            <span class="zh">${title} · ${source}</span>
+            <span class="en">${title} · ${source}</span>
+          </a>`;
+}
+
 async function buildCity(config) {
   const candidates = [];
   for (const source of config.sources) {
@@ -292,7 +304,7 @@ async function buildCity(config) {
       console.warn(`${config.name} source skipped: ${source.name}: ${error.message}`);
     }
   }
-  const selected = uniqueCandidates(candidates).slice(0, 16);
+  const selected = uniqueCandidates(candidates).slice(0, 18);
   for (const candidate of selected) {
     try { candidate.detailText = stripTags(await fetchText(candidate.url, config.name)).slice(0, 7000); }
     catch { candidate.detailText = candidate.text; }
@@ -304,7 +316,20 @@ async function buildCity(config) {
   if (!Array.isArray(events) || events.length < 3) events = fallbackEvents(selected, config.name);
   events = events.slice(0, 8);
   if (events.length < 3) throw new Error(`Not enough ${config.name} event candidates; site left unchanged.`);
-  return { events, usage: enrichment?.usage || null };
+  const eventUrls = new Set(events.map((event) => String(event.url || "").toLowerCase()));
+  const moreLinks = selected
+    .filter((candidate) => candidate.url && !eventUrls.has(candidate.url.toLowerCase()))
+    .slice(0, 5)
+    .map(({ title, url, source }) => ({ title, url, source }));
+  if (moreLinks.length < 3) {
+    for (const source of config.sources) {
+      if (moreLinks.length >= 5) break;
+      if (!source.url || eventUrls.has(source.url.toLowerCase())) continue;
+      if (moreLinks.some((item) => item.url.toLowerCase() === source.url.toLowerCase())) continue;
+      moreLinks.push({ title: source.name, url: source.url, source: "Official source" });
+    }
+  }
+  return { events, moreLinks, usage: enrichment?.usage || null };
 }
 
 function usageNumbers(result) {
@@ -344,7 +369,7 @@ async function main() {
   const results = new Map();
   for (const config of cityConfigs) {
     const result = await buildCity(config);
-    const { events } = result;
+    const { events, moreLinks } = result;
     results.set(config.key, result);
     await writeFile(config.dataPath, `${JSON.stringify({ city: config.name, updatedAt: new Date().toISOString(), ...weekPeriod, events }, null, 2)}\n`, "utf8");
     const start = `<!-- ${config.marker}_START -->`;
@@ -352,6 +377,11 @@ async function main() {
     const pattern = new RegExp(`${start}[\\s\\S]*?${end}`);
     if (!pattern.test(index)) throw new Error(`Missing ${config.name} event markers in ${indexPath}`);
     index = index.replace(pattern, `${start}\n${events.map(renderEvent).join("\n\n")}\n        ${end}`);
+    const moreStart = `<!-- ${config.moreMarker}_START -->`;
+    const moreEnd = `<!-- ${config.moreMarker}_END -->`;
+    const morePattern = new RegExp(`${moreStart}[\\s\\S]*?${moreEnd}`);
+    if (!morePattern.test(index)) throw new Error(`Missing ${config.name} more markers in ${indexPath}`);
+    index = index.replace(morePattern, `${moreStart}\n${moreLinks.map(renderMoreLink).join("\n")}\n          ${moreEnd}`);
   }
   await writeFile(indexPath, updatePeriodMeta(index, weekPeriod), "utf8");
   await writeUsageReport(results);
