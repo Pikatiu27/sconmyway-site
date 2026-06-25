@@ -129,6 +129,8 @@ def validate_data(data: dict, html_text: str, *, require_today: bool) -> None:
     if len(equations) < 3:
         raise AssertionError("Expected at least 3 classroom equations")
     for index, equation in enumerate(equations, start=1):
+        if "_" in equation.get("formula", ""):
+            raise AssertionError(f"equations[{index}] formula must not use underscore notation")
         if not equation.get("formulaTokens"):
             raise AssertionError(f"equations[{index}] requires formulaTokens")
         validate_bilingual(equation.get("citation"), f"equations[{index}].citation")
@@ -142,7 +144,10 @@ def validate_data(data: dict, html_text: str, *, require_today: bool) -> None:
     required_html = [
         "#today",
         "formatDate(dailyData.date)",
+        "overflow-wrap: anywhere;",
         "@media (max-width: 520px)",
+        '[pick(item.summary), pick(item.watch)].filter(Boolean).join(" ")',
+        '[pick(item.summary), pick(item.caveat)].filter(Boolean).join(" ")',
         '${equation.citation ? `<p class="equation-citation">',
     ]
     for snippet in required_html:
@@ -189,6 +194,18 @@ def main() -> None:
     for source, target in MIRROR_TARGETS:
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source, target)
+
+    for _, target in MIRROR_TARGETS:
+        if target.suffix == ".json":
+            mirrored_data = load_data(target)
+            if mirrored_data != data:
+                raise AssertionError(f"Mirror JSON out of sync: {target}")
+            continue
+        mirrored_html = target.read_text(encoding="utf-8")
+        start, end = extract_fallback_block(mirrored_html)
+        mirrored_fallback = json.loads(mirrored_html[start:end].rstrip(";"))
+        if mirrored_fallback != data:
+            raise AssertionError(f"Mirror HTML fallback out of sync: {target}")
 
     print(
         "Synced industry briefing fallback for "
