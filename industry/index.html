@@ -753,377 +753,415 @@
 
   <script>
     const fallback = {
-      "date": "2026-06-26",
-      "edition": {
-            "zh": "晨间简报",
-            "en": "Morning Brief"
+  "date": "2026-06-26",
+  "edition": {
+    "zh": "晨间简报",
+    "en": "Morning Brief"
+  },
+  "liveUpdates": [
+    {
+      "topic": {
+        "zh": "半导体",
+        "en": "Semiconductors"
       },
-      "liveUpdates": [
-            {
-                  "topic": {
-                        "zh": "AI基础设施",
-                        "en": "AI Infrastructure"
-                  },
-                  "title": {
-                        "zh": "FERC催促电网运营商加快大型数据中心接入，算力选址进一步变成电力审批竞速",
-                        "en": "FERC pushes grid operators to speed large data-center interconnection, turning AI siting even more into a power-approval race"
-                  },
-                  "summary": {
-                        "zh": "美国联邦能源监管委员会在2026年6月18日要求六家区域电网运营商在30至60天内提交大型负荷接入改进方案，以回应AI数据中心快速增长的并网压力。对行业更关键的信号是，下一阶段算力扩张不只比芯片和资本，还比谁能更快锁定电网容量、承担升级成本，并证明负荷可以在高峰时段被调度管理。",
-                        "en": "On June 18, 2026, the US Federal Energy Regulatory Commission told six regional grid operators to submit large-load interconnection improvements within 30 to 60 days in response to fast-rising AI data-center demand. The stronger industry signal is that the next phase of compute expansion will be judged not only by chips and capital, but by who can secure grid capacity faster, absorb upgrade costs, and prove that load can be managed during peak system stress."
-                  },
-                  "watch": {
-                        "zh": "接下来要看各区域如何细化可中断负荷、自备电源和升级费用分摊规则，因为这些细节会直接改变项目选址、融资顺序和园区开发节奏。",
-                        "en": "Watch how each region defines interruptible load, behind-the-meter supply, and upgrade-cost allocation, because those details will directly reshape siting, financing order, and campus build-out timing."
-                  },
-                  "reference": "AP, Grid operators are ordered to speed power to energy-hungry AI data centers, published 2026-06-18",
-                  "referenceLinks": [
-                        {
-                              "label": "AP: Grid operators are ordered to speed power to AI data centers",
-                              "url": "https://apnews.com/article/506e3d206871111f15c3c62fc5368be5"
-                        }
-                  ]
-            },
-            {
-                  "topic": {
-                        "zh": "数字支付",
-                        "en": "Digital Payments"
-                  },
-                  "title": {
-                        "zh": "数字欧元进入新一轮立法推进，欧洲继续把支付主权当作公共基础设施建设",
-                        "en": "The digital euro enters a new legislative push, with Europe continuing to frame payments sovereignty as public infrastructure"
-                  },
-                  "summary": {
-                        "zh": "围绕2026年6月23日欧洲议会讨论的数字欧元方案，焦点已经从概念争论转向线上线下一体化、隐私边界、商户成本，以及欧洲如何降低对Visa和Mastercard等外部支付轨道的依赖。对支付和金融科技行业而言，这意味着竞争正在从产品便利性延伸到规则制定权、清算韧性和底层基础设施控制。",
-                        "en": "Around the digital-euro proposal discussed in the European Parliament on June 23, 2026, the debate has moved beyond concept into online-offline integration, privacy boundaries, merchant economics, and how Europe reduces dependence on external payment rails such as Visa and Mastercard. For payments and fintech, that means competition is expanding from product convenience into rule-setting power, settlement resilience, and control of the underlying infrastructure."
-                  },
-                  "watch": {
-                        "zh": "后续重点是全会时间表、离线支付和隐私承诺是否保留到最终文本，以及中介机构义务会不会继续收紧。",
-                        "en": "The next checkpoints are the plenary timetable, whether offline capability and privacy commitments survive in the final text, and whether intermediary obligations tighten further."
-                  },
-                  "reference": "Le Monde, How the digital euro works, published 2026-06-23; European Central Bank digital euro project page, accessed 2026-06-26",
-                  "referenceLinks": [
-                        {
-                              "label": "Le Monde: How the digital euro works",
-                              "url": "https://www.lemonde.fr/en/economy/article/2026/06/23/how-the-digital-euro-works-the-currency-s-new-form-promises-cheaper-faster-transactions_6754794_19.html"
-                        },
-                        {
-                              "label": "ECB: Digital euro",
-                              "url": "https://www.ecb.europa.eu/euro/digital_euro/html/index.en.html"
-                        }
-                  ]
-            },
-            {
-                  "topic": {
-                        "zh": "半导体",
-                        "en": "Semiconductors"
-                  },
-                  "title": {
-                        "zh": "Micron与Anthropic的合作叠加最新财报，AI内存开始更像长期基础设施合同而不是单次器件采购",
-                        "en": "Micron's Anthropic deal plus its latest earnings make AI memory look more like long-horizon infrastructure contracting than one-off component buying"
-                  },
-                  "summary": {
-                        "zh": "Micron在2026年6月22日披露与Anthropic的新合作，又在6月25日前后的财报沟通中强调多项长期供货安排，这把HBM、DRAM和SSD进一步绑到前沿模型路线图和数据中心扩容节奏上。行业含义是，内存不再只是被动跟随GPU出货，而是在多年度供货、封装瓶颈和系统效率里提前成为战略资源。",
-                        "en": "Micron disclosed a new partnership with Anthropic on June 22, 2026 and then used its late-June earnings messaging to underline multiple long-term supply arrangements. That ties HBM, DRAM, and SSD capacity more directly to frontier-model roadmaps and data-center expansion schedules. The industry implication is that memory is no longer a passive follower of GPU shipments, but an early strategic resource inside multiyear supply, packaging constraints, and system-efficiency planning."
-                  },
-                  "watch": {
-                        "zh": "接下来要看多年度锁量协议是否继续增加，以及内存定价和先进封装约束会不会重新排序AI资本开支优先级。",
-                        "en": "Watch whether multiyear volume agreements keep spreading and whether memory pricing plus advanced-packaging constraints start to reorder AI capex priorities."
-                  },
-                  "reference": "MarketWatch, Micron's stock momentum builds as the company inks a new Anthropic partnership, published 2026-06-22; Wall Street Journal earnings coverage, published 2026-06-25",
-                  "referenceLinks": [
-                        {
-                              "label": "MarketWatch: Micron inks a new Anthropic partnership",
-                              "url": "https://www.marketwatch.com/story/microns-stock-momentum-builds-as-the-company-inks-a-new-anthropic-partnership-484e3845"
-                        },
-                        {
-                              "label": "WSJ: Micron shares jump as chip shortage is projected to last beyond 2027",
-                              "url": "https://www.wsj.com/business/earnings/micron-revenue-soars-on-continued-memory-demand-d736b34b"
-                        }
-                  ]
-            }
-      ],
-      "insights": [
-            {
-                  "area": {
-                        "zh": "地震可靠性与韧性",
-                        "en": "Seismic Reliability and Resilience"
-                  },
-                  "title": {
-                        "zh": "下一代PBEE不能只算失效概率，还要把恢复过程直接写进结构状态转移",
-                        "en": "Next-generation PBEE cannot stop at failure probability; it has to embed recovery directly into structural state transitions"
-                  },
-                  "evidence": {
-                        "zh": "研究类型：2026年预印本；方法：连续时间马尔可夫链、状态转移生成矩阵、时间相关可靠指标与运行时间韧性度量。",
-                        "en": "Evidence: 2026 preprint using a continuous-time Markov chain, a generator-matrix state model, time-dependent reliability indices, and an operational-time resilience metric."
-                  },
-                  "summary": {
-                        "zh": "这项工作把地震损伤、修复和再次受震的过程写进同一个状态动力学框架，而不是把韧性只当成事后附加指标。对结构工程实践的启发是，如果设计团队仍只汇报一次性超越概率，却不解释恢复速度、停运时间和重复事件下的状态迁移，就很难真正比较不同体系在全寿命周期内的抗震表现。",
-                        "en": "This work places seismic damage, repair, and repeated shaking inside one state-dynamics framework instead of treating resilience as a post-processing add-on. For structural practice, the implication is that a team reporting only one-off exceedance probabilities, without recovery speed, downtime, and repeated-event state transitions, is not yet giving a full life-cycle comparison of seismic performance."
-                  },
-                  "caveat": {
-                        "zh": "目前示例主要基于原型体系和方法论演示，离工程审查级别的项目校准、成本耦合和规范采纳还有距离。",
-                        "en": "The examples are still prototype-based methodological demonstrations, so project-level calibration, cost coupling, and code adoption remain open steps."
-                  },
-                  "reference": "arXiv:2606.12448, submitted 2026-05-30",
-                  "referenceLinks": [
-                        {
-                              "label": "arXiv: A generalized framework for performance-based earthquake engineering",
-                              "url": "https://arxiv.org/abs/2606.12448"
-                        }
-                  ]
-            },
-            {
-                  "area": {
-                        "zh": "桥梁数字孪生",
-                        "en": "Bridge Digital Twins"
-                  },
-                  "title": {
-                        "zh": "老桥数字孪生开始重用交通摄像头和天气数据，而不是默认必须先布满新传感器",
-                        "en": "Bridge digital twins are starting to reuse traffic cameras and weather data instead of assuming new sensors must come first"
-                  },
-                  "evidence": {
-                        "zh": "研究类型：2026年预印本；方法：交通视觉识别、LWR交通流模型、天气退化指标与蒙特卡罗不确定性分析。",
-                        "en": "Evidence: 2026 preprint combining traffic computer vision, an LWR traffic-flow model, weather deterioration indicators, and Monte Carlo uncertainty analysis."
-                  },
-                  "summary": {
-                        "zh": "该框架把既有桥面摄像头、交通流推断和天气API组装成面向疲劳与养护分类的混合数字孪生，说明预测性维护不一定从昂贵的新硬件开始。对桥梁和资产管理团队而言，真正稀缺的能力不是再加一类传感器，而是把现有运营数据转成可追踪的风险信号，并接入维修优先级与预算流程。",
-                        "en": "This framework combines existing bridge-deck cameras, traffic-flow inference, and weather APIs into a hybrid digital twin for fatigue and maintenance classification, showing that predictive maintenance does not always need to start with expensive new hardware. For bridge and asset-management teams, the scarce capability is not another sensor family by itself, but turning existing operational data into traceable risk signals that feed maintenance priority and budgeting decisions."
-                  },
-                  "caveat": {
-                        "zh": "交通代理量与真实结构应力之间仍需现场校准，跨桥型迁移能力也还没有被充分证明。",
-                        "en": "The mapping from traffic proxies to true structural stress still needs site calibration, and transferability across bridge types is not yet fully demonstrated."
-                  },
-                  "reference": "arXiv:2603.14028, submitted 2026-03-14",
-                  "referenceLinks": [
-                        {
-                              "label": "arXiv: Traffic and weather driven hybrid digital twin for bridge monitoring",
-                              "url": "https://arxiv.org/abs/2603.14028"
-                        }
-                  ]
-            },
-            {
-                  "area": {
-                        "zh": "结构健康监测",
-                        "en": "Structural Health Monitoring"
-                  },
-                  "title": {
-                        "zh": "SHM模型想跨桥梁和跨环境真正可用，关键不只是精度，而是物理一致的域适配",
-                        "en": "For SHM models to work across bridges and environments, the key is not accuracy alone but physically consistent domain adaptation"
-                  },
-                  "evidence": {
-                        "zh": "研究类型：2025年系统综述；范围：60余项振动监测与迁移学习研究，覆盖统计对齐、对抗学习、物理约束与生成式方法。",
-                        "en": "Evidence: 2025 systematic review of more than sixty vibration-monitoring and transfer-learning studies, covering statistical alignment, adversarial learning, physics constraints, and generative methods."
-                  },
-                  "summary": {
-                        "zh": "这篇综述强调，结构健康监测真正难的不是在单一桥梁数据集上做出高分，而是让模型跨几何、材料、环境和时间漂移后仍保留对损伤的敏感性。对土木工程团队而言，未来更有价值的不是“黑箱更准”这类口号，而是能说明哪些物理规律被保留、哪些域差异被校正、哪些结果可以被审计和复核的监测工作流。",
-                        "en": "This review makes the core difficulty explicit: SHM does not fail because a model cannot score well on one benchmark, but because the damage-sensitive information has to survive changes in geometry, materials, environment, and time drift. For civil teams, the higher-value direction is not a vague promise of better black-box accuracy, but monitoring workflows that explain which physical rules are preserved, which domain gaps are corrected, and which results remain auditable."
-                  },
-                  "caveat": {
-                        "zh": "综述清楚梳理了技术路线，但离可认证、可审批的现场部署标准仍有明显距离。",
-                        "en": "The review clarifies the technical trajectory, but certified and approval-ready field deployment standards are still some distance away."
-                  },
-                  "reference": "arXiv:2512.18780, submitted 2025-12-21",
-                  "referenceLinks": [
-                        {
-                              "label": "arXiv: Domain Adaptation in Structural Health Monitoring of Civil Infrastructure",
-                              "url": "https://arxiv.org/abs/2512.18780"
-                        }
-                  ]
-            }
-      ],
-      "classroom": {
-            "title": {
-                  "zh": "目标可靠指标：为什么中外设计体系都把 β 当成校准语言，而不是“绝不会失效”的承诺？",
-                  "en": "Target reliability index: why do both Chinese and international systems treat β as a calibration language rather than a promise of zero failure?"
-            },
-            "text": {
-                  "zh": "中外结构设计体系在表述上差异很大，但在可靠度层面有一个共同逻辑：规范并不是承诺结构“绝不会失效”，而是通过目标可靠指标、分项系数和构造要求，把失效风险控制在与后果等级、使用年限和社会容忍度相匹配的范围内。中国的可靠度设计标准通常把安全等级、设计工作年限和校准目标放在一起讨论；国际体系则更常通过后果等级、参考期和目标可靠指标表达同样的问题。语言不同，但核心问题一致：你的验算到底对应哪个失效模式、哪个参考期，以及什么级别的可接受风险。",
-                  "en": "Chinese and international structural systems use different wording, but they share the same reliability logic: codes do not promise that a structure will never fail. Instead, they use target reliability indices, partial factors, and detailing rules to keep risk within a range that matches consequence level, design working life, and social tolerance. Chinese reliability standards more often discuss safety level, design working life, and calibration targets together, while international systems more often express the same issue through consequence class, reference period, and target reliability index. The wording differs, but the core question is identical: which failure mode, which reference period, and what level of acceptable risk does the check actually represent?"
-            },
-            "comparisonPoints": [
-                  {
-                        "label": {
-                              "zh": "比较对象",
-                              "en": "What is being calibrated"
-                        },
-                        "text": {
-                              "zh": "可靠指标 β 本身不是材料强度，也不是单一荷载系数，而是把抗力、作用效应和不确定性压缩成一个风险刻度。中外规范看起来写法不同，但都在做同一件事：为某类失效模式设定可接受的目标水平。",
-                              "en": "The reliability index β is neither a material strength nor a single load factor. It compresses resistance, action effect, and uncertainty into one risk scale. Chinese and international codes may look different on the page, but both are setting an acceptable target level for a defined failure mode."
-                        }
-                  },
-                  {
-                        "label": {
-                              "zh": "时间尺度",
-                              "en": "Time scale matters"
-                        },
-                        "text": {
-                              "zh": "脱离参考期谈 β 很容易误读。同样的 β 数值，如果对应的是一年、五十年，或一次极端事件，其风险含义完全不同，所以课堂、设计说明和审批沟通都必须把时间边界说清楚。",
-                              "en": "Discussing β without the reference period is an easy way to misread risk. The same numerical β has a very different meaning if it refers to one year, fifty years, or a single extreme event, so teaching notes, design statements, and approvals all need the time boundary stated explicitly."
-                        }
-                  },
-                  {
-                        "label": {
-                              "zh": "审批表达",
-                              "en": "Approval wording"
-                        },
-                        "text": {
-                              "zh": "真正有用的可靠度表达，不是笼统写“满足规范安全度”，而是说明所对应的失效模式、参考期、独立性假定和是否只是筛查级估算。这样中外团队才能把β值与实际工程责任连接起来。",
-                              "en": "Useful reliability wording is not a vague statement that a design 'meets code safety'. It should identify the failure mode, reference period, independence assumptions, and whether the check is only a screening estimate. That is how teams connect a β value to real engineering responsibility across systems."
-                        }
-                  }
-            ],
-            "takeaway": {
-                  "zh": "做中外可靠度比较时，先讲清楚 β 对应的失效模式和参考期，再讨论谁“更安全”。脱离边界直接比较数字，往往会把校准语言误读成绝对承诺。",
-                  "en": "In cross-system reliability comparisons, define the failure mode and reference period behind β before arguing which scheme is 'safer'. Comparing bare numbers without those boundaries usually confuses a calibration language with an absolute promise."
-            },
-            "example": {
-                  "title": {
-                        "zh": "实例：若两种方案分别对应 β = 3.2 与 β = 3.8，它们的年失效概率与 50 年累计失效概率差多少？",
-                        "en": "Example: if two schemes correspond to β = 3.2 and β = 3.8, how different are their annual and 50-year cumulative failure probabilities?"
-                  },
-                  "intro": {
-                        "zh": "为说明目标可靠指标的量级差异，这里只做一个筛查级示例。假定 β 采用标准正态可靠指标定义，年失效事件相互独立，并仅比较概率量级，不把结果直接当作具体项目的规范校准值。该例用于理解可靠度语言，不替代正式设计或审批。",
-                        "en": "To illustrate the magnitude behind target reliability levels, this example is kept at screening level only. Assume β follows the standard-normal reliability-index definition, annual failure events are independent, and the calculation is used only to compare probability orders of magnitude rather than to reproduce a project-specific code calibration. The example is for understanding reliability language and does not replace formal design or approval."
-                  },
-                  "equations": [
-                        {
-                              "label": {
-                                    "zh": "年失效概率关系",
-                                    "en": "Annual failure-probability relation"
-                              },
-                              "formula": "Pf = Φ(−β)",
-                              "formulaTokens": [
-                                    {
-                                          "var": "P"
-                                    },
-                                    {
-                                          "sub": "f"
-                                    },
-                                    {
-                                          "text": " = "
-                                    },
-                                    {
-                                          "var": "Φ"
-                                    },
-                                    {
-                                          "text": "(−"
-                                    },
-                                    {
-                                          "var": "β"
-                                    },
-                                    {
-                                          "text": ")"
-                                    }
-                              ],
-                              "citation": {
-                                    "zh": "文献依据：Melchers, R.E. and Beck, A.T., Structural Reliability Analysis and Prediction, 3rd ed., Wiley, 2018，标准正态可靠指标与失效概率关系。",
-                                    "en": "Literature basis: Melchers, R.E. and Beck, A.T., Structural Reliability Analysis and Prediction, 3rd ed., Wiley, 2018, standard-normal relation between reliability index and failure probability."
-                              },
-                              "result": {
-                                    "zh": "代入 β = 3.2，可得 P_f = 6.87 × 10^-4 /年；代入 β = 3.8，可得 P_f = 7.23 × 10^-5 /年，前者约为后者的 9.50 倍。",
-                                    "en": "Substituting β = 3.2 gives P_f = 6.87 × 10^-4 per year; substituting β = 3.8 gives P_f = 7.23 × 10^-5 per year, so the first is about 9.50 times the second."
-                              }
-                        },
-                        {
-                              "label": {
-                                    "zh": "n 年生存概率",
-                                    "en": "n-year survival probability"
-                              },
-                              "formula": "Ps,n = (1 − Pf)^n",
-                              "formulaTokens": [
-                                    {
-                                          "var": "P"
-                                    },
-                                    {
-                                          "sub": "s,n"
-                                    },
-                                    {
-                                          "text": " = (1 − "
-                                    },
-                                    {
-                                          "var": "P"
-                                    },
-                                    {
-                                          "sub": "f"
-                                    },
-                                    {
-                                          "text": ")"
-                                    },
-                                    {
-                                          "sup": "n"
-                                    }
-                              ],
-                              "citation": {
-                                    "zh": "推导关系：由独立年度生存事件连乘得到；基于概率论中的伯努利独立事件假定（推导式，非规范原式）。",
-                                    "en": "Derived relation: obtained by multiplying independent annual survival events; based on the Bernoulli independent-event assumption in probability theory (derived, not a numbered code equation)."
-                              },
-                              "result": {
-                                    "zh": "取 n = 50，可得 β = 3.2 方案的 50 年生存概率约为 0.9662，而 β = 3.8 方案约为 0.9964。",
-                                    "en": "Taking n = 50 gives a 50-year survival probability of about 0.9662 for the β = 3.2 scheme and about 0.9964 for the β = 3.8 scheme."
-                              }
-                        },
-                        {
-                              "label": {
-                                    "zh": "50 年累计失效概率",
-                                    "en": "50-year cumulative failure probability"
-                              },
-                              "formula": "Pf,50 = 1 − (1 − Pf)^50",
-                              "formulaTokens": [
-                                    {
-                                          "var": "P"
-                                    },
-                                    {
-                                          "sub": "f,50"
-                                    },
-                                    {
-                                          "text": " = 1 − (1 − "
-                                    },
-                                    {
-                                          "var": "P"
-                                    },
-                                    {
-                                          "sub": "f"
-                                    },
-                                    {
-                                          "text": ")"
-                                    },
-                                    {
-                                          "sup": "50"
-                                    }
-                              ],
-                              "citation": {
-                                    "zh": "推导关系：由累计生存概率取补集得到；建立在独立年度事件假定上（推导式，非规范原式）。",
-                                    "en": "Derived relation: obtained as the complement of cumulative survival probability; based on the independent annual-event assumption (derived, not a numbered code equation)."
-                              },
-                              "result": {
-                                    "zh": "因此 β = 3.2 时，50 年累计失效概率约为 3.38%；β = 3.8 时约为 0.361%。这个简单比较说明，看似只差 0.6 的 β，放到长期风险尺度上会形成接近一个数量级的差别。",
-                                    "en": "Therefore, the 50-year cumulative failure probability is about 3.38% for β = 3.2 and about 0.361% for β = 3.8. This simple comparison shows that a β difference of only 0.6 can become nearly an order-of-magnitude difference on a long-term risk scale."
-                              }
-                        }
-                  ],
-                  "note": {
-                        "zh": "这个例子故意把问题简化到标准正态与独立年度事件，用来帮助理解可靠指标的量级，而不是替代真实工程的规范校准。正式设计还要考虑参考期定义、失效模式相关性、荷载统计模型、抗力分布、后果等级和结构重要性。",
-                        "en": "This example is intentionally simplified to a standard-normal model with independent annual events so the scale of the reliability index is easier to read. It does not replace real code calibration. Formal design still needs the defined reference period, failure-mode correlation, load statistics, resistance distribution, consequence class, and structural importance."
-                  }
-            },
-            "references": "Chinese standards platform, Eurocode basis of structural design resources, and structural reliability textbook references",
-            "referenceLinks": [
-                  {
-                        "label": "SAMR national standards platform",
-                        "url": "https://std.samr.gov.cn/"
-                  },
-                  {
-                        "label": "European Commission JRC: EN 1990 Basis of structural design",
-                        "url": "https://eurocodes.jrc.ec.europa.eu/showpage.php?id=130"
-                  },
-                  {
-                        "label": "Google Books search: Structural Reliability Analysis and Prediction",
-                        "url": "https://books.google.com/books?q=Structural+Reliability+Analysis+and+Prediction+Melchers+Beck"
-                  }
-            ]
+      "title": {
+        "zh": "Micron与Qualcomm同日点燃AI芯片行情，算力竞争开始从GPU扩展到内存、CPU与软件栈",
+        "en": "Micron and Qualcomm reignite the AI-chip trade, widening compute competition from GPUs to memory, CPUs, and software stacks"
+      },
+      "summary": {
+        "zh": "Micron在强劲财报后带动内存和存储股票上涨，Qualcomm也因上调非手机业务目标、推进数据中心CPU和AI软件布局而获得市场重估。今天的信号不是单一芯片公司表现好，而是AI基础设施的瓶颈正在从GPU扩展到HBM、SSD、低功耗CPU、软件兼容层和长期供货合同。",
+        "en": "Micron’s strong results lifted memory and storage stocks, while Qualcomm was re-rated after raising non-handset targets and pushing deeper into data-centre CPUs and AI software. The signal is not just that one chipmaker performed well; AI infrastructure bottlenecks are spreading from GPUs into HBM, SSDs, low-power CPUs, software compatibility layers, and long-horizon supply contracts."
+      },
+      "watch": {
+        "zh": "接下来要看内存涨价是否传导到云服务和消费电子，以及Qualcomm能否把移动端低功耗优势转成数据中心真实订单。",
+        "en": "Watch whether memory-price pressure reaches cloud services and consumer electronics, and whether Qualcomm can turn its mobile low-power advantage into real data-centre orders."
+      },
+      "reference": "Investopedia and MarketWatch coverage, published 2026-06-26",
+      "referenceLinks": [
+        {
+          "label": "Investopedia: Micron AI-fueled results lift memory stocks",
+          "url": "https://www.investopedia.com/micron-blockbuster-ai-fueled-results-ignite-huge-rally-for-memory-stocks-mu-12006391"
+        },
+        {
+          "label": "MarketWatch: Qualcomm data-centre targets excite Wall Street",
+          "url": "https://www.marketwatch.com/story/qualcomms-stock-is-soaring-as-these-big-numbers-excite-wall-street-316d41f4"
+        }
+      ]
+    },
+    {
+      "topic": {
+        "zh": "机器人",
+        "en": "Robotics"
+      },
+      "title": {
+        "zh": "中国把机器人放进人口老龄化和制造业升级同一张答卷，具身智能进入政策级竞争",
+        "en": "China folds robotics into demographic pressure and manufacturing upgrading, making embodied AI a policy-level race"
+      },
+      "summary": {
+        "zh": "FT今天报道，中国正用工业机器人、AI和人形机器人应对劳动力收缩与制造业效率压力。真正值得关注的不是某一台机器人能否表演复杂动作，而是国家补贴、工厂自动化、职业再培训和就业结构调整正在同时发生。机器人产业会越来越像基础制造能力，而不是单纯的科技消费品。",
+        "en": "The Financial Times reports that China is using industrial robotics, AI, and humanoid systems to respond to labour-force contraction and manufacturing-productivity pressure. The key issue is not whether one robot can perform a flashy task, but that subsidies, factory automation, worker retraining, and employment restructuring are moving together. Robotics is starting to look like a core manufacturing capability rather than a technology consumer product."
+      },
+      "watch": {
+        "zh": "后续重点看机器人密度、制造业实际部署、职业教育配套，以及自动化收益是否能覆盖社会调整成本。",
+        "en": "Watch robot density, real factory deployment, vocational-training support, and whether automation gains can cover the social adjustment cost."
+      },
+      "reference": "Financial Times, Robot nation: China’s bid to beat its demographic decline, published 2026-06-26",
+      "referenceLinks": [
+        {
+          "label": "Financial Times: Robot nation",
+          "url": "https://www.ft.com/content/c8731833-10ca-4a12-bfe4-8ebb2584ec68"
+        }
+      ]
+    },
+    {
+      "topic": {
+        "zh": "加密支付",
+        "en": "Crypto Payments"
+      },
+      "title": {
+        "zh": "稳定币监管进入基础设施阶段，讨论重点从“能不能发币”转向赎回、国债市场和链上运营风险",
+        "en": "Stablecoin regulation moves into infrastructure territory, shifting from issuance permission to redemption, Treasury markets, and on-chain operational risk"
+      },
+      "summary": {
+        "zh": "GENIUS Act之后，稳定币已经不再只是加密市场内部产品，而被放进支付、国债需求和金融基础设施讨论。近期研究提醒，稳定币能否稳定兑付不仅取决于储备资产质量，也取决于国债和回购市场流动性、做市商资产负债表容量，以及区块链交易轨道的运行可靠性。",
+        "en": "After the GENIUS Act, stablecoins are no longer just crypto-market products; they sit inside payments, Treasury demand, and financial-infrastructure debates. Recent research stresses that stable redemption depends not only on reserve quality, but also on Treasury and repo-market liquidity, dealer balance-sheet capacity, and the operational reliability of blockchain transaction rails."
+      },
+      "watch": {
+        "zh": "观察监管是否继续把稳定币纳入支付系统、银行流动性和网络安全框架，而不是只停留在储备披露。",
+        "en": "Watch whether regulators keep moving stablecoins into payments, bank-liquidity, and cybersecurity frameworks rather than stopping at reserve disclosure."
+      },
+      "reference": "Aronoff et al., The Hidden Plumbing of Stablecoins, arXiv:2604.17167; Congress.gov GENIUS Act",
+      "referenceLinks": [
+        {
+          "label": "arXiv: The Hidden Plumbing of Stablecoins",
+          "url": "https://arxiv.org/abs/2604.17167"
+        },
+        {
+          "label": "Congress.gov: S.1582 GENIUS Act",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582"
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "area": {
+        "zh": "AI数据中心基础设施",
+        "en": "AI Data-Centre Infrastructure"
+      },
+      "title": {
+        "zh": "下一代AI数据中心的土木边界正在前移到供电架构：48V机柜不再够用",
+        "en": "The civil boundary of next-generation AI data centres is moving into power architecture: 48 V racks are no longer enough"
+      },
+      "evidence": {
+        "zh": "研究类型：2026年6月预印本；方法：综述AI数据中心供电架构，从机柜级48V限制扩展到低压直流配电、高变比DC/DC和中压固态变压器。",
+        "en": "Evidence: June 2026 preprint reviewing AI data-centre power-delivery architecture, from limitations of 48 V racks to low-voltage DC distribution, high-ratio DC/DC conversion, and medium-voltage solid-state transformers."
+      },
+      "summary": {
+        "zh": "这篇研究说明，AI数据中心的瓶颈已经不只是“电够不够”，而是电如何从电网、变电、配电、机柜和芯片级瞬态负载之间稳定传递。对土木和结构工程师而言，数据中心项目早期决策会越来越依赖电气架构、散热、结构荷载、消防分区、运维冗余和施工节奏的耦合。未来如果只把数据中心当普通工业建筑，很容易错过真正控制造价和审批的系统约束。",
+        "en": "This paper shows that the AI data-centre constraint is no longer only whether enough electricity is available, but how power is stably delivered from grid interface and substations through distribution, racks, and chip-level transient loads. For civil and structural engineers, early decisions on data-centre projects will increasingly depend on coupled electrical architecture, cooling, structural loading, fire zoning, operational redundancy, and construction sequencing. Treating a data centre as an ordinary industrial building will miss the system constraints that actually control cost and approval."
+      },
+      "caveat": {
+        "zh": "论文偏电力电子与系统架构，落到项目仍需要结合当地并网条件、建筑规范、消防和施工可实施性。",
+        "en": "The paper is centred on power electronics and system architecture; project application still needs local interconnection, building-code, fire-safety, and constructability checks."
+      },
+      "reference": "Lee et al., Toward Next-Generation AI Data Centers, arXiv:2606.25095, submitted 2026-06-23",
+      "referenceLinks": [
+        {
+          "label": "arXiv: Toward Next-Generation AI Data Centers",
+          "url": "https://arxiv.org/abs/2606.25095"
+        }
+      ]
+    },
+    {
+      "area": {
+        "zh": "多尺度结构可靠度",
+        "en": "Multiscale Structural Reliability"
+      },
+      "title": {
+        "zh": "新材料可靠度的难点不是平均强度，而是微观不确定性如何传到宏观失效概率",
+        "en": "The hard part of reliability for new materials is not mean strength, but how microscale uncertainty propagates to failure probability"
+      },
+      "evidence": {
+        "zh": "研究类型：2026年预印本；方法：Physics-Augmented Neural Network、Tensor Train、Deep Inverse Rosenblatt Transport，用于高维随机场可靠度分析。",
+        "en": "Evidence: 2026 preprint using physics-augmented neural networks, tensor trains, and Deep Inverse Rosenblatt Transport for high-dimensional random-field reliability analysis."
+      },
+      "summary": {
+        "zh": "这项研究针对复合材料和非均质材料的可靠度难题：微观材料参数本身带有空间随机性，传统FE²和蒙特卡罗方法很快会被维度灾难拖垮。作者用带物理约束的神经网络替代昂贵的均质化计算，再用张量列车近似重要抽样分布。对结构工程未来的启发是，新材料进入规范设计前，关键不只是试验强度更高，而是能否以可审计方式把材料不确定性传递到构件和体系可靠度。",
+        "en": "This study targets a reliability problem central to composites and heterogeneous materials: microscale material parameters are spatially random, and conventional FE² plus Monte Carlo workflows become computationally prohibitive. The authors replace expensive homogenisation with a physics-constrained neural network and approximate the importance-sampling distribution with tensor trains. The practical signal is that before new materials enter code-based design, the question is not only whether test strength is higher, but whether material uncertainty can be auditable as it propagates into member and system reliability."
+      },
+      "caveat": {
+        "zh": "当前框架仍是研究级方法，离常规设计软件和规范校准还有距离，但方向与高性能材料、3D打印和复合结构高度相关。",
+        "en": "The framework is still research-grade and not yet routine design software or code calibration, but its direction is highly relevant to high-performance materials, additive manufacturing, and composite structures."
+      },
+      "reference": "Tyagi et al., Multiscale Structural Reliability Analysis, arXiv:2604.18776, submitted 2026-04-20",
+      "referenceLinks": [
+        {
+          "label": "arXiv: Multiscale Structural Reliability Analysis",
+          "url": "https://arxiv.org/abs/2604.18776"
+        }
+      ]
+    },
+    {
+      "area": {
+        "zh": "具身AI安全治理",
+        "en": "Embodied-AI Safety Governance"
+      },
+      "title": {
+        "zh": "机器人进入工地、工厂和运维现场前，工程问题会先变成安全生命周期和责任链问题",
+        "en": "Before robots enter sites, factories, and maintenance work, the engineering problem becomes safety lifecycle and responsibility chain"
+      },
+      "evidence": {
+        "zh": "研究类型：2026年白皮书；来源：SAE World Congress专家讨论；主题：具身AI的安全、信任、治理、部署和生命周期管理。",
+        "en": "Evidence: 2026 white paper from an SAE World Congress expert panel on embodied-AI safety, trust, governance, deployment, and lifecycle management."
+      },
+      "summary": {
+        "zh": "这份白皮书把具身AI从“模型能力”拉回工程系统：机器人、自动驾驶设备和工业机器一旦进入动态现场，就必须处理传感器失效、环境变化、人机交互、软件更新、事故责任和持续验证。对土木和结构行业的含义是，未来施工机器人、检测机器人和运维机器人不会只由AI团队决定能否上场；安全案例、作业许可、保险、标准符合性和现场责任划分会成为同等重要的工程交付物。",
+        "en": "This white paper pulls embodied AI back from model capability into engineering systems. Once robots, autonomous vehicles, and industrial machines enter dynamic worksites, they must manage sensor failure, environmental change, human interaction, software updates, accident responsibility, and continuous validation. For civil and structural practice, future construction, inspection, and maintenance robots will not be approved by AI performance alone; safety cases, work permits, insurance, standards compliance, and site responsibility allocation will become equally important deliverables."
+      },
+      "caveat": {
+        "zh": "白皮书不是结构规范，但它提示了工程公司采用自动化设备时必须补齐的治理层。",
+        "en": "The white paper is not a structural code, but it identifies the governance layer engineering firms must build before adopting autonomous equipment."
+      },
+      "reference": "Li et al., Embodied AI in Action, arXiv:2605.10653, submitted 2026-05-11",
+      "referenceLinks": [
+        {
+          "label": "arXiv: Embodied AI in Action",
+          "url": "https://arxiv.org/abs/2605.10653"
+        }
+      ]
+    }
+  ],
+  "classroom": {
+    "title": {
+      "zh": "混凝土强度等级：为什么中国C30、欧洲C30/37、美国f′c不能直接当成同一个数？",
+      "en": "Concrete strength classes: why Chinese C30, European C30/37, and US f′c are not the same number"
+    },
+    "text": {
+      "zh": "混凝土强度对比最容易犯的错误，是看到“30 MPa”就默认各国规范在说同一件事。中国工程里C30通常以标准立方体抗压强度为强度等级入口；欧洲EN 1992用C30/37同时表达圆柱体特征强度和立方体特征强度；美国ACI体系更常用圆柱体试件的指定抗压强度 f′c。试件形状、尺寸、养护、加载方法、统计分位值和分项系数位置都不同，所以跨规范复核时不能只把数字搬过去。真正要比较的是：这个强度是cube还是cylinder，是characteristic还是specified，是材料等级入口还是设计强度计算的输入。",
+      "en": "The most common mistake in comparing concrete strength is to see “30 MPa” and assume every code is describing the same quantity. In Chinese practice, C30 is commonly entered through the standard cube compressive strength class. EN 1992 uses C30/37 to state both characteristic cylinder and cube strengths. US ACI practice more often uses the specified cylinder compressive strength f′c. Specimen shape, size, curing, loading method, statistical fractile, and the location of partial factors all differ, so a cross-code review cannot simply copy the number. The real comparison is whether the strength is cube or cylinder, characteristic or specified, a class label or an input to design strength."
+    },
+    "comparisonPoints": [
+      {
+        "label": {
+          "zh": "中国C等级",
+          "en": "Chinese C class"
+        },
+        "text": {
+          "zh": "中国混凝土强度等级以立方体抗压强度标准值为核心入口。C30表达的是强度等级语言，后续还要通过规范表格和分项系数进入轴心抗压、轴心抗拉和承载力设计。",
+          "en": "Chinese concrete strength classes use standard cube compressive strength as the central entry point. C30 is a class language; subsequent design still enters code tables and partial factors for axial compression, tension, and resistance checks."
+        }
+      },
+      {
+        "label": {
+          "zh": "欧洲C30/37",
+          "en": "European C30/37"
+        },
+        "text": {
+          "zh": "Eurocode的C30/37明确把圆柱体特征强度30 MPa和立方体特征强度37 MPa并列写出，所以斜杠前后不是安全系数，而是不同试件定义。",
+          "en": "Eurocode C30/37 explicitly pairs a 30 MPa characteristic cylinder strength with a 37 MPa characteristic cube strength. The two numbers around the slash are not safety factors; they are different specimen definitions."
+        }
+      },
+      {
+        "label": {
+          "zh": "美国f′c",
+          "en": "US f′c"
+        },
+        "text": {
+          "zh": "ACI语境里的 f′c 通常是指定圆柱体抗压强度，并作为名义承载力表达式的材料输入，再由强度折减系数 φ 和荷载组合完成可靠度校准。",
+          "en": "In ACI language, f′c is typically the specified cylinder compressive strength. It enters nominal resistance expressions as a material input, while strength-reduction factor φ and load combinations complete the reliability calibration."
+        }
       }
-}
+    ],
+    "takeaway": {
+      "zh": "做中外混凝土强度复核时，先写清楚试件类型、统计定义和设计强度路径，再比较数值。否则把C30、C30/37和f′c=30 MPa并排比较，很容易把材料等级、特征强度和设计承载力混在一起。",
+      "en": "For cross-code concrete review, state specimen type, statistical definition, and design-strength pathway before comparing values. Otherwise, comparing C30, C30/37, and f′c = 30 MPa side by side easily confuses material class, characteristic strength, and design resistance."
+    },
+    "example": {
+      "title": {
+        "zh": "实例：同样写着30 MPa，进入设计时可能对应不同含义",
+        "en": "Example: the same written 30 MPa may enter design with different meanings"
+      },
+      "intro": {
+        "zh": "为了说明概念，比较三个常见表达：GB语境C30、Eurocode C30/37、ACI语境 f′c = 30 MPa。这里只比较强度定义和设计输入路径，不进行构件承载力设计。",
+        "en": "To clarify the concept, compare three common expressions: Chinese C30, Eurocode C30/37, and ACI f′c = 30 MPa. This example compares strength definition and design-input pathway only, not member resistance design."
+      },
+      "equations": [
+        {
+          "label": {
+            "zh": "中国等级入口",
+            "en": "Chinese class entry"
+          },
+          "formula": "C30 → fcu,k = 30 MPa",
+          "formulaTokens": [
+            {
+              "text": "C30 → "
+            },
+            {
+              "var": "f"
+            },
+            {
+              "sub": "cu,k"
+            },
+            {
+              "text": " = 30 MPa"
+            }
+          ],
+          "citation": {
+            "zh": "规范依据：GB 50010-2010，混凝土强度等级按立方体抗压强度标准值确定，见第4.1节相关条文（等级定义，非承载力公式）。",
+            "en": "Code basis: GB 50010-2010, Section 4.1 provisions defining concrete strength class by standard cube compressive strength (class definition, not a resistance equation)."
+          },
+          "result": {
+            "zh": "C30首先说明立方体抗压强度标准值入口；用于设计时还要查取相应轴心抗压、轴心抗拉强度设计值。",
+            "en": "C30 first identifies the cube-strength class entry; design then uses the corresponding code-tabulated design values for axial compression and tension."
+          }
+        },
+        {
+          "label": {
+            "zh": "欧洲等级入口",
+            "en": "Eurocode class entry"
+          },
+          "formula": "C30/37 → fck = 30 MPa, fck,cube = 37 MPa",
+          "formulaTokens": [
+            {
+              "text": "C30/37 → "
+            },
+            {
+              "var": "f"
+            },
+            {
+              "sub": "ck"
+            },
+            {
+              "text": " = 30 MPa, "
+            },
+            {
+              "var": "f"
+            },
+            {
+              "sub": "ck,cube"
+            },
+            {
+              "text": " = 37 MPa"
+            }
+          ],
+          "citation": {
+            "zh": "规范出处：EN 1992-1-1:2004+A1:2014，Table 3.1，混凝土强度等级与 fck、fck,cube。",
+            "en": "Code reference: EN 1992-1-1:2004+A1:2014, Table 3.1, concrete strength classes with fck and fck,cube."
+          },
+          "result": {
+            "zh": "这里30 MPa是圆柱体特征强度，37 MPa是立方体特征强度；二者不能被理解成同一试验值的安全放大。",
+            "en": "Here 30 MPa is characteristic cylinder strength and 37 MPa is characteristic cube strength; they are not a safety amplification of the same test value."
+          }
+        },
+        {
+          "label": {
+            "zh": "欧洲设计强度",
+            "en": "Eurocode design strength"
+          },
+          "formula": "fcd = αcc fck / γc",
+          "formulaTokens": [
+            {
+              "var": "f"
+            },
+            {
+              "sub": "cd"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "α"
+            },
+            {
+              "sub": "cc"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "f"
+            },
+            {
+              "sub": "ck"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "γ"
+            },
+            {
+              "sub": "c"
+            }
+          ],
+          "citation": {
+            "zh": "规范出处：EN 1992-1-1:2004+A1:2014，第3.1.6(1)P条，式(3.15)。",
+            "en": "Code reference: EN 1992-1-1:2004+A1:2014, Cl. 3.1.6(1)P, Eq. (3.15)."
+          },
+          "result": {
+            "zh": "若示意取 αcc = 0.85、γc = 1.5，则 fcd = 0.85 × 30 / 1.5 = 17.0 MPa。这个值是设计强度，不是试件强度。",
+            "en": "If αcc = 0.85 and γc = 1.5 are used illustratively, fcd = 0.85 × 30 / 1.5 = 17.0 MPa. This is a design strength, not a specimen strength."
+          }
+        },
+        {
+          "label": {
+            "zh": "美国验算语言",
+            "en": "US design-check language"
+          },
+          "formula": "φ Rn ≥ U",
+          "formulaTokens": [
+            {
+              "var": "φ"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "R"
+            },
+            {
+              "sub": "n"
+            },
+            {
+              "text": " ≥ "
+            },
+            {
+              "var": "U"
+            }
+          ],
+          "citation": {
+            "zh": "规范依据：ACI 318-19，强度设计基本表达；f′c 作为混凝土指定圆柱体抗压强度进入名义承载力模型（设计原则表达）。",
+            "en": "Code basis: ACI 318-19 strength-design format; f′c enters nominal resistance models as specified cylinder compressive strength (design-principle expression)."
+          },
+          "result": {
+            "zh": "ACI里 f′c = 30 MPa不是直接等同于Eurocode的C30/37整体标签，也不是中国C30立方体强度入口。它进入名义承载力 Rn，再乘 φ 与需求 U 比较。",
+            "en": "In ACI usage, f′c = 30 MPa is not identical to the full Eurocode C30/37 label or the Chinese C30 cube-class entry. It enters nominal resistance Rn, which is then multiplied by φ and compared with demand U."
+          }
+        }
+      ],
+      "note": {
+        "zh": "这个例子说明，跨规范对比混凝土时，第一步不是换算MPa，而是确认强度定义。只有定义对齐后，分项系数、强度折减系数和承载力公式才有比较意义。",
+        "en": "This example shows that the first step in cross-code concrete comparison is not unit conversion but strength-definition alignment. Only after definitions are aligned do partial factors, strength-reduction factors, and resistance equations become meaningfully comparable."
+      }
+    },
+    "references": "GB 50010-2010; EN 1992-1-1:2004+A1:2014; ACI 318-19; Eurocode concrete strength class resources",
+    "referenceLinks": [
+      {
+        "label": "Eurocode Applied: Concrete design properties to EN 1992-1-1",
+        "url": "https://eurocodeapplied.com/design/en1992/concrete-design-properties"
+      },
+      {
+        "label": "European Commission JRC: Eurocode 2 concrete structures",
+        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-2-design-concrete-structures"
+      },
+      {
+        "label": "ACI 318 Building Code Requirements for Structural Concrete",
+        "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19"
+      }
+    ]
+  }
+};
     const copy = {
       zh: {
         htmlLang: "zh-CN",
