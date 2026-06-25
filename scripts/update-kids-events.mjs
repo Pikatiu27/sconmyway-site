@@ -5,6 +5,7 @@ const indexPath = `${siteDir}/index.html`;
 const dataDir = `${siteDir}/data`;
 const usageReportPath = `${siteDir}/TOKEN_USAGE.md`;
 const now = new Date();
+const weekPeriod = getSydneyWeekPeriod(now);
 
 const cityConfigs = [
   {
@@ -22,7 +23,30 @@ const cityConfigs = [
       { name: "Royal Botanic Gardens Victoria", url: "https://www.rbg.vic.gov.au/whats-on/", tier: "B" },
       { name: "City of Yarra", url: "https://www.yarracity.vic.gov.au/things-to-do/events", tier: "A" },
       { name: "City of Port Phillip", url: "https://www.portphillip.vic.gov.au/explore-the-city/events-and-activities", tier: "A" },
-      { name: "Merri-bek City Council", url: "https://www.merri-bek.vic.gov.au/exploring-merri-bek/events/", tier: "A" }
+      { name: "Merri-bek City Council", url: "https://www.merri-bek.vic.gov.au/exploring-merri-bek/events/", tier: "A" },
+      { name: "City of Stonnington", url: "https://www.stonnington.vic.gov.au/Whats-On", tier: "A" },
+      { name: "City of Boroondara", url: "https://www.boroondara.vic.gov.au/events", tier: "A" },
+      { name: "City of Monash", url: "https://www.monash.vic.gov.au/Things-to-Do/Festivals-and-Events/Events", tier: "A" },
+      { name: "Darebin City Council", url: "https://www.darebin.vic.gov.au/Events-and-facilities/Events", tier: "A" },
+      { name: "Bunnings Kids DIY", url: "https://bookings.bunnings.com.au/events/au", tier: "B" },
+      { name: "Fire Rescue Victoria", url: "https://www.frv.vic.gov.au/community-events", tier: "B" },
+      { name: "CFA Events", url: "https://www.cfa.vic.gov.au/about-us/cfa-events/whats-on", tier: "B" },
+      { name: "Zoos Victoria", url: "https://www.zoo.org.au/melbourne/whats-on", tier: "B" },
+      { name: "Moonee Valley City Council", url: "https://mvcc.vic.gov.au/play/my-news-and-events/events/", tier: "A" },
+      { name: "Maribyrnong City Council", url: "https://www.maribyrnong.vic.gov.au/arts-and-culture/Events", tier: "A" },
+      { name: "Hobsons Bay City Council", url: "https://www.hobsonsbay.vic.gov.au/Community/Whats-on", tier: "A" },
+      { name: "Brimbank City Council", url: "https://events.brimbank.vic.gov.au/", tier: "A" },
+      { name: "Wyndham City Council", url: "https://www.wyndham.vic.gov.au/events-experiences/whats", tier: "A" },
+      { name: "City of Kingston", url: "https://www.kingston.vic.gov.au/community/events/upcoming-events", tier: "A" },
+      { name: "Banyule City Council", url: "https://www.banyule.vic.gov.au/Events-activities", tier: "A" },
+      { name: "Arts Centre Melbourne Families", url: "https://www.artscentremelbourne.com.au/whats-on/families", tier: "B" },
+      { name: "Fed Square", url: "https://fedsquare.com/whats-on", tier: "B" },
+      { name: "Immigration Museum", url: "https://museumsvictoria.com.au/immigrationmuseum/whats-on/", tier: "B" },
+      { name: "Puffing Billy", url: "https://puffingbillyrailway.org.au/whats-on/", tier: "B" },
+      { name: "CERES", url: "https://ceres.org.au/whats-on/", tier: "B" },
+      { name: "Collingwood Children's Farm", url: "https://www.farm.org.au/whats-on", tier: "B" },
+      { name: "Open House Melbourne", url: "https://openhousemelbourne.org/", tier: "B" },
+      { name: "City of Melbourne Libraries", url: "https://www.melbourne.vic.gov.au/libraries/whats-on", tier: "B" }
     ]
   },
   {
@@ -38,10 +62,24 @@ const cityConfigs = [
       { name: "Art Gallery NSW", url: "https://www.artgallery.nsw.gov.au/whats-on/", tier: "B" },
       { name: "State Library NSW", url: "https://www.sl.nsw.gov.au/whats-on", tier: "B" },
       { name: "Sydney Olympic Park", url: "https://www.sydneyolympicpark.com.au/Things-to-Do/Events", tier: "B" },
+      { name: "Harry Potter: The Exhibition Sydney", url: "https://harrypotterexhibition.com/locations/sydney/", tier: "B", directEvent: true },
       { name: "Inner West", url: "https://www.innerwest.nsw.gov.au/explore/whats-on", tier: "A" },
+      { name: "Inner West Council Last Laps", url: "https://www.innerwest.nsw.gov.au/lastlaps26", tier: "A", directEvent: true },
       { name: "Randwick", url: "https://www.randwick.nsw.gov.au/about-council/news/events", tier: "A" },
       { name: "Parramatta", url: "https://atparramatta.com/whats-on", tier: "A" },
-      { name: "Canada Bay", url: "https://www.canadabay.nsw.gov.au/lifestyle/events", tier: "A" }
+      { name: "Canada Bay", url: "https://www.canadabay.nsw.gov.au/lifestyle/events", tier: "A" },
+      { name: "Burwood Council", url: "https://www.burwood.nsw.gov.au/For-Residents/Events-and-Activities", tier: "A" },
+      { name: "City of Ryde", url: "https://www.ryde.nsw.gov.au/Events", tier: "A" },
+      { name: "Strathfield Council", url: "https://www.strathfield.nsw.gov.au/Play/Events-Calendar", tier: "A" },
+      { name: "Cumberland City Council", url: "https://www.cumberland.nsw.gov.au/whats-on", tier: "A" },
+      { name: "Bayside Council", url: "https://www.bayside.nsw.gov.au/whats-on", tier: "A" },
+      { name: "Northern Beaches Council", url: "https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on", tier: "A" },
+      { name: "Bunnings Kids DIY", url: "https://bookings.bunnings.com.au/events/au", tier: "B" },
+      { name: "Fire and Rescue NSW Open Day", url: "https://www.fire.nsw.gov.au/media/events/open-day", tier: "B" },
+      { name: "NSW National Parks", url: "https://www.nationalparks.nsw.gov.au/things-to-do", tier: "B" },
+      { name: "Museums of History NSW", url: "https://mhnsw.au/whats-on/", tier: "B" },
+      { name: "Centennial Parklands", url: "https://www.centennialparklands.com.au/whatson", tier: "B" },
+      { name: "Botanic Gardens of Sydney", url: "https://www.botanicgardens.org.au/whats-on", tier: "B" }
     ]
   }
 ];
@@ -59,6 +97,34 @@ const accents = [
 
 const kidsKeywords = ["kids", "children", "family", "families", "school holiday", "workshop", "story", "play", "craft", "baby", "toddler", "all ages", "free"];
 const rejectKeywords = ["whisky", "wine", "cocktail", "bar", "18+", "adults only", "gambling", "race day", "nightclub"];
+
+function getSydneyWeekPeriod(date) {
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Australia/Sydney",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      weekday: "short"
+    }).formatToParts(date).filter((part) => part.type !== "literal").map((part) => [part.type, part.value])
+  );
+  const weekdayIndex = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 }[parts.weekday];
+  const start = new Date(Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day)));
+  start.setUTCDate(start.getUTCDate() - ((weekdayIndex + 7 - 5) % 7));
+  const end = new Date(start);
+  end.setUTCDate(start.getUTCDate() + 7);
+  return {
+    periodStart: start.toISOString().slice(0, 10),
+    periodEnd: end.toISOString().slice(0, 10)
+  };
+}
+
+function updatePeriodMeta(html, period) {
+  return html.replace(
+    /<section class="meta-bar" aria-label="Page status"(?: data-period-start="[^"]*" data-period-end="[^"]*")?>/,
+    `<section class="meta-bar" aria-label="Page status" data-period-start="${period.periodStart}" data-period-end="${period.periodEnd}">`
+  );
+}
 
 function decodeHtml(value) {
   return value.replace(/&amp;/g, "&").replace(/&quot;/g, "\"").replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\s+/g, " ").trim();
@@ -86,6 +152,11 @@ function scoreCandidate(text, source) {
 
 function extractLinks(html, source) {
   const links = [];
+  if (source.directEvent) {
+    const text = stripTags(html);
+    links.push({ title: source.name, url: source.url, source: source.name, score: scoreCandidate(text, source) + 20, text });
+    return links;
+  }
   const anchorPattern = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
   let match;
   while ((match = anchorPattern.exec(html))) {
@@ -138,7 +209,7 @@ async function enrichWithOpenAI(candidates, city) {
       model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       input: [
         { role: "system", content: `Create accurate bilingual family event JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including referenceEn. If a fact is missing, say 'See official page'. Never invent details.` },
-        { role: "user", content: `Today is ${now.toISOString().slice(0, 10)}. Select the best 8 kid-friendly ${city} activities for the next 7 days. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
+        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 kid-friendly ${city} activities active during this Friday-to-Friday week. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
       ],
       text: { format: { type: "json_object" } }
     })
@@ -248,14 +319,14 @@ async function main() {
     const result = await buildCity(config);
     const { events } = result;
     results.set(config.key, result);
-    await writeFile(config.dataPath, `${JSON.stringify({ city: config.name, updatedAt: new Date().toISOString(), events }, null, 2)}\n`, "utf8");
+    await writeFile(config.dataPath, `${JSON.stringify({ city: config.name, updatedAt: new Date().toISOString(), ...weekPeriod, events }, null, 2)}\n`, "utf8");
     const start = `<!-- ${config.marker}_START -->`;
     const end = `<!-- ${config.marker}_END -->`;
     const pattern = new RegExp(`${start}[\\s\\S]*?${end}`);
     if (!pattern.test(index)) throw new Error(`Missing ${config.name} event markers in ${indexPath}`);
     index = index.replace(pattern, `${start}\n${events.map(renderEvent).join("\n\n")}\n        ${end}`);
   }
-  await writeFile(indexPath, index, "utf8");
+  await writeFile(indexPath, updatePeriodMeta(index, weekPeriod), "utf8");
   await writeUsageReport(results);
 }
 

@@ -162,6 +162,13 @@
       margin-top: 5px;
     }
 
+    .view-count {
+      color: #9aa6ac;
+      font-size: 10px;
+      font-weight: 650;
+      letter-spacing: 0;
+    }
+
     .brand-text strong span {
       display: inline;
       color: inherit;
@@ -787,6 +794,10 @@
           <strong class="en"><span data-city-name-en>Sydney</span> Kids Finder</strong>
           <span class="zh">本周 8 条 · 官方链接 · 一键导航</span>
           <span class="en">8 picks · official links · map-ready</span>
+          <span class="view-count" aria-label="Page views">
+            <span class="zh">浏览 <span data-view-count>--</span></span>
+            <span class="en">Views <span data-view-count-en>--</span></span>
+          </span>
         </div>
       </div>
 
@@ -810,11 +821,11 @@
         </h1>
       </section>
 
-      <section class="meta-bar" aria-label="Page status">
+      <section class="meta-bar" aria-label="Page status" data-period-start="2026-06-19" data-period-end="2026-06-26">
         <div class="pill">
           <span aria-hidden="true">📅</span>
-          <span class="zh">今天：<span data-today-zh>2026 年 6 月 19 日</span> · 本周：<span data-week-zh>6 月 19 日至 6 月 25 日</span></span>
-          <span class="en">Today: <span data-today-en>19 Jun 2026</span> · Week: <span data-week-en>19 Jun to 25 Jun</span></span>
+          <span class="zh">更新：<span data-today-zh>2026 年 6 月 19 日</span> · 周期：<span data-week-zh>6 月 19 日至 6 月 26 日</span></span>
+          <span class="en">Updated: <span data-today-en>19 Jun 2026</span> · Week: <span data-week-en>19 Jun to 26 Jun</span></span>
         </div>
       </section>
 
@@ -1108,6 +1119,14 @@
             <span class="zh">City of Sydney · Kids & family 活动</span>
             <span class="en">City of Sydney · Kids & family events</span>
           </a>
+          <a href="https://harrypotterexhibition.com/locations/sydney/" target="_blank" rel="noreferrer">
+            <span class="zh">Harry Potter: The Exhibition · Sydney</span>
+            <span class="en">Harry Potter: The Exhibition · Sydney</span>
+          </a>
+          <a href="https://www.innerwest.nsw.gov.au/lastlaps26" target="_blank" rel="noreferrer">
+            <span class="zh">Inner West Council · Last Laps 免费开放日</span>
+            <span class="en">Inner West Council · Last Laps open day</span>
+          </a>
           <a href="https://www.darlingharbour.com/whats-on" target="_blank" rel="noreferrer">
             <span class="zh">Darling Harbour · 本周活动</span>
             <span class="en">Darling Harbour · What's on</span>
@@ -1115,14 +1134,6 @@
           <a href="https://www.sydneyoperahouse.com/kids-families" target="_blank" rel="noreferrer">
             <span class="zh">Sydney Opera House · Kids & families</span>
             <span class="en">Sydney Opera House · Kids & families</span>
-          </a>
-          <a href="https://australian.museum/whats-on/" target="_blank" rel="noreferrer">
-            <span class="zh">Australian Museum · What's on</span>
-            <span class="en">Australian Museum · What's on</span>
-          </a>
-          <a href="https://www.sl.nsw.gov.au/whats-on" target="_blank" rel="noreferrer">
-            <span class="zh">State Library of NSW · What's on</span>
-            <span class="en">State Library of NSW · What's on</span>
           </a>
         </div>
       </details>
@@ -1138,13 +1149,20 @@
               <span class="zh">A级：官方活动页 / Council</span>
               <span class="en">Tier A: official event pages / councils</span>
             </h3>
-            <p class="zh">优先采用。日期、地点、票价、年龄限制以这里为准。</p>
-            <p class="en">Primary sources. Dates, venue, price and age limits should be verified here.</p>
+            <p class="zh">优先采用。覆盖市中心、内西、西北、东区、北区等更多 council；日期、地点、票价和年龄限制以官方页为准。</p>
+            <p class="en">Primary sources across central, inner west, north-west, eastern and northern Sydney; official pages control dates, venues, prices and age limits.</p>
             <a href="https://whatson.cityofsydney.nsw.gov.au/categories/kids-and-family" target="_blank" rel="noreferrer">City of Sydney</a>
             <a href="https://www.innerwest.nsw.gov.au/explore/whats-on" target="_blank" rel="noreferrer">Inner West</a>
+            <a href="https://www.innerwest.nsw.gov.au/lastlaps26" target="_blank" rel="noreferrer">Inner West Last Laps</a>
             <a href="https://www.randwick.nsw.gov.au/about-council/news/events" target="_blank" rel="noreferrer">Randwick</a>
             <a href="https://atparramatta.com/whats-on" target="_blank" rel="noreferrer">Parramatta</a>
             <a href="https://www.canadabay.nsw.gov.au/lifestyle/events" target="_blank" rel="noreferrer">Canada Bay</a>
+            <a href="https://www.burwood.nsw.gov.au/For-Residents/Events-and-Activities" target="_blank" rel="noreferrer">Burwood</a>
+            <a href="https://www.ryde.nsw.gov.au/Events" target="_blank" rel="noreferrer">Ryde</a>
+            <a href="https://www.strathfield.nsw.gov.au/Play/Events-Calendar" target="_blank" rel="noreferrer">Strathfield</a>
+            <a href="https://www.cumberland.nsw.gov.au/whats-on" target="_blank" rel="noreferrer">Cumberland</a>
+            <a href="https://www.bayside.nsw.gov.au/whats-on" target="_blank" rel="noreferrer">Bayside</a>
+            <a href="https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on" target="_blank" rel="noreferrer">Northern Beaches</a>
           </section>
 
           <section class="source-group">
@@ -1152,14 +1170,21 @@
               <span class="zh">B级：亲子友好场馆官网</span>
               <span class="en">Tier B: family-friendly venue sites</span>
             </h3>
-            <p class="zh">适合补足博物馆、剧场、图书馆、水族馆和节假日项目。</p>
-            <p class="en">Good for museums, theatres, libraries, aquariums and school-holiday programs.</p>
+            <p class="zh">补足博物馆、剧场、图书馆、公园、Bunnings 儿童手作，以及消防局等适合孩子的开放日。</p>
+            <p class="en">Adds museums, theatres, libraries, parks, Bunnings kids workshops and child-friendly open days such as fire stations.</p>
             <a href="https://www.darlingharbour.com/whats-on" target="_blank" rel="noreferrer">Darling Harbour</a>
             <a href="https://www.sydneyoperahouse.com/kids-families" target="_blank" rel="noreferrer">Opera House</a>
             <a href="https://australian.museum/whats-on/" target="_blank" rel="noreferrer">Australian Museum</a>
             <a href="https://www.artgallery.nsw.gov.au/whats-on/" target="_blank" rel="noreferrer">Art Gallery NSW</a>
             <a href="https://www.sl.nsw.gov.au/whats-on" target="_blank" rel="noreferrer">State Library NSW</a>
             <a href="https://www.sydneyolympicpark.com.au/Things-to-Do/Events" target="_blank" rel="noreferrer">Sydney Olympic Park</a>
+            <a href="https://harrypotterexhibition.com/locations/sydney/" target="_blank" rel="noreferrer">Harry Potter: The Exhibition Sydney</a>
+            <a href="https://bookings.bunnings.com.au/events/au" target="_blank" rel="noreferrer">Bunnings Kids DIY</a>
+            <a href="https://www.fire.nsw.gov.au/media/events/open-day" target="_blank" rel="noreferrer">Fire and Rescue NSW Open Day</a>
+            <a href="https://www.nationalparks.nsw.gov.au/things-to-do" target="_blank" rel="noreferrer">NSW National Parks</a>
+            <a href="https://mhnsw.au/whats-on/" target="_blank" rel="noreferrer">Museums of History NSW</a>
+            <a href="https://www.centennialparklands.com.au/whatson" target="_blank" rel="noreferrer">Centennial Parklands</a>
+            <a href="https://www.botanicgardens.org.au/whats-on" target="_blank" rel="noreferrer">Botanic Gardens</a>
           </section>
 
           <section class="source-group">
@@ -1172,6 +1197,8 @@
             <a href="https://www.eventbrite.com.au/d/australia--sydney/kids-events/" target="_blank" rel="noreferrer">Eventbrite Kids</a>
             <a href="https://www.timeout.com/sydney/kids" target="_blank" rel="noreferrer">Time Out Kids</a>
             <a href="https://ellaslist.com.au/sydney/events" target="_blank" rel="noreferrer">Ellaslist</a>
+            <a href="https://allevents.in/sydney/kids" target="_blank" rel="noreferrer">AllEvents Kids</a>
+            <a href="https://secretsydney.com/" target="_blank" rel="noreferrer">Secret Sydney</a>
           </section>
 
           <section class="source-group">
@@ -1181,6 +1208,10 @@
             </h3>
             <p class="zh">只作为发现线索。除非能找到官网、主办方页面或清晰报名页，否则不进入推荐。</p>
             <p class="en">Discovery only. A tip should not become a recommendation without an organiser page, official listing or clear booking page.</p>
+            <a href="https://www.instagram.com/cityofsydney/" target="_blank" rel="noreferrer">Instagram · City of Sydney</a>
+            <a href="https://www.instagram.com/ellaslist/" target="_blank" rel="noreferrer">Instagram · Ellaslist</a>
+            <a href="https://www.facebook.com/cityofsydney" target="_blank" rel="noreferrer">Facebook · City of Sydney</a>
+            <a href="https://www.xiaohongshu.com/explore" target="_blank" rel="noreferrer">Xiaohongshu</a>
           </section>
         </div>
       </details>
@@ -1207,6 +1238,17 @@
             <a href="https://www.yarracity.vic.gov.au/things-to-do/events" target="_blank" rel="noreferrer">City of Yarra</a>
             <a href="https://www.portphillip.vic.gov.au/explore-the-city/events-and-activities" target="_blank" rel="noreferrer">Port Phillip</a>
             <a href="https://www.merri-bek.vic.gov.au/exploring-merri-bek/events/" target="_blank" rel="noreferrer">Merri-bek</a>
+            <a href="https://www.stonnington.vic.gov.au/Whats-On" target="_blank" rel="noreferrer">Stonnington</a>
+            <a href="https://www.boroondara.vic.gov.au/events" target="_blank" rel="noreferrer">Boroondara</a>
+            <a href="https://www.monash.vic.gov.au/Things-to-Do/Festivals-and-Events/Events" target="_blank" rel="noreferrer">Monash</a>
+            <a href="https://www.darebin.vic.gov.au/Events-and-facilities/Events" target="_blank" rel="noreferrer">Darebin</a>
+            <a href="https://mvcc.vic.gov.au/play/my-news-and-events/events/" target="_blank" rel="noreferrer">Moonee Valley</a>
+            <a href="https://www.maribyrnong.vic.gov.au/arts-and-culture/Events" target="_blank" rel="noreferrer">Maribyrnong</a>
+            <a href="https://www.hobsonsbay.vic.gov.au/Community/Whats-on" target="_blank" rel="noreferrer">Hobsons Bay</a>
+            <a href="https://events.brimbank.vic.gov.au/" target="_blank" rel="noreferrer">Brimbank</a>
+            <a href="https://www.wyndham.vic.gov.au/events-experiences/whats" target="_blank" rel="noreferrer">Wyndham</a>
+            <a href="https://www.kingston.vic.gov.au/community/events/upcoming-events" target="_blank" rel="noreferrer">Kingston</a>
+            <a href="https://www.banyule.vic.gov.au/Events-activities" target="_blank" rel="noreferrer">Banyule</a>
           </section>
           <section class="source-group">
             <h3><span class="zh">B级：亲子友好场馆官网</span><span class="en">Tier B: family-friendly venue sites</span></h3>
@@ -1217,6 +1259,18 @@
             <a href="https://www.acmi.net.au/whats-on/family/" target="_blank" rel="noreferrer">ACMI</a>
             <a href="https://www.slv.vic.gov.au/whats-on" target="_blank" rel="noreferrer">State Library Victoria</a>
             <a href="https://www.rbg.vic.gov.au/whats-on/" target="_blank" rel="noreferrer">Royal Botanic Gardens</a>
+            <a href="https://bookings.bunnings.com.au/events/au" target="_blank" rel="noreferrer">Bunnings Kids DIY</a>
+            <a href="https://www.frv.vic.gov.au/community-events" target="_blank" rel="noreferrer">Fire Rescue Victoria</a>
+            <a href="https://www.cfa.vic.gov.au/about-us/cfa-events/whats-on" target="_blank" rel="noreferrer">CFA Events</a>
+            <a href="https://www.zoo.org.au/melbourne/whats-on" target="_blank" rel="noreferrer">Zoos Victoria</a>
+            <a href="https://www.artscentremelbourne.com.au/whats-on/families" target="_blank" rel="noreferrer">Arts Centre Melbourne Families</a>
+            <a href="https://fedsquare.com/whats-on" target="_blank" rel="noreferrer">Fed Square</a>
+            <a href="https://museumsvictoria.com.au/immigrationmuseum/whats-on/" target="_blank" rel="noreferrer">Immigration Museum</a>
+            <a href="https://puffingbillyrailway.org.au/whats-on/" target="_blank" rel="noreferrer">Puffing Billy</a>
+            <a href="https://ceres.org.au/whats-on/" target="_blank" rel="noreferrer">CERES</a>
+            <a href="https://www.farm.org.au/whats-on" target="_blank" rel="noreferrer">Collingwood Children's Farm</a>
+            <a href="https://openhousemelbourne.org/" target="_blank" rel="noreferrer">Open House Melbourne</a>
+            <a href="https://www.melbourne.vic.gov.au/libraries/whats-on" target="_blank" rel="noreferrer">City of Melbourne Libraries</a>
           </section>
           <section class="source-group">
             <h3><span class="zh">C级：发现平台</span><span class="en">Tier C: discovery platforms</span></h3>
@@ -1224,6 +1278,28 @@
             <p class="en">Discovery only; every recommendation must be checked against an official page.</p>
             <a href="https://www.eventbrite.com.au/d/australia--melbourne/kids-events/" target="_blank" rel="noreferrer">Eventbrite Kids</a>
             <a href="https://www.timeout.com/melbourne/kids" target="_blank" rel="noreferrer">Time Out Kids</a>
+            <a href="https://allevents.in/melbourne/kids" target="_blank" rel="noreferrer">AllEvents Kids</a>
+            <a href="https://secretmelbourne.com/" target="_blank" rel="noreferrer">Secret Melbourne</a>
+            <a href="https://tothotornot.com/" target="_blank" rel="noreferrer">TOT: HOT OR NOT</a>
+            <a href="https://mammaknowsmelbourne.com.au/" target="_blank" rel="noreferrer">Mamma Knows Melbourne</a>
+            <a href="https://kiddiehood.com.au/" target="_blank" rel="noreferrer">Kiddiehood</a>
+            <a href="https://busycitykids.com.au/whatson-melbourne" target="_blank" rel="noreferrer">Busy City Kids</a>
+            <a href="https://melbournewithkidz.com/" target="_blank" rel="noreferrer">Melbourne with Kidz</a>
+            <a href="https://www.littlemelbourne.com.au/" target="_blank" rel="noreferrer">Little Melbourne</a>
+            <a href="https://www.whatson4kids.com.au/" target="_blank" rel="noreferrer">What's On 4 Kids</a>
+          </section>
+          <section class="source-group">
+            <h3><span class="zh">D级：Instagram / Facebook / 社群</span><span class="en">Tier D: Instagram / Facebook / community tips</span></h3>
+            <p class="zh">用于发现临时活动和开放日；必须找到主办方官网、官方报名页或 council 页面后才入选。</p>
+            <p class="en">Used to discover short-notice events and open days; inclusion still requires an organiser, booking or council page.</p>
+            <a href="https://www.instagram.com/whatsonmelb/" target="_blank" rel="noreferrer">Instagram · What's On Melbourne</a>
+            <a href="https://www.instagram.com/museumsvictoria/" target="_blank" rel="noreferrer">Instagram · Museums Victoria</a>
+            <a href="https://www.facebook.com/whatsonmelb" target="_blank" rel="noreferrer">Facebook · What's On Melbourne</a>
+            <a href="https://www.instagram.com/mammaknowsmelbourne/" target="_blank" rel="noreferrer">Instagram · Mamma Knows Melbourne</a>
+            <a href="https://www.instagram.com/kiddiehood/" target="_blank" rel="noreferrer">Instagram · Kiddiehood</a>
+            <a href="https://www.instagram.com/zoosvictoria/" target="_blank" rel="noreferrer">Instagram · Zoos Victoria</a>
+            <a href="https://www.facebook.com/cfavic" target="_blank" rel="noreferrer">Facebook · CFA</a>
+            <a href="https://www.xiaohongshu.com/explore" target="_blank" rel="noreferrer">Xiaohongshu</a>
           </section>
         </div>
       </details>
@@ -1235,6 +1311,19 @@
     const buttons = document.querySelectorAll("[data-set-lang]");
     const root = document.body;
     const deepLinkParams = new URLSearchParams(window.location.search);
+    const viewCountKey = "kids-view-count";
+
+    function updateViewCount() {
+      let count = 1;
+      try {
+        count = Number(localStorage.getItem(viewCountKey) || "0") + 1;
+        localStorage.setItem(viewCountKey, String(count));
+      } catch {}
+      document.querySelector("[data-view-count]").textContent = new Intl.NumberFormat("zh-CN").format(count);
+      document.querySelector("[data-view-count-en]").textContent = new Intl.NumberFormat("en-AU").format(count);
+    }
+
+    updateViewCount();
 
     function setLanguage(lang, persist = true) {
       const nextLang = lang === "en" ? "en" : "zh";
@@ -1359,34 +1448,34 @@
       }, 120);
     }
 
-    const now = new Date();
-    const weekEnd = new Date(now);
-    weekEnd.setDate(now.getDate() + 6);
+    const periodMeta = document.querySelector("[data-period-start][data-period-end]");
+    const periodStart = new Date(`${periodMeta?.dataset.periodStart || "2026-06-19"}T12:00:00+10:00`);
+    const periodEnd = new Date(`${periodMeta?.dataset.periodEnd || "2026-06-26"}T12:00:00+10:00`);
 
     document.querySelector("[data-today-zh]").textContent = new Intl.DateTimeFormat("zh-CN", {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }).format(now);
+    }).format(periodStart);
     document.querySelector("[data-today-en]").textContent = new Intl.DateTimeFormat("en-AU", {
       day: "numeric",
       month: "short",
       year: "numeric"
-    }).format(now);
+    }).format(periodStart);
     document.querySelector("[data-week-zh]").textContent = `${new Intl.DateTimeFormat("zh-CN", {
       month: "long",
       day: "numeric"
-    }).format(now)}至${new Intl.DateTimeFormat("zh-CN", {
+    }).format(periodStart)}至${new Intl.DateTimeFormat("zh-CN", {
       month: "long",
       day: "numeric"
-    }).format(weekEnd)}`;
+    }).format(periodEnd)}`;
     document.querySelector("[data-week-en]").textContent = `${new Intl.DateTimeFormat("en-AU", {
       day: "numeric",
       month: "short"
-    }).format(now)} to ${new Intl.DateTimeFormat("en-AU", {
+    }).format(periodStart)} to ${new Intl.DateTimeFormat("en-AU", {
       day: "numeric",
       month: "short"
-    }).format(weekEnd)}`;
+    }).format(periodEnd)}`;
   </script>
 </body>
 </html>

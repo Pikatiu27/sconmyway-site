@@ -22,6 +22,16 @@ function localDateKey(date) {
   return `${parts.year}-${parts.month}-${parts.day}`;
 }
 
+function isoWeekday(isoDate) {
+  const date = new Date(`${isoDate}T00:00:00Z`);
+  if (Number.isNaN(date.getTime())) throw new Error(`Invalid ISO date: ${isoDate}`);
+  return date.getUTCDay();
+}
+
+function daysBetween(startIso, endIso) {
+  return (new Date(`${endIso}T00:00:00Z`) - new Date(`${startIso}T00:00:00Z`)) / 86400000;
+}
+
 async function readData() {
   const bytes = await readFile(dataPath);
   const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
@@ -29,6 +39,12 @@ async function readData() {
   const data = JSON.parse(text);
   if (!data.updatedAt || !Array.isArray(data.events) || data.events.length < 3) {
     throw new Error(`${dataPath} is missing updatedAt or valid events`);
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(data.periodStart || "") || !/^\d{4}-\d{2}-\d{2}$/.test(data.periodEnd || "")) {
+    throw new Error(`${dataPath} is missing Friday-to-Friday periodStart/periodEnd`);
+  }
+  if (isoWeekday(data.periodStart) !== 5 || daysBetween(data.periodStart, data.periodEnd) !== 7) {
+    throw new Error(`${dataPath} period must run from Friday to the next Friday`);
   }
   for (const [index, event] of data.events.entries()) {
     for (const field of ["titleZh", "summaryZh", "timeZh", "placeZh", "referenceZh"]) {
@@ -58,17 +74,17 @@ if (command === "gate") {
     await writeOutput({ should_run: "true", reason: "manual run" });
   } else {
     const parts = localParts();
-    let shouldRun = parts.weekday === "Fri" && parts.hour === "06";
-    let reason = shouldRun ? "Friday 06:00 primary refresh" : "outside refresh window";
+    let shouldRun = parts.weekday === "Fri" && parts.hour === "05";
+    let reason = shouldRun ? "Friday 05:00 primary refresh" : "outside refresh window";
 
-    if (parts.weekday === "Fri" && parts.hour === "07") {
+    if (parts.weekday === "Fri" && parts.hour === "06") {
       try {
         const data = await readData();
         shouldRun = localDateKey(new Date(data.updatedAt)) !== localDateKey(new Date());
-        reason = shouldRun ? "Friday 07:00 recovery retry" : "06:00 refresh already confirmed";
+        reason = shouldRun ? "Friday 06:00 recovery retry" : "05:00 refresh already confirmed";
       } catch {
         shouldRun = true;
-        reason = "Friday 07:00 recovery retry after missing or invalid data";
+        reason = "Friday 06:00 recovery retry after missing or invalid data";
       }
     }
 
