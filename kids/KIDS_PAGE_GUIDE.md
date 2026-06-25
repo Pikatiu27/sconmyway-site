@@ -93,9 +93,9 @@ Reference
 - Bunnings 官方活动预约页。
 - 消防局、开放日、公共服务机构官方活动页。
 
-Sydney 重点：City of Sydney, Inner West, Burwood, Ryde, Strathfield, Cumberland, Bayside, Northern Beaches, Darling Harbour, Sydney Olympic Park, Australian Museum, State Library NSW, Art Gallery NSW, Botanic Gardens, Centennial Parklands, Harry Potter: The Exhibition Sydney, Inner West Council Last Laps。
+Sydney 重点：City of Sydney, Inner West, Waverley, North Sydney, Willoughby, Mosman, Woollahra, Burwood, Ryde, Strathfield, Cumberland, Bayside, Northern Beaches, Canterbury-Bankstown, Georges River, Hornsby, Ku-ring-gai, Lane Cove, Liverpool, Blacktown, Penrith 等有官网活动页的主要 council；Sydney Opera House, Darling Harbour, Sydney Olympic Park, Australian Museum, Powerhouse, State Library NSW, Art Gallery NSW, MCA, Maritime Museum, Taronga Zoo, Sydney Zoo, Luna Park, Botanic Gardens, Centennial Parklands, Harry Potter: The Exhibition Sydney, Children’s International Film Festival 等大型场馆或官方活动页。
 
-Melbourne 重点：City of Melbourne, Yarra, Port Phillip, Stonnington, Boroondara, Darebin, Merri-bek, Moonee Valley, Maribyrnong, Hobsons Bay, Brimbank, Wyndham, Kingston, Banyule, Museums Victoria, ACMI, NGV, State Library Victoria, Fed Square, Royal Botanic Gardens Victoria, Melbourne Museum, Zoos Victoria, Puffing Billy, CERES, Collingwood Children's Farm。
+Melbourne 重点：City of Melbourne, Yarra, Port Phillip, Stonnington, Boroondara, Darebin, Merri-bek, Moonee Valley, Maribyrnong, Hobsons Bay, Brimbank, Wyndham, Kingston, Banyule, Whitehorse, Manningham, Maroondah, Knox, Casey, Greater Dandenong, Frankston 等有官网活动页的主要 council；Museums Victoria, ACMI, NGV, State Library Victoria, Arts Centre Melbourne, Fed Square, Royal Botanic Gardens Victoria, Melbourne Museum, Immigration Museum, Zoos Victoria, Puffing Billy, CERES, Collingwood Children's Farm, Melbourne Recital Centre 等大型场馆或官方活动页。
 
 ### B/C/D 级：补充线索
 
