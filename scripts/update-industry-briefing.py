@@ -7,16 +7,23 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 
-ROOT = Path(r"C:\Users\silin\Documents\Codex\2026-06-19\wo")
-REPO = ROOT / "outputs" / "sconmyway-site"
+REPO = Path(__file__).resolve().parents[1]
+ROOT = REPO.parent.parent if REPO.parent.name == "outputs" else REPO.parent
 LIVE_DIR = REPO / "industry"
 LIVE_HTML = LIVE_DIR / "index.html"
 LIVE_JSON = LIVE_DIR / "daily-data.json"
-MIRROR_DIR = ROOT / "outputs" / "industry"
+LEGACY_OUTPUTS = ROOT / "outputs"
+MIRROR_DIR = LEGACY_OUTPUTS / "industry"
 MIRROR_HTML = MIRROR_DIR / "index.html"
 MIRROR_JSON = MIRROR_DIR / "daily-data.json"
-ROOT_HTML = ROOT / "outputs" / "index.html"
-ROOT_JSON = ROOT / "outputs" / "daily-data.json"
+ROOT_HTML = LEGACY_OUTPUTS / "index.html"
+ROOT_JSON = LEGACY_OUTPUTS / "daily-data.json"
+MIRROR_TARGETS = (
+    (LIVE_HTML, MIRROR_HTML),
+    (LIVE_JSON, MIRROR_JSON),
+    (LIVE_HTML, ROOT_HTML),
+    (LIVE_JSON, ROOT_JSON),
+) if LEGACY_OUTPUTS.exists() else ()
 
 TODAY = datetime.now(ZoneInfo("Australia/Sydney")).date().isoformat()
 
@@ -472,20 +479,23 @@ def main() -> None:
     )
     LIVE_HTML.write_text(new_html, encoding="utf-8")
 
-    shutil.copyfile(LIVE_HTML, MIRROR_HTML)
-    shutil.copyfile(LIVE_JSON, MIRROR_JSON)
-    shutil.copyfile(LIVE_HTML, ROOT_HTML)
-    shutil.copyfile(LIVE_JSON, ROOT_JSON)
+    for source, target in MIRROR_TARGETS:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source, target)
 
     html_after = LIVE_HTML.read_text(encoding="utf-8")
     json_after = json.loads(LIVE_JSON.read_text(encoding="utf-8"))
     validate_data(json_after, html_after)
 
     for path in (MIRROR_JSON, ROOT_JSON):
+        if not path.exists():
+            continue
         mirrored = json.loads(path.read_text(encoding="utf-8"))
         if mirrored != DATA:
             raise AssertionError(f"Mirror JSON out of sync: {path}")
     for path in (MIRROR_HTML, ROOT_HTML):
+        if not path.exists():
+            continue
         mirrored_html = path.read_text(encoding="utf-8")
         start, end = extract_fallback_block(mirrored_html)
         mirrored_fallback = json.loads(mirrored_html[start:end].rstrip(";"))
