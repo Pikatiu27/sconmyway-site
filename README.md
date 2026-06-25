@@ -1,32 +1,25 @@
 # SConmyway Site
 
-Personal public knowledge pages by SConmyway.
+Public GitHub Pages site for SConmyway.
 
-## Sections
+## Main Page
 
-- `industry/` - Daily industry briefing with technology news, structural engineering trend insights, and a daily structural design classroom note.
+- Industry brief: `industry/`
+- Public URL: `https://pikatiu27.github.io/sconmyway-site/industry/`
+- Local repo: `C:\Users\silin\Documents\Codex\sconmyway-site`
 
-## GitHub Pages
+## Industry Brief
 
-Recommended repository name: `sconmyway-site`.
+Key files:
 
-After pushing this repository to GitHub:
+- `industry/index.html`
+- `industry/daily-data.json`
+- `industry/INDUSTRY_BRIEFING_GUIDE.md`
+- `scripts/update-industry-briefing.py`
 
-1. Go to repository `Settings`.
-2. Open `Pages`.
-3. Set `Build and deployment` to `GitHub Actions`.
-4. The public page will be available at:
+Update rule:
 
-```text
-https://<your-github-username>.github.io/sconmyway-site/industry/
-```
+- Refresh all industry brief content every day at 05:00 Australia/Sydney.
+- Do not only change the date.
+- After rewriting `daily-data.json`, run the sync script to update the embedded fallback and validate the page.
 
-If this repository is named `<your-github-username>.github.io`, the page will be:
-
-```text
-https://<your-github-username>.github.io/industry/
-```
-
-## Daily Updates
-
-The current Codex automation updates the local `outputs/industry/` files. For a fully cloud-based daily update, connect a GitHub Actions workflow that updates `industry/daily-data.json`, syncs the fallback data inside `industry/index.html`, commits the result, and redeploys GitHub Pages.

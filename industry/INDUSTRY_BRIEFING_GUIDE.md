@@ -310,10 +310,11 @@
 2. 每天早上 5 点刷新全部内容：3 条时事快讯、3 条专业趋势洞察和 1 条中外设计课堂都要更新，不只更新日期。
 3. 确认今天内容是否已经发布。
 4. 如果 `origin/main` 已经是正确版本，不要重复生成。
-5. 如果需要更新，先更新 `daily-data.json`。
-6. 同步 `index.html` 里的 fallback。
-7. 同步镜像文件。
-8. 校验：
+5. 如果需要更新，必须先联网筛选并重写 `daily-data.json` 的全部内容；不要复用昨天的 `liveUpdates`、`insights` 或 `classroom`。
+6. 运行 `scripts/update-industry-briefing.py`，把新的 `daily-data.json` 同步进 `index.html` fallback。
+7. 注意：`scripts/update-industry-briefing.py` 只负责同步和校验，不负责生成内容；如果 `daily-data.json` 没有先重写，脚本不会让内容自动变新。
+8. 同步镜像文件。
+9. 校验：
    - 日期正确
    - 页面可见位置显示当日日期
    - 3 条 live updates
@@ -324,11 +325,11 @@
    - 公式引用有中文和英文
    - fallback 与 JSON 完全一致
    - 中文 UTF-8 可读
-9. 可以本地预览时，打开本地页面检查手机排版。
-10. commit。
-11. push 到 GitHub。
-12. 验证 `origin/main`。
-13. 读取线上 GitHub Pages JSON 或网页，确认已经更新。
+10. 可以本地预览时，打开本地页面检查手机排版。
+11. commit。
+12. push 到 GitHub。
+13. 验证 `origin/main`。
+14. 读取线上 GitHub Pages JSON 或网页，确认已经更新。
 
 ## 11. 可复制调用 Prompt
 
@@ -350,7 +351,7 @@
 - 每条内容都必须有 clickable HTTPS referenceLinks。
 - 中英文不能机械翻译，要使用专业、学术化、工程上准确的表达。
 - 如果课堂包含公式，使用专业格式和 formulaTokens，不要用下划线；如果公式来自规范，要在公式下方写具体规范、clause/equation；如果是推导式，要标明 derived relation，不要假装是规范原公式。
-- 更新 daily-data.json 后，同步 index.html fallback 和镜像文件。
+- 先重写 daily-data.json 的全部内容，再运行 scripts/update-industry-briefing.py 同步 index.html fallback 和镜像文件；该脚本只做同步和校验，不生成日报内容。
 - 完成后校验数量、引用、公式、fallback 一致性、UTF-8，并本地预览。
 - 如果需要上线，commit、push 到 GitHub，并验证公开链接。
 ```
