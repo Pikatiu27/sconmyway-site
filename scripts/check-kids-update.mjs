@@ -37,8 +37,11 @@ async function readData() {
   const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
   if (text.includes("\uFFFD")) throw new Error(`${dataPath} contains invalid replacement characters`);
   const data = JSON.parse(text);
-  if (!data.updatedAt || !Array.isArray(data.events) || data.events.length < 3) {
+  if (!data.updatedAt || !Array.isArray(data.events)) {
     throw new Error(`${dataPath} is missing updatedAt or valid events`);
+  }
+  if (data.events.length !== 8) {
+    throw new Error(`${dataPath} must contain exactly 8 main event recommendations`);
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(data.periodStart || "") || !/^\d{4}-\d{2}-\d{2}$/.test(data.periodEnd || "")) {
     throw new Error(`${dataPath} is missing Friday-to-Friday periodStart/periodEnd`);
@@ -52,6 +55,12 @@ async function readData() {
         throw new Error(`events[${index}].${field} is missing`);
       }
     }
+    const timeText = `${event.timeZh || ""} ${event.timeEn || ""} ${event.referenceZh || ""} ${event.referenceEn || ""}`;
+    if (/\b(expired|ended|closed|cancelled|canceled)\b|已结束|取消/u.test(timeText)) {
+      throw new Error(`events[${index}] appears expired or cancelled`);
+    }
+    const oldYear = timeText.match(/\b(20\d{2})\b/g)?.map(Number).find((year) => year < Number(data.periodStart.slice(0, 4)));
+    if (oldYear) throw new Error(`events[${index}] contains old year ${oldYear}`);
     for (const field of ["tagEn", "titleEn", "summaryEn", "timeEn", "placeEn", "priceEn", "referenceEn"]) {
       if (typeof event[field] !== "string" || !event[field].trim()) {
         throw new Error(`events[${index}].${field} is missing`);
@@ -62,6 +71,37 @@ async function readData() {
     }
   }
   return data;
+}
+
+function extractCheckedLinks(html) {
+  const regions = [
+    ...html.matchAll(/<section class="cards"[\s\S]*?<\/section>/g),
+    ...html.matchAll(/<details class="more-panel" data-city-panel="(?:sydney|melbourne)"[\s\S]*?<\/details>/g)
+  ].map((match) => match[0]);
+  const links = [];
+  for (const region of regions) {
+    if (region.includes("source-panel")) continue;
+    for (const match of region.matchAll(/href="(https?:\/\/[^"]+)"/g)) links.push(match[1].replace(/&amp;/g, "&"));
+  }
+  return [...new Set(links)].filter((url) => !url.startsWith("https://www.google.com/maps/"));
+}
+
+async function checkLinks(htmlPath) {
+  const html = await readFile(htmlPath, "utf8");
+  const links = extractCheckedLinks(html);
+  if (links.length < 12) throw new Error(`${htmlPath} has too few card and More links to validate`);
+  const failures = [];
+  for (const url of links) {
+    try {
+      let response = await fetch(url, { method: "HEAD", redirect: "follow" });
+      if ([405, 403].includes(response.status)) response = await fetch(url, { method: "GET", redirect: "follow" });
+      if ([404, 410].includes(response.status) || response.status >= 500) failures.push(`${response.status} ${url}`);
+    } catch (error) {
+      failures.push(`${error.message} ${url}`);
+    }
+  }
+  if (failures.length) throw new Error(`Broken card/More links:\n${failures.join("\n")}`);
+  console.log(`Checked ${links.length} card and More links from ${htmlPath}`);
 }
 
 async function writeOutput(values) {
@@ -96,6 +136,8 @@ if (command === "gate") {
     throw new Error(`${dataPath} was not refreshed today in ${timeZone}`);
   }
   console.log(`Validated ${data.events.length} events and UTF-8 JSON written at ${data.updatedAt}`);
+} else if (command === "validate-links") {
+  await checkLinks(dataPath);
 } else {
   throw new Error(`Unknown command: ${command}`);
 }

@@ -194,22 +194,38 @@
       flex: 0 0 auto;
     }
 
-    .city-select {
-      width: 148px;
-      min-height: 44px;
-      padding: 0 34px 0 15px;
+    .city-switch {
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr;
+      width: 190px;
+      padding: 3px;
       border: 1px solid rgba(45, 59, 68, 0.16);
       border-radius: 999px;
-      color: var(--ink);
       background: rgba(255, 255, 255, 0.92);
       box-shadow: 0 9px 24px rgba(72, 86, 96, 0.12);
+      backdrop-filter: blur(14px);
+    }
+
+    .city-switch button {
+      min-height: 38px;
+      border: 0;
+      border-radius: 999px;
+      color: var(--muted);
+      background: transparent;
       font: inherit;
       font-size: 14px;
       font-weight: 900;
+      line-height: 1;
       cursor: pointer;
     }
 
-    .city-select:focus-visible {
+    .city-switch button[aria-pressed="true"] {
+      color: var(--ink);
+      background: linear-gradient(135deg, rgba(189, 243, 210, 0.94), rgba(191, 227, 255, 0.9));
+      box-shadow: 0 5px 14px rgba(72, 86, 96, 0.13);
+    }
+
+    .city-switch button:focus-visible {
       outline: 3px solid rgba(119, 205, 194, 0.34);
       outline-offset: 2px;
     }
@@ -360,6 +376,29 @@
       font-weight: 800;
       white-space: nowrap;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .stickers-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0 0 12px;
+    }
+
+    .mini-sticker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 5px 8px;
+      border: 1px solid rgba(41, 52, 59, 0.08);
+      border-radius: 999px;
+      color: #40515d;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 5px 12px rgba(72, 86, 96, 0.08);
+      font-size: 10.5px;
+      font-weight: 850;
+      line-height: 1.1;
+      transform: rotate(var(--chip-tilt, -1deg));
     }
 
     .card h2 {
@@ -522,6 +561,28 @@
       padding: 12px;
     }
 
+    .more-group {
+      display: grid;
+      gap: 8px;
+    }
+
+    .more-group + .more-group {
+      padding-top: 11px;
+      border-top: 1px dashed rgba(41, 52, 59, 0.16);
+    }
+
+    .more-heading {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin: 0;
+      color: #52636d;
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
     .more-links a {
       display: flex;
       align-items: center;
@@ -598,6 +659,23 @@
       font-size: 12px;
       font-weight: 540;
       line-height: 1.6;
+    }
+
+    .fallback-note {
+      display: none;
+      margin: 0 0 12px;
+      padding: 10px 11px;
+      border: 1px dashed rgba(41, 52, 59, 0.18);
+      border-radius: 8px;
+      color: #677782;
+      background: rgba(255, 255, 255, 0.64);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    body[data-fallback="true"] .fallback-note {
+      display: block;
     }
 
     [data-lang="en"] .zh,
@@ -694,10 +772,12 @@
         gap: 6px;
       }
 
-      .city-select {
-        width: 134px;
-        min-height: 40px;
-        padding-left: 13px;
+      .city-switch {
+        width: 166px;
+      }
+
+      .city-switch button {
+        min-height: 35px;
         font-size: 13px;
       }
 
@@ -802,10 +882,10 @@
       </div>
 
       <div class="header-tools">
-        <select class="city-select" data-city-select aria-label="选择城市 / Select city">
-          <option value="sydney">Sydney</option>
-          <option value="melbourne">Melbourne</option>
-        </select>
+        <div class="city-switch" role="group" aria-label="选择城市 / Select city">
+          <button type="button" data-set-city="sydney" aria-pressed="true">Sydney</button>
+          <button type="button" data-set-city="melbourne" aria-pressed="false">Melbourne</button>
+        </div>
         <div class="lang-toggle" aria-label="Language switch">
           <button type="button" data-set-lang="zh" aria-pressed="true">中</button>
           <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
@@ -828,6 +908,11 @@
           <span class="en">Updated: <span data-today-en>19 Jun 2026</span> · Week: <span data-week-en>19 Jun to 26 Jun</span></span>
         </div>
       </section>
+
+      <p class="fallback-note">
+        <span class="zh">正在显示本地备用内容；出发前请再点官网确认时间和预约状态。</span>
+        <span class="en">Showing built-in backup content; check the official page before heading out.</span>
+      </p>
 
       <section class="cards" data-city-panel="sydney" aria-label="Sydney recommended activities">
         <!-- EVENTS_START -->
@@ -1004,22 +1089,28 @@
         </summary>
         <div class="more-links">
           <!-- SYDNEY_MORE_START -->
-          <a href="https://whatson.cityofsydney.nsw.gov.au/events/childrens-international-film-festival" target="_blank" rel="noreferrer">
-            <span class="zh">Children’s International Film Festival · Ritz Randwick</span>
-            <span class="en">Children’s International Film Festival · Ritz Randwick</span>
-          </a>
-          <a href="https://powerhouse.com.au/program" target="_blank" rel="noreferrer">
-            <span class="zh">Powerhouse · 本周亲子项目</span>
-            <span class="en">Powerhouse · This week's programs</span>
-          </a>
-          <a href="https://www.darlingharbour.com/whats-on" target="_blank" rel="noreferrer">
-            <span class="zh">Darling Harbour · 本周活动</span>
-            <span class="en">Darling Harbour · What's on</span>
-          </a>
-          <a href="https://www.sydneyoperahouse.com/kids-families" target="_blank" rel="noreferrer">
-            <span class="zh">Sydney Opera House · Kids & families</span>
-            <span class="en">Sydney Opera House · Kids & families</span>
-          </a>
+          <div class="more-group">
+            <p class="more-heading"><span aria-hidden="true">📌</span><span class="zh">本周候选</span><span class="en">More this week</span></p>
+            <a href="https://whatson.cityofsydney.nsw.gov.au/events/childrens-international-film-festival" target="_blank" rel="noreferrer">
+              <span class="zh">Children’s International Film Festival · Ritz Randwick</span>
+              <span class="en">Children’s International Film Festival · Ritz Randwick</span>
+            </a>
+            <a href="https://powerhouse.com.au/program" target="_blank" rel="noreferrer">
+              <span class="zh">Powerhouse · 本周亲子项目</span>
+              <span class="en">Powerhouse · This week's programs</span>
+            </a>
+          </div>
+          <div class="more-group">
+            <p class="more-heading"><span aria-hidden="true">🗂️</span><span class="zh">备用入口</span><span class="en">Backup sources</span></p>
+            <a href="https://www.darlingharbour.com/whats-on" target="_blank" rel="noreferrer">
+              <span class="zh">Darling Harbour · 本周活动</span>
+              <span class="en">Darling Harbour · What's on</span>
+            </a>
+            <a href="https://www.sydneyoperahouse.com/kids-families" target="_blank" rel="noreferrer">
+              <span class="zh">Sydney Opera House · Kids & families</span>
+              <span class="en">Sydney Opera House · Kids & families</span>
+            </a>
+          </div>
           <!-- SYDNEY_MORE_END -->
         </div>
       </details>
@@ -1120,11 +1211,17 @@
         <summary><span class="zh">More · 更多活动</span><span class="en">More activities</span></summary>
         <div class="more-links">
           <!-- MELBOURNE_MORE_START -->
-          <a href="https://museumsvictoria.com.au/scienceworks/whats-on/" target="_blank" rel="noreferrer">Scienceworks · What's on</a>
-          <a href="https://www.acmi.net.au/whats-on/" target="_blank" rel="noreferrer">ACMI · What's on</a>
-          <a href="https://www.ngv.vic.gov.au/kids/" target="_blank" rel="noreferrer">NGV Kids · Programs</a>
-          <a href="https://www.slv.vic.gov.au/whats-on" target="_blank" rel="noreferrer">State Library Victoria · What's on</a>
-          <a href="https://whatson.melbourne.vic.gov.au/things-to-do/family-and-kids" target="_blank" rel="noreferrer">City of Melbourne · Family and kids</a>
+          <div class="more-group">
+            <p class="more-heading"><span aria-hidden="true">📌</span><span class="zh">本周候选</span><span class="en">More this week</span></p>
+            <a href="https://museumsvictoria.com.au/scienceworks/whats-on/" target="_blank" rel="noreferrer">Scienceworks · What's on</a>
+            <a href="https://www.acmi.net.au/whats-on/" target="_blank" rel="noreferrer">ACMI · What's on</a>
+          </div>
+          <div class="more-group">
+            <p class="more-heading"><span aria-hidden="true">🗂️</span><span class="zh">备用入口</span><span class="en">Backup sources</span></p>
+            <a href="https://www.ngv.vic.gov.au/kids/" target="_blank" rel="noreferrer">NGV Kids · Programs</a>
+            <a href="https://www.slv.vic.gov.au/whats-on" target="_blank" rel="noreferrer">State Library Victoria · What's on</a>
+            <a href="https://whatson.melbourne.vic.gov.au/things-to-do/family-and-kids" target="_blank" rel="noreferrer">City of Melbourne · Family and kids</a>
+          </div>
           <!-- MELBOURNE_MORE_END -->
         </div>
       </details>
@@ -1257,7 +1354,7 @@
     try { savedLanguage = localStorage.getItem("kids-lang") || "zh"; } catch {}
     setLanguage(deepLinkParams.get("lang") || savedLanguage, false);
 
-    const citySelect = document.querySelector("[data-city-select]");
+    const cityButtons = document.querySelectorAll("[data-set-city]");
     const cityNames = {
       sydney: { zh: "悉尼", en: "Sydney" },
       melbourne: { zh: "墨尔本", en: "Melbourne" }
@@ -1266,7 +1363,9 @@
     function setCity(city) {
       const nextCity = cityNames[city] ? city : "sydney";
       root.dataset.city = nextCity;
-      citySelect.value = nextCity;
+      cityButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.setCity === nextCity));
+      });
       document.querySelector("[data-city-name-zh]").textContent = cityNames[nextCity].zh;
       document.querySelector("[data-city-name-en]").textContent = cityNames[nextCity].en;
       document.querySelectorAll("details[data-city-panel]").forEach((panel) => {
@@ -1275,10 +1374,35 @@
       try { localStorage.setItem("kids-city", nextCity); } catch {}
     }
 
-    citySelect.addEventListener("change", () => setCity(citySelect.value));
+    cityButtons.forEach((button) => {
+      button.addEventListener("click", () => setCity(button.dataset.setCity));
+    });
     let savedCity = "sydney";
     try { savedCity = localStorage.getItem("kids-city") || "sydney"; } catch {}
     setCity(deepLinkParams.get("city") || savedCity);
+
+    function stickerSet(text) {
+      const lower = text.toLowerCase();
+      const tags = [];
+      if (/\bfree\b|免费/.test(lower)) tags.push(["💛", "免费", "Free"]);
+      if (/book|register|ticket|预约|报名|票/.test(lower)) tags.push(["🎟️", "需确认", "Check booking"]);
+      if (/museum|gallery|library|theatre|cinema|film|exhibition|indoor|博物馆|美术馆|图书馆|剧院|电影|展览/.test(lower)) tags.push(["☔", "室内", "Indoor"]);
+      if (/park|garden|zoo|farm|pool|outdoor|公园|花园|动物园|农场|泳池|户外/.test(lower)) tags.push(["🌿", "户外", "Outdoor"]);
+      if (/toddler|baby|under 5|5 岁|5岁|幼儿|宝宝/.test(lower)) tags.push(["🧸", "幼儿友好", "Toddler-friendly"]);
+      if (/weekend|sat|sun|周末|星期六|星期日/.test(lower)) tags.push(["📌", "周末", "Weekend"]);
+      return tags.slice(0, 3);
+    }
+
+    document.querySelectorAll(".card").forEach((card) => {
+      if (card.querySelector(".stickers-row")) return;
+      const tags = stickerSet(card.textContent || "");
+      if (!tags.length) return;
+      const row = document.createElement("div");
+      row.className = "stickers-row";
+      row.innerHTML = tags.map(([icon, zh, en], index) => `<span class="mini-sticker" style="--chip-tilt:${index % 2 ? "1.2deg" : "-1deg"}"><span aria-hidden="true">${icon}</span>&nbsp;<span class="zh">${zh}</span><span class="en">${en}</span></span>`).join("");
+      const summary = card.querySelector(".summary.zh");
+      if (summary) summary.before(row);
+    });
 
     function stableHash(value) {
       let hash = 5381;
