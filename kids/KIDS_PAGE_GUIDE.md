@@ -25,10 +25,10 @@
 - 主标题固定：中文 `今天带娃去哪儿？`；英文 `Where to take the kids today?`
 - `More` 区可以分成 `本周候选 / More this week` 和 `备用入口 / Backup sources` 两组，仍保持折叠。
 - 如果运行时数据加载失败，页面必须显示 HTML fallback，并用很轻的提示提醒用户出发前确认官网。
-- Playgrounds tab 使用同一套马卡龙手帐视觉，但信息密度可以更偏地点库：区域筛选、设施标签和半日组合必须比长正文更突出。
+- Playgrounds tab 使用同一套马卡龙手帐视觉，但信息密度可以更偏地点库：区域筛选、设施标签和正文里的半日建议必须比长正文更突出。
 - Playgrounds 视觉应接近“亲子旅行手账”：轻胶带、stamp、地图/路线感、可爱 sticker，但当前版本不放图片，优先保证文字信息清楚。
 - 配色不仅是装饰，也要帮助用户定位：城市切换用 city 色，内容类型切换用 view 色；Events、Playgrounds 不要共用同一种高亮色。
-- Playground 卡片颜色按信息类别分配：water play 偏浅蓝，nature/park 偏浅绿，indoor/gallery 偏淡紫，fenced/toddler 偏粉，big kids/adventure 偏桃橙，half-day/backup 偏柠檬黄。
+- Playground 卡片颜色按信息类别分配：water play 偏浅蓝，nature/park 偏浅绿，indoor/gallery 偏淡紫，fenced/toddler 偏粉，big kids/adventure 偏桃橙；不要用 `half-day` 决定颜色，因为每个地点都可以有半日建议。
 - 卡片的 `官网 / Official` 主按钮可以轻微跟随卡片 accent；`地图 / Map` 和 `分享 / Share` 保持白底，避免手机上一排按钮显得太花。
 
 ## 3. 当前页面信息架构
@@ -194,18 +194,18 @@ Region heading
 Playground name
 简介：什么场所 / 有什么项目 / 适合什么
 半日：附近可接的具体地点、展馆、公园、步道、图书馆或 cafe 区域
-Feature chips: half-day / water / fenced / toddler / toilets / shade / indoor
+Feature chips: water / fenced / toddler / big-kids / nature / indoor
 Official or council finder / Map
 ```
 
 筛选与标签：
 
 - 手机端用横向 chip，不做复杂搜索。
-- 筛选顺序固定：`All / 全部`、`Half-day / 半日组合`、`Water play / 水玩`、功能标签，再放地区标签。
+- 筛选顺序固定：`All / 全部`、`Water play / 水玩`、`Fenced / 围栏`、`Toddler-friendly / 低龄友好`、`Big kids / 大童放电`、`Nature / 自然大公园`、`Indoor backup / 雨天备用`（如该城市有），再放地区标签。
 - Sydney 优先地区：`CBD / Inner City`、`Inner West`、`Eastern Suburbs`、`Lower North Shore`、`Northern Beaches`、`Parramatta / West`、`Northwest / Hills`、`St George / Sutherland`、`Southwest`。
 - Melbourne 优先地区：`CBD / Docklands`、`Inner North`、`Inner East`、`Eastern Suburbs`、`Bayside`。
 - 筛选 chip 必须允许换行，不能依赖横向滚动条；sticker 不能遮挡 chip。
-- 卡片可标注：`water / fenced / toilets / toddler / big-kids / indoor / half-day`。
+- 卡片可标注：`water / fenced / toilets / toddler / big-kids / indoor / nature`。`half-day` 不作为标签或筛选条件；半日组合只写在正文的 `半日：` 行。
 - 功能筛选必须作用于该城市全部可见 playground 条目；筛选后空地区应自动隐藏。
 - `All / 全部` 显示所有地区和所有条目。
 - 参考活动网站的信息架构：优先让用户先选择场景或分类，再进入短卡列表；不要把长正文、重复卡片、查找说明和链接库同时摊开。
