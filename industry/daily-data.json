@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-26",
+  "date": "2026-06-30",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -11,26 +11,22 @@
         "en": "Semiconductors"
       },
       "title": {
-        "zh": "Micron与Qualcomm同日点燃AI芯片行情，算力竞争开始从GPU扩展到内存、CPU与软件栈",
-        "en": "Micron and Qualcomm reignite the AI-chip trade, widening compute competition from GPUs to memory, CPUs, and software stacks"
+        "zh": "Micron盈利预期继续上修，AI内存从周期品变成算力基础设施核心瓶颈",
+        "en": "Micron profit expectations keep rising as AI memory shifts from cyclical component to core compute-infrastructure bottleneck"
       },
       "summary": {
-        "zh": "Micron在强劲财报后带动内存和存储股票上涨，Qualcomm也因上调非手机业务目标、推进数据中心CPU和AI软件布局而获得市场重估。今天的信号不是单一芯片公司表现好，而是AI基础设施的瓶颈正在从GPU扩展到HBM、SSD、低功耗CPU、软件兼容层和长期供货合同。",
-        "en": "Micron’s strong results lifted memory and storage stocks, while Qualcomm was re-rated after raising non-handset targets and pushing deeper into data-centre CPUs and AI software. The signal is not just that one chipmaker performed well; AI infrastructure bottlenecks are spreading from GPUs into HBM, SSDs, low-power CPUs, software compatibility layers, and long-horizon supply contracts."
+        "zh": "MarketWatch在6月28日报道，Micron被预计到2027年可能成为美国盈利能力仅次于Nvidia和Alphabet的公司之一，背后是HBM、DRAM和SSD供给紧张。今天的信号很明确：AI竞争不再只看GPU采购，内存产能、长期供货协议和新晶圆厂建设周期正在决定谁能真正扩容算力。",
+        "en": "MarketWatch reported on June 28 that Micron could become one of the most profitable US companies by 2027, behind only Nvidia and Alphabet, because HBM, DRAM, and SSD supply remains tight. The signal is clear: AI competition is no longer measured only by GPU procurement. Memory capacity, long-term supply agreements, and the timing of new fabrication plants are now deciding who can actually scale compute."
       },
       "watch": {
-        "zh": "接下来要看内存涨价是否传导到云服务和消费电子，以及Qualcomm能否把移动端低功耗优势转成数据中心真实订单。",
-        "en": "Watch whether memory-price pressure reaches cloud services and consumer electronics, and whether Qualcomm can turn its mobile low-power advantage into real data-centre orders."
+        "zh": "后续重点看内存涨价是否继续挤压云厂商成本，以及长期锁量合约会不会把中小AI公司的算力门槛继续抬高。",
+        "en": "Watch whether memory-price pressure keeps raising cloud costs and whether long-term volume contracts further increase the compute barrier for smaller AI companies."
       },
-      "reference": "Investopedia and MarketWatch coverage, published 2026-06-26",
+      "reference": "MarketWatch, Micron is about to be more profitable than any U.S. company except Nvidia and Google, published 2026-06-28",
       "referenceLinks": [
         {
-          "label": "Investopedia: Micron AI-fueled results lift memory stocks",
-          "url": "https://www.investopedia.com/micron-blockbuster-ai-fueled-results-ignite-huge-rally-for-memory-stocks-mu-12006391"
-        },
-        {
-          "label": "MarketWatch: Qualcomm data-centre targets excite Wall Street",
-          "url": "https://www.marketwatch.com/story/qualcomms-stock-is-soaring-as-these-big-numbers-excite-wall-street-316d41f4"
+          "label": "MarketWatch: Micron profitability and AI memory shortage",
+          "url": "https://www.marketwatch.com/story/micron-is-about-to-be-more-profitable-than-any-u-s-company-except-nvidia-and-google-3a83e343"
         }
       ]
     },
@@ -40,51 +36,47 @@
         "en": "Robotics"
       },
       "title": {
-        "zh": "中国把机器人放进人口老龄化和制造业升级同一张答卷，具身智能进入政策级竞争",
-        "en": "China folds robotics into demographic pressure and manufacturing upgrading, making embodied AI a policy-level race"
+        "zh": "人形机器人热度继续升温，但真正部署仍卡在遥操作、安全和场景经济性",
+        "en": "Humanoid-robot interest keeps rising, but real deployment is still constrained by teleoperation, safety, and use-case economics"
       },
       "summary": {
-        "zh": "FT今天报道，中国正用工业机器人、AI和人形机器人应对劳动力收缩与制造业效率压力。真正值得关注的不是某一台机器人能否表演复杂动作，而是国家补贴、工厂自动化、职业再培训和就业结构调整正在同时发生。机器人产业会越来越像基础制造能力，而不是单纯的科技消费品。",
-        "en": "The Financial Times reports that China is using industrial robotics, AI, and humanoid systems to respond to labour-force contraction and manufacturing-productivity pressure. The key issue is not whether one robot can perform a flashy task, but that subsidies, factory automation, worker retraining, and employment restructuring are moving together. Robotics is starting to look like a core manufacturing capability rather than a technology consumer product."
+        "zh": "The New Yorker 7月6日刊文今天上线，梳理1X Neo等人形机器人离家庭级自主部署还有多远。文章显示，许多演示背后仍依赖人类遥操作和大量训练数据。行业意义不是机器人失败，而是商业化路径会先落在仓储、工厂、巡检等可控环境，再逐步进入家庭服务。",
+        "en": "A New Yorker article for the July 6 issue, published today, examines how far humanoid systems such as 1X Neo remain from unsupervised home deployment. Many demonstrations still rely on human teleoperators and large training pipelines. The industry implication is not that humanoids have failed, but that commercial adoption is likely to start in controlled settings such as warehouses, factories, and inspection before moving into household service."
       },
       "watch": {
-        "zh": "后续重点看机器人密度、制造业实际部署、职业教育配套，以及自动化收益是否能覆盖社会调整成本。",
-        "en": "Watch robot density, real factory deployment, vocational-training support, and whether automation gains can cover the social adjustment cost."
+        "zh": "观察企业是否开始公开遥操作比例、安全事故率、任务成功率和单位小时成本，这些指标比演示视频更能说明商业化进度。",
+        "en": "Watch whether companies disclose teleoperation ratios, safety incident rates, task-success rates, and cost per operating hour; those metrics matter more than demonstration videos."
       },
-      "reference": "Financial Times, Robot nation: China’s bid to beat its demographic decline, published 2026-06-26",
+      "reference": "The New Yorker, Are Humanoid Robots Ready to Be Deployed?, published 2026-06-30",
       "referenceLinks": [
         {
-          "label": "Financial Times: Robot nation",
-          "url": "https://www.ft.com/content/c8731833-10ca-4a12-bfe4-8ebb2584ec68"
+          "label": "The New Yorker: Are Humanoid Robots Ready to Be Deployed?",
+          "url": "https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed"
         }
       ]
     },
     {
       "topic": {
-        "zh": "加密支付",
-        "en": "Crypto Payments"
+        "zh": "加密金融",
+        "en": "Crypto Finance"
       },
       "title": {
-        "zh": "稳定币监管进入基础设施阶段，讨论重点从“能不能发币”转向赎回、国债市场和链上运营风险",
-        "en": "Stablecoin regulation moves into infrastructure territory, shifting from issuance permission to redemption, Treasury markets, and on-chain operational risk"
+        "zh": "社区银行反击稳定币立法，支付创新开始触碰地方信贷和存款基础",
+        "en": "Community banks push back against stablecoin legislation as payments innovation reaches local deposits and credit creation"
       },
       "summary": {
-        "zh": "GENIUS Act之后，稳定币已经不再只是加密市场内部产品，而被放进支付、国债需求和金融基础设施讨论。近期研究提醒，稳定币能否稳定兑付不仅取决于储备资产质量，也取决于国债和回购市场流动性、做市商资产负债表容量，以及区块链交易轨道的运行可靠性。",
-        "en": "After the GENIUS Act, stablecoins are no longer just crypto-market products; they sit inside payments, Treasury demand, and financial-infrastructure debates. Recent research stresses that stable redemption depends not only on reserve quality, but also on Treasury and repo-market liquidity, dealer balance-sheet capacity, and the operational reliability of blockchain transaction rails."
+        "zh": "Guardian在6月28日报道，约4000家美国社区银行通过ICBA反对稳定币相关立法，担心资金从本地银行存款流向加密平台，进而影响小企业和农业贷款。这个争议说明，稳定币已经不只是链上支付工具，而是在重新分配存款、国债需求、金融中介和地方信贷能力。",
+        "en": "The Guardian reported on June 28 that about 4,000 US community banks, through the ICBA, are campaigning against stablecoin legislation because deposits could move from local banks to crypto platforms, weakening small-business and agricultural lending. The dispute shows that stablecoins are no longer merely on-chain payment tools; they can redistribute deposits, Treasury demand, financial intermediation, and local credit capacity."
       },
       "watch": {
-        "zh": "观察监管是否继续把稳定币纳入支付系统、银行流动性和网络安全框架，而不是只停留在储备披露。",
-        "en": "Watch whether regulators keep moving stablecoins into payments, bank-liquidity, and cybersecurity frameworks rather than stopping at reserve disclosure."
+        "zh": "后续看稳定币规则是否限制收益激励、如何保护存款基础，以及监管是否把它纳入银行流动性和支付系统韧性讨论。",
+        "en": "Watch whether stablecoin rules restrict yield incentives, how they protect deposit bases, and whether regulators fold stablecoins into bank-liquidity and payment-system resilience frameworks."
       },
-      "reference": "Aronoff et al., The Hidden Plumbing of Stablecoins, arXiv:2604.17167; Congress.gov GENIUS Act",
+      "reference": "The Guardian, Crypto v community: 4,000 local US lenders join forces to fight stablecoins law, published 2026-06-28",
       "referenceLinks": [
         {
-          "label": "arXiv: The Hidden Plumbing of Stablecoins",
-          "url": "https://arxiv.org/abs/2604.17167"
-        },
-        {
-          "label": "Congress.gov: S.1582 GENIUS Act",
-          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582"
+          "label": "The Guardian: US community banks fight stablecoins law",
+          "url": "https://www.theguardian.com/technology/2026/jun/28/crypto-v-community-local-lenders-fight-stablecoins-law"
         }
       ]
     }
@@ -92,318 +84,262 @@
   "insights": [
     {
       "area": {
-        "zh": "AI数据中心基础设施",
-        "en": "AI Data-Centre Infrastructure"
+        "zh": "AI数据中心与电力系统",
+        "en": "AI Data Centres and Power Systems"
       },
       "title": {
-        "zh": "下一代AI数据中心的土木边界正在前移到供电架构：48V机柜不再够用",
-        "en": "The civil boundary of next-generation AI data centres is moving into power architecture: 48 V racks are no longer enough"
+        "zh": "AI数据中心正在把土木项目早期决策推向电网、碳核算和运行灵活性",
+        "en": "AI data centres are pushing early civil-project decisions toward grid capacity, carbon accounting, and operational flexibility"
       },
       "evidence": {
-        "zh": "研究类型：2026年6月预印本；方法：综述AI数据中心供电架构，从机柜级48V限制扩展到低压直流配电、高变比DC/DC和中压固态变压器。",
-        "en": "Evidence: June 2026 preprint reviewing AI data-centre power-delivery architecture, from limitations of 48 V racks to low-voltage DC distribution, high-ratio DC/DC conversion, and medium-voltage solid-state transformers."
+        "zh": "研究类型：2026年6月预印本；方法：综述AI数据中心负荷行为、电力供应配置、碳排机制、可再生能源匹配和辅助服务潜力。",
+        "en": "Evidence: June 2026 preprint reviewing AI data-centre load behaviour, supply configurations, carbon mechanisms, renewable matching, and ancillary-service potential."
       },
       "summary": {
-        "zh": "这篇研究说明，AI数据中心的瓶颈已经不只是“电够不够”，而是电如何从电网、变电、配电、机柜和芯片级瞬态负载之间稳定传递。对土木和结构工程师而言，数据中心项目早期决策会越来越依赖电气架构、散热、结构荷载、消防分区、运维冗余和施工节奏的耦合。未来如果只把数据中心当普通工业建筑，很容易错过真正控制造价和审批的系统约束。",
-        "en": "This paper shows that the AI data-centre constraint is no longer only whether enough electricity is available, but how power is stably delivered from grid interface and substations through distribution, racks, and chip-level transient loads. For civil and structural engineers, early decisions on data-centre projects will increasingly depend on coupled electrical architecture, cooling, structural loading, fire zoning, operational redundancy, and construction sequencing. Treating a data centre as an ordinary industrial building will miss the system constraints that actually control cost and approval."
+        "zh": "这篇综述把AI数据中心放进电力系统可持续性框架，指出空间集中的负荷增长可能超过清洁能源部署和电网扩容速度，同时也可能通过灵活负荷、储能和辅助服务帮助系统运行。对土木和结构工程师而言，数据中心早期方案不能只看建筑面积和结构荷载，还要同时理解并网容量、变电站、冷却系统、备用电源、水资源、规划审批和运营碳边界。未来有竞争力的工程师需要把结构安全、能源系统和许可策略放在同一张项目风险图上。",
+        "en": "This review places AI data centres inside a power-system sustainability framework. Spatially concentrated load growth can outpace clean-energy deployment and grid expansion, while flexible load, storage, and ancillary services may also support system operation. For civil and structural engineers, early data-centre decisions cannot be reduced to floor area and structural load. They require simultaneous understanding of interconnection capacity, substations, cooling, backup power, water, planning approval, and operational-carbon boundaries. Competitive engineers will need to map structural safety, energy systems, and permitting strategy on the same project-risk diagram."
       },
       "caveat": {
-        "zh": "论文偏电力电子与系统架构，落到项目仍需要结合当地并网条件、建筑规范、消防和施工可实施性。",
-        "en": "The paper is centred on power electronics and system architecture; project application still needs local interconnection, building-code, fire-safety, and constructability checks."
+        "zh": "论文是系统层综述，具体项目仍需要当地电价、并网规则、消防、噪声、水权和规划条件逐项校核。",
+        "en": "The paper is a system-level review; real projects still require local checks on tariffs, interconnection rules, fire safety, noise, water rights, and planning constraints."
       },
-      "reference": "Lee et al., Toward Next-Generation AI Data Centers, arXiv:2606.25095, submitted 2026-06-23",
+      "reference": "Huang, Deb and Zareipour, AI Data Centers and Power System Sustainability, arXiv:2606.21064, submitted 2026-06-19",
       "referenceLinks": [
         {
-          "label": "arXiv: Toward Next-Generation AI Data Centers",
-          "url": "https://arxiv.org/abs/2606.25095"
+          "label": "arXiv: AI Data Centers and Power System Sustainability",
+          "url": "https://arxiv.org/abs/2606.21064"
         }
       ]
     },
     {
       "area": {
-        "zh": "多尺度结构可靠度",
-        "en": "Multiscale Structural Reliability"
+        "zh": "结构健康监测",
+        "en": "Structural Health Monitoring"
       },
       "title": {
-        "zh": "新材料可靠度的难点不是平均强度，而是微观不确定性如何传到宏观失效概率",
-        "en": "The hard part of reliability for new materials is not mean strength, but how microscale uncertainty propagates to failure probability"
+        "zh": "SHM从模型精度走向可迁移性：跨桥梁、跨环境、跨时间才是工程难点",
+        "en": "SHM is moving from model accuracy to transferability across bridges, environments, and time"
       },
       "evidence": {
-        "zh": "研究类型：2026年预印本；方法：Physics-Augmented Neural Network、Tensor Train、Deep Inverse Rosenblatt Transport，用于高维随机场可靠度分析。",
-        "en": "Evidence: 2026 preprint using physics-augmented neural networks, tensor trains, and Deep Inverse Rosenblatt Transport for high-dimensional random-field reliability analysis."
+        "zh": "研究类型：2025年系统综述；范围：60余项振动监测与迁移学习研究，覆盖统计对齐、对抗学习、物理约束和生成式方法。",
+        "en": "Evidence: 2025 systematic review of more than sixty vibration-based monitoring and transfer-learning studies, covering statistical alignment, adversarial learning, physics constraints, and generative methods."
       },
       "summary": {
-        "zh": "这项研究针对复合材料和非均质材料的可靠度难题：微观材料参数本身带有空间随机性，传统FE²和蒙特卡罗方法很快会被维度灾难拖垮。作者用带物理约束的神经网络替代昂贵的均质化计算，再用张量列车近似重要抽样分布。对结构工程未来的启发是，新材料进入规范设计前，关键不只是试验强度更高，而是能否以可审计方式把材料不确定性传递到构件和体系可靠度。",
-        "en": "This study targets a reliability problem central to composites and heterogeneous materials: microscale material parameters are spatially random, and conventional FE² plus Monte Carlo workflows become computationally prohibitive. The authors replace expensive homogenisation with a physics-constrained neural network and approximate the importance-sampling distribution with tensor trains. The practical signal is that before new materials enter code-based design, the question is not only whether test strength is higher, but whether material uncertainty can be auditable as it propagates into member and system reliability."
+        "zh": "这篇综述强调，结构健康监测的关键问题不是在单一数据集上得到高准确率，而是模型能否在几何、材料、温度、湿度、交通荷载和传感器漂移变化后仍保留损伤敏感性。对工程实践而言，未来SHM系统必须说明哪些物理规律被保留、哪些域差异被校正、哪些结果可以被审计。它提示结构工程师，AI监测的价值不在“黑箱更准”，而在可解释、可迁移、可认证的运维决策链。",
+        "en": "This review stresses that the core SHM problem is not achieving high accuracy on one dataset, but retaining damage-sensitive information as geometry, material, temperature, humidity, traffic loading, and sensor drift change. In practice, future SHM systems must state which physical rules are preserved, which domain gaps are corrected, and which outputs remain auditable. The signal for structural engineers is that AI monitoring is valuable not because a black box is more accurate, but because it can support interpretable, transferable, and certifiable maintenance decisions."
       },
       "caveat": {
-        "zh": "当前框架仍是研究级方法，离常规设计软件和规范校准还有距离，但方向与高性能材料、3D打印和复合结构高度相关。",
-        "en": "The framework is still research-grade and not yet routine design software or code calibration, but its direction is highly relevant to high-performance materials, additive manufacturing, and composite structures."
+        "zh": "综述提出清晰路线，但工程审批级部署仍需要现场验证、传感器质量控制和责任边界。",
+        "en": "The review gives a clear technical pathway, but approval-grade deployment still needs field validation, sensor quality control, and responsibility boundaries."
       },
-      "reference": "Tyagi et al., Multiscale Structural Reliability Analysis, arXiv:2604.18776, submitted 2026-04-20",
+      "reference": "Zhang and Liang, Domain Adaptation in Structural Health Monitoring of Civil Infrastructure, arXiv:2512.18780, submitted 2025-12-21",
       "referenceLinks": [
         {
-          "label": "arXiv: Multiscale Structural Reliability Analysis",
-          "url": "https://arxiv.org/abs/2604.18776"
+          "label": "arXiv: Domain Adaptation in Structural Health Monitoring",
+          "url": "https://arxiv.org/abs/2512.18780"
         }
       ]
     },
     {
       "area": {
-        "zh": "具身AI安全治理",
-        "en": "Embodied-AI Safety Governance"
+        "zh": "基础设施数字孪生",
+        "en": "Infrastructure Digital Twins"
       },
       "title": {
-        "zh": "机器人进入工地、工厂和运维现场前，工程问题会先变成安全生命周期和责任链问题",
-        "en": "Before robots enter sites, factories, and maintenance work, the engineering problem becomes safety lifecycle and responsibility chain"
+        "zh": "真正可用的结构数字孪生不只是三维模型，而是观测、诊断和维修决策的闭环",
+        "en": "A useful structural digital twin is not a 3D model, but a loop linking observation, diagnosis, and maintenance decisions"
       },
       "evidence": {
-        "zh": "研究类型：2026年白皮书；来源：SAE World Congress专家讨论；主题：具身AI的安全、信任、治理、部署和生命周期管理。",
-        "en": "Evidence: 2026 white paper from an SAE World Congress expert panel on embodied-AI safety, trust, governance, deployment, and lifecycle management."
+        "zh": "研究类型：土木结构数字孪生框架论文；方法：动态贝叶斯网络、序贯贝叶斯更新、降阶模型、深度学习诊断与维护策略优化。",
+        "en": "Evidence: civil-structure digital-twin framework using dynamic Bayesian networks, sequential Bayesian updating, reduced-order models, deep-learning diagnostics, and maintenance-policy optimisation."
       },
       "summary": {
-        "zh": "这份白皮书把具身AI从“模型能力”拉回工程系统：机器人、自动驾驶设备和工业机器一旦进入动态现场，就必须处理传感器失效、环境变化、人机交互、软件更新、事故责任和持续验证。对土木和结构行业的含义是，未来施工机器人、检测机器人和运维机器人不会只由AI团队决定能否上场；安全案例、作业许可、保险、标准符合性和现场责任划分会成为同等重要的工程交付物。",
-        "en": "This white paper pulls embodied AI back from model capability into engineering systems. Once robots, autonomous vehicles, and industrial machines enter dynamic worksites, they must manage sensor failure, environmental change, human interaction, software updates, accident responsibility, and continuous validation. For civil and structural practice, future construction, inspection, and maintenance robots will not be approved by AI performance alone; safety cases, work permits, insurance, standards compliance, and site responsibility allocation will become equally important deliverables."
+        "zh": "这篇结构数字孪生框架论文把传感数据、物理模型、诊断、预测和维护决策放进同一套动态系统，而不是把digital twin理解成一个漂亮的BIM模型。它对行业的启发是，桥梁和重要基础设施未来的运维价值来自持续更新的不确定性管理：传感器不是为了展示数据，而是为了改变检查频率、维修时机和预算优先级。对结构工程师来说，数字孪生能力最终会落到概率建模、资产风险和可解释决策。",
+        "en": "This structural digital-twin framework connects sensor data, physical models, diagnosis, prognosis, and maintenance decisions within one dynamic system, rather than treating a digital twin as a polished BIM model. The industry signal is that future bridge and infrastructure maintenance value will come from continuously updated uncertainty management: sensors are not for displaying data, but for changing inspection frequency, repair timing, and budget priority. For structural engineers, digital-twin competence ultimately becomes probabilistic modelling, asset risk, and explainable decision-making."
       },
       "caveat": {
-        "zh": "白皮书不是结构规范，但它提示了工程公司采用自动化设备时必须补齐的治理层。",
-        "en": "The white paper is not a structural code, but it identifies the governance layer engineering firms must build before adopting autonomous equipment."
+        "zh": "论文案例偏方法展示，真实资产组合还需要数据治理、模型版本控制和业主维护流程配合。",
+        "en": "The cases are methodological demonstrations; real portfolios still need data governance, model version control, and owner maintenance workflows."
       },
-      "reference": "Li et al., Embodied AI in Action, arXiv:2605.10653, submitted 2026-05-11",
+      "reference": "Torzoni et al., A digital twin framework for civil engineering structures, arXiv:2308.01445",
       "referenceLinks": [
         {
-          "label": "arXiv: Embodied AI in Action",
-          "url": "https://arxiv.org/abs/2605.10653"
+          "label": "arXiv: A digital twin framework for civil engineering structures",
+          "url": "https://arxiv.org/abs/2308.01445"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "混凝土强度等级：为什么中国C30、欧洲C30/37、美国f′c不能直接当成同一个数？",
-      "en": "Concrete strength classes: why Chinese C30, European C30/37, and US f′c are not the same number"
+      "zh": "钢结构荷载组合：为什么中国、澳洲、美国和欧洲都用分项系数，但不能直接比较1.2G+1.5Q？",
+      "en": "Steel-design load combinations: why China, Australia, the US, and Europe all use factors, but 1.2G + 1.5Q cannot be compared directly"
     },
     "text": {
-      "zh": "混凝土强度对比最容易犯的错误，是看到“30 MPa”就默认各国规范在说同一件事。中国工程里C30通常以标准立方体抗压强度为强度等级入口；欧洲EN 1992用C30/37同时表达圆柱体特征强度和立方体特征强度；美国ACI体系更常用圆柱体试件的指定抗压强度 f′c。试件形状、尺寸、养护、加载方法、统计分位值和分项系数位置都不同，所以跨规范复核时不能只把数字搬过去。真正要比较的是：这个强度是cube还是cylinder，是characteristic还是specified，是材料等级入口还是设计强度计算的输入。",
-      "en": "The most common mistake in comparing concrete strength is to see “30 MPa” and assume every code is describing the same quantity. In Chinese practice, C30 is commonly entered through the standard cube compressive strength class. EN 1992 uses C30/37 to state both characteristic cylinder and cube strengths. US ACI practice more often uses the specified cylinder compressive strength f′c. Specimen shape, size, curing, loading method, statistical fractile, and the location of partial factors all differ, so a cross-code review cannot simply copy the number. The real comparison is whether the strength is cube or cylinder, characteristic or specified, a class label or an input to design strength."
+      "zh": "中外结构设计都使用极限状态设计和分项系数，但荷载组合不是孤立公式。中国规范通常以永久荷载、可变荷载及其组合值系数组织承载能力极限状态；澳洲AS/NZS体系用permanent action、imposed action、wind action等组合表达；美国ASCE/ACI/AISC体系常用dead load、live load、wind、earthquake以及强度设计组合；欧洲EN 1990则用actions、partial factors和combination factors形成设计效应。看起来都是“放大荷载”，实际差异在于荷载统计定义、主导可变作用、组合值系数、抗力分项系数或强度折减系数的位置。跨规范复核时，不能只比较1.2、1.5、1.6这些数字，而要比较完整可靠度校准路径。",
+      "en": "Structural codes in China and internationally all use limit-state design and partial factors, but a load combination is not an isolated formula. Chinese practice organises ultimate limit states around permanent actions, variable actions, and combination-value factors. AS/NZS language uses permanent, imposed, wind, and other actions. US ASCE/ACI/AISC practice commonly frames strength combinations through dead, live, wind, and earthquake loads. EN 1990 uses actions, partial factors, and combination factors to obtain design effects. Although all appear to amplify loads, the real differences lie in load statistics, leading variable action, combination factors, and whether reliability calibration is placed on action factors, resistance factors, or strength-reduction factors. Cross-code review should compare the full calibration pathway, not just 1.2, 1.5, or 1.6."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "中国C等级",
-          "en": "Chinese C class"
+          "zh": "荷载名称",
+          "en": "Load terminology"
         },
         "text": {
-          "zh": "中国混凝土强度等级以立方体抗压强度标准值为核心入口。C30表达的是强度等级语言，后续还要通过规范表格和分项系数进入轴心抗压、轴心抗拉和承载力设计。",
-          "en": "Chinese concrete strength classes use standard cube compressive strength as the central entry point. C30 is a class language; subsequent design still enters code tables and partial factors for axial compression, tension, and resistance checks."
+          "zh": "中国常写永久荷载G、可变荷载Q；澳洲和欧洲更多使用actions；美国常写dead load D和live load L。名称差异反映的是统计模型和组合规则，不只是翻译差异。",
+          "en": "Chinese documents commonly use permanent load G and variable load Q; Australia and Europe more often use actions; US documents use dead load D and live load L. The terminology reflects statistical models and combination rules, not translation alone."
         }
       },
       {
         "label": {
-          "zh": "欧洲C30/37",
-          "en": "European C30/37"
+          "zh": "组合逻辑",
+          "en": "Combination logic"
         },
         "text": {
-          "zh": "Eurocode的C30/37明确把圆柱体特征强度30 MPa和立方体特征强度37 MPa并列写出，所以斜杠前后不是安全系数，而是不同试件定义。",
-          "en": "Eurocode C30/37 explicitly pairs a 30 MPa characteristic cylinder strength with a 37 MPa characteristic cube strength. The two numbers around the slash are not safety factors; they are different specimen definitions."
+          "zh": "不同体系都会区分主导可变作用和伴随可变作用。伴随作用通常通过组合值系数降低，这是因为多个最大可变作用同时达到极值的概率较低。",
+          "en": "Different systems distinguish the leading variable action from accompanying variable actions. Accompanying actions are usually reduced by combination factors because several variable actions are unlikely to reach their extreme values simultaneously."
         }
       },
       {
         "label": {
-          "zh": "美国f′c",
-          "en": "US f′c"
+          "zh": "可靠度位置",
+          "en": "Where reliability enters"
         },
         "text": {
-          "zh": "ACI语境里的 f′c 通常是指定圆柱体抗压强度，并作为名义承载力表达式的材料输入，再由强度折减系数 φ 和荷载组合完成可靠度校准。",
-          "en": "In ACI language, f′c is typically the specified cylinder compressive strength. It enters nominal resistance expressions as a material input, while strength-reduction factor φ and load combinations complete the reliability calibration."
+          "zh": "有些可靠度校准体现在荷载分项系数，有些体现在材料或抗力分项系数，有些还通过强度折减系数实现。只比较荷载组合会漏掉抗力侧的安全储备。",
+          "en": "Some reliability calibration appears in load factors, some in material or resistance factors, and some through strength-reduction factors. Comparing load combinations alone misses the safety margin on the resistance side."
         }
       }
     ],
     "takeaway": {
-      "zh": "做中外混凝土强度复核时，先写清楚试件类型、统计定义和设计强度路径，再比较数值。否则把C30、C30/37和f′c=30 MPa并排比较，很容易把材料等级、特征强度和设计承载力混在一起。",
-      "en": "For cross-code concrete review, state specimen type, statistical definition, and design-strength pathway before comparing values. Otherwise, comparing C30, C30/37, and f′c = 30 MPa side by side easily confuses material class, characteristic strength, and design resistance."
+      "zh": "跨规范比较荷载组合时，先把G/D、Q/L、actions、组合值系数和抗力侧系数放进同一张表，再讨论哪个体系更保守。否则很容易把公式外观误读成可靠度水平。",
+      "en": "When comparing load combinations across codes, first place G/D, Q/L, actions, combination factors, and resistance-side factors in the same table. Only then discuss which system is more conservative. Otherwise, formula appearance is easily mistaken for reliability level."
     },
     "example": {
       "title": {
-        "zh": "实例：同样写着30 MPa，进入设计时可能对应不同含义",
-        "en": "Example: the same written 30 MPa may enter design with different meanings"
+        "zh": "实例：同一简单楼面，1.35G+1.5Q 与 1.2D+1.6L 为什么不能只看系数大小？",
+        "en": "Example: for the same floor, why 1.35G + 1.5Q and 1.2D + 1.6L cannot be judged by factors alone"
       },
       "intro": {
-        "zh": "为了说明概念，比较三个常见表达：GB语境C30、Eurocode C30/37、ACI语境 f′c = 30 MPa。这里只比较强度定义和设计输入路径，不进行构件承载力设计。",
-        "en": "To clarify the concept, compare three common expressions: Chinese C30, Eurocode C30/37, and ACI f′c = 30 MPa. This example compares strength definition and design-input pathway only, not member resistance design."
+        "zh": "假设永久作用 G = D = 5.0 kPa，可变作用 Q = L = 3.0 kPa。这里只做荷载效应量级比较，不涉及构件抗力、材料分项系数、强度折减系数或不同规范的完整可靠度校准。",
+        "en": "Assume permanent/dead action G = D = 5.0 kPa and variable/live action Q = L = 3.0 kPa. This is only a load-effect magnitude comparison; it does not include member resistance, material factors, strength-reduction factors, or the full reliability calibration of each code."
       },
       "equations": [
         {
           "label": {
-            "zh": "中国等级入口",
-            "en": "Chinese class entry"
+            "zh": "欧洲持久设计状况示意",
+            "en": "Eurocode persistent-design illustration"
           },
-          "formula": "C30 → fcu,k = 30 MPa",
+          "formula": "Ed = 1.35Gk + 1.5Qk",
           "formulaTokens": [
             {
-              "text": "C30 → "
+              "var": "E"
             },
             {
-              "var": "f"
+              "sub": "d"
             },
             {
-              "sub": "cu,k"
+              "text": " = 1.35"
             },
             {
-              "text": " = 30 MPa"
+              "var": "G"
+            },
+            {
+              "sub": "k"
+            },
+            {
+              "text": " + 1.5"
+            },
+            {
+              "var": "Q"
+            },
+            {
+              "sub": "k"
             }
           ],
           "citation": {
-            "zh": "规范依据：GB 50010-2010，混凝土强度等级按立方体抗压强度标准值确定，见第4.1节相关条文（等级定义，非承载力公式）。",
-            "en": "Code basis: GB 50010-2010, Section 4.1 provisions defining concrete strength class by standard cube compressive strength (class definition, not a resistance equation)."
+            "zh": "规范出处：EN 1990:2002+A1:2005，式(6.10)及Table A1.2(B)；此处只取单一可变作用示意。",
+            "en": "Code reference: EN 1990:2002+A1:2005, Eq. (6.10) and Table A1.2(B); simplified here for one variable action."
           },
           "result": {
-            "zh": "C30首先说明立方体抗压强度标准值入口；用于设计时还要查取相应轴心抗压、轴心抗拉强度设计值。",
-            "en": "C30 first identifies the cube-strength class entry; design then uses the corresponding code-tabulated design values for axial compression and tension."
+            "zh": "Ed = 1.35 × 5.0 + 1.5 × 3.0 = 11.25 kPa。",
+            "en": "Ed = 1.35 × 5.0 + 1.5 × 3.0 = 11.25 kPa."
           }
         },
         {
           "label": {
-            "zh": "欧洲等级入口",
-            "en": "Eurocode class entry"
+            "zh": "美国强度组合示意",
+            "en": "US strength-combination illustration"
           },
-          "formula": "C30/37 → fck = 30 MPa, fck,cube = 37 MPa",
+          "formula": "U = 1.2D + 1.6L",
           "formulaTokens": [
-            {
-              "text": "C30/37 → "
-            },
-            {
-              "var": "f"
-            },
-            {
-              "sub": "ck"
-            },
-            {
-              "text": " = 30 MPa, "
-            },
-            {
-              "var": "f"
-            },
-            {
-              "sub": "ck,cube"
-            },
-            {
-              "text": " = 37 MPa"
-            }
-          ],
-          "citation": {
-            "zh": "规范出处：EN 1992-1-1:2004+A1:2014，Table 3.1，混凝土强度等级与 fck、fck,cube。",
-            "en": "Code reference: EN 1992-1-1:2004+A1:2014, Table 3.1, concrete strength classes with fck and fck,cube."
-          },
-          "result": {
-            "zh": "这里30 MPa是圆柱体特征强度，37 MPa是立方体特征强度；二者不能被理解成同一试验值的安全放大。",
-            "en": "Here 30 MPa is characteristic cylinder strength and 37 MPa is characteristic cube strength; they are not a safety amplification of the same test value."
-          }
-        },
-        {
-          "label": {
-            "zh": "欧洲设计强度",
-            "en": "Eurocode design strength"
-          },
-          "formula": "fcd = αcc fck / γc",
-          "formulaTokens": [
-            {
-              "var": "f"
-            },
-            {
-              "sub": "cd"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "α"
-            },
-            {
-              "sub": "cc"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "f"
-            },
-            {
-              "sub": "ck"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "γ"
-            },
-            {
-              "sub": "c"
-            }
-          ],
-          "citation": {
-            "zh": "规范出处：EN 1992-1-1:2004+A1:2014，第3.1.6(1)P条，式(3.15)。",
-            "en": "Code reference: EN 1992-1-1:2004+A1:2014, Cl. 3.1.6(1)P, Eq. (3.15)."
-          },
-          "result": {
-            "zh": "若示意取 αcc = 0.85、γc = 1.5，则 fcd = 0.85 × 30 / 1.5 = 17.0 MPa。这个值是设计强度，不是试件强度。",
-            "en": "If αcc = 0.85 and γc = 1.5 are used illustratively, fcd = 0.85 × 30 / 1.5 = 17.0 MPa. This is a design strength, not a specimen strength."
-          }
-        },
-        {
-          "label": {
-            "zh": "美国验算语言",
-            "en": "US design-check language"
-          },
-          "formula": "φ Rn ≥ U",
-          "formulaTokens": [
-            {
-              "var": "φ"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "R"
-            },
-            {
-              "sub": "n"
-            },
-            {
-              "text": " ≥ "
-            },
             {
               "var": "U"
+            },
+            {
+              "text": " = 1.2"
+            },
+            {
+              "var": "D"
+            },
+            {
+              "text": " + 1.6"
+            },
+            {
+              "var": "L"
             }
           ],
           "citation": {
-            "zh": "规范依据：ACI 318-19，强度设计基本表达；f′c 作为混凝土指定圆柱体抗压强度进入名义承载力模型（设计原则表达）。",
-            "en": "Code basis: ACI 318-19 strength-design format; f′c enters nominal resistance models as specified cylinder compressive strength (design-principle expression)."
+            "zh": "规范出处：ASCE/SEI 7-22，第2.3节强度设计荷载组合，常用重力组合形式。",
+            "en": "Code reference: ASCE/SEI 7-22, Section 2.3 strength design load combinations, common gravity-load combination form."
           },
           "result": {
-            "zh": "ACI里 f′c = 30 MPa不是直接等同于Eurocode的C30/37整体标签，也不是中国C30立方体强度入口。它进入名义承载力 Rn，再乘 φ 与需求 U 比较。",
-            "en": "In ACI usage, f′c = 30 MPa is not identical to the full Eurocode C30/37 label or the Chinese C30 cube-class entry. It enters nominal resistance Rn, which is then multiplied by φ and compared with demand U."
+            "zh": "U = 1.2 × 5.0 + 1.6 × 3.0 = 10.8 kPa。",
+            "en": "U = 1.2 × 5.0 + 1.6 × 3.0 = 10.8 kPa."
+          }
+        },
+        {
+          "label": {
+            "zh": "差值不能直接等于安全差",
+            "en": "Difference is not safety difference"
+          },
+          "formula": "ΔE = 11.25 − 10.8",
+          "formulaTokens": [
+            {
+              "var": "ΔE"
+            },
+            {
+              "text": " = 11.25 − 10.8"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：两个示意荷载效应相减；非规范公式，不能代表体系可靠度差异。",
+            "en": "Derived relation: subtraction of two illustrative load effects; not a code equation and not a measure of system reliability difference."
+          },
+          "result": {
+            "zh": "ΔE = 0.45 kPa，约为美国示意组合的4.2%。但这个差值没有包含抗力侧分项系数、材料强度定义、组合值系数和构件设计公式，因此不能直接说某体系安全4.2%。",
+            "en": "ΔE = 0.45 kPa, about 4.2% of the US illustrative combination. This does not include resistance-side factors, material-strength definitions, combination factors, or member-design equations, so it cannot mean one system is 4.2% safer."
           }
         }
       ],
       "note": {
-        "zh": "这个例子说明，跨规范对比混凝土时，第一步不是换算MPa，而是确认强度定义。只有定义对齐后，分项系数、强度折减系数和承载力公式才有比较意义。",
-        "en": "This example shows that the first step in cross-code concrete comparison is not unit conversion but strength-definition alignment. Only after definitions are aligned do partial factors, strength-reduction factors, and resistance equations become meaningfully comparable."
+        "zh": "这个算例的目的，是说明荷载组合比较必须和抗力设计一起看。工程复核时应同时列出荷载定义、组合系数、材料强度定义、抗力分项系数或φ系数，以及适用极限状态。",
+        "en": "The purpose of this example is to show that load-combination comparison must be read together with resistance design. A proper review should list load definitions, combination factors, material-strength definitions, resistance or φ factors, and applicable limit states together."
       }
     },
-    "references": "GB 50010-2010; EN 1992-1-1:2004+A1:2014; ACI 318-19; Eurocode concrete strength class resources",
+    "references": "EN 1990:2002+A1:2005; ASCE/SEI 7-22; GB 50068 and GB 50009 reliability/load combination principles; AS/NZS 1170.0",
     "referenceLinks": [
       {
-        "label": "Eurocode Applied: Concrete design properties to EN 1992-1-1",
-        "url": "https://eurocodeapplied.com/design/en1992/concrete-design-properties"
+        "label": "European Commission JRC: EN 1990 Basis of structural design",
+        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-basis-structural-design"
       },
       {
-        "label": "European Commission JRC: Eurocode 2 concrete structures",
-        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-2-design-concrete-structures"
+        "label": "ASCE 7 Hazard Tool",
+        "url": "https://ascehazardtool.org/"
       },
       {
-        "label": "ACI 318 Building Code Requirements for Structural Concrete",
-        "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19"
+        "label": "Standards Australia: AS/NZS 1170.0",
+        "url": "https://store.standards.org.au/product/as-nzs-1170-0-2002"
       }
     ]
   }
