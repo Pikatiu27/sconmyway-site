@@ -70,8 +70,8 @@ Finder controls 结构：
 
 ## 4. 更新周期
 
-- 每周五 Sydney/Melbourne 当地时间 0:00 自动更新并推送上线。
-- 1:00 做补偿检查；如果 0:00 没成功，再重试。
+- 每周五 Sydney/Melbourne 当地时间 5:00 自动全网检索、更新并推送上线。
+- 6:00 做补偿检查；如果 5:00 没成功，再重试。
 - 页面显示的是发布周期，不随用户点击当天滚动。
 - 周期固定为本周五到下一个周五，使用 `periodStart` / `periodEnd`。
 - 自动校验必须确认周期是 Friday-to-Friday。
@@ -251,7 +251,7 @@ Official or council finder / Map
 更新流水线固定为：
 
 ```text
-gate 0:00 / 1:00
+gate 5:00 / 6:00
 → fetch official sources and discovery sources
 → widen search with suburb / council / venue / event-name queries from social tips
 → extract candidates
@@ -302,5 +302,5 @@ https://pikatiu27.github.io/sconmyway-site/kids/
 ## 14. 调用 Codex 的推荐提示词
 
 ```text
-请按 KIDS_PAGE_GUIDE.md 维护“今天带娃去哪儿？”页面。保持手机优先、马卡龙手帐风、Sydney/Melbourne 城市切换、中英双语、8 条主推荐、More 折叠链接、官网/导航/分享按钮顺序。每周五凌晨 0:00 更新新一周全部内容：必须重新检索 sources、重新筛选，删除过期活动，新增最新活动，新活动放前排，仍在持续的活动往后放；不能复用上周静态 DATA 当作本周内容。搜索范围要宽：official council/venue pages、Eventbrite/Humanitix/AllEvents/Secret/Time Out/亲子媒体、Instagram/Facebook/小红书/社群线索都可用于发现，但社媒线索必须反查官方 council、venue、organiser 或 ticketing 页面后才能入选。更新后同步 JSON data 和 HTML fallback，再校验 UTF-8、英文无中文泄漏、Friday-to-Friday 日期和远程推送。英文页面必须全英文。先保存本地，不要推送 GitHub，除非我明确要求部署。
+请按 KIDS_PAGE_GUIDE.md 维护“今天带娃去哪儿？”页面。保持手机优先、马卡龙手帐风、Sydney/Melbourne 城市切换、中英双语、8 条主推荐、More 折叠链接、官网/导航/分享按钮顺序。每周五早上 5:00 更新新一周全部内容：必须重新检索 sources、重新筛选，删除过期活动，新增最新活动，新活动放前排，仍在持续的活动往后放；不能复用上周静态 DATA 当作本周内容。搜索范围要宽：official council/venue pages、Eventbrite/Humanitix/AllEvents/Secret/Time Out/亲子媒体、Instagram/Facebook/小红书/社群线索都可用于发现，但社媒线索必须反查官方 council、venue、organiser 或 ticketing 页面后才能入选。更新后同步 JSON data 和 HTML fallback，再校验 UTF-8、英文无中文泄漏、Friday-to-Friday 日期和远程推送。英文页面必须全英文。先保存本地，不要推送 GitHub，除非我明确要求部署。
 ```

@@ -114,17 +114,17 @@ if (command === "gate") {
     await writeOutput({ should_run: "true", reason: "manual run" });
   } else {
     const parts = localParts();
-    let shouldRun = parts.weekday === "Fri" && parts.hour === "00";
-    let reason = shouldRun ? "Friday 00:00 primary refresh" : "outside refresh window";
+    let shouldRun = parts.weekday === "Fri" && parts.hour === "05";
+    let reason = shouldRun ? "Friday 05:00 primary refresh" : "outside refresh window";
 
-    if (parts.weekday === "Fri" && parts.hour === "01") {
+    if (parts.weekday === "Fri" && parts.hour === "06") {
       try {
         const data = await readData();
         shouldRun = localDateKey(new Date(data.updatedAt)) !== localDateKey(new Date());
-        reason = shouldRun ? "Friday 01:00 recovery retry" : "00:00 refresh already confirmed";
+        reason = shouldRun ? "Friday 06:00 recovery retry" : "05:00 refresh already confirmed";
       } catch {
         shouldRun = true;
-        reason = "Friday 01:00 recovery retry after missing or invalid data";
+        reason = "Friday 06:00 recovery retry after missing or invalid data";
       }
     }
 

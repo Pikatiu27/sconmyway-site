@@ -2,8 +2,8 @@ name: Weekly kids event refresh
 
 on:
   schedule:
-    # Covers 00:00 primary and 01:00 recovery Friday locally across AEST/AEDT.
-    - cron: "0 13,14,15 * * 4"
+    # Covers 05:00 primary and 06:00 recovery Friday locally across AEST/AEDT.
+    - cron: "0 18,19,20 * * 4"
   workflow_dispatch:
 
 permissions:
