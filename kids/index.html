@@ -2130,9 +2130,7 @@
       button.addEventListener("click", () => setView(button.dataset.setView));
     });
 
-    let savedView = "events";
-    try { savedView = localStorage.getItem("kids-view") || "events"; } catch {}
-    setView(deepLinkParams.get("view") || savedView, false);
+    setView(deepLinkParams.get("view") || "events", false);
 
     const cityButtons = document.querySelectorAll("[data-set-city]");
     const cityNames = {
@@ -2140,7 +2138,7 @@
       melbourne: { zh: "墨尔本", en: "Melbourne" }
     };
 
-    function setCity(city) {
+    function setCity(city, persist = true) {
       const nextCity = cityNames[city] ? city : "sydney";
       root.dataset.city = nextCity;
       cityButtons.forEach((button) => {
@@ -2155,15 +2153,15 @@
       document.querySelectorAll("details[data-city-panel]").forEach((panel) => {
         if (panel.dataset.cityPanel !== nextCity) panel.open = false;
       });
-      try { localStorage.setItem("kids-city", nextCity); } catch {}
+      if (persist) {
+        try { localStorage.setItem("kids-city", nextCity); } catch {}
+      }
     }
 
     cityButtons.forEach((button) => {
       button.addEventListener("click", () => setCity(button.dataset.setCity));
     });
-    let savedCity = "sydney";
-    try { savedCity = localStorage.getItem("kids-city") || "sydney"; } catch {}
-    setCity(deepLinkParams.get("city") || savedCity);
+    setCity(deepLinkParams.get("city") || "sydney", false);
 
     function stickerSet(text) {
       const lower = text.toLowerCase();
