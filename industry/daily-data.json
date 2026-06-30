@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-07-01",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -11,72 +11,72 @@
         "en": "Semiconductors"
       },
       "title": {
-        "zh": "Micron盈利预期继续上修，AI内存从周期品变成算力基础设施核心瓶颈",
-        "en": "Micron profit expectations keep rising as AI memory shifts from cyclical component to core compute-infrastructure bottleneck"
+        "zh": "韩国押注800万亿韩元芯片走廊，先进制程与电力土地配套进入国家竞赛",
+        "en": "South Korea's 800 trillion won chip corridor turns advanced fabs, power, and land delivery into a national race"
       },
       "summary": {
-        "zh": "MarketWatch在6月28日报道，Micron被预计到2027年可能成为美国盈利能力仅次于Nvidia和Alphabet的公司之一，背后是HBM、DRAM和SSD供给紧张。今天的信号很明确：AI竞争不再只看GPU采购，内存产能、长期供货协议和新晶圆厂建设周期正在决定谁能真正扩容算力。",
-        "en": "MarketWatch reported on June 28 that Micron could become one of the most profitable US companies by 2027, behind only Nvidia and Alphabet, because HBM, DRAM, and SSD supply remains tight. The signal is clear: AI competition is no longer measured only by GPU procurement. Memory capacity, long-term supply agreements, and the timing of new fabrication plants are now deciding who can actually scale compute."
+        "zh": "美联社6月30日报道，韩国公布到2047年建设约800万亿韩元芯片制造集群的计划，核心参与者包括Samsung Electronics和SK hynix，配套内容不只是晶圆厂，还涵盖电力、用水、交通与研发设施。对行业而言，这说明先进芯片竞争已从单点产能扩展为国家级场址交付能力竞争，谁能更快落实土地、能源和公用工程，谁就更可能接住下一轮AI算力需求。",
+        "en": "AP reported on June 30 that South Korea plans to build an about 800 trillion won semiconductor cluster through 2047 with Samsung Electronics, SK hynix, and supporting power, water, transport, and research facilities. The industry signal is that advanced-chip competition is no longer only about fab capacity. It is now a national site-delivery contest in which land readiness, utilities, and infrastructure timing determine who can capture the next wave of AI-compute demand."
       },
       "watch": {
-        "zh": "后续重点看内存涨价是否继续挤压云厂商成本，以及长期锁量合约会不会把中小AI公司的算力门槛继续抬高。",
-        "en": "Watch whether memory-price pressure keeps raising cloud costs and whether long-term volume contracts further increase the compute barrier for smaller AI companies."
+        "zh": "后续重点看输电、工业用水和地方审批能否跟上投资节奏，以及美国、台湾地区和日本是否同步推出更激进的配套政策。",
+        "en": "Watch whether transmission, industrial water, and local approvals keep pace with the capital plan, and whether the US, Taiwan, and Japan answer with more aggressive infrastructure packages."
       },
-      "reference": "MarketWatch, Micron is about to be more profitable than any U.S. company except Nvidia and Google, published 2026-06-28",
+      "reference": "AP, South Korea reveals plan for chipmaking hub south of Seoul by 2047, published 2026-06-30",
       "referenceLinks": [
         {
-          "label": "MarketWatch: Micron profitability and AI memory shortage",
-          "url": "https://www.marketwatch.com/story/micron-is-about-to-be-more-profitable-than-any-u-s-company-except-nvidia-and-google-3a83e343"
+          "label": "AP: South Korea chipmaking hub plan",
+          "url": "https://apnews.com/article/22352d95c7a821c5f4548b2d1a4ebde8"
         }
       ]
     },
     {
       "topic": {
-        "zh": "机器人",
-        "en": "Robotics"
+        "zh": "数字支付",
+        "en": "Digital Payments"
       },
       "title": {
-        "zh": "人形机器人热度继续升温，但真正部署仍卡在遥操作、安全和场景经济性",
-        "en": "Humanoid-robot interest keeps rising, but real deployment is still constrained by teleoperation, safety, and use-case economics"
+        "zh": "BlackRock与Google支持Open USD，稳定币竞争开始转向分发联盟与合规通道",
+        "en": "BlackRock and Google back Open USD as stablecoin competition shifts toward distribution alliances and compliance rails"
       },
       "summary": {
-        "zh": "The New Yorker 7月6日刊文今天上线，梳理1X Neo等人形机器人离家庭级自主部署还有多远。文章显示，许多演示背后仍依赖人类遥操作和大量训练数据。行业意义不是机器人失败，而是商业化路径会先落在仓储、工厂、巡检等可控环境，再逐步进入家庭服务。",
-        "en": "A New Yorker article for the July 6 issue, published today, examines how far humanoid systems such as 1X Neo remain from unsupervised home deployment. Many demonstrations still rely on human teleoperators and large training pipelines. The industry implication is not that humanoids have failed, but that commercial adoption is likely to start in controlled settings such as warehouses, factories, and inspection before moving into household service."
+        "zh": "《华尔街日报》6月30日报道，BlackRock、Google以及多家银行和加密公司支持新的Open USD稳定币联盟。这个动作的行业意义不在于又多了一枚代币，而在于稳定币竞争开始围绕托管、清算、支付入口和机构分发网络重组。若主流金融与平台流量一起进入，未来的赢家未必是发行人本身，而是能把合规、流动性和场景连接在同一网络中的联盟。",
+        "en": "The Wall Street Journal reported on June 30 that BlackRock, Google, banks, and crypto firms are backing the new Open USD consortium. The important signal is not simply that another token is launching. Stablecoin competition is being reorganised around custody, settlement, payment entry points, and institutional distribution. If mainstream finance and platform traffic move together, the long-term winners may be the alliances that connect compliance, liquidity, and real transaction channels rather than the issuer alone."
       },
       "watch": {
-        "zh": "观察企业是否开始公开遥操作比例、安全事故率、任务成功率和单位小时成本，这些指标比演示视频更能说明商业化进度。",
-        "en": "Watch whether companies disclose teleoperation ratios, safety incident rates, task-success rates, and cost per operating hour; those metrics matter more than demonstration videos."
+        "zh": "接下来要看联盟是否能拿下真实商户与跨境支付场景，以及监管是否允许这种多方联盟在银行体系外扩张清算影响力。",
+        "en": "Watch whether the consortium secures real merchant and cross-border payment use cases, and whether regulators allow multi-party alliances to expand settlement influence outside the traditional banking stack."
       },
-      "reference": "The New Yorker, Are Humanoid Robots Ready to Be Deployed?, published 2026-06-30",
+      "reference": "The Wall Street Journal, BlackRock, Google Join Banks and Crypto Firms in Backing New Stablecoin, published 2026-06-30",
       "referenceLinks": [
         {
-          "label": "The New Yorker: Are Humanoid Robots Ready to Be Deployed?",
-          "url": "https://www.newyorker.com/magazine/2026/07/06/are-humanoid-robots-ready-to-be-deployed"
+          "label": "WSJ: Backers line up behind Open USD consortium",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-30-2026/card/blackrock-google-join-banks-and-crypto-firms-in-backing-new-stablecoin-czjc2S3yJVxmofXLQpzP"
         }
       ]
     },
     {
       "topic": {
-        "zh": "加密金融",
-        "en": "Crypto Finance"
+        "zh": "AI基础设施",
+        "en": "AI Infrastructure"
       },
       "title": {
-        "zh": "社区银行反击稳定币立法，支付创新开始触碰地方信贷和存款基础",
-        "en": "Community banks push back against stablecoin legislation as payments innovation reaches local deposits and credit creation"
+        "zh": "Google披露AI推高排放与用电，算力扩张开始直接碰撞能源与水资源边界",
+        "en": "Google discloses AI-driven emissions and power growth as compute expansion runs into energy and water limits"
       },
       "summary": {
-        "zh": "Guardian在6月28日报道，约4000家美国社区银行通过ICBA反对稳定币相关立法，担心资金从本地银行存款流向加密平台，进而影响小企业和农业贷款。这个争议说明，稳定币已经不只是链上支付工具，而是在重新分配存款、国债需求、金融中介和地方信贷能力。",
-        "en": "The Guardian reported on June 28 that about 4,000 US community banks, through the ICBA, are campaigning against stablecoin legislation because deposits could move from local banks to crypto platforms, weakening small-business and agricultural lending. The dispute shows that stablecoins are no longer merely on-chain payment tools; they can redistribute deposits, Treasury demand, financial intermediation, and local credit capacity."
+        "zh": "Axios在6月30日报道，Google最新环境数据表明，AI推动的数据中心扩张显著推高了排放、用电和资源压力。对行业的真正提醒是，算力竞争已经不能只用模型能力或资本开支来描述，能源供应、输电接入、冷却方式和水资源许可正在变成一线约束。未来大型AI项目的胜负，将越来越取决于谁能把芯片采购、站点工程与环境许可同步推进。",
+        "en": "Axios reported on June 30 that Google's latest environmental data shows AI-driven data-centre expansion is materially increasing emissions, electricity demand, and resource pressure. The real industry warning is that compute competition can no longer be described only through model capability or capex. Energy supply, grid connection, cooling strategy, and water permitting are becoming front-line constraints. Large AI projects will increasingly be decided by who can align chip procurement, site engineering, and environmental approval at the same time."
       },
       "watch": {
-        "zh": "后续看稳定币规则是否限制收益激励、如何保护存款基础，以及监管是否把它纳入银行流动性和支付系统韧性讨论。",
-        "en": "Watch whether stablecoin rules restrict yield incentives, how they protect deposit bases, and whether regulators fold stablecoins into bank-liquidity and payment-system resilience frameworks."
+        "zh": "后续重点看超大规模云厂商是否把更多算力负荷导向核能、储能或无水冷却方案，以及地方社区对数据中心资源消耗的反弹是否加剧。",
+        "en": "Watch whether hyperscalers move more compute toward nuclear, storage-backed, or low-water cooling solutions, and whether community resistance to data-centre resource use intensifies."
       },
-      "reference": "The Guardian, Crypto v community: 4,000 local US lenders join forces to fight stablecoins law, published 2026-06-28",
+      "reference": "Axios, Google's AI boom is sending emissions and power use soaring, published 2026-06-30",
       "referenceLinks": [
         {
-          "label": "The Guardian: US community banks fight stablecoins law",
-          "url": "https://www.theguardian.com/technology/2026/jun/28/crypto-v-community-local-lenders-fight-stablecoins-law"
+          "label": "Axios: Google's AI boom raises emissions and power use",
+          "url": "https://www.axios.com/2026/06/30/google-ai-boom-emissions-power-use"
         }
       ]
     }
@@ -84,262 +84,301 @@
   "insights": [
     {
       "area": {
-        "zh": "AI数据中心与电力系统",
-        "en": "AI Data Centres and Power Systems"
+        "zh": "数据中心与电网协同",
+        "en": "Data Centres and Grid Coordination"
       },
       "title": {
-        "zh": "AI数据中心正在把土木项目早期决策推向电网、碳核算和运行灵活性",
-        "en": "AI data centres are pushing early civil-project decisions toward grid capacity, carbon accounting, and operational flexibility"
+        "zh": "可调度AI数据中心开始从并网负担转向可调电力资源，土木前期方案要预留功率柔性",
+        "en": "Power-flexible AI data centres are moving from pure interconnection burden toward dispatchable grid resources"
       },
       "evidence": {
-        "zh": "研究类型：2026年6月预印本；方法：综述AI数据中心负荷行为、电力供应配置、碳排机制、可再生能源匹配和辅助服务潜力。",
-        "en": "Evidence: June 2026 preprint reviewing AI data-centre load behaviour, supply configurations, carbon mechanisms, renewable matching, and ancillary-service potential."
+        "zh": "研究类型：2026年6月预印本；方法：在约130 kW AI计算集群上实测功率轨迹，并与电池储能、动态电价和电网调频任务联动评估。",
+        "en": "Evidence: June 2026 preprint combining measurements from an about 130 kW AI compute cluster with storage, dynamic pricing, and frequency-response style grid services."
       },
       "summary": {
-        "zh": "这篇综述把AI数据中心放进电力系统可持续性框架，指出空间集中的负荷增长可能超过清洁能源部署和电网扩容速度，同时也可能通过灵活负荷、储能和辅助服务帮助系统运行。对土木和结构工程师而言，数据中心早期方案不能只看建筑面积和结构荷载，还要同时理解并网容量、变电站、冷却系统、备用电源、水资源、规划审批和运营碳边界。未来有竞争力的工程师需要把结构安全、能源系统和许可策略放在同一张项目风险图上。",
-        "en": "This review places AI data centres inside a power-system sustainability framework. Spatially concentrated load growth can outpace clean-energy deployment and grid expansion, while flexible load, storage, and ancillary services may also support system operation. For civil and structural engineers, early data-centre decisions cannot be reduced to floor area and structural load. They require simultaneous understanding of interconnection capacity, substations, cooling, backup power, water, planning approval, and operational-carbon boundaries. Competitive engineers will need to map structural safety, energy systems, and permitting strategy on the same project-risk diagram."
+        "zh": "这项研究的重要意义不在于“让GPU省电”，而在于把AI数据中心视为可以参与电网协同调度的工程资产。作者展示了训练与推理负荷在一定边界内可转移、可削峰，并可与电池储能组合以响应价格和辅助服务信号。对土木与结构工程师来说，这意味着未来数据中心早期方案不应只围绕楼板荷载、机电管线和冷却冗余展开，还要预留储能布置、变配电扩展、消防分区以及可调度运行策略所需的空间与审批接口。职业能力层面，懂负荷柔性与并网逻辑的工程师，会比只会做静态机房壳体的人更接近项目决策核心。",
+        "en": "The significance of this work is not merely making GPUs more efficient. It treats AI data centres as engineered assets that can participate in coordinated grid operation. The authors show that training and inference loads can be shifted or clipped within practical bounds and combined with battery storage to respond to price and ancillary-service signals. For civil and structural engineers, early data-centre design should therefore go beyond floor loading, MEP routing, and cooling redundancy. It should also reserve space and approval pathways for storage, switchgear expansion, fire zoning, and operational flexibility. Professionally, engineers who understand flexible load and interconnection logic will be closer to project decision-making than those who only design static shell-and-core facilities."
       },
       "caveat": {
-        "zh": "论文是系统层综述，具体项目仍需要当地电价、并网规则、消防、噪声、水权和规划条件逐项校核。",
-        "en": "The paper is a system-level review; real projects still require local checks on tariffs, interconnection rules, fire safety, noise, water rights, and planning constraints."
+        "zh": "研究规模仍偏试验性，实际超大规模园区还要面对租户SLA、市场规则、消防审查和电池全生命周期成本等限制。",
+        "en": "The study is still pilot-scale. Real hyperscale campuses must also address tenant SLAs, market rules, fire review, and full-life battery economics."
       },
-      "reference": "Huang, Deb and Zareipour, AI Data Centers and Power System Sustainability, arXiv:2606.21064, submitted 2026-06-19",
+      "reference": "Asgar et al., Power-Flexible AI Data Centers, arXiv:2606.25098, submitted 2026-06-23",
       "referenceLinks": [
         {
-          "label": "arXiv: AI Data Centers and Power System Sustainability",
-          "url": "https://arxiv.org/abs/2606.21064"
+          "label": "arXiv: Power-Flexible AI Data Centers",
+          "url": "https://arxiv.org/abs/2606.25098"
         }
       ]
     },
     {
       "area": {
-        "zh": "结构健康监测",
-        "en": "Structural Health Monitoring"
+        "zh": "抗震可靠度与韧性",
+        "en": "Seismic Reliability and Resilience"
       },
       "title": {
-        "zh": "SHM从模型精度走向可迁移性：跨桥梁、跨环境、跨时间才是工程难点",
-        "en": "SHM is moving from model accuracy to transferability across bridges, environments, and time"
+        "zh": "PBEE正在把失效概率与恢复过程放进同一框架，抗震设计不再只回答会不会坏",
+        "en": "PBEE is merging failure probability with recovery pathways so seismic design no longer stops at damage occurrence"
       },
       "evidence": {
-        "zh": "研究类型：2025年系统综述；范围：60余项振动监测与迁移学习研究，覆盖统计对齐、对抗学习、物理约束和生成式方法。",
-        "en": "Evidence: 2025 systematic review of more than sixty vibration-based monitoring and transfer-learning studies, covering statistical alignment, adversarial learning, physics constraints, and generative methods."
+        "zh": "研究类型：2026年5月预印本；方法：提出统一PBEE框架，把损伤状态、功能丧失、修复转移与恢复轨迹纳入同一概率建模体系。",
+        "en": "Evidence: May 2026 preprint proposing a unified PBEE framework that links damage states, functionality loss, repair transitions, and recovery trajectories."
       },
       "summary": {
-        "zh": "这篇综述强调，结构健康监测的关键问题不是在单一数据集上得到高准确率，而是模型能否在几何、材料、温度、湿度、交通荷载和传感器漂移变化后仍保留损伤敏感性。对工程实践而言，未来SHM系统必须说明哪些物理规律被保留、哪些域差异被校正、哪些结果可以被审计。它提示结构工程师，AI监测的价值不在“黑箱更准”，而在可解释、可迁移、可认证的运维决策链。",
-        "en": "This review stresses that the core SHM problem is not achieving high accuracy on one dataset, but retaining damage-sensitive information as geometry, material, temperature, humidity, traffic loading, and sensor drift change. In practice, future SHM systems must state which physical rules are preserved, which domain gaps are corrected, and which outputs remain auditable. The signal for structural engineers is that AI monitoring is valuable not because a black box is more accurate, but because it can support interpretable, transferable, and certifiable maintenance decisions."
+        "zh": "这篇论文的价值在于把传统PBEE从“地震后构件到什么损伤状态”推进到“资产多久恢复、恢复到什么水平、恢复路径有多不确定”。对结构工程师而言，这种框架改变了抗震评价的输出形式：不再只给一个需求-能力比或失效概率，而是把停运时间、功能退化、修复资源与服务恢复一并纳入决策。它非常契合医院、数据中心、桥梁枢纽和工业设施等关键基础设施，因为这些项目的业主真正关心的是业务连续性而非单一构件是否开裂。未来职业能力也会因此变化，工程师需要同时理解随机地震响应、损伤演化和运维恢复逻辑，才能把“安全”转化成可管理的韧性策略。",
+        "en": "The contribution of this paper is that it pushes traditional PBEE beyond the question of which damage state a component reaches after an earthquake. It brings recovery time, recovery level, and uncertainty in restoration pathways into the same probabilistic framework. For structural engineers, that changes the output of seismic assessment: instead of reporting only demand-capacity ratios or failure probabilities, the analysis can also inform downtime, functionality loss, repair resources, and service restoration. This matters particularly for hospitals, data centres, bridge hubs, and industrial facilities, where owners care about continuity of operations rather than whether one component cracked. The career implication is clear: engineers will need to understand stochastic seismic response, damage evolution, and recovery planning together if they want to translate safety into actionable resilience strategy."
       },
       "caveat": {
-        "zh": "综述提出清晰路线，但工程审批级部署仍需要现场验证、传感器质量控制和责任边界。",
-        "en": "The review gives a clear technical pathway, but approval-grade deployment still needs field validation, sensor quality control, and responsibility boundaries."
+        "zh": "统一框架并不自动等于可执行项目流程，真实应用仍依赖损伤数据库、修复工期参数和业主功能目标的高质量定义。",
+        "en": "A unified framework does not automatically produce a project-ready workflow. Practical use still depends on credible damage databases, repair-duration parameters, and well-defined owner performance objectives."
       },
-      "reference": "Zhang and Liang, Domain Adaptation in Structural Health Monitoring of Civil Infrastructure, arXiv:2512.18780, submitted 2025-12-21",
+      "reference": "Mazumder and Gardoni, Towards a generalized framework of performance-based earthquake engineering: Integrating reliability and resilience, arXiv:2606.12448, submitted 2026-05-30",
       "referenceLinks": [
         {
-          "label": "arXiv: Domain Adaptation in Structural Health Monitoring",
-          "url": "https://arxiv.org/abs/2512.18780"
+          "label": "arXiv: Integrating reliability and resilience in PBEE",
+          "url": "https://arxiv.org/abs/2606.12448"
         }
       ]
     },
     {
       "area": {
-        "zh": "基础设施数字孪生",
-        "en": "Infrastructure Digital Twins"
+        "zh": "低碳胶凝材料",
+        "en": "Low-Carbon Cementitious Materials"
       },
       "title": {
-        "zh": "真正可用的结构数字孪生不只是三维模型，而是观测、诊断和维修决策的闭环",
-        "en": "A useful structural digital twin is not a 3D model, but a loop linking observation, diagnosis, and maintenance decisions"
+        "zh": "主动学习贝叶斯优化正在改变低碳水泥试配，工程团队可以更早看到强度与碳的Pareto边界",
+        "en": "Active-learning Bayesian optimisation is changing low-carbon cement mix design by exposing strength-carbon Pareto limits earlier"
       },
       "evidence": {
-        "zh": "研究类型：土木结构数字孪生框架论文；方法：动态贝叶斯网络、序贯贝叶斯更新、降阶模型、深度学习诊断与维护策略优化。",
-        "en": "Evidence: civil-structure digital-twin framework using dynamic Bayesian networks, sequential Bayesian updating, reduced-order models, deep-learning diagnostics, and maintenance-policy optimisation."
+        "zh": "研究类型：2026年6月预印本；方法：在铜渣掺合胶凝体系中结合高斯过程回归与主动学习，用少量实验迭代逼近满足强度与碳约束的最优配比。",
+        "en": "Evidence: June 2026 preprint using Gaussian-process regression and active learning on copper-slag blended cement systems to approach optimal mixes under strength and carbon constraints."
       },
       "summary": {
-        "zh": "这篇结构数字孪生框架论文把传感数据、物理模型、诊断、预测和维护决策放进同一套动态系统，而不是把digital twin理解成一个漂亮的BIM模型。它对行业的启发是，桥梁和重要基础设施未来的运维价值来自持续更新的不确定性管理：传感器不是为了展示数据，而是为了改变检查频率、维修时机和预算优先级。对结构工程师来说，数字孪生能力最终会落到概率建模、资产风险和可解释决策。",
-        "en": "This structural digital-twin framework connects sensor data, physical models, diagnosis, prognosis, and maintenance decisions within one dynamic system, rather than treating a digital twin as a polished BIM model. The industry signal is that future bridge and infrastructure maintenance value will come from continuously updated uncertainty management: sensors are not for displaying data, but for changing inspection frequency, repair timing, and budget priority. For structural engineers, digital-twin competence ultimately becomes probabilistic modelling, asset risk, and explainable decision-making."
+        "zh": "这项研究对结构材料方向的启发非常直接：低碳混凝土不应再只靠经验试拌和线性回归去找“差不多可用”的配方，而应把实验预算当作优化问题来分配。作者展示了如何通过主动学习在有限轮次内逼近非支配解，把抗压强度、掺合料比例和二氧化碳强度放进同一决策空间。对工程师而言，这意味着未来材料选型会更像概率设计与多目标优化，而不是只在规范下限上做保守放大。谁能把统计学习、材料机理与工程验收条件结合起来，谁就更有能力把低碳目标转成可签字、可量产、可追溯的配比路线。",
+        "en": "The message for structural materials practice is direct: low-carbon concrete should no longer rely only on ad hoc trial batches and linear curve fitting to find a roughly acceptable mix. Experimental budget itself should be treated as an optimisation problem. The authors show how active learning can approach non-dominated solutions within limited iterations by placing compressive strength, replacement ratio, and carbon intensity in one decision space. For engineers, future material selection will therefore look more like probabilistic design and multi-objective optimisation than simple conservatism above code minima. Those who can combine statistical learning, material mechanisms, and acceptance criteria will be better positioned to turn carbon targets into signable, scalable, and traceable mix-design pathways."
       },
       "caveat": {
-        "zh": "论文案例偏方法展示，真实资产组合还需要数据治理、模型版本控制和业主维护流程配合。",
-        "en": "The cases are methodological demonstrations; real portfolios still need data governance, model version control, and owner maintenance workflows."
+        "zh": "该方法仍依赖数据质量和试验边界，跨原材料来源、养护制度与现场施工条件外推时必须重新校准。",
+        "en": "The method still depends heavily on dataset quality and experimental boundaries. Extrapolation across raw-material sources, curing regimes, and field construction conditions requires recalibration."
       },
-      "reference": "Torzoni et al., A digital twin framework for civil engineering structures, arXiv:2308.01445",
+      "reference": "Karadeniz et al., Active Learning-based Bayesian Optimization in Copper Slag-blended Cement Systems, arXiv:2606.21948, submitted 2026-06-20",
       "referenceLinks": [
         {
-          "label": "arXiv: A digital twin framework for civil engineering structures",
-          "url": "https://arxiv.org/abs/2308.01445"
+          "label": "arXiv: Active Learning-based Bayesian Optimization in Copper Slag-blended Cement Systems",
+          "url": "https://arxiv.org/abs/2606.21948"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "钢结构荷载组合：为什么中国、澳洲、美国和欧洲都用分项系数，但不能直接比较1.2G+1.5Q？",
-      "en": "Steel-design load combinations: why China, Australia, the US, and Europe all use factors, but 1.2G + 1.5Q cannot be compared directly"
+      "zh": "风压定义对比：为什么中国、澳洲、美国和欧洲都从风速出发，但设计风压公式看起来完全不同？",
+      "en": "Design wind pressure across codes: why China, Australia, the US, and Europe all start from wind speed but end up with very different-looking formulas"
     },
     "text": {
-      "zh": "中外结构设计都使用极限状态设计和分项系数，但荷载组合不是孤立公式。中国规范通常以永久荷载、可变荷载及其组合值系数组织承载能力极限状态；澳洲AS/NZS体系用permanent action、imposed action、wind action等组合表达；美国ASCE/ACI/AISC体系常用dead load、live load、wind、earthquake以及强度设计组合；欧洲EN 1990则用actions、partial factors和combination factors形成设计效应。看起来都是“放大荷载”，实际差异在于荷载统计定义、主导可变作用、组合值系数、抗力分项系数或强度折减系数的位置。跨规范复核时，不能只比较1.2、1.5、1.6这些数字，而要比较完整可靠度校准路径。",
-      "en": "Structural codes in China and internationally all use limit-state design and partial factors, but a load combination is not an isolated formula. Chinese practice organises ultimate limit states around permanent actions, variable actions, and combination-value factors. AS/NZS language uses permanent, imposed, wind, and other actions. US ASCE/ACI/AISC practice commonly frames strength combinations through dead, live, wind, and earthquake loads. EN 1990 uses actions, partial factors, and combination factors to obtain design effects. Although all appear to amplify loads, the real differences lie in load statistics, leading variable action, combination factors, and whether reliability calibration is placed on action factors, resistance factors, or strength-reduction factors. Cross-code review should compare the full calibration pathway, not just 1.2, 1.5, or 1.6."
+      "zh": "风荷载课堂里最容易被误解的一点，是把不同规范里的风压公式当成同一个伯努利表达式的简单换皮。实际上，中国、澳洲、美国和欧洲虽然都从风速引出压力效应，但它们把地形、阵风、方向性、湍流、体型系数、重现期与可靠度校准放在了不同位置。中国GB 50009更强调把基本风压与高度变化、体型和风振系数串联成结构标准值；美国ASCE/SEI 7则把速度压力写成一组显式修正系数；澳洲和欧洲体系则更明显地区分基础风速、场地暴露、地形和峰值压力概念。跨规范复核时，不能只看0.613、0.5或某个系数乘积是否相近，而要先问：采用的风速定义是什么、阵风时间尺度是什么、风压是平均值还是峰值、体型效应在哪一步进入，以及可靠度储备放在荷载侧还是构件验算侧。",
+      "en": "One of the most common misunderstandings in wind design is to treat code pressure formulas as simple cosmetic rewrites of the Bernoulli relation. In reality, China, Australia, the US, and Europe all begin with wind speed, but they place terrain, gust effects, directionality, turbulence, shape factors, return period, and reliability calibration in different parts of the calculation. GB 50009 tends to assemble standard wind action from basic wind pressure together with height, shape, and vibration modifiers. ASCE/SEI 7 writes velocity pressure through a set of explicit factors. Australian and European practice more clearly separates basic wind speed, exposure, topography, and peak-pressure ideas. In cross-code review, engineers should not focus only on whether 0.613, 0.5, or a coefficient product looks numerically similar. They should first ask how wind speed is defined, what gust duration is embedded, whether the pressure is mean or peak, where aerodynamic shape enters, and whether the safety margin is carried on the action side or in later member checks."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "荷载名称",
-          "en": "Load terminology"
+          "zh": "风速不是同一种风速",
+          "en": "Wind speed is not the same wind speed"
         },
         "text": {
-          "zh": "中国常写永久荷载G、可变荷载Q；澳洲和欧洲更多使用actions；美国常写dead load D和live load L。名称差异反映的是统计模型和组合规则，不只是翻译差异。",
-          "en": "Chinese documents commonly use permanent load G and variable load Q; Australia and Europe more often use actions; US documents use dead load D and live load L. The terminology reflects statistical models and combination rules, not translation alone."
+          "zh": "不同规范中的基本风速可能对应不同重现期、阵风持续时间和场地定义。即使数值相同，背后的统计含义也可能不同，因此不能直接代入别国公式。",
+          "en": "Basic wind speed can represent different return periods, gust durations, and exposure definitions across codes. The same numerical speed does not necessarily carry the same statistical meaning, so direct substitution is unsafe."
         }
       },
       {
         "label": {
-          "zh": "组合逻辑",
-          "en": "Combination logic"
+          "zh": "风压修正项分布位置不同",
+          "en": "Pressure modifiers sit in different places"
         },
         "text": {
-          "zh": "不同体系都会区分主导可变作用和伴随可变作用。伴随作用通常通过组合值系数降低，这是因为多个最大可变作用同时达到极值的概率较低。",
-          "en": "Different systems distinguish the leading variable action from accompanying variable actions. Accompanying actions are usually reduced by combination factors because several variable actions are unlikely to reach their extreme values simultaneously."
+          "zh": "中国常把高度变化、体型和风振影响乘在基本风压上；美国把暴露、高度、地形和方向性写进速度压力；欧洲与澳洲则更强调峰值压力与场地效应分层表达。",
+          "en": "Chinese practice often multiplies height, shape, and vibration effects onto basic wind pressure. US practice embeds exposure, height, topography, and directionality in velocity pressure. European and Australian methods more explicitly layer peak-pressure and site-effect concepts."
         }
       },
       {
         "label": {
-          "zh": "可靠度位置",
-          "en": "Where reliability enters"
+          "zh": "数值接近不等于可靠度相同",
+          "en": "Similar numbers do not mean equal reliability"
         },
         "text": {
-          "zh": "有些可靠度校准体现在荷载分项系数，有些体现在材料或抗力分项系数，有些还通过强度折减系数实现。只比较荷载组合会漏掉抗力侧的安全储备。",
-          "en": "Some reliability calibration appears in load factors, some in material or resistance factors, and some through strength-reduction factors. Comparing load combinations alone misses the safety margin on the resistance side."
+          "zh": "两个规范算出接近的kPa，并不代表它们对极值风气候、阵风放大、构件验算和安全储备的处理相同。可靠度比较必须看完整校准路径。",
+          "en": "Two codes can produce similar kPa values while still treating extreme winds, gust amplification, member checks, and safety reserve differently. Reliability comparison requires the full calibration pathway."
         }
       }
     ],
     "takeaway": {
-      "zh": "跨规范比较荷载组合时，先把G/D、Q/L、actions、组合值系数和抗力侧系数放进同一张表，再讨论哪个体系更保守。否则很容易把公式外观误读成可靠度水平。",
-      "en": "When comparing load combinations across codes, first place G/D, Q/L, actions, combination factors, and resistance-side factors in the same table. Only then discuss which system is more conservative. Otherwise, formula appearance is easily mistaken for reliability level."
+      "zh": "跨规范比较风荷载时，先把风速定义、暴露/地形修正、体型系数、峰值概念和构件验算侧安全储备列在同一张表，再讨论哪个公式“更大”。否则很容易把表达形式差异误读成风险差异。",
+      "en": "When comparing wind actions across codes, first place wind-speed definition, exposure or terrain modifiers, shape coefficients, peak-pressure concept, and member-check safety reserve in the same table. Only then discuss which formula is larger. Otherwise, formatting differences are easily mistaken for risk differences."
     },
     "example": {
       "title": {
-        "zh": "实例：同一简单楼面，1.35G+1.5Q 与 1.2D+1.6L 为什么不能只看系数大小？",
-        "en": "Example: for the same floor, why 1.35G + 1.5Q and 1.2D + 1.6L cannot be judged by factors alone"
+        "zh": "实例：同样取40 m/s风速，为何物理压力、美国速度压力和中国标准风荷载都接近1 kPa，却不能直接互换？",
+        "en": "Example: with the same 40 m/s speed, why physical pressure, US velocity pressure, and Chinese standard wind action all sit near 1 kPa but still cannot be swapped"
       },
       "intro": {
-        "zh": "假设永久作用 G = D = 5.0 kPa，可变作用 Q = L = 3.0 kPa。这里只做荷载效应量级比较，不涉及构件抗力、材料分项系数、强度折减系数或不同规范的完整可靠度校准。",
-        "en": "Assume permanent/dead action G = D = 5.0 kPa and variable/live action Q = L = 3.0 kPa. This is only a load-effect magnitude comparison; it does not include member resistance, material factors, strength-reduction factors, or the full reliability calibration of each code."
+        "zh": "先做一个只看量级的演示。取空气密度ρ = 1.2 kg/m³、风速V = 40 m/s；对美国公式临时令Kz = Kzt = Kd = I = 1.0；对中国公式临时取βz = 1.0、μs = 1.3、μz = 1.2、w0 = 0.65 kPa。这个算例只说明表达逻辑，不代表任何具体地点、具体重现期或完整构件验算。",
+        "en": "Start with a magnitude-only illustration. Take air density ρ = 1.2 kg/m³ and wind speed V = 40 m/s. For the US equation, temporarily set Kz = Kzt = Kd = I = 1.0. For the Chinese expression, temporarily take βz = 1.0, μs = 1.3, μz = 1.2, and w0 = 0.65 kPa. This example is only for explaining formula structure. It does not represent any specific site, return period, or full member check."
       },
       "equations": [
         {
           "label": {
-            "zh": "欧洲持久设计状况示意",
-            "en": "Eurocode persistent-design illustration"
+            "zh": "伯努利动力压关系",
+            "en": "Bernoulli dynamic-pressure relation"
           },
-          "formula": "Ed = 1.35Gk + 1.5Qk",
+          "formula": "q = 0.5ρV²",
           "formulaTokens": [
             {
-              "var": "E"
+              "var": "q"
+            },
+            {
+              "text": " = 0.5"
+            },
+            {
+              "var": "ρ"
+            },
+            {
+              "var": "V"
+            },
+            {
+              "sup": "2"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：基于伯努利动力压关系；非规范编号公式，只用于说明风速与压力的物理联系。",
+            "en": "Derived relation: based on the Bernoulli dynamic-pressure relation; not a numbered code equation and used only to show the physical link between speed and pressure."
+          },
+          "result": {
+            "zh": "q = 0.5 × 1.2 × 40² = 960 Pa = 0.96 kPa。",
+            "en": "q = 0.5 × 1.2 × 40² = 960 Pa = 0.96 kPa."
+          }
+        },
+        {
+          "label": {
+            "zh": "美国速度压力示意",
+            "en": "US velocity-pressure illustration"
+          },
+          "formula": "qz = 0.613KzKztKdV²I",
+          "formulaTokens": [
+            {
+              "var": "q"
+            },
+            {
+              "sub": "z"
+            },
+            {
+              "text": " = 0.613"
+            },
+            {
+              "var": "K"
+            },
+            {
+              "sub": "z"
+            },
+            {
+              "var": "K"
+            },
+            {
+              "sub": "zt"
+            },
+            {
+              "var": "K"
             },
             {
               "sub": "d"
             },
             {
-              "text": " = 1.35"
+              "var": "V"
             },
             {
-              "var": "G"
+              "sup": "2"
+            },
+            {
+              "var": "I"
+            }
+          ],
+          "citation": {
+            "zh": "规范出处：ASCE/SEI 7-22，式(26.10-1)；此处仅为SI制速度压力结构示意。",
+            "en": "Code reference: ASCE/SEI 7-22, Eq. (26.10-1); shown here only as the SI velocity-pressure structure."
+          },
+          "result": {
+            "zh": "当Kz = Kzt = Kd = I = 1.0时，qz = 0.613 × 40² = 980.8 Pa = 0.981 kPa。",
+            "en": "With Kz = Kzt = Kd = I = 1.0, qz = 0.613 × 40² = 980.8 Pa = 0.981 kPa."
+          }
+        },
+        {
+          "label": {
+            "zh": "中国标准风荷载示意",
+            "en": "Chinese standard wind-action illustration"
+          },
+          "formula": "wk = βzμsμzw0",
+          "formulaTokens": [
+            {
+              "var": "w"
             },
             {
               "sub": "k"
             },
             {
-              "text": " + 1.5"
+              "text": " = "
             },
             {
-              "var": "Q"
+              "var": "β"
             },
             {
-              "sub": "k"
+              "sub": "z"
+            },
+            {
+              "var": "μ"
+            },
+            {
+              "sub": "s"
+            },
+            {
+              "var": "μ"
+            },
+            {
+              "sub": "z"
+            },
+            {
+              "var": "w"
+            },
+            {
+              "sub": "0"
             }
           ],
           "citation": {
-            "zh": "规范出处：EN 1990:2002+A1:2005，式(6.10)及Table A1.2(B)；此处只取单一可变作用示意。",
-            "en": "Code reference: EN 1990:2002+A1:2005, Eq. (6.10) and Table A1.2(B); simplified here for one variable action."
+            "zh": "规范出处：GB 50009-2012，风荷载标准值表达式示意；此处仅用于说明基本风压、体型、高度与风振修正的组合逻辑。",
+            "en": "Code reference: GB 50009-2012, illustrative expression for standard wind action; used here only to show how basic pressure, shape, height, and vibration effects are assembled."
           },
           "result": {
-            "zh": "Ed = 1.35 × 5.0 + 1.5 × 3.0 = 11.25 kPa。",
-            "en": "Ed = 1.35 × 5.0 + 1.5 × 3.0 = 11.25 kPa."
-          }
-        },
-        {
-          "label": {
-            "zh": "美国强度组合示意",
-            "en": "US strength-combination illustration"
-          },
-          "formula": "U = 1.2D + 1.6L",
-          "formulaTokens": [
-            {
-              "var": "U"
-            },
-            {
-              "text": " = 1.2"
-            },
-            {
-              "var": "D"
-            },
-            {
-              "text": " + 1.6"
-            },
-            {
-              "var": "L"
-            }
-          ],
-          "citation": {
-            "zh": "规范出处：ASCE/SEI 7-22，第2.3节强度设计荷载组合，常用重力组合形式。",
-            "en": "Code reference: ASCE/SEI 7-22, Section 2.3 strength design load combinations, common gravity-load combination form."
-          },
-          "result": {
-            "zh": "U = 1.2 × 5.0 + 1.6 × 3.0 = 10.8 kPa。",
-            "en": "U = 1.2 × 5.0 + 1.6 × 3.0 = 10.8 kPa."
-          }
-        },
-        {
-          "label": {
-            "zh": "差值不能直接等于安全差",
-            "en": "Difference is not safety difference"
-          },
-          "formula": "ΔE = 11.25 − 10.8",
-          "formulaTokens": [
-            {
-              "var": "ΔE"
-            },
-            {
-              "text": " = 11.25 − 10.8"
-            }
-          ],
-          "citation": {
-            "zh": "推导关系：两个示意荷载效应相减；非规范公式，不能代表体系可靠度差异。",
-            "en": "Derived relation: subtraction of two illustrative load effects; not a code equation and not a measure of system reliability difference."
-          },
-          "result": {
-            "zh": "ΔE = 0.45 kPa，约为美国示意组合的4.2%。但这个差值没有包含抗力侧分项系数、材料强度定义、组合值系数和构件设计公式，因此不能直接说某体系安全4.2%。",
-            "en": "ΔE = 0.45 kPa, about 4.2% of the US illustrative combination. This does not include resistance-side factors, material-strength definitions, combination factors, or member-design equations, so it cannot mean one system is 4.2% safer."
+            "zh": "当βz = 1.0、μs = 1.3、μz = 1.2、w0 = 0.65 kPa时，wk = 1.014 kPa。",
+            "en": "With βz = 1.0, μs = 1.3, μz = 1.2, and w0 = 0.65 kPa, wk = 1.014 kPa."
           }
         }
       ],
       "note": {
-        "zh": "这个算例的目的，是说明荷载组合比较必须和抗力设计一起看。工程复核时应同时列出荷载定义、组合系数、材料强度定义、抗力分项系数或φ系数，以及适用极限状态。",
-        "en": "The purpose of this example is to show that load-combination comparison must be read together with resistance design. A proper review should list load definitions, combination factors, material-strength definitions, resistance or φ factors, and applicable limit states together."
+        "zh": "三个结果都接近1 kPa，但这不表示三种体系对同一建筑、同一场地、同一重现期给出相同风险水平。真正的复核还必须把风速统计定义、场地类别、阵风时间尺度、体型系数、动力放大和构件抗力验算一起放进同一条设计链。",
+        "en": "All three results sit near 1 kPa, but that does not mean the three systems assign the same risk level to the same building, site, or return period. A real review must also align wind-speed statistics, exposure class, gust duration, shape effects, dynamic amplification, and resistance-side member checks in one design chain."
       }
     },
-    "references": "EN 1990:2002+A1:2005; ASCE/SEI 7-22; GB 50068 and GB 50009 reliability/load combination principles; AS/NZS 1170.0",
+    "references": "GB 50009-2012 wind-load framework; ASCE/SEI 7-22 Eq. (26.10-1); AS/NZS 1170.2:2021 wind actions framework; EN 1991-1-4:2005+A1:2010 wind actions framework",
     "referenceLinks": [
-      {
-        "label": "European Commission JRC: EN 1990 Basis of structural design",
-        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-basis-structural-design"
-      },
       {
         "label": "ASCE 7 Hazard Tool",
         "url": "https://ascehazardtool.org/"
       },
       {
-        "label": "Standards Australia: AS/NZS 1170.0",
-        "url": "https://store.standards.org.au/product/as-nzs-1170-0-2002"
+        "label": "Standards Australia: AS/NZS 1170.2:2021",
+        "url": "https://store.standards.org.au/product/as-nzs-1170-2-2021"
+      },
+      {
+        "label": "European Commission JRC: Eurocode wind actions",
+        "url": "https://eurocodes.jrc.ec.europa.eu/showpage.php?id=138"
       }
     ]
   }
