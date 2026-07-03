@@ -8,18 +8,21 @@ Publication week: 2026-07-03 to 2026-07-10
 
 | Rank | Source | Candidate | URL | Status |
 | ---: | --- | --- | --- | --- |
-| 1 | Woollahra Council | Symphony of Stories Scavenger Hunt | https://www.woollahra.nsw.gov.au/Events/Symphony-of-Stories-Scavenger-Hunt | Main card |
-| 2 | Blacktown City Council | NAIDOC Events 2026 | https://www.blacktown.nsw.gov.au/Events-and-activities/NAIDOC-Events-2026 | Main card |
-| 3 | Blacktown City Council | Junior Tennis Clinic July 2026 | https://www.blacktown.nsw.gov.au/Events-and-activities/Junior-Tennis-Holiday-Clinic-July-2026 | Main card |
-| 4 | Strathfield Council | School Holidays July Programs 2026 | https://www.strathfield.nsw.gov.au/Play/Events-Calendar/Copy-of-School-Holidays-July-Programs-2026 | Main card |
-| 5 | Ku-ring-gai Council | Toddler Storytime at St Ives | https://www.krg.nsw.gov.au/Things-to-do/Whats-on/Toddler-storytime-St-Ives-Fridays-2026 | Main card |
+| 1 | City of Parramatta / AtParramatta | Midwinter Festival | https://atparramatta.com/whats-on/midwinter-festival | Main card |
+| 2 | The Rocks | NAIDOC Week - Giba-Nura Aboriginal Cultural Tour | https://www.therocks.com/whats-on | Main card |
+| 3 | Blacktown City Council | NAIDOC Events 2026 | https://www.blacktown.nsw.gov.au/Events-and-activities/NAIDOC-Events-2026 | Main card |
+| 4 | Blacktown City Council | Junior Tennis Clinic July 2026 | https://www.blacktown.nsw.gov.au/Events-and-activities/Junior-Tennis-Holiday-Clinic-July-2026 | Main card |
+| 5 | Strathfield Council | School Holidays July Programs 2026 | https://www.strathfield.nsw.gov.au/Play/Events-Calendar/Copy-of-School-Holidays-July-Programs-2026 | Main card |
 | 6 | Woollahra Council | Holdsworth Woollahra Playgroup | https://www.woollahra.nsw.gov.au/Events/Holdsworth-Woollahra-Playgroup-Term-2 | Main card |
-| 7 | Blacktown City Council / Eventbrite | Winter School Holidays: Weaving Craft | https://www.blacktown.nsw.gov.au/Eventbrite/Winter-School-Holidays-Weaving-craft-ages-9-12-1989965747118 | Main card |
+| 7 | Penrith City Council | Penrith NAIDOC Event | https://www.penrithcity.nsw.gov.au/upcoming-events/naidoc | Main card |
 | 8 | Harry Potter: The Exhibition Sydney | Harry Potter: The Exhibition Sydney | https://harrypotterexhibition.com/locations/sydney/ | Ongoing main card |
-| 9 | Powerhouse Museum | Powerhouse Program | https://powerhouse.com.au/program | More link |
-| 10 | Australian Museum | Australian Museum What's On | https://australian.museum/whats-on/ | More link |
-| 11 | Sydney Opera House | Kids and Families | https://www.sydneyoperahouse.com/kids-families | More link |
-| 12 | Darling Harbour | What's On | https://www.darlingharbour.com/whats-on | More link |
+| 9 | Woollahra Council / Libraries | Symphony of Stories Scavenger Hunt | https://www.woollahra.nsw.gov.au/Events/Symphony-of-Stories-Scavenger-Hunt | More link - library rule |
+| 10 | Ku-ring-gai Council / Library | Toddler Storytime at St Ives | https://www.krg.nsw.gov.au/Things-to-do/Whats-on/Toddler-storytime-St-Ives-Fridays-2026 | More link - library rule |
+| 11 | Blacktown City Council / Libraries | Winter School Holidays: Weaving Craft | https://www.blacktown.nsw.gov.au/Eventbrite/Winter-School-Holidays-Weaving-craft-ages-9-12-1989965747118 | More link - library rule |
+| 12 | City of Parramatta / AtParramatta | What's On | https://atparramatta.com/whats-on | More link |
+| 13 | Darling Harbour | Darling Square / Darling Quarter | https://www.darlingharbour.com/precincts/darling-square | More link |
+
+Sydney source expansion added today: City of Parramatta / AtParramatta, The Rocks, Darling Square / Darling Quarter and Penrith City Council are fixed search sources for the weekly run. Library/storytime/rhyme-time/book-club items are retained only in More.
 
 ## Melbourne
 

@@ -38,6 +38,12 @@ function isFreshLeadEvent(event) {
   return /\b(mon|tue|wed|thu|fri|sat|sun|monday|tuesday|wednesday|thursday|friday|saturday|sunday|\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)|\d{1,2}\s*-\s*\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec))\b|周[一二三四五六日天]|星期[一二三四五六日天]|\d+月\d+日/.test(text);
 }
 
+const libraryActivityPattern = /\b(library|libraries|storytime|story time|rhyme time|baby rhyme|book club)\b|\u56fe\u4e66\u9986|\u6545\u4e8b\u4f1a/i;
+
+function isLibraryActivity(event) {
+  return libraryActivityPattern.test(Object.values(event || {}).join(" "));
+}
+
 async function readData() {
   const bytes = await readFile(dataPath);
   const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
@@ -74,6 +80,10 @@ async function readData() {
     if (oldYear) throw new Error(`events[${index}] contains old year ${oldYear}`);
     if (/Client Challenge|JavaScript is disabled|outdated browser|required part of this site|Enfield Council Cham|Corrard\/Haeremai|Industrial Chemists/i.test(qualityText)) {
       throw new Error(`events[${index}] contains scraper noise instead of event content`);
+    }
+
+    if (isLibraryActivity(event)) {
+      throw new Error(`events[${index}] is a library/storytime/rhyme-time activity and must be in More, not main cards`);
     }
     if (/\bSpring Festival 2024\b|\b5 June 1937\b/i.test(qualityText)) {
       throw new Error(`events[${index}] contains known stale content`);

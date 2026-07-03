@@ -68,6 +68,8 @@ const cityConfigs = [
     sources: [
       { name: "City of Sydney", url: "https://whatson.cityofsydney.nsw.gov.au/categories/kids-and-family", tier: "A" },
       { name: "Darling Harbour", url: "https://www.darlingharbour.com/whats-on", tier: "B" },
+      { name: "Darling Square / Darling Quarter", url: "https://www.darlingharbour.com/precincts/darling-square", tier: "B" },
+      { name: "The Rocks", url: "https://www.therocks.com/whats-on", tier: "B" },
       { name: "Sydney Opera House", url: "https://www.sydneyoperahouse.com/kids-families", tier: "B" },
       { name: "Australian Museum", url: "https://australian.museum/whats-on/", tier: "B" },
       { name: "Powerhouse Museum", url: "https://powerhouse.com.au/program", tier: "B" },
@@ -88,7 +90,7 @@ const cityConfigs = [
       { name: "Mosman Council", url: "https://www.mosman.nsw.gov.au/events", tier: "A" },
       { name: "Woollahra Council", url: "https://www.woollahra.nsw.gov.au/Events", tier: "A" },
       { name: "Randwick", url: "https://www.randwick.nsw.gov.au/about-council/news/events", tier: "A" },
-      { name: "Parramatta", url: "https://atparramatta.com/whats-on", tier: "A" },
+      { name: "City of Parramatta", url: "https://atparramatta.com/whats-on", tier: "A" },
       { name: "Canada Bay", url: "https://www.canadabay.nsw.gov.au/lifestyle/events", tier: "A" },
       { name: "Burwood Council", url: "https://www.burwood.nsw.gov.au/For-Residents/Events-and-Activities", tier: "A" },
       { name: "City of Ryde", url: "https://www.ryde.nsw.gov.au/Events", tier: "A" },
@@ -130,6 +132,7 @@ const rejectKeywords = ["whisky", "wine", "cocktail", "bar", "18+", "adults only
 const genericTitlePattern = /^(free|program|event|family and kids|kindergarten|playgroups?|support for parents|child and family hub)$/i;
 const scraperNoisePattern = /Client Challenge|JavaScript is disabled|outdated browser|required part of this site|Enfield Council Cham|Corrard\/Haeremai|Industrial Chemists/i;
 const staleContentPattern = /\bSpring Festival 2024\b|\b5 June 1937\b/i;
+const libraryActivityPattern = /\b(library|libraries|storytime|story time|rhyme time|baby rhyme|book club)\b|图书馆|故事会/i;
 
 function isGenericTitle(title = "") {
   return genericTitlePattern.test(String(title).trim());
@@ -149,10 +152,16 @@ function isBadCandidate(candidate) {
   return false;
 }
 
+function isLibraryActivity(eventOrCandidate) {
+  const text = Object.values(eventOrCandidate || {}).join(" ");
+  return libraryActivityPattern.test(text);
+}
+
 function isValidEvent(event) {
   const titles = [event?.titleZh || "", event?.titleEn || ""].map((value) => String(value).trim());
   const text = Object.values(event || {}).join(" ");
   if (!event?.url || !/^https?:\/\//i.test(event.url)) return false;
+  if (isLibraryActivity(event)) return false;
   if (titles.some(isGenericTitle)) return false;
   if (scraperNoisePattern.test(text) || staleContentPattern.test(text)) return false;
   if (containsOldYear(text)) return false;
@@ -277,8 +286,8 @@ async function enrichWithOpenAI(candidates, city) {
     body: JSON.stringify({
       model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       input: [
-        { role: "system", content: `Create accurate bilingual family event JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including referenceEn. If a fact is missing, say 'See official page'. Never invent details. Exclude expired events. The first 4 cards must be newly found or newly starting current-week activities with concrete dates, especially one-off or short-date events. Put ongoing long-run exhibitions, venue entrances, and recurring backup activities after the first 4.` },
-        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 kid-friendly ${city} activities active during this Friday-to-Friday week. Delete expired events, add the newest relevant activities, and ensure cards 1-4 are new or short-date activities from the current weekly search with concrete dates. Place still-running ongoing activities, venue directory pages, and long-run exhibitions at card 5 or later. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
+        { role: "system", content: `Create accurate bilingual family event JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including referenceEn. If a fact is missing, say 'See official page'. Never invent details. Exclude expired events. Library, storytime, rhyme time, and book-club activities must not be selected for the 8 main cards; leave them for More links. The first 4 cards must be newly found or newly starting current-week activities with concrete dates, especially one-off or short-date events. Put ongoing long-run exhibitions, venue entrances, and recurring backup activities after the first 4.` },
+        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 kid-friendly ${city} activities active during this Friday-to-Friday week. Delete expired events, add the newest relevant activities, and ensure cards 1-4 are new or short-date activities from the current weekly search with concrete dates. Do not include library/storytime/rhyme-time/book-club activities in the 8 main cards; they belong in More links only. Place still-running ongoing activities, venue directory pages, and long-run exhibitions at card 5 or later. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
       ],
       text: { format: { type: "json_object" } }
     })
@@ -294,16 +303,16 @@ async function enrichWithOpenAI(candidates, city) {
 }
 
 function fallbackEvents(candidates, city) {
-  return candidates.filter((candidate) => !isBadCandidate(candidate)).slice(0, 8).map((candidate) => ({
-    tagZh: `${candidate.source} · 亲子`, tagEn: `${candidate.source} · Family`,
+  return candidates.filter((candidate) => !isBadCandidate(candidate) && !isLibraryActivity(candidate)).slice(0, 8).map((candidate) => ({
+    tagZh: `${candidate.source} - \u4eb2\u5b50`, tagEn: `${candidate.source} - Family`,
     titleZh: candidate.title, titleEn: candidate.title,
-    summaryZh: `来自 ${city} 官方活动来源的亲子友好候选。出发前请点击官网确认最新时间、票价和年龄要求。`,
+    summaryZh: `\u6765\u81ea ${city} \u5b98\u65b9\u6d3b\u52a8\u6765\u6e90\u7684\u4eb2\u5b50\u53cb\u597d\u5019\u9009\u3002\u51fa\u53d1\u524d\u8bf7\u70b9\u51fb\u5b98\u7f51\u786e\u8ba4\u6700\u65b0\u65f6\u95f4\u3001\u7968\u4ef7\u548c\u5e74\u9f84\u8981\u6c42\u3002`,
     summaryEn: summarizeFallback(candidate, city),
     timeZh: extractDate(candidate.detailText), timeEn: extractDate(candidate.detailText),
     placeZh: candidate.source, placeEn: candidate.source,
     priceZh: extractPrice(candidate.detailText), priceEn: extractPrice(candidate.detailText),
     url: candidate.url, mapQuery: `${candidate.source} ${city}`,
-    referenceZh: `${candidate.source} 官方活动页面。`, referenceEn: `${candidate.source} official event listing.`
+    referenceZh: `${candidate.source} \u5b98\u65b9\u6d3b\u52a8\u9875\u9762\u3002`, referenceEn: `${candidate.source} official event listing.`
   }));
 }
 
@@ -314,13 +323,14 @@ function esc(value) {
 function renderEvent(event, index) {
   const [accent, soft] = accents[index % accents.length];
   const featured = index === 0 ? " featured" : "";
+  const score = index < 3 ? "4/5" : "3/5";
   const map = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.mapQuery || event.placeEn || event.titleEn)}`;
   return `        <article class="card${featured}" style="--accent:${accent};--accent-soft:${soft};">
-          <div class="card-top"><span class="tag zh">${esc(event.tagZh)}</span><span class="tag en">${esc(event.tagEn)}</span><span class="score">${index < 3 ? "★★★★★" : "★★★★☆"}</span></div>
+          <div class="card-top"><span class="tag zh">${esc(event.tagZh)}</span><span class="tag en">${esc(event.tagEn)}</span><span class="score">${score}</span></div>
           <h2><span class="zh">${esc(event.titleZh)}</span><span class="en">${esc(event.titleEn)}</span></h2>
           <p class="summary zh">${esc(event.summaryZh)}</p><p class="summary en">${esc(event.summaryEn)}</p>
-          <div class="facts"><div class="fact"><span>⏰</span><span class="zh">${esc(event.timeZh)}</span><span class="en">${esc(event.timeEn)}</span></div><div class="fact"><span>📍</span><span class="zh">${esc(event.placeZh)}</span><span class="en">${esc(event.placeEn)}</span></div><div class="fact"><span>🎟️</span><span class="zh">${esc(event.priceZh)}</span><span class="en">${esc(event.priceEn)}</span></div></div>
-          <div class="actions"><a class="action primary" href="${esc(event.url)}" target="_blank" rel="noreferrer"><span class="zh">官网</span><span class="en">Official</span></a><a class="action" href="${esc(map)}" target="_blank" rel="noreferrer"><span class="zh">导航</span><span class="en">Map</span></a></div>
+          <div class="facts"><div class="fact"><span>Time</span><span class="zh">${esc(event.timeZh)}</span><span class="en">${esc(event.timeEn)}</span></div><div class="fact"><span>Place</span><span class="zh">${esc(event.placeZh)}</span><span class="en">${esc(event.placeEn)}</span></div><div class="fact"><span>Cost</span><span class="zh">${esc(event.priceZh)}</span><span class="en">${esc(event.priceEn)}</span></div></div>
+          <div class="actions"><a class="action primary" href="${esc(event.url)}" target="_blank" rel="noreferrer"><span class="zh">&#23448;&#32593;</span><span class="en">Official</span></a><a class="action" href="${esc(map)}" target="_blank" rel="noreferrer"><span class="zh">&#23548;&#33322;</span><span class="en">Map</span></a></div>
           <div class="reference"><b>Reference:</b> <span class="zh">${esc(event.referenceZh)}</span><span class="en">${esc(event.referenceEn)}</span></div>
         </article>`;
 }
@@ -343,11 +353,11 @@ function renderMoreGroups(moreLinks) {
   const fallbackBackupLinks = moreLinks.filter((item) => !currentUrls.has(item.url) && !backupLinks.some((backup) => backup.url === item.url)).slice(0, 3 - backupLinks.length);
   const sourceLinks = [...backupLinks, ...fallbackBackupLinks];
   return `          <div class="more-group">
-            <p class="more-heading"><span aria-hidden="true">📌</span><span class="zh">本周候选</span><span class="en">More this week</span></p>
+            <p class="more-heading"><span aria-hidden="true">+</span><span class="zh">\u66f4\u591a\u5019\u9009</span><span class="en">More this week</span></p>
 ${currentLinks.map(renderMoreLink).join("\n")}
           </div>
           <div class="more-group">
-            <p class="more-heading"><span aria-hidden="true">🗂️</span><span class="zh">备用入口</span><span class="en">Backup sources</span></p>
+            <p class="more-heading"><span aria-hidden="true">+</span><span class="zh">\u5907\u7528\u5165\u53e3</span><span class="en">Backup sources</span></p>
 ${sourceLinks.map(renderMoreLink).join("\n")}
           </div>`;
 }
