@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-03",
+  "date": "2026-07-04",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,84 +7,76 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "电网监管",
-        "en": "Grid Regulation"
+        "zh": "半导体集群",
+        "en": "Semiconductor Clusters"
       },
       "title": {
-        "zh": "FERC把数据中心并网规则推入60天时限，算力建设开始真正受电网治理约束",
-        "en": "FERC's 60-day grid deadline puts data-centre growth under explicit interconnection governance"
+        "zh": "韩国把800万亿韩元芯片西南集群推上日程，AI供应链竞争正在变成电力、水和人才的区域工程",
+        "en": "South Korea's 800 trillion won southwest chip hub shows AI supply-chain competition becoming a regional engineering race for power, water, and talent"
       },
       "summary": {
-        "zh": "《金融时报》7月2日报道，美国联邦能源监管委员会要求六家区域电网运营机构在60天内解释或修订大型数据中心接入规则；美联社回顾称，这一动作源自6月18日的正式命令。更关键的行业信号是，算力扩张不再只是拿地和拿设备的问题，而是进入了电网成本分摊、自备电源、需求响应与排队治理都要前置谈判的基础设施监管阶段。",
-        "en": "The Financial Times reported on July 2 that the U.S. Federal Energy Regulatory Commission has given six regional grid operators 60 days to justify or revise how large data centres connect to the grid, while the Associated Press noted that the move follows FERC's formal June 18 order. The deeper industry signal is that compute expansion is no longer only a land-and-hardware story. It is entering an infrastructure-governance phase in which cost allocation, behind-the-meter supply, demand response, and queue discipline must be negotiated up front."
+        "zh": "美联社6月30日报道，三星电子与SK海力士将合计投资约800万亿韩元，在韩国西南部建设新的半导体制造集群，以承接AI带动的全球芯片需求。更重要的行业信号不是单笔资本开支，而是先进算力供应链正在越来越像大型基础设施工程：只有把超纯水、电力接入、封装配套、交通物流和技能人才同步组织起来，晶圆厂扩张才能真正转化为可交付产能。",
+        "en": "The Associated Press reported on June 30 that Samsung Electronics and SK hynix plan to invest a combined 800 trillion won in a new semiconductor manufacturing hub in southwest South Korea to serve AI-driven global chip demand. The deeper signal is not the headline capital spend alone. Advanced-compute supply chains are increasingly behaving like large infrastructure programmes in which ultra-pure water, grid access, packaging support, logistics, and skilled labour all have to be organised together before fab expansion becomes deliverable capacity."
       },
       "watch": {
-        "zh": "下一步要看区域电网是否把大负荷接入要求固化为更严格的费用承诺、削峰义务与自供电条件，以及这会否重排美国数据中心选址逻辑。",
-        "en": "Watch whether regional operators harden large-load connection rules into stricter financial commitments, curtailment obligations, and self-supply conditions, and whether that reshapes U.S. data-centre siting logic."
+        "zh": "后续重点看西南区域能否同步解决电力、用水、交通和后段制造配套，否则宣布的资本开支未必能按AI需求节奏兑现为稳定产能。",
+        "en": "Watch whether the southwest corridor can deliver power, water, transport, and back-end manufacturing support on the same timetable, otherwise the announced investment may not convert into stable AI-era output at the required pace."
       },
-      "reference": "Financial Times, US energy regulator sets ultimatum for data centres, published 2026-07-02; Associated Press, Federal regulators order grid operators to speed power to energy-hungry AI data centers, published 2026-06-18",
+      "reference": "Associated Press, South Korean tech giants to build a $518 billion chipmaking hub to serve soaring AI demand, published 2026-06-30",
       "referenceLinks": [
         {
-          "label": "Financial Times: US energy regulator sets ultimatum for data centres",
-          "url": "https://www.ft.com/content/5055a170-69d9-4eb6-ad93-be953bbad263"
-        },
-        {
-          "label": "AP News: Federal regulators order grid operators to speed power to AI data centers",
-          "url": "https://apnews.com/article/506e3d206871111f15c3c62fc5368be5"
+          "label": "AP News: South Korean tech giants to build a $518 billion chipmaking hub",
+          "url": "https://apnews.com/article/22352d95c7a821c5f4548b2d1a4ebde8"
         }
       ]
     },
     {
       "topic": {
-        "zh": "数字支付",
-        "en": "Digital Payments"
+        "zh": "电力基础设施",
+        "en": "Power Infrastructure"
       },
       "title": {
-        "zh": "Open USD联合体落地，稳定币竞争正从加密入口转向跨境支付与储备收益基础设施",
-        "en": "Open USD's consortium launch shows stablecoin competition shifting from crypto on-ramps to cross-border payment rails and reserve economics"
+        "zh": "National Grid押注Joulent，AI数据中心供电正在从普通并网转向专属高压基础设施",
+        "en": "National Grid's Joulent deal shows AI data-centre power moving from simple grid connection to dedicated high-voltage infrastructure"
       },
       "summary": {
-        "zh": "《金融时报》7月2日报道，Open USD作为由Visa、Mastercard、Coinbase等参与支持的新稳定币方案正在加速进入主流讨论；《Cinco Días》7月1日报道则指出，参与机构已超过140家，并由Bridge负责人临时领导的Open Standard负责运营。行业含义在于，稳定币竞争焦点正在从单纯市值和交易对数量，转向分销网络、合规能力、储备资产收益分配与跨境结算场景的基础设施化能力。",
-        "en": "The Financial Times reported on July 2 that Open USD, a new stablecoin initiative backed by participants including Visa, Mastercard, and Coinbase, is rapidly moving into the mainstream policy and payments conversation. Cinco Días reported on July 1 that more than 140 institutions are participating and that the vehicle is being operated by Open Standard under interim leadership linked to Bridge. The industry implication is that stablecoin competition is shifting away from simple token market share and trading pairs toward distribution networks, compliance capability, reserve-yield economics, and cross-border settlement utility."
+        "zh": "《华尔街日报》7月1日报道，National Grid将向Joulent投资17.5亿美元并取得35%股权，支持其为微软西得州数据中心园区配套的Project Kilby。更深层的行业信号在于，超大算力负荷的供电方案正在从“接入现有公用电网”转向“合同发电+高压线路+长期购电安排”的专属资产组合，公用事业和基础设施投资者也开始更像算力产业链上的资本配置者。",
+        "en": "The Wall Street Journal reported on July 1 that National Grid will invest $1.75 billion for a 35% stake in Joulent, backing Project Kilby, which is designed to serve a Microsoft data-centre campus in West Texas. The deeper industry signal is that hyperscale compute loads are moving away from a simple utility interconnection model toward dedicated asset stacks built around contracted generation, high-voltage delivery, and long-term offtake. Utilities and infrastructure investors are starting to behave more like capital allocators inside the compute supply chain."
       },
       "watch": {
-        "zh": "后续重点看钱包与合规控制是否足够严谨、银行伙伴愿不愿意提供法币出入金通道，以及储备收益分成模式能否推动真实支付采纳而不是只服务加密交易。",
-        "en": "Watch whether wallet and compliance controls are strong enough, whether banking partners are willing to support fiat rails, and whether reserve-sharing economics can drive real payment adoption rather than merely servicing crypto trading."
+        "zh": "后续重点看Project Kilby能否在2026年底前完成最终投资决定，以及这种“专属电力资产包”模式能否在其他高负荷算力园区复制。",
+        "en": "Watch whether Project Kilby reaches final investment decision by the end of 2026 and whether this dedicated-power-asset model proves replicable across other heavy-compute campuses."
       },
-      "reference": "Financial Times, The stablecoin bandwagon is getting crowded, published 2026-07-02; Cinco Días, BBVA se une a más de 140 entidades internacionales para lanzar una stablecoin en dólares, published 2026-07-01",
+      "reference": "The Wall Street Journal, National Grid to Invest $1.75 Billion in Joulent in U.S. Energy Push, published 2026-07-01",
       "referenceLinks": [
         {
-          "label": "Financial Times: The stablecoin bandwagon is getting crowded",
-          "url": "https://www.ft.com/content/fccf725b-24fb-4bc6-8d45-369b029b4f80"
-        },
-        {
-          "label": "Cinco Días: BBVA joins more than 140 institutions to launch Open USD",
-          "url": "https://cincodias.elpais.com/criptoactivos/2026-07-01/bbva-se-une-a-mas-de-140-entidades-internacionales-para-lanzar-una-stablecoin-en-dolares.html"
+          "label": "WSJ: National Grid to Invest $1.75 Billion in Joulent in U.S. Energy Push",
+          "url": "https://www.wsj.com/business/energy-oil/national-grid-to-invest-1-75-billion-in-joulent-in-u-s-energy-push-9d84d5b8"
         }
       ]
     },
     {
       "topic": {
-        "zh": "清洁能源平台",
-        "en": "Clean Energy Platforms"
+        "zh": "AI基础设施选址",
+        "en": "AI Infrastructure Siting"
       },
       "title": {
-        "zh": "KKR与SK设立13亿美元可再生能源平台，工业电力开始以平台化资本结构服务算力和制造负荷",
-        "en": "KKR and SK's $1.3 billion renewables platform shows industrial power moving toward platform-style capital structures for compute and manufacturing loads"
+        "zh": "热浪下的数据中心争议升温，AI算力建设开始同时受社区许可、空气质量和峰时供电约束",
+        "en": "Heatwave-driven data-centre conflict shows AI buildouts now constrained by community consent, air quality, and peak-power resilience"
       },
       "summary": {
-        "zh": "《华尔街日报》7月1日报道，KKR与SK将共同启动13亿美元可再生能源平台，现有运营规模约1.7GW，开发管线目标约10GW，面向AI数据中心、半导体和制造业清洁用电需求。更深层的信号不是单个风场或光伏项目，而是资本市场开始围绕负荷集群、长期购电合同和可复制扩张路径来打包工业电力，这会把能源开发、产业选址和基础设施融资进一步绑成同一张表。",
-        "en": "The Wall Street Journal reported on July 1 that KKR and SK are launching a $1.3 billion renewable-energy platform with about 1.7 GW already in operation and a development pipeline targeting roughly 10 GW, aimed at clean-power demand from AI data centres, semiconductors, and manufacturing. The deeper signal is not any one wind or solar asset. Capital is beginning to package industrial power around load clusters, long-term offtake agreements, and scalable expansion pathways. That ties energy development, industrial siting, and infrastructure finance more tightly into one balance-sheet decision."
+        "zh": "美联社7月3日报道，美国东部热浪正在放大数据中心对局部空气质量、噪声、用水和峰时供电的压力，马萨诸塞州Lowell等地的社区反弹已推动扩建争议升级。更关键的行业信号是，AI基础设施的瓶颈不再只是融资和设备交付，而是社会许可与环境承载能力。未来大型算力项目如果不能同时回答峰时备用电源、冷却方式、社区沟通和地方治理问题，选址审批就会越来越像公共基础设施听证，而不是单纯的地产开发流程。",
+        "en": "The Associated Press reported on July 3 that an eastern U.S. heatwave is intensifying local concerns about air quality, noise, water use, and peak-power stress around data centres, with community opposition escalating in places such as Lowell, Massachusetts. The deeper signal is that AI infrastructure is no longer constrained only by financing and equipment delivery. It is increasingly constrained by social licence and environmental carrying capacity. If large compute projects cannot address backup power, cooling strategy, community process, and local governance together, siting approval will look more and more like public-infrastructure permitting rather than ordinary real-estate development."
       },
       "watch": {
-        "zh": "接下来要看这类平台能否把长期绿电合同标准化到足以支持超大规模算力与制造项目落地，以及开发管线能否按许可、电网和设备节奏兑现。",
-        "en": "Watch whether platforms like this can standardise long-term clean-power contracts enough to support hyperscale compute and manufacturing builds, and whether the development pipeline can actually clear permitting, grid, and equipment bottlenecks."
+        "zh": "继续关注地方政府会否把冷却、排放、备用电源和社区参与写入更严格的许可条件，这将直接影响AI算力项目的建设周期和资本成本。",
+        "en": "Watch whether local governments translate cooling, emissions, backup-power, and public-engagement concerns into tougher permit conditions, because that will directly affect AI-project schedules and cost of capital."
       },
-      "reference": "The Wall Street Journal, KKR, SK to Jointly Launch $1.30 Billion Renewable-Energy Platform, published 2026-07-01",
+      "reference": "Associated Press, Heat adds to strains on areas with data centers, raising the temperature on AI debates, published 2026-07-03",
       "referenceLinks": [
         {
-          "label": "WSJ: KKR, SK to Jointly Launch $1.30 Billion Renewable-Energy Platform",
-          "url": "https://www.wsj.com/finance/investing/kkr-sk-to-jointly-launch-1-30-billion-renewable-energy-platform-1f53dff2"
+          "label": "AP News: Heat adds to strains on areas with data centers",
+          "url": "https://apnews.com/article/5607b4ea8ef9776b28268561060752a8"
         }
       ]
     }
@@ -92,357 +84,312 @@
   "insights": [
     {
       "area": {
-        "zh": "性能化抗震工程",
-        "en": "Performance-Based Earthquake Engineering"
+        "zh": "桥梁数字孪生",
+        "en": "Bridge Digital Twins"
       },
       "title": {
-        "zh": "性能化抗震工程正在把可靠度与震后恢复放进同一个寿命周期框架",
-        "en": "Performance-based earthquake engineering is moving reliability and post-event recovery into one life-cycle framework"
+        "zh": "桥梁运维数字孪生正在从重传感器方案转向利用现有摄像头与天气数据的代理监测框架",
+        "en": "Bridge-operation digital twins are moving from sensor-heavy schemes toward proxy-based monitoring built on existing cameras and weather data"
       },
       "evidence": {
-        "zh": "研究类型：2026年5月预印本；方法：用连续时间马尔可夫链把损伤演化与恢复过程写进同一状态转移矩阵，并在支撑框架与隔震结构上演示时变可靠度和韧性评估。",
-        "en": "Evidence: May 2026 preprint embedding damage accumulation and recovery inside one continuous-time Markov-chain transition matrix, then demonstrating time-dependent reliability and resilience assessment on a braced frame and a base-isolated system."
+        "zh": "研究类型：2026年3月预印本；方法：把桥面摄像头识别到的车流指标、LWR交通传播模型和天气API劣化驱动量融合，用于老桥的疲劳与养护分类。",
+        "en": "Evidence: March 2026 preprint combining camera-derived traffic indicators, an LWR traffic-propagation model, and weather-API deterioration drivers to support fatigue and maintenance classification for an aging bridge."
       },
       "summary": {
-        "zh": "这项工作的意义，在于它正面挑战了很多抗震评估里“先算达到某性能点的概率，再把恢复问题放到事后讨论”的惯性做法。作者把损伤状态、维修与恢复直接写进统一动力系统后，工程师不再只能问“会不会倒”，而可以同步问“多久恢复、恢复期间能提供多少服务、不同修复策略是否改变寿命周期表现”。这对结构工程师的职业能力有实质影响：未来真正有价值的性能化设计，不只是会做非线性时程分析，而是能把损伤状态定义、维修路径、停运损失和投资决策串成同一套可解释框架。尤其在重要基础设施、医院、交通节点和高韧性资产场景里，可靠度与韧性的分家做法会越来越站不住脚。",
-        "en": "The importance of this work is that it directly challenges the common PBEE habit of estimating the probability of reaching a performance state first and pushing recovery into a separate after-the-fact discussion. Once damage states, repair, and recovery are written into one unified dynamical system, the engineer is no longer limited to asking whether collapse occurs. The more useful questions become how quickly service returns, how much functionality is delivered during recovery, and whether different repair strategies change life-cycle performance. That has real implications for structural practice. Valuable performance-based design will increasingly depend not only on running nonlinear response analyses, but on connecting state definitions, repair pathways, downtime loss, and investment decisions within one interpretable framework. In critical infrastructure, hospitals, transport nodes, and resilience-driven assets, the historical split between reliability and resilience is likely to become less defensible."
+        "zh": "这项工作的价值，不在于又给桥梁监测增加一套AI接口，而在于它展示了数字孪生如何从“先大量布传感器再谈分析”转向“先整合可获得的代理数据，再把不确定性显式写进决策”。对结构工程师而言，这意味着未来高价值能力不只是会装设备，而是能把交通流、环境暴露、结构机理和维护阈值串成一套连续监测逻辑。尤其在大量服役年限较长、预算受限的桥梁资产中，谁能把现有视频、天气和简化力学模型融合成可解释的维护信号，谁就更有机会把数字孪生真正做成资产管理工具，而不是演示型可视化项目。",
+        "en": "The value of this work is not merely that it adds another AI layer to bridge monitoring. It shows how digital twins can shift from a 'deploy many sensors first, analyse later' mindset toward one that integrates available proxy data and writes uncertainty explicitly into decisions. For structural engineers, that means the scarce skill is no longer just hardware deployment. It is the ability to connect traffic flow, environmental exposure, structural mechanics, and maintenance thresholds into one coherent monitoring logic. In aging bridge portfolios with constrained budgets, the teams that can fuse existing video, weather streams, and simplified mechanics into interpretable maintenance signals are the ones most likely to turn digital twins into genuine asset-management tools rather than demonstration dashboards."
       },
       "caveat": {
-        "zh": "该框架仍依赖状态划分、转移率和修复参数的高质量校准，离项目级合同、业主容忍度和真实修复数据充分接入还有距离。",
-        "en": "The framework still depends on strong calibration of state definitions, transition rates, and repair parameters. There remains a gap to project-specific contracting, owner risk tolerance, and robust real repair datasets."
+        "zh": "这类框架仍依赖场景校准、图像质量和代理指标与真实损伤状态之间的稳定映射，不能替代关键部位的直接检测与工程判断。",
+        "en": "Frameworks of this type still depend on site-specific calibration, image quality, and a stable mapping between proxy indicators and real damage states. They do not replace direct inspection and engineering judgment at critical locations."
       },
-      "reference": "NArdin et al., A generalized framework for performance-based earthquake engineering: integrated assessment of structural reliability and resilience, arXiv:2606.12448, published 2026-05-30",
+      "reference": "Balijepalli et al., Traffic and weather driven hybrid digital twin for bridge monitoring, arXiv:2603.14028, published 2026-03-14",
       "referenceLinks": [
         {
-          "label": "arXiv: Generalized framework for PBEE reliability and resilience",
-          "url": "https://arxiv.org/abs/2606.12448"
+          "label": "arXiv: Traffic and weather driven hybrid digital twin for bridge monitoring",
+          "url": "https://arxiv.org/abs/2603.14028"
         }
       ]
     },
     {
       "area": {
-        "zh": "路面智能检测",
-        "en": "Intelligent Pavement Assessment"
+        "zh": "低碳钢筋混凝土设计",
+        "en": "Low-Carbon Reinforced Concrete Design"
       },
       "title": {
-        "zh": "领域微调视觉语言模型提示：路面检测将从单项算法堆栈转向可对话、可审计的标准化工作流",
-        "en": "Domain-tuned vision-language models suggest pavement assessment will move from tool stacks to conversational, standards-aware workflows"
+        "zh": "低碳混凝土设计的关键正在从材料替换扩展到几何优化、可施工细化与试验验证一体化",
+        "en": "Low-carbon concrete design is expanding from material substitution toward integrated geometry optimisation, constructability detailing, and physical validation"
       },
       "evidence": {
-        "zh": "研究类型：2026年4月预印本；方法：构建278,889条图像-指令-响应样本的PaveInstruct数据集，并以此训练PaveGPT，在多项任务上生成符合ASTM D6433表达习惯的输出。",
-        "en": "Evidence: April 2026 preprint building the 278,889-sample PaveInstruct image-instruction-response dataset and using it to train PaveGPT for multi-task outputs aligned with ASTM D6433-style assessment language."
+        "zh": "研究类型：2026年4月预印本；方法：开发面向钢筋混凝土的拓扑优化流程，制作并试验优化梁，与常规设计在相同材料消耗下比较承载表现。",
+        "en": "Evidence: April 2026 preprint developing reinforced-concrete-specific topology-optimisation workflows, then fabricating and testing optimised beams against conventional designs at the same material consumption."
       },
       "summary": {
-        "zh": "这项研究值得结构与基础设施工程师关注，不是因为它又做出了一个“会看裂缝的AI”，而是因为它把分类、定位、解释和报告生成开始收束到同一个可交互界面中。作者展示的关键信号是：只要把领域术语、任务结构和标准化判据写进训练语料，视觉语言模型就可能从“看图说话”变成“按标准组织证据并输出可复核判断”的工作流工具。对路桥养护和资产管理团队来说，这意味着未来数字化能力竞争不只是买模型，而是能否定义缺陷词典、容差边界、抽检流程和人工复核节点。真正稀缺的工程能力，会越来越体现在数据治理、验收规则和责任链设计，而不是单点算法调用。",
-        "en": "Structural and infrastructure engineers should care about this study not because it produces yet another AI that can 'see cracks', but because it begins to collapse classification, localisation, explanation, and reporting into one interactive workflow. The key signal is that once domain terminology, task structure, and standard-facing criteria are written into the training corpus, a vision-language model may move from generic image captioning toward organised evidence and reviewable engineering judgments. For pavement and bridge-maintenance teams, that means the digital advantage will not come from purchasing a model alone. It will depend on whether the organisation can define defect vocabularies, tolerance boundaries, sampling rules, and human-review gates. The scarce engineering skill will increasingly lie in data governance, acceptance logic, and responsibility-chain design rather than one-off algorithm calls."
+        "zh": "这项研究的重要之处，在于它把低碳设计从“换一种胶凝材料”推进到“重新定义构件几何与施工组织”。作者展示的关键信号是：只要把受力路径、配筋逻辑和可施工性一起纳入算法与试验闭环，钢筋混凝土的减碳潜力就不只是材料配方问题，而是结构形态问题。对土木工程师来说，这会改变未来竞争力的重心。真正稀缺的能力，将越来越体现在能否把优化、构造、制造约束和试验验证串成一致流程，而不是单独会做一次拓扑优化图。低碳设计正在从材料选择题变成系统设计题。",
+        "en": "The significance of this study is that it pushes low-carbon design beyond 'use a different binder' and into the redesign of member geometry and construction logic. The key signal is that once force flow, reinforcement strategy, and constructability are brought into one algorithm-to-testing loop, the carbon-reduction potential of reinforced concrete becomes a structural form problem rather than only a materials problem. For civil engineers, that shifts the centre of future competitiveness. The scarce skill will increasingly lie in linking optimisation, detailing, fabrication constraints, and experimental validation into one workflow, rather than merely producing an attractive topology plot. Low-carbon design is becoming a systems-design challenge rather than a materials-selection exercise."
       },
       "caveat": {
-        "zh": "目前结果仍是研究环境中的基准表现，离多机构、跨地区、不同采集设备条件下的法律责任与现场可签字流程还有明显距离。",
-        "en": "These results are still benchmark-stage research outcomes. There is still clear distance to multi-agency transfer, cross-region deployment, varied acquisition hardware, and field-signable responsibility workflows."
+        "zh": "从实验构件走向普遍工程应用，仍要跨过规范接受度、配筋细化、模板施工复杂度和成本链条重构等门槛。",
+        "en": "Moving from test specimens to routine practice still requires progress on code acceptance, reinforcement detailing, formwork complexity, and the restructuring of cost and delivery chains."
       },
-      "reference": "Kyem et al., Vision-Language Foundation Models for Comprehensive Automated Pavement Condition Assessment, arXiv:2604.08212, published 2026-04-09",
+      "reference": "Jewett and Carstensen, Topology Optimization for Materially Efficient Reinforced Concrete Design: Development, Fabrication, and Structural Evaluation, arXiv:2604.22070, published 2026-04-23",
       "referenceLinks": [
         {
-          "label": "arXiv: Vision-Language Foundation Models for pavement condition assessment",
-          "url": "https://arxiv.org/abs/2604.08212"
+          "label": "arXiv: Topology optimization for materially efficient reinforced concrete design",
+          "url": "https://arxiv.org/abs/2604.22070"
         }
       ]
     },
     {
       "area": {
-        "zh": "基础设施缺陷识别",
-        "en": "Infrastructure Defect Recognition"
+        "zh": "气候韧性基础设施",
+        "en": "Climate-Resilient Infrastructure"
       },
       "title": {
-        "zh": "大型基础设施缺陷数据集正在暴露通用基础模型的盲区：土木检查仍然需要领域监督而非零样本幻想",
-        "en": "Large civil-defect datasets are exposing a blind spot in generic foundation models: infrastructure inspection still needs domain supervision, not zero-shot optimism"
+        "zh": "气候韧性评估正从单一停电指标走向耦合洪涝后果、修复策略和系统脆弱性的联合建模",
+        "en": "Resilience assessment is moving beyond single outage metrics toward coupled modelling of flood consequences, repair strategy, and system vulnerability"
       },
       "evidence": {
-        "zh": "研究类型：2026年5月预印本；方法：发布约150,000张高分辨率图像的CiF数据集，并比较零样本基础模型与专用监督模型在像素级缺陷分割上的表现。",
-        "en": "Evidence: May 2026 preprint releasing the roughly 150,000-image CiF dataset and comparing zero-shot foundation models with specialised supervised models on pixel-level defect segmentation."
+        "zh": "研究类型：2026年5月预印本；方法：在配电系统韧性框架中同时连接历史天气条件、脆弱性参数、修复策略灵敏度和停电影响引发的洪涝后果。",
+        "en": "Evidence: May 2026 preprint extending a distribution-system resilience framework to connect historical weather conditioning, fragility parameters, repair-strategy sensitivity, and outage-induced flooding consequences."
       },
       "summary": {
-        "zh": "这篇论文最有价值的地方，不是再一次证明“数据很重要”，而是量化了通用基础模型在土木场景中的真实短板。作者指出，即便在今天大模型能力被高度宣传的环境里，面对纹理单一、裂缝细微、背景扰动强的基础设施图像，零样本模型依然明显吃力，而带领域监督的专用模型表现也没有轻松达到工程上可直接放心部署的水平。这对结构工程师是个很现实的提醒：未来检查数字化的核心瓶颈，往往不是再换一个更大的通用模型，而是建立合适的缺陷分类体系、标注规范、现场采集标准和复核机制。谁能把这些工程语义先定义清楚，谁才更有机会把AI真正变成可审计的检查工具。",
-        "en": "The most valuable contribution of this paper is not merely repeating that data matters. It quantifies the real failure mode of generic foundation models in civil-infrastructure imagery. The authors show that even in the current era of highly publicised model capability, zero-shot systems still struggle when defects are subtle, textures are sparse, and backgrounds are messy, while specialised supervised models also remain short of effortless engineering-grade deployment. That is a practical warning for structural engineers. The central bottleneck in inspection digitalisation is often not the search for a larger generic model, but the creation of defect taxonomies, annotation protocols, field-capture standards, and review procedures that fit infrastructure reality. Engineers who define that semantic layer well will be the ones most able to turn AI into an auditable inspection tool."
+        "zh": "这项工作的意义，在于它提醒工程师：韧性不应再被压缩成一个简单的停电时长或恢复曲线指标。真正有用的韧性分析，必须把网络拓扑、危险源强度、脆弱性函数、抢修排序和下游社会后果同时放进一个可比较的模型。对土木与基础设施工程师来说，这意味着未来的专业边界会继续外扩。做韧性设计的人，不仅要懂构件和场地，还要能处理跨系统耦合、情景敏感性和决策后果。谁能把这些关系建成透明的比较框架，谁就更能在气候风险时代主导资金分配与改造优先级。",
+        "en": "The significance of this work is that it warns engineers against compressing resilience into one simple outage-duration metric or one recovery curve. Useful resilience analysis has to place network topology, hazard intensity, fragility functions, repair sequencing, and downstream societal consequences inside one comparable model. For civil and infrastructure engineers, that means professional boundaries will continue to widen. Resilience designers increasingly need to understand not only components and sites, but also cross-system coupling, scenario sensitivity, and decision consequences. The teams that can make those relationships transparent in a comparative framework will be better positioned to influence capital allocation and retrofit priorities in a climate-risk era."
       },
       "caveat": {
-        "zh": "数据集基准不能代表所有桥梁、隧道或建筑表面的部署条件，窄任务上的高表现也不等于跨项目、跨环境的稳健可用。",
-        "en": "A benchmark dataset does not represent every deployment condition across bridges, tunnels, or buildings, and strong performance on narrow tasks does not automatically translate into robust cross-project use."
+        "zh": "公开数据条件下的框架仍难完全代表真实公用事业运维规则和局地排水细节，结果更适合作为比较工具而非直接替代详细设计。",
+        "en": "Frameworks built under limited public-data conditions still struggle to represent real utility operating rules and local drainage detail completely, so the results are better used as a comparative decision tool than as a direct substitute for detailed design."
       },
-      "reference": "Farronato et al., Cracks in the Foundation: A Civil Infrastructure Dataset to Challenge Vision Foundation Models, arXiv:2605.18413, published 2026-05-18",
+      "reference": "Wang et al., A Resilience Evaluation Framework for Electric Distribution Systems: Historical Weather Conditioning, Sensitivity Analysis, and a Flooding-Aware Extension, arXiv:2605.16811, published 2026-05-16",
       "referenceLinks": [
         {
-          "label": "arXiv: Cracks in the Foundation civil infrastructure dataset",
-          "url": "https://arxiv.org/abs/2605.18413"
+          "label": "arXiv: Resilience evaluation framework with flooding-aware extension",
+          "url": "https://arxiv.org/abs/2605.16811"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "风压不是一个公式：为什么美国、欧洲与澳洲都从同一空气动力学出发，却把设计风作用装进不同格式？",
-      "en": "Wind pressure is not one formula: why the U.S., Europe, and Australia start from the same aerodynamics but package design wind differently"
+      "zh": "极限状态不是一个安全系数：为什么中国、欧洲与北美都讲可靠度，却把设计校核写成不同格式？",
+      "en": "Limit states are not a single safety factor: why China, Europe, and North America all talk about reliability but write design checks differently"
     },
     "text": {
-      "zh": "很多跨规范讨论会把“风速”当成可以直接横向比较的输入值，但真正的设计格式远比一个数字复杂。美国ASCE 7、欧洲EN 1991-1-4和澳洲AS/NZS 1170.2都承认风作用来自空气动力学压力与表面系数的组合，可它们把风险校准、地形暴露、方向性、峰值放大与局部系数放在不同位置处理。结果是：即使名义风速看起来相近，也不能把一个体系下的速度压、峰值压力或场地风速链直接搬进另一个体系继续验算。真正应比较的，是从基准风速到构件表面压力之间的完整转换链。",
-      "en": "Many cross-code discussions treat 'wind speed' as though it were a directly transferable input, but the actual design format is far more layered than one number. ASCE 7 in the United States, EN 1991-1-4 in Europe, and AS/NZS 1170.2 in Australia all recognise that wind action is built from aerodynamic pressure and surface coefficients. They differ, however, in where they place risk calibration, terrain exposure, directionality, peak effects, and local coefficients. The result is that even when nominal wind speeds look similar, a velocity pressure, peak pressure, or site-wind-speed chain from one system cannot simply be transplanted into another. The meaningful comparison is the full conversion chain from reference wind climate to member surface pressure."
+      "zh": "很多跨规范讨论会把某一个荷载系数、某一个抗力折减系数，甚至某一个重要性系数拿出来横向比较，好像谁的数字大谁就更保守。真正共同的底层并不是这些表面符号，而是目标可靠度。中国统一可靠度设计体系、欧洲EN 1990以及北美LRFD都在试图把荷载不确定性、材料离散性、分析误差和后果等级校准成可接受的失效概率，只是它们把这些校准写进设计公式的位置不同。因此，跨规范比较不能只盯一个系数，而必须看从代表值到设计效应、从名义抗力到设计抗力的完整转换链。",
+      "en": "Many cross-code discussions isolate one load factor, one resistance-reduction factor, or one importance factor and compare the numbers as if the larger value were automatically more conservative. The true common foundation is not those surface symbols but target reliability. China's unified reliability-based design framework, Europe's EN 1990, and North American LRFD all attempt to calibrate load uncertainty, material variability, modelling error, and consequence class into an acceptable probability of failure. They differ mainly in where those calibrations are written into the design format. For that reason, cross-code comparison cannot stop at one factor. It must examine the full transformation chain from representative values to design effect, and from nominal resistance to design resistance."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "物理相同，校准链不同",
-          "en": "The physics is shared, but the calibration chain is not"
+          "zh": "共同目标是可靠度，不是符号长得一样",
+          "en": "The shared target is reliability, not matching symbols"
         },
         "text": {
-          "zh": "三套体系都离不开动压概念，但各自对重现期、阵风定义、方向系数、地形暴露和局部风效应的布置位置并不相同。",
-          "en": "All three systems depend on the dynamic-pressure idea, but they place return period, gust definition, directionality, terrain exposure, and local wind effects in different parts of the format."
+          "zh": "中国、欧洲和北美都以极限状态和可靠度为核心，但同样出现E、R、φ或γ，并不意味着这些符号承载了完全相同的统计含义。",
+          "en": "China, Europe, and North America all use limit states and reliability as their core logic, but the appearance of similar symbols such as E, R, φ, or γ does not mean those symbols carry identical statistical meaning."
         }
       },
       {
         "label": {
-          "zh": "不要只比一个系数或一个风速",
-          "en": "Do not compare only one coefficient or one wind speed"
+          "zh": "系数放置位置不同，反映的是校准格式差异",
+          "en": "Different factor locations reflect different calibration formats"
         },
         "text": {
-          "zh": "美国常把高度和方向影响显式写进速度压，欧洲更强调峰值速度压与外压系数的组合，澳洲则常先通过场地风速乘子链修正设计风速，再进入表面压力表达。",
-          "en": "The U.S. often writes height and direction effects explicitly into velocity pressure, Europe emphasises the combination of peak velocity pressure and external coefficients, and Australia commonly modifies design wind speed first through a site-multiplier chain before translating it into surface pressure."
+          "zh": "欧洲常先形成设计效应和设计抗力再比较；北美常把荷载系数与抗力折减显式写在同一核验式里；中国则通过统一可靠度基础去约束各专业规范中的代表值、分项系数和重要性处理。",
+          "en": "Europe commonly forms design effect and design resistance first and then compares them. North America often writes load factors and resistance reduction explicitly in the same verification statement. China uses a unified reliability basis to constrain representative values, partial factors, and importance treatment across discipline-specific codes."
         }
       },
       {
         "label": {
-          "zh": "跨规范复核要比完整转换链",
-          "en": "Cross-code review must compare full transformation chains"
+          "zh": "跨规范复核要比完整转换链，而不是比单个数字",
+          "en": "Cross-code review must compare full transformation chains, not single numbers"
         },
         "text": {
-          "zh": "如果不把平均时间、阵风特征、地形类别、重要性与压力系数约定一并对齐，看似接近的kPa值也可能代表完全不同的风险水准和构件需求。",
-          "en": "If averaging time, gust convention, terrain category, importance treatment, and pressure-coefficient conventions are not aligned together, apparently similar kPa values may represent very different risk levels and component demands."
+          "zh": "如果不把代表值定义、组合规则、后果等级、抗力统计模型和构造假定一并对齐，看似接近的校核结果也可能代表完全不同的失效风险。",
+          "en": "If representative-value definitions, combination rules, consequence classes, resistance statistics, and detailing assumptions are not aligned together, apparently similar verification results may still represent very different failure risks."
         }
       }
     ],
     "takeaway": {
-      "zh": "做国际项目或跨规范校核时，不要直接搬运某个风速、某个压力值或某个局部系数。先画出“基准风气候 → 场地修正 → 动压/峰值压力 → 表面系数 → 构件设计压力”的完整链条，再判断哪个体系更保守、更适合项目风险。",
-      "en": "In international work or cross-code checking, do not transfer one wind speed, one pressure value, or one local coefficient in isolation. First map the full chain of reference wind climate, site modification, dynamic or peak pressure, surface coefficient, and member design pressure. Only then can you judge which system is more conservative or more appropriate for the project risk."
+      "zh": "做跨规范校核时，不要直接搬运某个荷载系数、某个φ值或某个重要性系数。先画出“目标可靠度 → 代表值 → 设计效应 → 设计抗力 → 校核判据”的完整链条，再判断不同体系为什么会给出不同的保守度和设计结果。",
+      "en": "In cross-code checking, do not transplant one load factor, one φ value, or one importance factor in isolation. First map the full chain of target reliability, representative values, design effect, design resistance, and verification criterion. Only then can you judge why different systems produce different conservatism and different design outcomes."
     },
     "example": {
       "title": {
-        "zh": "实例：同样看到40 m/s，为什么不同体系里的压力表达不能直接互换？",
-        "en": "Example: why the same 40 m/s cannot be transferred directly across wind-design formats"
+        "zh": "实例：为什么一个荷载系数不能直接从一个体系搬到另一个体系？",
+        "en": "Example: why one load factor cannot be transferred directly from one design system to another"
       },
       "intro": {
-        "zh": "下面做一个只说明格式差异的示意算例。先取空气密度ρ = 1.25 kg/m³和参考风速V = 40 m/s，得到最基础的动压量级。然后分别用一个美标速度压格式、一个欧标外压格式和一个澳标场地风速乘子链来说明：即使起点都像是在处理“40 m/s”，中间被放进设计式子的量并不是同一件事。",
-        "en": "The following is a format-illustration example rather than a full code check. Start with air density ρ = 1.25 kg/m³ and a reference wind speed V = 40 m/s to establish the base dynamic-pressure scale. Then use one U.S.-style velocity-pressure format, one Eurocode-style external-pressure format, and one Australian-style site-wind-speed multiplier chain to show that even when each path appears to begin with '40 m/s', the quantity entering the design expression is not the same object."
+        "zh": "下面做一个格式说明型算例，而不是逐条替代任何一本规范。先从可靠度指标与失效概率的关系出发，再用一个欧标式核验、一个北美LRFD式核验和一个中国统一可靠度基础下的示意核验说明：不同体系即使都在做“安全校核”，放进公式里的量也不是同一层级的对象。",
+        "en": "The following is a format-illustration example rather than a clause-by-clause substitute for any code. Start from the relationship between reliability index and failure probability, then use one Eurocode-style check, one North American LRFD-style check, and one schematic check under China's unified reliability basis to show that even when each system is performing a 'safety verification', the quantities entering the equations are not objects at the same level."
       },
       "equations": [
         {
           "label": {
-            "zh": "空气动力学动压",
-            "en": "Aerodynamic dynamic pressure"
+            "zh": "可靠度指标与失效概率的关系",
+            "en": "Relationship between reliability index and failure probability"
           },
-          "formula": "q = 0.5ρV²",
+          "formula": "pf = Φ(-β)",
           "formulaTokens": [
             {
-              "var": "q"
+              "var": "p"
             },
             {
-              "text": " = 0.5"
+              "sub": "f"
             },
             {
-              "var": "ρ"
+              "text": " = Φ(-"
             },
             {
-              "var": "V"
+              "var": "β"
             },
             {
-              "sup": "2"
+              "text": ")"
             }
           ],
           "citation": {
-            "zh": "推导关系：基于伯努利动压表达；非规范编号公式，用于说明所有风荷载格式共享的物理起点。",
-            "en": "Derived relation: based on the Bernoulli dynamic-pressure expression; not a numbered code equation and used to show the shared physical starting point behind wind-load formats."
+            "zh": "推导关系：基于结构可靠度理论中的标准正态失效概率表达；非某一本设计规范的编号公式，用于说明各体系共享的统计起点。",
+            "en": "Derived relation: based on the standard-normal failure-probability expression used in structural reliability theory; not a numbered design-code equation and used to show the shared statistical starting point."
           },
           "result": {
-            "zh": "当ρ = 1.25 kg/m³、V = 40 m/s时，q = 0.5 × 1.25 × 40² = 1000 Pa = 1.00 kPa。",
-            "en": "With ρ = 1.25 kg/m³ and V = 40 m/s, q = 0.5 × 1.25 × 40² = 1000 Pa = 1.00 kPa."
+            "zh": "若β = 3.8，则pf约为7.2 × 10^-5；若β降到3.2，pf会显著增大，说明真正控制保守度的是目标可靠度，而不是单个系数表面大小。",
+            "en": "If β = 3.8, pf is about 7.2 × 10^-5; if β drops to 3.2, pf increases markedly, showing that conservatism is governed by target reliability rather than by the visible size of one factor."
           }
         },
         {
           "label": {
-            "zh": "ASCE 7型速度压格式示意",
-            "en": "Illustrative ASCE 7-style velocity-pressure format"
+            "zh": "欧标式设计值核验示意",
+            "en": "Illustrative Eurocode-style design-value verification"
           },
-          "formula": "qz = 0.613KzKztKdV²",
+          "formula": "Ed ≤ Rd",
           "formulaTokens": [
             {
-              "var": "q"
-            },
-            {
-              "sub": "z"
-            },
-            {
-              "text": " = 0.613"
-            },
-            {
-              "var": "K"
-            },
-            {
-              "sub": "z"
-            },
-            {
-              "var": "K"
-            },
-            {
-              "sub": "zt"
-            },
-            {
-              "var": "K"
+              "var": "E"
             },
             {
               "sub": "d"
             },
             {
-              "var": "V"
+              "text": " ≤ "
             },
             {
-              "sup": "2"
+              "var": "R"
+            },
+            {
+              "sub": "d"
             }
           ],
           "citation": {
-            "zh": "格式示意：与ASCE 7-22第26章速度压表达一致；此处仅用于说明高度、地形和方向影响如何被压入速度压，不冒充完整条文应用。",
-            "en": "Schematic format: consistent with the ASCE 7-22 Chapter 26 velocity-pressure expression; shown only to illustrate how height, topography, and directionality can be folded into velocity pressure rather than as a full clause application."
+            "zh": "格式示意：与EN 1990中“设计效应不超过设计抗力”的核验思路一致；此处只说明欧洲常先形成设计值，再比较，不冒充完整条文应用。",
+            "en": "Schematic format: consistent with the EN 1990 idea that design effect should not exceed design resistance; shown only to illustrate how European formats commonly form design values first and then compare them, not as a full clause application."
           },
           "result": {
-            "zh": "若取Kz = 0.85、Kzt = 1.0、Kd = 0.85、V = 40 m/s，则qz = 0.613 × 0.85 × 1.0 × 0.85 × 40² ≈ 0.708 kPa。",
-            "en": "If Kz = 0.85, Kzt = 1.0, Kd = 0.85, and V = 40 m/s, then qz = 0.613 × 0.85 × 1.0 × 0.85 × 40² ≈ 0.708 kPa."
+            "zh": "若某构件Ed = 820 kN、Rd = 900 kN，则820 ≤ 900，核验通过；关键是Ed和Rd都已经包含该体系各自的分项系数与组合约定。",
+            "en": "If a member has Ed = 820 kN and Rd = 900 kN, then 820 ≤ 900 and the check passes. The key point is that both Ed and Rd already embed that system's own partial factors and combination conventions."
           }
         },
         {
           "label": {
-            "zh": "欧标外压格式示意",
-            "en": "Illustrative Eurocode external-pressure format"
+            "zh": "北美LRFD式核验示意",
+            "en": "Illustrative North American LRFD verification"
           },
-          "formula": "we = qp cpe",
+          "formula": "φRn ≥ Σγi Qi",
           "formulaTokens": [
             {
-              "var": "w"
+              "var": "φ"
             },
             {
-              "sub": "e"
+              "var": "R"
             },
             {
-              "text": " = "
+              "sub": "n"
             },
             {
-              "var": "q"
+              "text": " ≥ Σ"
             },
             {
-              "sub": "p"
+              "var": "γ"
+            },
+            {
+              "sub": "i"
             },
             {
               "text": " "
             },
             {
-              "var": "c"
+              "var": "Q"
             },
             {
-              "sub": "pe"
+              "sub": "i"
             }
           ],
           "citation": {
-            "zh": "格式示意：与EN 1991-1-4中“峰值速度压 × 外压系数”的思路一致；此处用通用表达说明欧标更强调把局部表面效应放在压力系数端处理。",
-            "en": "Schematic format: consistent with the EN 1991-1-4 idea of peak velocity pressure multiplied by an external pressure coefficient; used here to show that the Eurocode format places much of the local surface effect on the coefficient side."
+            "zh": "格式示意：与北美LRFD中“抗力折减后与分项荷载效应比较”的常见思路一致；并非任何单一本规范的完整荷载组合条文。",
+            "en": "Schematic format: consistent with the common North American LRFD idea of comparing reduced resistance with factored load effects; not the full load-combination clause of any single code."
           },
           "result": {
-            "zh": "若在某一高度取qp = 0.90 kPa、外压系数cpe = -1.20，则we = 0.90 × (-1.20) = -1.08 kPa。",
-            "en": "If at a given height qp = 0.90 kPa and the external pressure coefficient is cpe = -1.20, then we = 0.90 × (-1.20) = -1.08 kPa."
+            "zh": "若φ = 0.90、Rn = 1000 kN，且ΣγiQi = 860 kN，则φRn = 900 kN ≥ 860 kN，核验通过；这里抗力折减被显式写在式子左侧。",
+            "en": "If φ = 0.90, Rn = 1000 kN, and ΣγiQi = 860 kN, then φRn = 900 kN ≥ 860 kN and the check passes. Here the resistance reduction is written explicitly on the left-hand side."
           }
         },
         {
           "label": {
-            "zh": "澳标场地风速乘子链示意",
-            "en": "Illustrative Australian site-wind-speed multiplier chain"
+            "zh": "中国统一可靠度基础下的校核示意",
+            "en": "Illustrative check under China's unified reliability basis"
           },
-          "formula": "Vdes = VR Md Mz,cat Ms Mt",
+          "formula": "γ0Sd ≤ Rd",
           "formulaTokens": [
             {
-              "var": "V"
+              "var": "γ"
             },
             {
-              "sub": "des"
+              "sub": "0"
             },
             {
-              "text": " = "
-            },
-            {
-              "var": "V"
-            },
-            {
-              "sub": "R"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "M"
+              "var": "S"
             },
             {
               "sub": "d"
             },
             {
-              "text": " "
+              "text": " ≤ "
             },
             {
-              "var": "M"
+              "var": "R"
             },
             {
-              "sub": "z,cat"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "M"
-            },
-            {
-              "sub": "s"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "M"
-            },
-            {
-              "sub": "t"
+              "sub": "d"
             }
           ],
           "citation": {
-            "zh": "格式示意：与AS/NZS 1170.2的设计风速乘子链一致；此处用示意关系说明澳标常先把方向、地形、遮挡和地形增速写进场地风速，再进入构件压力表达。",
-            "en": "Schematic format: consistent with the AS/NZS 1170.2 design-wind-speed multiplier chain; shown here to illustrate how the Australian format commonly writes direction, terrain, shielding, and topographic amplification into site wind speed before surface pressure is formed."
+            "zh": "格式示意：用于说明中国统一可靠度设计基础下，重要性与设计效应常通过各专业规范的设计值格式体现；此处为概念示意，不替代具体规范条文。",
+            "en": "Schematic format: used to illustrate how, under China's unified reliability-based design foundation, importance treatment and design effect are often expressed through discipline-specific design values; this is a conceptual illustration, not a replacement for a specific code clause."
           },
           "result": {
-            "zh": "若取VR = 40 m/s、Md = 0.95、Mz,cat = 1.05、Ms = 1.0、Mt = 1.10，则Vdes = 40 × 0.95 × 1.05 × 1.0 × 1.10 ≈ 43.9 m/s。",
-            "en": "If VR = 40 m/s, Md = 0.95, Mz,cat = 1.05, Ms = 1.0, and Mt = 1.10, then Vdes = 40 × 0.95 × 1.05 × 1.0 × 1.10 ≈ 43.9 m/s."
+            "zh": "若γ0 = 1.10、Sd = 780 kN、Rd = 900 kN，则γ0Sd = 858 kN ≤ 900 kN，核验通过；这里重要性处理被并入设计效应侧，不能简单拿来和某个φ值一一对比。",
+            "en": "If γ0 = 1.10, Sd = 780 kN, and Rd = 900 kN, then γ0Sd = 858 kN ≤ 900 kN and the check passes. Here importance treatment is folded into the design-effect side, so it should not be compared one-for-one with a φ factor."
           }
         }
       ],
       "note": {
-        "zh": "这个示意算例说明，同样看到40 m/s，进入设计校核的量可能是基础动压、折算后的速度压、峰值速度压乘外压系数，或先经场地乘子修正后的设计风速。它们共享空气动力学根基，但并不共享同一风险格式，因此不能直接横向代换。",
-        "en": "This illustration shows that the same visible starting point of 40 m/s can enter design checking as basic dynamic pressure, modified velocity pressure, peak velocity pressure times an external coefficient, or a site-adjusted design wind speed. These forms share aerodynamic roots, but they do not share a single calibrated risk format and therefore cannot be substituted directly."
+        "zh": "这个示意算例说明，不同体系共同追求的是目标可靠度，但它们把统计校准分配到代表值、分项系数、重要性系数和抗力折减的位置并不相同。因此，单独搬运一个荷载系数或一个抗力系数，往往会把原本成套工作的可靠度格式拆散。",
+        "en": "This illustration shows that different systems share the goal of target reliability, but they distribute statistical calibration across representative values, partial factors, importance factors, and resistance reduction in different places. Transplanting one load factor or one resistance factor by itself therefore tends to break apart a reliability format that was meant to work as a full package."
       }
     },
-    "references": "ASCE wind hazard and velocity-pressure workflow; EN 1991-1-4 wind actions framework; AS/NZS 1170.2 wind actions product page",
+    "references": "Eurocode EN 1990 basis of structural design page; China national standards public service platform; open terminology reference on limit-state design",
     "referenceLinks": [
       {
-        "label": "ASCE Hazard Tool",
-        "url": "https://ascehazardtool.org/"
+        "label": "Eurocodes JRC: EN 1990 Basis of Structural Design",
+        "url": "https://eurocodes.jrc.ec.europa.eu/showpage.php?id=130"
       },
       {
-        "label": "Eurocodes JRC: EN 1991 Actions on Structures",
-        "url": "https://eurocodes.jrc.ec.europa.eu/showpage.php?id=131"
+        "label": "SAMR National Standards Public Service Platform",
+        "url": "https://openstd.samr.gov.cn/bzgk/gb/"
       },
       {
-        "label": "Standards Australia: AS/NZS 1170.2",
-        "url": "https://store.standards.org.au/product/as-nzs-1170-2-2021"
+        "label": "Limit state design overview",
+        "url": "https://en.wikipedia.org/wiki/Limit_state_design"
       }
     ]
   }
