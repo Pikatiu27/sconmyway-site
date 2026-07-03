@@ -50,17 +50,31 @@ async function readData() {
     throw new Error(`${dataPath} period must run from Friday to the next Friday`);
   }
   for (const [index, event] of data.events.entries()) {
+    const titleText = [event.titleZh || "", event.titleEn || ""].map((value) => String(value).trim());
+    if (titleText.some((value) => /^(free|program|event|family and kids|kindergarten|playgroups?|support for parents|child and family hub)$/i.test(value))) {
+      throw new Error(`events[${index}] is a generic directory/category page: ${titleText.join(" / ")}`);
+    }
     for (const field of ["titleZh", "summaryZh", "timeZh", "placeZh", "referenceZh"]) {
       if (typeof event[field] !== "string" || !event[field].trim()) {
         throw new Error(`events[${index}].${field} is missing`);
       }
     }
-    const timeText = `${event.timeZh || ""} ${event.timeEn || ""} ${event.referenceZh || ""} ${event.referenceEn || ""}`;
+    const qualityText = `${event.tagZh || ""} ${event.tagEn || ""} ${event.titleZh || ""} ${event.titleEn || ""} ${event.summaryZh || ""} ${event.summaryEn || ""} ${event.timeZh || ""} ${event.timeEn || ""} ${event.placeZh || ""} ${event.placeEn || ""} ${event.referenceZh || ""} ${event.referenceEn || ""}`;
+    const timeText = qualityText;
     if (/\b(expired|ended|closed|cancelled|canceled)\b|已结束|取消/u.test(timeText)) {
       throw new Error(`events[${index}] appears expired or cancelled`);
     }
     const oldYear = timeText.match(/\b(20\d{2})\b/g)?.map(Number).find((year) => year < Number(data.periodStart.slice(0, 4)));
     if (oldYear) throw new Error(`events[${index}] contains old year ${oldYear}`);
+    if (/Client Challenge|JavaScript is disabled|outdated browser|required part of this site|Enfield Council Cham|Corrard\/Haeremai|Industrial Chemists/i.test(qualityText)) {
+      throw new Error(`events[${index}] contains scraper noise instead of event content`);
+    }
+    if (/\bSpring Festival 2024\b|\b5 June 1937\b/i.test(qualityText)) {
+      throw new Error(`events[${index}] contains known stale content`);
+    }
+    if (/\b6 June\b/i.test(`${event.timeZh || ""} ${event.timeEn || ""}`) && data.periodStart.startsWith("2026-07")) {
+      throw new Error(`events[${index}] contains a June date during the July publication week`);
+    }
     for (const field of ["tagEn", "titleEn", "summaryEn", "timeEn", "placeEn", "priceEn", "referenceEn"]) {
       if (typeof event[field] !== "string" || !event[field].trim()) {
         throw new Error(`events[${index}].${field} is missing`);

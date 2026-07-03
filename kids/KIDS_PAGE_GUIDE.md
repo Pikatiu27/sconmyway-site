@@ -304,3 +304,11 @@ https://pikatiu27.github.io/sconmyway-site/kids/
 ```text
 请按 KIDS_PAGE_GUIDE.md 维护“今天带娃去哪儿？”页面。保持手机优先、马卡龙手帐风、Sydney/Melbourne 城市切换、中英双语、8 条主推荐、More 折叠链接、官网/导航/分享按钮顺序。每周五早上 5:00 更新新一周全部内容：必须重新检索 sources、重新筛选，删除过期活动，新增最新活动，新活动放前排，仍在持续的活动往后放；不能复用上周静态 DATA 当作本周内容。搜索范围要宽：official council/venue pages、Eventbrite/Humanitix/AllEvents/Secret/Time Out/亲子媒体、Instagram/Facebook/小红书/社群线索都可用于发现，但社媒线索必须反查官方 council、venue、organiser 或 ticketing 页面后才能入选。更新后同步 JSON data 和 HTML fallback，再校验 UTF-8、英文无中文泄漏、Friday-to-Friday 日期和远程推送。英文页面必须全英文。先保存本地，不要推送 GitHub，除非我明确要求部署。
 ```
+
+## 15. Weekly Update Failure Guardrails
+
+- Date refresh alone is not a valid update. The weekly job must remove expired activities and publish a materially rechecked current-week list.
+- Reject generic category pages such as `Free`, `Program`, `Family and kids`, `Kindergarten`, `Playgroups`, `Support for parents`, or `Child and Family Hub`.
+- Reject stale years earlier than the publication week year, known old-event titles, and mismatched old dates such as a June-only event in a July publication week.
+- Reject scraper noise including JavaScript challenge text, outdated-browser text, historic snippets, and unrelated council page fragments.
+- If fewer than 8 valid events remain for a city, the updater must fail and leave the site unchanged rather than publish filler.

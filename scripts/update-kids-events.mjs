@@ -127,6 +127,38 @@ const accents = [
 
 const kidsKeywords = ["kids", "children", "family", "families", "school holiday", "workshop", "story", "play", "craft", "baby", "toddler", "all ages", "free"];
 const rejectKeywords = ["whisky", "wine", "cocktail", "bar", "18+", "adults only", "gambling", "race day", "nightclub"];
+const genericTitlePattern = /^(free|program|event|family and kids|kindergarten|playgroups?|support for parents|child and family hub)$/i;
+const scraperNoisePattern = /Client Challenge|JavaScript is disabled|outdated browser|required part of this site|Enfield Council Cham|Corrard\/Haeremai|Industrial Chemists/i;
+const staleContentPattern = /\bSpring Festival 2024\b|\b5 June 1937\b/i;
+
+function isGenericTitle(title = "") {
+  return genericTitlePattern.test(String(title).trim());
+}
+
+function containsOldYear(text = "") {
+  return (String(text).match(/\b(20\d{2})\b/g) || []).map(Number).some((year) => year < Number(weekPeriod.periodStart.slice(0, 4)));
+}
+
+function isBadCandidate(candidate) {
+  const title = String(candidate?.title || "");
+  const text = `${title} ${candidate?.text || ""} ${candidate?.detailText || ""}`;
+  if (isGenericTitle(title)) return true;
+  if (scraperNoisePattern.test(text) || staleContentPattern.test(text)) return true;
+  if (containsOldYear(text)) return true;
+  if (/\b6 June\b/i.test(text) && weekPeriod.periodStart.startsWith("2026-07")) return true;
+  return false;
+}
+
+function isValidEvent(event) {
+  const titles = [event?.titleZh || "", event?.titleEn || ""].map((value) => String(value).trim());
+  const text = Object.values(event || {}).join(" ");
+  if (!event?.url || !/^https?:\/\//i.test(event.url)) return false;
+  if (titles.some(isGenericTitle)) return false;
+  if (scraperNoisePattern.test(text) || staleContentPattern.test(text)) return false;
+  if (containsOldYear(text)) return false;
+  if (/\b6 June\b/i.test(`${event?.timeZh || ""} ${event?.timeEn || ""}`) && weekPeriod.periodStart.startsWith("2026-07")) return false;
+  return true;
+}
 
 function getSydneyWeekPeriod(date) {
   const parts = Object.fromEntries(
@@ -173,6 +205,7 @@ async function fetchText(url, city) {
 function scoreCandidate(text, source) {
   const lower = text.toLowerCase();
   if (rejectKeywords.some((word) => lower.includes(word))) return -50;
+  if (scraperNoisePattern.test(text) || staleContentPattern.test(text) || containsOldYear(text)) return -50;
   let score = source.tier === "A" ? 8 : 5;
   for (const word of kidsKeywords) if (lower.includes(word)) score += 6;
   if (/\b(free|\$|ticket|book|register)\b/i.test(text)) score += 2;
@@ -204,7 +237,7 @@ function extractLinks(html, source) {
 
 function uniqueCandidates(candidates) {
   const seen = new Set();
-  return candidates.sort((a, b) => b.score - a.score).filter((item) => {
+  return candidates.filter((item) => !isBadCandidate(item)).sort((a, b) => b.score - a.score).filter((item) => {
     const key = item.url.toLowerCase();
     if (seen.has(key)) return false;
     seen.add(key);
@@ -255,7 +288,7 @@ async function enrichWithOpenAI(candidates, city) {
 }
 
 function fallbackEvents(candidates, city) {
-  return candidates.slice(0, 8).map((candidate) => ({
+  return candidates.filter((candidate) => !isBadCandidate(candidate)).slice(0, 8).map((candidate) => ({
     tagZh: `${candidate.source} · 亲子`, tagEn: `${candidate.source} · Family`,
     titleZh: candidate.title, titleEn: candidate.title,
     summaryZh: `来自 ${city} 官方活动来源的亲子友好候选。出发前请点击官网确认最新时间、票价和年龄要求。`,
@@ -332,8 +365,8 @@ async function buildCity(config) {
   catch (error) { console.warn(`${config.name} AI enrichment skipped: ${error.message}`); }
   let events = enrichment?.events || null;
   if (!Array.isArray(events) || events.length < 3) events = fallbackEvents(selected, config.name);
-  events = events.slice(0, 8);
-  if (events.length < 3) throw new Error(`Not enough ${config.name} event candidates; site left unchanged.`);
+  events = events.filter(isValidEvent).slice(0, 8);
+  if (events.length !== 8) throw new Error(`Not enough valid ${config.name} event candidates; refusing to publish stale or generic content.`);
   const eventUrls = new Set(events.map((event) => String(event.url || "").toLowerCase()));
   const moreLinks = selected
     .filter((candidate) => candidate.url && !eventUrls.has(candidate.url.toLowerCase()))
