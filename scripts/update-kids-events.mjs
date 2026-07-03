@@ -132,7 +132,7 @@ const rejectKeywords = ["whisky", "wine", "cocktail", "bar", "18+", "adults only
 const genericTitlePattern = /^(free|program|event|family and kids|kindergarten|playgroups?|support for parents|child and family hub)$/i;
 const scraperNoisePattern = /Client Challenge|JavaScript is disabled|outdated browser|required part of this site|Enfield Council Cham|Corrard\/Haeremai|Industrial Chemists/i;
 const staleContentPattern = /\bSpring Festival 2024\b|\b5 June 1937\b/i;
-const libraryActivityPattern = /\b(library|libraries|storytime|story time|rhyme time|baby rhyme|book club)\b|图书馆|故事会/i;
+const libraryActivityPattern = /\b(library|libraries|storytime|story time|rhyme time|baby rhyme|book club)\b|\u56fe\u4e66\u9986|\u6545\u4e8b\u4f1a/i;
 
 function isGenericTitle(title = "") {
   return genericTitlePattern.test(String(title).trim());
@@ -171,8 +171,36 @@ function isValidEvent(event) {
 
 function isFreshLeadEvent(event) {
   const text = `${event?.tagZh || ""} ${event?.tagEn || ""} ${event?.titleZh || ""} ${event?.titleEn || ""} ${event?.summaryZh || ""} ${event?.summaryEn || ""} ${event?.timeZh || ""} ${event?.timeEn || ""}`.toLowerCase();
-  if (/\b(ongoing|long-run|permanent|venue entry|what's on|see official page)\b|持续开放|长期|场馆入口|以官网为准/.test(text)) return false;
-  return /\b(mon|tue|wed|thu|fri|sat|sun|monday|tuesday|wednesday|thursday|friday|saturday|sunday|\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)|\d{1,2}\s*-\s*\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec))\b|周[一二三四五六日天]|星期[一二三四五六日天]|\d+月\d+日/.test(text);
+  if (/\b(ongoing|long-run|permanent|venue entry|what's on|see official page)\b|\u6301\u7eed\u5f00\u653e|\u957f\u671f|\u573a\u9986\u5165\u53e3|\u4ee5\u5b98\u7f51\u4e3a\u51c6/.test(text)) return false;
+  return /\b(mon|tue|wed|thu|fri|sat|sun|monday|tuesday|wednesday|thursday|friday|saturday|sunday|\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)|\d{1,2}\s*-\s*\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec))\b|\u5468[\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u65e5\u5929]|\u661f\u671f[\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u65e5\u5929]|\d+\u6708\d+\u65e5/.test(text);
+}
+
+async function readPreviousEvents(dataPath) {
+  try {
+    const data = JSON.parse(await readFile(dataPath, "utf8"));
+    return Array.isArray(data.events) ? data.events : [];
+  } catch {
+    return [];
+  }
+}
+
+function eventIdentity(event) {
+  const title = String(event?.titleEn || event?.titleZh || "").trim().toLowerCase();
+  const url = String(event?.url || "").trim().toLowerCase().replace(/\/$/, "");
+  return `${title} ${url}`;
+}
+
+function countNewLeadEvents(events, previousEvents) {
+  const previousLeadIds = new Set(previousEvents.slice(0, 4).map(eventIdentity));
+  return events.slice(0, 4).filter((event) => !previousLeadIds.has(eventIdentity(event))).length;
+}
+
+function assertMaterialLeadRefresh(events, previousEvents, city) {
+  if (previousEvents.length < 4) return;
+  const newLeadCount = countNewLeadEvents(events, previousEvents);
+  if (newLeadCount < 3) {
+    throw new Error(`${city} first four cards are not materially refreshed: only ${newLeadCount}/4 are new compared with the previous snapshot.`);
+  }
 }
 
 function getSydneyWeekPeriod(date) {
@@ -340,8 +368,8 @@ function renderMoreLink(candidate) {
   const source = esc(candidate.source || "Official source");
   const url = esc(candidate.url);
   return `          <a href="${url}" target="_blank" rel="noreferrer">
-            <span class="zh">${title} · ${source}</span>
-            <span class="en">${title} · ${source}</span>
+            <span class="zh">${title} - ${source}</span>
+            <span class="en">${title} - ${source}</span>
           </a>`;
 }
 
@@ -362,7 +390,7 @@ ${sourceLinks.map(renderMoreLink).join("\n")}
           </div>`;
 }
 
-async function buildCity(config) {
+async function buildCity(config, previousEvents) {
   const candidates = [];
   for (const source of config.sources) {
     try {
@@ -380,10 +408,13 @@ async function buildCity(config) {
   try { enrichment = await enrichWithOpenAI(selected, config.name); }
   catch (error) { console.warn(`${config.name} AI enrichment skipped: ${error.message}`); }
   let events = enrichment?.events || null;
-  if (!Array.isArray(events) || events.length < 3) events = fallbackEvents(selected, config.name);
+  if (!Array.isArray(events) || events.length < 8) {
+    throw new Error(`${config.name} AI enrichment did not produce 8 events; refusing fallback filler publish.`);
+  }
   events = events.filter(isValidEvent).slice(0, 8);
   if (events.length !== 8) throw new Error(`Not enough valid ${config.name} event candidates; refusing to publish stale or generic content.`);
   if (events.slice(0, 4).some((event) => !isFreshLeadEvent(event))) throw new Error(`${config.name} first four events must be new or short-date current-week activities.`);
+  assertMaterialLeadRefresh(events, previousEvents, config.name);
   const eventUrls = new Set(events.map((event) => String(event.url || "").toLowerCase()));
   const moreLinks = selected
     .filter((candidate) => candidate.url && !eventUrls.has(candidate.url.toLowerCase()))
@@ -397,6 +428,7 @@ async function buildCity(config) {
       moreLinks.push({ title: source.name, url: source.url, source: "Official source", kind: "backup" });
     }
   }
+  if (moreLinks.length < 3) throw new Error(`${config.name} More section has fewer than 3 valid links.`);
   return { events, moreLinks, candidates: selected, usage: enrichment?.usage || null };
 }
 
@@ -461,7 +493,8 @@ async function main() {
   let index = await readFile(indexPath, "utf8");
   const results = new Map();
   for (const config of cityConfigs) {
-    const result = await buildCity(config);
+    const previousEvents = await readPreviousEvents(config.dataPath);
+    const result = await buildCity(config, previousEvents);
     const { events, moreLinks } = result;
     results.set(config.key, result);
     await writeFile(config.dataPath, `${JSON.stringify({ city: config.name, updatedAt: new Date().toISOString(), ...weekPeriod, events }, null, 2)}\n`, "utf8");

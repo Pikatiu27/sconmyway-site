@@ -317,3 +317,58 @@ https://pikatiu27.github.io/sconmyway-site/kids/
 - Reject stale years earlier than the publication week year, known old-event titles, and mismatched old dates such as a June-only event in a July publication week.
 - Reject scraper noise including JavaScript challenge text, outdated-browser text, historic snippets, and unrelated council page fragments.
 - If fewer than 8 valid events remain for a city, the updater must fail and leave the site unchanged rather than publish filler.
+
+### 15.1 2026-07-03 failure summary
+
+What failed:
+
+- The 2026-07-03 morning workflow did push a commit, but the content refresh was not good enough.
+- The first published result looked like a date rollover because it updated `updatedAt`, `periodStart`, `periodEnd`, JSON files and HTML fallback, while several visible activities still behaved like stale or low-quality picks.
+- The run used fallback mode instead of a strong AI-assisted review path, so it relied on simple candidate scraping and scoring.
+- The validation checked structure and dates, but did not prove that the first 4 cards were materially new, higher-quality, or different from the previous week.
+- Library/storytime/craft items had clear titles and dates, so the simple scoring overvalued them and allowed them to crowd out larger family-friendly council festivals.
+- Parramatta Midwinter Festival was discoverable from AtParramatta, but the workflow did not force a second-pass check of featured/current-week events from major sources.
+
+Root causes:
+
+- `updatedAt` freshness was treated as too important compared with content freshness.
+- The updater could still publish fallback-generated content when the candidate quality was weak.
+- The search source list existed, but priority sources were not deep-checked.
+- The release gate did not compare the new first 4 cards against the previous first 4 cards.
+- The release gate did not enforce enough event-type hierarchy: large council festivals and short-date family events should beat library/storytime backups.
+- Push success and content success were conflated. `git push` succeeding is not enough; the live page must show genuinely refreshed content.
+
+### 15.2 How to make the next update succeed
+
+The goal is not to guarantee that every external service works. The goal is to guarantee that bad content does not go live.
+
+Required next-run behaviour:
+
+1. Save a pre-update snapshot of each city's current 8 `title + url` pairs.
+2. Re-fetch and re-screen official sources; do not use the previous JSON or HTML fallback as an activity source.
+3. Deep-check major Sydney sources every run: City of Sydney, City of Parramatta / AtParramatta, The Rocks, Darling Harbour, Darling Square / Darling Quarter, Penrith City Council, Inner West, Blacktown, Strathfield and other major councils or venues.
+4. Deep-check major Melbourne council and venue sources the same way, not only generic `What's On` pages.
+5. For B/C/D discovery sources such as Eventbrite, Humanitix, AllEvents, Time Out, Secret, Instagram, Facebook and Xiaohongshu, use them only to discover leads; every selected card still needs an official council, venue, organiser or ticketing page.
+6. Main cards must prioritise council festivals, NAIDOC/community days, school-holiday programs, short-date venue programs, outdoor/active events and major exhibitions.
+7. Library, libraries, storytime, rhyme time, baby rhyme and book-club activities must be moved to `More`, not the 8 main cards.
+8. Cards 1-4 for each city must be concrete-date, short-date, one-off, newly starting, or newly found current-week activities.
+9. Ongoing exhibitions, venue landing pages, recurring backup sessions and generic `What's On` links must be card 5 or later, or `More`.
+10. `More` must also refresh and contain 3-5 usable links from the current candidate pool or major official entry points.
+
+Hard fail conditions:
+
+- If fewer than 8 valid main cards remain for a city, fail the workflow and leave the previous site unchanged.
+- If fewer than 3 valid `More` links remain for a city, fail the workflow.
+- If cards 1-4 are mostly unchanged from the previous snapshot, fail the workflow unless there is written evidence that the same activities are still the best current-week picks.
+- If cards 1-4 contain a generic source page, long-running venue entrance, library/storytime item, or old-date item, fail the workflow.
+- If the update changes only `updatedAt`, `periodStart`, `periodEnd`, or visible date text without materially changing content, fail the workflow.
+- If AI enrichment is unavailable and fallback cannot prove first-4 freshness, fail instead of publishing fallback filler.
+- If UTF-8 validation, JSON parsing, English-only field checks, link checks or HTML fallback sync fail, do not commit.
+- If GitHub Pages or `origin/main` confirmation fails after push, report the failure explicitly and do not describe the update as live.
+
+Post-push verification:
+
+- Confirm local `HEAD` equals `origin/main`.
+- Confirm the public GitHub Pages page or public JSON reflects the new commit after allowing for deployment/cache delay.
+- Compare the visible page against the candidate pool: the first 4 visible cards must match the intended current-week lead picks.
+- Report separately: `push succeeded`, `Pages refreshed`, and `content quality gate passed`. Do not collapse these into one success statement.
