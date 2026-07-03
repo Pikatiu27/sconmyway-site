@@ -84,10 +84,11 @@ Finder controls 结构：
 1. 删除已经结束的活动。
 2. 新增最新活动。
 3. 新活动、单日活动、短期活动放在前排。
-4. 仍在持续的长期展览、长期开放项目往后放。
-5. 每个城市保留 8 条主推荐。
-6. `More` 区保留 3-5 条有效链接，不无限增加，不放失效、空白或长期无人维护的入口。
-7. 每周保留候选池报告，记录 8 条主推荐之外的候选和来源，方便追溯为什么入选或未入选。
+4. 每个城市前 4 条必须是本周新检索到的新活动、单日活动、短期活动或明确日期活动。
+5. 仍在持续的长期展览、长期开放项目、场馆入口和泛 `What's On` 页面只能放在第 5 条以后。
+6. 每个城市保留 8 条主推荐。
+7. `More` 区保留 3-5 条有效链接，不无限增加，不放失效、空白或长期无人维护的入口。
+8. 每周保留候选池报告，记录 8 条主推荐之外的候选和来源，方便追溯为什么入选或未入选。
 
 ## 6. 活动筛选逻辑
 
@@ -233,7 +234,7 @@ Official or council finder / Map
 
 - Workflow 使用 UTC 多时间槽覆盖 AEST / AEDT，再由脚本 gate 判断本地小时。
 - 每周任务必须从 sources 重新检索网页内容，不能把旧 `kids/data/*.json` 或旧 HTML 卡片当作本周事实来源。
-- 自动任务必须重新筛选 Sydney 和 Melbourne 活动，删除已结束活动，新增最新活动，并按“新活动前排、持续活动后排”排序。
+- 自动任务必须重新筛选 Sydney 和 Melbourne 活动，删除已结束活动，新增最新活动，并按“前 4 条必须是新/短期/明确日期活动，持续活动后排”排序。
 - 自动任务必须重新生成结构化数据：`kids/data/events.json` 和 `kids/data/melbourne-events.json`。
 - 自动任务必须同步 HTML fallback：更新 `kids/index.html` 内的活动卡片和 `data-period-start` / `data-period-end`。公开页面不能只依赖运行时 JSON。
 - 自动任务必须同步 `More` 区链接；More 链接应来自本周重新检索后的候选活动或大型官方入口，不能保留上周失效链接。
@@ -242,6 +243,7 @@ Official or council finder / Map
 - 生成后校验 JSON 可解析。
 - 校验英文页面无中文泄漏。
 - 校验每个城市仍为 8 条主推荐，`More` 区保持 3-5 条链接。
+- 校验每个城市前 4 条都是本周新检索到的新活动、单日活动、短期活动或明确日期活动；长期展览、持续开放项目、场馆入口、泛 `What's On` 页面不能进入前 4。
 - 校验卡片官网链接和 `More` 链接；Sources 大列表可作为参考来源，不作为每周卡片链接校验范围。
 - 校验活动文本没有明显 `expired / ended / closed / cancelled / 已结束 / 取消` 等过期或取消信号。
 - 写入 Friday-to-Friday 周期。
@@ -302,12 +304,13 @@ https://pikatiu27.github.io/sconmyway-site/kids/
 ## 14. 调用 Codex 的推荐提示词
 
 ```text
-请按 KIDS_PAGE_GUIDE.md 维护“今天带娃去哪儿？”页面。保持手机优先、马卡龙手帐风、Sydney/Melbourne 城市切换、中英双语、8 条主推荐、More 折叠链接、官网/导航/分享按钮顺序。每周五早上 5:00 更新新一周全部内容：必须重新检索 sources、重新筛选，删除过期活动，新增最新活动，新活动放前排，仍在持续的活动往后放；不能复用上周静态 DATA 当作本周内容。搜索范围要宽：official council/venue pages、Eventbrite/Humanitix/AllEvents/Secret/Time Out/亲子媒体、Instagram/Facebook/小红书/社群线索都可用于发现，但社媒线索必须反查官方 council、venue、organiser 或 ticketing 页面后才能入选。更新后同步 JSON data 和 HTML fallback，再校验 UTF-8、英文无中文泄漏、Friday-to-Friday 日期和远程推送。英文页面必须全英文。先保存本地，不要推送 GitHub，除非我明确要求部署。
+请按 KIDS_PAGE_GUIDE.md 维护“今天带娃去哪儿？”页面。保持手机优先、马卡龙手帐风、Sydney/Melbourne 城市切换、中英双语、8 条主推荐、More 折叠链接、官网/导航/分享按钮顺序。每周五早上 5:00 更新新一周全部内容：必须重新检索 sources、重新筛选，删除过期活动，新增最新活动；每个城市前 4 条必须是本周新检索到的新活动、单日活动、短期活动或明确日期活动，仍在持续的活动、长期展览、场馆入口和泛 What's On 页面往后放；不能复用上周静态 DATA 当作本周内容。搜索范围要宽：official council/venue pages、Eventbrite/Humanitix/AllEvents/Secret/Time Out/亲子媒体、Instagram/Facebook/小红书/社群线索都可用于发现，但社媒线索必须反查官方 council、venue、organiser 或 ticketing 页面后才能入选。更新后同步 JSON data 和 HTML fallback，再校验 UTF-8、英文无中文泄漏、Friday-to-Friday 日期和远程推送。英文页面必须全英文。先保存本地，不要推送 GitHub，除非我明确要求部署。
 ```
 
 ## 15. Weekly Update Failure Guardrails
 
 - Date refresh alone is not a valid update. The weekly job must remove expired activities and publish a materially rechecked current-week list.
+- For each city, cards 1-4 must be newly found, one-off, short-date, or concrete-date current-week activities. Long-running exhibitions, venue entrances, recurring backups, and generic `What's On` pages can only appear from card 5 onward.
 - Reject generic category pages such as `Free`, `Program`, `Family and kids`, `Kindergarten`, `Playgroups`, `Support for parents`, or `Child and Family Hub`.
 - Reject stale years earlier than the publication week year, known old-event titles, and mismatched old dates such as a June-only event in a July publication week.
 - Reject scraper noise including JavaScript challenge text, outdated-browser text, historic snippets, and unrelated council page fragments.

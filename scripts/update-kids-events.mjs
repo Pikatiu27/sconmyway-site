@@ -160,6 +160,12 @@ function isValidEvent(event) {
   return true;
 }
 
+function isFreshLeadEvent(event) {
+  const text = `${event?.tagZh || ""} ${event?.tagEn || ""} ${event?.titleZh || ""} ${event?.titleEn || ""} ${event?.summaryZh || ""} ${event?.summaryEn || ""} ${event?.timeZh || ""} ${event?.timeEn || ""}`.toLowerCase();
+  if (/\b(ongoing|long-run|permanent|venue entry|what's on|see official page)\b|持续开放|长期|场馆入口|以官网为准/.test(text)) return false;
+  return /\b(mon|tue|wed|thu|fri|sat|sun|monday|tuesday|wednesday|thursday|friday|saturday|sunday|\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)|\d{1,2}\s*-\s*\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec))\b|周[一二三四五六日天]|星期[一二三四五六日天]|\d+月\d+日/.test(text);
+}
+
 function getSydneyWeekPeriod(date) {
   const parts = Object.fromEntries(
     new Intl.DateTimeFormat("en-CA", {
@@ -271,8 +277,8 @@ async function enrichWithOpenAI(candidates, city) {
     body: JSON.stringify({
       model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       input: [
-        { role: "system", content: `Create accurate bilingual family event JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including referenceEn. If a fact is missing, say 'See official page'. Never invent details. Exclude expired events. Put newly starting, one-off, or short-date events first, then ongoing long-run activities.` },
-        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 kid-friendly ${city} activities active during this Friday-to-Friday week. Delete expired events, add the newest relevant activities, rank new or short-date activities first, and place still-running ongoing activities later. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
+        { role: "system", content: `Create accurate bilingual family event JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including referenceEn. If a fact is missing, say 'See official page'. Never invent details. Exclude expired events. The first 4 cards must be newly found or newly starting current-week activities with concrete dates, especially one-off or short-date events. Put ongoing long-run exhibitions, venue entrances, and recurring backup activities after the first 4.` },
+        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 kid-friendly ${city} activities active during this Friday-to-Friday week. Delete expired events, add the newest relevant activities, and ensure cards 1-4 are new or short-date activities from the current weekly search with concrete dates. Place still-running ongoing activities, venue directory pages, and long-run exhibitions at card 5 or later. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
       ],
       text: { format: { type: "json_object" } }
     })
@@ -367,6 +373,7 @@ async function buildCity(config) {
   if (!Array.isArray(events) || events.length < 3) events = fallbackEvents(selected, config.name);
   events = events.filter(isValidEvent).slice(0, 8);
   if (events.length !== 8) throw new Error(`Not enough valid ${config.name} event candidates; refusing to publish stale or generic content.`);
+  if (events.slice(0, 4).some((event) => !isFreshLeadEvent(event))) throw new Error(`${config.name} first four events must be new or short-date current-week activities.`);
   const eventUrls = new Set(events.map((event) => String(event.url || "").toLowerCase()));
   const moreLinks = selected
     .filter((candidate) => candidate.url && !eventUrls.has(candidate.url.toLowerCase()))

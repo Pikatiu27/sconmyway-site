@@ -32,6 +32,12 @@ function daysBetween(startIso, endIso) {
   return (new Date(`${endIso}T00:00:00Z`) - new Date(`${startIso}T00:00:00Z`)) / 86400000;
 }
 
+function isFreshLeadEvent(event) {
+  const text = `${event.tagZh || ""} ${event.tagEn || ""} ${event.titleZh || ""} ${event.titleEn || ""} ${event.summaryZh || ""} ${event.summaryEn || ""} ${event.timeZh || ""} ${event.timeEn || ""}`.toLowerCase();
+  if (/\b(ongoing|long-run|permanent|venue entry|what's on|see official page)\b|持续开放|长期|场馆入口|以官网为准/.test(text)) return false;
+  return /\b(mon|tue|wed|thu|fri|sat|sun|monday|tuesday|wednesday|thursday|friday|saturday|sunday|\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)|\d{1,2}\s*-\s*\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec))\b|周[一二三四五六日天]|星期[一二三四五六日天]|\d+月\d+日/.test(text);
+}
+
 async function readData() {
   const bytes = await readFile(dataPath);
   const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
@@ -74,6 +80,9 @@ async function readData() {
     }
     if (/\b6 June\b/i.test(`${event.timeZh || ""} ${event.timeEn || ""}`) && data.periodStart.startsWith("2026-07")) {
       throw new Error(`events[${index}] contains a June date during the July publication week`);
+    }
+    if (index < 4 && !isFreshLeadEvent(event)) {
+      throw new Error(`events[${index}] must be a new or short-date current-week lead activity`);
     }
     for (const field of ["tagEn", "titleEn", "summaryEn", "timeEn", "placeEn", "priceEn", "referenceEn"]) {
       if (typeof event[field] !== "string" || !event[field].trim()) {
