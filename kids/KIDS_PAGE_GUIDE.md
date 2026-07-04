@@ -2,6 +2,44 @@
 
 本文件是 `今天带娃去哪儿？ / Kids Finder` 的唯一维护说明。以后调整页面、扩展城市、筛选活动、修改自动更新逻辑时，优先按本文执行。
 
+## 0. 快速执行大纲
+
+每次维护 kids 页面先按这个短大纲执行，再看后面的细则。
+
+### 0.1 页面显示逻辑
+
+- 默认打开：Sydney / 悉尼 + Events / 本周活动。
+- 顶部只保留一个清楚的选择区：当前城市 + 当前内容类型 + 城市切换 + Events/Playgrounds 切换。
+- 标题固定一行：`今天带娃去哪儿？` / `Where to take the kids today?`
+- Events 每个城市显示 8 条主推荐；Playgrounds 是地区地点库，不按 8 条限制。
+- 活动卡片按钮顺序固定：`官网 / 导航 / 分享`，英文为 `Official / Map / Share`。
+- `More` 必须折叠，放 3-5 条本周候选或大型官方入口，不放空链接、过期链接或装饰性链接。
+
+### 0.2 内容筛选逻辑
+
+- 每周必须重新检索，不复用上周 JSON、HTML fallback 或旧 DATA 当作事实来源。
+- 主卡优先级：family outing > 本周明确日期 > 官方可核验 > 区域覆盖。
+- 每个城市前 4 条必须是本周新检索到、单日、短期或明确日期活动。
+- 持续展览、长期开放项目、场馆入口和泛 `What's On` 页面只能放第 5 条以后或 More。
+- Library、storytime、rhyme time、baby/toddler-only、0-3、playgroup 不进主 8 条，只能进 More。
+- 社媒、小红书、Instagram、Facebook、亲子媒体只能作为线索；入选前必须反查 council、venue、organiser 或 ticketing 官方页。
+- Sydney / Melbourne 都要按实用区域扩展搜索，不让 CBD / City core 长期占满前排。
+
+### 0.3 自动更新逻辑
+
+- 每周五 Australia/Sydney 本地时间 5:00 执行主更新。
+- 每周五 6:00 做补偿检查；如果 5:00 已成功刷新当天内容，6:00 必须 no-op。
+- 自动更新流程固定：重新检索 → 候选打 Region → 过滤过期和弱活动 → 排序 → 生成双语 JSON → 同步 HTML fallback → 同步 More → 写候选池和 token 记录 → 校验 → commit → push。
+- 如果 AI/API 不可用，且 fallback 不能证明前 4 条是新/短期/明确日期活动，必须失败并保留旧页面，不能发布弱内容。
+
+### 0.4 推送上线逻辑
+
+- 用户明确说“推送 / 部署 / 上线”时才从本地 commit + push。
+- 推送前必须通过内容 gate、文件 gate 和 `git diff --check`。
+- 正常推送目标是 `origin/main`，不 force push。
+- 推送后必须分别确认：`content quality gate passed`、`push succeeded`、`Pages refreshed`。
+- 如果 push 成功但 GitHub Pages 还没刷新，只能说 `Pages pending`，不能说已上线。
+
 ## 1. 页面定位
 
 - 面向 Sydney / Melbourne 家长，在手机上快速查找本周亲子活动。
@@ -145,11 +183,47 @@ Reference
 - Bunnings 官方活动预约页。
 - 消防局、开放日、公共服务机构官方活动页。
 
-Sydney 重点：City of Sydney, City of Parramatta / AtParramatta, Inner West, Waverley, North Sydney, Willoughby, Mosman, Woollahra, Burwood, Ryde, Strathfield, Cumberland, Bayside, Northern Beaches, Canterbury-Bankstown, Georges River, Hornsby, Ku-ring-gai, Lane Cove, Liverpool, Blacktown, Penrith 等有官网活动页的主要 council；Sydney Opera House, The Rocks, Darling Harbour, Darling Square / Darling Quarter, Sydney Olympic Park, Australian Museum, Powerhouse, State Library NSW, Art Gallery NSW, MCA, Maritime Museum, Taronga Zoo, Sydney Zoo, Luna Park, Botanic Gardens, Centennial Parklands, Harry Potter: The Exhibition Sydney, Children’s International Film Festival 等大型场馆或官方活动页。
+Sydney 重点：City of Sydney, City of Parramatta / AtParramatta, Inner West, Waverley, North Sydney, Willoughby, Mosman, Woollahra, Burwood, Ryde, Strathfield, Cumberland, The Hills, Bayside, Northern Beaches, Canterbury-Bankstown, Georges River, Sutherland, Hornsby, Ku-ring-gai, Lane Cove, Liverpool, Blacktown, Fairfield, Penrith, Campbelltown, Camden, Blue Mountains, Hawkesbury 等有官网活动页的主要 council；Sydney Opera House, The Rocks, Darling Harbour, Darling Square / Darling Quarter, ICC Sydney, Sydney Olympic Park, Sydney Showground, Riverside Theatres Parramatta, Casula Powerhouse Arts Centre, The Joan Penrith, Australian Museum, Powerhouse, State Library NSW, Art Gallery NSW, MCA, Maritime Museum, Taronga Zoo, Sydney Zoo, Luna Park, Botanic Gardens, Centennial Parklands, Harry Potter: The Exhibition Sydney, Children’s International Film Festival 等大型场馆或官方活动页。
 
 Library rule: library, libraries, storytime, rhyme time, baby rhyme and book-club activities can be kept as More links, but must not occupy the 8 main cards. Main cards should prioritise council festivals, school-holiday programs, NAIDOC/community events, larger venues, outdoor/active events, exhibitions and short-date official family activities.
 
-Melbourne 重点：City of Melbourne, Yarra, Port Phillip, Stonnington, Boroondara, Darebin, Merri-bek, Moonee Valley, Maribyrnong, Hobsons Bay, Brimbank, Wyndham, Kingston, Banyule, Whitehorse, Manningham, Maroondah, Knox, Casey, Greater Dandenong, Frankston 等有官网活动页的主要 council；Museums Victoria, ACMI, NGV, State Library Victoria, Arts Centre Melbourne, Fed Square, Royal Botanic Gardens Victoria, Melbourne Museum, Immigration Museum, Zoos Victoria, Puffing Billy, CERES, Collingwood Children's Farm, Melbourne Recital Centre 等大型场馆或官方活动页。
+Melbourne 重点：City of Melbourne, Yarra, Port Phillip, Stonnington, Boroondara, Bayside, Glen Eira, Darebin, Merri-bek, Moonee Valley, Maribyrnong, Hobsons Bay, Brimbank, Wyndham, Melton, Hume, Whittlesea, Kingston, Banyule, Nillumbik, Whitehorse, Manningham, Maroondah, Knox, Yarra Ranges, Monash, Casey, Cardinia, Greater Dandenong, Frankston, Mornington Peninsula 等有官网活动页的主要 council；Queen Victoria Market, Museums Victoria, ACMI, NGV, State Library Victoria, Arts Centre Melbourne, Fed Square, Royal Botanic Gardens Victoria, Melbourne Museum, Immigration Museum, Melbourne Convention and Exhibition Centre, Melbourne Zoo, Werribee Open Range Zoo, Healesville Sanctuary, Puffing Billy, Abbotsford Convent, CERES, Collingwood Children's Farm, Melbourne Recital Centre 等大型场馆或官方活动页。
+
+### 9.1 区域覆盖地图
+
+官方底图：
+
+- Sydney 底层按 NSW Planning 的 Greater Sydney Districts：Central City、Eastern City、North、South、Western City。页面和候选池不要直接显示太行政化的名字，而是转成家长能快速理解的活动区域。
+- Melbourne 底层参考 ABS SA4 / Greater Melbourne 的 functional city areas，以及 Plan Melbourne 的 activity centres。页面和候选池同样使用实用区域名，不用复杂行政边界吓用户。
+
+Sydney 实用区域：
+
+- 市中心 / 海港核心：City of Sydney、The Rocks、Darling Harbour、Darling Square / Darling Quarter、ICC Sydney、Opera House、Australian Museum、Powerhouse、Art Gallery NSW、MCA、Maritime Museum、Botanic Gardens。这里是高频大型展览、演出、节庆、市集和游客型家庭活动区。
+- Inner West / East：Inner West、Canada Bay、Burwood、Strathfield、Waverley、Woollahra、Randwick、Centennial Parklands。这里常有社区节、parklands 活动、海边/公园亲子活动。
+- North / Beaches：North Sydney、Willoughby、Mosman、Hornsby、Ku-ring-gai、Lane Cove、Ryde、Northern Beaches、Taronga。这里适合找 council family days、户外活动、动物园和海边活动。
+- Parramatta / Olympic Park：Parramatta / AtParramatta、Riverside Theatres、Sydney Olympic Park、Sydney Showground、Cumberland、The Hills。这里是西北/中西部最重要的活动枢纽，Parramatta festival、showground、Olympic Park 活动要每周深查。
+- South / St George / Shire：Bayside、Canterbury-Bankstown、Georges River、Sutherland。这里常有 council festival、waterfront / park 活动和社区日。
+- West / South-west：Blacktown、Fairfield、Liverpool、Casula、Penrith、The Joan、Campbelltown、Camden、Blue Mountains、Hawkesbury。这里不能被 CBD 覆盖掉，尤其 Penrith、Blacktown、Fairfield、Casula、Campbelltown 的大型社区活动和场馆活动。
+- Statewide / chain：Bunnings、Fire and Rescue NSW、NSW National Parks、Museums of History NSW 等跨区域来源。只在活动具体、日期清楚、适合家庭时进入主卡。
+
+Melbourne 实用区域：
+
+- City core：City of Melbourne、Queen Victoria Market、Melbourne Museum、NGV、ACMI、State Library Victoria、Arts Centre Melbourne、Fed Square、Immigration Museum、MCEC、Melbourne Recital Centre。这里是大型展览、演出、市集和游客型家庭活动核心。
+- Inner north：Yarra、Merri-bek、Darebin、Melbourne Zoo、CERES、Collingwood Children's Farm、Abbotsford Convent。这里适合找 farm、market、community festival、arts/culture family day。
+- Inner south / bayside：Port Phillip、Stonnington、Bayside、Glen Eira。这里常有 beach/bayside 活动、council family day、arts centre 和社区节。
+- West / north-west：Moonee Valley、Maribyrnong、Hobsons Bay、Brimbank、Wyndham、Melton、Hume、Werribee Open Range Zoo。这里是西区和西北区家庭活动覆盖重点，不能只用 City of Melbourne 代替。
+- North / north-east：Whittlesea、Banyule、Nillumbik。重点找 council events、parks、community days、outdoor family programs。
+- East / outer east：Boroondara、Whitehorse、Manningham、Maroondah、Knox、Yarra Ranges、Puffing Billy、Healesville Sanctuary。这里是东区、Dandenong/Yarra Ranges 方向的家庭 outing 重点。
+- South-east / peninsula：Monash、Kingston、Casey、Cardinia、Greater Dandenong、Frankston、Mornington Peninsula。这里重点找大型 council 活动、waterfront / park events、family shows 和 school holiday programs。
+- Statewide / chain：Bunnings、Fire Rescue Victoria、CFA、Zoos Victoria、Open House Melbourne 等。只在活动具体、日期清楚、适合家庭时进入主卡。
+
+区域推荐规则：
+
+- 每周候选池必须先按区域打标，再交给筛选和 AI 归纳。
+- 主 8 条不强行平均分配，但如果质量允许，每个城市主 8 条应覆盖至少 3 个实用区域；前 4 条优先活动如果质量允许，应至少覆盖 2 个区域。
+- 不要为了凑区域而放弱活动。质量优先级仍然是：本周明确日期 > family outing > 官方可核验 > 区域覆盖。
+- CBD / City core 可以有高质量大型活动，但不能长期占满前 4 条。Parramatta/Olympic Park、Penrith/Blacktown/Fairfield/Casula/Campbelltown、Melbourne west/north/east/south-east 等郊区枢纽必须每周深查。
+- `CANDIDATE_POOL.md` 必须记录 Region 列，方便回看是否只抓到 city core。
 
 ### B/C/D 级：补充线索
 
@@ -237,6 +311,7 @@ Official or council finder / Map
 - Workflow 使用 UTC 多时间槽覆盖 AEST / AEDT，再由脚本 gate 判断本地小时。
 - 每周任务必须从 sources 重新检索网页内容，不能把旧 `kids/data/*.json` 或旧 HTML 卡片当作本周事实来源。
 - 自动任务必须重新筛选 Sydney 和 Melbourne 活动，删除已结束活动，新增最新活动，并按“前 4 条必须是新/短期/明确日期活动，持续活动后排”排序。
+- 自动任务必须给候选来源打 Region 标签，并优先从多个实用区域构建候选池，避免结果长期集中在 CBD / City core。
 - 自动任务必须重新生成结构化数据：`kids/data/events.json` 和 `kids/data/melbourne-events.json`。
 - 自动任务必须同步 HTML fallback：更新 `kids/index.html` 内的活动卡片和 `data-period-start` / `data-period-end`。公开页面不能只依赖运行时 JSON。
 - 自动任务必须同步 `More` 区链接；More 链接应来自本周重新检索后的候选活动或大型官方入口，不能保留上周失效链接。
@@ -259,6 +334,7 @@ gate 5:00 / 6:00
 → fetch official sources and discovery sources
 → widen search with suburb / council / venue / event-name queries from social tips
 → extract candidates
+→ assign practical Region labels and diversify the candidate pool
 → verify B/C/D tips against official council, venue, organiser or ticketing pages
 → filter expired or unclear activities
 → rank new / short-date activities first, ongoing activities later
@@ -303,13 +379,89 @@ https://pikatiu27.github.io/sconmyway-site/kids/
 - 不要误改 industry 目录。
 - 提交时只 stage kids 相关文件、kids workflow 和 kids updater，避开 unrelated 文件。
 
-## 14. 调用 Codex 的推荐提示词
+## 14. 推送逻辑大纲
+
+推送不是单一步骤，要拆成 4 个独立成功条件：
+
+```text
+content gate passed
+→ commit created or explicit no-op
+→ push confirmed on origin/main
+→ GitHub Pages public page refreshed
+```
+
+### 14.1 允许推送的场景
+
+- 每周五 5:00 自动任务：允许在内容质量 gate 全部通过后自动 commit + push。
+- 每周五 6:00 补偿任务：只在 5:00 没有成功刷新当天内容时运行；如果 5:00 已确认成功，必须 no-op。
+- 手动 workflow_dispatch：允许作为人工补跑，但仍必须通过同样的内容质量 gate。
+- Codex 本地修改：默认只保存本地；只有用户明确说“推送 / 部署 / 上线”时才 commit + push。
+
+### 14.2 推送前必须完成的 gate
+
+内容 gate：
+
+- Sydney 和 Melbourne 都重新检索，不复用旧 JSON 或旧 HTML 当作事实来源。
+- 每个城市 8 条主卡、More 至少 3 条有效链接。
+- 前 4 条必须是本周新检索到、单日、短期或明确日期活动。
+- Library、storytime、rhyme time、baby/toddler-only、0-3、playgroup 只能进 More，不能进主 8 条。
+- 候选池必须记录 Region，避免长期集中在 CBD / City core。
+- 英文页面字段不能夹中文；中文和英文事实一致。
+
+文件 gate：
+
+- `kids/data/events.json` 和 `kids/data/melbourne-events.json` 可解析、UTF-8 无乱码。
+- `kids/index.html` fallback 与 JSON 同步，周期是 Friday-to-Friday。
+- `kids/CANDIDATE_POOL.md` 和 `kids/TOKEN_USAGE.md` 已更新。
+- 链接校验至少覆盖主卡和 More 的可点击链接。
+- `git diff --check` 通过。
+
+### 14.3 不能推送的场景
+
+- 只改了 `updatedAt`、周期日期或页面日期，但活动内容没有实质更新。
+- AI enrichment 不可用，且 fallback 不能证明前 4 条是新/短期/明确日期活动。
+- 任一城市少于 8 条有效主卡，或 More 少于 3 条有效链接。
+- 前 4 条包含泛 `What's On` 页面、长期场馆入口、过期活动、图书馆低龄活动或旧日期。
+- JSON、HTML fallback、英文-only、链接、UTF-8、Friday-to-Friday 任一校验失败。
+- 当前工作树包含 unrelated 改动且无法只 stage kids 相关文件。
+
+### 14.4 Commit 规则
+
+- 只 stage 与 kids 更新直接相关的文件：`kids/index.html`、`kids/data/*.json`、`kids/TOKEN_USAGE.md`、`kids/CANDIDATE_POOL.md`、kids workflow、kids updater、kids guide。
+- 如果没有实质内容变化，不强行 commit。报告为 no-op，并说明是“没有通过内容变化门槛”还是“当前线上已经是最新”。
+- Commit message 使用清楚的目的，例如 `Update weekly kids activities` 或 `Expand kids regional source coverage`。
+- 不把 industry、SC handbook 或其他目录混进 kids commit。
+
+### 14.5 Push 规则
+
+- 正常路径：`git push origin HEAD:main`，最多重试 3 次。
+- 如果遇到 non-fast-forward / fetch-first：先 `git fetch origin main`，确认远端变化；只在无冲突且重新校验通过时再推送。
+- 不能 force push。
+- 推送成功后必须确认本地 `HEAD` 与 `origin/main` 一致。
+- 如果 push 成功但 Pages 未刷新，状态只能写 `push succeeded, Pages pending/failed`，不能说“已上线”。
+
+### 14.6 Pages 上线确认
+
+- Pages workflow 由 `main` push 触发，和 weekly update workflow 是两个阶段。
+- 推送后需要检查公开页面或公开 JSON 是否反映新 commit。
+- 允许 GitHub Pages 有缓存延迟；可等待后重查，但不能把未确认的页面描述成已更新。
+- 最终汇报必须拆开三句话：`content quality gate passed`、`push succeeded`、`Pages refreshed`。
+
+### 14.7 失败后的处理
+
+- 5:00 失败：6:00 补偿任务重试。
+- 6:00 仍失败：保留旧页面，不发布弱内容；报告失败原因和卡在哪个 gate。
+- 内容失败优先修内容，不通过“只改日期”掩盖。
+- 推送失败优先查 GitHub 凭据、non-fast-forward、workflow 权限和 Pages 状态。
+- 每次失败要补充到 `KIDS_PAGE_GUIDE.md` 的 failure summary，防止下周重复。
+
+## 15. 调用 Codex 的推荐提示词
 
 ```text
 请按 KIDS_PAGE_GUIDE.md 维护“今天带娃去哪儿？”页面。保持手机优先、马卡龙手帐风、Sydney/Melbourne 城市切换、中英双语、8 条主推荐、More 折叠链接、官网/导航/分享按钮顺序。每周五早上 5:00 更新新一周全部内容：必须重新检索 sources、重新筛选，删除过期活动，新增最新活动；每个城市前 4 条必须是本周新检索到的新活动、单日活动、短期活动或明确日期活动，仍在持续的活动、长期展览、场馆入口和泛 What's On 页面往后放；不能复用上周静态 DATA 当作本周内容。搜索范围要宽：official council/venue pages、Eventbrite/Humanitix/AllEvents/Secret/Time Out/亲子媒体、Instagram/Facebook/小红书/社群线索都可用于发现，但社媒线索必须反查官方 council、venue、organiser 或 ticketing 页面后才能入选。更新后同步 JSON data 和 HTML fallback，再校验 UTF-8、英文无中文泄漏、Friday-to-Friday 日期和远程推送。英文页面必须全英文。先保存本地，不要推送 GitHub，除非我明确要求部署。
 ```
 
-## 15. Weekly Update Failure Guardrails
+## 16. Weekly Update Failure Guardrails
 
 - Date refresh alone is not a valid update. The weekly job must remove expired activities and publish a materially rechecked current-week list.
 - For each city, cards 1-4 must be newly found, one-off, short-date, or concrete-date current-week activities. Long-running exhibitions, venue entrances, recurring backups, and generic `What's On` pages can only appear from card 5 onward.
@@ -318,7 +470,7 @@ https://pikatiu27.github.io/sconmyway-site/kids/
 - Reject scraper noise including JavaScript challenge text, outdated-browser text, historic snippets, and unrelated council page fragments.
 - If fewer than 8 valid events remain for a city, the updater must fail and leave the site unchanged rather than publish filler.
 
-### 15.1 2026-07-03 failure summary
+### 16.1 2026-07-03 failure summary
 
 What failed:
 
@@ -338,7 +490,7 @@ Root causes:
 - The release gate did not enforce enough event-type hierarchy: large council festivals and short-date family events should beat library/storytime backups.
 - Push success and content success were conflated. `git push` succeeding is not enough; the live page must show genuinely refreshed content.
 
-### 15.2 How to make the next update succeed
+### 16.2 How to make the next update succeed
 
 The goal is not to guarantee that every external service works. The goal is to guarantee that bad content does not go live.
 
@@ -373,7 +525,7 @@ Post-push verification:
 - Compare the visible page against the candidate pool: the first 4 visible cards must match the intended current-week lead picks.
 - Report separately: `push succeeded`, `Pages refreshed`, and `content quality gate passed`. Do not collapse these into one success statement.
 
-## 16. Family outing and tag display rule
+## 17. Family outing and tag display rule
 
 The main event cards are for family outings, not child-only activities. Prefer festivals, shows, family days, open days, performances, outdoor events, major venue programs and exhibitions that adults can also enjoy with children.
 

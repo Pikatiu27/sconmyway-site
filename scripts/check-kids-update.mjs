@@ -39,9 +39,14 @@ function isFreshLeadEvent(event) {
 }
 
 const libraryActivityPattern = /\b(library|libraries|storytime|story time|rhyme time|baby rhyme|book club)\b|\u56fe\u4e66\u9986|\u6545\u4e8b\u4f1a/i;
+const lowAgeOnlyPattern = /\b(baby rhyme|rhyme time|storytime|story time|playgroup|toddler time|under 3|0\s*-\s*3|0 to 3|0-3|babies only|toddlers only)\b/i;
 
 function isLibraryActivity(event) {
   return libraryActivityPattern.test(Object.values(event || {}).join(" "));
+}
+
+function isLowAgeOnlyActivity(event) {
+  return lowAgeOnlyPattern.test(Object.values(event || {}).join(" "));
 }
 
 async function readData() {
@@ -84,6 +89,9 @@ async function readData() {
 
     if (isLibraryActivity(event)) {
       throw new Error(`events[${index}] is a library/storytime/rhyme-time activity and must be in More, not main cards`);
+    }
+    if (isLowAgeOnlyActivity(event)) {
+      throw new Error(`events[${index}] is a baby/toddler-only activity and must be in More, not main cards`);
     }
     if (/\bSpring Festival 2024\b|\b5 June 1937\b/i.test(qualityText)) {
       throw new Error(`events[${index}] contains known stale content`);

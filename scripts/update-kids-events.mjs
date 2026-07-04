@@ -17,6 +17,7 @@ const cityConfigs = [
     dataPath: `${dataDir}/melbourne-events.json`,
     sources: [
       { name: "City of Melbourne", url: "https://whatson.melbourne.vic.gov.au/things-to-do/family-and-kids", tier: "A" },
+      { name: "Queen Victoria Market", url: "https://qvm.com.au/whats-on/", tier: "B" },
       { name: "Melbourne Museum", url: "https://museumsvictoria.com.au/melbournemuseum/whats-on/", tier: "B" },
       { name: "Scienceworks", url: "https://museumsvictoria.com.au/scienceworks/whats-on/", tier: "B" },
       { name: "NGV Kids", url: "https://www.ngv.vic.gov.au/kids/", tier: "B" },
@@ -28,30 +29,43 @@ const cityConfigs = [
       { name: "Merri-bek City Council", url: "https://www.merri-bek.vic.gov.au/exploring-merri-bek/events/", tier: "A" },
       { name: "City of Stonnington", url: "https://www.stonnington.vic.gov.au/Whats-On", tier: "A" },
       { name: "City of Boroondara", url: "https://www.boroondara.vic.gov.au/events", tier: "A" },
+      { name: "Bayside City Council", url: "https://www.bayside.vic.gov.au/events", tier: "A" },
+      { name: "Glen Eira City Council", url: "https://www.gleneira.vic.gov.au/our-city/whats-on", tier: "A" },
       { name: "City of Monash", url: "https://www.monash.vic.gov.au/Things-to-Do/Festivals-and-Events/Events", tier: "A" },
       { name: "Darebin City Council", url: "https://www.darebin.vic.gov.au/Events-and-facilities/Events", tier: "A" },
+      { name: "Hume City Council", url: "https://www.hume.vic.gov.au/Events", tier: "A" },
+      { name: "Whittlesea City Council", url: "https://www.whittlesea.vic.gov.au/arts-events-recreation/whats-on/", tier: "A" },
       { name: "Bunnings Kids DIY", url: "https://bookings.bunnings.com.au/events/au", tier: "B" },
       { name: "Fire Rescue Victoria", url: "https://www.frv.vic.gov.au/community-events", tier: "B" },
       { name: "CFA Events", url: "https://www.cfa.vic.gov.au/about-us/cfa-events/whats-on", tier: "B" },
-      { name: "Zoos Victoria", url: "https://www.zoo.org.au/melbourne/whats-on", tier: "B" },
+      { name: "Melbourne Zoo", url: "https://www.zoo.org.au/melbourne/whats-on", tier: "B" },
+      { name: "Werribee Open Range Zoo", url: "https://www.zoo.org.au/werribee/whats-on/", tier: "B" },
+      { name: "Healesville Sanctuary", url: "https://www.zoo.org.au/healesville/whats-on/", tier: "B" },
       { name: "Moonee Valley City Council", url: "https://mvcc.vic.gov.au/play/my-news-and-events/events/", tier: "A" },
       { name: "Maribyrnong City Council", url: "https://www.maribyrnong.vic.gov.au/arts-and-culture/Events", tier: "A" },
       { name: "Hobsons Bay City Council", url: "https://www.hobsonsbay.vic.gov.au/Community/Whats-on", tier: "A" },
       { name: "Brimbank City Council", url: "https://events.brimbank.vic.gov.au/", tier: "A" },
       { name: "Wyndham City Council", url: "https://www.wyndham.vic.gov.au/events-experiences/whats", tier: "A" },
+      { name: "Melton City Council", url: "https://www.melton.vic.gov.au/Out-n-About/Events", tier: "A" },
       { name: "City of Kingston", url: "https://www.kingston.vic.gov.au/community/events/upcoming-events", tier: "A" },
       { name: "Banyule City Council", url: "https://www.banyule.vic.gov.au/Events-activities", tier: "A" },
+      { name: "Nillumbik Shire Council", url: "https://www.nillumbik.vic.gov.au/Events", tier: "A" },
       { name: "Whitehorse City Council", url: "https://www.whitehorse.vic.gov.au/things-do/whats-on", tier: "A" },
       { name: "Manningham Council", url: "https://www.manningham.vic.gov.au/events", tier: "A" },
       { name: "Maroondah City Council", url: "https://www.maroondah.vic.gov.au/Explore/Whats-on-in-Maroondah", tier: "A" },
       { name: "Knox City Council", url: "https://www.knox.vic.gov.au/whats-on", tier: "A" },
+      { name: "Yarra Ranges Council", url: "https://www.yarraranges.vic.gov.au/Experience/Events", tier: "A" },
       { name: "City of Casey", url: "https://www.casey.vic.gov.au/events", tier: "A" },
+      { name: "Cardinia Shire Council", url: "https://www.cardinia.vic.gov.au/events", tier: "A" },
       { name: "Greater Dandenong", url: "https://www.greaterdandenong.vic.gov.au/events", tier: "A" },
       { name: "Frankston City", url: "https://www.discoverfrankston.com/events", tier: "A" },
+      { name: "Mornington Peninsula Shire", url: "https://www.mornpen.vic.gov.au/Whats-On", tier: "A" },
       { name: "Arts Centre Melbourne Families", url: "https://www.artscentremelbourne.com.au/whats-on/families", tier: "B" },
       { name: "Fed Square", url: "https://fedsquare.com/whats-on", tier: "B" },
+      { name: "Melbourne Convention and Exhibition Centre", url: "https://mcec.com.au/whats-on", tier: "B" },
       { name: "Immigration Museum", url: "https://museumsvictoria.com.au/immigrationmuseum/whats-on/", tier: "B" },
       { name: "Puffing Billy", url: "https://puffingbillyrailway.org.au/whats-on/", tier: "B" },
+      { name: "Abbotsford Convent", url: "https://abbotsfordconvent.com.au/whats-on/", tier: "B" },
       { name: "CERES", url: "https://ceres.org.au/whats-on/", tier: "B" },
       { name: "Collingwood Children's Farm", url: "https://www.farm.org.au/whats-on", tier: "B" },
       { name: "Open House Melbourne", url: "https://openhousemelbourne.org/", tier: "B" },
@@ -77,12 +91,14 @@ const cityConfigs = [
       { name: "Museum of Contemporary Art Australia", url: "https://www.mca.com.au/whats-on/", tier: "B" },
       { name: "State Library NSW", url: "https://www.sl.nsw.gov.au/whats-on", tier: "B" },
       { name: "Australian National Maritime Museum", url: "https://www.sea.museum/whats-on", tier: "B" },
+      { name: "ICC Sydney", url: "https://iccsydney.com.au/whats-on/", tier: "B" },
       { name: "Sydney Olympic Park", url: "https://www.sydneyolympicpark.com.au/Things-to-Do/Events", tier: "B" },
+      { name: "Sydney Showground", url: "https://www.sydneyshowground.com.au/events", tier: "B" },
       { name: "Taronga Zoo Sydney", url: "https://taronga.org.au/sydney-zoo/whats-on", tier: "B" },
       { name: "Luna Park Sydney", url: "https://www.lunaparksydney.com/whats-on", tier: "B" },
       { name: "Sydney Zoo", url: "https://sydneyzoo.com/whats-on/", tier: "B" },
       { name: "Harry Potter: The Exhibition Sydney", url: "https://harrypotterexhibition.com/locations/sydney/", tier: "B", directEvent: true },
-      { name: "Children\'s International Film Festival", url: "https://whatson.cityofsydney.nsw.gov.au/events/childrens-international-film-festival", tier: "B", directEvent: true },
+      { name: "Children's International Film Festival", url: "https://whatson.cityofsydney.nsw.gov.au/events/childrens-international-film-festival", tier: "B", directEvent: true },
       { name: "Inner West", url: "https://www.innerwest.nsw.gov.au/explore/whats-on", tier: "A" },
       { name: "Waverley Council", url: "https://www.waverley.nsw.gov.au/recreation/events", tier: "A" },
       { name: "North Sydney Council", url: "https://www.northsydney.nsw.gov.au/events", tier: "A" },
@@ -91,20 +107,31 @@ const cityConfigs = [
       { name: "Woollahra Council", url: "https://www.woollahra.nsw.gov.au/Events", tier: "A" },
       { name: "Randwick", url: "https://www.randwick.nsw.gov.au/about-council/news/events", tier: "A" },
       { name: "City of Parramatta", url: "https://atparramatta.com/whats-on", tier: "A" },
+      { name: "Riverside Theatres Parramatta", url: "https://riversideparramatta.com.au/whats-on/", tier: "B" },
       { name: "Canada Bay", url: "https://www.canadabay.nsw.gov.au/lifestyle/events", tier: "A" },
       { name: "Burwood Council", url: "https://www.burwood.nsw.gov.au/For-Residents/Events-and-Activities", tier: "A" },
       { name: "City of Ryde", url: "https://www.ryde.nsw.gov.au/Events", tier: "A" },
       { name: "Strathfield Council", url: "https://www.strathfield.nsw.gov.au/Play/Events-Calendar", tier: "A" },
       { name: "Cumberland City Council", url: "https://www.cumberland.nsw.gov.au/whats-on", tier: "A" },
+      { name: "The Hills Shire Council", url: "https://www.thehills.nsw.gov.au/Upcoming-Events-Activities", tier: "A" },
       { name: "Bayside Council", url: "https://www.bayside.nsw.gov.au/whats-on", tier: "A" },
       { name: "Canterbury-Bankstown", url: "https://www.cbcity.nsw.gov.au/events", tier: "A" },
       { name: "Georges River Council", url: "https://www.georgesriver.nsw.gov.au/Community/Events", tier: "A" },
+      { name: "Sutherland Shire Council", url: "https://www.sutherlandshire.nsw.gov.au/Play-and-Explore/Whats-On", tier: "A" },
       { name: "Hornsby Shire Council", url: "https://www.hornsby.nsw.gov.au/lifestyle/events", tier: "A" },
       { name: "Ku-ring-gai Council", url: "https://www.krg.nsw.gov.au/Things-to-do/Whats-on", tier: "A" },
       { name: "Lane Cove Council", url: "https://www.lanecove.nsw.gov.au/Events", tier: "A" },
       { name: "Liverpool City Council", url: "https://www.liverpool.nsw.gov.au/community/major-events", tier: "A" },
+      { name: "Casula Powerhouse Arts Centre", url: "https://www.casulapowerhouse.com/whats-on", tier: "B" },
       { name: "Blacktown City Council", url: "https://www.blacktown.nsw.gov.au/Events-and-activities", tier: "A" },
+      { name: "Fairfield City Council", url: "https://www.fairfieldcity.nsw.gov.au/Events", tier: "A" },
       { name: "Penrith City Council", url: "https://www.penrithcity.nsw.gov.au/upcoming-events", tier: "A" },
+      { name: "The Joan Penrith", url: "https://www.thejoan.com.au/events/", tier: "B" },
+      { name: "Campbelltown City Council", url: "https://www.campbelltown.nsw.gov.au/Whats-On", tier: "A" },
+      { name: "Campbelltown Arts Centre", url: "https://c-a-c.com.au/whats-on/", tier: "B" },
+      { name: "Camden Council", url: "https://www.camden.nsw.gov.au/whats-on/", tier: "A" },
+      { name: "Blue Mountains City Council", url: "https://www.bmcc.nsw.gov.au/events", tier: "A" },
+      { name: "Hawkesbury City Council", url: "https://www.hawkesbury.nsw.gov.au/events", tier: "A" },
       { name: "Northern Beaches Council", url: "https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on", tier: "A" },
       { name: "Bunnings Kids DIY", url: "https://bookings.bunnings.com.au/events/au", tier: "B" },
       { name: "Fire and Rescue NSW Open Day", url: "https://www.fire.nsw.gov.au/media/events/open-day", tier: "B" },
@@ -127,12 +154,48 @@ const accents = [
   ["#ffc978", "rgba(255,201,120,.78)"]
 ];
 
-const kidsKeywords = ["kids", "children", "family", "families", "school holiday", "workshop", "story", "play", "craft", "baby", "toddler", "all ages", "free"];
+const eventSourceRegions = {
+  melbourne: [
+    { region: "City core", names: ["City of Melbourne", "Queen Victoria Market", "Melbourne Museum", "NGV", "ACMI", "State Library Victoria", "Royal Botanic Gardens", "Arts Centre Melbourne", "Fed Square", "Immigration Museum", "Melbourne Convention", "Melbourne Recital"] },
+    { region: "Inner north", names: ["Yarra", "Merri-bek", "Darebin", "Melbourne Zoo", "CERES", "Collingwood", "Abbotsford"] },
+    { region: "Inner south / bayside", names: ["Port Phillip", "Stonnington", "Bayside City Council", "Glen Eira"] },
+    { region: "West / north-west", names: ["Moonee Valley", "Maribyrnong", "Hobsons Bay", "Scienceworks", "Brimbank", "Wyndham", "Melton", "Hume", "Werribee"] },
+    { region: "North / north-east", names: ["Whittlesea", "Banyule", "Nillumbik"] },
+    { region: "East / outer east", names: ["Boroondara", "Whitehorse", "Manningham", "Maroondah", "Knox", "Yarra Ranges", "Puffing Billy", "Healesville"] },
+    { region: "South-east / peninsula", names: ["Monash", "Kingston", "Casey", "Cardinia", "Greater Dandenong", "Frankston", "Mornington"] },
+    { region: "Statewide / chain", names: ["Bunnings", "Fire Rescue", "CFA", "Zoos Victoria", "Open House"] }
+  ],
+  sydney: [
+    { region: "CBD / harbour", names: ["City of Sydney", "Darling Harbour", "Darling Square", "The Rocks", "Sydney Opera House", "Australian Museum", "Powerhouse", "Art Gallery", "Museum of Contemporary", "MCA", "State Library NSW", "Maritime Museum", "ICC Sydney", "Botanic Gardens", "Harry Potter", "Children's International Film Festival"] },
+    { region: "Inner west / east", names: ["Inner West", "Canada Bay", "Burwood", "Strathfield", "Waverley", "Woollahra", "Randwick", "Centennial Parklands"] },
+    { region: "North / beaches", names: ["North Sydney", "Willoughby", "Mosman", "Hornsby", "Ku-ring-gai", "Lane Cove", "Northern Beaches", "Taronga", "Luna Park", "Ryde"] },
+    { region: "Parramatta / Olympic Park", names: ["Parramatta", "Riverside Theatres", "Sydney Olympic Park", "Sydney Showground", "Cumberland", "The Hills"] },
+    { region: "South / St George / Shire", names: ["Bayside Council", "Canterbury-Bankstown", "Georges River", "Sutherland"] },
+    { region: "West / south-west", names: ["Liverpool", "Casula", "Blacktown", "Fairfield", "Penrith", "The Joan", "Campbelltown", "Camden", "Blue Mountains", "Hawkesbury", "Sydney Zoo"] },
+    { region: "Statewide / chain", names: ["Bunnings", "Fire and Rescue", "NSW National Parks", "Museums of History NSW"] }
+  ]
+};
+
+const familyOutingKeywords = ["family", "families", "all ages", "festival", "show", "performance", "concert", "open day", "community day", "market", "food", "cinema", "film", "exhibition", "museum", "gallery", "school holiday", "outdoor", "park", "garden", "kids", "children", "free", "naidoc"];
+const lowAgeOnlyPattern = /\b(baby rhyme|rhyme time|storytime|story time|playgroup|toddler time|under 3|0\s*-\s*3|0 to 3|0-3|babies only|toddlers only)\b/i;
 const rejectKeywords = ["whisky", "wine", "cocktail", "bar", "18+", "adults only", "gambling", "race day", "nightclub"];
 const genericTitlePattern = /^(free|program|event|family and kids|kindergarten|playgroups?|support for parents|child and family hub)$/i;
 const scraperNoisePattern = /Client Challenge|JavaScript is disabled|outdated browser|required part of this site|Enfield Council Cham|Corrard\/Haeremai|Industrial Chemists/i;
 const staleContentPattern = /\bSpring Festival 2024\b|\b5 June 1937\b/i;
 const libraryActivityPattern = /\b(library|libraries|storytime|story time|rhyme time|baby rhyme|book club)\b|\u56fe\u4e66\u9986|\u6545\u4e8b\u4f1a/i;
+
+function sourceRegion(source, cityKey) {
+  const name = String(source?.name || "").toLowerCase();
+  const map = (eventSourceRegions[cityKey] || [])
+    .flatMap((item) => item.names.map((needle) => ({ region: item.region, needle: needle.toLowerCase() })))
+    .sort((a, b) => b.needle.length - a.needle.length);
+  const match = map.find((item) => name.includes(item.needle));
+  return match?.region || "Other";
+}
+
+function sourceWithRegion(source, cityKey) {
+  return { ...source, region: source.region || sourceRegion(source, cityKey) };
+}
 
 function isGenericTitle(title = "") {
   return genericTitlePattern.test(String(title).trim());
@@ -157,11 +220,17 @@ function isLibraryActivity(eventOrCandidate) {
   return libraryActivityPattern.test(text);
 }
 
+function isLowAgeOnlyActivity(eventOrCandidate) {
+  const text = Object.values(eventOrCandidate || {}).join(" ");
+  return lowAgeOnlyPattern.test(text);
+}
+
 function isValidEvent(event) {
   const titles = [event?.titleZh || "", event?.titleEn || ""].map((value) => String(value).trim());
   const text = Object.values(event || {}).join(" ");
   if (!event?.url || !/^https?:\/\//i.test(event.url)) return false;
   if (isLibraryActivity(event)) return false;
+  if (isLowAgeOnlyActivity(event)) return false;
   if (titles.some(isGenericTitle)) return false;
   if (scraperNoisePattern.test(text) || staleContentPattern.test(text)) return false;
   if (containsOldYear(text)) return false;
@@ -249,8 +318,10 @@ function scoreCandidate(text, source) {
   const lower = text.toLowerCase();
   if (rejectKeywords.some((word) => lower.includes(word))) return -50;
   if (scraperNoisePattern.test(text) || staleContentPattern.test(text) || containsOldYear(text)) return -50;
+  if (lowAgeOnlyPattern.test(text)) return -8;
   let score = source.tier === "A" ? 8 : 5;
-  for (const word of kidsKeywords) if (lower.includes(word)) score += 6;
+  for (const word of familyOutingKeywords) if (lower.includes(word)) score += 6;
+  if (/\b(festival|show|performance|concert|open day|community day|cinema|film|exhibition|market)\b/i.test(text)) score += 5;
   if (/\b(free|\$|ticket|book|register)\b/i.test(text)) score += 2;
   if (/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|\d{1,2}:\d{2}|am|pm)\b/i.test(text)) score += 3;
   return score;
@@ -260,7 +331,7 @@ function extractLinks(html, source) {
   const links = [];
   if (source.directEvent) {
     const text = stripTags(html);
-    links.push({ title: source.name, url: source.url, source: source.name, score: scoreCandidate(text, source) + 20, text });
+    links.push({ title: source.name, url: source.url, source: source.name, region: source.region || "Other", score: scoreCandidate(text, source) + 20, text });
     return links;
   }
   const anchorPattern = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
@@ -273,7 +344,7 @@ function extractLinks(html, source) {
     const context = stripTags(html.slice(Math.max(0, match.index - 450), Math.min(html.length, match.index + 950)));
     const text = `${label}. ${context}`;
     const score = scoreCandidate(text, source);
-    if (score > 8) links.push({ title: label, url, source: source.name, score, text });
+    if (score > 8) links.push({ title: label, url, source: source.name, region: source.region || "Other", score, text });
   }
   return links;
 }
@@ -286,6 +357,29 @@ function uniqueCandidates(candidates) {
     seen.add(key);
     return true;
   });
+}
+
+function diverseCandidates(candidates, limit = 24) {
+  const picked = [];
+  const seen = new Set();
+  const regionCounts = new Map();
+  const addCandidate = (candidate) => {
+    const key = candidate.url.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    picked.push(candidate);
+    regionCounts.set(candidate.region || "Other", (regionCounts.get(candidate.region || "Other") || 0) + 1);
+    return true;
+  };
+  for (const maxPerRegion of [2, 3, 4, 99]) {
+    for (const candidate of candidates) {
+      if (picked.length >= limit) return picked;
+      const region = candidate.region || "Other";
+      if ((regionCounts.get(region) || 0) >= maxPerRegion) continue;
+      addCandidate(candidate);
+    }
+  }
+  return picked;
 }
 
 function extractDate(text) {
@@ -307,7 +401,7 @@ function summarizeFallback(candidate, city) {
 async function enrichWithOpenAI(candidates, city) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) return null;
-  const payload = candidates.map(({ title, url, source, detailText }) => ({ title, url, source, text: detailText.slice(0, 4500) }));
+  const payload = candidates.map(({ title, url, source, region, detailText }) => ({ title, url, source, region, text: detailText.slice(0, 4500) }));
   const response = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
     headers: { authorization: `Bearer ${apiKey}`, "content-type": "application/json" },
@@ -315,7 +409,7 @@ async function enrichWithOpenAI(candidates, city) {
       model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       input: [
         { role: "system", content: `Create accurate bilingual family outing JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including reasonEn and referenceEn. If a fact is missing, say 'See official page'. Never invent details. Select activities that are worth adults and children doing together: festivals, shows, performances, open days, family days, exhibitions with a family layer, outdoor/active events and major venue programs. Exclude expired events. Library, storytime, rhyme time, baby rhyme, toddler-only, 0-3-only, playgroup and book-club activities must not be selected for the 8 main cards; leave them for More links. The first 4 cards must be newly found or newly starting current-week family outings with concrete dates. Put ongoing long-run exhibitions, venue entrances, and recurring backup activities after the first 4. Do not create star ratings, numeric ratings, or many display tags; explain why the item is a family outing in one practical sentence.` },
-        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 family-friendly ${city} outings active during this Friday-to-Friday week. Delete expired events, add the newest relevant activities, and ensure cards 1-4 are new or short-date activities from the current weekly search with concrete dates. Prioritise festivals, shows, community days, open days, family-friendly exhibitions, outdoor events and activities adults can also enjoy. Do not include library/storytime/rhyme-time/book-club/playgroup/toddler-only/0-3-only activities in the 8 main cards; they belong in More links only. Place still-running ongoing activities, venue directory pages and long-run exhibitions at card 5 or later. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, reasonZh, reasonEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
+        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 family-friendly ${city} outings active during this Friday-to-Friday week. Delete expired events, add the newest relevant activities, and ensure cards 1-4 are new or short-date activities from the current weekly search with concrete dates. Prioritise festivals, shows, community days, open days, family-friendly exhibitions, outdoor events and activities adults can also enjoy. Do not include library/storytime/rhyme-time/book-club/playgroup/toddler-only/0-3-only activities in the 8 main cards; they belong in More links only. Use region to avoid over-concentrating all cards in the city core; if quality allows, include a spread across city core, inner suburbs and outer family-event hubs. Place still-running ongoing activities, venue directory pages and long-run exhibitions at card 5 or later. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, reasonZh, reasonEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
       ],
       text: { format: { type: "json_object" } }
     })
@@ -420,13 +514,14 @@ ${sourceLinks.map(renderMoreLink).join("\n")}
 async function buildCity(config, previousEvents) {
   const candidates = [];
   for (const source of config.sources) {
+    const regionalSource = sourceWithRegion(source, config.key);
     try {
-      candidates.push(...extractLinks(await fetchText(source.url, config.name), source));
+      candidates.push(...extractLinks(await fetchText(regionalSource.url, config.name), regionalSource));
     } catch (error) {
-      console.warn(`${config.name} source skipped: ${source.name}: ${error.message}`);
+      console.warn(`${config.name} source skipped: ${regionalSource.name}: ${error.message}`);
     }
   }
-  const selected = uniqueCandidates(candidates).slice(0, 18);
+  const selected = diverseCandidates(uniqueCandidates(candidates), 24);
   for (const candidate of selected) {
     try { candidate.detailText = stripTags(await fetchText(candidate.url, config.name)).slice(0, 7000); }
     catch { candidate.detailText = candidate.text; }
@@ -503,10 +598,10 @@ async function writeCandidateReport(results) {
     const result = results.get(config.key);
     const candidates = result?.candidates || [];
     lines.push(`## ${config.name}`, "");
-    lines.push("| Rank | Source | Candidate | URL | Score |");
-    lines.push("| ---: | --- | --- | --- | ---: |");
+    lines.push("| Rank | Region | Source | Candidate | URL | Score |");
+    lines.push("| ---: | --- | --- | --- | --- | ---: |");
     candidates.slice(0, 24).forEach((candidate, index) => {
-      lines.push(`| ${index + 1} | ${candidate.source} | ${String(candidate.title || "").replace(/\|/g, "/")} | ${candidate.url} | ${candidate.score} |`);
+      lines.push(`| ${index + 1} | ${candidate.region || "Other"} | ${candidate.source} | ${String(candidate.title || "").replace(/\|/g, "/")} | ${candidate.url} | ${candidate.score} |`);
     });
     lines.push("");
     lines.push("Selection notes: shortlist from this pool, verify B/C/D tips against official organiser pages, keep new or short-date events ahead of ongoing activities, and remove expired items.");
