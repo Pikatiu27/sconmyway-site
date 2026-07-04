@@ -372,3 +372,30 @@ Post-push verification:
 - Confirm the public GitHub Pages page or public JSON reflects the new commit after allowing for deployment/cache delay.
 - Compare the visible page against the candidate pool: the first 4 visible cards must match the intended current-week lead picks.
 - Report separately: `push succeeded`, `Pages refreshed`, and `content quality gate passed`. Do not collapse these into one success statement.
+
+## 16. Family outing and tag display rule
+
+The main event cards are for family outings, not child-only activities. Prefer festivals, shows, family days, open days, performances, outdoor events, major venue programs and exhibitions that adults can also enjoy with children.
+
+Move these to `More`, not the 8 main cards:
+
+- Storytime, rhyme time, baby rhyme and book-club sessions.
+- Toddler-only, 0-3-only and playgroup activities.
+- Small library craft sessions unless they are part of a larger festival or official family day.
+
+Public cards should stay visually light:
+
+```text
+Source / area tag
+One status tag only: 本周优先 / Priority or 备选 / Backup
+Title
+Short summary
+Recommendation reason
+Time / place / cost
+Official / Map / Share
+Reference
+```
+
+Do not show star ratings, numeric ratings or multiple sticker tags on event cards. If a detail matters, put it into the summary, recommendation reason or facts instead of adding another tag.
+
+Playground directory cards should show no more than two small feature chips. Keep the detailed fit in the intro and half-day text instead of adding more visible labels.
