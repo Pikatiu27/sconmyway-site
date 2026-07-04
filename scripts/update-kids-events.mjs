@@ -395,7 +395,8 @@ function extractPrice(text) {
 
 function summarizeFallback(candidate, city) {
   const sentences = candidate.detailText.split(/(?<=[.!?])\s+/).filter((line) => line.length > 40 && line.length < 220);
-  return sentences.slice(0, 2).join(" ") || `Family-friendly activity from an official ${city} source. Check the official page before heading out.`;
+  const summary = sentences.slice(0, 2).join(" ") || `Family-friendly activity from an official ${city} source. Check the official page before heading out.`;
+  return `Why go: ${summary}`;
 }
 
 async function enrichWithOpenAI(candidates, city) {
@@ -408,8 +409,8 @@ async function enrichWithOpenAI(candidates, city) {
     body: JSON.stringify({
       model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       input: [
-        { role: "system", content: `Create accurate bilingual family outing JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including reasonEn and referenceEn. If a fact is missing, say 'See official page'. Never invent details. Select activities that are worth adults and children doing together: festivals, shows, performances, open days, family days, exhibitions with a family layer, outdoor/active events and major venue programs. Exclude expired events. Library, storytime, rhyme time, baby rhyme, toddler-only, 0-3-only, playgroup and book-club activities must not be selected for the 8 main cards; leave them for More links. The first 4 cards must be newly found or newly starting current-week family outings with concrete dates. Put ongoing long-run exhibitions, venue entrances, and recurring backup activities after the first 4. Do not create star ratings, numeric ratings, or many display tags; explain why the item is a family outing in one practical sentence.` },
-        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 family-friendly ${city} outings active during this Friday-to-Friday week. Delete expired events, add the newest relevant activities, and ensure cards 1-4 are new or short-date activities from the current weekly search with concrete dates. Prioritise festivals, shows, community days, open days, family-friendly exhibitions, outdoor events and activities adults can also enjoy. Do not include library/storytime/rhyme-time/book-club/playgroup/toddler-only/0-3-only activities in the 8 main cards; they belong in More links only. Use region to avoid over-concentrating all cards in the city core; if quality allows, include a spread across city core, inner suburbs and outer family-event hubs. Place still-running ongoing activities, venue directory pages and long-run exhibitions at card 5 or later. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, reasonZh, reasonEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
+        { role: "system", content: `Create accurate bilingual family outing JSON for ${city}. Use only the supplied official page text. Every field ending in En must be entirely in English with no Chinese characters, including referenceEn. If a fact is missing, say 'See official page'. Never invent details. Select activities that are worth adults and children doing together: festivals, shows, performances, open days, family days, exhibitions with a family layer, outdoor/active events and major venue programs. Exclude expired events. Library, storytime, rhyme time, baby rhyme, toddler-only, 0-3-only, playgroup and book-club activities must not be selected for the 8 main cards; leave them for More links. The first 4 cards must be newly found or newly starting current-week family outings with concrete dates. Put ongoing long-run exhibitions, venue entrances, and recurring backup activities after the first 4. Do not create star ratings, numeric ratings, separate recommendation reasons, or many display tags. summaryZh and summaryEn must combine the event intro and recommendation reason in one attractive, practical sentence: what it is, what families can do there, and why it is worth going together.` },
+        { role: "user", content: `The publication week is ${weekPeriod.periodStart} to ${weekPeriod.periodEnd} in Australia/Sydney time. Select the best 8 family-friendly ${city} outings active during this Friday-to-Friday week. Delete expired events, add the newest relevant activities, and ensure cards 1-4 are new or short-date activities from the current weekly search with concrete dates. Prioritise festivals, shows, community days, open days, family-friendly exhibitions, outdoor events and activities adults can also enjoy. Do not include library/storytime/rhyme-time/book-club/playgroup/toddler-only/0-3-only activities in the 8 main cards; they belong in More links only. Use region to avoid over-concentrating all cards in the city core; if quality allows, include a spread across city core, inner suburbs and outer family-event hubs. Place still-running ongoing activities, venue directory pages and long-run exhibitions at card 5 or later. Return only a JSON object with key events. Each event needs: tagZh, tagEn, titleZh, titleEn, summaryZh, summaryEn, timeZh, timeEn, placeZh, placeEn, priceZh, priceEn, url, mapQuery, referenceZh, referenceEn.\n\n${JSON.stringify(payload)}` }
       ],
       text: { format: { type: "json_object" } }
     })
@@ -428,14 +429,12 @@ function fallbackEvents(candidates, city) {
   return candidates.filter((candidate) => !isBadCandidate(candidate) && !isLibraryActivity(candidate)).slice(0, 8).map((candidate) => ({
     tagZh: `${candidate.source} - \u4eb2\u5b50`, tagEn: `${candidate.source} - Family`,
     titleZh: candidate.title, titleEn: candidate.title,
-    summaryZh: `\u6765\u81ea ${city} \u5b98\u65b9\u6d3b\u52a8\u6765\u6e90\u7684\u4eb2\u5b50\u53cb\u597d\u5019\u9009\u3002\u51fa\u53d1\u524d\u8bf7\u70b9\u51fb\u5b98\u7f51\u786e\u8ba4\u6700\u65b0\u65f6\u95f4\u3001\u7968\u4ef7\u548c\u5e74\u9f84\u8981\u6c42\u3002`,
+    summaryZh: `\u4eae\u70b9\uff1a\u8fd9\u662f\u6765\u81ea ${city} \u5b98\u65b9\u6d3b\u52a8\u6765\u6e90\u7684\u4eb2\u5b50\u5019\u9009\uff0c\u9002\u5408\u5148\u6536\u85cf\u6bd4\u8f83\uff1b\u51fa\u53d1\u524d\u7528\u5b98\u7f51\u6838\u5bf9\u65f6\u95f4\u3001\u7968\u4ef7\u548c\u5e74\u9f84\u8981\u6c42\u3002`,
     summaryEn: summarizeFallback(candidate, city),
     timeZh: extractDate(candidate.detailText), timeEn: extractDate(candidate.detailText),
     placeZh: candidate.source, placeEn: candidate.source,
     priceZh: extractPrice(candidate.detailText), priceEn: extractPrice(candidate.detailText),
     url: candidate.url, mapQuery: `${candidate.source} ${city}`,
-    reasonZh: `\u6765\u6e90\u53ef\u6838\u5bf9\uff0c\u5730\u70b9\u53ef\u5bfc\u822a\uff1b\u51fa\u53d1\u524d\u8bf7\u7528\u5b98\u7f51\u786e\u8ba4\u65f6\u95f4\u3001\u7968\u4ef7\u548c\u9884\u7ea6\u8981\u6c42\u3002`,
-    reasonEn: `Source-checkable with a navigable location; confirm time, price and booking details on the official page before heading out.`,
     referenceZh: `${candidate.source} \u5b98\u65b9\u6d3b\u52a8\u9875\u9762\u3002`, referenceEn: `${candidate.source} official event listing.`
   }));
 }
@@ -448,36 +447,15 @@ function eventStatus(index) {
   return index < 4 ? { zh: "\u672c\u5468\u4f18\u5148", en: "Priority" } : { zh: "\u5907\u9009", en: "Backup" };
 }
 
-function eventReason(event, index) {
-  if (event.reasonZh || event.reasonEn) {
-    return {
-      zh: event.reasonZh || "\u4fe1\u606f\u6765\u6e90\u53ef\u6838\u5bf9\uff0c\u9002\u5408\u653e\u5165\u672c\u5468\u5907\u9009\u3002",
-      en: event.reasonEn || "A source-checkable option to keep in this week's shortlist."
-    };
-  }
-  if (index < 4) {
-    return {
-      zh: "\u672c\u5468\u4f18\u5148\u770b\u7684\u77ed\u671f\u6216\u65e5\u671f\u660e\u786e\u6d3b\u52a8\uff0c\u66f4\u503c\u5f97\u5bb6\u5ead\u4e13\u95e8\u51fa\u95e8\u3002",
-      en: "A dated or short-run priority pick this week, more worth a dedicated family outing."
-    };
-  }
-  return {
-    zh: "\u4fe1\u606f\u6765\u6e90\u53ef\u6838\u5bf9\uff0c\u9002\u5408\u4f5c\u4e3a\u672c\u5468\u7ee7\u7eed\u6bd4\u8f83\u7684\u5907\u9009\u3002",
-    en: "A source-checkable backup to compare after the priority picks."
-  };
-}
-
 function renderEvent(event, index) {
   const [accent, soft] = accents[index % accents.length];
   const featured = index === 0 ? " featured" : "";
   const status = eventStatus(index);
-  const reason = eventReason(event, index);
   const map = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.mapQuery || event.placeEn || event.titleEn)}`;
   return `        <article class="card${featured}" style="--accent:${accent};--accent-soft:${soft};">
           <div class="card-top"><span class="tag zh">${esc(event.tagZh)}</span><span class="tag en">${esc(event.tagEn)}</span><span class="recommend-status"><span class="zh">${esc(status.zh)}</span><span class="en">${esc(status.en)}</span></span></div>
           <h2><span class="zh">${esc(event.titleZh)}</span><span class="en">${esc(event.titleEn)}</span></h2>
           <p class="summary zh">${esc(event.summaryZh)}</p><p class="summary en">${esc(event.summaryEn)}</p>
-          <p class="recommend-note"><span class="zh"><b>&#25512;&#33616;&#29702;&#30001;&#65306;</b>${esc(reason.zh)}</span><span class="en"><b>Why:</b> ${esc(reason.en)}</span></p>
           <div class="facts"><div class="fact"><span>⏰</span><span class="zh">${esc(event.timeZh)}</span><span class="en">${esc(event.timeEn)}</span></div><div class="fact"><span>📍</span><span class="zh">${esc(event.placeZh)}</span><span class="en">${esc(event.placeEn)}</span></div><div class="fact"><span>🎟️</span><span class="zh">${esc(event.priceZh)}</span><span class="en">${esc(event.priceEn)}</span></div></div>
           <div class="actions"><a class="action primary" href="${esc(event.url)}" target="_blank" rel="noreferrer"><span class="zh">&#23448;&#32593;</span><span class="en">Official</span></a><a class="action" href="${esc(map)}" target="_blank" rel="noreferrer"><span class="zh">&#23548;&#33322;</span><span class="en">Map</span></a></div>
           <div class="reference"><b>Reference:</b> <span class="zh">${esc(event.referenceZh)}</span><span class="en">${esc(event.referenceEn)}</span></div>
