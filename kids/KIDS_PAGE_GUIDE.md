@@ -69,6 +69,38 @@
 - Playground 卡片颜色按信息类别分配：water play 偏浅蓝，nature/park 偏浅绿，indoor/gallery 偏淡紫，fenced/toddler 偏粉，big kids/adventure 偏桃橙；不要用 `half-day` 决定颜色，因为每个地点都可以有半日建议。
 - 卡片的 `官网 / Official` 主按钮可以轻微跟随卡片 accent；`地图 / Map` 和 `分享 / Share` 保持白底，避免手机上一排按钮显得太花。
 
+### 2.1 Figma 视觉调整大纲
+
+当前 kids 页面按“亲子旅行手账 + 信息工具”处理，不做厚重 landing hero。
+
+字体：
+
+- 中文优先 `Noto Sans SC / PingFang SC / Microsoft YaHei`，英文优先 `Nunito Sans / Inter / Segoe UI`。
+- 不使用过重的 900 字重。主标题、卡片标题、按钮以 700-780 为主；正文保持 400-500。
+- 中英文同一层级使用相近视觉重量，不让英文页面显得像未整理的 fallback。
+
+层级：
+
+- H1 中文控制在手机一行内，约 25-30px；桌面也不超过 34px。
+- 品牌标题约 15-16px，副标题和浏览量 10-11px，弱于城市和内容切换。
+- 城市切换是一级操作，约 15px；Events / Playgrounds 是同组二级操作，约 14px。
+- 活动卡标题约 18-20px；正文约 14px，行高约 1.6；事实栏约 12.5-13px；Reference 约 10.5-11px。
+- 卡片只保留一个状态标签：`本周优先 / Priority`、`备选 / Backup` 或 `长期备选 / Long-term`。
+
+背景和颜色：
+
+- 页面底色以 warm cream `#fff8ea` 为底，轻网格和很淡的马卡龙光晕只做氛围，不喧宾夺主。
+- 主文字 `#2e3a40`，辅助文字 `#667680`。
+- 主色盘固定为：mint `#cff7e8`、yellow `#fff1b8`、peach `#ffe1d3`、lavender `#ece8ff`、green `#ddf7d8`、blue `#ddf1ff`、pink `#ffddea`。
+- 卡片主体保持白/奶白，不做大面积随机彩色底；活泼感来自左侧 4-6px 色条、轻胶带、贴纸和小标签。
+- 第一张本周活动可以略微 featured；长期展览用 lavender 系列，不能和短期新活动抢视觉优先级。
+
+页面节奏：
+
+- 第一屏顺序必须稳定：Header → H1 → 当前选择/城市/内容切换 → 周期 → 内容卡片。
+- More 是折叠候选入口，视觉上像补充抽屉，不要像第三个主 tab。
+- 长期活动暂不独立成顶层 tab；如果数量增加，先在 Events 内部作为 `长期备选 / Long-term` 区块或第 5 条以后处理。
+
 ## 3. 当前页面信息架构
 
 第一屏顺序固定：

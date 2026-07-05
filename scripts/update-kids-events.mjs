@@ -144,15 +144,16 @@ const cityConfigs = [
 ];
 
 const accents = [
-  ["#bdf3d2", "rgba(189,243,210,.78)"],
-  ["#ffcdbb", "rgba(255,205,187,.78)"],
-  ["#bfe3ff", "rgba(191,227,255,.8)"],
-  ["#ffe985", "rgba(255,233,133,.78)"],
-  ["#d4c8ff", "rgba(212,200,255,.78)"],
-  ["#ffcae2", "rgba(255,202,226,.78)"],
-  ["#aeece8", "rgba(174,236,232,.78)"],
-  ["#ffc978", "rgba(255,201,120,.78)"]
+  ["#cff7e8", "rgba(207,247,232,.78)"],
+  ["#ffe1d3", "rgba(255,225,211,.78)"],
+  ["#ddf1ff", "rgba(221,241,255,.8)"],
+  ["#fff1b8", "rgba(255,241,184,.78)"],
+  ["#ece8ff", "rgba(236,232,255,.78)"],
+  ["#ffddea", "rgba(255,221,234,.78)"],
+  ["#ccefeb", "rgba(204,239,235,.78)"],
+  ["#ffd99f", "rgba(255,217,159,.78)"]
 ];
+const longTermAccent = ["#ece8ff", "rgba(236,232,255,.82)"];
 
 const eventSourceRegions = {
   melbourne: [
@@ -443,16 +444,23 @@ function esc(value) {
   return String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-function eventStatus(index) {
-  return index < 4 ? { zh: "\u672c\u5468\u4f18\u5148", en: "Priority" } : { zh: "\u5907\u9009", en: "Backup" };
+function isLongTermEvent(event) {
+  const text = `${event?.tagZh || ""} ${event?.tagEn || ""} ${event?.titleZh || ""} ${event?.titleEn || ""} ${event?.summaryZh || ""} ${event?.summaryEn || ""} ${event?.timeZh || ""} ${event?.timeEn || ""}`;
+  return /\b(ongoing|long[- ]?running|longer[- ]running|exhibition|season)\b|\u6301\u7eed|\u957f\u671f|\u957f\u65f6\u95f4|\u5c55\u89c8/i.test(text);
+}
+
+function eventStatus(event, index) {
+  if (isLongTermEvent(event)) return { zh: "\u957f\u671f\u5907\u9009", en: "Long-term", className: " long-term" };
+  return index < 4 ? { zh: "\u672c\u5468\u4f18\u5148", en: "Priority", className: "" } : { zh: "\u5907\u9009", en: "Backup", className: "" };
 }
 
 function renderEvent(event, index) {
-  const [accent, soft] = accents[index % accents.length];
+  const longTerm = isLongTermEvent(event);
+  const [accent, soft] = longTerm ? longTermAccent : accents[index % accents.length];
   const featured = index === 0 ? " featured" : "";
-  const status = eventStatus(index);
+  const status = eventStatus(event, index);
   const map = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.mapQuery || event.placeEn || event.titleEn)}`;
-  return `        <article class="card${featured}" style="--accent:${accent};--accent-soft:${soft};">
+  return `        <article class="card${featured}${status.className}" style="--accent:${accent};--accent-soft:${soft};">
           <div class="card-top"><span class="tag zh">${esc(event.tagZh)}</span><span class="tag en">${esc(event.tagEn)}</span><span class="recommend-status"><span class="zh">${esc(status.zh)}</span><span class="en">${esc(status.en)}</span></span></div>
           <h2><span class="zh">${esc(event.titleZh)}</span><span class="en">${esc(event.titleEn)}</span></h2>
           <p class="summary zh">${esc(event.summaryZh)}</p><p class="summary en">${esc(event.summaryEn)}</p>

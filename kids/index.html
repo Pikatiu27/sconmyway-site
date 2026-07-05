@@ -7,27 +7,27 @@
   <style>
     :root {
       color-scheme: light;
-      --ink: #29343b;
-      --muted: #5f707b;
-      --paper: rgba(255, 255, 255, 0.88);
+      --ink: #2e3a40;
+      --muted: #667680;
+      --paper: rgba(255, 255, 255, 0.92);
       --line: rgba(41, 52, 59, 0.12);
-      --mint: #bdf3d2;
-      --peach: #ffcdbb;
-      --sky: #bfe3ff;
-      --lemon: #ffe985;
-      --pink: #ffcae2;
-      --lilac: #d4c8ff;
-      --aqua: #aeece8;
-      --grass: #c8efb6;
-      --apricot: #ffd39a;
-      --city-active-bg: linear-gradient(135deg, rgba(174, 236, 232, 0.94), rgba(191, 227, 255, 0.9));
-      --view-active-bg: linear-gradient(135deg, rgba(255, 233, 133, 0.9), rgba(255, 205, 187, 0.82));
+      --mint: #cff7e8;
+      --peach: #ffe1d3;
+      --sky: #ddf1ff;
+      --lemon: #fff1b8;
+      --pink: #ffddea;
+      --lilac: #ece8ff;
+      --aqua: #ccefeb;
+      --grass: #ddf7d8;
+      --apricot: #ffd99f;
+      --city-active-bg: linear-gradient(135deg, rgba(207, 247, 232, 0.96), rgba(221, 241, 255, 0.92));
+      --view-active-bg: linear-gradient(135deg, rgba(255, 241, 184, 0.94), rgba(255, 225, 211, 0.86));
       --view-panel-accent: var(--lemon);
-      --shadow: 0 18px 44px rgba(72, 86, 96, 0.13);
-      --paper-shadow: 0 18px 34px rgba(89, 101, 112, 0.16), inset 0 2px 0 rgba(255, 255, 255, 0.92);
-      --font-en: "Nunito", "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
-      --font-zh: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
-      --font-display: "Arial Rounded MT Bold", "Nunito", "PingFang SC", "Microsoft YaHei UI", sans-serif;
+      --shadow: 0 16px 36px rgba(72, 86, 96, 0.12);
+      --paper-shadow: 0 16px 30px rgba(89, 101, 112, 0.12), inset 0 2px 0 rgba(255, 255, 255, 0.94);
+      --font-en: "Nunito Sans", "Inter", "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+      --font-zh: "Noto Sans SC", "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      --font-display: "Nunito Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei UI", sans-serif;
       font-family: var(--font-en);
     }
 
@@ -42,10 +42,10 @@
       background:
         linear-gradient(rgba(255, 255, 255, 0.34) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.34) 1px, transparent 1px),
-        radial-gradient(circle at 8% 6%, rgba(255, 233, 133, 0.58), transparent 19rem),
-        radial-gradient(circle at 92% 2%, rgba(255, 202, 226, 0.54), transparent 20rem),
-        radial-gradient(circle at 86% 80%, rgba(212, 200, 255, 0.42), transparent 21rem),
-        linear-gradient(180deg, #fff8e8 0%, #fffdf5 50%, #fff2fa 100%);
+        radial-gradient(circle at 8% 6%, rgba(255, 241, 184, 0.62), transparent 18rem),
+        radial-gradient(circle at 92% 2%, rgba(255, 221, 234, 0.52), transparent 20rem),
+        radial-gradient(circle at 86% 80%, rgba(236, 232, 255, 0.44), transparent 21rem),
+        linear-gradient(180deg, #fff8ea 0%, #fffdf6 52%, #fff5f9 100%);
       background-size: 22px 22px, 22px 22px, auto, auto, auto, auto;
       font-size: 15px;
       text-rendering: optimizeLegibility;
@@ -94,7 +94,7 @@
       aspect-ratio: 1;
       border: 2px solid rgba(255, 255, 255, 0.86);
       border-radius: 16px;
-      background: var(--paper);
+      background: rgba(255, 255, 255, 0.9);
       box-shadow: 0 12px 24px rgba(72, 86, 96, 0.12);
       font-size: 25px;
       transform: rotate(var(--turn, -8deg));
@@ -157,24 +157,24 @@
       display: block;
       font-family: var(--font-display);
       color: #26353d;
-      font-size: 17px;
-      font-weight: 950;
+      font-size: 16px;
+      font-weight: 760;
       line-height: 1.04;
     }
 
     .brand-text > span {
       display: block;
-      color: #7a8890;
+      color: #7b8990;
       font-size: 11px;
-      font-weight: 600;
+      font-weight: 560;
       line-height: 1.25;
       margin-top: 5px;
     }
 
     .view-count {
-      color: #9aa6ac;
-      font-size: 10px;
-      font-weight: 650;
+      color: #95a1a7;
+      font-size: 11px;
+      font-weight: 560;
       letter-spacing: 0;
     }
 
@@ -204,20 +204,20 @@
     }
 
     body[data-city="sydney"] {
-      --city-active-bg: linear-gradient(135deg, rgba(174, 236, 232, 0.94), rgba(191, 227, 255, 0.9));
+      --city-active-bg: linear-gradient(135deg, rgba(207, 247, 232, 0.96), rgba(221, 241, 255, 0.92));
     }
 
     body[data-city="melbourne"] {
-      --city-active-bg: linear-gradient(135deg, rgba(212, 200, 255, 0.92), rgba(255, 202, 226, 0.86));
+      --city-active-bg: linear-gradient(135deg, rgba(236, 232, 255, 0.94), rgba(255, 221, 234, 0.88));
     }
 
     body[data-view="events"] {
-      --view-active-bg: linear-gradient(135deg, rgba(255, 233, 133, 0.9), rgba(255, 205, 187, 0.82));
+      --view-active-bg: linear-gradient(135deg, rgba(255, 241, 184, 0.94), rgba(255, 225, 211, 0.86));
       --view-panel-accent: var(--lemon);
     }
 
     body[data-view="playgrounds"] {
-      --view-active-bg: linear-gradient(135deg, rgba(200, 239, 182, 0.86), rgba(174, 236, 232, 0.78));
+      --view-active-bg: linear-gradient(135deg, rgba(221, 247, 216, 0.9), rgba(207, 247, 232, 0.78));
       --view-panel-accent: var(--grass);
     }
 
@@ -229,8 +229,8 @@
       border: 1px solid rgba(45, 59, 68, 0.12);
       border-radius: 12px;
       background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.82), color-mix(in srgb, var(--view-panel-accent) 24%, white)),
-        rgba(255, 255, 255, 0.74);
+        linear-gradient(135deg, rgba(255, 255, 255, 0.9), color-mix(in srgb, var(--view-panel-accent) 18%, white)),
+        rgba(255, 255, 255, 0.8);
       box-shadow: 0 12px 28px rgba(72, 86, 96, 0.08);
     }
 
@@ -245,8 +245,8 @@
       border-radius: 999px;
       color: #334650;
       background: rgba(255, 255, 255, 0.76);
-      font-size: 12.5px;
-      font-weight: 900;
+      font-size: 12px;
+      font-weight: 760;
       line-height: 1.2;
       white-space: nowrap;
       box-shadow: 0 8px 18px rgba(72, 86, 96, 0.08);
@@ -295,8 +295,8 @@
       color: var(--muted);
       background: transparent;
       font: inherit;
-      font-size: 14px;
-      font-weight: 900;
+      font-size: 15px;
+      font-weight: 780;
       line-height: 1;
       cursor: pointer;
     }
@@ -339,15 +339,15 @@
     }
 
     .hero {
-      padding: 16px 0 10px;
+      padding: 14px 0 10px;
     }
 
     h1 {
       max-width: 100%;
-      margin: 10px 0 8px;
+      margin: 8px 0 8px;
       font-family: var(--font-display);
-      font-size: clamp(30px, 7.2vw, 48px);
-      font-weight: 900;
+      font-size: clamp(28px, 6.2vw, 34px);
+      font-weight: 760;
       line-height: 1.08;
       letter-spacing: 0;
     }
@@ -355,7 +355,14 @@
     h1 .zh {
       display: block;
       max-width: 100%;
-      font-size: 0.9em;
+      font-size: 0.96em;
+      white-space: nowrap;
+    }
+
+    h1 .en {
+      display: block;
+      font-size: 0.78em;
+      line-height: 1.12;
       white-space: nowrap;
     }
 
@@ -386,7 +393,7 @@
       background: rgba(255, 255, 255, 0.82);
       color: #40515d;
       font-size: 13px;
-      font-weight: 650;
+      font-weight: 620;
       box-shadow: 0 10px 26px rgba(72, 86, 96, 0.08);
     }
 
@@ -430,8 +437,8 @@
       background: rgba(255, 255, 255, 0.74);
       box-shadow: 0 8px 18px rgba(72, 86, 96, 0.08);
       font: inherit;
-      font-size: 12px;
-      font-weight: 900;
+      font-size: 14px;
+      font-weight: 760;
       line-height: 1;
       padding: 0 12px;
       cursor: pointer;
@@ -468,16 +475,16 @@
     .filter-chip[aria-pressed="true"] {
       color: #26353d;
       border-color: transparent;
-      background: var(--filter-active-bg, linear-gradient(135deg, rgba(255, 233, 133, 0.86), rgba(255, 205, 187, 0.72)));
+      background: var(--filter-active-bg, linear-gradient(135deg, rgba(255, 241, 184, 0.88), rgba(255, 225, 211, 0.74)));
       box-shadow: 0 10px 22px rgba(72, 86, 96, 0.12);
     }
 
-    .filter-chip[data-play-filter="water"] { --filter-active-bg: linear-gradient(135deg, rgba(191, 227, 255, 0.94), rgba(174, 236, 232, 0.78)); }
+    .filter-chip[data-play-filter="water"] { --filter-active-bg: linear-gradient(135deg, rgba(221, 241, 255, 0.96), rgba(204, 239, 235, 0.78)); }
     .filter-chip[data-play-filter="fenced"],
-    .filter-chip[data-play-filter="toddler"] { --filter-active-bg: linear-gradient(135deg, rgba(255, 202, 226, 0.92), rgba(255, 255, 255, 0.7)); }
-    .filter-chip[data-play-filter="big-kids"] { --filter-active-bg: linear-gradient(135deg, rgba(255, 205, 187, 0.94), rgba(255, 233, 133, 0.66)); }
-    .filter-chip[data-play-filter="nature"] { --filter-active-bg: linear-gradient(135deg, rgba(200, 239, 182, 0.92), rgba(189, 243, 210, 0.72)); }
-    .filter-chip[data-play-filter="indoor"] { --filter-active-bg: linear-gradient(135deg, rgba(212, 200, 255, 0.92), rgba(255, 202, 226, 0.58)); }
+    .filter-chip[data-play-filter="toddler"] { --filter-active-bg: linear-gradient(135deg, rgba(255, 221, 234, 0.92), rgba(255, 255, 255, 0.74)); }
+    .filter-chip[data-play-filter="big-kids"] { --filter-active-bg: linear-gradient(135deg, rgba(255, 225, 211, 0.96), rgba(255, 241, 184, 0.68)); }
+    .filter-chip[data-play-filter="nature"] { --filter-active-bg: linear-gradient(135deg, rgba(221, 247, 216, 0.94), rgba(207, 247, 232, 0.74)); }
+    .filter-chip[data-play-filter="indoor"] { --filter-active-bg: linear-gradient(135deg, rgba(236, 232, 255, 0.94), rgba(255, 221, 234, 0.58)); }
 
     [data-view="playgrounds"] .sticker.one {
       display: none;
@@ -485,15 +492,17 @@
 
     .cards {
       display: grid;
-      gap: 14px;
+      gap: 13px;
     }
 
     .card {
       position: relative;
-      padding: 17px 16px 16px 20px;
-      border: 1px solid rgba(41, 52, 59, 0.1);
+      padding: 16px 15px 15px 20px;
+      border: 1px solid rgba(41, 52, 59, 0.09);
       border-radius: 8px;
-      background: var(--paper);
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(255, 253, 246, 0.9)),
+        var(--paper);
       box-shadow: var(--paper-shadow);
       backdrop-filter: blur(18px);
       overflow: hidden;
@@ -511,7 +520,7 @@
     }
 
     .card:hover {
-      box-shadow: 0 22px 44px rgba(89, 101, 112, 0.18), inset 0 2px 0 rgba(255, 255, 255, 0.9);
+      box-shadow: 0 20px 38px rgba(89, 101, 112, 0.15), inset 0 2px 0 rgba(255, 255, 255, 0.92);
       transform: translateY(-2px) rotate(var(--tilt, -0.55deg));
     }
 
@@ -523,8 +532,41 @@
       content: "";
       position: absolute;
       inset: 0 auto 0 0;
-      width: 8px;
-      background: var(--accent, var(--mint));
+      width: 6px;
+      background: linear-gradient(180deg, var(--accent, var(--mint)), color-mix(in srgb, var(--accent, var(--mint)) 48%, white));
+      box-shadow: 3px 0 12px color-mix(in srgb, var(--accent, var(--mint)) 34%, transparent);
+      z-index: 0;
+    }
+
+    .card.featured::after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      right: 18px;
+      width: 64px;
+      height: 13px;
+      border-radius: 3px;
+      background: repeating-linear-gradient(-45deg, rgba(255, 241, 184, 0.78) 0 8px, rgba(255, 225, 211, 0.68) 8px 16px);
+      box-shadow: 0 6px 12px rgba(72, 86, 96, 0.08);
+      opacity: 0.72;
+      transform: rotate(2.5deg);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card.long-term {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.97), rgba(251, 249, 255, 0.92)),
+        var(--paper);
+    }
+
+    .card.long-term .recommend-status {
+      background: linear-gradient(135deg, rgba(236, 232, 255, 0.82), rgba(255, 255, 255, 0.76));
     }
 
     .card-top {
@@ -543,8 +585,8 @@
       color: #263a45;
       background: var(--accent-soft, rgba(201, 239, 217, 0.76));
       box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
-      font-size: 11px;
-      font-weight: 800;
+      font-size: 11.5px;
+      font-weight: 760;
       line-height: 1.2;
       white-space: nowrap;
     }
@@ -560,8 +602,8 @@
       color: #2f4652;
       background: rgba(255, 255, 255, 0.74);
       box-shadow: 0 7px 16px rgba(72, 86, 96, 0.08);
-      font-size: 11px;
-      font-weight: 900;
+      font-size: 11.5px;
+      font-weight: 760;
       line-height: 1.1;
       white-space: nowrap;
     }
@@ -588,27 +630,27 @@
       background: rgba(255, 255, 255, 0.72);
       box-shadow: 0 5px 12px rgba(72, 86, 96, 0.08);
       font-size: 10.5px;
-      font-weight: 850;
+      font-weight: 720;
       line-height: 1.1;
       transform: rotate(var(--chip-tilt, -1deg));
     }
 
     .card h2 {
-      margin: 14px 0 10px;
+      margin: 13px 0 9px;
       font-family: var(--font-display);
-      font-size: 22px;
+      font-size: 18.5px;
       line-height: 1.14;
-      font-weight: 900;
+      font-weight: 760;
       letter-spacing: 0;
       text-wrap: balance;
     }
 
     .summary {
       margin: 0 0 15px;
-      color: #465964;
-      font-size: 14.5px;
-      font-weight: 480;
-      line-height: 1.72;
+      color: #485b66;
+      font-size: 14px;
+      font-weight: 450;
+      line-height: 1.62;
     }
 
     .facts {
@@ -618,7 +660,7 @@
       padding: 10px;
       border: 1px solid rgba(41, 52, 59, 0.08);
       border-radius: 8px;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 248, 232, 0.52));
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 248, 234, 0.52));
     }
 
     .combo {
@@ -691,10 +733,10 @@
       gap: 8px;
       position: relative;
       padding: 11px 10px 10px 14px;
-      border: 1px solid color-mix(in srgb, var(--spot-accent, #bfe3ff) 42%, rgba(41, 52, 59, 0.1));
+      border: 1px solid color-mix(in srgb, var(--spot-accent, #ddf1ff) 42%, rgba(41, 52, 59, 0.1));
       border-radius: 8px;
       background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.96), color-mix(in srgb, var(--spot-accent, #bfe3ff) 24%, white)),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.96), color-mix(in srgb, var(--spot-accent, #ddf1ff) 24%, white)),
         rgba(255, 255, 255, 0.78);
       box-shadow: 0 10px 20px rgba(72, 86, 96, 0.09);
       overflow: hidden;
@@ -706,7 +748,7 @@
       inset: 0 auto 0 0;
       width: 5px;
       border-radius: 8px 0 0 8px;
-      background: linear-gradient(180deg, var(--spot-accent, #bfe3ff), color-mix(in srgb, var(--spot-accent, #bfe3ff) 42%, white));
+      background: linear-gradient(180deg, var(--spot-accent, #ddf1ff), color-mix(in srgb, var(--spot-accent, #ddf1ff) 42%, white));
       box-shadow: 3px 0 10px rgba(72, 86, 96, 0.08);
     }
 
@@ -720,7 +762,7 @@
       width: 25px;
       aspect-ratio: 1;
       border-radius: 999px;
-      background: color-mix(in srgb, var(--spot-accent, #bfe3ff) 30%, white);
+      background: color-mix(in srgb, var(--spot-accent, #ddf1ff) 30%, white);
       font-size: 13px;
       box-shadow: 0 5px 12px rgba(72, 86, 96, 0.08);
     }
@@ -796,7 +838,7 @@
       background: rgba(255, 255, 255, 0.72);
       color: #2f414b;
       font-size: 11.5px;
-      font-weight: 900;
+      font-weight: 760;
       font-family: inherit;
       line-height: 1;
       text-decoration: none;
@@ -805,8 +847,8 @@
     }
 
     .spot-actions a:not([href*="google.com/maps"]) {
-      border-color: color-mix(in srgb, var(--spot-accent, #ffcdbb) 42%, rgba(41, 52, 59, 0.12));
-      background: linear-gradient(135deg, color-mix(in srgb, var(--spot-accent, #ffcdbb) 48%, white), rgba(255, 255, 255, 0.82));
+      border-color: color-mix(in srgb, var(--spot-accent, #ffe1d3) 42%, rgba(41, 52, 59, 0.12));
+      background: linear-gradient(135deg, color-mix(in srgb, var(--spot-accent, #ffe1d3) 48%, white), rgba(255, 255, 255, 0.82));
       box-shadow: 0 7px 16px rgba(72, 86, 96, 0.1);
     }
 
@@ -824,9 +866,9 @@
       column-gap: 8px;
       row-gap: 3px;
       color: #44535d;
-      font-size: 13px;
-      font-weight: 650;
-      line-height: 1.48;
+      font-size: 12.5px;
+      font-weight: 620;
+      line-height: 1.5;
     }
 
     .fact span:first-child {
@@ -837,11 +879,11 @@
       height: 26px;
       padding: 0;
       border-radius: 999px;
-      background: color-mix(in srgb, var(--accent, #bfe3ff) 28%, white);
+      background: color-mix(in srgb, var(--accent, #ddf1ff) 28%, white);
       color: #354651;
       text-align: center;
       font-size: 14px;
-      font-weight: 950;
+      font-weight: 760;
       line-height: 1;
       white-space: nowrap;
       filter: drop-shadow(0 2px 2px rgba(72, 86, 96, 0.08));
@@ -872,7 +914,7 @@
       color: #2e3e48;
       background: #fff;
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 760;
       font-family: inherit;
       line-height: 1.1;
       white-space: nowrap;
@@ -883,13 +925,13 @@
 
     .action.primary {
       border-color: color-mix(in srgb, var(--accent, var(--mint)) 44%, rgba(41, 52, 59, 0.08));
-      background: linear-gradient(135deg, color-mix(in srgb, var(--accent, var(--mint)) 58%, white), rgba(255, 255, 255, 0.72));
-      box-shadow: 0 10px 20px rgba(72, 86, 96, 0.13);
+      background: linear-gradient(135deg, color-mix(in srgb, var(--accent, var(--mint)) 44%, white), rgba(255, 255, 255, 0.76));
+      box-shadow: 0 9px 18px rgba(72, 86, 96, 0.11);
     }
 
     .share-action[data-copied="true"] {
       border-color: rgba(59, 157, 127, 0.28);
-      background: rgba(189, 243, 210, 0.72);
+      background: rgba(207, 247, 232, 0.74);
     }
 
     .card.shared-target {
@@ -920,8 +962,8 @@
       margin-top: 14px;
       border: 1px solid rgba(41, 52, 59, 0.1);
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.76);
-      box-shadow: 0 12px 26px rgba(89, 101, 112, 0.1);
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: 0 12px 24px rgba(89, 101, 112, 0.09);
       overflow: hidden;
     }
 
@@ -932,10 +974,10 @@
       min-height: 48px;
       padding: 12px 14px;
       color: #2f414b;
-      background: linear-gradient(135deg, rgba(255, 233, 133, 0.78), rgba(191, 227, 255, 0.72));
+      background: linear-gradient(135deg, rgba(255, 241, 184, 0.82), rgba(221, 241, 255, 0.72));
       font-family: var(--font-display);
-      font-size: 18px;
-      font-weight: 900;
+      font-size: 17px;
+      font-weight: 760;
       cursor: pointer;
       list-style: none;
     }
@@ -1122,11 +1164,11 @@
       }
 
       .card h2 {
-        font-size: 24px;
+        font-size: 20px;
       }
 
       .summary {
-        font-size: 15px;
+        font-size: 14.5px;
       }
 
       .card.featured {
@@ -1194,7 +1236,7 @@
 
       h1 {
         margin-top: 8px;
-        font-size: clamp(27px, 8.5vw, 34px);
+        font-size: clamp(25px, 7.2vw, 30px);
         line-height: 1.06;
       }
 
@@ -1222,7 +1264,7 @@
       }
 
       .card h2 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.18;
       }
 
@@ -1345,7 +1387,7 @@
 
       <section class="cards" data-view-panel="events" data-city-panel="sydney" aria-label="Sydney recommended activities">
         <!-- EVENTS_START -->
-        <article class="card featured" style="--accent:#bdf3d2;--accent-soft:rgba(189,243,210,.78);">
+        <article class="card featured" style="--accent:#cff7e8;--accent-soft:rgba(207,247,232,.78);">
           <div class="card-top"><span class="tag zh">Parramatta · 冬季节</span><span class="tag en">Parramatta · Winter festival</span><span class="recommend-status"><span class="zh">本周优先</span><span class="en">Priority</span></span></div>
           <h2><span class="zh">Midwinter Festival</span><span class="en">Midwinter Festival</span></h2>
           <p class="summary zh">Parramatta Square 这场冬季夜游把 firepits、immersive cinema、小吃和现场娱乐集中在一起，傍晚去更有节日感，适合全家轻松逛一圈。</p><p class="summary en">Parramatta Square turns into a winter night-out with firepits, immersive cinema, food and entertainment, making it an easy family outing rather than a kid-only session.</p>
@@ -1354,7 +1396,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">AtParramatta / City of Parramatta 官方活动页面。</span><span class="en">AtParramatta / City of Parramatta official event listing.</span></div>
         </article>
 
-        <article class="card" style="--accent:#ffcdbb;--accent-soft:rgba(255,205,187,.78);">
+        <article class="card" style="--accent:#ffe1d3;--accent-soft:rgba(255,225,211,.78);">
           <div class="card-top"><span class="tag zh">Darling Harbour · 免费</span><span class="tag en">Darling Harbour · Free</span><span class="recommend-status"><span class="zh">本周优先</span><span class="en">Priority</span></span></div>
           <h2><span class="zh">Arctic Activity Zone</span><span class="en">Arctic Activity Zone</span></h2>
           <p class="summary zh">Convention Forecourt 两天免费 winter hub 有寻宝、手作、dance den 和 games area，不只是坐着看，适合孩子放电，大人也能顺路在 Darling Harbour 吃饭散步。</p><p class="summary en">This free two-day winter hub has a scavenger hunt, craft camp, dance den and games area, so kids can move around while adults can pair it with an easy Darling Harbour meal or walk.</p>
@@ -1363,7 +1405,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">Darling Harbour 官方 Arctic Activity Zone 页面。</span><span class="en">Darling Harbour official Arctic Activity Zone page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#bfe3ff;--accent-soft:rgba(191,227,255,.8);">
+        <article class="card" style="--accent:#ddf1ff;--accent-soft:rgba(221,241,255,.8);">
           <div class="card-top"><span class="tag zh">Maritime Museum · NAIDOC</span><span class="tag en">Maritime Museum · NAIDOC</span><span class="recommend-status"><span class="zh">本周优先</span><span class="en">Priority</span></span></div>
           <h2><span class="zh">Free Open Day - Celebrate NAIDOC</span><span class="en">Free Open Day - Celebrate NAIDOC</span></h2>
           <p class="summary zh">Maritime Museum 免费开放日把文化活动、现场表演、art-making、tours、workshops 和 storytelling 放在同一天，室内外都好安排，适合边玩边认识 First Nations 文化。</p><p class="summary en">This free Maritime Museum open day brings cultural activities, live performances, art-making, tours, workshops and storytelling into one easy visit, with a stronger family-outing feel than a single workshop.</p>
@@ -1372,7 +1414,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">Darling Harbour / Australian National Maritime Museum 官方活动页面。</span><span class="en">Darling Harbour / Australian National Maritime Museum official event page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#ffe985;--accent-soft:rgba(255,233,133,.78);">
+        <article class="card" style="--accent:#fff1b8;--accent-soft:rgba(255,241,184,.78);">
           <div class="card-top"><span class="tag zh">Blacktown · NAIDOC</span><span class="tag en">Blacktown · NAIDOC</span><span class="recommend-status"><span class="zh">本周优先</span><span class="en">Priority</span></span></div>
           <h2><span class="zh">NAIDOC Events 2026</span><span class="en">NAIDOC Events 2026</span></h2>
           <p class="summary zh">Blacktown LGA 的 NAIDOC 周活动覆盖 community、culture、sport 和 kids &amp; family 场次，适合西区家庭按地点和时间挑一场参与。</p><p class="summary en">Blacktown LGA&#x27;s NAIDOC Week program covers community, culture, sport and kids-and-family sessions, giving western Sydney families several concrete options to choose by suburb and time.</p>
@@ -1381,7 +1423,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">Blacktown City Council 官方活动页面。</span><span class="en">Blacktown City Council official event listing.</span></div>
         </article>
 
-        <article class="card" style="--accent:#d4c8ff;--accent-soft:rgba(212,200,255,.78);">
+        <article class="card" style="--accent:#ece8ff;--accent-soft:rgba(236,232,255,.78);">
           <div class="card-top"><span class="tag zh">Penrith · NAIDOC</span><span class="tag en">Penrith · NAIDOC</span><span class="recommend-status"><span class="zh">备选</span><span class="en">Backup</span></span></div>
           <h2><span class="zh">Penrith NAIDOC Event</span><span class="en">Penrith NAIDOC Event</span></h2>
           <p class="summary zh">Penrith 免费社区日有表演、文化工作坊、market stalls、talks、free BBQ、sport 和 First Nations food trucks，内容密度高，适合开车去过一个热闹半日。</p><p class="summary en">This free Penrith community day packs performances, cultural workshops, market stalls, talks, a free BBQ, sport and First Nations food trucks into one bigger family half-day.</p>
@@ -1390,7 +1432,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">Penrith City Council 官方活动页面。</span><span class="en">Penrith City Council official event listing.</span></div>
         </article>
 
-        <article class="card" style="--accent:#ffcae2;--accent-soft:rgba(255,202,226,.78);">
+        <article class="card" style="--accent:#ffddea;--accent-soft:rgba(255,221,234,.78);">
           <div class="card-top"><span class="tag zh">Darling Harbour · 冰场</span><span class="tag en">Darling Harbour · Ice rink</span><span class="recommend-status"><span class="zh">备选</span><span class="en">Backup</span></span></div>
           <h2><span class="zh">Darling Harbour Ice Rink</span><span class="en">Darling Harbour Ice Rink</span></h2>
           <p class="summary zh">Palm Grove open-air ice rink 有企鹅辅助架、冬季小吃和 harbourfront 氛围，滑冰本身好玩，也容易接 Darling Harbour 吃饭散步。</p><p class="summary en">The Palm Grove open-air rink has penguin skating aids, winter treats and a harbourfront setting, making it easy to turn skating into a Darling Harbour half-day.</p>
@@ -1399,7 +1441,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">Darling Harbour 官方 ice rink 页面。</span><span class="en">Darling Harbour official ice rink page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#aeece8;--accent-soft:rgba(174,236,232,.78);">
+        <article class="card" style="--accent:#ccefeb;--accent-soft:rgba(204,239,235,.78);">
           <div class="card-top"><span class="tag zh">Darling Quarter · 剧场</span><span class="tag en">Darling Quarter · Theatre</span><span class="recommend-status"><span class="zh">备选</span><span class="en">Backup</span></span></div>
           <h2><span class="zh">The Gruffalo&#x27;s Child</span><span class="en">The Gruffalo&#x27;s Child</span></h2>
           <p class="summary zh">这场 55 分钟音乐剧把故事、physical theatre、music 和 puppetry 放在一起，对 3 岁以上友好，也适合大人陪着轻松看完。</p><p class="summary en">This 55-minute theatre show mixes story, physical theatre, music and puppetry, making it a manageable sit-down outing for ages 3+ and accompanying adults.</p>
@@ -1408,8 +1450,8 @@
           <div class="reference"><b>Reference:</b> <span class="zh">Darling Harbour / Darling Quarter Theatre 官方活动页面。</span><span class="en">Darling Harbour / Darling Quarter Theatre official event page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#ffc978;--accent-soft:rgba(255,201,120,.78);">
-          <div class="card-top"><span class="tag zh">Sydney · 展览</span><span class="tag en">Sydney · Exhibition</span><span class="recommend-status"><span class="zh">备选</span><span class="en">Backup</span></span></div>
+        <article class="card long-term" style="--accent:#ece8ff;--accent-soft:rgba(236,232,255,.82);">
+          <div class="card-top"><span class="tag zh">Sydney · 展览</span><span class="tag en">Sydney · Exhibition</span><span class="recommend-status"><span class="zh">长期备选</span><span class="en">Long-term</span></span></div>
           <h2><span class="zh">Harry Potter: The Exhibition Sydney</span><span class="en">Harry Potter: The Exhibition Sydney</span></h2>
           <p class="summary zh">沉浸式哈利波特主题展适合想找室内备选的家庭，内容更像长期展览，所以放在短期活动之后作为雨天或粉丝选项。</p><p class="summary en">This immersive Harry Potter exhibition works well as an indoor backup for fans or rainy days, but it sits after the shorter-date picks because it is a longer-running show.</p>
           <div class="facts"><div class="fact"><span>⏰</span><span class="zh">持续开放，出发前确认当日时段</span><span class="en">Ongoing; confirm the day&#x27;s session before visiting</span></div><div class="fact"><span>📍</span><span class="zh">Harry Potter: The Exhibition Sydney</span><span class="en">Harry Potter: The Exhibition Sydney</span></div><div class="fact"><span>🎟️</span><span class="zh">购票入场</span><span class="en">Ticketed</span></div></div>
@@ -1421,7 +1463,7 @@
 
       <section class="cards" data-view-panel="events" data-city-panel="melbourne" aria-label="Melbourne recommended activities">
         <!-- MELBOURNE_EVENTS_START -->
-        <article class="card featured" style="--accent:#bdf3d2;--accent-soft:rgba(189,243,210,.78);">
+        <article class="card featured" style="--accent:#cff7e8;--accent-soft:rgba(207,247,232,.78);">
           <div class="card-top"><span class="tag zh">Docklands · Firelight</span><span class="tag en">Docklands · Firelight</span><span class="recommend-status"><span class="zh">本周优先</span><span class="en">Priority</span></span></div>
           <h2><span class="zh">Firelight Festival</span><span class="en">Firelight Festival</span></h2>
           <p class="summary zh">Docklands 免费 Firelight Festival 有 fire performers、laser show、glow pickleball、fire pits、live music 和 pop-up food，夜间氛围强，适合全家傍晚去。</p><p class="summary en">This free Docklands Firelight Festival brings together fire performers, a laser show, glow pickleball, fire pits, live music and pop-up food for a high-energy family evening.</p>
@@ -1430,7 +1472,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">City of Melbourne What&#x27;s On 官方活动页面。</span><span class="en">City of Melbourne What&#x27;s On official event page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#ffcdbb;--accent-soft:rgba(255,205,187,.78);">
+        <article class="card" style="--accent:#ffe1d3;--accent-soft:rgba(255,225,211,.78);">
           <div class="card-top"><span class="tag zh">Casey · 自然手作</span><span class="tag en">Casey · Nature craft</span><span class="recommend-status"><span class="zh">本周优先</span><span class="en">Priority</span></span></div>
           <h2><span class="zh">Crafty Creatures</span><span class="en">Crafty Creatures</span></h2>
           <p class="summary zh">Wilson Botanic Park 把动物主题手作、sensory play、fossil dig 和夜场 glowing animals/live reptiles 组合起来，适合喜欢自然和动手玩的家庭。</p><p class="summary en">Wilson Botanic Park combines animal-inspired craft, sensory play, fossil digging and selected evening sessions with glowing animals and live reptiles, making it more substantial than a simple craft stop.</p>
@@ -1439,7 +1481,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">City of Casey 官方活动页面。</span><span class="en">City of Casey official event listing.</span></div>
         </article>
 
-        <article class="card" style="--accent:#bfe3ff;--accent-soft:rgba(191,227,255,.8);">
+        <article class="card" style="--accent:#ddf1ff;--accent-soft:rgba(221,241,255,.8);">
           <div class="card-top"><span class="tag zh">Melbourne CBD · Theatre</span><span class="tag en">Melbourne CBD · Theatre</span><span class="recommend-status"><span class="zh">本周优先</span><span class="en">Priority</span></span></div>
           <h2><span class="zh">Bluey&#x27;s Big Play</span><span class="en">Bluey&#x27;s Big Play</span></h2>
           <p class="summary zh">Bluey 舞台剧在 Comedy Theatre 有早场和午场，时间明确、室内舒适，适合想给孩子一个稳定好安排 outing 的家庭。</p><p class="summary en">Bluey&#x27;s stage show has clear morning and lunchtime sessions at the Comedy Theatre, giving families a predictable indoor outing around a character kids already know.</p>
@@ -1448,7 +1490,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">City of Melbourne What&#x27;s On 官方活动页面。</span><span class="en">City of Melbourne What&#x27;s On official event page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#ffe985;--accent-soft:rgba(255,233,133,.78);">
+        <article class="card" style="--accent:#fff1b8;--accent-soft:rgba(255,241,184,.78);">
           <div class="card-top"><span class="tag zh">Carlton · 魔术</span><span class="tag en">Carlton · Magic</span><span class="recommend-status"><span class="zh">本周优先</span><span class="en">Priority</span></span></div>
           <h2><span class="zh">Magical Katrina The Whimsical Witch</span><span class="en">Magical Katrina The Whimsical Witch</span></h2>
           <p class="summary zh">这场互动 family magic show 时间卡在 1:15pm，容易和 Carlton/city 午餐或 Melbourne Museum 串成半日，适合想轻松看表演的家庭。</p><p class="summary en">This interactive family magic show lands at 1:15pm, making it easy to pair with Carlton or city lunch and nearby Melbourne Museum for a relaxed half-day.</p>
@@ -1457,7 +1499,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">City of Melbourne What&#x27;s On 官方活动页面。</span><span class="en">City of Melbourne What&#x27;s On official event page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#d4c8ff;--accent-soft:rgba(212,200,255,.78);">
+        <article class="card" style="--accent:#ece8ff;--accent-soft:rgba(236,232,255,.78);">
           <div class="card-top"><span class="tag zh">Docklands · Treasure hunt</span><span class="tag en">Docklands · Treasure hunt</span><span class="recommend-status"><span class="zh">备选</span><span class="en">Backup</span></span></div>
           <h2><span class="zh">General Waste&#x27;s Kids Shipboard Tour &amp; Treasure Hunt</span><span class="en">General Waste&#x27;s Kids Shipboard Tour &amp; Treasure Hunt</span></h2>
           <p class="summary zh">MV Steve Irwin 的 treasure hunt、eco-challenges 和 mission 把船、海洋和探索任务放在真实场景里，适合喜欢动手任务的孩子和大人一起玩。</p><p class="summary en">The MV Steve Irwin tour turns ships, oceans and eco-challenges into a hands-on treasure-hunt setting, so it works for kids who like missions and adults who want a real place to explore.</p>
@@ -1466,7 +1508,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">City of Melbourne What&#x27;s On 官方活动页面。</span><span class="en">City of Melbourne What&#x27;s On official event page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#ffcae2;--accent-soft:rgba(255,202,226,.78);">
+        <article class="card" style="--accent:#ffddea;--accent-soft:rgba(255,221,234,.78);">
           <div class="card-top"><span class="tag zh">Melbourne Museum · School holidays</span><span class="tag en">Melbourne Museum · School holidays</span><span class="recommend-status"><span class="zh">备选</span><span class="en">Backup</span></span></div>
           <h2><span class="zh">Winter School Holidays at Melbourne Museum</span><span class="en">Winter School Holidays at Melbourne Museum</span></h2>
           <p class="summary zh">Melbourne Museum 假期项目把 Our Wondrous Planet、Creative Lab、Mosaic Monuments、sleepovers、Tiny Tours 和 Dino Days 放在同一馆区，适合一站式室内半日。</p><p class="summary en">Melbourne Museum&#x27;s holiday program gathers Our Wondrous Planet, Creative Lab, Mosaic Monuments, sleepovers, Tiny Tours and Dino Days in one venue, making it a strong indoor half-day backup.</p>
@@ -1475,7 +1517,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">City of Melbourne What&#x27;s On / Museums Victoria 官方活动页面。</span><span class="en">City of Melbourne What&#x27;s On / Museums Victoria official event page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#aeece8;--accent-soft:rgba(174,236,232,.78);">
+        <article class="card" style="--accent:#ccefeb;--accent-soft:rgba(204,239,235,.78);">
           <div class="card-top"><span class="tag zh">NGV · School holidays</span><span class="tag en">NGV · School holidays</span><span class="recommend-status"><span class="zh">备选</span><span class="en">Backup</span></span></div>
           <h2><span class="zh">School Holidays at NGV</span><span class="en">School Holidays at NGV</span></h2>
           <p class="summary zh">NGV 冬季学校假期有免费 workshops、artist-led activities、Children&#x27;s Play 和 kids go free 票务优惠，适合把艺术展变成亲子半日。</p><p class="summary en">NGV&#x27;s winter school-holiday program mixes free workshops, artist-led activities, Children&#x27;s Play and a kids-go-free offer, helping an art-gallery visit feel more family-friendly.</p>
@@ -1484,7 +1526,7 @@
           <div class="reference"><b>Reference:</b> <span class="zh">NGV 官方学校假期页面。</span><span class="en">NGV official school-holiday page.</span></div>
         </article>
 
-        <article class="card" style="--accent:#ffc978;--accent-soft:rgba(255,201,120,.78);">
+        <article class="card" style="--accent:#ffd99f;--accent-soft:rgba(255,217,159,.78);">
           <div class="card-top"><span class="tag zh">Monash · 运动</span><span class="tag en">Monash · Sport</span><span class="recommend-status"><span class="zh">备选</span><span class="en">Backup</span></span></div>
           <h2><span class="zh">Saturday Badminton Fun</span><span class="en">Saturday Badminton Fun</span></h2>
           <p class="summary zh">Southern Community Centre 周六羽毛球适合想运动放电的家庭，地点明确、节奏简单，费用和预约出发前看官网确认。</p><p class="summary en">This Saturday badminton session at Southern Community Centre is a simple active option for families who want movement rather than another sit-down event; confirm cost and booking before heading out.</p>
@@ -2249,12 +2291,12 @@
     };
     function playgroundAccent(tags = "") {
       const tagSet = tags.toLowerCase();
-      if (tagSet.includes("water")) return "#bfe3ff";
-      if (tagSet.includes("indoor")) return "#d4c8ff";
-      if (tagSet.includes("big-kids") || tagSet.includes("adventure")) return "#ffcdbb";
-      if (tagSet.includes("fenced") || tagSet.includes("toddler")) return "#ffcae2";
-      if (tagSet.includes("nature")) return "#c8efb6";
-      return "#aeece8";
+      if (tagSet.includes("water")) return "#ddf1ff";
+      if (tagSet.includes("indoor")) return "#ece8ff";
+      if (tagSet.includes("big-kids") || tagSet.includes("adventure")) return "#ffe1d3";
+      if (tagSet.includes("fenced") || tagSet.includes("toddler")) return "#ffddea";
+      if (tagSet.includes("nature")) return "#ddf7d8";
+      return "#ccefeb";
     }
 
     function playgroundTypeIcon(tags = "") {
