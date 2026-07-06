@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,84 +7,88 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "电网接入治理",
-        "en": "Grid Interconnection Governance"
+        "zh": "跨境结算基础设施",
+        "en": "Cross-Border Settlement Infrastructure"
       },
       "title": {
-        "zh": "FERC要求六大区域电网在60天内解释或重写大型数据中心接入规则，说明AI基础设施竞争已进入并网治理阶段",
-        "en": "FERC's 60-day ultimatum to six grid operators shows the AI-infrastructure race has moved from chip buying into grid-interconnection governance"
+        "zh": "Open USD 获 140 多家银行、支付与科技机构支持，说明稳定币竞争正从单一发行人走向分销联盟",
+        "en": "Open USD's 140-plus partner launch suggests stablecoin competition is moving from single issuers to distribution alliances"
       },
       "summary": {
-        "zh": "《金融时报》于2026年7月2日报道，美国联邦能源监管委员会已要求PJM、MISO、SPP、CAISO、NYISO与ISO-NE在60天内说明或修订大型负荷接入规则，重点覆盖可自带电源、可削峰和需要更快并网研究的数据中心项目。这个动作的行业意义不只是“给AI更多电”，而是正式把接入队列设计、成本分摊、先进导线和大负荷调度机制推到竞争前线。算力扩张的瓶颈正在从服务器采购转移到谁能更快拿到可融资、可审批、可运营的并网路径。",
-        "en": "The Financial Times reported on July 2, 2026 that the U.S. Federal Energy Regulatory Commission ordered PJM, MISO, SPP, CAISO, NYISO, and ISO-NE to explain or revise their rules for connecting very large loads, especially data-center projects that can bring their own power, curtail demand, or justify faster interconnection studies. The significance is not merely that regulators want to supply 'more power for AI'. It is that queue design, cost allocation, advanced conductors, and large-load operating rules are now central competitive battlegrounds. The binding constraint on compute expansion is shifting from server procurement toward who can secure a bankable, approvable, and operable path to the grid."
+        "zh": "《华尔街日报》于 2026 年 6 月 30 日报道，Open USD 将由 Open Standard 推出，并计划部署在 Base、Solana 等网络，已有 140 多家机构签约接入，包括 BlackRock、Google、Visa、Stripe、Mastercard、Coinbase 与 BBVA。这个动作的行业意义不只在于又多了一枚美元稳定币，而在于储备收益分配、分销网络和企业结算入口开始被联盟化设计。稳定币正在从加密原生产品，转向由银行、支付公司与平台共同嵌入的跨境清算轨道。",
+        "en": "The Wall Street Journal reported on June 30, 2026 that Open USD will be issued by Open Standard on Base, Solana, and other networks, with more than 140 launch partners including BlackRock, Google, Visa, Stripe, Mastercard, Coinbase, and BBVA. The significance is not simply that another dollar stablecoin is entering the market. It is that reserve economics, distribution, and enterprise settlement access are now being designed at consortium scale. Stablecoins are moving from crypto-native products toward embedded cross-border settlement rails jointly distributed by banks, payment firms, and platform companies."
       },
       "watch": {
-        "zh": "后续重点看各区域电网是否引入更明确的大负荷专属费率、可中断负荷义务和共址发电条件；这些制度安排很可能决定未来项目“拿到电”是否比“拿到GPU”更慢。",
-        "en": "Watch whether regional grids introduce clearer large-load tariffs, interruptibility obligations, and co-located generation conditions. Those policy choices may determine whether getting power becomes slower than getting GPUs."
+        "zh": "后续重点看大型收单机构、企业财资系统和跨境 B2B 支付平台是否直接把 Open USD 接入现有清结算流程；若接入加速，稳定币竞争将更多围绕分销能力与合规覆盖，而不是单纯围绕发行规模。",
+        "en": "Watch whether large acquirers, treasury systems, and B2B payment platforms connect Open USD directly into existing settlement flows. If that happens quickly, competitive advantage will shift toward distribution and compliance coverage rather than pure issuance scale."
       },
-      "reference": "Financial Times reporting on FERC's large-load orders, plus public coverage of the same June 18, 2026 action",
+      "reference": "Wall Street Journal coverage of the Open USD launch, plus public reporting on BBVA's participation in the same consortium",
       "referenceLinks": [
         {
-          "label": "Financial Times: US energy regulator sets ultimatum for data centres",
-          "url": "https://www.ft.com/content/5055a170-69d9-4eb6-ad93-be953bbad263"
+          "label": "Wall Street Journal: BlackRock, Google Join Banks and Crypto Firms in Backing New Stablecoin",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-30-2026/card/blackrock-google-join-banks-and-crypto-firms-in-backing-new-stablecoin-czjc2S3yJVxmofXLQpzP"
         },
         {
-          "label": "Times of India: FERC gives grid operators 60 days on datacenter power rules",
-          "url": "https://timesofindia.indiatimes.com/technology/tech-news/americas-top-us-energy-regulator-ferc-to-electric-grid-operators-on-power-rules-for-datacenters-you-have-60-days-to-/articleshow/131841106.cms"
+          "label": "Cinco Días: BBVA joins more than 140 firms to launch a dollar stablecoin",
+          "url": "https://cincodias.elpais.com/criptoactivos/2026-07-01/bbva-se-une-a-mas-de-140-entidades-internacionales-para-lanzar-una-stablecoin-en-dolares.html"
         }
       ]
     },
     {
       "topic": {
-        "zh": "专用供电资本",
-        "en": "Dedicated Power Capital"
+        "zh": "航空制造产能",
+        "en": "Aerospace Production Capacity"
       },
       "title": {
-        "zh": "National Grid入股Joulent，表明超大规模算力园区的“发电+高压接入+长期包销”正在被当作独立基础设施资产来融资",
-        "en": "National Grid's Joulent stake suggests the 'generation + high-voltage hookup + long-term offtake' package for hyperscale compute is becoming a standalone infrastructure asset class"
+        "zh": "Boeing 第四条 737 MAX 总装线瞄准 2027 年初月产 52 架，说明航空竞争正在回到产能兑现与供应链稳定",
+        "en": "Boeing's fourth 737 MAX line shows aerospace competition is swinging back to production throughput and supply-chain stability"
       },
       "summary": {
-        "zh": "《华尔街日报》于2026年7月1日报道，National Grid将以17.5亿美元取得Joulent 35%股权，支持其面向高耗能客户的专用发电与高压基础设施业务，核心项目是与Chevron合作、向Microsoft西得州数据中心供电20年的Project Kilby。对行业而言，最重要的不是单笔金额，而是资本结构信号：当传统公用事业并网速度跟不上算力扩张时，市场开始把“专用电源+专线接入+长期购电合同”打包成可独立融资的基础设施产品。能源、输电与算力园区正被更紧地耦合在一个项目财务模型里。",
-        "en": "The Wall Street Journal reported on July 1, 2026 that National Grid will invest $1.75 billion for a 35% stake in Joulent, backing a business built around dedicated generation and high-voltage infrastructure for power-intensive customers. Its flagship project is Project Kilby, developed with Chevron to supply a Microsoft data-center campus in West Texas under a 20-year arrangement. The key signal is not just the ticket size. It is the financing structure: when conventional utility interconnection cannot move at hyperscale-compute speed, the market starts packaging dedicated power supply, dedicated wire access, and long-term offtake into a financeable infrastructure product. Energy, transmission, and compute campuses are being locked together inside one project-finance model."
+        "zh": "Investor's Business Daily 于 2026 年 7 月 6 日报道，Boeing 正启用位于 Everett 的第四条 737 MAX 总装线，目标是把月产量从 42 架提升到 47 架，并在 2027 年初进一步推高到 52 架；同期其民机积压订单仍超过 6100 架。这个动作的行业意义在于，窄体机市场的核心竞争点正重新从“拿订单”转向“把积压订单稳定转成可交付产能”。总装节拍、供应商质量、监管放量许可和返工控制，将直接决定谁能把账面需求变成现金流和交付信誉。",
+        "en": "Investor's Business Daily reported on July 6, 2026 that Boeing is bringing up a fourth 737 MAX assembly line in Everett, targeting a monthly output rise from 42 aircraft to 47 and then to 52 in early 2027, while the company still carries a commercial backlog above 6,100 aircraft. The significance is that narrowbody competition is swinging back from booking demand to converting backlog into reliable throughput. Final-assembly cadence, supplier quality, regulatory clearance for higher rates, and rework discipline will determine who can turn recorded demand into cash generation and delivery credibility."
       },
       "watch": {
-        "zh": "后续重点看Project Kilby能否在2026年底前完成最终投资决定，以及是否会有更多公用事业和基础设施基金跟进“带电源的算力园区”模式。",
-        "en": "Watch whether Project Kilby reaches final investment decision by the end of 2026 and whether more utilities and infrastructure funds adopt the 'compute campus with bundled power' model."
+        "zh": "后续重点看 FAA 对增产节奏的实际放行、发动机和机体供应商的缺件率，以及 Everett 新线能否在不放大返工的情况下稳定爬坡；这些指标会比单纯订单新闻更早暴露产能兑现质量。",
+        "en": "Watch the FAA's willingness to permit higher rates, shortages at engine and aerostructure suppliers, and whether the Everett line ramps without inflating rework. Those indicators will reveal execution quality earlier than order headlines."
       },
-      "reference": "Wall Street Journal coverage of National Grid's Joulent investment, with public reporting on the underlying Chevron-Microsoft Project Kilby development",
+      "reference": "Investor's Business Daily coverage of Boeing's fourth 737 MAX line, supported by Boeing's commercial orders and deliveries portal",
       "referenceLinks": [
         {
-          "label": "Wall Street Journal: National Grid to Invest $1.75 Billion in Joulent",
-          "url": "https://www.wsj.com/business/energy-oil/national-grid-to-invest-1-75-billion-in-joulent-in-u-s-energy-push-9d84d5b8"
+          "label": "Investor's Business Daily: Boeing rises on 737 MAX assembly line expansion",
+          "url": "https://www.investors.com/news/boeing-stock-rises-737-max-assembly-line/"
         },
         {
-          "label": "Houston Chronicle: Chevron partners with Microsoft to power West Texas data-center project",
-          "url": "https://www.chron.com/texas/article/chevron-microsoft-texas-22314899.php"
+          "label": "Boeing Commercial: Orders and Deliveries",
+          "url": "https://www.boeing.com/commercial/#/orders-deliveries"
         }
       ]
     },
     {
       "topic": {
-        "zh": "施工机器人",
-        "en": "Construction Robotics"
+        "zh": "具身机器人供应链",
+        "en": "Embodied-Robot Supply Chains"
       },
       "title": {
-        "zh": "Built Robotics在Meta相关太阳能工地把自动化桩基施工推到规模化应用，说明算力基础设施扩张开始真正改写现场施工组织",
-        "en": "Built Robotics' scaled autonomous piling on a Meta-linked solar site shows compute infrastructure is starting to change how field construction itself gets organised"
+        "zh": "中国灵巧手公司开始以月产数千只的节奏扩张，说明人形机器人瓶颈正从整机演示转向操作末端与训练数据",
+        "en": "Chinese dexterous-hand startups scaling to thousands of units a month show humanoid bottlenecks are shifting to end-effectors and training data"
       },
       "summary": {
-        "zh": "Business Insider于2026年7月1日报道，Built Robotics的自动化设备正在为与Meta Hyperion数据中心相关的太阳能项目进行桩基施工，约10台机器人已承担超过一半的打桩工作量，日完成量接近1000根钢桩。这个案例的重要性不只在“机器人能干活”，而在于算力基础设施建设开始把施工端的劳动力配置、危险作业分工和进度组织一起推向自动化。对于电力、道路、场平和站内土建这类重复性强、工期敏感的场景，未来竞争力可能越来越取决于谁能把机器编入施工班组，而不是单靠补充人工。",
-        "en": "Business Insider reported on July 1, 2026 that Built Robotics' autonomous machinery is performing piling work on a solar project tied to Meta's Hyperion data-center build-out, with around ten robots already handling more than half of the pile-driving scope and approaching 1,000 steel piles per day. The significance is not simply that 'robots can do the work'. It is that compute-infrastructure expansion is beginning to automate labour allocation, hazardous-task separation, and schedule control on actual job sites. In repetitive and time-sensitive scopes such as power works, road preparation, grading, and substation civil works, competitive advantage may increasingly depend on who can integrate machines into the crew structure rather than who can merely add more labour."
+        "zh": "《卫报》于 2026 年 7 月 6 日报道，中国灵巧手创业公司正借助成熟的电动车与精密部件供应链快速扩产。报道中的 LinkerBot 已达到约每月 5000 只灵巧手的产量，并计划继续翻倍；行业受访者同时指出，真正难点已从硬件加工转向触觉、遥操作和操作数据采集。这个信号的行业意义在于，人形机器人商业化正在从“会走会跳的整机展示”转向“能否稳定抓取、装配和采集高质量操作数据”的工程竞争，末端执行器与数据闭环会成为下一轮卡点。",
+        "en": "The Guardian reported on July 6, 2026 that Chinese dexterous-hand startups are scaling rapidly on top of the country's mature EV and precision-component supply chains. In the report, LinkerBot says it is already producing about 5,000 robotic hands a month and plans to double further, while founders and researchers argue that the harder bottleneck has shifted from hardware fabrication to touch sensing, teleoperation, and manipulation-data collection. The significance is that humanoid commercialization is moving away from whole-body demos toward the harder engineering problem of repeatable grasping, assembly, and data capture. End-effectors and data loops are becoming the next control point."
       },
       "watch": {
-        "zh": "后续重点看类似自动化是否会从太阳能桩基扩展到输电通道、变电站土建和重型场平，并形成新的安全职责、设备租赁和现场管理岗位。",
-        "en": "Watch whether similar automation expands from solar piling into transmission corridors, substation civil works, and heavy site preparation, creating new safety roles, equipment-rental models, and site-management jobs."
+        "zh": "后续重点看灵巧手是否从展示和研发平台进入仓储、装配、实验室与助残等明确工况，以及触觉数据、遥操作标注和寿命可靠性是否形成可规模化的标准化链条。",
+        "en": "Watch whether dexterous hands move from demos into repeatable warehouse, assembly, laboratory, and assistive use cases, and whether tactile data, teleoperation labeling, and durability testing mature into scalable standards."
       },
-      "reference": "Business Insider reporting on Built Robotics' July 2026 deployment at a Meta-linked solar project",
+      "reference": "Guardian field reporting on Chinese dexterous-hand startups, with International Federation of Robotics context on industrial-robot deployment",
       "referenceLinks": [
         {
-          "label": "Business Insider: autonomous construction bots are building the solar infrastructure behind Meta's Hyperion data center",
-          "url": "https://www.businessinsider.com/autonomous-robots-built-robotics-solar-power-meta-hyperion-data-center-2026-7"
+          "label": "The Guardian: China wants to solve the hardest problem in robotics - making hands",
+          "url": "https://www.theguardian.com/technology/ng-interactive/2026/jul/06/china-dextrous-robotic-hands-humanoid"
+        },
+        {
+          "label": "International Federation of Robotics",
+          "url": "https://ifr.org/"
         }
       ]
     }
@@ -92,327 +96,330 @@
   "insights": [
     {
       "area": {
-        "zh": "BIM与工程语义",
-        "en": "BIM and Engineering Semantics"
+        "zh": "韧性导向抗震评估",
+        "en": "Resilience-Oriented Seismic Assessment"
       },
       "title": {
-        "zh": "最新IFC编辑基准显示，大模型离“直接修改工程BIM模型”仍有明显距离，未来高价值机会更可能在受约束的人机协同而非自由生成",
-        "en": "A new IFC editing benchmark suggests LLMs are still far from directly rewriting production BIM models, so near-term value lies in constrained human-in-the-loop workflows rather than free-form generation"
+        "zh": "新一代 PBEE 框架把可靠度与震后恢复放进同一状态转移模型，提示长期抗震设计不能只盯破坏概率",
+        "en": "A generalized PBEE framework embeds reliability and post-earthquake recovery in one state model, showing that long-horizon seismic design cannot stop at collapse probability"
       },
       "evidence": {
-        "zh": "研究类型：2026年6月预印本；数据：324个编辑任务、11个真实建筑模型与36个合成场景；结果：最佳模型综合得分49.5%，完全解出的任务不足3.4%。",
-        "en": "Evidence: a June 2026 preprint evaluating 324 editing tasks across 11 real building models and 36 synthetic scenes; the best model reached an overall score of 49.5%, and no model fully solved more than 3.4% of tasks."
+        "zh": "研究类型：2026 年 5 月预印本；方法：以连续时间马尔可夫链统一描述损伤与恢复；对象：支撑框架与隔震结构；结论：恢复动力学会显著改变长期韧性，即使传统可靠度指标变化有限。",
+        "en": "Evidence: a May 2026 preprint that embeds damage and recovery in a continuous-time Markov chain and applies the framework to a braced frame and a base-isolated system; recovery dynamics materially change long-term resilience even when conventional reliability metrics move only modestly."
       },
       "summary": {
-        "zh": "这项基准的重要启发在于，BIM并不是把几何体“画对”就结束了，模型还必须保留语义、拓扑关系与对象之间的约束一致性。当前大模型在普通文本生成里表现强势，但一旦进入IFC这类结构化工程语境，错误往往不是一句话写得不优雅，而是门、墙、楼层、连接关系和属性体系同时失配。对土木与结构团队而言，这意味着下一阶段真正可落地的AI机会更可能是受约束微编辑、规则校核、变更对比、审图辅助和可追溯的模型问答，而不是让模型直接“自由改模型”。",
-        "en": "The key lesson is that BIM is not solved by getting geometry approximately right. A usable model must preserve semantics, topology, and consistency across object relationships. LLMs can be impressive in open-ended text generation, but once they enter IFC-style engineering structure, the failure mode is no longer a slightly awkward sentence. It is simultaneous corruption of walls, doors, levels, connectivity, and property logic. For civil and structural teams, the next wave of practical AI value is therefore more likely to come from constrained micro-edits, rule checks, change comparison, drawing review support, and traceable model question answering than from letting a model freely rewrite production BIM."
+        "zh": "这项工作的专业启发在于，它不再把震后恢复当成验算完成后的附加叙述，而是把恢复过程直接写进结构状态演化。对土木与结构工程师而言，这意味着未来的 performance-based earthquake engineering 不应只回答“多大概率超限”或“多大概率倒塌”，还应回答“系统多久恢复到可运营状态”“恢复路径是否受前期损伤记忆影响”。这种统一框架有利于把可靠度、停运时间、服务恢复和寿命周期决策接到同一个分析管线里，对医院、交通节点、数据中心和高后果设施尤其重要。",
+        "en": "The key professional implication is that recovery is no longer treated as a narrative add-on after structural checks are finished; it becomes part of the structural state evolution itself. For civil and structural engineers, that means future performance-based earthquake engineering should answer not only 'what is the exceedance or collapse probability' but also 'how long until the system returns to service' and 'how strongly does prior damage history affect that path'. A unified framework of this kind makes it easier to connect reliability, downtime, service restoration, and life-cycle decision-making inside one analytical pipeline, which is especially relevant for hospitals, transport nodes, data centers, and other high-consequence facilities."
       },
       "caveat": {
-        "zh": "该基准聚焦IFC编辑任务，不等于否定LLM在文档整理、构件检索或规范问答中的价值；它提醒的是，越接近生产模型本体，越需要受约束接口与人工复核。",
-        "en": "The benchmark focuses on IFC editing, so it does not negate the value of LLMs in document structuring, component retrieval, or standards-oriented question answering. It does show that the closer the workflow is to the production model itself, the more constrained interfaces and human review are required."
+        "zh": "该框架目前仍依赖状态划分、转移率与恢复机理的建模假设，适合做方法论升级和方案比较，但在真实项目中仍需要结合当地危险度、部件级 fragility 与恢复数据做针对性校准。",
+        "en": "The framework still depends on how states, transition rates, and recovery mechanisms are modeled. It is powerful for methodology upgrades and option comparison, but project use still requires calibration against local hazard, component fragility, and recovery data."
       },
-      "reference": "Nithyanantham et al., BIM-Edit: Benchmarking Large Language Models for IFC-Based Building Information Modeling, arXiv:2606.20146, published 2026-06-18",
+      "reference": "NArdin et al., A generalized framework for performance-based earthquake engineering: integrated assessment of structural reliability and resilience, arXiv:2606.12448, submitted 2026-05-30",
       "referenceLinks": [
         {
-          "label": "arXiv: BIM-Edit benchmark for IFC-based BIM editing",
-          "url": "https://arxiv.org/abs/2606.20146"
+          "label": "arXiv: generalized PBEE framework integrating reliability and resilience",
+          "url": "https://arxiv.org/abs/2606.12448"
         }
       ]
     },
     {
       "area": {
-        "zh": "可审计设计自动化",
-        "en": "Auditable Design Automation"
+        "zh": "配电资产与电动车充电",
+        "en": "Distribution Assets and EV Charging"
       },
       "title": {
-        "zh": "混凝土护栏设计实验表明，轻量级多智能体闭环比单一大模型更适合承载规范驱动的结构计算工作流",
-        "en": "Concrete-barrier experiments show lightweight multi-agent closed loops can outperform single frontier models on code-driven structural design tasks"
+        "zh": "软截止期充电研究表明，未来配电侧竞争不只是多建桩，而是谁能把变压器寿命与服务优先级一起调度",
+        "en": "A soft-deadline EV charging study suggests the next grid constraint is not just more chargers, but scheduling transformer life and service priority together"
       },
       "evidence": {
-        "zh": "研究类型：2026年6月预印本；框架：generation-evaluation-optimization闭环；结果：设计准确率超过98%，受约束的8B轻量模型优于未约束的超大模型。",
-        "en": "Evidence: a June 2026 preprint using a generation-evaluation-optimization loop; reported design accuracy exceeded 98%, and a constrained 8B model outperformed unconstrained frontier-scale models."
+        "zh": "研究类型：2026 年 7 月预印本；方法：把变压器热老化代理项与充电未满足惩罚写进同一优化目标，并给出在线策略；结果：在高拥堵场景下，在线算法可用实时信息逼近离线基准，同时降低老化并优先保障临近离场车辆。",
+        "en": "Evidence: a July 2026 preprint that combines a transformer-aging proxy with soft charging-deadline penalties and proposes a real-time policy; under congested scenarios the online method tracks offline benchmarks while reducing aging and prioritizing time-critical vehicles."
       },
       "summary": {
-        "zh": "这项工作对结构工程最有价值的地方，不是证明“AI已经会做护栏”，而是证明规范驱动计算更适合被拆成可校核、可回退、可优化的流程单元。研究里真正发挥作用的不是最大参数量，而是任务分解、物理约束、评价环节和闭环修正。这个信号与工程软件的现实需求高度一致：对计算器、构件校核、选型建议和设计草案而言，未来可交付的产品形态更可能是窄领域、规则清晰、步骤可追踪的代理流程，而不是一个自由回答任何问题的黑箱模型。",
-        "en": "The most valuable message for structural engineering is not that 'AI can now design barriers'. It is that code-driven calculation works best when decomposed into auditable, reversible, and optimisable process units. In this study, the decisive advantage does not come from the largest parameter count. It comes from task decomposition, physical constraints, evaluation stages, and closed-loop correction. That aligns closely with real engineering-software needs: for calculators, member checks, option screening, and preliminary design support, the most deliverable products are likely to be narrow-domain agent workflows with clear rules and traceable steps rather than black-box models claiming to answer everything."
+        "zh": "对基础设施工程最重要的信号是，电动车渗透率上升后，配电瓶颈不会只表现为“峰值功率不够”，而会表现为资产寿命被过快消耗。该研究把 charging service 与 transformer aging 放在同一个调度目标里，说明未来的车队场站、住宅区和商业综合体不应只靠增加设备名义容量来解决问题，而要建立按离场时限、任务重要性和资产健康度联合分配容量的运行策略。对工程团队来说，这意味着配电设计、运维算法和服务等级将被更紧地耦合。",
+        "en": "The most important infrastructure signal is that rising EV penetration will not show up only as an instantaneous peak-power problem. It will also show up as accelerated consumption of transformer life. By putting charging service and transformer aging into one scheduling objective, the paper points toward a future in which fleets, residential clusters, and mixed-use sites cannot rely on nominal capacity additions alone. They will need operating policies that allocate limited capacity jointly by departure urgency, service priority, and asset health. For engineering teams, that means distribution design, operating algorithms, and service levels will become much more tightly coupled."
       },
       "caveat": {
-        "zh": "试验场景是AASHTO背景下的混凝土护栏，并不自动外推到所有结构体系或复杂整体分析；真正落地仍需要项目约束、责任边界和独立校核机制。",
-        "en": "The test case is a concrete-barrier problem framed around AASHTO requirements, so it does not automatically generalise to all structural systems or full-building analysis. Real deployment still requires project-specific constraints, liability boundaries, and independent checking."
+        "zh": "该研究以方法论和算例为主，尚未覆盖真实电价、保护协调、三相不平衡和用户行为反馈等工程复杂性；但它准确指出了一个正在逼近的资产管理问题。",
+        "en": "The study is methodological and case-study based, and it does not yet cover full tariff design, protection coordination, phase imbalance, or behavioral feedback. It nonetheless identifies a very real asset-management problem that is approaching quickly."
       },
-      "reference": "Wang et al., A Lightweight Multi-Agent Framework for Automated Concrete Barrier Design, arXiv:2606.12040, published 2026-06-10",
+      "reference": "Reddy, Deadline-Aware Electric Vehicles Charging with Distribution Transformer Overload Mitigation, arXiv:2607.00935, submitted 2026-07-01",
       "referenceLinks": [
         {
-          "label": "arXiv: lightweight multi-agent framework for automated concrete barrier design",
-          "url": "https://arxiv.org/abs/2606.12040"
+          "label": "arXiv: deadline-aware EV charging with transformer overload mitigation",
+          "url": "https://arxiv.org/abs/2607.00935"
         }
       ]
     },
     {
       "area": {
-        "zh": "混凝土材料信息学",
-        "en": "Concrete Materials Informatics"
+        "zh": "自感知复合材料监测",
+        "en": "Self-Sensing Composite Monitoring"
       },
       "title": {
-        "zh": "混凝土材料信息学正在从“找更大的模型”转向“先造高质量结构化数据层”，这会直接影响低碳与高性能配比研发效率",
-        "en": "Concrete materials informatics is shifting from chasing bigger models toward building high-quality structured data layers first, with direct consequences for low-carbon mix design and performance discovery"
+        "zh": "短切碳纤维复合材料 SHM 研究显示，损伤监测正在从外挂传感器转向材料本体可感知",
+        "en": "New SHM work on short-carbon-fiber composites shows damage monitoring is moving from add-on sensors into the material itself"
       },
       "evidence": {
-        "zh": "研究类型：2026年4月论文/预印本；方法：用LLM从27,000余篇文献抽取组成-工艺-性能信息；结果：约1小时得到近9,000条高质量记录、100多个属性，F1最高0.97。",
-        "en": "Evidence: an April 2026 paper/preprint using LLMs to extract composition-process-property data from more than 27,000 publications; it produced nearly 9,000 high-quality records with over 100 attributes in about one hour, with F1 up to 0.97."
+        "zh": "研究类型：2026 年 5 月预印本；方法：将相场断裂、压阻导电与电阻抗层析成像耦合，并用前馈神经网络反演裂纹长度与柔度；结果：对保留样本的推断精度达到 R2 = 0.99。",
+        "en": "Evidence: a May 2026 preprint coupling phase-field fracture, piezoresistive conductivity, and electrical impedance tomography, with a neural network that infers crack length and compliance; the held-out prediction accuracy reaches R2 = 0.99."
       },
       "summary": {
-        "zh": "对土木材料方向而言，这个趋势很关键，因为未来的竞争优势未必首先来自更会“聊天”的模型，而更可能来自谁能把零散论文、试验记录和性能指标转成可查询、可训练、可比对的数据层。低碳胶凝体系、新型外加剂和耐久性优化都高度依赖可复用数据。如果数据抽取和结构化能力先提升，那么后续无论做配比筛选、代理模型、寿命预测还是规范外材料论证，效率都会显著上升。对工程团队来说，构建本地可追溯的材料数据库，可能比盲目追逐最新通用模型更有复利价值。",
-        "en": "This trend matters because the next competitive edge in civil materials may not come first from a model that sounds more intelligent. It may come from who can turn scattered papers, test records, and performance metrics into a queryable, trainable, and comparable data layer. Low-carbon binders, admixture innovation, and durability optimisation all depend on reusable data. Once extraction and structuring become stronger, downstream work such as mix screening, surrogate modelling, life prediction, and justification of non-standard materials becomes much faster. For engineering teams, building a local and traceable materials database may therefore compound more value than simply chasing the newest general-purpose model."
+        "zh": "这项工作的趋势意义在于，结构健康监测不再只能依赖外贴应变计、加速度计或分布式光纤，而是可能逐步由材料本体承担部分感知功能。若复合材料内部导电网络随裂纹演化而稳定响应，工程团队就有机会把“材料设计、损伤演化、信号采集和反演判断”统一到一个物理一致的监测框架里。对桥面板、轻量化构件、风机叶片和高性能预制构件而言，这意味着未来 SHM 可能更早介入材料与构件设计阶段，而不是等构件成型后再外挂监测系统。",
+        "en": "The broader trend is that structural health monitoring may no longer rely only on externally mounted strain gauges, accelerometers, or distributed fiber systems. Part of the sensing function may migrate into the material itself. If the conductive network inside a composite evolves in a stable and interpretable way with cracking, engineering teams can begin to unify material design, damage evolution, signal acquisition, and inverse assessment inside one physically consistent monitoring framework. For deck panels, lightweight components, wind blades, and high-performance precast elements, that means SHM could move upstream into material and component design rather than being added only after fabrication."
       },
       "caveat": {
-        "zh": "文献抽取数据天然继承发表偏差、试验条件不一致和报告口径差异，因此高通量数据库更适合做发现与筛选，不能替代关键指标的实验复核。",
-        "en": "Literature-derived datasets inherit publication bias, inconsistent test conditions, and uneven reporting conventions. High-throughput databases are therefore powerful for discovery and screening, but they do not remove the need for experimental confirmation of critical properties."
+        "zh": "目前结果建立在多物理场模拟与受控数据集之上，距离大尺度现场构件、复杂边界条件和长期环境退化仍有距离；但它为“自感知材料 + 反演监测”提供了清晰的工程路线。",
+        "en": "The current results are built on multiphysics simulation and controlled datasets, so they remain some distance from large field components, messy boundary conditions, and long-term environmental degradation. Even so, the study provides a clear engineering pathway toward self-sensing materials plus inverse monitoring."
       },
-      "reference": "Li et al., Large language model-enabled automated data extraction for concrete materials informatics, arXiv:2604.22938, published 2026-04-24",
+      "reference": "Arash et al., Data-Driven Structural Health Monitoring of Short Carbon Fiber-Reinforced Polymer Composites via Multiphysics Phase-Field Simulation, arXiv:2605.25287, submitted 2026-05-24",
       "referenceLinks": [
         {
-          "label": "arXiv: LLM-enabled automated data extraction for concrete materials informatics",
-          "url": "https://arxiv.org/abs/2604.22938"
+          "label": "arXiv: data-driven SHM of short carbon fiber-reinforced polymer composites",
+          "url": "https://arxiv.org/abs/2605.25287"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "荷载分项与抗力折减不是同一种语言：为什么中国、欧洲、澳洲与美国把可靠度藏在不同位置",
-      "en": "Partial factors and strength-reduction factors are not the same language: why China, Europe, Australia, and the U.S. hide reliability in different places"
+      "zh": "40 MPa 混凝土并不是同一种语言：为什么中国、欧洲、澳洲与美国的强度记号不能直接互译",
+      "en": "A 40 MPa concrete is not the same language: why China, Europe, Australia, and the U.S. do not mean the same thing by concrete strength"
     },
     "text": {
-      "zh": "跨规范讨论里最常见的误区之一，是把某个国家的“荷载系数”或“抗力折减系数”单独拎出来比较，然后据此判断哪套体系更保守。真正的问题在于，不同规范并不是把安全储备放在同一个位置。欧洲与澳洲更强调把作用和材料不确定性拆进分项系数链条；美国LRFD往往更直接地把荷载组合与抗力折减放在同一验算式两侧；中国统一可靠度体系则常保留显式的重要性系数来反映结构后果等级。看起来都在做极限状态设计，但它们分配可靠度的语法并不相同，所以不能把一个系数逐项搬运到另一套体系里。",
-      "en": "One of the most common mistakes in cross-code discussion is to isolate one country's load factor or resistance-reduction factor and then judge which system is more conservative. The real issue is that the safety reserve is not stored in the same place. European and Australian practice tends to distribute uncertainty through partial-factor chains on the action and material sides. U.S. LRFD more explicitly places factored load effects and reduced resistance on opposite sides of one design inequality. China's unified reliability format often retains an explicit importance factor to reflect consequence class. All of these are limit-state methods, but they encode reliability through different grammar, so one coefficient cannot be transplanted term-for-term into another system."
+      "zh": "跨规范混凝土讨论里最常见的误区之一，就是把“40 MPa”当成全世界都等价的材料标签。真正的问题在于，不同体系在说的可能不是同一个统计对象，也不一定来自同一种试件。欧洲常从圆柱体特征抗压强度 fck 出发，再通过材料分项系数得到设计强度；美国与澳洲更常用圆柱体规定强度 f'c 进入强度折减与应力块语言；中国工程语境中则常把立方体标准值 fcu,k 与设计用抗压强度 fc 区分开来。看上去都是“混凝土强度”，但它们背后的试件形状、统计口径和设计包装并不相同，所以不能只凭一个 MPa 数值在不同规范之间直接搬运。",
+      "en": "One of the most common mistakes in cross-code concrete discussions is to treat '40 MPa' as a globally interchangeable material label. The real issue is that different systems may not be talking about the same statistical quantity or even the same test specimen. European practice often starts from cylinder-based characteristic compressive strength fck and then derives design strength through a material partial factor. U.S. and Australian practice more often carry specified cylinder strength f'c into strength-reduction and stress-block language. Chinese design practice commonly distinguishes the cube-based standard value fcu,k from the design compressive strength fc used in resistance checks. All of these are called 'concrete strength', but the specimen basis, statistical meaning, and design packaging are not the same, so one MPa number cannot be transplanted directly across code families."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "共同目标是控制失效概率，但“校准对象”并不相同",
-          "en": "The shared target is failure-probability control, but the calibrated object is not the same"
+          "zh": "先问试件与统计定义，再问 MPa 数值",
+          "en": "Ask about the specimen and statistical definition before the MPa value"
         },
         "text": {
-          "zh": "有的体系先定义设计作用，再折减抗力；有的体系把重要性、荷载伴随关系或材料离散性分散到多个系数里。表面形式相似，不代表每个系数承担同一统计含义。",
-          "en": "Some systems define a design action first and then reduce resistance, while others distribute importance, load accompaniment, or material variability across several factors. Similar notation does not mean each factor carries the same statistical meaning."
+          "zh": "同样是抗压强度，背后可能是圆柱体特征值、圆柱体规定值，或立方体标准值。若不先对齐测试体型与统计定义，就无法判断两个“40 MPa”是否真可比。",
+          "en": "The same compressive-strength label may refer to a characteristic cylinder value, a specified cylinder value, or a standard cube value. Without aligning the specimen shape and statistical definition first, there is no reliable basis for comparing two '40 MPa' grades."
         }
       },
       {
         "label": {
-          "zh": "欧洲/澳洲偏向分项系数链，美国偏向LRFD式强度校核，中国常保留显式重要性系数",
-          "en": "Europe and Australia lean toward partial-factor chains, the U.S. leans toward LRFD strength checks, and China often keeps an explicit importance factor"
+          "zh": "欧洲更强调从 fck 到 fcd 的转换链，澳洲与美国更常把 f'c 直接带入构件强度表达，中国则把 fcu,k 与 fc 分层使用",
+          "en": "Europe emphasizes the fck-to-fcd conversion chain, Australia and the U.S. more often carry f'c directly into member-strength expressions, and China layers fcu,k and fc"
         },
         "text": {
-          "zh": "这不是书写习惯差异，而是规范如何把可靠度、后果等级、材料统计和荷载组合逻辑拆分到验算式里的差异。",
-          "en": "This is not just a notation preference. It reflects how each code family allocates reliability, consequence class, material statistics, and load-combination logic inside the verification equation."
+          "zh": "这不是记号差异而已，而是材料不确定性、试验传统和设计校准方式被放在了不同位置。澳洲材料命名常与美国一样使用 f'c 圆柱语言，但安全储备的包装方式并不完全照搬美国。",
+          "en": "This is not only a notation difference. Material uncertainty, testing tradition, and design calibration are being placed in different locations. Australian material naming often follows the same cylinder-based f'c language as the U.S., but the way safety reserve is packaged is not identical."
         }
       },
       {
         "label": {
-          "zh": "跨规范比较必须看完整链条，而不是只看一个系数",
-          "en": "Cross-code comparison has to examine the full chain, not one coefficient"
+          "zh": "跨规范对比必须同时映射材料强度、应力块和抗力折减逻辑",
+          "en": "Cross-code comparison has to map material strength, stress-block parameters, and resistance reduction logic together"
         },
         "text": {
-          "zh": "要先对齐特征值定义、荷载组合、材料设计值、重要性要求与构造规则，才能判断哪套体系在某个场景下更严格。",
-          "en": "Characteristic values, load combinations, design strengths, importance requirements, and detailing rules must be aligned first before one can judge which system is stricter in a specific scenario."
+          "zh": "如果只拿一个材料强度数字做横向比较，就会忽略应力块系数、分项系数、抗力折减系数和构造要求对最终承载力的共同影响。",
+          "en": "If you compare only one material-strength number, you miss the combined effect of stress-block parameters, partial factors, strength-reduction factors, and detailing rules on final resistance."
         }
       }
     ],
     "takeaway": {
-      "zh": "比较不同国家规范时，不要把一个荷载系数、一个φ值或一个重要性系数单独外推。先弄清楚可靠度究竟被放在作用侧、抗力侧、重要性侧还是构造要求里，然后再比较整套校准逻辑。",
-      "en": "When comparing national codes, do not extrapolate from one load factor, one φ value, or one importance factor in isolation. First identify whether reliability is being carried on the action side, resistance side, importance side, or detailing side, and only then compare the calibration package as a whole."
+      "zh": "比较不同国家混凝土规范时，不要把一个 MPa 数字当成可直接兑换的材料标签。先确认它对应的是圆柱还是立方体、特征值还是规定值、材料值还是设计值，再看它如何进入应力块和抗力校核。",
+      "en": "When comparing concrete codes across countries, do not treat one MPa number as a directly exchangeable material label. First identify whether it is cylinder or cube based, characteristic or specified, material level or design level, and then examine how it enters the stress block and resistance check."
     },
     "example": {
       "title": {
-        "zh": "实例：同一简支梁承受恒载与活载时，为什么不同体系会写出不同的“设计值”表达",
-        "en": "Example: why the same simply supported beam under dead and live load receives different 'design value' expressions across code families"
+        "zh": "实例：同一根受弯钢筋混凝土梁，为什么不同体系会把“混凝土强度”写进完全不同的设计语言",
+        "en": "Example: why the same reinforced-concrete beam carries 'concrete strength' into very different design language across code families"
       },
       "intro": {
-        "zh": "下面做一个格式说明型算例，而不是替代任何一本规范的完整设计流程。假设某简支梁具有恒载特征值Gk、活载特征值Qk和名义抗力Rn或Rk。重点不是算出唯一答案，而是看不同体系把安全储备放在何处：有的放在荷载侧，有的放在抗力侧，有的还额外显式引入重要性要求。",
-        "en": "The following is a format-illustration example rather than a substitute for any complete code procedure. Assume a simply supported beam with characteristic dead load Gk, characteristic live load Qk, and nominal resistance Rn or Rk. The point is not to obtain one universal answer. It is to see where each system stores its safety reserve: on the load side, on the resistance side, or with an additional explicit importance requirement."
+        "zh": "下面做一个语言对照型算例，而不是代替任何一本规范的完整设计流程。设某矩形截面梁在受压区形成等效压应力块，关注点不是算出唯一承载力答案，而是看不同体系如何把混凝土试验强度转成设计用压应力。你会看到：有的体系先把材料值折减成设计值，再进入验算；有的体系保留规定强度记号，把折减放到应力块或抗力侧；有的体系则把立方体标准值与设计强度分开使用。",
+        "en": "The following is a language-comparison example rather than a substitute for any full code procedure. Consider a rectangular reinforced-concrete beam with an equivalent concrete compression block in bending. The point is not to compute one universal resistance, but to observe how different systems translate tested concrete strength into design compression stress. Some systems first reduce a material value into a design value before checking resistance. Others retain the specified-strength label and place the reduction in the stress block or the resistance side. Chinese practice further separates the cube-based standard value from the design compressive strength used in section checks."
       },
       "equations": [
         {
           "label": {
-            "zh": "共同的极限状态安全裕度",
-            "en": "Shared limit-state safety margin"
+            "zh": "共同的受压应力测试起点",
+            "en": "Shared compression-test starting point"
           },
-          "formula": "g = R - S",
+          "formula": "σc = P/A",
           "formulaTokens": [
             {
-              "var": "g"
+              "var": "σ"
+            },
+            {
+              "sub": "c"
             },
             {
               "text": " = "
             },
             {
-              "var": "R"
-            },
-            {
-              "text": " - "
-            },
-            {
-              "var": "S"
-            }
-          ],
-          "citation": {
-            "zh": "推导关系：基于可靠度设计中“抗力减作用效应”的通用安全裕度定义；用于说明不同规范表达共享的物理与统计起点，并非某一本规范的编号公式。",
-            "en": "Derived relation: the generic reliability-based safety-margin definition of resistance minus action effect; used to show the shared physical and statistical starting point across code formats, not a numbered code equation."
-          },
-          "result": {
-            "zh": "无论规范写成何种形式，最终都在控制g保持为正的概率。差别在于，哪些不确定性被放进R、哪些被放进S，以及它们如何被系数化。",
-            "en": "Whatever the code notation, the ultimate objective is to control the probability that g remains positive. The difference lies in which uncertainties are embedded in R, which are embedded in S, and how they are factorised."
-          }
-        },
-        {
-          "label": {
-            "zh": "欧标/澳洲式分项系数思路示意",
-            "en": "Illustrative Eurocode/Australian partial-factor format"
-          },
-          "formula": "Ed = γGGk + γQQk ≤ Rk/γM",
-          "formulaTokens": [
-            {
-              "var": "E"
-            },
-            {
-              "sub": "d"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "γ"
-            },
-            {
-              "sub": "G"
-            },
-            {
-              "var": "G"
-            },
-            {
-              "sub": "k"
-            },
-            {
-              "text": " + "
-            },
-            {
-              "var": "γ"
-            },
-            {
-              "sub": "Q"
-            },
-            {
-              "var": "Q"
-            },
-            {
-              "sub": "k"
-            },
-            {
-              "text": " ≤ "
-            },
-            {
-              "var": "R"
-            },
-            {
-              "sub": "k"
+              "var": "P"
             },
             {
               "text": "/"
             },
             {
-              "var": "γ"
-            },
-            {
-              "sub": "M"
+              "var": "A"
             }
           ],
           "citation": {
-            "zh": "推导关系：基于EN 1990的Ed ≤ Rd设计值框架，并用简化式说明澳洲/欧标常见的“作用分项系数 + 材料分项系数”思路；用于格式对比，不代替AS/NZS 1170.0或EN 1990的具体组合条文。",
-            "en": "Derived relation: based on the EN 1990 design-value framework Ed ≤ Rd and used as a simplified illustration of the partial-factor logic common in Eurocode and Australian practice; it is for format comparison and does not replace the specific combinations in AS/NZS 1170.0 or EN 1990."
+            "zh": "推导关系：基于材料力学中受压试件平均压应力的基本定义；用于说明所有体系都从“荷载除以受压面积”的测试物理量出发，而差异出现在试件形式、统计定义和设计折减环节。",
+            "en": "Derived relation: based on the basic mechanics definition of average compressive stress in a test specimen. It is used here to show that all code families begin from load over loaded area, while the differences arise in specimen form, statistical definition, and design reduction."
           },
           "result": {
-            "zh": "在这类表达里，荷载侧与材料侧的不确定性被分别放进γG、γQ和γM中。工程师看到的不是单个“安全系数”，而是一整条从特征值到设计值的转换链。",
-            "en": "In this family of expressions, uncertainty on the action side and material side is distributed through γG, γQ, and γM separately. The engineer is not looking at one single 'factor of safety', but at a full conversion chain from characteristic values to design values."
+            "zh": "所有规范都承认同一个受压试验物理起点，但并不把同一种试件结果直接当成同一种设计输入。",
+            "en": "All systems share the same physical testing basis, but they do not necessarily treat the same specimen result as the same design input."
           }
         },
         {
           "label": {
-            "zh": "美国LRFD强度校核示意",
-            "en": "Illustrative U.S. LRFD strength check"
+            "zh": "欧标式材料设计强度转换",
+            "en": "Eurocode-style conversion to design concrete strength"
           },
-          "formula": "φRn ≥ 1.2D + 1.6L",
+          "formula": "fcd = αcc fck / γc",
           "formulaTokens": [
             {
-              "var": "φ"
+              "var": "f"
             },
             {
-              "var": "R"
+              "sub": "cd"
             },
             {
-              "sub": "n"
+              "text": " = "
             },
             {
-              "text": " ≥ 1.2"
+              "var": "α"
             },
             {
-              "var": "D"
+              "sub": "cc"
             },
             {
-              "text": " + 1.6"
+              "text": " "
             },
             {
-              "var": "L"
-            }
-          ],
-          "citation": {
-            "zh": "ASCE/SEI 7-22，Sec. 2.3 的强度组合家族；AISC 360-22把φRn ≥ Ru作为钢结构LRFD基本校核格式。这里用最常见的重力组合说明美国把荷载分项和抗力折减直接并置在同一不等式两侧。",
-            "en": "ASCE/SEI 7-22, Sec. 2.3 provides the strength-combination family, while AISC 360-22 uses φRn ≥ Ru as the basic LRFD steel-verification format. The common gravity combination shown here illustrates how U.S. practice places factored load effects and reduced resistance directly on opposite sides of one inequality."
-          },
-          "result": {
-            "zh": "美国表达通常让设计者直观看到“放大后的作用”与“折减后的强度”谁更控制。它的可读性很强，但不能据此简单断言φ值与其他体系的材料分项系数一一对应。",
-            "en": "U.S. notation often makes it visually clear which side is controlling: amplified action or reduced strength. That readability is useful, but it does not mean a φ value maps one-to-one onto another code family's material factor."
-          }
-        },
-        {
-          "label": {
-            "zh": "中国统一可靠度格式示意",
-            "en": "Illustrative Chinese unified reliability format"
-          },
-          "formula": "γ0S ≤ R",
-          "formulaTokens": [
+              "var": "f"
+            },
+            {
+              "sub": "ck"
+            },
+            {
+              "text": " / "
+            },
             {
               "var": "γ"
             },
             {
-              "sub": "0"
-            },
-            {
-              "var": "S"
-            },
-            {
-              "text": " ≤ "
-            },
-            {
-              "var": "R"
+              "sub": "c"
             }
           ],
           "citation": {
-            "zh": "GB 50068《建筑结构可靠性设计统一标准》中的统一验算思想示意。这里强调中国体系常显式保留重要性系数γ0，用来把结构后果等级直接写进基本验算表达。",
-            "en": "Illustrative of the unified verification philosophy in GB 50068, Unified Standard for Reliability Design of Building Structures. The point here is that Chinese practice often keeps the importance factor γ0 explicit, writing consequence class directly into the basic check."
+            "zh": "EN 1992-1-1:2004+A1:2014，Cl. 3.1.6，Eq. (3.15)。该式直接展示欧洲体系如何把特征圆柱抗压强度转换为设计抗压强度。",
+            "en": "EN 1992-1-1:2004+A1:2014, Cl. 3.1.6, Eq. (3.15). This equation directly shows how Eurocode converts characteristic cylinder strength into design compressive strength."
           },
           "result": {
-            "zh": "这提醒我们，中国格式里“更严格”有时不是来自把某个荷载系数调得更大，而是来自重要性要求、设计值定义与后续构造规则共同提高了目标安全水平。",
-            "en": "This reminds us that a stricter Chinese-format check does not necessarily come from one larger load factor. It may come from the combined effect of importance requirements, design-value definitions, and downstream detailing rules that lift the target safety level together."
+            "zh": "在欧洲语言里，材料统计与安全储备很大一部分被显式放进 fck 到 fcd 的转换链条中。",
+            "en": "In the European language, a large part of the material statistics and safety reserve is made explicit in the fck-to-fcd conversion chain."
+          }
+        },
+        {
+          "label": {
+            "zh": "美国与澳洲常见的圆柱强度压区表达",
+            "en": "Common U.S. and Australian cylinder-strength compression-block expression"
+          },
+          "formula": "C = 0.85 f'c a b",
+          "formulaTokens": [
+            {
+              "var": "C"
+            },
+            {
+              "text": " = 0.85 "
+            },
+            {
+              "var": "f'"
+            },
+            {
+              "sub": "c"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "a"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "b"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：基于 ACI 318 等效矩形压应力块表达，用熟悉的构件受压合力格式说明圆柱强度 f'c 如何直接进入截面抗力语言；这里用于跨体系比较，不视为编号条文公式。澳洲 AS 3600 在材料命名上同样常使用 f'c 的圆柱语言，但其系数与校核包装需按本地条文取值。",
+            "en": "Derived relation: based on the ACI 318 equivalent rectangular stress-block formulation and shown in the familiar compression-resultant format to illustrate how cylinder strength f'c enters member resistance language directly. It is used here for cross-code comparison rather than as a numbered code equation. Australian AS 3600 likewise commonly uses cylinder-based f'c language, but its coefficients and verification packaging must be taken from the local code."
+          },
+          "result": {
+            "zh": "在这类表达中，材料命名保留在 f'c 上，而安全储备更多通过应力块参数和抗力折减体系体现。",
+            "en": "In this family of expressions, the material label stays in f'c, while more of the safety packaging is expressed through stress-block parameters and strength reduction."
+          }
+        },
+        {
+          "label": {
+            "zh": "中国设计强度进入压区合力的表达",
+            "en": "Chinese design-strength expression for the concrete compression block"
+          },
+          "formula": "C = α1 f c b x",
+          "formulaTokens": [
+            {
+              "var": "C"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "α"
+            },
+            {
+              "sub": "1"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "f"
+            },
+            {
+              "sub": "c"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "b"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "x"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：基于 GB 50010《混凝土结构设计规范》矩形压应力块思路，用于说明中国设计表达通常以设计抗压强度 fc 进入截面承载力，而不是把立方体标准值 fcu,k 直接带入构件验算；这里用于语言比较，并非编号公式照录。",
+            "en": "Derived relation: based on the rectangular compression-block provisions of GB 50010, shown here to illustrate that Chinese section design commonly uses the design compressive strength fc rather than carrying the cube-based standard value fcu,k directly into member verification. It is used for language comparison and is not presented as a copied numbered equation."
+          },
+          "result": {
+            "zh": "这正是中国语境里最容易被误读的地方: 试验分级常从立方体标准值谈起，但构件承载力语言通常已经切换到设计强度 fc。",
+            "en": "This is exactly where cross-code misunderstanding often occurs in Chinese practice: grade naming may begin with cube-based standard values, while section resistance language has already moved to the design strength fc."
           }
         }
       ],
       "note": {
-        "zh": "这个示意算例说明，表面上都叫“极限状态设计”，但不同规范族把可靠度、后果等级和材料统计放进公式的位置并不一样。因此，跨规范比较时真正应该搬运的是完整校准逻辑，而不是某一个看上去相似的系数。",
-        "en": "This illustration shows that although many systems are all described as limit-state design, they do not place reliability, consequence class, and material statistics in the same location within the equation set. In cross-code work, what should be transferred is the full calibration logic, not one superficially similar coefficient."
+        "zh": "这个对照算例说明，“40 MPa 混凝土”并不是跨规范自动等价的材料。真正需要搬运的是试件基础、统计定义、材料折减、应力块参数与抗力校核逻辑的整套映射关系，而不是单独搬运一个数字。",
+        "en": "This comparison shows that a '40 MPa concrete' is not automatically the same material across code families. What must be translated is the full mapping among specimen basis, statistical definition, material reduction, stress-block parameters, and resistance verification logic, not a single number in isolation."
       }
     },
-    "references": "Eurocodes JRC pages for EN 1990 and the Eurocode programme; Standards Australia catalogue context for AS/NZS 1170 actions; ASCE Library page for ASCE/SEI 7-22; AISC standards page for AISC 360; SAMR National Standards Public Service Platform for GB 50068",
+    "references": "Eurocodes JRC portal for EN 1992 programme context; Standards Australia catalogue context for AS 3600; ACI store and code catalogue context for ACI 318; SAMR National Standards Public Service Platform for GB 50010 and related Chinese structural standards",
     "referenceLinks": [
       {
         "label": "Eurocodes JRC portal",
@@ -423,12 +430,8 @@
         "url": "https://www.standards.org.au/"
       },
       {
-        "label": "ASCE Library: ASCE/SEI 7-22 Minimum Design Loads and Associated Criteria for Buildings and Other Structures",
-        "url": "https://ascelibrary.org/doi/book/10.1061/9780784415788"
-      },
-      {
-        "label": "AISC Standards",
-        "url": "https://www.aisc.org/publications/standards/"
+        "label": "American Concrete Institute store",
+        "url": "https://www.concrete.org/store/"
       },
       {
         "label": "SAMR National Standards Public Service Platform",
