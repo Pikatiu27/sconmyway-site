@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-07",
+  "date": "2026-07-08",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,88 +7,88 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "跨境结算基础设施",
-        "en": "Cross-Border Settlement Infrastructure"
+        "zh": "AI 存储芯片周期",
+        "en": "AI Memory-Chip Cycle"
       },
       "title": {
-        "zh": "Open USD 获 140 多家银行、支付与科技机构支持，说明稳定币竞争正从单一发行人走向分销联盟",
-        "en": "Open USD's 140-plus partner launch suggests stablecoin competition is moving from single issuers to distribution alliances"
+        "zh": "Samsung 单季利润飙升 19 倍但股价回落，说明 AI 芯片竞争已从“谁最缺货”转向“高景气能持续多久”",
+        "en": "Samsung's 19-fold profit surge and share-price drop show AI chip competition is shifting from pure scarcity to the durability of the upcycle"
       },
       "summary": {
-        "zh": "《华尔街日报》于 2026 年 6 月 30 日报道，Open USD 将由 Open Standard 推出，并计划部署在 Base、Solana 等网络，已有 140 多家机构签约接入，包括 BlackRock、Google、Visa、Stripe、Mastercard、Coinbase 与 BBVA。这个动作的行业意义不只在于又多了一枚美元稳定币，而在于储备收益分配、分销网络和企业结算入口开始被联盟化设计。稳定币正在从加密原生产品，转向由银行、支付公司与平台共同嵌入的跨境清算轨道。",
-        "en": "The Wall Street Journal reported on June 30, 2026 that Open USD will be issued by Open Standard on Base, Solana, and other networks, with more than 140 launch partners including BlackRock, Google, Visa, Stripe, Mastercard, Coinbase, and BBVA. The significance is not simply that another dollar stablecoin is entering the market. It is that reserve economics, distribution, and enterprise settlement access are now being designed at consortium scale. Stablecoins are moving from crypto-native products toward embedded cross-border settlement rails jointly distributed by banks, payment firms, and platform companies."
+        "zh": "Samsung Electronics 于 2026 年 7 月 7 日发布第二季度初步业绩指引，预计营业利润 89.4 万亿韩元、营收 171 万亿韩元，均创纪录，但股价当日仍下跌约 7%。这说明 AI 内存景气并未结束，市场只是开始把焦点从“供给多紧”转向“高价与高资本开支还能持续多久”。半导体竞争正在从极度短缺阶段的利润兑现，过渡到对下游云厂商投资节奏、产能扩张纪律和价格韧性的再定价。",
+        "en": "Samsung Electronics issued preliminary second-quarter guidance on July 7, 2026, pointing to record operating profit of 89.4 trillion won and revenue of 171 trillion won, yet the stock still fell about 7% on the day. The signal is not that AI memory demand has vanished. It is that the market is starting to look past shortage economics and ask how long elevated pricing and capital intensity can hold. Semiconductor competition is moving from monetizing acute scarcity toward repricing around hyperscaler spending discipline, expansion timing, and the durability of memory margins."
       },
       "watch": {
-        "zh": "后续重点看大型收单机构、企业财资系统和跨境 B2B 支付平台是否直接把 Open USD 接入现有清结算流程；若接入加速，稳定币竞争将更多围绕分销能力与合规覆盖，而不是单纯围绕发行规模。",
-        "en": "Watch whether large acquirers, treasury systems, and B2B payment platforms connect Open USD directly into existing settlement flows. If that happens quickly, competitive advantage will shift toward distribution and compliance coverage rather than pure issuance scale."
+        "zh": "后续重点看 TSMC、ASML、Micron 与主要云厂商在 7 月财报季给出的资本开支和需求指引；若存储价格仍强而云侧扩产转谨慎，AI 基建利润重心将更快向电力、冷却和系统集成迁移。",
+        "en": "Watch July guidance from TSMC, ASML, Micron, and the major cloud platforms. If memory pricing stays strong while hyperscaler expansion turns more selective, profit pools in the AI buildout will keep rotating toward power, cooling, and system integration."
       },
-      "reference": "Wall Street Journal coverage of the Open USD launch, plus public reporting on BBVA's participation in the same consortium",
+      "reference": "Business Insider and Wall Street Journal coverage of Samsung Electronics' July 7 preliminary second-quarter results and the market reaction",
       "referenceLinks": [
         {
-          "label": "Wall Street Journal: BlackRock, Google Join Banks and Crypto Firms in Backing New Stablecoin",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-30-2026/card/blackrock-google-join-banks-and-crypto-firms-in-backing-new-stablecoin-czjc2S3yJVxmofXLQpzP"
+          "label": "Business Insider: Samsung's record profits aren't enough for investors anymore",
+          "url": "https://www.businessinsider.com/kospi-today-samsung-stock-price-earnings-report-hynix-ai-profits-2026-7"
         },
         {
-          "label": "Cinco Días: BBVA joins more than 140 firms to launch a dollar stablecoin",
-          "url": "https://cincodias.elpais.com/criptoactivos/2026-07-01/bbva-se-une-a-mas-de-140-entidades-internacionales-para-lanzar-una-stablecoin-en-dolares.html"
+          "label": "Wall Street Journal: Samsung Expects Another Record Quarter on Robust AI Chip Demand",
+          "url": "https://www.wsj.com/tech/samsung-forecasts-record-second-quarter-operating-profit-8b95a398"
         }
       ]
     },
     {
       "topic": {
-        "zh": "航空制造产能",
-        "en": "Aerospace Production Capacity"
+        "zh": "AI 数据中心电力治理",
+        "en": "AI Data-Center Power Governance"
       },
       "title": {
-        "zh": "Boeing 第四条 737 MAX 总装线瞄准 2027 年初月产 52 架，说明航空竞争正在回到产能兑现与供应链稳定",
-        "en": "Boeing's fourth 737 MAX line shows aerospace competition is swinging back to production throughput and supply-chain stability"
+        "zh": "美国《Ratepayer Protection Act》争议升温，说明 AI 数据中心竞争已进入零售电价、并网排队与许可治理层面",
+        "en": "Debate over the U.S. Ratepayer Protection Act shows AI data-center competition has moved into retail tariffs, interconnection queues, and permitting"
       },
       "summary": {
-        "zh": "Investor's Business Daily 于 2026 年 7 月 6 日报道，Boeing 正启用位于 Everett 的第四条 737 MAX 总装线，目标是把月产量从 42 架提升到 47 架，并在 2027 年初进一步推高到 52 架；同期其民机积压订单仍超过 6100 架。这个动作的行业意义在于，窄体机市场的核心竞争点正重新从“拿订单”转向“把积压订单稳定转成可交付产能”。总装节拍、供应商质量、监管放量许可和返工控制，将直接决定谁能把账面需求变成现金流和交付信誉。",
-        "en": "Investor's Business Daily reported on July 6, 2026 that Boeing is bringing up a fourth 737 MAX assembly line in Everett, targeting a monthly output rise from 42 aircraft to 47 and then to 52 in early 2027, while the company still carries a commercial backlog above 6,100 aircraft. The significance is that narrowbody competition is swinging back from booking demand to converting backlog into reliable throughput. Final-assembly cadence, supplier quality, regulatory clearance for higher rates, and rework discipline will determine who can turn recorded demand into cash generation and delivery credibility."
+        "zh": "《卫报》于 2026 年 7 月 5 日报道，美国《Ratepayer Protection Act》在众议院小组推进后引发更大争议，批评者认为其许多成本约束仍属建议性质，却可能加快数据中心和配套输电项目落地。报道同时指出，AI 数据中心可消耗接近城市级电力，电网接入等待可能长达多年。这个信号的行业意义在于，AI 基础设施竞争不再只是 GPU、土地和融资的竞争，而是进入了谁来承担增量发电、输电和居民电价冲击的治理博弈。",
+        "en": "The Guardian reported on July 5, 2026 that the U.S. Ratepayer Protection Act is drawing heavier scrutiny after advancing through a House subcommittee, with critics arguing that many of its cost controls are still voluntary even as it could accelerate data-center and transmission buildout. The article also notes that AI data centers can consume city-scale electricity and face grid-connection waits measured in years. The industry signal is that AI infrastructure competition is no longer just about GPUs, land, and financing. It is becoming a governance contest over who pays for incremental generation, transmission, and the retail-bill impacts of large new loads."
       },
       "watch": {
-        "zh": "后续重点看 FAA 对增产节奏的实际放行、发动机和机体供应商的缺件率，以及 Everett 新线能否在不放大返工的情况下稳定爬坡；这些指标会比单纯订单新闻更早暴露产能兑现质量。",
-        "en": "Watch the FAA's willingness to permit higher rates, shortages at engine and aerostructure suppliers, and whether the Everett line ramps without inflating rework. Those indicators will reveal execution quality earlier than order headlines."
+        "zh": "后续重点看国会版本是否把自愿性条款变成强制性成本分摊规则，以及州公用事业监管机构是否同步收紧大型负荷并网、备用电源和自建燃气电站的审查。",
+        "en": "Watch whether Congress turns voluntary provisions into enforceable cost-allocation rules, and whether state utility regulators tighten reviews of large-load interconnection, backup generation, and dedicated gas-fired supply for hyperscale campuses."
       },
-      "reference": "Investor's Business Daily coverage of Boeing's fourth 737 MAX line, supported by Boeing's commercial orders and deliveries portal",
+      "reference": "Guardian reporting on the July 5 political fight over the Ratepayer Protection Act, with the public Congress bill page for the legislative text and sponsorship trail",
       "referenceLinks": [
         {
-          "label": "Investor's Business Daily: Boeing rises on 737 MAX assembly line expansion",
-          "url": "https://www.investors.com/news/boeing-stock-rises-737-max-assembly-line/"
+          "label": "The Guardian: Bipartisan bill fails to protect US consumers from datacenters' true costs, critics warn",
+          "url": "https://www.theguardian.com/us-news/2026/jul/05/ratepayer-protection-act-datacenters"
         },
         {
-          "label": "Boeing Commercial: Orders and Deliveries",
-          "url": "https://www.boeing.com/commercial/#/orders-deliveries"
+          "label": "Congress.gov: H.R. 9340, Ratepayer Protection Act",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/9340"
         }
       ]
     },
     {
       "topic": {
-        "zh": "具身机器人供应链",
-        "en": "Embodied-Robot Supply Chains"
+        "zh": "跨国 AI 治理架构",
+        "en": "Transnational AI Governance Architecture"
       },
       "title": {
-        "zh": "中国灵巧手公司开始以月产数千只的节奏扩张，说明人形机器人瓶颈正从整机演示转向操作末端与训练数据",
-        "en": "Chinese dexterous-hand startups scaling to thousands of units a month show humanoid bottlenecks are shifting to end-effectors and training data"
+        "zh": "联合国与 ITU 在 7 月 8 日启动 AI for Good Global Commission，说明 AI 竞争正从模型与算力延伸到跨国制度编排",
+        "en": "The July 8 launch of the UN-ITU AI for Good Global Commission shows AI competition extending from models and compute into cross-border institutional design"
       },
       "summary": {
-        "zh": "《卫报》于 2026 年 7 月 6 日报道，中国灵巧手创业公司正借助成熟的电动车与精密部件供应链快速扩产。报道中的 LinkerBot 已达到约每月 5000 只灵巧手的产量，并计划继续翻倍；行业受访者同时指出，真正难点已从硬件加工转向触觉、遥操作和操作数据采集。这个信号的行业意义在于，人形机器人商业化正在从“会走会跳的整机展示”转向“能否稳定抓取、装配和采集高质量操作数据”的工程竞争，末端执行器与数据闭环会成为下一轮卡点。",
-        "en": "The Guardian reported on July 6, 2026 that Chinese dexterous-hand startups are scaling rapidly on top of the country's mature EV and precision-component supply chains. In the report, LinkerBot says it is already producing about 5,000 robotic hands a month and plans to double further, while founders and researchers argue that the harder bottleneck has shifted from hardware fabrication to touch sensing, teleoperation, and manipulation-data collection. The significance is that humanoid commercialization is moving away from whole-body demos toward the harder engineering problem of repeatable grasping, assembly, and data capture. End-effectors and data loops are becoming the next control point."
+        "zh": "Axios 于 2026 年 7 月 1 日披露，联合国与国际电信联盟将于 7 月 8 日在日内瓦启动 AI for Good Global Commission，由 Salesforce CEO Marc Benioff 与卢旺达总统 Paul Kagame 共同主持，成员覆盖 Amazon、Microsoft、Nvidia 等企业高层与多国政策领导人。这个动作的行业意义不在于又多一场峰会，而在于 AI 竞争开始进入制度编排层：谁能参与跨国规则设计、标准讨论与南北协同，将影响未来算力准入、安全审计、公共采购与市场扩散路径。",
+        "en": "Axios reported on July 1, 2026 that the United Nations and the International Telecommunication Union will launch the AI for Good Global Commission in Geneva on July 8, co-chaired by Salesforce CEO Marc Benioff and Rwandan President Paul Kagame, with participation from leaders tied to Amazon, Microsoft, Nvidia, and multiple governments. The importance is not simply another summit. AI competition is moving into institutional design: participation in cross-border rule-setting, standards discussions, and Global North-South coordination will shape future compute access, safety auditing, public procurement, and the path by which AI systems spread through markets."
       },
       "watch": {
-        "zh": "后续重点看灵巧手是否从展示和研发平台进入仓储、装配、实验室与助残等明确工况，以及触觉数据、遥操作标注和寿命可靠性是否形成可规模化的标准化链条。",
-        "en": "Watch whether dexterous hands move from demos into repeatable warehouse, assembly, laboratory, and assistive use cases, and whether tactile data, teleoperation labeling, and durability testing mature into scalable standards."
+        "zh": "后续重点看该委员会是否停留在原则性倡议，还是进一步触及模型评测、算力公平获取、公共部门采购和国际能力建设等更具执行性的议题。",
+        "en": "Watch whether the commission remains a principles forum or starts influencing more operational questions such as model evaluation, equitable compute access, public-sector procurement, and international capacity-building."
       },
-      "reference": "Guardian field reporting on Chinese dexterous-hand startups, with International Federation of Robotics context on industrial-robot deployment",
+      "reference": "Axios reporting on the commission launch and the ITU's AI for Good summit platform",
       "referenceLinks": [
         {
-          "label": "The Guardian: China wants to solve the hardest problem in robotics - making hands",
-          "url": "https://www.theguardian.com/technology/ng-interactive/2026/jul/06/china-dextrous-robotic-hands-humanoid"
+          "label": "Axios: UN launches AI for Good commission",
+          "url": "https://www.axios.com/2026/07/01/un-ai-commission-ceos-world-leaders"
         },
         {
-          "label": "International Federation of Robotics",
-          "url": "https://ifr.org/"
+          "label": "ITU AI for Good platform",
+          "url": "https://aiforgood.itu.int/"
         }
       ]
     }
@@ -96,330 +96,318 @@
   "insights": [
     {
       "area": {
-        "zh": "韧性导向抗震评估",
-        "en": "Resilience-Oriented Seismic Assessment"
+        "zh": "可靠度约束拓扑优化",
+        "en": "Reliability-Constrained Topology Optimization"
       },
       "title": {
-        "zh": "新一代 PBEE 框架把可靠度与震后恢复放进同一状态转移模型，提示长期抗震设计不能只盯破坏概率",
-        "en": "A generalized PBEE framework embeds reliability and post-earthquake recovery in one state model, showing that long-horizon seismic design cannot stop at collapse probability"
+        "zh": "大偏差理论让 RBTO 不再只停留在小算例，提示未来结构优化必须把显式失效概率重新放回设计主线",
+        "en": "Large-deviation-based RBTO suggests future structural optimization should put explicit failure probability back into the main design loop"
       },
       "evidence": {
-        "zh": "研究类型：2026 年 5 月预印本；方法：以连续时间马尔可夫链统一描述损伤与恢复；对象：支撑框架与隔震结构；结论：恢复动力学会显著改变长期韧性，即使传统可靠度指标变化有限。",
-        "en": "Evidence: a May 2026 preprint that embeds damage and recovery in a continuous-time Markov chain and applies the framework to a braced frame and a base-isolated system; recovery dynamics materially change long-term resilience even when conventional reliability metrics move only modestly."
+        "zh": "研究类型：2026 年 4 月预印本；方法：以大偏差理论近似罕见失效概率，并把梯度直接送入随机梯度下降；对象：二维简支梁、L 形梁和三维悬臂梁；结论：所得设计比稳健拓扑优化更能显式压低失效概率。",
+        "en": "Evidence: an April 2026 preprint that uses large deviation theory to approximate rare-event probabilities and feeds the resulting gradients directly into stochastic gradient descent; demonstrated on 2D and 3D beam benchmarks, the method produces designs with lower explicit failure probabilities than robust topology optimization."
       },
       "summary": {
-        "zh": "这项工作的专业启发在于，它不再把震后恢复当成验算完成后的附加叙述，而是把恢复过程直接写进结构状态演化。对土木与结构工程师而言，这意味着未来的 performance-based earthquake engineering 不应只回答“多大概率超限”或“多大概率倒塌”，还应回答“系统多久恢复到可运营状态”“恢复路径是否受前期损伤记忆影响”。这种统一框架有利于把可靠度、停运时间、服务恢复和寿命周期决策接到同一个分析管线里，对医院、交通节点、数据中心和高后果设施尤其重要。",
-        "en": "The key professional implication is that recovery is no longer treated as a narrative add-on after structural checks are finished; it becomes part of the structural state evolution itself. For civil and structural engineers, that means future performance-based earthquake engineering should answer not only 'what is the exceedance or collapse probability' but also 'how long until the system returns to service' and 'how strongly does prior damage history affect that path'. A unified framework of this kind makes it easier to connect reliability, downtime, service restoration, and life-cycle decision-making inside one analytical pipeline, which is especially relevant for hospitals, transport nodes, data centers, and other high-consequence facilities."
+        "zh": "这项工作提醒结构优化领域一个常被淡化的问题：把不确定性“做稳健”并不等于满足可核查的失效概率目标。作者用 large deviation theory 给出罕见事件概率的指数级近似，再以小样本随机梯度驱动拓扑迭代，避免每一步都嵌套高成本的完整 Monte Carlo 可靠度回路。对结构工程师而言，这意味着显式 reliability constraint 有机会重新回到大尺度概念设计，而不再只适合论文级小算例。若这条路线成熟，未来轻量化支架、增材制造构件和高后果设施支撑系统的优化，将更容易同时讨论质量、刚度与 failure probability，而不是只给出名义性能最优的形状。更重要的是，它把工程软件的竞争点从“能否生成漂亮拓扑”推向“能否生成带风险边界的可审计拓扑”。",
+        "en": "The paper surfaces a structural-design issue that is often blurred in practice: making a design 'robust' under uncertainty is not the same as satisfying an auditable target failure probability. The authors use large deviation theory to obtain exponential estimates of rare-event likelihoods and then drive topology updates with low-sample stochastic gradients, avoiding a full nested Monte Carlo reliability loop at every iteration. For structural engineers, that matters because explicit reliability constraints may become feasible again in large-scale concept design rather than remaining confined to paper-sized demonstrations. If this line matures, future optimization of lightweight supports, additively manufactured members, and high-consequence facility framing could handle mass, stiffness, and failure probability in one tractable workflow. It also shifts the software question from 'can it generate an elegant topology' to 'can it generate a topology with an auditable risk boundary'."
       },
       "caveat": {
-        "zh": "该框架目前仍依赖状态划分、转移率与恢复机理的建模假设，适合做方法论升级和方案比较，但在真实项目中仍需要结合当地危险度、部件级 fragility 与恢复数据做针对性校准。",
-        "en": "The framework still depends on how states, transition rates, and recovery mechanisms are modeled. It is powerful for methodology upgrades and option comparison, but project use still requires calibration against local hazard, component fragility, and recovery data."
+        "zh": "当前验证仍以梁类基准与特定失效准则为主，距离复杂非线性连接、施工约束和多工况项目级落地还有距离；但它清楚指出了可靠度约束优化重新实用化的方向。",
+        "en": "The current validation is still centered on beam-style benchmarks and selected failure criteria, so it remains some distance from nonlinear connections, construction constraints, and multi-case project deployment. Even so, it clearly points toward a more practical form of reliability-constrained optimization."
       },
-      "reference": "NArdin et al., A generalized framework for performance-based earthquake engineering: integrated assessment of structural reliability and resilience, arXiv:2606.12448, submitted 2026-05-30",
+      "reference": "Maghazeh et al., Reliability-based Topology Optimization using Large Deviation Theory, arXiv:2604.27208, submitted 2026-04-29",
       "referenceLinks": [
         {
-          "label": "arXiv: generalized PBEE framework integrating reliability and resilience",
-          "url": "https://arxiv.org/abs/2606.12448"
+          "label": "arXiv: Reliability-based Topology Optimization using Large Deviation Theory",
+          "url": "https://arxiv.org/abs/2604.27208"
         }
       ]
     },
     {
       "area": {
-        "zh": "配电资产与电动车充电",
-        "en": "Distribution Assets and EV Charging"
+        "zh": "桥梁数字孪生与运维",
+        "en": "Bridge Digital Twins and Operations"
       },
       "title": {
-        "zh": "软截止期充电研究表明，未来配电侧竞争不只是多建桩，而是谁能把变压器寿命与服务优先级一起调度",
-        "en": "A soft-deadline EV charging study suggests the next grid constraint is not just more chargers, but scheduling transformer life and service priority together"
+        "zh": "利用现有交通摄像头和天气 API 的桥梁数字孪生框架，说明低附加硬件 SHM 正在变成现实路线",
+        "en": "A bridge digital twin built on traffic cameras and weather APIs shows low-additional-hardware SHM is becoming a realistic path"
       },
       "evidence": {
-        "zh": "研究类型：2026 年 7 月预印本；方法：把变压器热老化代理项与充电未满足惩罚写进同一优化目标，并给出在线策略；结果：在高拥堵场景下，在线算法可用实时信息逼近离线基准，同时降低老化并优先保障临近离场车辆。",
-        "en": "Evidence: a July 2026 preprint that combines a transformer-aging proxy with soft charging-deadline penalties and proposes a real-time policy; under congested scenarios the online method tracks offline benchmarks while reducing aging and prioritizing time-critical vehicles."
+        "zh": "研究类型：2026 年 3 月预印本；方法：融合 YOLOv8 交通视觉、LWR 交通流模型、天气 API、Monte Carlo 不确定性分析和随机森林维护分类；对象：服役 99 年的 Peace Bridge；结论：可在少量新增硬件条件下形成疲劳与维护分类代理指标。",
+        "en": "Evidence: a March 2026 preprint combining YOLOv8 traffic vision, an LWR traffic-flow model, weather APIs, Monte Carlo uncertainty analysis, and random-forest maintenance classification on the 99-year-old Peace Bridge; the framework generates fatigue and maintenance proxies with minimal new sensing hardware."
       },
       "summary": {
-        "zh": "对基础设施工程最重要的信号是，电动车渗透率上升后，配电瓶颈不会只表现为“峰值功率不够”，而会表现为资产寿命被过快消耗。该研究把 charging service 与 transformer aging 放在同一个调度目标里，说明未来的车队场站、住宅区和商业综合体不应只靠增加设备名义容量来解决问题，而要建立按离场时限、任务重要性和资产健康度联合分配容量的运行策略。对工程团队来说，这意味着配电设计、运维算法和服务等级将被更紧地耦合。",
-        "en": "The most important infrastructure signal is that rising EV penetration will not show up only as an instantaneous peak-power problem. It will also show up as accelerated consumption of transformer life. By putting charging service and transformer aging into one scheduling objective, the paper points toward a future in which fleets, residential clusters, and mixed-use sites cannot rely on nominal capacity additions alone. They will need operating policies that allocate limited capacity jointly by departure urgency, service priority, and asset health. For engineering teams, that means distribution design, operating algorithms, and service levels will become much more tightly coupled."
+        "zh": "这项研究的价值不在于再画一个“数字孪生”概念图，而在于它示范了一条对存量基础设施更现实的部署路径。作者没有假设桥上已经布满昂贵传感器，而是优先利用交通摄像头和公开天气数据，把车辆密度、减速冲击、冻融循环、降雨腐蚀潜势和风效应等信息汇入同一个监测框架。对桥梁与运维工程师而言，这代表一种重要转向：未来 SHM 不一定先从大规模硬件铺设开始，也可以先从现有信息流的结构化利用开始，再决定哪些位置值得补上传感器。对于预算受限但车流繁忙的老桥，这种路线尤其有吸引力，因为它把“监测覆盖率”与“部署成本”之间的门槛显著压低，同时保留后续与更高精度测量融合的空间。",
+        "en": "The contribution is not another abstract digital-twin diagram. It is a more deployable path for existing infrastructure. Instead of assuming a bridge is already covered in premium sensors, the authors start with available traffic cameras and public weather data, then integrate vehicle density, braking shockwaves, freeze-thaw exposure, precipitation-linked corrosion potential, and wind effects into one monitoring workflow. For bridge and asset-management engineers, that signals an important shift: SHM does not always have to begin with large new instrumentation campaigns. It can begin by structuring existing information streams and then deciding where targeted sensors are actually worth adding. That makes the approach especially relevant to aging, heavily trafficked bridges under budget constraints, because it lowers the entry cost for predictive maintenance while leaving room to layer in higher-fidelity measurements later."
       },
       "caveat": {
-        "zh": "该研究以方法论和算例为主，尚未覆盖真实电价、保护协调、三相不平衡和用户行为反馈等工程复杂性；但它准确指出了一个正在逼近的资产管理问题。",
-        "en": "The study is methodological and case-study based, and it does not yet cover full tariff design, protection coordination, phase imbalance, or behavioral feedback. It nonetheless identifies a very real asset-management problem that is approaching quickly."
+        "zh": "该框架目前仍依赖交通代理荷载与单桥案例校验，不能替代关键截面的直接应变、位移和细部损伤量测；但它为低成本桥梁运维数字化提供了清晰的第一步。",
+        "en": "The framework still relies on traffic-based load proxies and single-bridge validation, so it does not replace direct strain, displacement, or detailed damage measurements at critical sections. It does, however, provide a clear first step for lower-cost bridge-operations digitization."
       },
-      "reference": "Reddy, Deadline-Aware Electric Vehicles Charging with Distribution Transformer Overload Mitigation, arXiv:2607.00935, submitted 2026-07-01",
+      "reference": "Balijepalli et al., Traffic and weather driven hybrid digital twin for bridge monitoring, arXiv:2603.14028, submitted 2026-03-14",
       "referenceLinks": [
         {
-          "label": "arXiv: deadline-aware EV charging with transformer overload mitigation",
-          "url": "https://arxiv.org/abs/2607.00935"
+          "label": "arXiv: Traffic and weather driven hybrid digital twin for bridge monitoring",
+          "url": "https://arxiv.org/abs/2603.14028"
         }
       ]
     },
     {
       "area": {
-        "zh": "自感知复合材料监测",
-        "en": "Self-Sensing Composite Monitoring"
+        "zh": "电力基础设施韧性",
+        "en": "Power-Infrastructure Resilience"
       },
       "title": {
-        "zh": "短切碳纤维复合材料 SHM 研究显示，损伤监测正在从外挂传感器转向材料本体可感知",
-        "en": "New SHM work on short-carbon-fiber composites shows damage monitoring is moving from add-on sensors into the material itself"
+        "zh": "“对抗性野火”建模把最坏工况直接写进电网调度，提示气候风险设计正在从平均灾害走向高后果失效序列",
+        "en": "Adversarial wildfire modeling writes worst-case fire behavior directly into grid operations, showing climate-risk design moving toward high-consequence failure sequences"
       },
       "evidence": {
-        "zh": "研究类型：2026 年 5 月预印本；方法：将相场断裂、压阻导电与电阻抗层析成像耦合，并用前馈神经网络反演裂纹长度与柔度；结果：对保留样本的推断精度达到 R2 = 0.99。",
-        "en": "Evidence: a May 2026 preprint coupling phase-field fracture, piezoresistive conductivity, and electrical impedance tomography, with a neural network that infers crack length and compliance; the held-out prediction accuracy reaches R2 = 0.99."
+        "zh": "研究类型：2026 年 3 月预印本；方法：建立遵守真实蔓延动力学的混合整数锥优化模型，并与安全约束最优潮流耦合；对象：源自加州近期火灾的测试场景；结论：可识别最短停运时间与最大负荷损失，并据此筛选韧性关键故障序列。",
+        "en": "Evidence: a March 2026 preprint that formulates a mixed-integer conic model for physically realistic adversarial wildfire spread and couples it with security-constrained optimal power flow; test cases derived from recent California fires identify minimum time-to-outage and maximum load-shed sequences."
       },
       "summary": {
-        "zh": "这项工作的趋势意义在于，结构健康监测不再只能依赖外贴应变计、加速度计或分布式光纤，而是可能逐步由材料本体承担部分感知功能。若复合材料内部导电网络随裂纹演化而稳定响应，工程团队就有机会把“材料设计、损伤演化、信号采集和反演判断”统一到一个物理一致的监测框架里。对桥面板、轻量化构件、风机叶片和高性能预制构件而言，这意味着未来 SHM 可能更早介入材料与构件设计阶段，而不是等构件成型后再外挂监测系统。",
-        "en": "The broader trend is that structural health monitoring may no longer rely only on externally mounted strain gauges, accelerometers, or distributed fiber systems. Part of the sensing function may migrate into the material itself. If the conductive network inside a composite evolves in a stable and interpretable way with cracking, engineering teams can begin to unify material design, damage evolution, signal acquisition, and inverse assessment inside one physically consistent monitoring framework. For deck panels, lightweight components, wind blades, and high-performance precast elements, that means SHM could move upstream into material and component design rather than being added only after fabrication."
+        "zh": "这篇工作把基础设施韧性分析从“平均火行为下的脆弱性”推进到“最坏但物理可行的失效序列”。它不是简单问某条线路着火概率多大，而是反过来寻找怎样的风助火蔓延路径最容易打掉关键元件、最快触发停运，并把这种结果直接送回调度与应急约束之中。对土木、输电和基础设施风险团队而言，这种思路很重要，因为未来的韧性设计不应只做单资产加固清单，还要识别哪些走廊、站点组合和恢复路径构成真正的系统级脆弱点。随着高温、干旱和野火季延长，基础设施设计语言正在从“够不够安全”转向“在极端连锁扰动下还能维持多少服务、多久恢复”。",
+        "en": "This work pushes resilience analysis from vulnerability under average wildfire behavior toward failure sequences that are extreme yet still physically plausible. It does not merely ask for the probability that one line is exposed. It searches for wind-assisted fire paths most likely to disable critical components, trigger outage fastest, and then feeds those outcomes back into operational and emergency constraints. For civil, transmission, and infrastructure-risk teams, that matters because resilience design can no longer stop at single-asset hardening lists. It has to identify which corridors, substation combinations, and recovery paths are true system-level weak points. As heat, drought, and wildfire seasons intensify, the design language of infrastructure is shifting from 'is it safe enough' toward 'how much service remains under cascading extremes, and how quickly can it recover'."
       },
       "caveat": {
-        "zh": "目前结果建立在多物理场模拟与受控数据集之上，距离大尺度现场构件、复杂边界条件和长期环境退化仍有距离；但它为“自感知材料 + 反演监测”提供了清晰的工程路线。",
-        "en": "The current results are built on multiphysics simulation and controlled datasets, so they remain some distance from large field components, messy boundary conditions, and long-term environmental degradation. Even so, the study provides a clear engineering pathway toward self-sensing materials plus inverse monitoring."
+        "zh": "模型目前聚焦电网运行与火蔓延优化，尚未把详细资产 fragility、现场消防资源和恢复施工时程完全纳入；但它为高后果情景下的韧性筛选提供了更有针对性的框架。",
+        "en": "The model currently emphasizes grid operations and wildfire-spread optimization rather than full asset fragility detail, firefighting resource limits, or construction recovery schedules. Still, it provides a sharper framework for resilience screening under high-consequence scenarios."
       },
-      "reference": "Arash et al., Data-Driven Structural Health Monitoring of Short Carbon Fiber-Reinforced Polymer Composites via Multiphysics Phase-Field Simulation, arXiv:2605.25287, submitted 2026-05-24",
+      "reference": "Brun et al., Modeling Adversarial Wildfires for Power Grid Disruption, arXiv:2603.18473, submitted 2026-03-19",
       "referenceLinks": [
         {
-          "label": "arXiv: data-driven SHM of short carbon fiber-reinforced polymer composites",
-          "url": "https://arxiv.org/abs/2605.25287"
+          "label": "arXiv: Modeling Adversarial Wildfires for Power Grid Disruption",
+          "url": "https://arxiv.org/abs/2603.18473"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "40 MPa 混凝土并不是同一种语言：为什么中国、欧洲、澳洲与美国的强度记号不能直接互译",
-      "en": "A 40 MPa concrete is not the same language: why China, Europe, Australia, and the U.S. do not mean the same thing by concrete strength"
+      "zh": "梁挠度不是一个全球通用数字：为什么中国、澳洲、欧洲与美国对“同一根梁的位移”说的不是同一种设计语言",
+      "en": "Beam deflection is not a globally interchangeable number: why China, Australia, Europe, and the U.S. do not speak the same design language about movement"
     },
     "text": {
-      "zh": "跨规范混凝土讨论里最常见的误区之一，就是把“40 MPa”当成全世界都等价的材料标签。真正的问题在于，不同体系在说的可能不是同一个统计对象，也不一定来自同一种试件。欧洲常从圆柱体特征抗压强度 fck 出发，再通过材料分项系数得到设计强度；美国与澳洲更常用圆柱体规定强度 f'c 进入强度折减与应力块语言；中国工程语境中则常把立方体标准值 fcu,k 与设计用抗压强度 fc 区分开来。看上去都是“混凝土强度”，但它们背后的试件形状、统计口径和设计包装并不相同，所以不能只凭一个 MPa 数值在不同规范之间直接搬运。",
-      "en": "One of the most common mistakes in cross-code concrete discussions is to treat '40 MPa' as a globally interchangeable material label. The real issue is that different systems may not be talking about the same statistical quantity or even the same test specimen. European practice often starts from cylinder-based characteristic compressive strength fck and then derives design strength through a material partial factor. U.S. and Australian practice more often carry specified cylinder strength f'c into strength-reduction and stress-block language. Chinese design practice commonly distinguishes the cube-based standard value fcu,k from the design compressive strength fc used in resistance checks. All of these are called 'concrete strength', but the specimen basis, statistical meaning, and design packaging are not the same, so one MPa number cannot be transplanted directly across code families."
+      "zh": "跨规范讨论里，很多人会把挠度限值当成像材料强度那样可以直接对照的数字，例如看到某体系写 L/250、另一体系写 L/360，就自然地把后者理解成“更严格”。真正的问题没有这么简单。梁的弹性挠度来自相同的力学，但各国规范对“什么位移会让结构不好用、不好看、损伤装修或影响隔墙”有不同的服务性判断，因此总挠度、活荷载挠度、装修后新增挠度和长期挠度常常不是同一件事。中国、澳洲、欧洲与美国的差异，更多来自使用场景、构造敏感性、长期徐变处理和验算时点，而不是来自谁掌握了不同的梁力学。",
+      "en": "In cross-code discussions, deflection limits are often treated as if they were material-strength numbers that can be compared directly. If one system says L/250 and another says L/360, the second is often assumed to be simply 'stricter'. The real situation is less direct. Elastic beam deflection comes from the same mechanics everywhere, but code families make different serviceability judgments about what level of movement becomes functionally problematic, visually objectionable, damaging to finishes, or harmful to partitions. As a result, total deflection, live-load deflection, additional post-finish deflection, and long-term deflection are often different checks rather than the same check with different numbers. The divergence across China, Australia, Europe, and the U.S. is therefore driven more by use case, detailing sensitivity, creep treatment, and verification stage than by different beam mechanics."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "先问试件与统计定义，再问 MPa 数值",
-          "en": "Ask about the specimen and statistical definition before the MPa value"
+          "zh": "先区分力学公式与服务标准",
+          "en": "Separate the mechanics from the service criterion"
         },
         "text": {
-          "zh": "同样是抗压强度，背后可能是圆柱体特征值、圆柱体规定值，或立方体标准值。若不先对齐测试体型与统计定义，就无法判断两个“40 MPa”是否真可比。",
-          "en": "The same compressive-strength label may refer to a characteristic cylinder value, a specified cylinder value, or a standard cube value. Without aligning the specimen shape and statistical definition first, there is no reliable basis for comparing two '40 MPa' grades."
+          "zh": "梁的挠度计算出自相同的弹性梁理论，但规范差异主要发生在“允许多大位移”以及“在哪个荷载阶段看这个位移”。因此跨规范比较时，不能只比较跨度比数字。",
+          "en": "Beam deflection calculation comes from the same elastic-beam theory, while code differences mainly arise in what movement is acceptable and under which load stage it is checked. Cross-code comparison therefore cannot stop at the span-ratio number."
         }
       },
       {
         "label": {
-          "zh": "欧洲更强调从 fck 到 fcd 的转换链，澳洲与美国更常把 f'c 直接带入构件强度表达，中国则把 fcu,k 与 fc 分层使用",
-          "en": "Europe emphasizes the fck-to-fcd conversion chain, Australia and the U.S. more often carry f'c directly into member-strength expressions, and China layers fcu,k and fc"
+          "zh": "总挠度、活荷载挠度与装修后新增挠度不是同一个量",
+          "en": "Total deflection, live-load deflection, and post-finish additional deflection are not the same quantity"
         },
         "text": {
-          "zh": "这不是记号差异而已，而是材料不确定性、试验传统和设计校准方式被放在了不同位置。澳洲材料命名常与美国一样使用 f'c 圆柱语言，但安全储备的包装方式并不完全照搬美国。",
-          "en": "This is not only a notation difference. Material uncertainty, testing tradition, and design calibration are being placed in different locations. Australian material naming often follows the same cylinder-based f'c language as the U.S., but the way safety reserve is packaged is not identical."
+          "zh": "有的体系更关心总视觉平顺性，有的更关心可变荷载引起的即时变形，还有的特别强调装修、吊顶或隔墙完成后的新增位移。若不先对齐验算对象，L/360 与 L/250 并无直接胜负关系。",
+          "en": "Some systems care more about total visual straightness, some about immediate movement under variable actions, and others emphasize additional movement after finishes, ceilings, or partitions are in place. Without aligning the checked quantity first, L/360 and L/250 do not have a simple winner-loser relationship."
         }
       },
       {
         "label": {
-          "zh": "跨规范对比必须同时映射材料强度、应力块和抗力折减逻辑",
-          "en": "Cross-code comparison has to map material strength, stress-block parameters, and resistance reduction logic together"
+          "zh": "长期徐变与非结构构件敏感性决定限值不能生搬硬套",
+          "en": "Long-term creep and non-structural sensitivity are why limits cannot be transplanted blindly"
         },
         "text": {
-          "zh": "如果只拿一个材料强度数字做横向比较，就会忽略应力块系数、分项系数、抗力折减系数和构造要求对最终承载力的共同影响。",
-          "en": "If you compare only one material-strength number, you miss the combined effect of stress-block parameters, partial factors, strength-reduction factors, and detailing rules on final resistance."
+          "zh": "钢梁、混凝土梁和复合梁在长期阶段的表现不同，幕墙、脆性隔墙和精装修对位移也有不同容忍度。规范语言差异，本质上是在把这些长期与使用后果打包进不同的服务性检查里。",
+          "en": "Steel, concrete, and composite members behave differently over time, and curtain walls, brittle partitions, and high-finish interiors tolerate movement differently. Much of the code-language divergence is really different packaging of those long-term and usage consequences into serviceability checks."
         }
       }
     ],
     "takeaway": {
-      "zh": "比较不同国家混凝土规范时，不要把一个 MPa 数字当成可直接兑换的材料标签。先确认它对应的是圆柱还是立方体、特征值还是规定值、材料值还是设计值，再看它如何进入应力块和抗力校核。",
-      "en": "When comparing concrete codes across countries, do not treat one MPa number as a directly exchangeable material label. First identify whether it is cylinder or cube based, characteristic or specified, material level or design level, and then examine how it enters the stress block and resistance check."
+      "zh": "比较不同国家的挠度要求时，不要先问“哪个跨度比更严”，而要先问：验算的是总位移、活荷载位移还是装修后的新增位移？是否考虑长期徐变？是否有对隔墙、幕墙或设备的额外保护要求？只有把这些问题对齐，挠度限值才可比较。",
+      "en": "When comparing deflection requirements across countries, do not begin with 'which span ratio is stricter'. First ask whether the check is on total movement, live-load movement, or additional post-finish movement; whether long-term creep is included; and whether partitions, facades, or equipment impose extra protection requirements. Only then do the limits become meaningfully comparable."
     },
     "example": {
       "title": {
-        "zh": "实例：同一根受弯钢筋混凝土梁，为什么不同体系会把“混凝土强度”写进完全不同的设计语言",
-        "en": "Example: why the same reinforced-concrete beam carries 'concrete strength' into very different design language across code families"
+        "zh": "实例：为什么同一根简支梁在不同规范语境里会得到不同的“挠度判断”",
+        "en": "Example: why the same simply supported beam can receive different deflection judgments across code contexts"
       },
       "intro": {
-        "zh": "下面做一个语言对照型算例，而不是代替任何一本规范的完整设计流程。设某矩形截面梁在受压区形成等效压应力块，关注点不是算出唯一承载力答案，而是看不同体系如何把混凝土试验强度转成设计用压应力。你会看到：有的体系先把材料值折减成设计值，再进入验算；有的体系保留规定强度记号，把折减放到应力块或抗力侧；有的体系则把立方体标准值与设计强度分开使用。",
-        "en": "The following is a language-comparison example rather than a substitute for any full code procedure. Consider a rectangular reinforced-concrete beam with an equivalent concrete compression block in bending. The point is not to compute one universal resistance, but to observe how different systems translate tested concrete strength into design compression stress. Some systems first reduce a material value into a design value before checking resistance. Others retain the specified-strength label and place the reduction in the stress block or the resistance side. Chinese practice further separates the cube-based standard value from the design compressive strength used in section checks."
+        "zh": "下面做一个概念对照型算例，而不是代替任何一本规范的完整条文流程。设一根等截面简支梁承受均布荷载，先从共享的弹性挠度公式出发，再把服务性限值写成无量纲跨度比，最后把“装修后新增位移”的检查单独拆出来。这样可以看清：不同体系的差异主要不是梁会不会弯，而是何时量、量哪一部分，以及哪一部分会伤到使用功能或非结构构件。",
+        "en": "The following is a conceptual comparison rather than a substitute for any full code procedure. Consider a prismatic simply supported beam under uniform load. We start from the shared elastic deflection relation, then write serviceability in a dimensionless span-ratio form, and finally separate the additional movement that occurs after finishes are installed. The point is to show that code differences are driven less by whether the beam bends and more by when movement is measured, which part of the movement is checked, and which part is considered harmful to function or non-structural components."
       },
       "equations": [
         {
           "label": {
-            "zh": "共同的受压应力测试起点",
-            "en": "Shared compression-test starting point"
+            "zh": "共享的弹性挠度起点",
+            "en": "Shared elastic-deflection starting point"
           },
-          "formula": "σc = P/A",
+          "formula": "δmax = 5 w L⁴ / (384 E I)",
           "formulaTokens": [
             {
-              "var": "σ"
+              "var": "δ"
             },
             {
-              "sub": "c"
+              "sub": "max"
             },
             {
-              "text": " = "
+              "text": " = 5 "
             },
             {
-              "var": "P"
+              "var": "w"
             },
             {
-              "text": "/"
+              "text": " L⁴ / (384 "
             },
             {
-              "var": "A"
-            }
-          ],
-          "citation": {
-            "zh": "推导关系：基于材料力学中受压试件平均压应力的基本定义；用于说明所有体系都从“荷载除以受压面积”的测试物理量出发，而差异出现在试件形式、统计定义和设计折减环节。",
-            "en": "Derived relation: based on the basic mechanics definition of average compressive stress in a test specimen. It is used here to show that all code families begin from load over loaded area, while the differences arise in specimen form, statistical definition, and design reduction."
-          },
-          "result": {
-            "zh": "所有规范都承认同一个受压试验物理起点，但并不把同一种试件结果直接当成同一种设计输入。",
-            "en": "All systems share the same physical testing basis, but they do not necessarily treat the same specimen result as the same design input."
-          }
-        },
-        {
-          "label": {
-            "zh": "欧标式材料设计强度转换",
-            "en": "Eurocode-style conversion to design concrete strength"
-          },
-          "formula": "fcd = αcc fck / γc",
-          "formulaTokens": [
-            {
-              "var": "f"
-            },
-            {
-              "sub": "cd"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "α"
-            },
-            {
-              "sub": "cc"
+              "var": "E"
             },
             {
               "text": " "
             },
             {
-              "var": "f"
+              "var": "I"
             },
             {
-              "sub": "ck"
+              "text": ")"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：基于 Euler-Bernoulli 梁理论中等截面简支梁在均布荷载下的经典弹性挠度表达；用于说明各国规范共享相同的力学起点，这里不是编号规范公式。",
+            "en": "Derived relation: based on the classical Euler-Bernoulli expression for a prismatic simply supported beam under uniform load. It is used here to show that code families share the same mechanics baseline and is not presented as a numbered code equation."
+          },
+          "result": {
+            "zh": "不同规范的挠度语言首先建立在同一条力学关系上，差异并不来自梁的基本弯曲机理。",
+            "en": "Different code languages begin from the same mechanics relation; the divergence does not come from a different basic bending model."
+          }
+        },
+        {
+          "label": {
+            "zh": "常见的跨度比式服务性判断",
+            "en": "Common span-ratio form of serviceability judgment"
+          },
+          "formula": "δmax / L ≤ 1 / n",
+          "formulaTokens": [
+            {
+              "var": "δ"
+            },
+            {
+              "sub": "max"
             },
             {
               "text": " / "
             },
             {
-              "var": "γ"
+              "var": "L"
             },
             {
-              "sub": "c"
+              "text": " ≤ 1 / "
+            },
+            {
+              "var": "n"
             }
           ],
           "citation": {
-            "zh": "EN 1992-1-1:2004+A1:2014，Cl. 3.1.6，Eq. (3.15)。该式直接展示欧洲体系如何把特征圆柱抗压强度转换为设计抗压强度。",
-            "en": "EN 1992-1-1:2004+A1:2014, Cl. 3.1.6, Eq. (3.15). This equation directly shows how Eurocode converts characteristic cylinder strength into design compressive strength."
+            "zh": "推导关系：把服务性限值写成通用跨度比形式，用于概念比较不同规范如何表达“可接受位移”；其中 n 会随使用功能、装修敏感性和检查对象变化，这里不是任何单一本规范的照录条文。",
+            "en": "Derived relation: a generic span-ratio form used to compare how different codes express acceptable movement. The value of n changes with occupancy, finish sensitivity, and the specific movement being checked, and this expression is not copied from any single numbered provision."
           },
           "result": {
-            "zh": "在欧洲语言里，材料统计与安全储备很大一部分被显式放进 fck 到 fcd 的转换链条中。",
-            "en": "In the European language, a large part of the material statistics and safety reserve is made explicit in the fck-to-fcd conversion chain."
+            "zh": "真正可变的是 n 的含义与适用场景，而不是“跨度比形式”本身。",
+            "en": "What really varies is the meaning of n and the situation to which it is applied, not the span-ratio format itself."
           }
         },
         {
           "label": {
-            "zh": "美国与澳洲常见的圆柱强度压区表达",
-            "en": "Common U.S. and Australian cylinder-strength compression-block expression"
+            "zh": "装修后新增位移的分阶段表达",
+            "en": "Stage-based expression for additional post-finish movement"
           },
-          "formula": "C = 0.85 f'c a b",
+          "formula": "Δδadd = δfinal - δ0",
           "formulaTokens": [
             {
-              "var": "C"
+              "var": "Δδ"
             },
             {
-              "text": " = 0.85 "
-            },
-            {
-              "var": "f'"
-            },
-            {
-              "sub": "c"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "a"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "b"
-            }
-          ],
-          "citation": {
-            "zh": "推导关系：基于 ACI 318 等效矩形压应力块表达，用熟悉的构件受压合力格式说明圆柱强度 f'c 如何直接进入截面抗力语言；这里用于跨体系比较，不视为编号条文公式。澳洲 AS 3600 在材料命名上同样常使用 f'c 的圆柱语言，但其系数与校核包装需按本地条文取值。",
-            "en": "Derived relation: based on the ACI 318 equivalent rectangular stress-block formulation and shown in the familiar compression-resultant format to illustrate how cylinder strength f'c enters member resistance language directly. It is used here for cross-code comparison rather than as a numbered code equation. Australian AS 3600 likewise commonly uses cylinder-based f'c language, but its coefficients and verification packaging must be taken from the local code."
-          },
-          "result": {
-            "zh": "在这类表达中，材料命名保留在 f'c 上，而安全储备更多通过应力块参数和抗力折减体系体现。",
-            "en": "In this family of expressions, the material label stays in f'c, while more of the safety packaging is expressed through stress-block parameters and strength reduction."
-          }
-        },
-        {
-          "label": {
-            "zh": "中国设计强度进入压区合力的表达",
-            "en": "Chinese design-strength expression for the concrete compression block"
-          },
-          "formula": "C = α1 f c b x",
-          "formulaTokens": [
-            {
-              "var": "C"
+              "sub": "add"
             },
             {
               "text": " = "
             },
             {
-              "var": "α"
+              "var": "δ"
             },
             {
-              "sub": "1"
+              "sub": "final"
             },
             {
-              "text": " "
+              "text": " - "
             },
             {
-              "var": "f"
+              "var": "δ"
             },
             {
-              "sub": "c"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "b"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "x"
+              "sub": "0"
             }
           ],
           "citation": {
-            "zh": "推导关系：基于 GB 50010《混凝土结构设计规范》矩形压应力块思路，用于说明中国设计表达通常以设计抗压强度 fc 进入截面承载力，而不是把立方体标准值 fcu,k 直接带入构件验算；这里用于语言比较，并非编号公式照录。",
-            "en": "Derived relation: based on the rectangular compression-block provisions of GB 50010, shown here to illustrate that Chinese section design commonly uses the design compressive strength fc rather than carrying the cube-based standard value fcu,k directly into member verification. It is used for language comparison and is not presented as a copied numbered equation."
+            "zh": "推导关系：基于分阶段服务性验算，把最终位移与装修、隔墙或吊顶安装时的基准位移相减，用于解释为什么有些体系特别关注后续新增挠度；这里为概念表达，不是编号条文公式。",
+            "en": "Derived relation: based on stage-by-stage serviceability checking, subtracting the baseline movement at the time finishes, partitions, or ceilings are installed from the final movement. It is used to explain why some code families emphasize additional deflection after fit-out and is not a numbered code equation."
           },
           "result": {
-            "zh": "这正是中国语境里最容易被误读的地方: 试验分级常从立方体标准值谈起，但构件承载力语言通常已经切换到设计强度 fc。",
-            "en": "This is exactly where cross-code misunderstanding often occurs in Chinese practice: grade naming may begin with cube-based standard values, while section resistance language has already moved to the design strength fc."
+            "zh": "同样的总挠度，若大部分发生在装修完成后，服务性后果会显著不同，因此部分规范会把新增位移单独拎出来看。",
+            "en": "The same total deflection can have very different serviceability consequences if most of it occurs after fit-out, which is why some systems isolate additional movement as a separate check."
+          }
+        },
+        {
+          "label": {
+            "zh": "把服务性限值反推成截面刚度筛选",
+            "en": "Back-solving serviceability into an inertia screen"
+          },
+          "formula": "Ireq = 5 w L³ n / (384 E)",
+          "formulaTokens": [
+            {
+              "var": "I"
+            },
+            {
+              "sub": "req"
+            },
+            {
+              "text": " = 5 "
+            },
+            {
+              "var": "w"
+            },
+            {
+              "text": " L³ "
+            },
+            {
+              "var": "n"
+            },
+            {
+              "text": " / (384 "
+            },
+            {
+              "var": "E"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：由共享弹性挠度公式与通用跨度比限值联立得到，用于说明工程上常把服务性要求反推为截面刚度初筛条件；这里是计算推导，不是编号规范公式。",
+            "en": "Derived relation: obtained by combining the shared elastic deflection formula with the generic span-ratio limit, illustrating how serviceability is often back-solved into an initial stiffness screen. This is a calculation-based derivation rather than a numbered code equation."
+          },
+          "result": {
+            "zh": "服务性检查常常在概念设计阶段先转化为刚度门槛，而不同规范的差异会直接体现在这个门槛选取上。",
+            "en": "In concept design, serviceability is often translated first into a stiffness threshold, and differences among code families show up directly in how that threshold is chosen."
           }
         }
       ],
       "note": {
-        "zh": "这个对照算例说明，“40 MPa 混凝土”并不是跨规范自动等价的材料。真正需要搬运的是试件基础、统计定义、材料折减、应力块参数与抗力校核逻辑的整套映射关系，而不是单独搬运一个数字。",
-        "en": "This comparison shows that a '40 MPa concrete' is not automatically the same material across code families. What must be translated is the full mapping among specimen basis, statistical definition, material reduction, stress-block parameters, and resistance verification logic, not a single number in isolation."
+        "zh": "这个对照算例说明，挠度限值不是一个可以脱离使用场景、阶段定义和非结构后果而单独比较的数字。跨规范迁移时，必须同时映射荷载阶段、长期效应、装修时点与受保护对象，否则同一个跨度比可能代表完全不同的服务性目标。",
+        "en": "This comparison shows that a deflection limit is not a number that can be compared in isolation from use case, stage definition, and non-structural consequences. Cross-code translation has to map load stage, long-term effects, fit-out timing, and the protected elements together, or the same span ratio may represent very different serviceability intentions."
       }
     },
-    "references": "Eurocodes JRC portal for EN 1992 programme context; Standards Australia catalogue context for AS 3600; ACI store and code catalogue context for ACI 318; SAMR National Standards Public Service Platform for GB 50010 and related Chinese structural standards",
+    "references": "Eurocodes JRC portal for Eurocode programme context; Standards Australia catalogue context for Australian limit-state standards; ICC Digital Codes portal for U.S. building-code context; SAMR National Standards Public Service Platform for GB structural standards",
     "referenceLinks": [
       {
         "label": "Eurocodes JRC portal",
@@ -430,8 +418,8 @@
         "url": "https://www.standards.org.au/"
       },
       {
-        "label": "American Concrete Institute store",
-        "url": "https://www.concrete.org/store/"
+        "label": "ICC Digital Codes",
+        "url": "https://codes.iccsafe.org/"
       },
       {
         "label": "SAMR National Standards Public Service Platform",
