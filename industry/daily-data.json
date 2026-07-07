@@ -7,88 +7,88 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "AI 存储芯片周期",
-        "en": "AI Memory-Chip Cycle"
+        "zh": "内分泌药物并购",
+        "en": "Endocrine Drug Consolidation"
       },
       "title": {
-        "zh": "Samsung 单季利润飙升 19 倍但股价回落，说明 AI 芯片竞争已从“谁最缺货”转向“高景气能持续多久”",
-        "en": "Samsung's 19-fold profit surge and share-price drop show AI chip competition is shifting from pure scarcity to the durability of the upcycle"
+        "zh": "Vertex 以 100 亿美元收购 Crinetics，说明大型生物药企开始用高溢价锁定已进入商业化或后期阶段的专科管线",
+        "en": "Vertex's $10 billion bid for Crinetics shows big biotech is paying up for late-stage specialist pipelines rather than waiting for broader platform optionality"
       },
       "summary": {
-        "zh": "Samsung Electronics 于 2026 年 7 月 7 日发布第二季度初步业绩指引，预计营业利润 89.4 万亿韩元、营收 171 万亿韩元，均创纪录，但股价当日仍下跌约 7%。这说明 AI 内存景气并未结束，市场只是开始把焦点从“供给多紧”转向“高价与高资本开支还能持续多久”。半导体竞争正在从极度短缺阶段的利润兑现，过渡到对下游云厂商投资节奏、产能扩张纪律和价格韧性的再定价。",
-        "en": "Samsung Electronics issued preliminary second-quarter guidance on July 7, 2026, pointing to record operating profit of 89.4 trillion won and revenue of 171 trillion won, yet the stock still fell about 7% on the day. The signal is not that AI memory demand has vanished. It is that the market is starting to look past shortage economics and ask how long elevated pricing and capital intensity can hold. Semiconductor competition is moving from monetizing acute scarcity toward repricing around hyperscaler spending discipline, expansion timing, and the durability of memory margins."
+        "zh": "2026 年 7 月 7 日，Vertex 宣布将以每股 85 美元现金收购 Crinetics，交易总值约 100 亿美元，按公司披露口径扣除目标现金后净对价约 88 亿美元。交易核心资产是已上市的肢端肥大症药物 Palsonify，以及面向先天性肾上腺增生等适应症的在研项目 atumelnant。这个动作的行业意义在于，创新药并购正在从“买早期故事”进一步转向“买具备明确商业路径的专科收入台阶”。对大药企而言，真正稀缺的不是研发题材，而是能在较短周期内补进新治疗领域并形成可见销售贡献的资产。",
+        "en": "On July 7, 2026, Vertex said it would acquire Crinetics for $85 a share in cash, valuing the deal at about $10 billion and at roughly $8.8 billion net of target cash by the companies' framing. The strategic draw is Crinetics' newly launched acromegaly therapy Palsonify and the late-stage endocrine candidate atumelnant for indications such as congenital adrenal hyperplasia. The broader signal is that biopharma M&A is moving further away from buying early narratives and further toward buying specialist assets with visible commercial ramps. What is scarce for large drugmakers is not scientific optionality by itself, but assets that can open a new therapeutic franchise and add revenue on a management-relevant timetable."
       },
       "watch": {
-        "zh": "后续重点看 TSMC、ASML、Micron 与主要云厂商在 7 月财报季给出的资本开支和需求指引；若存储价格仍强而云侧扩产转谨慎，AI 基建利润重心将更快向电力、冷却和系统集成迁移。",
-        "en": "Watch July guidance from TSMC, ASML, Micron, and the major cloud platforms. If memory pricing stays strong while hyperscaler expansion turns more selective, profit pools in the AI buildout will keep rotating toward power, cooling, and system integration."
+        "zh": "后续重点看 Vertex 能否把 Crinetics 的专科内分泌产品线快速接入其全球商业体系，以及并购估值模型是否会向更多后期稀有病和专科药物资产外溢。",
+        "en": "Watch whether Vertex can quickly plug Crinetics' endocrinology assets into its global commercial machine, and whether this valuation logic spills over into more late-stage rare-disease and specialist-drug deals."
       },
-      "reference": "Business Insider and Wall Street Journal coverage of Samsung Electronics' July 7 preliminary second-quarter results and the market reaction",
+      "reference": "Coverage of Vertex's announced acquisition of Crinetics and the deal's projected revenue contribution",
       "referenceLinks": [
         {
-          "label": "Business Insider: Samsung's record profits aren't enough for investors anymore",
-          "url": "https://www.businessinsider.com/kospi-today-samsung-stock-price-earnings-report-hynix-ai-profits-2026-7"
+          "label": "Investor's Business Daily: Vertex Pharma Makes A $10 Billion Deal; Crinetics Stock Doubles",
+          "url": "https://www.investors.com/news/technology/crinetics-stock-vertex-pharmaceuticals-takeover/"
         },
         {
-          "label": "Wall Street Journal: Samsung Expects Another Record Quarter on Robust AI Chip Demand",
-          "url": "https://www.wsj.com/tech/samsung-forecasts-record-second-quarter-operating-profit-8b95a398"
+          "label": "Barron's: This Biotech Stock Is Soaring 99% After Vertex Agrees to Takeover Deal",
+          "url": "https://www.barrons.com/articles/crinetics-stock-vertex-biotech-deal-64284246"
         }
       ]
     },
     {
       "topic": {
-        "zh": "AI 数据中心电力治理",
-        "en": "AI Data-Center Power Governance"
+        "zh": "英国媒体再整合",
+        "en": "UK Media Re-aggregation"
       },
       "title": {
-        "zh": "美国《Ratepayer Protection Act》争议升温，说明 AI 数据中心竞争已进入零售电价、并网排队与许可治理层面",
-        "en": "Debate over the U.S. Ratepayer Protection Act shows AI data-center competition has moved into retail tariffs, interconnection queues, and permitting"
+        "zh": "Sky 以 16 亿英镑收购 ITV 广播与流媒体业务，说明传统电视竞争正从频道份额转向“广告平台 + 免费流媒体 + 内容供给链”一体化",
+        "en": "Sky's 1.6 billion pound ITV deal shows legacy TV competition is shifting from channel share toward integrated advertising, free-streaming, and content-supply scale"
       },
       "summary": {
-        "zh": "《卫报》于 2026 年 7 月 5 日报道，美国《Ratepayer Protection Act》在众议院小组推进后引发更大争议，批评者认为其许多成本约束仍属建议性质，却可能加快数据中心和配套输电项目落地。报道同时指出，AI 数据中心可消耗接近城市级电力，电网接入等待可能长达多年。这个信号的行业意义在于，AI 基础设施竞争不再只是 GPU、土地和融资的竞争，而是进入了谁来承担增量发电、输电和居民电价冲击的治理博弈。",
-        "en": "The Guardian reported on July 5, 2026 that the U.S. Ratepayer Protection Act is drawing heavier scrutiny after advancing through a House subcommittee, with critics arguing that many of its cost controls are still voluntary even as it could accelerate data-center and transmission buildout. The article also notes that AI data centers can consume city-scale electricity and face grid-connection waits measured in years. The industry signal is that AI infrastructure competition is no longer just about GPUs, land, and financing. It is becoming a governance contest over who pays for incremental generation, transmission, and the retail-bill impacts of large new loads."
+        "zh": "2026 年 7 月 6 日，Sky 宣布收购 ITV 的 media and entertainment 业务，包括免费频道与 ITVX，但不包含 ITV Studios。公开披露的结构包括 12 亿英镑现金对价、与 2027 年广告表现挂钩的额外付款安排，以及 Sky 对 ITV Studios 在 2028 至 2032 年间至少 21 亿英镑的内容合作承诺。其行业意义在于，传统电视集团不再只是争夺频道收视，而是在重组广告库存、免费流媒体入口、体育与娱乐分发，以及与独立制作公司的长期供给关系。广播和流媒体的边界正在进一步被资本结构和数据平台打通。",
+        "en": "On July 6, 2026, Sky announced a deal to acquire ITV's media-and-entertainment business, including its free-to-air channels and ITVX, while leaving ITV Studios outside the perimeter. Publicly disclosed terms include 1.2 billion pounds in upfront cash, additional consideration linked to 2027 advertising performance, and a Sky commitment to spend at least 2.1 billion pounds with ITV Studios between 2028 and 2032. The structural signal is that legacy TV groups are no longer competing only for linear audience share. They are reorganising advertising inventory, free-streaming access, sports and entertainment distribution, and long-term supply relationships with production companies. Capital structure and data-platform strategy are pushing broadcast and streaming into one operating stack."
       },
       "watch": {
-        "zh": "后续重点看国会版本是否把自愿性条款变成强制性成本分摊规则，以及州公用事业监管机构是否同步收紧大型负荷并网、备用电源和自建燃气电站的审查。",
-        "en": "Watch whether Congress turns voluntary provisions into enforceable cost-allocation rules, and whether state utility regulators tighten reviews of large-load interconnection, backup generation, and dedicated gas-fired supply for hyperscale campuses."
+        "zh": "后续重点看 Ofcom 与英国竞争监管机构如何处理公共服务义务、媒体多元性和就业重叠问题，以及 ITVX 的广告与用户数据能力能否真正被 Sky 放大。",
+        "en": "Watch how Ofcom and UK competition regulators treat public-service obligations, plurality concerns, and overlap-related job cuts, and whether Sky can actually amplify ITVX's advertising and audience-data value."
       },
-      "reference": "Guardian reporting on the July 5 political fight over the Ratepayer Protection Act, with the public Congress bill page for the legislative text and sponsorship trail",
+      "reference": "Public reporting on Sky's planned ITV media-and-entertainment acquisition and the strategic rationale behind the transaction",
       "referenceLinks": [
         {
-          "label": "The Guardian: Bipartisan bill fails to protect US consumers from datacenters' true costs, critics warn",
-          "url": "https://www.theguardian.com/us-news/2026/jul/05/ratepayer-protection-act-datacenters"
+          "label": "The Guardian: Sky owner announces 1.6bn takeover of ITV's broadcasting arm",
+          "url": "https://www.theguardian.com/business/2026/jul/06/sky-owner-announces-16bn-takeover-of-itvs-broadcasting-arm"
         },
         {
-          "label": "Congress.gov: H.R. 9340, Ratepayer Protection Act",
-          "url": "https://www.congress.gov/bill/119th-congress/house-bill/9340"
+          "label": "The Week: Sky's purchase of ITV: a new dawn for British television",
+          "url": "https://theweek.com/media/skys-purchase-of-itv-a-new-dawn-for-british-television"
         }
       ]
     },
     {
       "topic": {
-        "zh": "跨国 AI 治理架构",
-        "en": "Transnational AI Governance Architecture"
+        "zh": "机器人末端执行器",
+        "en": "Robotic End-Effectors"
       },
       "title": {
-        "zh": "联合国与 ITU 在 7 月 8 日启动 AI for Good Global Commission，说明 AI 竞争正从模型与算力延伸到跨国制度编排",
-        "en": "The July 8 launch of the UN-ITU AI for Good Global Commission shows AI competition extending from models and compute into cross-border institutional design"
+        "zh": "中国灵巧手厂商把月产能推到数千只，说明人形机器人竞争重心正从整机演示转向操作器件、触觉与数据采集",
+        "en": "Chinese dexterous-hand makers scaling to thousands of units a month show humanoid competition is shifting from full-body demos to manipulation hardware, touch sensing, and data capture"
       },
       "summary": {
-        "zh": "Axios 于 2026 年 7 月 1 日披露，联合国与国际电信联盟将于 7 月 8 日在日内瓦启动 AI for Good Global Commission，由 Salesforce CEO Marc Benioff 与卢旺达总统 Paul Kagame 共同主持，成员覆盖 Amazon、Microsoft、Nvidia 等企业高层与多国政策领导人。这个动作的行业意义不在于又多一场峰会，而在于 AI 竞争开始进入制度编排层：谁能参与跨国规则设计、标准讨论与南北协同，将影响未来算力准入、安全审计、公共采购与市场扩散路径。",
-        "en": "Axios reported on July 1, 2026 that the United Nations and the International Telecommunication Union will launch the AI for Good Global Commission in Geneva on July 8, co-chaired by Salesforce CEO Marc Benioff and Rwandan President Paul Kagame, with participation from leaders tied to Amazon, Microsoft, Nvidia, and multiple governments. The importance is not simply another summit. AI competition is moving into institutional design: participation in cross-border rule-setting, standards discussions, and Global North-South coordination will shape future compute access, safety auditing, public procurement, and the path by which AI systems spread through markets."
+        "zh": "《卫报》于 2026 年 7 月 6 日报道，中国多家灵巧手创业公司正借助电动车与精密制造供应链快速扩产。报道中的 LinkerBot 已达到约每月 5000 只灵巧手的产量，并计划继续翻倍；同时，行业参与者把真正瓶颈指向触觉、遥操作与高质量操作数据，而不是单纯的机械加工。这一变化的行业意义在于，人形机器人商业化的卡点正在从“能否做出会走的整机”转向“能否稳定抓取、装配、感知和学习”。谁掌握末端执行器和数据闭环，谁更可能拿到下一轮产业主导权。",
+        "en": "The Guardian reported on July 6, 2026 that several Chinese dexterous-hand startups are scaling rapidly on top of the country's EV and precision-manufacturing supply chains. In the report, LinkerBot says it is already producing about 5,000 robotic hands a month and plans to double again, while founders and researchers describe touch sensing, teleoperation, and high-quality manipulation data as the real bottlenecks rather than pure hardware machining. The deeper signal is that humanoid-commercialisation constraints are moving away from 'can you build a walking body' and toward 'can you grasp, assemble, sense, and learn reliably'. The players that control end-effectors and the associated data loop are more likely to control the next phase of the stack."
       },
       "watch": {
-        "zh": "后续重点看该委员会是否停留在原则性倡议，还是进一步触及模型评测、算力公平获取、公共部门采购和国际能力建设等更具执行性的议题。",
-        "en": "Watch whether the commission remains a principles forum or starts influencing more operational questions such as model evaluation, equitable compute access, public-sector procurement, and international capacity-building."
+        "zh": "后续重点看灵巧手是否从展示平台进入仓储、装配、实验室与助残等稳定工况，以及相关数据采集、寿命验证和标准接口是否形成规模化生态。",
+        "en": "Watch whether dexterous hands move from demo platforms into stable warehouse, assembly, laboratory, and assistive use cases, and whether data collection, durability validation, and interface standards mature into a scalable ecosystem."
       },
-      "reference": "Axios reporting on the commission launch and the ITU's AI for Good summit platform",
+      "reference": "Field reporting on Chinese dexterous-hand companies, with industry context from the International Federation of Robotics",
       "referenceLinks": [
         {
-          "label": "Axios: UN launches AI for Good commission",
-          "url": "https://www.axios.com/2026/07/01/un-ai-commission-ceos-world-leaders"
+          "label": "The Guardian: China wants to solve the hardest problem in robotics - making hands",
+          "url": "https://www.theguardian.com/technology/ng-interactive/2026/jul/06/china-dextrous-robotic-hands-humanoid"
         },
         {
-          "label": "ITU AI for Good platform",
-          "url": "https://aiforgood.itu.int/"
+          "label": "International Federation of Robotics",
+          "url": "https://ifr.org/"
         }
       ]
     }
@@ -96,330 +96,428 @@
   "insights": [
     {
       "area": {
-        "zh": "可靠度约束拓扑优化",
-        "en": "Reliability-Constrained Topology Optimization"
+        "zh": "BIM 语义编辑",
+        "en": "BIM Semantic Editing"
       },
       "title": {
-        "zh": "大偏差理论让 RBTO 不再只停留在小算例，提示未来结构优化必须把显式失效概率重新放回设计主线",
-        "en": "Large-deviation-based RBTO suggests future structural optimization should put explicit failure probability back into the main design loop"
+        "zh": "最新 BIM-Edit 基准表明，大模型距离直接改写生产级 IFC 模型仍有明显差距，近期高价值机会更可能在受约束协同而非自由生成",
+        "en": "The new BIM-Edit benchmark shows LLMs remain far from directly rewriting production IFC models, so near-term value is more likely in constrained collaboration than free-form generation"
       },
       "evidence": {
-        "zh": "研究类型：2026 年 4 月预印本；方法：以大偏差理论近似罕见失效概率，并把梯度直接送入随机梯度下降；对象：二维简支梁、L 形梁和三维悬臂梁；结论：所得设计比稳健拓扑优化更能显式压低失效概率。",
-        "en": "Evidence: an April 2026 preprint that uses large deviation theory to approximate rare-event probabilities and feeds the resulting gradients directly into stochastic gradient descent; demonstrated on 2D and 3D beam benchmarks, the method produces designs with lower explicit failure probabilities than robust topology optimization."
+        "zh": "研究类型：2026 年 6 月预印本；数据：324 个编辑任务、11 个真实 BIM 模型与 36 个合成场景；结果：最佳模型三项综合平均分仅 49.5%，完全解出的任务不超过 3.4%。",
+        "en": "Evidence: a June 2026 preprint evaluating 324 editing tasks across 11 real BIM models and 36 synthetic scenes; the best model achieved only 49.5% average performance across the main metrics, and no model fully solved more than 3.4% of tasks."
       },
       "summary": {
-        "zh": "这项工作提醒结构优化领域一个常被淡化的问题：把不确定性“做稳健”并不等于满足可核查的失效概率目标。作者用 large deviation theory 给出罕见事件概率的指数级近似，再以小样本随机梯度驱动拓扑迭代，避免每一步都嵌套高成本的完整 Monte Carlo 可靠度回路。对结构工程师而言，这意味着显式 reliability constraint 有机会重新回到大尺度概念设计，而不再只适合论文级小算例。若这条路线成熟，未来轻量化支架、增材制造构件和高后果设施支撑系统的优化，将更容易同时讨论质量、刚度与 failure probability，而不是只给出名义性能最优的形状。更重要的是，它把工程软件的竞争点从“能否生成漂亮拓扑”推向“能否生成带风险边界的可审计拓扑”。",
-        "en": "The paper surfaces a structural-design issue that is often blurred in practice: making a design 'robust' under uncertainty is not the same as satisfying an auditable target failure probability. The authors use large deviation theory to obtain exponential estimates of rare-event likelihoods and then drive topology updates with low-sample stochastic gradients, avoiding a full nested Monte Carlo reliability loop at every iteration. For structural engineers, that matters because explicit reliability constraints may become feasible again in large-scale concept design rather than remaining confined to paper-sized demonstrations. If this line matures, future optimization of lightweight supports, additively manufactured members, and high-consequence facility framing could handle mass, stiffness, and failure probability in one tractable workflow. It also shifts the software question from 'can it generate an elegant topology' to 'can it generate a topology with an auditable risk boundary'."
+        "zh": "这项工作的专业价值在于，它把工程界对“AI 改模型”的直觉拉回到了结构化事实层面。BIM 不是只把几何画对就结束了，模型还要保留对象语义、拓扑关系与场景约束的一致性。对土木与结构团队而言，这意味着下一阶段更现实的产品形态不是让模型直接自由修改 IFC，而是把它放进受约束微编辑、规则校核、变更比对、审图问答与人工复核闭环里。真正能落地的竞争力将来自可追溯、可回滚、可验证，而不是只看模型会不会“生成”。",
+        "en": "The practical importance of this benchmark is that it pulls the industry's intuition about 'AI editing models' back to structured reality. BIM is not solved when geometry looks approximately correct; a usable model must preserve semantic meaning, topology, and scene-level constraints at the same time. For civil and structural teams, that means the more realistic next wave is not letting a model freely rewrite IFC, but embedding it inside constrained micro-edits, rule checks, change comparison, drawing review support, and human sign-off loops. The durable competitive edge will come from traceability, reversibility, and verification rather than from generation alone."
       },
       "caveat": {
-        "zh": "当前验证仍以梁类基准与特定失效准则为主，距离复杂非线性连接、施工约束和多工况项目级落地还有距离；但它清楚指出了可靠度约束优化重新实用化的方向。",
-        "en": "The current validation is still centered on beam-style benchmarks and selected failure criteria, so it remains some distance from nonlinear connections, construction constraints, and multi-case project deployment. Even so, it clearly points toward a more practical form of reliability-constrained optimization."
+        "zh": "该基准聚焦 IFC 编辑，不等于否定 LLM 在规范问答、构件检索或文档整理中的价值；它显示的是，越接近生产模型本体，越需要受约束接口与审计机制。",
+        "en": "The benchmark focuses on IFC editing, so it does not dismiss LLM value in standards Q&A, component retrieval, or document structuring. It shows that the closer the workflow gets to the production model itself, the more constrained interfaces and audit mechanisms matter."
       },
-      "reference": "Maghazeh et al., Reliability-based Topology Optimization using Large Deviation Theory, arXiv:2604.27208, submitted 2026-04-29",
+      "reference": "Nithyanantham et al., BIM-Edit: Benchmarking Large Language Models for IFC-Based Building Information Modeling, arXiv:2606.20146, submitted 2026-06-18",
       "referenceLinks": [
         {
-          "label": "arXiv: Reliability-based Topology Optimization using Large Deviation Theory",
-          "url": "https://arxiv.org/abs/2604.27208"
+          "label": "arXiv: BIM-Edit benchmark for IFC-based BIM editing",
+          "url": "https://arxiv.org/abs/2606.20146"
         }
       ]
     },
     {
       "area": {
-        "zh": "桥梁数字孪生与运维",
-        "en": "Bridge Digital Twins and Operations"
+        "zh": "低碳钢筋混凝土设计",
+        "en": "Low-Carbon Reinforced Concrete Design"
       },
       "title": {
-        "zh": "利用现有交通摄像头和天气 API 的桥梁数字孪生框架，说明低附加硬件 SHM 正在变成现实路线",
-        "en": "A bridge digital twin built on traffic cameras and weather APIs shows low-additional-hardware SHM is becoming a realistic path"
+        "zh": "材料高效 RC 拓扑优化研究显示，减碳路径不只在替代胶凝材料，更在于把几何与受力路径一起重新设计",
+        "en": "New materially efficient RC topology-optimisation work shows that decarbonisation is not only about binder substitution, but also about redesigning geometry and load paths together"
       },
       "evidence": {
-        "zh": "研究类型：2026 年 3 月预印本；方法：融合 YOLOv8 交通视觉、LWR 交通流模型、天气 API、Monte Carlo 不确定性分析和随机森林维护分类；对象：服役 99 年的 Peace Bridge；结论：可在少量新增硬件条件下形成疲劳与维护分类代理指标。",
-        "en": "Evidence: a March 2026 preprint combining YOLOv8 traffic vision, an LWR traffic-flow model, weather APIs, Monte Carlo uncertainty analysis, and random-forest maintenance classification on the 99-year-old Peace Bridge; the framework generates fatigue and maintenance proxies with minimal new sensing hardware."
+        "zh": "研究类型：2026 年 4 月预印本；方法：面向钢筋混凝土构件开发两套拓扑优化框架并完成实体制作与试验；结果：在相同材料用量下，优化梁达到延性破坏且极限承载力比常规设计高 36% 至 42%，分析显示材料仍有约 33% 的进一步压缩空间。",
+        "en": "Evidence: an April 2026 preprint developing two topology-optimisation frameworks for reinforced-concrete members and validating them through fabrication and testing; with the same material quantity, the optimised beams failed in a ductile manner and carried 36% to 42% more load than the conventional design, with analytical comparisons indicating roughly 33% further reduction potential."
       },
       "summary": {
-        "zh": "这项研究的价值不在于再画一个“数字孪生”概念图，而在于它示范了一条对存量基础设施更现实的部署路径。作者没有假设桥上已经布满昂贵传感器，而是优先利用交通摄像头和公开天气数据，把车辆密度、减速冲击、冻融循环、降雨腐蚀潜势和风效应等信息汇入同一个监测框架。对桥梁与运维工程师而言，这代表一种重要转向：未来 SHM 不一定先从大规模硬件铺设开始，也可以先从现有信息流的结构化利用开始，再决定哪些位置值得补上传感器。对于预算受限但车流繁忙的老桥，这种路线尤其有吸引力，因为它把“监测覆盖率”与“部署成本”之间的门槛显著压低，同时保留后续与更高精度测量融合的空间。",
-        "en": "The contribution is not another abstract digital-twin diagram. It is a more deployable path for existing infrastructure. Instead of assuming a bridge is already covered in premium sensors, the authors start with available traffic cameras and public weather data, then integrate vehicle density, braking shockwaves, freeze-thaw exposure, precipitation-linked corrosion potential, and wind effects into one monitoring workflow. For bridge and asset-management engineers, that signals an important shift: SHM does not always have to begin with large new instrumentation campaigns. It can begin by structuring existing information streams and then deciding where targeted sensors are actually worth adding. That makes the approach especially relevant to aging, heavily trafficked bridges under budget constraints, because it lowers the entry cost for predictive maintenance while leaving room to layer in higher-fidelity measurements later."
+        "zh": "这项工作的趋势意义在于，它把低碳 RC 讨论从“换一种材料配方”推进到“重新组织材料分布与受力路径”。对结构工程师来说，这意味着未来的 embodied-carbon 优化不应只停留在水泥替代率或材料强度等级，而会更频繁地与截面形态、钢筋布置、施工可达性和制造方式一起联动。若这一方向成熟，设计团队将更早在概念阶段就把碳、受力、模具与施工约束耦合考虑，而不是等定型后再做材料层面的微调。",
+        "en": "The broader trend is that low-carbon RC is moving beyond the question of 'which binder system should we use' toward the question of how material should be distributed through the member in the first place. For structural engineers, that means embodied-carbon optimisation will increasingly interact with section form, reinforcement strategy, constructability, and fabrication method instead of sitting only in material-specification decisions. If this direction matures, design teams will be pushed to couple carbon, force flow, formwork, and construction constraints much earlier in concept development rather than tuning the material recipe after the structural scheme is already fixed."
       },
       "caveat": {
-        "zh": "该框架目前仍依赖交通代理荷载与单桥案例校验，不能替代关键截面的直接应变、位移和细部损伤量测；但它为低成本桥梁运维数字化提供了清晰的第一步。",
-        "en": "The framework still relies on traffic-based load proxies and single-bridge validation, so it does not replace direct strain, displacement, or detailed damage measurements at critical sections. It does, however, provide a clear first step for lower-cost bridge-operations digitization."
+        "zh": "当前成果仍建立在特定构件、试验条件与研究型制造流程之上，距离大规模工程标准化、审图接受和常规施工容差控制还有距离。",
+        "en": "The current evidence is still tied to specific member types, controlled testing, and research-grade fabrication. There is still a gap to broad code standardisation, checking acceptance, and routine construction-tolerance control."
+      },
+      "reference": "Jewett and Carstensen, Topology Optimization for Materially Efficient Reinforced Concrete Design: Development, Fabrication, and Structural Evaluation, arXiv:2604.22070, submitted 2026-04-23",
+      "referenceLinks": [
+        {
+          "label": "arXiv: materially efficient reinforced concrete topology optimisation",
+          "url": "https://arxiv.org/abs/2604.22070"
+        }
+      ]
+    },
+    {
+      "area": {
+        "zh": "轻量级桥梁数字孪生",
+        "en": "Lightweight Bridge Digital Twins"
+      },
+      "title": {
+        "zh": "桥梁交通与天气混合孪生研究表明，下一代养护并不一定从重传感开始，而可能先从既有摄像头和开放数据起步",
+        "en": "A traffic-and-weather hybrid bridge twin suggests the next maintenance upgrade may start not with dense new sensors, but with existing cameras and open data"
+      },
+      "evidence": {
+        "zh": "研究类型：2026 年 3 月预印本；场景：服役 99 年的 Peace Bridge；方法：融合交通摄像头识别、天气 API、LWR 交通流模型、蒙特卡洛与随机森林；目标：在不新增重型监测系统的前提下构建疲劳与养护分类代理。",
+        "en": "Evidence: a March 2026 preprint demonstrated on the 99-year-old Peace Bridge, combining traffic-camera inference, weather APIs, an LWR traffic-flow model, Monte Carlo analysis, and random-forest classification to build fatigue and maintenance proxies without a heavy new sensor layer."
+      },
+      "summary": {
+        "zh": "这项工作的专业启发在于，数字孪生不一定要从高成本、全量传感和高保真有限元同时起步。对大量预算有限、但又面临老龄化和高交通需求的桥梁资产而言，更现实的路线可能是先把现有摄像头、天气数据和少量结构知识拼成一个可持续更新的轻量级孪生，再逐步决定哪里值得补充传感与更精细建模。对工程团队来说，这意味着资产管理能力将越来越依赖“数据拼接 + 物理解释 + 风险排序”的组合，而不是单纯等待一套昂贵而完整的监测系统。",
+        "en": "The important engineering lesson is that a digital twin does not have to begin with a high-cost, full-sensor, high-fidelity stack all at once. For many ageing bridges that face high traffic demand but limited budgets, the more realistic path may be to assemble a lightweight twin first from existing cameras, weather feeds, and a modest amount of structural knowledge, and then decide where additional sensing and deeper modelling are worth the expense. For engineering teams, that means asset-management capability will increasingly depend on combining stitched data, physical interpretation, and risk ranking rather than waiting for a single expensive and comprehensive monitoring package."
+      },
+      "caveat": {
+        "zh": "该研究仍是单桥案例，且交通与天气代理量能否稳定代表真实损伤演化，需要在更多桥型、边界条件和长期校准数据中验证。",
+        "en": "This is still a single-bridge case study, and the ability of traffic and weather proxies to represent real damage evolution needs validation across more bridge types, boundary conditions, and long-term calibration datasets."
       },
       "reference": "Balijepalli et al., Traffic and weather driven hybrid digital twin for bridge monitoring, arXiv:2603.14028, submitted 2026-03-14",
       "referenceLinks": [
         {
-          "label": "arXiv: Traffic and weather driven hybrid digital twin for bridge monitoring",
+          "label": "arXiv: traffic and weather driven hybrid digital twin for bridge monitoring",
           "url": "https://arxiv.org/abs/2603.14028"
-        }
-      ]
-    },
-    {
-      "area": {
-        "zh": "电力基础设施韧性",
-        "en": "Power-Infrastructure Resilience"
-      },
-      "title": {
-        "zh": "“对抗性野火”建模把最坏工况直接写进电网调度，提示气候风险设计正在从平均灾害走向高后果失效序列",
-        "en": "Adversarial wildfire modeling writes worst-case fire behavior directly into grid operations, showing climate-risk design moving toward high-consequence failure sequences"
-      },
-      "evidence": {
-        "zh": "研究类型：2026 年 3 月预印本；方法：建立遵守真实蔓延动力学的混合整数锥优化模型，并与安全约束最优潮流耦合；对象：源自加州近期火灾的测试场景；结论：可识别最短停运时间与最大负荷损失，并据此筛选韧性关键故障序列。",
-        "en": "Evidence: a March 2026 preprint that formulates a mixed-integer conic model for physically realistic adversarial wildfire spread and couples it with security-constrained optimal power flow; test cases derived from recent California fires identify minimum time-to-outage and maximum load-shed sequences."
-      },
-      "summary": {
-        "zh": "这篇工作把基础设施韧性分析从“平均火行为下的脆弱性”推进到“最坏但物理可行的失效序列”。它不是简单问某条线路着火概率多大，而是反过来寻找怎样的风助火蔓延路径最容易打掉关键元件、最快触发停运，并把这种结果直接送回调度与应急约束之中。对土木、输电和基础设施风险团队而言，这种思路很重要，因为未来的韧性设计不应只做单资产加固清单，还要识别哪些走廊、站点组合和恢复路径构成真正的系统级脆弱点。随着高温、干旱和野火季延长，基础设施设计语言正在从“够不够安全”转向“在极端连锁扰动下还能维持多少服务、多久恢复”。",
-        "en": "This work pushes resilience analysis from vulnerability under average wildfire behavior toward failure sequences that are extreme yet still physically plausible. It does not merely ask for the probability that one line is exposed. It searches for wind-assisted fire paths most likely to disable critical components, trigger outage fastest, and then feeds those outcomes back into operational and emergency constraints. For civil, transmission, and infrastructure-risk teams, that matters because resilience design can no longer stop at single-asset hardening lists. It has to identify which corridors, substation combinations, and recovery paths are true system-level weak points. As heat, drought, and wildfire seasons intensify, the design language of infrastructure is shifting from 'is it safe enough' toward 'how much service remains under cascading extremes, and how quickly can it recover'."
-      },
-      "caveat": {
-        "zh": "模型目前聚焦电网运行与火蔓延优化，尚未把详细资产 fragility、现场消防资源和恢复施工时程完全纳入；但它为高后果情景下的韧性筛选提供了更有针对性的框架。",
-        "en": "The model currently emphasizes grid operations and wildfire-spread optimization rather than full asset fragility detail, firefighting resource limits, or construction recovery schedules. Still, it provides a sharper framework for resilience screening under high-consequence scenarios."
-      },
-      "reference": "Brun et al., Modeling Adversarial Wildfires for Power Grid Disruption, arXiv:2603.18473, submitted 2026-03-19",
-      "referenceLinks": [
-        {
-          "label": "arXiv: Modeling Adversarial Wildfires for Power Grid Disruption",
-          "url": "https://arxiv.org/abs/2603.18473"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "梁挠度不是一个全球通用数字：为什么中国、澳洲、欧洲与美国对“同一根梁的位移”说的不是同一种设计语言",
-      "en": "Beam deflection is not a globally interchangeable number: why China, Australia, Europe, and the U.S. do not speak the same design language about movement"
+      "zh": "同样叫“设计风”，为什么中国、欧洲、澳洲与美国并不是在用同一种输入语言",
+      "en": "Why 'design wind' is not the same input language across China, Europe, Australia, and the U.S."
     },
     "text": {
-      "zh": "跨规范讨论里，很多人会把挠度限值当成像材料强度那样可以直接对照的数字，例如看到某体系写 L/250、另一体系写 L/360，就自然地把后者理解成“更严格”。真正的问题没有这么简单。梁的弹性挠度来自相同的力学，但各国规范对“什么位移会让结构不好用、不好看、损伤装修或影响隔墙”有不同的服务性判断，因此总挠度、活荷载挠度、装修后新增挠度和长期挠度常常不是同一件事。中国、澳洲、欧洲与美国的差异，更多来自使用场景、构造敏感性、长期徐变处理和验算时点，而不是来自谁掌握了不同的梁力学。",
-      "en": "In cross-code discussions, deflection limits are often treated as if they were material-strength numbers that can be compared directly. If one system says L/250 and another says L/360, the second is often assumed to be simply 'stricter'. The real situation is less direct. Elastic beam deflection comes from the same mechanics everywhere, but code families make different serviceability judgments about what level of movement becomes functionally problematic, visually objectionable, damaging to finishes, or harmful to partitions. As a result, total deflection, live-load deflection, additional post-finish deflection, and long-term deflection are often different checks rather than the same check with different numbers. The divergence across China, Australia, Europe, and the U.S. is therefore driven more by use case, detailing sensitivity, creep treatment, and verification stage than by different beam mechanics."
+      "zh": "跨规范讨论风荷载时，最容易出现的误解之一，就是把一个“基本风速”或“基本风压”当成可以直接横向替换的输入。真正的差别不只在单位，而在于各体系把风险水平、场地影响、方向效应、地形放大、阵风统计和动力放大放在了不同位置。欧洲常从基本风速和速度压链条出发；美国工程语境更习惯把速度压直接写进构件风压验算；澳洲把区域风速与场地、方向、地形乘子组织成设计风速链；中国则更常从基本风压及其高度、体型和振动修正进入结构风作用。看上去都在求“风荷载”，但设计输入被包装的方式并不相同，因此不能只搬运一个数值而忽略整条转换路径。",
+      "en": "One of the most common mistakes in cross-code wind discussions is to treat a single 'basic wind speed' or 'basic wind pressure' as if it could be transferred directly from one system to another. The real difference is not just units. It is that each code family stores risk level, site effects, directionality, topographic amplification, gust statistics, and dynamic amplification in different places. European practice often begins from a basic-wind-speed to velocity-pressure chain. U.S. practice more often writes velocity pressure directly into member pressure checks. Australian practice organises regional wind speed together with terrain, direction, and topographic multipliers into a design-speed chain. Chinese practice more often carries basic wind pressure forward through height, shape, and vibration modifiers. All of these are solving for wind action, but they do not package the design input in the same way, so one number cannot be transplanted without the full conversion path."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "先区分力学公式与服务标准",
-          "en": "Separate the mechanics from the service criterion"
+          "zh": "先问起点是风速还是风压，再问数值大小",
+          "en": "Ask whether the starting point is speed or pressure before comparing the number"
         },
         "text": {
-          "zh": "梁的挠度计算出自相同的弹性梁理论，但规范差异主要发生在“允许多大位移”以及“在哪个荷载阶段看这个位移”。因此跨规范比较时，不能只比较跨度比数字。",
-          "en": "Beam deflection calculation comes from the same elastic-beam theory, while code differences mainly arise in what movement is acceptable and under which load stage it is checked. Cross-code comparison therefore cannot stop at the span-ratio number."
+          "zh": "有的体系把风险首先包装成基本风速，再通过空气动力学关系转成压力；有的体系则把基本风压更直接地作为作用起点。若不先对齐输入语言，就无法判断两个值是否真可比。",
+          "en": "Some systems package risk first as a basic wind speed and then convert it into pressure through aerodynamic relations, while others carry basic pressure more directly as the action starting point. Without aligning that input language first, two numbers are not meaningfully comparable."
         }
       },
       {
         "label": {
-          "zh": "总挠度、活荷载挠度与装修后新增挠度不是同一个量",
-          "en": "Total deflection, live-load deflection, and post-finish additional deflection are not the same quantity"
+          "zh": "场地、方向与地形修正并不都放在同一层",
+          "en": "Site, direction, and topographic modifiers are not stored at the same layer"
         },
         "text": {
-          "zh": "有的体系更关心总视觉平顺性，有的更关心可变荷载引起的即时变形，还有的特别强调装修、吊顶或隔墙完成后的新增位移。若不先对齐验算对象，L/360 与 L/250 并无直接胜负关系。",
-          "en": "Some systems care more about total visual straightness, some about immediate movement under variable actions, and others emphasize additional movement after finishes, ceilings, or partitions are in place. Without aligning the checked quantity first, L/360 and L/250 do not have a simple winner-loser relationship."
+          "zh": "澳洲常把这些因素放进设计风速链，美国更常通过暴露、地形与方向修正进入速度压，欧洲则把平均风速、湍流与峰值压力关系串联起来。中国还会把振动系数显式保留在结构风作用表达中。",
+          "en": "Australia often pushes these effects into the design-speed chain, the U.S. more often routes them through exposure, topography, and direction within velocity pressure, while Europe links mean speed, turbulence, and peak pressure. China also tends to keep a vibration factor explicit in the structural wind-action expression."
         }
       },
       {
         "label": {
-          "zh": "长期徐变与非结构构件敏感性决定限值不能生搬硬套",
-          "en": "Long-term creep and non-structural sensitivity are why limits cannot be transplanted blindly"
+          "zh": "跨规范比较必须同时映射风险水平与作用表达",
+          "en": "Cross-code comparison has to map both risk level and action expression"
         },
         "text": {
-          "zh": "钢梁、混凝土梁和复合梁在长期阶段的表现不同，幕墙、脆性隔墙和精装修对位移也有不同容忍度。规范语言差异，本质上是在把这些长期与使用后果打包进不同的服务性检查里。",
-          "en": "Steel, concrete, and composite members behave differently over time, and curtain walls, brittle partitions, and high-finish interiors tolerate movement differently. Much of the code-language divergence is really different packaging of those long-term and usage consequences into serviceability checks."
+          "zh": "如果只比一个风速或一个风压数字，就会漏掉重现期、重要性、阵风定义、体型系数和动力修正对最终设计作用的共同影响。",
+          "en": "If you compare only one wind speed or one pressure value, you miss the combined influence of return period, importance treatment, gust definition, shape coefficients, and dynamic modification on the final design action."
         }
       }
     ],
     "takeaway": {
-      "zh": "比较不同国家的挠度要求时，不要先问“哪个跨度比更严”，而要先问：验算的是总位移、活荷载位移还是装修后的新增位移？是否考虑长期徐变？是否有对隔墙、幕墙或设备的额外保护要求？只有把这些问题对齐，挠度限值才可比较。",
-      "en": "When comparing deflection requirements across countries, do not begin with 'which span ratio is stricter'. First ask whether the check is on total movement, live-load movement, or additional post-finish movement; whether long-term creep is included; and whether partitions, facades, or equipment impose extra protection requirements. Only then do the limits become meaningfully comparable."
+      "zh": "比较不同国家风荷载体系时，不要把一个“基本风速”或“基本风压”当成可直接兑换的工程标签。先确认风险如何定义、输入从风速还是风压起步、场地和动力修正放在哪一层，再比较最终设计作用。",
+      "en": "When comparing national wind-loading systems, do not treat one 'basic wind speed' or 'basic wind pressure' as a directly exchangeable engineering label. First identify how risk is defined, whether the input starts from speed or pressure, and where site and dynamic modifiers are applied, then compare the final design action."
     },
     "example": {
       "title": {
-        "zh": "实例：为什么同一根简支梁在不同规范语境里会得到不同的“挠度判断”",
-        "en": "Example: why the same simply supported beam can receive different deflection judgments across code contexts"
+        "zh": "实例：同一座沿海轻型仓库，为什么不同体系会写出完全不同的风作用起算式",
+        "en": "Example: why the same coastal light industrial warehouse begins with very different wind-action expressions across code families"
       },
       "intro": {
-        "zh": "下面做一个概念对照型算例，而不是代替任何一本规范的完整条文流程。设一根等截面简支梁承受均布荷载，先从共享的弹性挠度公式出发，再把服务性限值写成无量纲跨度比，最后把“装修后新增位移”的检查单独拆出来。这样可以看清：不同体系的差异主要不是梁会不会弯，而是何时量、量哪一部分，以及哪一部分会伤到使用功能或非结构构件。",
-        "en": "The following is a conceptual comparison rather than a substitute for any full code procedure. Consider a prismatic simply supported beam under uniform load. We start from the shared elastic deflection relation, then write serviceability in a dimensionless span-ratio form, and finally separate the additional movement that occurs after finishes are installed. The point is to show that code differences are driven less by whether the beam bends and more by when movement is measured, which part of the movement is checked, and which part is considered harmful to function or non-structural components."
+        "zh": "下面做一个“输入语言对照”算例，而不是替代任何一本规范的完整风设计流程。设一座低层沿海仓库，需要估计外墙或屋面上的设计风作用。关注点不是算出唯一正确答案，而是观察不同体系如何把风险水平、场地影响与空气动力关系组织成设计输入：有的从基本风速开始，有的从速度压开始，有的把基本风压直接带入高度与体型修正。",
+        "en": "The following is an input-language comparison rather than a substitute for any full wind-design procedure. Consider a low-rise coastal warehouse where the engineer needs a design wind action for walls or roof zones. The point is not to compute one universal answer, but to observe how different systems package risk level, site effects, and aerodynamic relations into the design input: some begin with basic wind speed, some with velocity pressure, and some carry basic wind pressure directly into height and shape modifiers."
       },
       "equations": [
         {
           "label": {
-            "zh": "共享的弹性挠度起点",
-            "en": "Shared elastic-deflection starting point"
+            "zh": "共同的动力压物理起点",
+            "en": "Shared dynamic-pressure physical starting point"
           },
-          "formula": "δmax = 5 w L⁴ / (384 E I)",
+          "formula": "q = 0.5 ρ V²",
           "formulaTokens": [
             {
-              "var": "δ"
+              "var": "q"
             },
             {
-              "sub": "max"
+              "text": " = 0.5 "
             },
             {
-              "text": " = 5 "
-            },
-            {
-              "var": "w"
-            },
-            {
-              "text": " L⁴ / (384 "
-            },
-            {
-              "var": "E"
+              "var": "ρ"
             },
             {
               "text": " "
             },
             {
-              "var": "I"
+              "var": "V"
             },
             {
-              "text": ")"
+              "text": "²"
             }
           ],
           "citation": {
-            "zh": "推导关系：基于 Euler-Bernoulli 梁理论中等截面简支梁在均布荷载下的经典弹性挠度表达；用于说明各国规范共享相同的力学起点，这里不是编号规范公式。",
-            "en": "Derived relation: based on the classical Euler-Bernoulli expression for a prismatic simply supported beam under uniform load. It is used here to show that code families share the same mechanics baseline and is not presented as a numbered code equation."
+            "zh": "推导关系：基于伯努利动力压表达，用于说明各体系最终都要把风速与压力联系起来；这里是力学起点，不是某一本规范的编号条文。",
+            "en": "Derived relation: based on the Bernoulli dynamic-pressure expression and used to show that every code family must ultimately connect wind speed to pressure; this is a mechanics starting point, not a numbered code equation."
           },
           "result": {
-            "zh": "不同规范的挠度语言首先建立在同一条力学关系上，差异并不来自梁的基本弯曲机理。",
-            "en": "Different code languages begin from the same mechanics relation; the divergence does not come from a different basic bending model."
+            "zh": "无论规范语言如何变化，速度与压力之间的物理联系都存在；差别在于规范把哪些修正放在这条关系之前，哪些放在之后。",
+            "en": "Whatever the code notation, the physical link between speed and pressure remains. The difference is which modifiers the code applies before that relation and which it applies after."
           }
         },
         {
           "label": {
-            "zh": "常见的跨度比式服务性判断",
-            "en": "Common span-ratio form of serviceability judgment"
+            "zh": "欧标基本速度压表达",
+            "en": "Eurocode basic velocity-pressure expression"
           },
-          "formula": "δmax / L ≤ 1 / n",
+          "formula": "qᵦ = 0.5 ρ vᵦ²",
           "formulaTokens": [
             {
-              "var": "δ"
+              "var": "q"
             },
             {
-              "sub": "max"
+              "sub": "b"
             },
             {
-              "text": " / "
+              "text": " = 0.5 "
             },
             {
-              "var": "L"
+              "var": "ρ"
             },
             {
-              "text": " ≤ 1 / "
+              "text": " "
             },
             {
-              "var": "n"
+              "var": "v"
+            },
+            {
+              "sub": "b"
+            },
+            {
+              "text": "²"
             }
           ],
           "citation": {
-            "zh": "推导关系：把服务性限值写成通用跨度比形式，用于概念比较不同规范如何表达“可接受位移”；其中 n 会随使用功能、装修敏感性和检查对象变化，这里不是任何单一本规范的照录条文。",
-            "en": "Derived relation: a generic span-ratio form used to compare how different codes express acceptable movement. The value of n changes with occupancy, finish sensitivity, and the specific movement being checked, and this expression is not copied from any single numbered provision."
+            "zh": "EN 1991-1-4:2005+A1:2010，Cl. 4.5(1)，Eq. (4.10)。该式展示欧洲体系如何把基本风速转换为基本速度压。",
+            "en": "EN 1991-1-4:2005+A1:2010, Cl. 4.5(1), Eq. (4.10). This equation shows how Eurocode converts basic wind speed into basic velocity pressure."
           },
           "result": {
-            "zh": "真正可变的是 n 的含义与适用场景，而不是“跨度比形式”本身。",
-            "en": "What really varies is the meaning of n and the situation to which it is applied, not the span-ratio format itself."
+            "zh": "在欧洲语言里，风速到压力的转换被清楚保留，后续再结合暴露、湍流和压力系数组织峰值作用。",
+            "en": "In the European language, the conversion from speed to pressure remains explicit, and later steps organise peak action through exposure, turbulence, and pressure coefficients."
           }
         },
         {
           "label": {
-            "zh": "装修后新增位移的分阶段表达",
-            "en": "Stage-based expression for additional post-finish movement"
+            "zh": "美国速度压格式示意",
+            "en": "Illustrative U.S. velocity-pressure format"
           },
-          "formula": "Δδadd = δfinal - δ0",
+          "formula": "qz = 0.613 Kz Kzt Kd V²",
           "formulaTokens": [
             {
-              "var": "Δδ"
+              "var": "q"
             },
             {
-              "sub": "add"
+              "sub": "z"
+            },
+            {
+              "text": " = 0.613 "
+            },
+            {
+              "var": "K"
+            },
+            {
+              "sub": "z"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "K"
+            },
+            {
+              "sub": "zt"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "K"
+            },
+            {
+              "sub": "d"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "V"
+            },
+            {
+              "text": "²"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：基于 ASCE/SEI 7-22 第 26 章速度压格式，用于说明美国语境常把暴露、地形与方向修正整理进速度压表达；这里作为教学性格式示意，不视为完整编号公式照录。",
+            "en": "Derived relation: based on the velocity-pressure formulation in Chapter 26 of ASCE/SEI 7-22 and used to show how U.S. practice often organises exposure, topography, and direction adjustments inside the velocity-pressure expression; it is presented here as a teaching-format illustration rather than a copied full numbered equation."
+          },
+          "result": {
+            "zh": "美国表达通常让工程师先得到某一高度处的速度压，再通过外压、内压和组合规则进入围护或主体结构验算。",
+            "en": "U.S. notation typically gives the engineer a velocity pressure at a given height first, and then carries that quantity into cladding or MWFRS checks through pressure coefficients and combination rules."
+          }
+        },
+        {
+          "label": {
+            "zh": "澳洲设计风速乘子链",
+            "en": "Australian design-wind-speed multiplier chain"
+          },
+          "formula": "Vdes,θ = VR Md Mz,cat Ms Mt",
+          "formulaTokens": [
+            {
+              "var": "V"
+            },
+            {
+              "sub": "des,θ"
             },
             {
               "text": " = "
             },
             {
-              "var": "δ"
+              "var": "V"
             },
             {
-              "sub": "final"
+              "sub": "R"
             },
             {
-              "text": " - "
+              "text": " "
             },
             {
-              "var": "δ"
+              "var": "M"
+            },
+            {
+              "sub": "d"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "M"
+            },
+            {
+              "sub": "z,cat"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "M"
+            },
+            {
+              "sub": "s"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "M"
+            },
+            {
+              "sub": "t"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：基于 AS/NZS 1170.2:2021 的区域风速与方向、地形、屏蔽和地势乘子框架，用于说明澳洲体系常先形成设计风速链，再进入风压与净压力计算；这里是教学性整理，不视为编号条文公式照录。",
+            "en": "Derived relation: based on the AS/NZS 1170.2:2021 framework of regional wind speed together with direction, terrain-height, shielding, and topographic multipliers. It is used here to show that Australian practice often forms a design-speed chain before moving into pressure and net-pressure calculation; this is a teaching-oriented synthesis rather than a copied numbered code equation."
+          },
+          "result": {
+            "zh": "在澳洲语言里，工程师首先管理的是一个被多种场地效应修正后的设计风速，而不是单独搬运一个裸风压数字。",
+            "en": "In Australian practice, the engineer first manages a design wind speed modified by several site effects rather than transferring one bare pressure value by itself."
+          }
+        },
+        {
+          "label": {
+            "zh": "中国风荷载标准值的压力链思路",
+            "en": "Chinese pressure-chain concept for standard wind action"
+          },
+          "formula": "wk = βz μs μz w0",
+          "formulaTokens": [
+            {
+              "var": "w"
+            },
+            {
+              "sub": "k"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "β"
+            },
+            {
+              "sub": "z"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "μ"
+            },
+            {
+              "sub": "s"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "μ"
+            },
+            {
+              "sub": "z"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "w"
             },
             {
               "sub": "0"
             }
           ],
           "citation": {
-            "zh": "推导关系：基于分阶段服务性验算，把最终位移与装修、隔墙或吊顶安装时的基准位移相减，用于解释为什么有些体系特别关注后续新增挠度；这里为概念表达，不是编号条文公式。",
-            "en": "Derived relation: based on stage-by-stage serviceability checking, subtracting the baseline movement at the time finishes, partitions, or ceilings are installed from the final movement. It is used to explain why some code families emphasize additional deflection after fit-out and is not a numbered code equation."
+            "zh": "推导关系：基于 GB 50009 风荷载框架，用于说明中国体系常把基本风压与高度变化、体型影响和振动修正直接组织成结构风作用标准值；这里用于概念比较，并非编号公式照录。",
+            "en": "Derived relation: based on the GB 50009 wind-loading framework and used to illustrate how Chinese practice often carries basic wind pressure forward through height variation, shape influence, and vibration modification into the standard structural wind action; it is shown here for concept comparison rather than as a copied numbered equation."
           },
           "result": {
-            "zh": "同样的总挠度，若大部分发生在装修完成后，服务性后果会显著不同，因此部分规范会把新增位移单独拎出来看。",
-            "en": "The same total deflection can have very different serviceability consequences if most of it occurs after fit-out, which is why some systems isolate additional movement as a separate check."
-          }
-        },
-        {
-          "label": {
-            "zh": "把服务性限值反推成截面刚度筛选",
-            "en": "Back-solving serviceability into an inertia screen"
-          },
-          "formula": "Ireq = 5 w L³ n / (384 E)",
-          "formulaTokens": [
-            {
-              "var": "I"
-            },
-            {
-              "sub": "req"
-            },
-            {
-              "text": " = 5 "
-            },
-            {
-              "var": "w"
-            },
-            {
-              "text": " L³ "
-            },
-            {
-              "var": "n"
-            },
-            {
-              "text": " / (384 "
-            },
-            {
-              "var": "E"
-            },
-            {
-              "text": ")"
-            }
-          ],
-          "citation": {
-            "zh": "推导关系：由共享弹性挠度公式与通用跨度比限值联立得到，用于说明工程上常把服务性要求反推为截面刚度初筛条件；这里是计算推导，不是编号规范公式。",
-            "en": "Derived relation: obtained by combining the shared elastic deflection formula with the generic span-ratio limit, illustrating how serviceability is often back-solved into an initial stiffness screen. This is a calculation-based derivation rather than a numbered code equation."
-          },
-          "result": {
-            "zh": "服务性检查常常在概念设计阶段先转化为刚度门槛，而不同规范的差异会直接体现在这个门槛选取上。",
-            "en": "In concept design, serviceability is often translated first into a stiffness threshold, and differences among code families show up directly in how that threshold is chosen."
+            "zh": "这说明中国语境更容易把“基本风压”看成直接工程入口，而不是必须先显式写出完整速度压链。",
+            "en": "This shows why Chinese practice more readily treats basic wind pressure as the direct engineering entry point instead of explicitly writing out the full speed-to-pressure chain first."
           }
         }
       ],
       "note": {
-        "zh": "这个对照算例说明，挠度限值不是一个可以脱离使用场景、阶段定义和非结构后果而单独比较的数字。跨规范迁移时，必须同时映射荷载阶段、长期效应、装修时点与受保护对象，否则同一个跨度比可能代表完全不同的服务性目标。",
-        "en": "This comparison shows that a deflection limit is not a number that can be compared in isolation from use case, stage definition, and non-structural consequences. Cross-code translation has to map load stage, long-term effects, fit-out timing, and the protected elements together, or the same span ratio may represent very different serviceability intentions."
+        "zh": "这个对照算例说明，跨规范比较风荷载时，真正需要搬运的不是某一个风速或风压数字，而是风险定义、场地修正、动力修正与风压系数如何被整套组织成设计作用的逻辑。",
+        "en": "This comparison shows that what must be translated in cross-code wind work is not one wind speed or one pressure value in isolation, but the full logic that organises risk definition, site modifiers, dynamic modifiers, and pressure coefficients into the design action."
       }
     },
-    "references": "Eurocodes JRC portal for Eurocode programme context; Standards Australia catalogue context for Australian limit-state standards; ICC Digital Codes portal for U.S. building-code context; SAMR National Standards Public Service Platform for GB structural standards",
+    "references": "Eurocodes JRC portal for EN 1991 programme context; ASCE Library page for ASCE/SEI 7-22; Standards Australia catalogue context for AS/NZS 1170.2; SAMR National Standards Public Service Platform for GB 50009 and related Chinese structural standards",
     "referenceLinks": [
       {
         "label": "Eurocodes JRC portal",
         "url": "https://eurocodes.jrc.ec.europa.eu/"
       },
       {
-        "label": "Standards Australia",
-        "url": "https://www.standards.org.au/"
+        "label": "ASCE Library: ASCE/SEI 7-22 Minimum Design Loads and Associated Criteria for Buildings and Other Structures",
+        "url": "https://ascelibrary.org/doi/book/10.1061/9780784415788"
       },
       {
-        "label": "ICC Digital Codes",
-        "url": "https://codes.iccsafe.org/"
+        "label": "Standards Australia",
+        "url": "https://www.standards.org.au/"
       },
       {
         "label": "SAMR National Standards Public Service Platform",
