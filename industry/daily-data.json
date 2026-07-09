@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-09",
+  "date": "2026-07-10",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,84 +7,88 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "平台游戏重组",
-        "en": "Gaming Platform Reset"
+        "zh": "支付网络所有权",
+        "en": "Payment-Network Ownership"
       },
       "title": {
-        "zh": "Microsoft 对 Xbox 启动 3200 人级别重组，说明主机游戏竞争已从“买工作室扩内容”转向利润结构与平台效率重建",
-        "en": "Microsoft's 3,200-job Xbox reset shows console gaming is shifting from studio roll-ups toward margin repair and platform efficiency"
+        "zh": "美国大行酝酿拿下 Fiserv 借记网络，说明支付竞争正从前端钱包与品牌战转向底层路由所有权与监管套利",
+        "en": "Big banks circling a Fiserv debit network shows payments competition moving from wallets and branding to rail ownership and regulatory positioning"
       },
       "summary": {
-        "zh": "2026 年 7 月 6 日，微软宣布全球裁员 4800 人，其中 Xbox 立即裁减约 1600 人，并计划在 2027 财年内累计削减约 20% 的 Xbox 岗位，同时分拆或出售多家工作室。它反映的不是一次普通成本控制，而是主机业务正在重新回答更根本的问题：当硬件装机放缓、内容预算抬升、订阅补贴承压时，平台方能否维持健康利润。过去几年依靠并购堆叠内容资产的逻辑，正在被更强调现金回报、组织效率和旗舰 IP 聚焦的新阶段取代。",
-        "en": "On July 6, 2026, Microsoft said it would cut 4,800 jobs globally, with about 1,600 immediate reductions inside Xbox and a plan to remove roughly 20% of Xbox roles over fiscal 2027 while spinning off or selling multiple studios. The signal is bigger than one cost program. Console gaming is being forced to answer a more structural question: when installed-base growth is slower, content budgets are larger, and subscription subsidies are harder to justify, can the platform still deliver healthy margins? The acquisition-heavy strategy of accumulating studios and content is giving way to a stricter phase focused on cash returns, operating efficiency, and concentration around fewer franchise-scale assets."
+        "zh": "《华尔街日报》7 月 6 日报道，摩根大通、美国银行、富国和 PNC 等大型银行近月曾初步讨论收购 Fiserv 旗下支付网络资产。其核心动机不是再做一个消费者可见的新品牌，而是试图掌握借记交易的底层路由权，并借此绕开《多德-弗兰克法》Durbin Amendment 对借记卡手续费的约束。如果这一思路继续推进，行业竞争焦点就会进一步从前端钱包、发卡奖励和商户受理界面，下沉到谁拥有结算轨道、谁能重写费率分配以及谁能在 Visa、Mastercard 与大型收单体系之间重新谈判。",
+        "en": "The Wall Street Journal reported on July 6 that JPMorgan Chase, Bank of America, Wells Fargo, and PNC have held preliminary discussions in recent months about acquiring a payment-network asset from Fiserv. The strategic logic is not to launch another consumer-facing payments brand. It is to control the routing layer of debit transactions and potentially sidestep Durbin Amendment fee caps under Dodd-Frank. If that logic advances, competition in payments moves further away from visible wallet features and reward marketing and deeper into who owns the settlement rails, who can reshape fee allocation, and who gains leverage against Visa, Mastercard, and the largest merchant-processing stacks."
       },
       "watch": {
-        "zh": "后续重点看 Game Pass 的投入节奏是否进一步收紧、被剥离工作室能否保持项目交付，以及微软会不会继续把游戏业务从“增长故事”改写成“高回报平台业务”。",
-        "en": "Watch whether Game Pass investment is tightened further, whether divested studios can still ship their pipelines cleanly, and whether Microsoft continues rewriting gaming from a growth narrative into a high-return platform business."
+        "zh": "后续重点看讨论是否会收敛到 STAR 或 Accel 这类具体网络资产、商户与监管方是否迅速反弹，以及“自有轨道”能否重新改写借记奖励和路由 economics。",
+        "en": "Watch whether the talks converge on a specific asset such as STAR or Accel, whether merchants and regulators push back quickly, and whether owned rails materially change debit rewards and routing economics."
       },
-      "reference": "Reporting on Microsoft's Xbox restructuring and the strategic reset behind the job cuts",
+      "reference": "Reporting on large U.S. banks exploring a Fiserv network acquisition and the economics of debit-rail ownership",
       "referenceLinks": [
         {
-          "label": "AP News: Microsoft cuts 4,800 jobs, including many at Xbox in a 'reset' of its gaming division",
-          "url": "https://apnews.com/article/5a8f712c531911089dee008b3bbb33c4"
+          "label": "WSJ: JPMorgan, Bank of America and Other Banks Explore a Deal to Shake Up Payments World",
+          "url": "https://www.wsj.com/finance/banking/jpmorgan-bank-of-america-and-other-banks-explore-a-deal-to-shake-up-payments-world-9d8639fb"
         },
         {
-          "label": "The Verge: Microsoft is selling off four Xbox studios as part of significant gaming cuts",
-          "url": "https://www.theverge.com/news/961546/xbox-layoffs-studio-sales-2026"
+          "label": "Investopedia: Big Banks Are Considering a Deal to Get Around Debit Card Fee Caps",
+          "url": "https://www.investopedia.com/big-banks-are-considering-deal-to-get-around-debit-card-fee-caps-this-fintech-stock-is-rising-fisv-12013196"
         }
       ]
     },
     {
       "topic": {
-        "zh": "海上防务技术",
-        "en": "Maritime Defense Tech"
+        "zh": "合同物流整合",
+        "en": "Contract Logistics Consolidation"
       },
       "title": {
-        "zh": "Lockheed Martin 以 34.5 亿美元收购 Ultra Maritime，说明防务资本正在从空中无人系统外溢到水下自主与海底基础设施防护",
-        "en": "Lockheed Martin's $3.45 billion Ultra Maritime deal shows defense capital rotating from aerial autonomy into undersea systems and subsea infrastructure protection"
+        "zh": "CMA CGM 收购 FedEx Supply Chain，说明航运集团正在把港口与海运优势向北美仓配执行层延伸",
+        "en": "CMA CGM's FedEx Supply Chain deal shows ocean carriers pushing beyond ports and shipping into North American contract-logistics execution"
       },
       "summary": {
-        "zh": "Lockheed Martin 于 2026 年 7 月 6 日宣布将以 34.5 亿美元从 Advent 手中收购 Ultra Maritime。标的并不是传统意义上的“大平台”，而是反潜、声呐、鱼雷防御和盟友海军协同能力上的关键拼图。其行业意义在于，全球安全焦点正在把资本开支从“空中无人化”进一步推向“海上与水下感知、拦截和自主系统”，尤其是海底能源、通信和航运通道的安全正在重新变成防务预算的核心场景。谁能把声学探测、无人载具和盟友标准接口整合成体系，谁就更可能拿到下一轮订单增量。",
-        "en": "On July 6, 2026, Lockheed Martin said it would buy Ultra Maritime from Advent for $3.45 billion. The asset is not a classic giant platform builder; it is a concentrated set of anti-submarine warfare, sonar, torpedo-defense, and allied-naval integration capabilities. The broader signal is that defense spending is extending beyond the aerial-drone wave and moving more decisively into maritime and subsea sensing, interception, and autonomy, especially as undersea energy, communications, and shipping corridors regain strategic centrality. The companies that can integrate acoustics, uncrewed systems, and allied-interface standards into one operating stack are more likely to capture the next procurement upswing."
+        "zh": "CMA CGM 于 7 月 1 日宣布将以 14 亿美元收购 FedEx Supply Chain，并同步规划多年的空运与海运商业合作。这个动作的重点不是单一并购金额，而是全球航运集团正在加速把海运、港口和干线运输优势，往更贴近企业客户的仓储、履约、汽车、医疗和数据中心供应链执行层延伸。对行业而言，这意味着未来竞争不再只是“谁有船、谁有舱位、谁有码头”，而是“谁能把跨境干线、北美合同物流和行业化履约能力打成一个更完整的 B2B 服务包”。",
+        "en": "On July 1, CMA CGM said it would acquire FedEx Supply Chain for $1.4 billion while also setting up multiyear air and ocean freight agreements with FedEx. The larger signal is not the headline deal size by itself. It is that major shipping groups are accelerating their push from ocean freight, ports, and linehaul into the warehouse, fulfilment, healthcare, automotive, and data-center execution layers that sit closer to enterprise customers. In industry terms, competition is shifting away from a narrow question of who has vessels, slots, or terminals and toward who can package cross-border linehaul, North American contract logistics, and sector-specific fulfilment into one broader B2B operating offer."
       },
       "watch": {
-        "zh": "后续重点看美国与盟友海军采购是否把单点装备预算转向更成体系的水下感知与自主能力组合，以及 Lockheed 能否借此加深在盟友反潜链条中的软件与系统黏性。",
-        "en": "Watch whether U.S. and allied naval procurement shifts from stand-alone equipment toward bundled subsea sensing and autonomy packages, and whether Lockheed uses the deal to deepen software and systems lock-in across allied ASW networks."
+        "zh": "后续重点看监管审批是否顺利、FedEx 与 CEVA 的交叉销售是否真正落地，以及这类整合能否把航运集团从周期性运价生意拉向更稳定的仓配利润池。",
+        "en": "Watch whether regulatory approval moves smoothly, whether CEVA and FedEx actually convert the commercial tie-up into cross-selling, and whether this model shifts shipping groups toward steadier warehousing and execution margins."
       },
-      "reference": "Coverage of Lockheed Martin's Ultra Maritime acquisition and the wider maritime-security capital shift",
+      "reference": "Coverage of CMA CGM's acquisition of FedEx Supply Chain and the broader shift toward end-to-end logistics platforms",
       "referenceLinks": [
         {
-          "label": "Axios: Lockheed Martin paying $3.5 billion for naval defense-tech company",
-          "url": "https://www.axios.com/2026/07/06/lockheed-martin-ultra-marine"
-        },
-        {
-          "label": "The Guardian business live: Lockheed Martin to buy naval tech group Ultra Maritime in $3.45bn deal",
-          "url": "https://www.theguardian.com/business/live/2026/jul/06/sky-takeover-itv-broadcasting-media-deal-business-live-news"
+          "label": "AP News: French shipping company CMA CGM Group to buy FedEx Supply Chain for $1.4B",
+          "url": "https://apnews.com/article/shipping-acquisition-fedex-cma-cgm-332be583e75972ea3f8885184b7650bf"
         }
       ]
     },
     {
       "topic": {
-        "zh": "航空业并购",
-        "en": "Airline Buyout Pressure"
+        "zh": "本土芯片链条",
+        "en": "Domestic Chip Supply Chains"
       },
       "title": {
-        "zh": "Castlelake 与 easyJet 达成 55 亿英镑原则性协议，说明低成本航空竞争正在围绕机队资产、燃油韧性与私有化重组重新定价",
-        "en": "Castlelake's £5.5 billion agreement in principle for easyJet shows low-cost aviation is being repriced around fleet assets, fuel resilience, and private-market restructuring"
+        "zh": "Apple 向 Broadcom 承诺逾 300 亿美元美国芯片采购，说明终端巨头正把地缘与关税风险转成更深的本土射频供应链绑定",
+        "en": "Apple's $30 billion Broadcom commitment shows device makers converting geopolitics and tariff risk into deeper domestic radio-chip lock-in"
       },
       "summary": {
-        "zh": "easyJet 于 2026 年 7 月 6 日表示，原则上倾向接受 Castlelake 55 亿英镑、每股 6.90 英镑的收购提议。这不仅是二级市场估值问题，更是低成本航空模式在高燃油波动和资本密集更新周期中的一次重估。买方看中的不只是客运品牌，还有机队所有权、租赁协同、节油更新和潜在业务拆分空间。行业层面上，这说明廉航竞争已不再只拼客座率和票价算法，而是在进入“谁能用更灵活的资本结构消化燃油、机队和需求波动”的新阶段。",
-        "en": "On July 6, 2026, easyJet said it was minded to accept Castlelake's £5.5 billion approach at 690 pence a share. This is more than a public-market valuation event. It is a repricing of the low-cost airline model under high fuel volatility and a capital-intensive fleet-renewal cycle. What the buyer appears to value is not just the passenger brand, but the aircraft-asset base, leasing synergies, fuel-efficiency upgrades, and optionality around business reconfiguration. At the industry level, the signal is that budget-airline competition is no longer only about load factors and fare algorithms. It is moving into a phase where flexible capital structure and asset control matter more in absorbing fuel, fleet, and demand shocks."
+        "zh": "Apple 7 月 8 日表示，未来五年将向 Broadcom 投入超过 300 亿美元采购美国制造芯片，并推动在美国本土生产逾 150 亿颗相关器件。报道同时显示，Broadcom 还将扩建科罗拉多州 Fort Collins 设施。这个动作并不只是“本土制造表态”，而是在把地缘风险、潜在关税、射频与连接芯片供应安全，以及与政策制定者的关系管理，统一进一条更深的本土供应链绑定逻辑。对行业来说，终端巨头正在优先把高出货量、关键但相对成熟的连接组件往美国链条内重新锚定，借此提高韧性和政策可谈判空间。",
+        "en": "Apple said on July 8 that it would spend more than $30 billion with Broadcom over the next five years for U.S.-made chips, helping drive the domestic production of more than 15 billion components. Reporting around the announcement also indicates that Broadcom will expand its Fort Collins, Colorado facility. This is not simply a symbolic statement about domestic manufacturing. It brings geopolitical risk, tariff exposure, radio-frequency and connectivity-chip security, and policy positioning into one deeper domestic-supply-chain logic. For the industry, leading device makers appear to be prioritizing high-volume, strategically important but relatively mature connectivity components for onshore anchoring as a way to build resilience and strengthen their bargaining position with policymakers."
       },
       "watch": {
-        "zh": "后续重点看欧盟所有权结构安排能否顺利落地、easyJet 机队更新是否被加速，以及私有化后是否出现假日业务或资产组合的进一步拆分。",
-        "en": "Watch whether the EU ownership structure can be resolved cleanly, whether fleet modernisation is accelerated, and whether privatisation leads to further separation of holiday or aircraft-related assets."
+        "zh": "后续重点看这种绑定会不会扩展到更多模拟、射频和封装环节，以及终端厂商愿意为本土化供应链承担多大成本溢价。",
+        "en": "Watch whether this logic extends into a broader analog, RF, and packaging stack, and how much cost premium device makers are willing to absorb for domestic resilience."
       },
-      "reference": "Reporting on easyJet's agreement in principle with Castlelake and the implications for low-cost carrier economics",
+      "reference": "Coverage of Apple's expanded Broadcom commitment and its implications for domestic semiconductor manufacturing",
       "referenceLinks": [
         {
-          "label": "The Guardian: EasyJet suggests it will agree to £5.5bn takeover by US investment firm",
-          "url": "https://www.theguardian.com/business/2026/jul/05/easyjet-agrees-to-5bn-takeover-by-us-investment-firm"
+          "label": "WSJ: Apple to Spend $30 Billion on U.S.-Made Chips From Broadcom",
+          "url": "https://www.wsj.com/tech/apple-to-spend-30-billion-on-u-s-made-chips-from-broadcom-aaf23490"
+        },
+        {
+          "label": "Investor's Business Daily: Apple Deal With Broadcom Bolsters Its Made-In-America Goals",
+          "url": "https://www.investors.com/news/technology/apple-stock-broadcom-deal-bolsters-made-in-usa-efforts/"
+        },
+        {
+          "label": "Axios: Apple's expanded Broadcom deal calls for 15 billion U.S.-made chips",
+          "url": "https://www.axios.com/2026/07/08/apple-broadcom-deal-us-chips"
         }
       ]
     }
@@ -92,271 +96,191 @@
   "insights": [
     {
       "area": {
-        "zh": "裂缝智能评估",
-        "en": "Crack Intelligence"
+        "zh": "基坑变形前瞻预报",
+        "en": "Excavation Deformation Forecasting"
       },
       "title": {
-        "zh": "CrackGeoFM 表明，下一代基础设施裂缝 AI 竞争点不再只是分割精度，而是裂缝拓扑连续性与不确定性是否可审计",
-        "en": "CrackGeoFM suggests the next competitive edge in crack AI is not raw segmentation score, but auditable topology preservation and uncertainty"
+        "zh": "实场验证的 ConvLSTM 研究提示，基坑风险管理的高价值增量在于把 staged excavation 监测从事后报警推进到下一步变形预报",
+        "en": "Field-validated ConvLSTM results suggest the highest-value upgrade in excavation risk management is moving from threshold alarms toward forecasting the next deformation step"
       },
       "evidence": {
-        "zh": "研究类型：2026 年 6 月 4 日预印本；方法：冻结视觉基础模型主干并联合预测裂缝掩膜、骨架与不确定性；结果：在 20 个裂缝数据集上获得更强拓扑保持与少样本适应能力。",
-        "en": "Evidence: a June 4, 2026 preprint that freezes a visual-foundation backbone and jointly predicts crack masks, skeletons, and uncertainty; it reports stronger topology preservation and few-shot adaptation across 20 crack datasets."
+        "zh": "研究类型：2026 年 6 月 4 日预印本，6 月 8 日修订；场景：韩国 11 个开挖工地、34 支测斜仪；结果：对最多额外 5.0 m 的开挖阶段，平均绝对误差 1.4 mm，R² 为 0.93。",
+        "en": "Evidence: a June 4, 2026 preprint, revised on June 8, validated on 34 inclinometers across 11 excavation sites in South Korea; for up to 5.0 m of additional excavation, it reports an average mean absolute error of 1.4 mm and an R² of 0.93."
       },
       "summary": {
-        "zh": "这项工作的专业价值在于，它把基础设施裂缝识别从“像不像裂缝”推进到“裂缝几何是否连续、分支是否完整、置信度能否用于决策”。对桥梁、隧道和混凝土资产团队来说，真正高价值的自动化并不是输出一张看起来很准的彩色掩膜，而是输出能支持复检排序、病害分级和维修留痕的结构化信息。未来工程侧的竞争力，很可能来自把计算机视觉结果转成可追踪的 crack topology、uncertainty band 和 inspection triage 规则，而不只是继续堆一个更高的 IoU 指标。",
-        "en": "The practical value of this work is that it pushes infrastructure crack detection beyond the question of 'does it look like a crack' toward the harder questions of geometric continuity, branch completeness, and whether confidence can be used in a maintenance decision. For bridge, tunnel, and concrete-asset teams, the high-value automation layer is not a colourful mask by itself, but structured output that supports reinspection prioritisation, damage grading, and traceable repair records. The durable engineering advantage is likely to come from translating computer-vision output into usable crack topology, uncertainty bands, and inspection-triage rules rather than merely chasing another point of IoU."
+        "zh": "这项工作的专业意义在于，它把深基坑与挡土体系的数字化监测，从“超阈值后报警”推进到“下一施工步可能变成什么样”。对临时支护、分层开挖、预应力支撑复核和现场 hold-point 决策而言，前瞻预报的价值远高于单纯把历史位移曲线画得更漂亮。它意味着 geotechnical observational method 可以更早识别不规则变形演化、提前安排加撑或放缓工序，并把施工阶段风险管理从被动响应转向更接近预测控制。对结构与岩土工程师而言，未来能力门槛将更明显地包含“如何把监测、模拟与施工顺序放进同一判断框架”。",
+        "en": "The engineering importance of this work is that it pushes excavation and retaining-system monitoring beyond after-the-fact threshold alerts toward predicting what the next construction stage is likely to do. For temporary works, staged excavation, strut-force review, and site hold-point decisions, that forward-looking capability is more valuable than simply plotting cleaner historical displacement curves. It points toward an observational-method workflow that can flag irregular deformation evolution earlier, justify support changes or slower sequencing sooner, and shift construction-stage risk management closer to predictive control. For structural and geotechnical engineers, that raises the future skill bar toward integrating monitoring, simulation, and construction sequence inside one decision framework."
       },
       "caveat": {
-        "zh": "该结果仍以图像基准为主，现场光照、拍摄角度、表面污染和不同管理机构的验收阈值，都会影响从模型指标到工程决策的可迁移性。",
-        "en": "The result is still benchmark-heavy. Field lighting, camera angle, surface contamination, and agency-specific acceptance thresholds will all affect how reliably those model gains transfer into real inspection decisions."
+        "zh": "该结果仍建立在有限场地族群上，地下水突变、支撑体系临时变化和异常施工扰动，仍可能超出训练分布并快速削弱预测稳定性。",
+        "en": "The result still depends on a limited family of sites. Groundwater shifts, temporary support changes, and unusual construction disturbances can still move the problem outside the training distribution and weaken forecast stability quickly."
       },
-      "reference": "Kyem et al., Multi-Task Crack Foundation Model for Engineering-Reliable Crack Representation and Topology Preservation in Civil Infrastructure, arXiv:2606.05641, submitted 2026-06-04",
+      "reference": "Kim, Kim, and Youn, Field Validation of a Multi-Resolution ConvLSTM Framework for Retaining Wall Deformation Prediction, arXiv:2606.05556, submitted 2026-06-04, revised 2026-06-08",
       "referenceLinks": [
         {
-          "label": "arXiv: CrackGeoFM for engineering-reliable crack representation",
-          "url": "https://arxiv.org/abs/2606.05641"
+          "label": "arXiv: field validation of a ConvLSTM framework for retaining wall deformation prediction",
+          "url": "https://arxiv.org/abs/2606.05556"
         }
       ]
     },
     {
       "area": {
-        "zh": "混凝土徐变预测",
-        "en": "Concrete Creep Prediction"
+        "zh": "氯盐耐久性建模",
+        "en": "Chloride Durability Modelling"
       },
       "title": {
-        "zh": "数据驱动徐变校准研究提示，时间相关设计的高价值增量不一定来自更复杂公式，而来自把预加载历史和不确定性显式带回模型",
-        "en": "New data-driven creep calibration work suggests the biggest gain in time-dependent design may come less from ever-more formula complexity and more from explicitly carrying preload history and uncertainty into prediction"
+        "zh": "氯离子传输机器学习研究表明，耐久性设计的突破点不只是更复杂神经网络，而是可解释地识别配合比与服役寿命的关联",
+        "en": "New chloride-transport ML work shows the real durability-design gain may come less from bigger networks and more from interpretable links between mixture design and service life"
       },
       "evidence": {
-        "zh": "研究类型：2026 年 4 月 28 日预印本；方法：用高斯过程回归校准解析徐变模型，并显式引入预加载强度、时间与混凝土龄期；结果：提高预测精度并可量化不确定性。",
-        "en": "Evidence: an April 28, 2026 preprint using Gaussian Process Regression to calibrate analytical creep models while explicitly incorporating preload intensity, timing, and concrete age; it reports improved accuracy together with uncertainty quantification."
+        "zh": "研究类型：2026 年 1 月 3 日预印本；方法：比较 LR、KNN、KRR、SVR、GPR、MLP 与 GRU；结果：KRR、GPR 与 MLP 表现较强，GPR 还能较清晰揭示配合比变量与氯离子演化的相关趋势。",
+        "en": "Evidence: a January 3, 2026 preprint comparing LR, KNN, KRR, SVR, GPR, MLP, and GRU models; KRR, GPR, and MLP perform strongly, while the GPR model also exposes clearer correlations between mixture variables and chloride evolution."
       },
       "summary": {
-        "zh": "这项工作的趋势意义在于，它把徐变问题从“选哪条经验公式”推进到“如何把真实施工与加载历史编码进预测框架”。对长跨度楼板、预制构件、施工阶段受力和服役挠度控制来说，预加载历史往往并不是噪声，而可能改变后续徐变幅值和离散性。对结构工程师而言，这意味着未来的 time-dependent design 工作流更可能是“解析模型 + 试验数据 + 概率校准”的混合模式，而不是单纯在规范公式之间切换。谁能把加载历史、监测反馈与不确定性表达统一起来，谁就更容易在材料效率和服务性能之间做出更可信的平衡。",
-        "en": "The broader trend is that creep prediction is moving away from a narrow debate over which empirical formula to choose and toward a richer question of how to encode real construction and loading history into the prediction framework. For long-span slabs, precast systems, staged loading, and serviceability deflection control, preload history is not merely noise; it may change both the magnitude and the scatter of later creep response. For structural engineers, that points toward a hybrid workflow of analytical models plus test data plus probabilistic calibration rather than simple switching between code-style equations. The teams that can unify load history, monitoring feedback, and uncertainty expression will be better placed to balance material efficiency against service performance."
+        "zh": "这项工作的趋势价值在于，它把混凝土耐久性从“暴露等级配一个经验做法”推进到“能否把配合比、扩散行为和寿命推演放进可解释的 surrogate framework”。对海工、桥梁、停车结构和除冰盐环境资产而言，真正有用的不是再多一个黑箱预测器，而是一个能帮助工程师判断哪些材料参数在拉长起蚀时间、哪些优化只是成本堆砌的工具。未来 service-life design 的竞争力，很可能来自物理模型、试验数据库和可解释机器学习的联合，而不是把耐久性仅视作材料规范附录里的被动校核项。",
+        "en": "The broader value of this work is that it pushes concrete durability from a largely prescriptive exposure-class exercise toward a surrogate framework that can connect mixture design, transport behaviour, and service-life projection in a more interpretable way. For marine works, bridges, parking structures, and assets exposed to deicing salts, the useful tool is not just another black-box predictor. It is something that helps engineers understand which material parameters are actually extending corrosion-initiation time and which changes are mostly cost without durable benefit. The competitive edge in service-life design is therefore likely to come from combining physical models, test data, and interpretable machine learning rather than treating durability as a passive appendix check."
       },
       "caveat": {
-        "zh": "该方法的表现仍取决于实验覆盖范围和数据质量，不能替代规范验算；它更像是把传统徐变模型从“固定参数表”升级为“可更新预测器”。",
-        "en": "Performance still depends on the coverage and quality of the training data, and it does not replace code checks. It is better viewed as turning a fixed-parameter creep model into an updateable predictor."
+        "zh": "模型准确度仍受训练数据覆盖度影响，且不能替代规范要求下的材料选型、施工质量与裂缝控制；它更适合做方案比较与耐久性敏感性判断。",
+        "en": "Accuracy still depends on the coverage of the training data, and the model does not replace code-driven material selection, workmanship, or crack control. It is better suited to option comparison and durability sensitivity assessment."
       },
-      "reference": "Heller et al., Data Driven Calibration of Analytical Concrete Creep Models Considering Preloading Effects Using Gaussian Processes, arXiv:2604.25690, submitted 2026-04-28",
+      "reference": "Aliasghar-Mamaghani and Khalafi, Data-Driven Assessment of Concrete Mixture Compositions on Chloride Transport via Standalone Machine Learning Algorithms, arXiv:2601.01009, submitted 2026-01-03",
       "referenceLinks": [
         {
-          "label": "arXiv: data-driven calibration of concrete creep models with preloading effects",
-          "url": "https://arxiv.org/abs/2604.25690"
+          "label": "arXiv: data-driven assessment of concrete mixture compositions on chloride transport",
+          "url": "https://arxiv.org/abs/2601.01009"
         }
       ]
     },
     {
       "area": {
-        "zh": "高周疲劳仿真",
-        "en": "High-Cycle Fatigue Simulation"
+        "zh": "生命周期维护优化",
+        "en": "Life-Cycle Maintenance Optimisation"
       },
       "title": {
-        "zh": "加速 PF-CZM 研究说明，UHPC 与高强钢疲劳设计正从“只能靠长周期试验”走向“可先用机理模型筛方案再集中试验”",
-        "en": "Accelerated PF-CZM results suggest UHPC and high-strength-steel fatigue design is moving from test-only programs toward mechanism-based screening before targeted experiments"
+        "zh": "新的 hazard-deterioration MDP 框架说明，资产管理正在从静态 fragility 曲线走向随状态更新的维护决策",
+        "en": "A new hazard-deterioration MDP framework shows asset management moving from static fragility curves toward state-updating maintenance decisions"
       },
       "evidence": {
-        "zh": "研究类型：2026 年 6 月 22 日预印本；方法：在 PF-CZM 框架中引入疲劳退化函数与包络载荷加速算法；结果：能够捕捉 UHPC 与高强钢的混合断裂和高周疲劳行为，并与实验结果对比验证。",
-        "en": "Evidence: a June 22, 2026 preprint that adds a fatigue degradation function and an envelope-load acceleration algorithm inside PF-CZM; it reports validated capture of mixed-mode fracture and high-cycle fatigue in UHPC and high-strength steel."
+        "zh": "研究类型：2026 年 4 月 24 日预印本；方法：将 hazard uncertainty、非平稳劣化、损伤累积、状态相关 fragility 与自适应维护策略放进同一 MDP 框架，并用张量分解把系统级复杂度从指数级降到随构件数线性增长。",
+        "en": "Evidence: a preprint submitted on April 24, 2026 that combines hazard uncertainty, nonstationary deterioration, damage accumulation, state-dependent fragility, and adaptive maintenance in one MDP framework, while using a tensor-based method to reduce system-level complexity from exponential growth to linear growth with the number of components."
       },
       "summary": {
-        "zh": "这项工作的专业意义在于，它为循环荷载基础设施提供了一个更现实的前端筛选工具。桥梁细部、塔桅连接、工业构件和高性能材料节点往往要面对大量疲劳工况，而完全依赖长周期试验既昂贵又慢。若机理模型能够较稳定地反映裂纹驱动、退化路径和材料差异，工程团队就可以先在概念或方案阶段快速排除明显不优的细节，再把昂贵试验集中到关键方案上。对未来职业能力而言，fatigue design 将越来越需要材料本构、数值建模与试验解释三者结合，而不再是单纯套用 S-N 曲线。",
-        "en": "The engineering importance of this work is that it offers a more realistic front-end screening tool for cyclically loaded infrastructure. Bridge details, tower connections, industrial components, and high-performance-material joints often face large fatigue demand spaces, and purely experimental programs are both slow and expensive. If mechanism-based models can stably represent crack driving force, degradation path, and material differences, engineering teams can eliminate clearly inferior details earlier in concept design and reserve expensive tests for the most decision-critical options. In career terms, fatigue design is likely to depend more on the combination of constitutive modelling, numerical simulation, and experimental interpretation rather than on using S-N curves in isolation."
+        "zh": "这项工作的专业意义在于，它提醒工程师：真正昂贵的往往不是一次极端事件本身，而是长期劣化、事件冲击与维护时机错配叠加后的总成本。对桥梁、港工、输电资产和大型公共结构而言，未来的维护优化不应只靠静态 fragility curve 加一个预算表，而应把结构状态、剩余寿命、下一轮 hazard exposure 和干预窗口一起考虑。这样做的意义不只是“更学术”，而是能把 inspection、minor repair、major retrofit 与 defer decision 放进同一个决策语境，在资本受限条件下更透明地解释为什么今年修这个、明年缓那个。",
+        "en": "The engineering value of this work is that it highlights how the largest cost is often not one extreme event by itself, but the compounded effect of long-term deterioration, hazard shocks, and badly timed intervention. For bridges, ports, transmission assets, and large public structures, future maintenance optimisation should move beyond a static fragility curve plus a budget table and instead account jointly for structural state, remaining life, the next hazard exposure, and the available intervention window. That is not just a more academic framing. It creates a clearer basis for putting inspection, minor repair, major retrofit, and defer decisions inside the same portfolio logic and for explaining why one asset should be treated now while another can wait."
       },
       "caveat": {
-        "zh": "模型加速并不等于可以跳过试验标定；载荷历史简化、细部制造缺陷和现场环境差异，仍然可能显著改变真实疲劳寿命。",
-        "en": "Acceleration does not remove the need for experimental calibration. Simplified load histories, fabrication defects, and field-environment effects can still change real fatigue life materially."
+        "zh": "该框架目前更像高质量决策骨架，真正落地仍依赖监测数据、退化模型校准、机构级成本参数和可执行的巡检维修制度。",
+        "en": "At present the framework is best viewed as a high-quality decision backbone. Real deployment still depends on monitoring data, calibrated deterioration models, agency-specific cost assumptions, and maintenance procedures that can actually be executed."
       },
-      "reference": "Li et al., High performance construction materials fracture and high cycle fatigue assessment based on accelerated PF-CZM, arXiv:2606.23468, submitted 2026-06-22",
+      "reference": "Jodha and Papakonstantinou, Probabilistic Hazard Analysis Framework with Stochastic Optimal Control for Deteriorating Civil Infrastructure Systems, arXiv:2604.23068, submitted 2026-04-24",
       "referenceLinks": [
         {
-          "label": "arXiv: accelerated PF-CZM for fracture and high-cycle fatigue in UHPC and HSS",
-          "url": "https://arxiv.org/abs/2606.23468"
+          "label": "arXiv: probabilistic hazard analysis with stochastic optimal control for deteriorating infrastructure",
+          "url": "https://arxiv.org/abs/2604.23068"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "同样写“地基承载力”，为什么中国、澳洲、欧洲与美国说的并不是同一个土体指标",
-      "en": "Why 'bearing capacity' is not the same soil-design language across China, Australia, Europe, and the U.S."
+      "zh": "同样写“2 小时耐火极限”，为什么中国、澳洲、欧洲与美国并不是在用同一种结构防火输入语言",
+      "en": "Why a '2-hour fire rating' is not the same structural-fire input language across China, Australia, Europe, and the U.S."
     },
     "text": {
-      "zh": "跨规范讨论浅基础时，最常见的误读之一，就是把某个“允许承载力”或“设计承载力”当成可直接横向兑换的土体数字。真正的差别不只在单位或安全系数，而在于各体系把剪切破坏、允许应力、设计抗力、地基变形和参数统计分别放在了不同位置。美国很多教学与工程工作流仍常从 ultimate bearing capacity 出发，再除以 factor of safety 得到 allowable pressure；欧洲更强调 design action 对 design resistance 的核验；澳洲也把极限状态和变形控制分开组织；中国工程语境则更常从修正后的地基承载力特征值与变形验算一起进入。看上去都在比较“地基能承多大压应力”，但它们并不是同一种输入语言。",
-      "en": "One of the most common mistakes in cross-code shallow-foundation work is to treat an 'allowable bearing pressure' or a 'design bearing resistance' as if it were a directly exchangeable soil number. The real difference is not only units or the size of the safety margin. It is that each code family stores shear failure, allowable stress, design resistance, settlement control, and statistical parameter treatment in different places. Many U.S. teaching and practice workflows still begin with ultimate bearing capacity and then divide by a factor of safety to obtain an allowable pressure. European practice is more explicit about checking design action against design resistance. Australian practice similarly separates ultimate geotechnical strength from deformation control. Chinese practice more often enters through a corrected characteristic bearing-capacity value together with deformation checks. All of them are trying to control foundation pressure, but they do not package the soil input in the same way."
+      "zh": "跨规范讨论结构防火时，最常见的误读之一，就是把“2 小时耐火极限”当成一个可以横向直接兑换的物理需求。真正的差别不只在炉温曲线，而在于各体系把用途要求、构件试验、偶然工况组合、材料高温折减和性能化分析放在了不同层级。美国工程语境常从 code-required rating 和已测试组件出发，再落实到保护厚度与构造细节；欧洲更明确地把 fire design 写成 accidental situation 下的热-力校核；澳洲既保留 Deemed-to-Satisfy 的耐火等级路径，也允许 fire engineering performance solution；中国则更常从建筑耐火等级、构件耐火极限要求和防火构造措施进入。表面上都在说“2 小时”，但那常常只代表相似的合规标签，并不代表相同的热作用、剩余承载力或可靠度裕度。",
+      "en": "One of the most common mistakes in cross-code structural-fire discussions is to treat a '2-hour fire rating' as a directly transferable physical demand. The real difference is not only the furnace curve. Each code family stores occupancy requirements, tested assemblies, accidental-action combinations, temperature-dependent material reduction, and performance-based analysis at different layers. In U.S. practice, engineers often begin with a code-required rating and a tested assembly listing, then translate that into protection thickness and detailing. European practice states fire design more explicitly as a thermal-mechanical verification in an accidental situation. Australian practice preserves a Deemed-to-Satisfy fire-resistance pathway while also allowing performance-based fire engineering solutions. Chinese practice more often enters through building fire-resistance grade, required member fire-resistance limits, and prescriptive fire-protection measures. On the surface all of them may say '2 hours', but that often indicates a similar compliance label rather than the same thermal action, residual resistance, or reliability margin."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "先问这个数是极限值、允许值还是设计抗力",
-          "en": "Ask whether the number is ultimate, allowable, or a design resistance"
+          "zh": "先问这是处方式耐火等级、试验认证，还是分析型偶然工况校核",
+          "en": "Ask first whether the value is a prescriptive rating, a tested listing, or an analytical accidental-situation check"
         },
         "text": {
-          "zh": "若一个数已经过 factor of safety、分项系数或特征值修正处理，它就不再是原始土体强度本身。跨规范比较前，必须先确认它位于哪一层。",
-          "en": "If a number has already been processed by a factor of safety, partial factors, or a characteristic-value correction, it is no longer the raw soil strength itself. Cross-code comparison has to identify that layer first."
+          "zh": "如果一个“2 小时”已经是法规要求下的构件标签，它与基于热-力分析得到的两小时生存能力并不是同一层级的信息，不能直接互换。",
+          "en": "If a '2-hour' value is already a code-required assembly label, it is not at the same information layer as a two-hour survival estimate derived from thermal-mechanical analysis, and the two should not be exchanged directly."
         }
       },
       {
         "label": {
-          "zh": "看清采用的是排水参数、总应力参数还是经验特征值",
-          "en": "Check whether the workflow uses drained parameters, total-stress parameters, or tabulated characteristic values"
+          "zh": "标准炉火暴露不等于真实自然火场，也不等于构件最终承载能力",
+          "en": "Standard furnace exposure is not the same as a natural fire and not the same as the member's final resistance"
         },
         "text": {
-          "zh": "有的体系从 c′、φ′、γ 等参数推导剪切承载力，有的在短期黏土问题里更依赖 undrained strength，也有体系把勘察与经验修正压缩进一个可直接使用的特征值入口。",
-          "en": "Some systems derive shear capacity from parameters such as c′, φ′, and γ, some rely more heavily on undrained strength in short-term clay problems, and some compress investigation plus empirical correction into a directly usable characteristic-value entry point."
+          "zh": "同样的标准炉温历程，只是热暴露基准；构件是否真正安全，还取决于荷载水平、约束条件、截面因子、保护层连续性和冷却阶段行为。",
+          "en": "The same standard furnace history is only a thermal benchmark. Whether the member is truly safe still depends on load ratio, restraint, section factor, protection continuity, and behaviour during cooling."
         }
       },
       {
         "label": {
-          "zh": "很多浅基础先被沉降控制，而不是先被剪切破坏控制",
-          "en": "Many shallow foundations are governed by settlement before they are governed by shear failure"
+          "zh": "同一名义耐火时间，薄弱细节和高利用率往往比材料本身更先控制",
+          "en": "At the same nominal fire duration, weak details and high utilisation often govern before the material label does"
         },
         "text": {
-          "zh": "即使土体还没到极限承载状态，结构或使用功能也可能已因沉降、转角或差异变形而先失去可接受性，所以不能只盯一个“承载力数字”。",
-          "en": "Even when the soil has not yet reached ultimate bearing failure, the structure or its service function may already become unacceptable because of settlement, tilt, or differential movement, so one 'bearing number' is never enough by itself."
+          "zh": "节点、洞口、接缝和保护层破损会让“2 小时”很快失真，所以真正工程判断不能只看构件目录里的 hour rating。",
+          "en": "Connections, penetrations, joints, and damaged fire protection can make a '2-hour' label misleading very quickly, so real engineering judgement cannot stop at the catalogue rating."
         }
       }
     ],
     "takeaway": {
-      "zh": "比较不同国家浅基础承载力体系时，不要直接搬运某个 kPa 数值。先确认它对应的是哪种破坏模式、哪种排水条件、哪一层安全格式，以及沉降是否才是真正控制项，再比较设计结论。",
-      "en": "When comparing shallow-foundation bearing-capacity systems across countries, do not transfer one kPa value directly. First identify the governing failure mode, drainage condition, safety format, and whether settlement is the real control before comparing the design conclusion."
+      "zh": "比较不同国家结构防火体系时，不要把“2 小时耐火极限”当成可直接兑换的设计输入。先确认它对应的是法规标签、试验结果还是分析校核，再映射火灾场景、荷载水平、截面因子与保护系统细节。",
+      "en": "When comparing structural-fire systems across countries, do not treat a '2-hour fire rating' as a directly exchangeable design input. First identify whether it is a regulatory label, a test result, or an analytical verification, then map the fire scenario, load level, section factor, and protection-system detail."
     },
     "example": {
       "title": {
-        "zh": "实例：同一 2.0 m 方形浅基础落在中密砂土上，为什么各体系不会先写出同一个允许压应力",
-        "en": "Example: why the same 2.0 m square footing on medium-dense sand does not begin with one common allowable pressure across code families"
+        "zh": "实例：同一根办公楼受保护钢柱，为什么“2 小时”在不同体系下并不等于同一个设计结果",
+        "en": "Example: why the same protected office-building steel column does not produce the same design result under a '2-hour' label"
       },
       "intro": {
-        "zh": "下面做一个“输入语言对照”算例，而不是替代任何一本规范的完整基础设计流程。设一座低层建筑柱下 2.0 m 方形独立基础，基础埋深为 Df，土层以有效应力参数控制，工程师需要判断基础底面压应力应如何进入设计。重点不是求出唯一正确数值，而是观察不同体系如何把极限承载、允许承压、设计抗力与沉降控制组织成不同层级。",
-        "en": "The following is an input-language comparison rather than a substitute for any full foundation-design procedure. Consider a 2.0 m square isolated footing under a low-rise building column at an embedment depth Df in soil governed by effective-stress parameters. The engineer needs to decide how base pressure should enter the design check. The point is not to compute one universal number, but to observe how different systems organise ultimate capacity, allowable pressure, design resistance, and settlement control at different layers."
+        "zh": "下面做一个“输入语言对照”算例，而不是替代任何一本结构防火规范的完整设计流程。设一根办公楼内钢柱在常温下已完成正常承载力设计，工程师现在需要判断其防火保护是否足以满足两小时目标。重点不是推出单一正确厚度，而是看不同体系如何把炉火基准、偶然工况、材料高温折减与耐火等级要求组织成不同层级。",
+        "en": "The following is an input-language comparison rather than a substitute for any full structural-fire design procedure. Consider a protected steel column in an office building that already satisfies ambient-temperature strength design, and the engineer now needs to decide whether the protection is sufficient for a two-hour target. The point is not to derive one universal thickness, but to observe how different systems organise the furnace benchmark, accidental load case, temperature-dependent material reduction, and fire-rating requirement at different layers."
       },
       "equations": [
         {
           "label": {
-            "zh": "浅基础剪切破坏的经典极限承载表达",
-            "en": "Classical ultimate bearing-capacity expression for shallow-foundation shear failure"
+            "zh": "标准纤维素火灾温升曲线",
+            "en": "Standard cellulosic fire curve"
           },
-          "formula": "qult = c′Nc + q′Nq + 0.5γ′BNγ",
+          "formula": "Tg = 20 + 345 log10(8t + 1)",
           "formulaTokens": [
             {
-              "var": "q"
+              "var": "T"
             },
             {
-              "sub": "ult"
+              "sub": "g"
             },
             {
-              "text": " = "
+              "text": " = 20 + 345 log10(8"
             },
             {
-              "var": "c"
+              "var": "t"
             },
             {
-              "text": "′"
-            },
-            {
-              "var": "N"
-            },
-            {
-              "sub": "c"
-            },
-            {
-              "text": " + "
-            },
-            {
-              "var": "q"
-            },
-            {
-              "text": "′"
-            },
-            {
-              "var": "N"
-            },
-            {
-              "sub": "q"
-            },
-            {
-              "text": " + 0.5 "
-            },
-            {
-              "var": "γ"
-            },
-            {
-              "text": "′"
-            },
-            {
-              "var": "B"
-            },
-            {
-              "var": "N"
-            },
-            {
-              "sub": "γ"
+              "text": " + 1)"
             }
           ],
           "citation": {
-            "zh": "推导关系：基于 Terzaghi 与 Meyerhof 浅基础承载力力学框架，用于说明土体剪切破坏的参考极限状态；这里是教学性整理，不视为任何单一本规范的编号公式照录。",
-            "en": "Derived relation: based on the Terzaghi and Meyerhof shallow-foundation bearing-capacity framework and used to illustrate the reference shear-failure limit state of the soil. It is shown here as a teaching synthesis, not as a copied numbered code equation."
+            "zh": "EN 1991-1-2:2002，Eq. (3.1)。该式给出标准纤维素火灾的气体温度历程，也对应许多 ISO 834 型标准炉火暴露的共同基准。",
+            "en": "EN 1991-1-2:2002, Eq. (3.1). This equation gives the gas-temperature history for the standard cellulosic fire and also reflects the shared benchmark behind many ISO 834-type standard furnace exposures."
           },
           "result": {
-            "zh": "这个极限值更像“原始土体与几何组合的剪切破坏起点”。它本身还没有告诉你，美国是否要除以安全系数，欧洲或澳洲是否要进入设计抗力格式，中国是否会改以特征值修正后表达。",
-            "en": "This ultimate value is closer to the raw shear-failure starting point of the soil-plus-geometry system. By itself it does not yet tell you whether U.S. practice will divide by a safety factor, whether Europe or Australia will move into a design-resistance format, or whether Chinese practice will express the result through a corrected characteristic value."
+            "zh": "它说明很多体系确实共享相近的试验热暴露起点，但这并不自动意味着构件在不同法规路径下具有相同的结构安全余量。",
+            "en": "It shows that many systems do share a similar thermal test benchmark, but that does not automatically mean the member has the same structural safety margin under different compliance pathways."
           }
         },
         {
           "label": {
-            "zh": "允许承压的 ASD 式转换思路",
-            "en": "ASD-style conversion to allowable bearing pressure"
+            "zh": "火灾工况下真正要核验的是作用效应与耐火抗力",
+            "en": "In fire, the real check is action effect against fire-stage resistance"
           },
-          "formula": "qnet,all = qnet,ult / FS",
-          "formulaTokens": [
-            {
-              "var": "q"
-            },
-            {
-              "sub": "net,all"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "q"
-            },
-            {
-              "sub": "net,ult"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "F"
-            },
-            {
-              "var": "S"
-            }
-          ],
-          "citation": {
-            "zh": "推导关系：基于常见 allowable-stress foundation teaching format，用于说明美国语境里常把极限承载力通过 factor of safety 转成可用承压值；这里是教学格式，不视为统一编号条文公式。",
-            "en": "Derived relation: based on a common allowable-stress foundation teaching format and used to show how U.S. practice often converts ultimate bearing capacity into an allowable pressure through a factor of safety. It is presented as a teaching format rather than as a single numbered code equation."
-          },
-          "result": {
-            "zh": "一旦写成允许承压值，这个数字已经把一部分安全格式打包进去了，因此它不能直接与另一体系里的“设计抗力”或“特征承载力”横向等同。",
-            "en": "Once the number is written as an allowable pressure, part of the safety format has already been packaged inside it, so it cannot be treated as directly equivalent to a design resistance or a characteristic bearing value in another code family."
-          }
-        },
-        {
-          "label": {
-            "zh": "极限状态核验的设计作用与设计抗力表达",
-            "en": "Limit-state expression in terms of design action and design resistance"
-          },
-          "formula": "Ed ≤ Rd",
+          "formula": "Ed,fi ≤ Rd,fi,t",
           "formulaTokens": [
             {
               "var": "E"
             },
             {
-              "sub": "d"
+              "sub": "d,fi"
             },
             {
               "text": " ≤ "
@@ -365,86 +289,166 @@
               "var": "R"
             },
             {
-              "sub": "d"
+              "sub": "d,fi,t"
             }
           ],
           "citation": {
-            "zh": "推导关系：基于 Eurocode 7 与澳洲极限状态土工设计的教学性格式，表示基础底面设计作用不得超过土体或基础体系的设计抗力；这里说明的是核验逻辑，而不是某一编号公式照录。",
-            "en": "Derived relation: based on the teaching format of Eurocode 7 and Australian limit-state geotechnical design, expressing that the design action at the foundation interface must not exceed the design resistance of the soil-foundation system. It illustrates the verification logic rather than copying a numbered equation."
+            "zh": "推导关系：基于结构防火极限状态校核逻辑，表示火灾偶然工况下的设计作用效应不得超过时刻 t 的设计耐火抗力；这里是教学性整理，不视为单一本规范编号公式照录。",
+            "en": "Derived relation: based on the limit-state verification logic of structural fire design, expressing that the design action effect in the accidental fire situation must not exceed the design fire resistance at time t. It is shown here as a teaching relation, not as a copied numbered code equation."
           },
           "result": {
-            "zh": "在这种语言里，工程师并不是先得到一个“全球通用允许压应力”，而是分别组织设计作用、参数折减和抗力表达，再在同一安全格式下核验。",
-            "en": "In this language, the engineer does not begin with one globally transferable allowable pressure. Design action, parameter reduction, and resistance expression are organised separately and then checked within one safety format."
+            "zh": "欧洲和性能化澳洲路径更常把这层关系显式写出来；美国与中国很多常规项目则更常先通过规定耐火等级与构件做法满足要求。",
+            "en": "European practice and performance-based Australian workflows are more likely to state this relationship explicitly, while many ordinary U.S. and Chinese projects satisfy fire provisions first through required ratings and listed or prescriptive assemblies."
           }
         },
         {
           "label": {
-            "zh": "沉降常常先于剪切破坏成为控制项",
-            "en": "Settlement often controls before shear failure"
+            "zh": "钢柱的耐火承载力取决于高温下材料折减",
+            "en": "Steel-column fire resistance depends on temperature-reduced material strength"
           },
-          "formula": "s = qB(1-ν²)Is / Es",
+          "formula": "Nfi,Rd = ky,θ A fy / γM,fi",
           "formulaTokens": [
             {
-              "var": "s"
+              "var": "N"
+            },
+            {
+              "sub": "fi,Rd"
             },
             {
               "text": " = "
             },
             {
-              "var": "q"
+              "var": "k"
             },
             {
-              "var": "B"
+              "sub": "y,θ"
             },
             {
-              "text": "(1 - "
+              "text": " "
             },
             {
-              "var": "ν"
+              "var": "A"
             },
             {
-              "text": "²) "
+              "text": " "
             },
             {
-              "var": "I"
+              "var": "f"
             },
             {
-              "sub": "s"
+              "sub": "y"
             },
             {
               "text": " / "
             },
             {
-              "var": "E"
+              "var": "γ"
             },
             {
-              "sub": "s"
+              "sub": "M,fi"
             }
           ],
           "citation": {
-            "zh": "推导关系：基于弹性沉降近似，用于说明浅基础即使未达到剪切极限，也可能先因沉降或转角超限而失去可接受性；这里是力学教学表达，不是编号规范公式。",
-            "en": "Derived relation: based on an elastic settlement approximation and used to show that a shallow foundation may become unacceptable because of settlement or rotation before reaching shear failure. This is a mechanics teaching expression, not a numbered code equation."
+            "zh": "推导关系：基于高温钢材强度折减的常见结构防火表达，用于说明同样的额定耐火时间下，构件利用率和临界温度才是决定剩余承载力的关键变量；这里不是单一编号条文公式照录。",
+            "en": "Derived relation: based on the common structural-fire format that reduces steel strength at elevated temperature. It is used here to show that, under the same nominal fire duration, utilisation ratio and critical temperature govern the remaining resistance. This is not a copied single numbered code equation."
           },
           "result": {
-            "zh": "这也是为什么中国、澳洲、欧洲与美国都不会只凭一个承载力数值完成基础设计。对很多实际项目来说，真正控制尺寸的往往是 serviceability，而不是 shear collapse 本身。",
-            "en": "This is why none of the Chinese, Australian, European, or U.S. systems can complete a foundation design from one bearing-capacity number alone. In many real projects, serviceability rather than shear collapse is what actually governs the footing size."
+            "zh": "因此两个都标称“2 小时”的钢柱，只要常温荷载利用率不同，或保护层质量不同，真正的耐火裕度就可能明显不同。",
+            "en": "Two steel columns may both be labeled '2 hours', yet their real fire margin can differ materially if their ambient load ratio or protection quality differs."
+          }
+        },
+        {
+          "label": {
+            "zh": "截面因子决定升温快慢",
+            "en": "Section factor controls the heating rate"
+          },
+          "formula": "dθs/dt ∝ (Am/V) hnet / (ρs cs)",
+          "formulaTokens": [
+            {
+              "text": "d"
+            },
+            {
+              "var": "θ"
+            },
+            {
+              "sub": "s"
+            },
+            {
+              "text": "/d"
+            },
+            {
+              "var": "t"
+            },
+            {
+              "text": " ∝ ("
+            },
+            {
+              "var": "A"
+            },
+            {
+              "sub": "m"
+            },
+            {
+              "text": "/"
+            },
+            {
+              "var": "V"
+            },
+            {
+              "text": ") "
+            },
+            {
+              "var": "h"
+            },
+            {
+              "sub": "net"
+            },
+            {
+              "text": " / ("
+            },
+            {
+              "var": "ρ"
+            },
+            {
+              "sub": "s"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "c"
+            },
+            {
+              "sub": "s"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：基于钢构件瞬态热平衡，用于说明外露面积与体积之比越大、净热通量越高，构件升温越快；这是力学教学表达，不是编号规范公式。",
+            "en": "Derived relation: based on transient thermal balance for steel members, showing that a larger exposed-area-to-volume ratio and higher net heat flux produce faster heating. This is a mechanics teaching expression, not a numbered code equation."
+          },
+          "result": {
+            "zh": "这就是为什么“2 小时”并不等于一个与构件几何无关的固定安全标签，细长轻型构件和重型截面的热响应可能完全不同。",
+            "en": "That is why '2 hours' is not a fixed safety label independent of member geometry. Slender light members and heavy sections can have very different thermal response under the same nominal exposure."
           }
         }
       ],
       "note": {
-        "zh": "这个对照算例说明，跨规范比较地基承载力时，真正需要翻译的不是一个土压力数字，而是“极限承载、允许承压、设计抗力与沉降控制”分别被放在哪一层的设计逻辑。",
-        "en": "This comparison shows that what must be translated in cross-code bearing-capacity work is not one soil-pressure number in isolation, but the full design logic that decides where ultimate capacity, allowable pressure, design resistance, and settlement control are placed."
+        "zh": "这个对照算例说明，跨规范比较结构防火时，真正需要翻译的不是一个小时数，而是“标准火、法规路径、偶然工况、材料折减与构造细节”被放在什么层级的设计逻辑。",
+        "en": "This comparison shows that what must be translated in structural-fire work is not one hour value in isolation, but the design logic that decides where standard fire exposure, regulatory pathway, accidental load case, material reduction, and detailing are placed."
       }
     },
-    "references": "Eurocodes JRC portal for EN 1997 programme context; FHWA geotechnical engineering portal for U.S. foundation practice context; Standards Australia catalogue context for Australian geotechnical standards; SAMR National Standards Public Service Platform for GB 50007 and related Chinese foundation standards",
+    "references": "Eurocodes JRC portal for EN 1991-1-2 and material-specific structural fire parts; ICC Digital Codes for the U.S. building-code pathway; Standards Australia for AS 1530.4 and related Australian fire standards context; SAMR National Standards Public Service Platform for Chinese fire-design and fire-test standards",
     "referenceLinks": [
       {
         "label": "Eurocodes JRC portal",
         "url": "https://eurocodes.jrc.ec.europa.eu/"
       },
       {
-        "label": "FHWA Geotechnical Engineering",
-        "url": "https://www.fhwa.dot.gov/engineering/geotech/"
+        "label": "ICC Digital Codes",
+        "url": "https://codes.iccsafe.org/"
       },
       {
         "label": "Standards Australia",
