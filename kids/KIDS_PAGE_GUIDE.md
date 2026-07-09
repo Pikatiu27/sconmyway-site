@@ -31,6 +31,7 @@
 - 每周五 6:00 做补偿检查；如果 5:00 已成功刷新当天内容，6:00 必须 no-op。
 - 自动更新流程固定：重新检索 → 候选打 Region → 过滤过期和弱活动 → 排序 → 生成双语 JSON → 同步 HTML fallback → 同步 More → 写候选池和 token 记录 → 校验 → commit → push。
 - 如果 AI/API 不可用，且 fallback 不能证明前 4 条是新/短期/明确日期活动，必须失败并保留旧页面，不能发布弱内容。
+- GitHub Actions 必须配置 `OPENAI_API_KEY` repository secret；缺 key 时 workflow 必须在更新前 fail fast，并提示补 secret 后手动 rerun。
 
 ### 0.4 推送上线逻辑
 
@@ -39,6 +40,16 @@
 - 正常推送目标是 `origin/main`，不 force push。
 - 推送后必须分别确认：`content quality gate passed`、`push succeeded`、`Pages refreshed`。
 - 如果 push 成功但 GitHub Pages 还没刷新，只能说 `Pages pending`，不能说已上线。
+
+### 0.5 自动更新失败处理
+
+如果周五页面没有更新，先按这个顺序排查：
+
+1. 查 `Weekly kids event refresh` Actions run。
+2. 如果日志显示 `OPENAI_API_KEY is missing` 或 `OPENAI_API_KEY is required`，先在 GitHub repo `Settings > Secrets and variables > Actions > Repository secrets` 新增 `OPENAI_API_KEY`，再手动 rerun workflow。
+3. 如果 key 存在但某些来源返回 `403/404`，不要降级发布静态旧内容；先替换坏 URL、增加可访问官方来源或 direct event 来源，再 rerun。
+4. 如果 AI 产出不足 8 条，说明候选池质量不够；扩展 sources、检查 `kids/CANDIDATE_POOL.md`，然后手动 rerun。
+5. 手动 rerun 成功后必须确认：JSON `updatedAt` 是当天、周期是本周五到下周五、前 4 条是新/短期活动、Pages 已刷新。
 
 ## 1. 页面定位
 

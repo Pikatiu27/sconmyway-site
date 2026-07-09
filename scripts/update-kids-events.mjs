@@ -7,6 +7,7 @@ const usageReportPath = `${siteDir}/TOKEN_USAGE.md`;
 const candidateReportPath = `${siteDir}/CANDIDATE_POOL.md`;
 const now = new Date();
 const weekPeriod = getSydneyWeekPeriod(now);
+const missingOpenAiKeyMessage = "OPENAI_API_KEY is required for the weekly kids refresh. Add it as a GitHub Actions repository secret, then rerun the Weekly kids event refresh workflow.";
 
 const cityConfigs = [
   {
@@ -402,7 +403,7 @@ function summarizeFallback(candidate, city) {
 
 async function enrichWithOpenAI(candidates, city) {
   const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) return null;
+  if (!apiKey) throw new Error(missingOpenAiKeyMessage);
   const payload = candidates.map(({ title, url, source, region, detailText }) => ({ title, url, source, region, text: detailText.slice(0, 4500) }));
   const response = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
@@ -597,6 +598,7 @@ async function writeCandidateReport(results) {
 }
 
 async function main() {
+  if (!process.env.OPENAI_API_KEY) throw new Error(missingOpenAiKeyMessage);
   await mkdir(dataDir, { recursive: true });
   let index = await readFile(indexPath, "utf8");
   const results = new Map();
