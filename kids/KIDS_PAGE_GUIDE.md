@@ -46,10 +46,12 @@
 如果周五页面没有更新，先按这个顺序排查：
 
 1. 查 `Weekly kids event refresh` Actions run。
-2. 如果日志显示 `OPENAI_API_KEY is missing` 或 `OPENAI_API_KEY is required`，先在 GitHub repo `Settings > Secrets and variables > Actions > Repository secrets` 新增 `OPENAI_API_KEY`，再手动 rerun workflow。
-3. 如果 key 存在但某些来源返回 `403/404`，不要降级发布静态旧内容；先替换坏 URL、增加可访问官方来源或 direct event 来源，再 rerun。
-4. 如果 AI 产出不足 8 条，说明候选池质量不够；扩展 sources、检查 `kids/CANDIDATE_POOL.md`，然后手动 rerun。
-5. 手动 rerun 成功后必须确认：JSON `updatedAt` 是当天、周期是本周五到下周五、前 4 条是新/短期活动、Pages 已刷新。
+2. 按 `kids/KIDS_BACKUP_PLAN.md` 分成配置失败、来源失败、内容质量失败三类处理。
+3. 如果日志显示 `OPENAI_API_KEY is missing` 或 `OPENAI_API_KEY is required`，先在 GitHub repo `Settings > Secrets and variables > Actions > Repository secrets` 新增 `OPENAI_API_KEY`，再手动 rerun workflow。
+4. 如果 key 存在但某些来源返回 `403/404`，不要降级发布静态旧内容；先替换坏 URL、增加可访问官方来源或 direct event 来源，再 rerun。
+5. 如果 AI 产出不足 8 条，说明候选池质量不够；扩展 sources、检查 `kids/CANDIDATE_POOL.md`，然后手动 rerun。
+6. 手动 rerun 成功后必须确认：JSON `updatedAt` 是当天、周期是本周五到下周五、前 4 条是新/短期活动、Pages 已刷新。
+7. 如果 08:00 仍无法满足内容 gate，保留旧页面并报告 `Pages not refreshed`；不能只改日期或用旧活动补位。
 
 ## 1. 页面定位
 
