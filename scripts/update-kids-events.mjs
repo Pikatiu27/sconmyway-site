@@ -451,8 +451,8 @@ function isLongTermEvent(event) {
 }
 
 function eventStatus(event, index) {
-  if (isLongTermEvent(event)) return { zh: "\u957f\u671f\u5907\u9009", en: "Long-term", className: " long-term" };
-  return index < 4 ? { zh: "\u672c\u5468\u4f18\u5148", en: "Priority", className: "" } : { zh: "\u5907\u9009", en: "Backup", className: "" };
+  if (isLongTermEvent(event)) return { zh: "\u957f\u671f\u6d3b\u52a8", en: "Ongoing", className: " long-term" };
+  return index < 4 ? { zh: "\u672c\u5468\u7cbe\u9009", en: "Weekly pick", className: "" } : { zh: "\u7ee7\u7eed\u63a8\u8350", en: "More picks", className: "" };
 }
 
 function renderEvent(event, index) {
@@ -467,7 +467,7 @@ function renderEvent(event, index) {
           <p class="summary zh">${esc(event.summaryZh)}</p><p class="summary en">${esc(event.summaryEn)}</p>
           <div class="facts"><div class="fact"><span>⏰</span><span class="zh">${esc(event.timeZh)}</span><span class="en">${esc(event.timeEn)}</span></div><div class="fact"><span>📍</span><span class="zh">${esc(event.placeZh)}</span><span class="en">${esc(event.placeEn)}</span></div><div class="fact"><span>🎟️</span><span class="zh">${esc(event.priceZh)}</span><span class="en">${esc(event.priceEn)}</span></div></div>
           <div class="actions"><a class="action primary" href="${esc(event.url)}" target="_blank" rel="noreferrer"><span class="zh">&#23448;&#32593;</span><span class="en">Official</span></a><a class="action" href="${esc(map)}" target="_blank" rel="noreferrer"><span class="zh">&#23548;&#33322;</span><span class="en">Map</span></a></div>
-          <div class="reference"><b>Reference:</b> <span class="zh">${esc(event.referenceZh)}</span><span class="en">${esc(event.referenceEn)}</span></div>
+          <div class="reference"><b><span class="zh">\u53c2\u8003\u6765\u6e90\uff1a</span><span class="en">Reference:</span></b> <span class="zh">${esc(event.referenceZh)}</span><span class="en">${esc(event.referenceEn)}</span></div>
         </article>`;
 }
 

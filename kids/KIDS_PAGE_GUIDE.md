@@ -1,11 +1,12 @@
 # Kids Page Guide
 
 <!-- MANUAL_REFRESH_RULE_START -->
-## Current Manual Refresh Rule
+## Current Refresh Rule
 
-- Default update path is manual Codex web search, local JSON write, static HTML fallback sync, GitHub push, and public verification.
+- Default update path is a recurring Codex task at Friday 05:00 Australia/Sydney: fresh web search, local JSON write, static HTML fallback sync, GitHub push, and public verification.
 - Do not use an API key or automated content generation unless the user explicitly asks to restore that path.
 - Each Friday update must fresh-search Sydney and Melbourne activities; never roll old dates forward.
+- GitHub Actions checks freshness at 05:00 and 07:00. It is a watchdog only and must never generate or roll forward event content.
 - First four cards in each city must be newly found or short-window current-week activities.
 - Long-running activities can remain only after fresher current-week options.
 - Library storytime, toddler-only, and weak discovery leads belong in More or are skipped.
@@ -41,10 +42,10 @@
 ### 0.3 自动更新逻辑
 
 - 每周五 Australia/Sydney 本地时间 5:00 执行主更新。
-- 每周五 6:00 做补偿检查；如果 5:00 已成功刷新当天内容，6:00 必须 no-op。
+- 每周五 7:00 做补偿检查；如果 5:00 已成功刷新当天内容，7:00 必须 no-op。
 - 自动更新流程固定：重新检索 → 候选打 Region → 过滤过期和弱活动 → 排序 → 生成双语 JSON → 同步 HTML fallback → 同步 More → 写候选池和 token 记录 → 校验 → commit → push。
 - 如果 AI/API 不可用，且 fallback 不能证明前 4 条是新/短期/明确日期活动，必须失败并保留旧页面，不能发布弱内容。
-- GitHub Actions 不再默认生成内容；当前 workflow 只保留手动校验入口，内容更新由人工检索、写入和 push 完成。
+- GitHub Actions 不生成内容；当前 workflow 在周五 5:00 和 7:00 自动检查 freshness，也保留手动校验入口。内容更新由外部 Codex 定时任务完成重新检索、写入和 push。
 
 ### 0.4 推送上线逻辑
 
@@ -111,7 +112,7 @@
 - 品牌标题约 15-16px，副标题和浏览量 10-11px，弱于城市和内容切换。
 - 城市切换是一级操作，约 15px；Events / Playgrounds 是同组二级操作，约 14px。
 - 活动卡标题约 18-20px；正文约 14px，行高约 1.6；事实栏约 12.5-13px；Reference 约 10.5-11px。
-- 卡片只保留一个状态标签：`本周优先 / Priority`、`备选 / Backup` 或 `长期备选 / Long-term`。
+- 卡片只保留一个状态标签：`本周精选 / Weekly pick`、`继续推荐 / More picks` 或 `长期活动 / Ongoing`。标签表示时间位置，不代表星级或质量评分。
 
 背景和颜色：
 
@@ -125,7 +126,7 @@
 
 - 第一屏顺序必须稳定：Header → H1 → 当前选择/城市/内容切换 → 周期 → 内容卡片。
 - More 是折叠候选入口，视觉上像补充抽屉，不要像第三个主 tab。
-- 长期活动暂不独立成顶层 tab；如果数量增加，先在 Events 内部作为 `长期备选 / Long-term` 区块或第 5 条以后处理。
+- 长期活动暂不独立成顶层 tab；如果数量增加，先在 Events 内部作为 `长期活动 / Ongoing` 区块或第 5 条以后处理。
 
 ## 3. 当前页面信息架构
 
@@ -167,7 +168,7 @@ Finder controls 结构：
 ## 4. 更新周期
 
 - 每周五 Sydney/Melbourne 当地时间 5:00 自动全网检索、更新并推送上线。
-- 6:00 做补偿检查；如果 5:00 没成功，再重试。
+- 7:00 做补偿检查；如果 5:00 没成功，再重试。
 - 页面显示的是发布周期，不随用户点击当天滚动。
 - 周期固定为本周五到下一个周五，使用 `periodStart` / `periodEnd`。
 - 自动校验必须确认周期是 Friday-to-Friday。
@@ -388,7 +389,7 @@ Official or council finder / Map
 更新流水线固定为：
 
 ```text
-gate 5:00 / 6:00
+gate 5:00 / 7:00
 → fetch official sources and discovery sources
 → widen search with suburb / council / venue / event-name queries from social tips
 → extract candidates
@@ -451,7 +452,7 @@ content gate passed
 ### 14.1 允许推送的场景
 
 - 每周五 5:00 自动任务：允许在内容质量 gate 全部通过后自动 commit + push。
-- 每周五 6:00 补偿任务：只在 5:00 没有成功刷新当天内容时运行；如果 5:00 已确认成功，必须 no-op。
+- 每周五 7:00 补偿任务：只在 5:00 没有成功刷新当天内容时运行；如果 5:00 已确认成功，必须 no-op。
 - 手动 workflow_dispatch：允许作为人工补跑，但仍必须通过同样的内容质量 gate。
 - Codex 本地修改：默认只保存本地；只有用户明确说“推送 / 部署 / 上线”时才 commit + push。
 
@@ -507,8 +508,8 @@ content gate passed
 
 ### 14.7 失败后的处理
 
-- 5:00 失败：6:00 补偿任务重试。
-- 6:00 仍失败：保留旧页面，不发布弱内容；报告失败原因和卡在哪个 gate。
+- 5:00 失败：7:00 补偿任务重试。
+- 7:00 仍失败：保留旧页面，不发布弱内容；报告失败原因和卡在哪个 gate。
 - 内容失败优先修内容，不通过“只改日期”掩盖。
 - 推送失败优先查 GitHub 凭据、non-fast-forward、workflow 权限和 Pages 状态。
 - 每次失败要补充到 `KIDS_PAGE_GUIDE.md` 的 failure summary，防止下周重复。
@@ -528,7 +529,7 @@ content gate passed
 - Reject scraper noise including JavaScript challenge text, outdated-browser text, historic snippets, and unrelated council page fragments.
 - If fewer than 8 valid events remain for a city, the updater must fail and leave the site unchanged rather than publish filler.
 
-### 16.1 2026-07-10 manual refresh reset
+### 16.1 2026-07-10 refresh reset
 
 What failed:
 
@@ -597,7 +598,7 @@ Public cards should stay visually light:
 
 ```text
 Source / area tag
-One status tag only: 本周优先 / Priority or 备选 / Backup
+One status tag only: 本周精选 / Weekly pick, 继续推荐 / More picks, or 长期活动 / Ongoing
 Title
 Merged summary
 Time / place / cost

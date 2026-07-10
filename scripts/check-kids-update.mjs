@@ -158,14 +158,14 @@ if (command === "gate") {
     let shouldRun = parts.weekday === "Fri" && parts.hour === "05";
     let reason = shouldRun ? "Friday 05:00 primary refresh" : "outside refresh window";
 
-    if (parts.weekday === "Fri" && parts.hour === "06") {
+    if (parts.weekday === "Fri" && parts.hour === "07") {
       try {
         const data = await readData();
         shouldRun = localDateKey(new Date(data.updatedAt)) !== localDateKey(new Date());
-        reason = shouldRun ? "Friday 06:00 recovery retry" : "05:00 refresh already confirmed";
+        reason = shouldRun ? "Friday 07:00 recovery check" : "05:00 refresh already confirmed";
       } catch {
         shouldRun = true;
-        reason = "Friday 06:00 recovery retry after missing or invalid data";
+        reason = "Friday 07:00 recovery check after missing or invalid data";
       }
     }
 

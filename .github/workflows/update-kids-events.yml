@@ -1,6 +1,10 @@
 name: Kids event page checks
 
 on:
+  schedule:
+    # GitHub cron is UTC. The local-time gate keeps only Friday 05:00 and
+    # 07:00 Australia/Sydney across daylight-saving changes.
+    - cron: "0 18,19,20,21 * * 4"
   workflow_dispatch:
 
 permissions:
@@ -18,8 +22,17 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Check Sydney refresh window
+        id: gate
+        run: node scripts/check-kids-update.mjs gate kids/data/events.json
+
       - name: Validate UTF-8 and JSON
+        if: steps.gate.outputs.should_run == 'true'
         run: |
           node scripts/check-kids-update.mjs validate kids/data/events.json
           node scripts/check-kids-update.mjs validate kids/data/melbourne-events.json
           node scripts/check-kids-update.mjs validate-links kids/index.html
+
+      - name: Report skipped schedule candidate
+        if: steps.gate.outputs.should_run != 'true'
+        run: echo "${{ steps.gate.outputs.reason }}"

@@ -1,6 +1,8 @@
 # Kids Page Backup Plan
 
-Current policy: no API-based weekly generation. The normal Friday refresh is manual Codex research, local file update, validation, GitHub push, and public verification.
+Current policy: no API-based weekly generation. A recurring Codex task should start the Friday refresh at 05:00 Australia/Sydney, perform fresh web research, update local files, push GitHub, and verify the public page. GitHub Actions is the independent watchdog: it checks freshness at 05:00 and again at 07:00, but it does not generate event content.
+
+The recurring Codex task is external to this repository. If that task is unavailable or disabled, GitHub will report a failed freshness check rather than silently reusing last week's page.
 
 ## Friday Refresh Contract
 
@@ -20,8 +22,9 @@ Current policy: no API-based weekly generation. The normal Friday refresh is man
 - If GitHub is temporarily unavailable, commit locally and retry later.
 - If a source cannot be verified, remove it from the main eight and use a verified backup source.
 - If More links fail or open blank pages, replace them with verified official category pages.
+- At 07:00 Australia/Sydney, check the public page again. If the 05:00 refresh did not complete, rerun the same full research workflow; never perform a date-only retry.
 
-## Manual Run Checklist
+## Refresh Checklist
 
 - `kids/data/events.json` and `kids/data/melbourne-events.json` period: 2026-07-10 to 2026-07-17.
 - Sydney has 8 main cards, Melbourne has 8 main cards.

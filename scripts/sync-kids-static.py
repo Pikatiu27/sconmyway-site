@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import date
 from html import escape
 from pathlib import Path
 from urllib.parse import quote_plus
@@ -59,8 +60,8 @@ def card(event: dict, index: int, city: str) -> str:
     if event.get("longTerm"):
         class_names.append("long-term")
 
-    status_zh = "长期备选" if event.get("longTerm") else ("本周优先" if index < 4 else "备选")
-    status_en = "Long-term" if event.get("longTerm") else ("Priority" if index < 4 else "Backup")
+    status_zh = "长期活动" if event.get("longTerm") else ("本周精选" if index < 4 else "继续推荐")
+    status_en = "Ongoing" if event.get("longTerm") else ("Weekly pick" if index < 4 else "More picks")
     map_query = text(event.get("mapQuery") or event.get("placeEn") or event.get("placeZh") or event.get("titleEn"))
     map_url = f"https://www.google.com/maps/search/?api=1&query={quote_plus(map_query)}"
     official = text(event.get("url"))
@@ -77,7 +78,7 @@ def card(event: dict, index: int, city: str) -> str:
           <p class="summary zh">{pair(event.get('summaryZh'))}</p><p class="summary en">{pair(event.get('summaryEn'))}</p>
           <div class="facts"><div class="fact"><span>&#128337;</span><span class="zh">{pair(event.get('timeZh'))}</span><span class="en">{pair(event.get('timeEn'))}</span></div><div class="fact"><span>&#128205;</span><span class="zh">{pair(event.get('placeZh'))}</span><span class="en">{pair(event.get('placeEn'))}</span></div><div class="fact"><span>&#127915;</span><span class="zh">{pair(event.get('priceZh'))}</span><span class="en">{pair(event.get('priceEn'))}</span></div></div>
           <div class="actions">{''.join(actions)}</div>
-          <p class="reference"><b>Reference:</b> <span class="zh">{pair(event.get('referenceZh'))}</span><span class="en">{pair(event.get('referenceEn'))}</span></p>
+          <p class="reference"><b><span class="zh">参考来源：</span><span class="en">Reference:</span></b> <span class="zh">{pair(event.get('referenceZh'))}</span><span class="en">{pair(event.get('referenceEn'))}</span></p>
         </article>"""
 
 
@@ -144,6 +145,23 @@ def main() -> None:
     )
     if count != 1:
         raise RuntimeError("Could not update period metadata")
+
+    period_start = date.fromisoformat(first_data["periodStart"])
+    period_end = date.fromisoformat(first_data["periodEnd"])
+    month_en = [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+    ]
+    visible_replacements = {
+        r'<span data-today-zh>.*?</span>': f'<span data-today-zh>{period_start.year} 年 {period_start.month} 月 {period_start.day} 日</span>',
+        r'<span data-week-zh>.*?</span>': f'<span data-week-zh>{period_start.month} 月 {period_start.day} 日至 {period_end.month} 月 {period_end.day} 日</span>',
+        r'<span data-today-en>.*?</span>': f'<span data-today-en>{period_start.day} {month_en[period_start.month - 1]} {period_start.year}</span>',
+        r'<span data-week-en>.*?</span>': f'<span data-week-en>{period_start.day} {month_en[period_start.month - 1]} to {period_end.day} {month_en[period_end.month - 1]}</span>',
+    }
+    for pattern, replacement in visible_replacements.items():
+        html, count = re.subn(pattern, replacement, html, count=1)
+        if count != 1:
+            raise RuntimeError(f"Could not update visible period text: {pattern}")
 
     INDEX.write_text(html, encoding="utf-8", newline="\n")
 
