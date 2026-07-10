@@ -1,16 +1,13 @@
-name: Weekly kids event refresh
+name: Kids event page checks
 
 on:
-  schedule:
-    # Covers 05:00 primary and 06:00 recovery Friday locally across AEST/AEDT.
-    - cron: "0 18,19,20 * * 4"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  update-kids-events:
+  check-kids-events:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,63 +18,8 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Check local refresh window
-        id: gate
-        env:
-          GITHUB_EVENT_NAME: ${{ github.event_name }}
-        run: node scripts/check-kids-update.mjs gate kids/data/events.json
-
-      - name: Show refresh decision
-        run: echo "${{ steps.gate.outputs.reason }}"
-
-      - name: Preflight OpenAI secret
-        if: steps.gate.outputs.should_run == 'true'
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      - name: Validate UTF-8 and JSON
         run: |
-          if [ -z "$OPENAI_API_KEY" ]; then
-            echo "::error::OPENAI_API_KEY is missing. Add it under GitHub repo Settings > Secrets and variables > Actions > Repository secrets, then rerun Weekly kids event refresh."
-            exit 1
-          fi
-
-      - name: Update kids activities
-        if: steps.gate.outputs.should_run == 'true'
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
-        run: npm run update:kids
-
-      - name: Validate UTF-8 and generated JSON
-        if: steps.gate.outputs.should_run == 'true'
-        run: |
-          node scripts/check-kids-update.mjs validate kids/data/melbourne-events.json
           node scripts/check-kids-update.mjs validate kids/data/events.json
+          node scripts/check-kids-update.mjs validate kids/data/melbourne-events.json
           node scripts/check-kids-update.mjs validate-links kids/index.html
-
-      - name: Commit and push with retry
-        if: steps.gate.outputs.should_run == 'true'
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add kids/index.html kids/data/*.json kids/TOKEN_USAGE.md kids/CANDIDATE_POOL.md
-          if git diff --cached --quiet; then
-            echo "No content changes to commit."
-          else
-            git commit -m "Update weekly kids activities"
-          fi
-          pushed=false
-          for attempt in 1 2 3; do
-            if git push origin HEAD:main; then pushed=true; break; fi
-            echo "Push attempt $attempt failed; retrying in 15 seconds."
-            sleep 15
-          done
-          test "$pushed" = true
-
-      - name: Confirm remote update
-        if: steps.gate.outputs.should_run == 'true'
-        shell: bash
-        run: |
-          git fetch origin main
-          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
-          echo "Remote main confirmed at $(git rev-parse --short HEAD)."

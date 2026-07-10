@@ -1,5 +1,18 @@
 # Kids Page Guide
 
+<!-- MANUAL_REFRESH_RULE_START -->
+## Current Manual Refresh Rule
+
+- Default update path is manual Codex web search, local JSON write, static HTML fallback sync, GitHub push, and public verification.
+- Do not use an API key or automated content generation unless the user explicitly asks to restore that path.
+- Each Friday update must fresh-search Sydney and Melbourne activities; never roll old dates forward.
+- First four cards in each city must be newly found or short-window current-week activities.
+- Long-running activities can remain only after fresher current-week options.
+- Library storytime, toddler-only, and weak discovery leads belong in More or are skipped.
+- Main cards should favour adult-friendly family outings: festivals, shows, markets, light walks, outdoor trails, theatre, food-plus-activity, and major venue programs.
+- More links must be real, checked links; no placeholder items.
+<!-- MANUAL_REFRESH_RULE_END -->
+
 本文件是 `今天带娃去哪儿？ / Kids Finder` 的唯一维护说明。以后调整页面、扩展城市、筛选活动、修改自动更新逻辑时，优先按本文执行。
 
 ## 0. 快速执行大纲
@@ -31,7 +44,7 @@
 - 每周五 6:00 做补偿检查；如果 5:00 已成功刷新当天内容，6:00 必须 no-op。
 - 自动更新流程固定：重新检索 → 候选打 Region → 过滤过期和弱活动 → 排序 → 生成双语 JSON → 同步 HTML fallback → 同步 More → 写候选池和 token 记录 → 校验 → commit → push。
 - 如果 AI/API 不可用，且 fallback 不能证明前 4 条是新/短期/明确日期活动，必须失败并保留旧页面，不能发布弱内容。
-- GitHub Actions 必须配置 `OPENAI_API_KEY` repository secret；缺 key 时 workflow 必须在更新前 fail fast，并提示补 secret 后手动 rerun。
+- GitHub Actions 不再默认生成内容；当前 workflow 只保留手动校验入口，内容更新由人工检索、写入和 push 完成。
 
 ### 0.4 推送上线逻辑
 
@@ -45,9 +58,9 @@
 
 如果周五页面没有更新，先按这个顺序排查：
 
-1. 查 `Weekly kids event refresh` Actions run。
+1. 查 `Kids event page checks` Actions run。
 2. 按 `kids/KIDS_BACKUP_PLAN.md` 分成配置失败、来源失败、内容质量失败三类处理。
-3. 如果日志显示 `OPENAI_API_KEY is missing` 或 `OPENAI_API_KEY is required`，先在 GitHub repo `Settings > Secrets and variables > Actions > Repository secrets` 新增 `OPENAI_API_KEY`，再手动 rerun workflow。
+3. 如果周五更新失败，不能只改日期；必须重新检索、重写 JSON、同步 HTML fallback，再重新 push。
 4. 如果 key 存在但某些来源返回 `403/404`，不要降级发布静态旧内容；先替换坏 URL、增加可访问官方来源或 direct event 来源，再 rerun。
 5. 如果 AI 产出不足 8 条，说明候选池质量不够；扩展 sources、检查 `kids/CANDIDATE_POOL.md`，然后手动 rerun。
 6. 手动 rerun 成功后必须确认：JSON `updatedAt` 是当天、周期是本周五到下周五、前 4 条是新/短期活动、Pages 已刷新。
@@ -369,7 +382,7 @@ Official or council finder / Map
 - 校验卡片官网链接和 `More` 链接；Sources 大列表可作为参考来源，不作为每周卡片链接校验范围。
 - 校验活动文本没有明显 `expired / ended / closed / cancelled / 已结束 / 取消` 等过期或取消信号。
 - 写入 Friday-to-Friday 周期。
-- 记录 OpenAI API token 到 `TOKEN_USAGE.md`。
+- 记录 API token 到 `TOKEN_USAGE.md`。
 - 确认写入、提交、推送都成功，不能静默失败。
 
 更新流水线固定为：
@@ -515,11 +528,11 @@ content gate passed
 - Reject scraper noise including JavaScript challenge text, outdated-browser text, historic snippets, and unrelated council page fragments.
 - If fewer than 8 valid events remain for a city, the updater must fail and leave the site unchanged rather than publish filler.
 
-### 16.1 2026-07-03 failure summary
+### 16.1 2026-07-10 manual refresh reset
 
 What failed:
 
-- The 2026-07-03 morning workflow did push a commit, but the content refresh was not good enough.
+- The old automation path was reset: future kids refreshes use manual web search, local JSON/HTML sync, GitHub push and public verification.
 - The first published result looked like a date rollover because it updated `updatedAt`, `periodStart`, `periodEnd`, JSON files and HTML fallback, while several visible activities still behaved like stale or low-quality picks.
 - The run used fallback mode instead of a strong AI-assisted review path, so it relied on simple candidate scraping and scoring.
 - The validation checked structure and dates, but did not prove that the first 4 cards were materially new, higher-quality, or different from the previous week.
