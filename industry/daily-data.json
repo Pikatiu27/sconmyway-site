@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-11",
+  "date": "2026-07-12",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,80 +7,76 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "AI算力电力选址",
-        "en": "AI Power Siting"
+        "zh": "AI能源",
+        "en": "AI Energy"
       },
       "title": {
-        "zh": "Meta在阿尔伯塔建设加拿大首个AI数据中心，说明算力选址正在从电网接入转向自带电源与地方许可组合",
-        "en": "Meta's Alberta AI data-centre plan shows compute siting moving from grid access to bundled power supply and local permitting"
+        "zh": "美国数据中心转向燃气电源引发清洁能源反击，AI算力许可进入能源政治阶段",
+        "en": "US data centres turn toward gas power, triggering clean-energy pushback as AI permitting becomes energy politics"
       },
       "summary": {
-        "zh": "美联社7月8日报道，Meta将投资超过91亿美元在加拿大阿尔伯塔省Sturgeon County建设其首个加拿大AI数据中心，也是美国以外最大的数据中心；项目电力将来自由Pembina Pipeline等参与的932MW天然气电站，并采用闭式冷却、道路和水务配套投资。行业含义在于，AI基础设施竞争已经不只是“哪里有土地和光纤”，而是地方政府、燃气发电、水资源约束和社区基础设施能否被打包成可审批、可融资、可承诺交付的整套场址方案。",
-        "en": "The Associated Press reported on July 8 that Meta will invest more than US$9.1 billion in its first Canadian AI data centre in Sturgeon County, Alberta, its largest facility outside the United States. The project is tied to a 932 MW natural-gas plant involving Pembina Pipeline and includes closed-loop cooling plus local road and water-system investment. The industry signal is that AI infrastructure competition is no longer just about land and fibre. Winning sites increasingly bundle local government support, dedicated generation, water constraints, and community infrastructure into one approvable, financeable, delivery-backed package."
+        "zh": "AP今天报道，AI用电增长正推动更多数据中心转向燃气电源，同时纽约、明尼苏达、密歇根等州的清洁能源支持者正推动法规，要求数据中心在长期内达到高比例可再生电力。今天的信号不是“AI需要更多电”这么简单，而是算力建设已经进入地方电价、排放目标、电网接入和许可政治的组合战。",
+        "en": "AP reports today that AI electricity growth is pushing more data centres toward gas-fired power, while clean-energy advocates in states such as New York, Minnesota, and Michigan are proposing rules requiring high renewable shares over time. The signal is no longer simply that AI needs more electricity; compute build-out is becoming a combined fight over local power prices, emissions targets, grid access, and permitting politics."
       },
       "watch": {
-        "zh": "后续重点看阿尔伯塔是否把“自带电源”变成吸引超大规模算力的制度模板，以及天然气供电是否会引发更强的碳排、用水和居民成本审查。",
-        "en": "Watch whether Alberta turns 'bring your own power' into a repeatable hyperscale-compute policy template, and whether gas-backed supply triggers sharper scrutiny over emissions, water, and local cost allocation."
+        "zh": "观察地方政府是否把数据中心审批与清洁电力、用水、噪声和电价保护绑定，这会改变园区选址和融资模型。",
+        "en": "Watch whether local governments tie data-centre approval to clean power, water use, noise, and ratepayer protection, because that will reshape siting and financing models."
       },
-      "reference": "Associated Press coverage of Meta's Alberta AI data-centre investment and the Greenlight Electricity Center power-supply model",
+      "reference": "AP, As gas plants rise to power AI, renewable energy allies are fighting for cleaner alternatives, published 2026-07-12",
       "referenceLinks": [
         {
-          "label": "AP News: Meta plans billions for first AI data center in Canada",
-          "url": "https://apnews.com/article/922a7d15ab730ec53b934269fc00a0fa"
+          "label": "AP: Gas plants, AI data centres, and clean-energy pushback",
+          "url": "https://apnews.com/article/7995717f506914fc181a07d32d1867a5"
         }
       ]
     },
     {
       "topic": {
-        "zh": "肿瘤药物平台并购",
-        "en": "Oncology Platform M&A"
+        "zh": "游戏产业",
+        "en": "Games Industry"
       },
       "title": {
-        "zh": "Novartis以最高15亿美元收购Myricx Bio，显示ADC竞争正从单个靶点转向payload平台与早期科学资产抢购",
-        "en": "Novartis's up-to-$1.5 billion Myricx Bio deal shows ADC competition shifting from single targets to payload platforms and early science capture"
+        "zh": "Microsoft继续重组Xbox，游戏行业的问题从内容创意转向硬件成本、订阅增长和AI资本开支挤压",
+        "en": "Microsoft keeps restructuring Xbox as the games industry shifts from creative pipeline issues to hardware cost, subscription growth, and AI capex pressure"
       },
       "summary": {
-        "zh": "《华尔街日报》和《金融时报》7月报道，Novartis将以11亿美元预付款、最高15亿美元总对价收购英国生物技术公司Myricx Bio，补强其抗体偶联药物和肿瘤管线。Myricx的资产仍偏早期，重点在NMT inhibitor payload平台，而不是已进入后期临床的单个明星药。行业信号是，大型药企面对专利悬崖和肿瘤市场竞争时，越来越愿意为可扩展的payload、连接子和递送机制提前支付高价，把学术源头和风投孵化资产纳入自己的平台组合。",
-        "en": "The Wall Street Journal and Financial Times reported in July that Novartis will acquire U.K. biotech Myricx Bio for US$1.1 billion upfront and up to US$1.5 billion in total consideration, strengthening its antibody-drug-conjugate and oncology pipeline. Myricx remains an early-stage platform story centred on NMT-inhibitor payloads rather than a late-stage single-drug bet. The wider signal is that, under patent-cliff pressure and intensifying oncology competition, large pharma is increasingly willing to pay early for scalable payload, linker, and delivery technologies that can be folded into broader platform portfolios."
+        "zh": "AP报道，Microsoft新一轮裁员中Xbox受冲击明显，管理层将其描述为游戏业务重置。对行业更关键的是，主机硬件成本、Game Pass增长瓶颈、并购后整合和AI资本开支正在同时挤压传统游戏业务。游戏公司不再只是在争夺爆款内容，也在重新计算平台、硬件和订阅模式的资本回报。",
+        "en": "AP reports that Xbox is heavily affected in Microsoft’s latest layoff round, with management framing it as a reset of the gaming business. The deeper industry issue is that console hardware costs, Game Pass growth limits, post-acquisition integration, and AI capital spending are pressuring traditional games economics at the same time. Game companies are no longer only chasing hit content; they are recalculating capital returns across platforms, hardware, and subscription models."
       },
       "watch": {
-        "zh": "后续重点看监管审批、早期毒性和疗效数据能否支撑高预付款估值，以及欧洲学术源头生物技术公司是否继续被跨国药企提前收购。",
-        "en": "Watch whether regulatory clearance and early efficacy and tolerability data support the high upfront price, and whether more European academic-origin biotech assets are acquired before late-stage clinical proof."
+        "zh": "观察更多工作室是否被出售或独立化，以及AI投资是否继续从游戏内容和硬件周期中抽走预算。",
+        "en": "Watch whether more studios are sold or spun out, and whether AI investment keeps pulling budget away from games content and hardware cycles."
       },
-      "reference": "Financial press reporting on Novartis's planned acquisition of Myricx Bio and the strategic premium being paid for early ADC platform assets",
+      "reference": "AP, Microsoft cuts 4,800 jobs, including many at Xbox, published 2026-07-07",
       "referenceLinks": [
         {
-          "label": "WSJ: Novartis to Buy Myricx Bio for Up to $1.5 Billion",
-          "url": "https://www.wsj.com/health/pharma/novartis-to-buy-myricx-bio-for-up-to-1-5-billion-6e8ee865"
-        },
-        {
-          "label": "Financial Times: Novartis to buy UK biotech Myricx Bio in $1.5bn deal",
-          "url": "https://www.ft.com/content/0f6c9728-dd67-4403-9274-f2187082ce5e"
+          "label": "AP: Microsoft cuts jobs and resets Xbox",
+          "url": "https://apnews.com/article/5a8f712c531911089dee008b3bbb33c4"
         }
       ]
     },
     {
       "topic": {
-        "zh": "防务制造授权",
-        "en": "Defense Manufacturing Licensing"
+        "zh": "机器人",
+        "en": "Robotics"
       },
       "title": {
-        "zh": "美国拟授权乌克兰生产Patriot防空系统，说明防务援助正在从成品交付转向技术许可和分布式产能建设",
-        "en": "A proposed U.S. Patriot production licence for Ukraine shows defence support moving from finished deliveries toward technology transfer and distributed capacity"
+        "zh": "日本提出到2040年部署千万级机器人，physical AI开始从企业实验走向国家劳动力战略",
+        "en": "Japan targets ten million robots by 2040 as physical AI moves from corporate experiments to national labour strategy"
       },
       "summary": {
-        "zh": "美联社7月9日报道，美国总统表示美国将给予乌克兰生产Patriot防空系统的许可，同时北约继续扩大对乌支持。无论最终工业细节如何落地，这个信号都重要：高端防空不再只是“盟友提供若干套系统”的库存问题，而是逐步变成授权制造、供应链安全、关键部件转移、训练认证和战时质量控制的产业组织问题。对防务企业和政府采购方而言，产能地理分布、可替换供应商和IP控制会比单次援助包更长期地影响体系韧性。",
-        "en": "The Associated Press reported on July 9 that the U.S. president said Washington would give Ukraine a licence to produce Patriot air-defence systems while NATO continued to expand support for Kyiv. However the industrial details are eventually structured, the signal matters: advanced air defence is becoming less a simple inventory-transfer question and more an industrial-organisation problem involving licensed production, secure supply chains, critical-component transfer, training certification, and wartime quality control. For defence companies and public buyers, the geography of capacity, substitutable suppliers, and IP governance may shape resilience more durably than any single aid package."
+        "zh": "近期报道显示，日本计划到2040年在医疗、食品制造、灾害响应等18个领域部署约1000万台机器人，并通过SoftBank、NEC、Sony、Honda等联合力量推进physical AI。这个方向说明，机器人竞争正在从“谁的演示更像人”转向“谁能把老龄化、护理、制造和灾害响应做成长期产业系统”。",
+        "en": "Recent reporting says Japan plans to deploy about ten million robots by 2040 across eighteen sectors, including healthcare, food manufacturing, and disaster response, with SoftBank, NEC, Sony, and Honda-linked efforts supporting physical AI. The signal is that robotics competition is moving from who has the most human-like demo to who can turn ageing, care, manufacturing, and disaster response into a long-term industrial system."
       },
       "watch": {
-        "zh": "后续重点看许可范围是否覆盖导弹、雷达和发射系统关键环节，欧洲工业伙伴是否参与，以及战时分散制造能否保持认证质量和出口管制边界。",
-        "en": "Watch whether the licence covers missiles, radar, and launcher subsystems, whether European industrial partners are brought in, and whether dispersed wartime manufacturing can preserve certified quality and export-control boundaries."
+        "zh": "观察机器人部署是否进入保险、职业培训、现场安全和公共采购规则，而不仅停留在企业发布会。",
+        "en": "Watch whether robot deployment enters insurance, vocational training, site safety, and public-procurement rules rather than remaining a launch-event narrative."
       },
-      "reference": "Associated Press reporting from the NATO summit on U.S. plans to license Ukraine to produce Patriot defence systems",
+      "reference": "Tom’s Guide, Japan plans to deploy 10 million robots by 2040, published 2026-07-07",
       "referenceLinks": [
         {
-          "label": "AP News: Trump says US will give Ukraine license to produce Patriot defense systems",
-          "url": "https://apnews.com/article/d393e8ef6103e32c984c4337a82930b1"
+          "label": "Tom’s Guide: Japan physical AI robot deployment plan",
+          "url": "https://www.tomsguide.com/ai/japan-plans-to-deploy-10-million-robots-by-2040-in-push-for-physical-ai-healthcare-food-manufacturing-and-more"
         }
       ]
     }
@@ -88,355 +84,295 @@
   "insights": [
     {
       "area": {
-        "zh": "电网友好型数据中心",
-        "en": "Grid-Responsive Data Centres"
+        "zh": "无人机基础设施巡检",
+        "en": "UAV Infrastructure Inspection"
       },
       "title": {
-        "zh": "电力弹性AI数据中心研究提示，未来基础设施工程师要把算力负荷看成可调资源，而不是固定峰值负荷",
-        "en": "Power-flexible AI data-centre research suggests infrastructure engineers should treat compute as a controllable grid resource, not a fixed peak load"
+        "zh": "基础设施巡检正在从人工目视转向多模态无人机数据，但真正价值在缺陷决策而不是航拍图像",
+        "en": "Infrastructure inspection is moving from visual walkthroughs to multimodal UAV data, but value lies in defect decisions rather than aerial images"
       },
       "evidence": {
-        "zh": "研究类型：2026年6月预印本；方法：把电网信号、工作负载调度和功率遥测整合到GPU集群控制架构，并在130kW真实GPU集群上验证快速降载、持续削减和碳感知运行。",
-        "en": "Evidence: a June 2026 preprint integrating grid signals, workload scheduling, and power telemetry into GPU-cluster control, then demonstrating rapid load reduction, sustained curtailment, and carbon-aware operation on a real 130 kW GPU cluster."
+        "zh": "研究类型：2026年综述；范围：150余项AEC+FM无人机巡检研究，覆盖RGB、LiDAR、热成像、路径优化、YOLO/Faster R-CNN和多模态融合。",
+        "en": "Evidence: 2026 review of more than 150 UAV inspection studies in AEC+FM, covering RGB imagery, LiDAR, thermal sensing, path optimisation, YOLO/Faster R-CNN, and multimodal fusion."
       },
       "summary": {
-        "zh": "这项工作的专业价值在于，它把数据中心从土木与电力规划中的“巨大、刚性、必须满足的负荷”，重新描述为可以参与调度的基础设施节点。对数据中心园区、变电站、冷热源和备用电源设计来说，这会改变早期方案逻辑：工程师不只要问最大MW是多少，还要问哪些训练任务可以延后，哪些推理任务必须保供，哪些负荷可以在电网约束下跨区域迁移。未来数据中心相关土木和机电工程竞争力，很可能来自能否把建筑、供电、冷却、储能和软件调度写进同一套可靠性边界。它也提醒业主，所谓“自带电源”并不是唯一答案，负荷弹性本身也可能成为并网许可和社区成本谈判的一部分。",
-        "en": "The professional value of this work is that it reframes the data centre from a huge, rigid load that civil and power planners must simply accommodate into an infrastructure node that can participate in dispatch. For data-centre campuses, substations, cooling plants, and backup-power design, this changes early option studies: engineers need to ask not only what the maximum MW is, but which training jobs can move, which inference workloads must be protected, and which loads can migrate across regions under grid stress. The future capability edge in data-centre civil and MEP work may lie in writing buildings, power supply, cooling, storage, and software scheduling into one reliability boundary. It also reminds owners that 'bring your own power' is not the only answer; load flexibility itself may become part of interconnection approval and community cost negotiation."
+        "zh": "这篇综述指出，无人机已经从“拍照工具”变成基础设施巡检的数据采集平台，但工程价值不在照片本身，而在如何把RGB、LiDAR和热成像融合成可追踪的缺陷识别、几何偏差和维护优先级。对结构工程师来说，未来巡检能力会越来越接近数据治理问题：飞行路径、传感器质量、缺陷标签、模型泛化和维修决策必须连成闭环。会读图纸的人还需要会判断数据是否足以支持工程结论。",
+        "en": "This review shows that UAVs have moved beyond photography into infrastructure data acquisition, but the engineering value is not the image itself. It is the ability to fuse RGB, LiDAR, and thermal data into traceable defect detection, geometric inconsistency, and maintenance priority. For structural engineers, future inspection capability becomes a data-governance problem: flight path, sensor quality, defect labels, model generalisation, and repair decisions must form one loop. Engineers who read drawings will also need to judge whether the data is sufficient to support an engineering conclusion."
       },
       "caveat": {
-        "zh": "该验证仍是130kW级别集群，距离数百MW园区的合同化SLA、网络延迟、冷却惯性和电力市场结算还有明显工程放大问题。",
-        "en": "The demonstration is still at 130 kW scale, so there is a substantial scale-up gap to contractual SLAs, network latency, cooling inertia, and market settlement for campuses measured in hundreds of MW."
+        "zh": "自动识别仍受光照、遮挡、构件复杂度和训练数据偏差影响，不能替代最终工程判断。",
+        "en": "Automated recognition remains sensitive to lighting, occlusion, component complexity, and training-data bias, so it cannot replace final engineering judgment."
       },
-      "reference": "Williams et al., Power-Flexible AI Data Centers: A New Paradigm for Grid-Responsive Compute, arXiv:2606.25098, submitted 2026-06-23",
+      "reference": "Nikkhah et al., UAV-Based Infrastructure Inspections, arXiv:2601.11665",
       "referenceLinks": [
         {
-          "label": "arXiv: Power-Flexible AI Data Centers",
-          "url": "https://arxiv.org/abs/2606.25098"
+          "label": "arXiv: UAV-Based Infrastructure Inspections",
+          "url": "https://arxiv.org/abs/2601.11665"
         }
       ]
     },
     {
       "area": {
-        "zh": "岩土场地表征",
-        "en": "Geotechnical Site Characterisation"
+        "zh": "岩土数字孪生",
+        "en": "Geotechnical Digital Twins"
       },
       "title": {
-        "zh": "Tabular foundation model用于GEOAI基准，说明岩土AI的关键价值正在从黑箱预测转向小样本、不确定性和可迁移场地推断",
-        "en": "Tabular foundation models on GEOAI benchmarks show geotechnical AI moving from black-box prediction toward few-shot, uncertainty-aware, transferable site inference"
+        "zh": "岩土数字孪生的关键不是更精细的三维模型，而是把不确定性带进施工决策",
+        "en": "The key to geotechnical digital twins is not a finer 3D model, but bringing uncertainty into construction decisions"
       },
       "evidence": {
-        "zh": "研究类型：2025年9月预印本；方法：把TabPFN用于机场土层性质基准问题，在无重新训练、少样本上下文学习条件下预测不排水抗剪强度剖面并补全缺失力学参数。",
-        "en": "Evidence: a September 2025 preprint applying TabPFN to airport soil-property benchmark problems, using zero-retraining, few-shot in-context learning to predict undrained shear-strength profiles and impute missing mechanical parameters."
+        "zh": "研究类型：概率数字孪生框架；方法：贝叶斯更新、认知不确定性、随机不确定性、模型不确定性和施工阶段信息更新。",
+        "en": "Evidence: probabilistic digital-twin framework using Bayesian updating and explicit aleatory, epistemic, model, and construction-stage uncertainty."
       },
       "summary": {
-        "zh": "这项研究对岩土和结构工程师的启发，不在于“AI能替代勘察”，而在于它展示了场地数据稀疏时另一类工具形态。传统机器学习常需要为每个地区或每类土重新收集大量训练样本；TabPFN这类表格基础模型则尝试用少量项目数据、外部间接数据库和概率输出，快速形成可更新的场地参数推断。对地基方案、临时支护、机场和交通基础设施而言，这可能把早期可研阶段从单点经验参数推进到“带不确定性范围的剖面假设”。真正的工程价值，是帮助工程师更清楚地决定追加钻孔、试验或保守设计的边际收益，而不是把模型输出当作最终岩土报告。",
-        "en": "The lesson for geotechnical and structural engineers is not that AI can replace ground investigation. It is that a different tool shape is emerging for sparse site data. Conventional machine-learning workflows often require large local datasets for each region or soil family. Tabular foundation models such as TabPFN try to combine a small amount of project data, external indirect databases, and probabilistic output to form rapidly updateable site-parameter inference. For foundation options, temporary works, airports, and transport infrastructure, that can move early feasibility work from single-point empirical assumptions toward profile hypotheses with uncertainty ranges. The real engineering value is in helping engineers decide the marginal benefit of additional boreholes, tests, or conservative design allowances, not in treating model output as a final geotechnical report."
+        "zh": "岩土工程的不确定性通常比上部结构更强：勘察点有限、土层连续性不完整、施工扰动和地下水变化都会改变设计判断。这篇框架把数字孪生从确定性模型推进到概率数字孪生，强调随着施工信息增加不断更新土体参数和预测。对结构和土木工程师的启发是，基础和地下工程的数字化不应只追求模型漂亮，而要能说明风险如何收敛、哪些假设被现场数据推翻、什么时候需要调整支护或基础方案。",
+        "en": "Geotechnical uncertainty is often stronger than superstructure uncertainty: boreholes are sparse, stratigraphy is incomplete, construction disturbs the ground, and groundwater changes the design state. This framework moves from deterministic digital twins to probabilistic digital twins, updating soil parameters and predictions as construction information arrives. For civil and structural engineers, digitalisation of foundations and underground works should not aim only for a polished model; it should show how risk narrows, which assumptions are contradicted by site data, and when support or foundation schemes must change."
       },
       "caveat": {
-        "zh": "模型推断不能绕过勘察规范、取样质量和工程地质解释；若地层成因或施工扰动超出背景数据库，概率输出也可能给出表面精确但实际偏误的结果。",
-        "en": "The inference does not bypass investigation standards, sampling quality, or engineering-geology interpretation. If depositional history or construction disturbance falls outside the background data, probabilistic outputs can still look precise while being wrong."
+        "zh": "该框架需要高质量施工监测和数据治理，否则概率更新可能只是形式化包装。",
+        "en": "The framework depends on high-quality construction monitoring and data governance; otherwise probabilistic updating becomes a formal wrapper rather than useful evidence."
       },
-      "reference": "Saito, Otake, and Wu, Tabular foundation model for GEOAI benchmark problems BM/AirportSoilProperties/2/2025, arXiv:2509.03191, submitted 2025-09-03",
+      "reference": "Cotoarbă, Straub and Smith, Probabilistic digital twins for geotechnical design and construction, arXiv:2412.09432",
       "referenceLinks": [
         {
-          "label": "arXiv: Tabular foundation model for GEOAI benchmark problems",
-          "url": "https://arxiv.org/abs/2509.03191"
+          "label": "arXiv: Probabilistic digital twins for geotechnical design and construction",
+          "url": "https://arxiv.org/abs/2412.09432"
         }
       ]
     },
     {
       "area": {
-        "zh": "施工安全机器人",
-        "en": "Construction Safety Robotics"
+        "zh": "AI数据中心设施规划",
+        "en": "AI Data-Centre Facility Planning"
       },
       "title": {
-        "zh": "多层VLM-LLM施工巡检管线说明，工地机器人真正难点不是看见危险，而是把现场证据接到可复核的安全规则",
-        "en": "A multilayer VLM-LLM construction-inspection pipeline shows the hard part is not seeing hazards, but connecting site evidence to auditable safety rules"
+        "zh": "AI负载的秒级功率波动开始影响整栋设施规划，电气与土建设计需要同桌决策",
+        "en": "Second-level AI power fluctuations now affect whole-facility planning, forcing electrical and civil design onto the same table"
       },
       "evidence": {
-        "zh": "研究类型：2025年12月预印本；方法：把SLAM自主导航、视觉语言模型场景描述、检索增强安全规则、二次VLM判断和LLM报告生成串成透明管线，并用实验室工地危险场景验证。",
-        "en": "Evidence: a December 2025 preprint combining SLAM-based autonomous navigation, VLM scene description, retrieval-grounded safety rules, a second VLM assessment layer, and LLM report generation, validated on laboratory construction-hazard scenarios."
+        "zh": "研究类型：2026年实测研究；方法：以0.1秒分辨率测量H100 GPU训练、微调和推理负载，并上推至整栋数据中心能耗轮廓。",
+        "en": "Evidence: 2026 measurement study using 0.1-second H100 GPU power profiles for training, fine-tuning, and inference, scaled to whole-facility data-centre energy profiles."
       },
       "summary": {
-        "zh": "这项研究值得关注，是因为它没有把施工机器人包装成一个端到端黑箱，而是把“机器人走到哪里、看到什么、依据哪条规则、如何形成报告”拆成可检查的中间产物。对结构工程和施工管理来说，未来数字化巡检的核心瓶颈并不是再多装一个摄像头，而是证据链能否被项目经理、安全员、总包和监管方共同理解。若规则检索、现场影像、风险判断和人工复核节点可以被清楚记录，移动机器人就可能从展示型设备变成质量安全闭环的一部分。它也提示工程师，AI工具采购需要同时审查导航覆盖率、现场遮挡、规则库版本、误报漏报处理和责任归属，而不是只比较模型演示效果。",
-        "en": "This work is notable because it does not present the construction robot as an end-to-end black box. It separates where the robot went, what it saw, which rule it relied on, and how the report was produced into inspectable intermediate artefacts. For structural engineering and construction management, the central bottleneck in digital site inspection is not simply adding another camera; it is whether the evidence chain can be understood by project managers, safety officers, contractors, and regulators. If rule retrieval, site imagery, risk judgement, and human-review gates are clearly recorded, mobile robots can become part of a quality-and-safety loop rather than a demonstration device. It also tells engineers that buying AI tools requires reviewing navigation coverage, occlusions, rule-library versioning, false-positive and false-negative handling, and responsibility allocation, not only model-demo performance."
+        "zh": "这项研究把AI工作负载的高频功率曲线连接到整栋设施能耗，说明数据中心不是稳定负荷盒子。训练、微调和推理会产生不同的瞬态功率特征，进而影响配电、备用电源、冷却、微电网和并网评估。对土木工程师而言，这意味着机房结构荷载、冷却设备布置、设备更新空间和施工分期不能脱离电气暂态讨论。AI数据中心会把传统“建筑先行、电气后配”的流程推向更早期的系统协同。",
+        "en": "This study connects high-resolution AI workload power profiles to whole-facility energy demand, showing that a data centre is not a stable load box. Training, fine-tuning, and inference produce different transient power signatures, affecting distribution, backup power, cooling, microgrids, and interconnection assessment. For civil engineers, rack loads, cooling equipment layout, future upgrade space, and construction staging cannot be separated from electrical transients. AI data centres push the traditional building-first, electrical-later process toward earlier system co-design."
       },
       "caveat": {
-        "zh": "目前验证仍偏实验室环境，真实工地的遮挡、泥水、临时改道、夜间施工和多承包商作业会显著增加系统鲁棒性要求。",
-        "en": "The validation remains laboratory-oriented. Real construction sites add occlusion, mud, water, temporary route changes, night work, and multi-contractor interfaces that materially raise the robustness requirement."
+        "zh": "数据来自特定H100高性能计算环境，项目应用仍需根据芯片类型、PUE、冗余等级和当地电网条件校准。",
+        "en": "The measurements come from a specific H100 HPC environment; project use still needs calibration for chip type, PUE, redundancy level, and local grid conditions."
       },
-      "reference": "Naderi et al., Autonomous Construction-Site Safety Inspection Using Mobile Robots: A Multilayer VLM-LLM Pipeline, arXiv:2512.13974, submitted 2025-12-16",
+      "reference": "Vercellino et al., Measurement of Generative AI Workload Power Profiles, arXiv:2604.07345",
       "referenceLinks": [
         {
-          "label": "arXiv: Autonomous Construction-Site Safety Inspection Using Mobile Robots",
-          "url": "https://arxiv.org/abs/2512.13974"
+          "label": "arXiv: Generative AI workload power profiles for facility planning",
+          "url": "https://arxiv.org/abs/2604.07345"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "螺栓连接不是数螺栓：为什么中国、澳洲、欧洲与美国的钢连接设计语言不能直接互换",
-      "en": "A bolted connection is not just bolt counting: why steel-connection design language is not directly interchangeable across China, Australia, Europe, and the U.S."
+      "zh": "混凝土长期变形：为什么中外规范都讲收缩徐变，但设计审查不能只看瞬时挠度？",
+      "en": "Concrete long-term deformation: why codes discuss shrinkage and creep, and why design review cannot stop at instantaneous deflection"
     },
     "text": {
-      "zh": "跨规范讨论钢结构螺栓连接时，常见误区是把“8个M20高强螺栓”当成足够完整的设计信息。实际上，连接承载力并不是螺栓数量乘一个单螺栓表值这么简单。中国、澳洲、欧洲和美国体系都会检查螺栓剪切、孔壁承压、板件净截面、块体撕裂、滑移或预拉力相关状态，但它们把抗力分项、强度折减、孔型、摩擦面、预拉力等级和承压变形限制放在不同位置。美国工程语境常用LRFD/ASD、nominal strength与resistance factor组织；欧洲以component method和partial factors表达连接抗力；澳洲按AS 4100的design capacity、capacity factor和构件细节校核展开；中国则在钢结构设计标准中用承载力设计值、孔壁承压和构造要求共同控制。表面上同样是一个剪力连接，真正需要翻译的是完整失效模式链和安全格式。",
-      "en": "A common error in cross-code discussion of bolted steel connections is to treat 'eight M20 high-strength bolts' as complete design information. In reality, connection resistance is not bolt count multiplied by a single tabulated bolt value. Chinese, Australian, European, and U.S. systems all check bolt shear, bearing at holes, net-section fracture, block shear, slip or pretension-related states, but they place resistance factors, partial factors, hole types, faying surfaces, pretension levels, and bearing-deformation limits in different places. U.S. practice commonly organises the check through LRFD/ASD, nominal strength, and resistance factors. Eurocode practice frames connection resistance through component method logic and partial factors. Australian practice uses AS 4100 design capacity, capacity factors, and member-detail checks. Chinese practice combines design resistance values, bearing at bolt holes, and detailing rules within the steel-structure design standard. On the surface it may be the same shear connection; what must be translated is the full chain of failure modes and safety format."
+      "zh": "混凝土构件的使用性能审查，常见误区是只看施工或短期荷载下的瞬时挠度。中国、澳洲、欧洲和美国规范都会处理收缩、徐变和长期挠度，但表达入口不同：有的通过长期刚度折减，有的通过徐变系数和收缩应变，有的通过简化倍增系数或有效模量。核心物理一致：混凝土在持续应力下会随时间继续变形，干燥和水化引起的收缩还会在约束条件下转化为裂缝或附加应力。跨规范复核时，应先区分弹性应变、徐变应变、收缩应变和开裂后刚度，再讨论限值是否满足。",
+      "en": "A common serviceability-review mistake is to check only the instantaneous deflection under construction or short-term loading. Chinese, Australian, European, and US codes all address shrinkage, creep, and long-term deflection, but through different entry points: long-term stiffness reduction, creep coefficient and shrinkage strain, simplified multipliers, or effective modulus. The physics is the same: concrete continues to deform under sustained stress, and drying or hydration shrinkage can become cracking or additional stress when restrained. A cross-code review should first separate elastic strain, creep strain, shrinkage strain, and post-cracking stiffness before discussing whether a limit is satisfied."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "先识别连接类型，再比较承载力",
-          "en": "Classify the connection before comparing resistance"
+          "zh": "时间效应",
+          "en": "Time effect"
         },
         "text": {
-          "zh": "承压型、摩擦型、预拉力高强螺栓、普通螺栓和长孔连接的控制状态不同；只说螺栓直径和数量，会遗漏最关键的设计语言。",
-          "en": "Bearing-type, slip-critical, pretensioned high-strength, ordinary-bolt, and slotted-hole connections have different controlling states. Bolt diameter and count alone omit the most important design language."
+          "zh": "瞬时挠度反映加载当下的刚度；长期挠度还包含徐变、收缩、开裂发展和配筋约束。楼板、梁、预应力构件和高层竖向构件都可能被长期效应控制。",
+          "en": "Instantaneous deflection reflects stiffness at loading time; long-term deflection also includes creep, shrinkage, cracking evolution, and reinforcement restraint. Slabs, beams, prestressed members, and vertical elements in tall buildings can all be governed by time effects."
         }
       },
       {
         "label": {
-          "zh": "连接承载力通常由最弱失效模式控制",
-          "en": "Connection resistance is usually governed by the weakest failure mode"
+          "zh": "规范入口",
+          "en": "Code entry"
         },
         "text": {
-          "zh": "多一个螺栓不一定提高设计承载力；若端距、边距、板厚或净截面先控制，螺栓组本身不是瓶颈。",
-          "en": "Adding one more bolt does not necessarily increase design resistance. If end distance, edge distance, plate thickness, or net section governs first, the bolt group is not the bottleneck."
+          "zh": "欧洲更常显式使用徐变系数和收缩应变；澳洲和美国设计说明中常看到长期挠度倍增、有效刚度或裂后刚度模型；中国项目审查常把裂缝宽度、长期挠度和施工养护一起看。",
+          "en": "Eurocode language more explicitly uses creep coefficients and shrinkage strain. Australian and US design notes often use long-term deflection multipliers, effective stiffness, or cracked-stiffness models. Chinese project review often considers crack width, long-term deflection, curing, and construction sequence together."
         }
       },
       {
         "label": {
-          "zh": "跨规范不能只搬一个单螺栓抗力表值",
-          "en": "Cross-code checking cannot transfer one single-bolt table value"
+          "zh": "审查重点",
+          "en": "Review focus"
         },
         "text": {
-          "zh": "不同体系对材料强度、孔型、摩擦面等级、预拉力、抗力系数和构造限值的定义不同，必须把整套输入和折减路径一起映射。",
-          "en": "Different systems define material strength, hole type, slip surface class, pretension, resistance factors, and detailing limits differently, so the full input and reduction path must be mapped together."
+          "zh": "真正需要说明的是：持续荷载取值、加载龄期、环境湿度、截面尺寸、开裂状态、配筋率、预应力损失和施工阶段是否进入长期变形判断。",
+          "en": "The real review questions are whether sustained load, loading age, ambient humidity, member size, cracking state, reinforcement ratio, prestress loss, and construction stages have been included in the long-term deformation assessment."
         }
       }
     ],
     "takeaway": {
-      "zh": "国际项目复核钢连接时，不要把螺栓数量、直径或一个单螺栓剪切值当成可直接兑换的设计结论。先列出剪切、承压、净截面、块体撕裂、滑移和构造限值，再分别套入目标规范的安全格式。",
-      "en": "In international steel-connection review, do not treat bolt count, diameter, or one single-bolt shear value as a directly exchangeable design conclusion. List shear, bearing, net-section fracture, block shear, slip, and detailing limits first, then apply the target code's safety format to each state."
+      "zh": "跨规范比较长期挠度时，不要只问限值是L/250还是L/300。先问计算模型是否包含收缩徐变、裂后刚度和施工阶段；否则短期通过的构件，长期可能仍出现楼面下挠、隔墙开裂或预应力损失偏大。",
+      "en": "In cross-code long-term deflection review, do not start by comparing whether the limit is L/250 or L/300. First ask whether shrinkage, creep, cracked stiffness, and construction staging are included; otherwise a member that passes short-term checks may still develop floor sag, partition cracking, or excessive prestress loss."
     },
     "example": {
       "title": {
-        "zh": "实例：同样8个M20螺栓，为什么连接设计结论可能完全不同",
-        "en": "Example: why the same eight M20 bolts can lead to different connection-design conclusions"
+        "zh": "实例：同一弹性应变下，徐变系数如何放大长期混凝土应变？",
+        "en": "Example: how a creep coefficient amplifies long-term concrete strain for the same elastic strain"
       },
       "intro": {
-        "zh": "下面是教学性对照，不替代任何一本规范的完整连接设计。设一块双剪连接板用8个M20高强螺栓传递剪力。若工程师只看螺栓剪切，可能以为承载力很高；但在真实设计中，孔壁承压、板件净截面、端距、块体撕裂和滑移要求都可能先控制。不同规范的主要差别，是把这些状态用什么安全格式和材料参数组织起来。",
-        "en": "The following is a teaching comparison, not a substitute for full connection design under any code. Consider a double-shear plate connection using eight M20 high-strength bolts to transfer shear. If an engineer looks only at bolt shear, the connection may appear strong; in real design, bearing at holes, net-section fracture, end distance, block shear, and slip requirements may govern first. The main cross-code difference is how those states are organised through safety format and material parameters."
+        "zh": "假设某混凝土受压区在持续应力下的初始弹性应变 εe = 300 με，示意徐变系数 φ = 2.0，自由收缩应变 εsh = 250 με。这里只做一维量级说明，不替代规范长期挠度计算。",
+        "en": "Assume an initial elastic strain εe = 300 microstrain in a sustained compression zone, illustrative creep coefficient φ = 2.0, and free shrinkage strain εsh = 250 microstrain. This is a one-dimensional magnitude illustration, not a replacement for code long-term deflection calculation."
       },
       "equations": [
         {
           "label": {
-            "zh": "连接设计抗力由最小控制状态决定",
-            "en": "Design resistance is governed by the minimum controlling state"
+            "zh": "徐变应变示意",
+            "en": "Creep strain illustration"
           },
-          "formula": "Rd = min(Rbolt shear, Rbearing, Rnet section, Rblock shear, Rslip)",
+          "formula": "εcr = φ εe",
           "formulaTokens": [
             {
-              "var": "R"
+              "var": "ε"
             },
             {
-              "sub": "d"
+              "sub": "cr"
             },
             {
-              "text": " = min("
+              "text": " = "
             },
             {
-              "var": "R"
+              "var": "φ"
             },
             {
-              "sub": "bolt shear"
+              "text": " "
             },
             {
-              "text": ", "
+              "var": "ε"
             },
             {
-              "var": "R"
+              "sub": "e"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：线性徐变的常用工程表达；依据 ACI 209R 与 fib Model Code 的徐变系数概念（示意式，非单一规范编号公式）。",
+            "en": "Derived relation: common engineering expression for linear creep; based on the creep-coefficient concept in ACI 209R and fib Model Code (illustrative, not one numbered code equation)."
+          },
+          "result": {
+            "zh": "εcr = 2.0 × 300 = 600 με。持续荷载下，徐变应变可达到初始弹性应变的两倍量级。",
+            "en": "εcr = 2.0 × 300 = 600 microstrain. Under sustained load, creep strain can reach twice the initial elastic strain in this illustration."
+          }
+        },
+        {
+          "label": {
+            "zh": "总长期应变示意",
+            "en": "Total long-term strain illustration"
+          },
+          "formula": "εtot = εe + εcr + εsh",
+          "formulaTokens": [
+            {
+              "var": "ε"
             },
             {
-              "sub": "bearing"
+              "sub": "tot"
             },
             {
-              "text": ", "
+              "text": " = "
             },
             {
-              "var": "R"
+              "var": "ε"
             },
             {
-              "sub": "net section"
+              "sub": "e"
             },
             {
-              "text": ", "
+              "text": " + "
             },
             {
-              "var": "R"
+              "var": "ε"
             },
             {
-              "sub": "block shear"
+              "sub": "cr"
             },
             {
-              "text": ", "
+              "text": " + "
             },
             {
-              "var": "R"
+              "var": "ε"
             },
             {
-              "sub": "slip"
+              "sub": "sh"
+            }
+          ],
+          "citation": {
+            "zh": "推导关系：弹性、徐变与自由收缩应变叠加；基于混凝土长期变形教材与模型规范的服务性分析语言（示意式）。",
+            "en": "Derived relation: superposition of elastic, creep, and free shrinkage strain; based on serviceability-analysis language in concrete long-term deformation texts and model codes (illustrative)."
+          },
+          "result": {
+            "zh": "εtot = 300 + 600 + 250 = 1150 με。若只看瞬时弹性应变，会严重低估长期变形量级。",
+            "en": "εtot = 300 + 600 + 250 = 1150 microstrain. Checking only instantaneous elastic strain would substantially underestimate the long-term deformation magnitude."
+          }
+        },
+        {
+          "label": {
+            "zh": "有效模量理解",
+            "en": "Effective modulus view"
+          },
+          "formula": "Eeff = Ec / (1 + φ)",
+          "formulaTokens": [
+            {
+              "var": "E"
+            },
+            {
+              "sub": "eff"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "E"
+            },
+            {
+              "sub": "c"
+            },
+            {
+              "text": " / (1 + "
+            },
+            {
+              "var": "φ"
             },
             {
               "text": ")"
             }
           ],
           "citation": {
-            "zh": "推导关系：基于钢连接极限状态设计逻辑，表示连接设计抗力应由相关失效模式中的最小值控制；这是教学整理，不是某一规范编号公式。",
-            "en": "Derived relation: based on limit-state design logic for steel connections, expressing that connection design resistance is controlled by the minimum relevant failure mode. This is a teaching relation, not a numbered equation from one code."
+            "zh": "推导关系：有效模量法的简化表达；见 ACI 209R 长期变形方法与混凝土徐变教材中的 effective modulus method（示意式）。",
+            "en": "Derived relation: simplified effective-modulus expression; see ACI 209R long-term deformation methods and concrete-creep texts on the effective modulus method (illustrative)."
           },
           "result": {
-            "zh": "若螺栓剪切看似可承受900 kN，但板件净截面或块体撕裂只能提供650 kN，则连接设计不能按900 kN宣称通过。",
-            "en": "If bolt shear appears to provide 900 kN, but net-section fracture or block shear in the plate provides only 650 kN, the connection cannot be declared adequate at 900 kN."
-          }
-        },
-        {
-          "label": {
-            "zh": "澳洲和美国常见的强度折减表达",
-            "en": "Common Australian and U.S.-style resistance-factor expression"
-          },
-          "formula": "Ed ≤ φRn",
-          "formulaTokens": [
-            {
-              "var": "E"
-            },
-            {
-              "sub": "d"
-            },
-            {
-              "text": " ≤ "
-            },
-            {
-              "var": "φ"
-            },
-            {
-              "var": "R"
-            },
-            {
-              "sub": "n"
-            }
-          ],
-          "citation": {
-            "zh": "格式示意：与AS 4100设计作用效应不大于设计承载力、以及AISC 360 LRFD中作用效应不大于折减名义强度的安全格式一致；此处用于说明安全格式，不是完整条文应用。",
-            "en": "Schematic format: consistent with the AS 4100 idea of design action effect not exceeding design capacity and with the AISC 360 LRFD format of required strength not exceeding factored nominal strength. It illustrates safety format only, not a full clause application."
-          },
-          "result": {
-            "zh": "同一名义抗力Rn在不同体系下会配不同的φ、荷载组合和构造前提，因此不能只比较未折减的单螺栓名义值。",
-            "en": "The same nominal resistance Rn is paired with different resistance factors, load combinations, and detailing assumptions in different systems, so unfactored single-bolt nominal values are not directly comparable."
-          }
-        },
-        {
-          "label": {
-            "zh": "欧洲常见的分项系数表达",
-            "en": "Common Eurocode-style partial-factor expression"
-          },
-          "formula": "Ed ≤ Rk / γM",
-          "formulaTokens": [
-            {
-              "var": "E"
-            },
-            {
-              "sub": "d"
-            },
-            {
-              "text": " ≤ "
-            },
-            {
-              "var": "R"
-            },
-            {
-              "sub": "k"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "γ"
-            },
-            {
-              "sub": "M"
-            }
-          ],
-          "citation": {
-            "zh": "格式示意：与EN 1993-1-8连接设计中通过材料与连接抗力分项系数取得设计抗力的思路一致；此处用于解释欧洲安全格式，不替代具体连接条文。",
-            "en": "Schematic format: consistent with the EN 1993-1-8 approach of obtaining design connection resistance through material and connection partial factors. It explains the European safety format and does not replace specific connection clauses."
-          },
-          "result": {
-            "zh": "欧洲体系下的Rk、γM和component method假定，与澳洲或美国的φRn并非同一层级参数；需要逐个失效模式重算，而不是换一个系数。",
-            "en": "In the European format, Rk, γM, and component-method assumptions are not the same layer of information as φRn in Australian or U.S. checks. Each failure mode must be recalculated rather than converted with one coefficient."
-          }
-        },
-        {
-          "label": {
-            "zh": "螺栓组荷载分配的基础校核",
-            "en": "Basic bolt-group load distribution check"
-          },
-          "formula": "Vbolt = VEd / n",
-          "formulaTokens": [
-            {
-              "var": "V"
-            },
-            {
-              "sub": "bolt"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "V"
-            },
-            {
-              "sub": "Ed"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "n"
-            }
-          ],
-          "citation": {
-            "zh": "推导关系：仅适用于同心剪力、螺栓刚度相近且忽略偏心和撬力影响的简化筛查；偏心连接、端板连接和受拉连接必须按相应规范模型另行分析。",
-            "en": "Derived relation: valid only as a simplified screen for concentric shear with similar bolt stiffness and without eccentricity or prying effects. Eccentric connections, end-plate connections, and tension connections require separate code-specific modelling."
-          },
-          "result": {
-            "zh": "若VEd = 640 kN且n = 8，平均每个螺栓承担约80 kN；但这只是入口检查，不能替代承压、净截面、块体撕裂和构造限值。",
-            "en": "If VEd = 640 kN and n = 8, the average bolt force is about 80 kN. That is only an entry check and does not replace bearing, net-section fracture, block shear, or detailing limits."
+            "zh": "若 φ = 2.0，则 Eeff ≈ Ec / 3。长期分析中等效刚度显著降低，挠度和二阶效应可能被放大。",
+            "en": "If φ = 2.0, then Eeff ≈ Ec / 3. In long-term analysis the equivalent stiffness is substantially reduced, so deflection and second-order effects may increase."
           }
         }
       ],
       "note": {
-        "zh": "这个算例说明，螺栓连接的跨规范翻译对象不是“8个M20”本身，而是连接类型、孔型、预拉力、摩擦面、板件几何、失效模式和安全格式共同构成的设计链。",
-        "en": "This example shows that the object being translated across codes is not 'eight M20 bolts' by itself, but the design chain formed by connection type, hole type, pretension, faying surface, plate geometry, failure modes, and safety format."
+        "zh": "这个例子说明，收缩徐变不是附录里的材料细节，而是服务性、裂缝、预应力损失和长期线形控制的核心输入。跨体系复核时，应把加载龄期、环境、构件尺寸和持续荷载比例写清楚。",
+        "en": "This example shows that shrinkage and creep are not minor material notes; they are core inputs for serviceability, cracking, prestress loss, and long-term profile control. Cross-system review should state loading age, environment, member size, and sustained-load ratio explicitly."
       }
     },
-    "references": "AISC 360 steel connection design framework; Eurocode 3 connection design portal; AS 4100 steel structures product page; Chinese national standards public portal for GB steel-structure standards",
+    "references": "ACI 209R; fib Model Code; EN 1992-1-1 shrinkage and creep provisions; concrete creep and shrinkage literature",
     "referenceLinks": [
       {
-        "label": "AISC: Specification for Structural Steel Buildings",
-        "url": "https://www.aisc.org/Specification-for-Structural-Steel-Buildings/"
+        "label": "ACI 209R guide for modelling and calculating shrinkage and creep",
+        "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=209R92"
       },
       {
-        "label": "Eurocodes JRC: Eurocode 3 steel structures",
-        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-3-design-steel-structures"
+        "label": "fib Model Code resources",
+        "url": "https://www.fib-international.org/publications/fib-model-code.html"
       },
       {
-        "label": "Standards Australia: AS 4100 steel structures",
-        "url": "https://store.standards.org.au/product/as-4100-2020"
-      },
-      {
-        "label": "SAMR National Standards Public Service Platform",
-        "url": "https://openstd.samr.gov.cn/bzgk/gb/"
+        "label": "Engineering LibreTexts: Creep and shrinkage of concrete overview",
+        "url": "https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_Structural_Analysis_%28Udoeyo%29/01%3A_Chapters/1.10%3A_Creep_and_Shrinkage_of_Concrete"
       }
     ]
   }
