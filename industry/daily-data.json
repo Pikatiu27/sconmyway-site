@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,76 +7,76 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "数字金融",
-        "en": "Digital finance"
-      },
-      "title": {
-        "zh": "英国推动批发金融代币化路线图，稳定币之后的竞争焦点转向真实资产结算",
-        "en": "The UK pushes a wholesale tokenisation roadmap as post-stablecoin competition shifts toward real-asset settlement"
-      },
-      "summary": {
-        "zh": "FT报道，英国数字市场工作组提出12个月路线图，重点推动回购市场代币化和数字国债试点，并估算加速批发金融数字化可带来330亿英镑经济增量。这不是普通加密货币叙事，而是交易后清算、抵押品流转和主权债发行基础设施的再设计。下一步要看央行、FCA和大型银行能否把试点做成可审计、可监管、可规模化的市场管道。",
-        "en": "The Financial Times reports that a UK digital markets task force has set out a 12-month roadmap for tokenised repo markets and a digital gilt pilot, estimating that faster wholesale-finance digitisation could add £33bn to the economy. This is not a retail-crypto story; it is a redesign of post-trade settlement, collateral mobility, and sovereign-debt infrastructure. The key test is whether the Bank of England, the FCA, and major banks can turn pilots into auditable, regulated, scalable market plumbing."
-      },
-      "watch": {
-        "zh": "关注数字国债是否按计划进入发行试点，以及英国路径是否迫使新加坡、瑞士、欧盟和美国加快批发结算监管框架。",
-        "en": "Watch whether a digital gilt pilot reaches issuance on schedule, and whether the UK path forces Singapore, Switzerland, the EU, and the US to accelerate wholesale-settlement regulation."
-      },
-      "reference": "Financial Times, Speeding up digital finance shift could deliver £33bn boost to UK economy, published 2026-07-14",
-      "referenceLinks": [
-        {
-          "label": "FT: UK digital finance tokenisation roadmap",
-          "url": "https://www.ft.com/content/d4b379c0-9fd1-4364-b787-6457223391b2"
-        }
-      ]
-    },
-    {
-      "topic": {
         "zh": "AI基础设施",
         "en": "AI infrastructure"
       },
       "title": {
-        "zh": "Morgan Stanley上调云巨头AI资本开支预期，算力竞争继续转化为电力和供应链约束",
-        "en": "Morgan Stanley lifts cloud AI capex estimates as compute competition keeps turning into power and supply-chain constraints"
+        "zh": "纽约暂停大型数据中心许可一年，AI算力扩张开始正面碰到电力与气候监管",
+        "en": "New York pauses large data-centre permits for a year as AI compute expansion meets power and climate regulation"
       },
       "summary": {
-        "zh": "Investors.com报道，Morgan Stanley将Amazon、Meta和Google等公司的AI资本开支预期继续上调，认为主要云厂商到2028年的投入可能达到1.4万亿美元量级。行业含义是，AI竞争已不只是模型能力，而是芯片、内存、网络、电力、冷却、许可和施工周期的综合竞赛。对基础设施行业而言，数据中心会持续把能源、土建、机电和地方审批推到同一个瓶颈上。",
-        "en": "Investors.com reports that Morgan Stanley has raised AI capex estimates for Amazon, Meta, Google, and other cloud majors, with spending by leading cloud providers potentially reaching about $1.4tn by 2028. The implication is that AI competition is no longer only about model capability; it is an integrated race across chips, memory, networking, power, cooling, permitting, and construction schedules. For infrastructure, data centres will keep forcing energy, civil works, MEP systems, and local approvals into the same bottleneck."
+        "zh": "AP报道，纽约州对大型数据中心建设发布一年暂停令，以研究电力、水资源、噪声和气候影响。这个动作说明，AI基础设施的约束正在从GPU供应转向地方许可、公共电价和环境承载力。对行业而言，数据中心不再只是科技公司资本开支问题，而是能源规划、社区关系和气候政策的交叉审批问题。后续要看其他州是否跟进，以及项目是否转向电力更宽松地区。",
+        "en": "AP reports that New York has ordered a one-year pause on large data-centre construction while it studies power, water, noise, and climate impacts. The signal is that AI-infrastructure constraints are moving from GPU supply toward local permits, household utility costs, and environmental capacity. Data centres are no longer only a technology-capex issue; they are now an energy-planning, community-relations, and climate-policy approval problem. Watch whether other states follow and whether projects migrate toward power-abundant regions."
       },
       "watch": {
-        "zh": "重点看电力接入、备用发电、冷却用水和本地社区反对是否比GPU供给更早成为项目交付限制。",
-        "en": "Watch whether grid access, backup generation, cooling water, and local opposition become delivery constraints earlier than GPU supply itself."
+        "zh": "关注暂停期后的能耗、水耗、排放和备用电源标准是否成为美国其他州的数据中心审批模板。",
+        "en": "Watch whether post-moratorium standards on energy use, water use, emissions, and backup power become a template for other US states."
       },
-      "reference": "Investors.com, AI Costs Keep Rising As Morgan Stanley Ups CapEx Estimates For Amazon, Meta, published 2026-07-14",
+      "reference": "AP, New York data-center moratorium, published 2026-07-15",
       "referenceLinks": [
         {
-          "label": "Investors.com: Morgan Stanley raises AI capex estimates",
-          "url": "https://www.investors.com/news/technology/meta-stock-amazon-stock-ai-costs-morgan-stanley/"
+          "label": "AP: New York data-centre moratorium",
+          "url": "https://apnews.com/article/c1e05b74208a6c570eec7c658ac8f187"
         }
       ]
     },
     {
       "topic": {
-        "zh": "跨境电商",
-        "en": "Cross-border e-commerce"
+        "zh": "数字支付",
+        "en": "Digital payments"
       },
       "title": {
-        "zh": "Shein获中国监管放行推进香港IPO，跨境电商估值重新绑定供应链合规能力",
-        "en": "Shein receives Chinese clearance for a Hong Kong IPO, tying cross-border e-commerce valuation back to supply-chain compliance"
+        "zh": "美联储加速稳定币规则征求意见，数字美元支付进入银行监管主航道",
+        "en": "The Fed accelerates stablecoin rulemaking as digital-dollar payments enter the banking-regulation mainstream"
       },
       "summary": {
-        "zh": "WSJ报道，Shein已获得中国方面批准推进香港IPO，目标估值超过400亿美元，并计划发行H股。这个信号说明，跨境电商平台的资本市场故事正在从单纯增长速度转向合规、供应链透明度、关税压力和上市地选择。Shein仍依赖中国制造体系，但总部和资本路径更国际化，后续估值会取决于它能否同时满足投资者、监管者和欧美消费者对供应链责任的要求。",
-        "en": "The Wall Street Journal reports that Shein has obtained Chinese approval to proceed with a Hong Kong IPO targeting a valuation above $40bn and an H-share issuance. The signal is that cross-border e-commerce is moving from a pure growth story toward compliance, supply-chain transparency, tariff pressure, and listing-venue strategy. Shein still depends heavily on Chinese manufacturing, while its headquarters and capital route are more international; valuation will depend on whether it can satisfy investors, regulators, and Western consumers on supply-chain accountability at the same time."
+        "zh": "Barron's报道，美联储正赶在GENIUS Act期限前发布支付稳定币监管规则并征求意见。稳定币的竞争点正在从链上交易速度转向储备资产、赎回机制、银行接口和监管报告。对金融科技公司而言，合规能力会变成产品能力的一部分；对银行和支付网络而言，稳定币可能成为跨境结算与商户收款的新接口，而不是游离在金融体系外的加密资产。",
+        "en": "Barron's reports that the Federal Reserve is racing to release payment-stablecoin rules for public comment under the GENIUS Act deadline. Competition is shifting from on-chain speed toward reserve assets, redemption mechanics, bank interfaces, and regulatory reporting. For fintech firms, compliance becomes part of product capability; for banks and payment networks, stablecoins may become a new interface for cross-border settlement and merchant collection rather than a crypto asset outside the financial system."
       },
       "watch": {
-        "zh": "关注香港市场是否接受较低估值，以及欧盟小包裹税、美国贸易审查和劳动合规争议是否继续压缩平台利润率。",
-        "en": "Watch whether Hong Kong investors accept a lower valuation, and whether EU small-parcel fees, US trade scrutiny, and labour-compliance disputes keep compressing platform margins."
+        "zh": "重点看规则是否要求高流动性储备、实时赎回和银行级运营风险控制，这会决定小型发行方是否还能独立竞争。",
+        "en": "Watch whether the rules require highly liquid reserves, real-time redemption, and bank-grade operational-risk controls, which will determine whether smaller issuers can compete independently."
       },
-      "reference": "Wall Street Journal, Shein Targets Over $40 Billion Valuation After China Nod for IPO, published 2026-07-14",
+      "reference": "Barron's, Fed racing to release stablecoin rules, published 2026-07-15",
       "referenceLinks": [
         {
-          "label": "WSJ: Shein targets Hong Kong IPO",
-          "url": "https://www.wsj.com/business/retail/shein-hong-kong-ipo-40-billion-6f414bbb"
+          "label": "Barron's: Fed stablecoin rulemaking",
+          "url": "https://www.barrons.com/livecoverage/fed-kevin-warsh-congress-testimony/card/fed-racing-to-release-stablecoin-rules-NO4hQNFK01hHRF8t9jpV"
+        }
+      ]
+    },
+    {
+      "topic": {
+        "zh": "自动驾驶",
+        "en": "Autonomous mobility"
+      },
+      "title": {
+        "zh": "NHTSA警告Robotaxi阻碍急救响应，自动驾驶监管从事故率转向场景责任",
+        "en": "NHTSA warns robotaxis over emergency-response interference, moving AV regulation from crash rates to scenario responsibility"
+      },
+      "summary": {
+        "zh": "San Antonio Express-News报道，NHTSA因Robotaxi阻碍急救车辆、误入应急现场等事件，要求Waymo、Tesla、Zoox等公司与监管方会面。这个信号很关键：自动驾驶商业化不能只证明平均安全性，还必须证明在洪水、警灯、路锥、消防车和临时管制场景下的可解释响应。监管重心正在从“有没有撞车”转向“系统是否理解城市应急秩序”。",
+        "en": "The San Antonio Express-News reports that NHTSA has warned robotaxi operators, including Waymo, Tesla, and Zoox, after incidents involving blocked emergency vehicles and entry into active response scenes. The signal is important: commercial AV deployment cannot prove only average safety; it must prove interpretable behaviour around floods, flashing lights, cones, firetrucks, and temporary control. Regulation is moving from whether vehicles crash to whether systems understand urban emergency order."
+      },
+      "watch": {
+        "zh": "关注NHTSA是否要求统一应急场景测试、远程接管流程和城市级数据共享，这可能重塑Robotaxi扩张节奏。",
+        "en": "Watch whether NHTSA requires standard emergency-scenario testing, remote-intervention protocols, and city-level data sharing, which could reshape robotaxi rollout speed."
+      },
+      "reference": "San Antonio Express-News, NHTSA warning to robotaxi companies, published 2026-07-15",
+      "referenceLinks": [
+        {
+          "label": "Express-News: NHTSA robotaxi emergency-response warning",
+          "url": "https://www.expressnews.com/business/article/nhtsa-waymo-tesla-zoox-robotaxi-emergency-response-22343989.php"
         }
       ]
     }
@@ -84,319 +84,276 @@
   "insights": [
     {
       "area": {
-        "zh": "地震韧性",
-        "en": "Seismic resilience"
+        "zh": "低碳结构设计",
+        "en": "Low-carbon structural design"
       },
       "title": {
-        "zh": "新PBEE框架把修复过程纳入系统动力学，地震设计从单次损伤走向全寿命可恢复性",
-        "en": "A new PBEE framework embeds recovery in system dynamics, moving seismic design from single-event damage to life-cycle recoverability"
+        "zh": "拓扑优化RC梁试验显示，同等材料下承载力可显著提高，低碳不只是换材料",
+        "en": "Topology-optimised RC beam tests show higher capacity with the same material, so low carbon is not only a material-substitution problem"
       },
       "evidence": {
-        "zh": "研究类型：2026年预印本；内容：用连续时间Markov链统一描述损伤、恢复、可靠度和韧性。",
-        "en": "Evidence: 2026 preprint using a continuous-time Markov chain to describe damage, recovery, reliability, and resilience in one framework."
+        "zh": "研究类型：2026年预印本；内容：拓扑优化钢筋混凝土梁的设计、制作与试验，报告同等材料用量下承载力提高36%至42%。",
+        "en": "Evidence: 2026 preprint on the design, fabrication, and testing of topology-optimised reinforced-concrete beams, reporting 36% to 42% higher loads with the same material use."
       },
       "summary": {
-        "zh": "这篇PBEE研究的重点不是再给一个地震需求模型，而是把结构状态转移和修复过程放进同一个生成矩阵中，使可靠度指标、失效概率和运行时间占比可以在统一系统动力学下计算。对结构工程师的意义在于，未来性能化抗震不应只回答一次地震后构件损伤等级，还要回答恢复速度、功能中断和长期风险。它也提示职业能力会从构件验算扩展到风险建模、恢复策略和资产运营语言。局限是示例体系较简化，工程应用仍需要真实修复时间、成本和功能恢复数据支持。",
-        "en": "The value of this PBEE study is not another seismic-demand model, but the placement of structural-state transitions and repair processes within a single generator matrix, allowing reliability indices, failure probabilities, and expected operational time to be evaluated under one system-dynamics framework. For structural engineers, future performance-based seismic work should not only report component damage after one earthquake; it should also address recovery speed, functional interruption, and long-term risk. The professional skill set therefore expands from member checks to risk modelling, recovery strategy, and asset-operation language. The limitation is that the examples remain simplified and practical adoption still needs real repair-time, cost, and functionality data."
+        "zh": "这项研究的价值在于把低碳混凝土议题从“换水泥、换掺合料”扩展到“用更合理的受力路径减少材料浪费”。作者用结构拓扑优化生成非传统RC梁几何，并通过制作和试验验证其延性破坏与承载提升。对结构工程师而言，未来低碳能力不只是会查LCA数据库，还包括理解力流、构造可制造性、施工误差和规范验算之间的关系。边界也很明确：复杂几何、钢筋布置、模板成本、质量控制和审图接受度，都会决定这种方法能否从实验室进入常规工程。",
+        "en": "The value of this work is that it expands low-carbon concrete from cement replacement and supplementary binders to the reduction of material waste through more rational load paths. The authors use structural topology optimisation to generate non-conventional RC beam geometries, then fabricate and test them, observing ductile failure and higher load capacity. For structural engineers, future low-carbon competence is not only the ability to read LCA databases; it also requires understanding force flow, constructability, construction tolerance, and code verification. The boundary is clear: complex geometry, reinforcement detailing, formwork cost, quality control, and review acceptance will determine whether this moves from laboratory evidence to routine practice."
       },
       "caveat": {
-        "zh": "该方法适合作为决策框架，但不应在缺少本地恢复数据时直接替代规范验算。",
-        "en": "The method is useful as a decision framework, but it should not replace code checks when local recovery data are unavailable."
+        "zh": "这是有价值的设计方向，但不能直接替代现行规范的常规构件承载、裂缝、挠度和耐久性验算。",
+        "en": "This is a valuable design direction, but it cannot directly replace standard code checks for member strength, cracking, deflection, and durability."
       },
-      "reference": "Nardin et al., A generalized framework for performance-based earthquake engineering, arXiv:2606.12448",
+      "reference": "Jewett and Carstensen, Topology Optimization for Materially Efficient Reinforced Concrete Design, arXiv:2604.22070",
       "referenceLinks": [
         {
-          "label": "arXiv: Generalized PBEE reliability and resilience framework",
-          "url": "https://arxiv.org/abs/2606.12448"
+          "label": "arXiv: Topology optimisation for materially efficient RC design",
+          "url": "https://arxiv.org/abs/2604.22070"
         }
       ]
     },
     {
       "area": {
-        "zh": "AI数据中心土建交叉",
-        "en": "AI data-centre infrastructure"
+        "zh": "桥梁方案韧性",
+        "en": "Bridge design robustness"
       },
       "title": {
-        "zh": "下一代AI数据中心电力架构正在从机柜问题变成园区级工程问题",
-        "en": "Next-generation AI data-centre power architecture is shifting from a rack problem to a campus-scale engineering problem"
+        "zh": "代理模型用于RC铁路桥早期设计，说明施工约束应在方案阶段进入可靠度判断",
+        "en": "Surrogate models for RC rail bridges show that construction constraints should enter reliability judgement at concept stage"
       },
       "evidence": {
-        "zh": "研究类型：2026年技术综述；内容：总结AI数据中心从48V架构转向高压DC、设施级低压DC和中压固态变压器的路径。",
-        "en": "Evidence: 2026 technical review of AI data-centre shifts from 48 V rack architecture toward high-ratio DC conversion, facility-level LVDC, and medium-voltage solid-state transformers."
+        "zh": "研究类型：2025年预印本；内容：用Kriging等代理模型加速RC铁路桥在几何不确定性下的使用性能设计。",
+        "en": "Evidence: 2025 preprint using Kriging and related surrogate models to accelerate serviceability-based RC rail-bridge design under geometric uncertainty."
       },
       "summary": {
-        "zh": "这篇综述把AI数据中心的瓶颈从芯片层面拉到电力传输、瞬态电流、热应力和设施配电层面。对土木和结构工程师而言，意义在于未来数据中心不只是普通厂房加机电设备：更高功率密度会改变楼面荷载、设备基础、母线布置、消防分区、热排布和施工阶段风险。结构专业如果只等机电专业给最终设备重量，会错过早期方案阶段最关键的空间、荷载和维护通道决策。边界是论文侧重电力电子，具体建筑规范、抗震支撑和消防要求仍需项目所在地规范补充。",
-        "en": "This review moves the AI data-centre bottleneck from chips to power delivery, current transients, thermal stress, and facility-level distribution. For civil and structural engineers, the implication is that future data centres are not ordinary industrial buildings with extra MEP equipment. Higher power density can change floor loading, equipment foundations, busway routing, fire zoning, thermal layout, and construction-stage risk. If the structural team waits for final MEP equipment weights, it will miss the most important early decisions on space, load paths, and maintenance access. The boundary is that the paper focuses on power electronics; local building codes, seismic restraint, and fire requirements still need project-specific treatment."
+        "zh": "铁路桥设计常把桥墩位置、几何变化和施工约束视为后期协调问题，但这项研究把这些不确定性作为随机变量进入早期有限元与代理模型流程。它的工程启发是，真正稳健的桥梁方案不是把一次确定性模型算得很精，而是快速探索大量可行几何、识别失效边界，并提前知道哪些现场变化会触发重新设计。对未来工程师而言，代理模型不是为了取代FE，而是为了把高成本分析转化为可迭代的方案筛选。局限是论文仍以特定桥型和数值模型为例，落地需要与业主风险偏好和现场变更机制结合。",
+        "en": "Rail-bridge design often treats pier relocation, geometric variation, and construction constraints as late coordination issues, but this study brings such uncertainties into the early finite-element and surrogate-modelling workflow as random variables. The engineering lesson is that a robust bridge concept is not a single deterministic model solved with high precision; it is the rapid exploration of many feasible geometries, identification of failure boundaries, and early knowledge of which site changes trigger redesign. For future engineers, surrogate modelling does not replace FE analysis; it converts expensive analysis into an iterative concept-screening tool. The limitation is that the paper is still tied to a specific bridge type and numerical model, so practical use needs owner risk criteria and site-change procedures."
       },
       "caveat": {
-        "zh": "把该研究用于项目时，应与当地电力接入条件、消防规范、抗震支吊架和设备供应商数据联合审查。",
-        "en": "For project use, the review should be combined with local grid-connection conditions, fire codes, seismic bracing requirements, and vendor equipment data."
+        "zh": "代理模型必须保留误差验证和适用范围说明，否则会把快速筛选误用成最终设计证明。",
+        "en": "Surrogate models must retain error validation and domain limits, otherwise rapid screening can be mistaken for final design proof."
       },
-      "reference": "Lee et al., Toward Next-Generation AI Data Centers, arXiv:2606.25095",
+      "reference": "Achhab et al., Accelerating the Serviceability-Based Design of Reinforced Concrete Rail Bridges, arXiv:2511.10129",
       "referenceLinks": [
         {
-          "label": "arXiv: Next-generation AI data-centre power delivery",
-          "url": "https://arxiv.org/abs/2606.25095"
+          "label": "arXiv: Surrogate modelling for RC rail-bridge design",
+          "url": "https://arxiv.org/abs/2511.10129"
         }
       ]
     },
     {
       "area": {
-        "zh": "结构健康监测",
-        "en": "Structural health monitoring"
+        "zh": "城市灾害风险",
+        "en": "Urban hazard risk"
       },
       "title": {
-        "zh": "SHM领域的domain adaptation综述提醒：监测AI最大的难点是跨桥梁、跨季节、跨工况泛化",
-        "en": "A domain-adaptation review in SHM shows that the hardest monitoring-AI problem is generalising across bridges, seasons, and operating states"
+        "zh": "城市结构损伤可能出现相变行为，单栋建筑安全不等于城市风险平滑",
+        "en": "Urban structural damage can show phase-transition behaviour, so individual-building safety does not imply smooth city-scale risk"
       },
       "evidence": {
-        "zh": "研究类型：2025年系统综述；内容：总结振动式SHM中统计对齐、对抗学习、物理约束迁移和生成式sim-to-real方法。",
-        "en": "Evidence: 2025 systematic review of statistical alignment, adversarial learning, physics-informed adaptation, and generative sim-to-real methods for vibration-based SHM."
+        "zh": "研究类型：2026年预印本；内容：用随机场Ising模型解释自然灾害下城市结构损伤的群体耦合与突变。",
+        "en": "Evidence: 2026 preprint using a random-field Ising model to explain collective coupling and abrupt transitions in urban structural damage under natural hazards."
       },
       "summary": {
-        "zh": "结构健康监测常被包装成传感器加AI，但这篇综述指出，真正困难的是模型从一个结构、一个季节或一个实验室数据集迁移到另一个现场结构。温度、交通、边界条件、材料老化和传感器漂移都会让损伤特征分布改变。对工程师的价值是，它把AI监测从“训练准确率”拉回“可解释、可迁移、可认证”的工程问题。未来有竞争力的结构工程师需要理解信号处理、物理约束、模型不确定性和运维决策，而不只是会读取监测图表。局限是综述给出路线图多于可直接落地的统一标准。",
-        "en": "Structural health monitoring is often presented as sensors plus AI, but this review shows that the hard problem is transferring a model from one structure, season, or laboratory dataset to another field asset. Temperature, traffic, boundary conditions, ageing, and sensor drift all shift the feature distribution associated with damage. For engineers, the paper reframes AI monitoring from training accuracy to interpretability, transferability, and certifiability. Competitive structural engineers will need to understand signal processing, physical constraints, model uncertainty, and maintenance decision-making, not just read monitoring dashboards. The limitation is that the review offers a research roadmap rather than a single deployable standard."
+        "zh": "这项研究把城市建筑群损伤看成相互耦合的系统，而不是很多单栋建筑损伤概率的简单相加。作者指出，在中等地震等自然灾害下，结构组合、空间聚集和建模不确定性可能导致损伤从局部安全突然转向大范围受损。对结构工程师的意义是，城市韧性评估不能只堆叠单体fragility曲线，还要考虑建筑类型多样性、相邻基础设施依赖和修复资源竞争。未来职业能力会更多接触区域风险、保险、政府投资排序和灾后恢复计划。局限是物理类比模型需要用本地建筑清单与真实损伤数据校准。",
+        "en": "This study treats urban building damage as a coupled system rather than a simple sum of individual-building damage probabilities. It argues that under natural hazards such as moderate earthquakes, structural diversity, spatial clustering, and modelling uncertainty can cause damage to shift abruptly from mostly safe to widely damaged states. For structural engineers, urban resilience assessment cannot merely stack single-building fragility curves; it must consider portfolio diversity, infrastructure interdependencies, and competition for repair resources. Future professional work will increasingly touch regional risk, insurance, public-investment prioritisation, and recovery planning. The limitation is that the physics-inspired model must be calibrated with local inventories and observed damage data."
       },
       "caveat": {
-        "zh": "短期工程应用仍应把AI输出作为筛查和优先级排序工具，而不是单独的安全结论。",
-        "en": "Near-term engineering use should treat AI output as screening and prioritisation support, not as a standalone safety conclusion."
+        "zh": "该模型适合启发区域风险诊断，但不应脱离本地建筑类型、地震危险度和维修能力独立使用。",
+        "en": "The model is useful for regional risk diagnosis, but should not be used without local building typologies, seismic hazard, and repair-capacity information."
       },
-      "reference": "Zhang and Liang, Domain Adaptation in Structural Health Monitoring of Civil Infrastructure, arXiv:2512.18780",
+      "reference": "Oh et al., Phase Transitions in Collective Damage of Civil Structures under Natural Hazards, arXiv:2602.16195",
       "referenceLinks": [
         {
-          "label": "arXiv: Domain adaptation in SHM systematic review",
-          "url": "https://arxiv.org/abs/2512.18780"
+          "label": "arXiv: Phase transitions in collective civil-structure damage",
+          "url": "https://arxiv.org/abs/2602.16195"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "冲切剪力不是普通梁剪：为什么板柱节点在中国、澳洲、欧洲和美国审查中要先问临界周长？",
-      "en": "Punching shear is not ordinary beam shear: why slab-column review in China, Australia, Europe, and the US starts with the critical perimeter"
+      "zh": "混凝土保护层不是随手取数：为什么中外规范把耐久性、粘结、防火和施工偏差放进同一个厚度？",
+      "en": "Concrete cover is not an arbitrary number: why design codes combine durability, bond, fire resistance, and construction tolerance in one thickness"
     },
     "text": {
-      "zh": "无梁楼盖、地下室顶板和柱帽附近最容易被低估的问题之一是冲切剪力。它不是沿梁腹板发展的单向剪切，而是集中柱反力或集中荷载在板内形成的三维破坏锥或破坏面。中国、澳洲、欧洲和美国规范都要求在柱、墙端、开洞或集中荷载附近定义一个临界控制周长，再把竖向剪力和不平衡弯矩折算成该周长上的设计剪应力。差异在于临界周长距离、边柱和角柱修正、不平衡弯矩传递、抗剪钢筋承认方式以及混凝土抗冲切强度模型。跨规范复核时，不能只说板厚满足或混凝土强度够高；必须明确柱位置、有效高度、控制周长、开洞影响、荷载偏心和是否设置抗冲切钢筋。",
-      "en": "One of the most commonly underestimated issues in flat plates, podium slabs, and column-head regions is punching shear. It is not one-way shear developing along a beam web; it is a three-dimensional failure cone or failure surface driven by concentrated column reaction or localised loading. Chinese, Australian, European, and US provisions all require a critical control perimeter around columns, wall ends, openings, or concentrated loads, then convert vertical shear and moment transfer into a design shear stress on that perimeter. The differences lie in the distance to the control perimeter, edge and corner column treatment, unbalanced moment transfer, recognition of punching shear reinforcement, and the concrete punching-resistance model. In cross-code review, it is not enough to say the slab is thick or the concrete is strong; the review must state column location, effective depth, control perimeter, opening effects, load eccentricity, and whether punching shear reinforcement is provided."
+      "zh": "混凝土保护层常被现场理解成“钢筋离模板多少毫米”，但设计含义更复杂。它同时服务于钢筋粘结锚固、氯离子和碳化耐久性、防火隔热、施工偏差以及检测可实施性。中国、澳洲、美国和欧洲规范都用暴露环境、构件类型、混凝土质量、钢筋直径和施工控制水平来决定保护层，但表达方式不同：欧洲把最小保护层与施工偏差明确相加，美国和澳洲更多通过表格按暴露条件、浇筑位置和构件类别给出要求，中国则结合环境类别、设计使用年限和构造要求。跨规范复核时，不能只比较一个cover数值；应说明它到底是在满足耐久性、粘结、防火还是施工容差控制。",
+      "en": "Concrete cover is often read on site as the distance from reinforcement to formwork, but its design meaning is broader. It serves bond and anchorage, chloride and carbonation durability, fire insulation, construction tolerance, and inspectability at the same time. Chinese, Australian, US, and European codes all use exposure environment, member type, concrete quality, bar diameter, and construction control to determine cover, but they express the logic differently. Eurocode separates minimum cover and allowance for deviation; US and Australian provisions rely more on tabulated requirements by exposure, casting condition, and member class; Chinese provisions combine environmental category, design working life, and detailing requirements. In cross-code review, comparing one cover number is not enough; the reviewer should state whether durability, bond, fire resistance, or construction tolerance is governing."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "临界周长",
-          "en": "Critical perimeter"
+          "zh": "最小值与名义值",
+          "en": "Minimum vs nominal"
         },
         "text": {
-          "zh": "冲切验算的第一步不是选一个剪力系数，而是定义控制周长。内柱、边柱、角柱和靠近洞口的柱，其可用周长不同，直接改变设计剪应力。",
-          "en": "The first step in punching review is not selecting a shear coefficient, but defining the control perimeter. Interior, edge, corner, and opening-adjacent columns have different available perimeters, directly changing the design shear stress."
+          "zh": "设计图纸通常标注名义保护层，施工验收关注实际偏差。欧洲规范明确把最小保护层和允许偏差相加，这有助于区分设计需求和施工容错。",
+          "en": "Drawings usually state nominal cover, while site acceptance deals with actual deviation. Eurocode explicitly adds minimum cover and an allowance for deviation, which separates design need from construction tolerance."
         }
       },
       {
         "label": {
-          "zh": "弯矩传递",
-          "en": "Moment transfer"
+          "zh": "暴露环境",
+          "en": "Exposure environment"
         },
         "text": {
-          "zh": "柱边不平衡弯矩会让周长上的剪应力不均匀。不同规范用放大系数、偏心剪应力或专门传递模型处理，不能把全部柱反力平均摊到周长上就结束。",
-          "en": "Unbalanced moment at the column makes shear stress non-uniform around the perimeter. Different codes use amplification factors, eccentric shear stress, or specific transfer models; simply averaging the column reaction over the perimeter is incomplete."
+          "zh": "室内干燥、沿海氯盐、冻融、化学侵蚀和海工环境对应不同耐久性需求。保护层不足时，强度合格的构件也可能因钢筋腐蚀提前失效。",
+          "en": "Dry interiors, coastal chlorides, freeze-thaw, chemical attack, and marine exposure impose different durability demands. A member with adequate strength can still fail prematurely through reinforcement corrosion if cover is insufficient."
         }
       },
       {
         "label": {
-          "zh": "抗冲切钢筋",
-          "en": "Punching reinforcement"
+          "zh": "厚保护层的反作用",
+          "en": "Penalty of excessive cover"
         },
         "text": {
-          "zh": "当混凝土抗力不足时，剪力钉、闭合箍筋或弯起钢筋的布置范围、锚固和外控制周长都要复核。它不是任意加几根钢筋，而是改变破坏控制面的设计。",
-          "en": "When concrete resistance is insufficient, studs, closed links, or bent-up bars require checks for layout extent, anchorage, and the outer control perimeter. This is not arbitrary extra steel; it changes the design of the governing failure surface."
+          "zh": "保护层并非越厚越好。过厚保护层可能增加裂缝宽度、降低表层钢筋控制裂缝的效率，并带来浇筑密实度和尺寸控制问题。",
+          "en": "More cover is not always better. Excessive cover can increase crack width, reduce the effectiveness of surface reinforcement in crack control, and create compaction and dimensional-control problems."
         }
       }
     ],
     "takeaway": {
-      "zh": "冲切剪力审查的核心是几何和力流。板柱节点看起来只是一个局部验算，但它控制了无梁楼盖体系的鲁棒性、施工容错和突然破坏风险。跨规范沟通时，先画出控制周长和荷载偏心，比直接比较一个混凝土抗剪公式更可靠。",
-      "en": "Punching shear review is fundamentally about geometry and load path. A slab-column joint may look like a local check, but it controls robustness, construction tolerance, and brittle failure risk in flat-plate systems. In cross-code communication, drawing the control perimeter and load eccentricity is more reliable than directly comparing one concrete shear-resistance formula."
+      "zh": "保护层审查的关键不是背一个毫米数，而是追问控制因素。跨规范项目中，同一个35 mm可能代表不同假设：暴露等级、钢筋直径、施工偏差、防火要求和设计年限都可能不同。专业表达应写清楚“名义保护层、最小保护层、允许偏差和控制环境”。",
+      "en": "Cover review is not memorising a millimetre value; it is identifying the governing factor. In cross-code projects, the same 35 mm can reflect different assumptions about exposure class, bar diameter, construction deviation, fire requirement, and design life. A professional note should state nominal cover, minimum cover, deviation allowance, and governing exposure environment."
     },
     "example": {
       "title": {
-        "zh": "参考实例：同一柱反力下，控制周长减少会怎样放大冲切剪应力？",
-        "en": "Reference example: how does a smaller control perimeter amplify punching shear stress under the same column reaction?"
+        "zh": "参考实例：为什么名义保护层需要加施工偏差？",
+        "en": "Reference example: why does nominal cover include construction deviation?"
       },
       "intro": {
-        "zh": "假设同一块楼板在两个位置有相同设计剪力 VEd 和有效高度 d。内柱可以形成完整控制周长 u1；边柱因楼板边界缺失，可用周长更短。忽略弯矩偏心差异时，设计剪应力与控制周长成反比。",
-        "en": "Assume the same slab has the same design shear VEd and effective depth d at two column locations. An interior column can develop a full control perimeter u1; an edge column has a shorter available perimeter because part of the slab is absent. Ignoring moment-eccentricity differences, design shear stress is inversely proportional to the control perimeter."
+        "zh": "假设某RC构件按耐久性和粘结要求确定的最小保护层为25 mm，项目采用10 mm施工偏差 allowance。图纸若只标25 mm，现场轻微偏差就可能让实际保护层低于耐久性最低要求。",
+        "en": "Assume an RC member requires a 25 mm minimum cover from durability and bond considerations, and the project uses a 10 mm allowance for construction deviation. If the drawing states only 25 mm, a small site deviation can place actual cover below the durability minimum."
       },
       "equations": [
         {
           "label": {
-            "zh": "欧洲规范的设计冲切剪应力表达",
-            "en": "Eurocode design punching shear stress"
+            "zh": "欧洲规范名义保护层",
+            "en": "Eurocode nominal cover"
           },
-          "formula": "vEd = β VEd / (u1 d)",
+          "formula": "cnom = cmin + Δcdev",
           "formulaTokens": [
             {
-              "text": "v",
-              "sub": "Ed"
-            },
-            {
-              "text": " = β "
-            },
-            {
-              "text": "V",
-              "sub": "Ed"
-            },
-            {
-              "text": " / ("
-            },
-            {
-              "text": "u",
-              "sub": "1"
-            },
-            {
-              "text": " d)"
-            }
-          ],
-          "citation": {
-            "zh": "EN 1992-1-1:2004, 6.4.3, Eq. (6.38)。",
-            "en": "EN 1992-1-1:2004, 6.4.3, Eq. (6.38)."
-          }
-        },
-        {
-          "label": {
-            "zh": "无抗冲切钢筋时的混凝土抗力模型",
-            "en": "Concrete resistance without punching reinforcement"
-          },
-          "formula": "vRd,c = [CRd,c k (100 ρl fck)^(1/3) + k1 σcp] ≥ vmin + k1 σcp",
-          "formulaTokens": [
-            {
-              "text": "v",
-              "sub": "Rd,c"
-            },
-            {
-              "text": " = ["
-            },
-            {
-              "text": "C",
-              "sub": "Rd,c"
-            },
-            {
-              "text": " k (100 "
-            },
-            {
-              "text": "ρ",
-              "sub": "l"
-            },
-            {
-              "text": " "
-            },
-            {
-              "text": "f",
-              "sub": "ck"
-            },
-            {
-              "text": ")",
-              "sup": "1/3"
-            },
-            {
-              "text": " + "
-            },
-            {
-              "text": "k",
-              "sub": "1"
-            },
-            {
-              "text": " "
-            },
-            {
-              "text": "σ",
-              "sub": "cp"
-            },
-            {
-              "text": "] ≥ "
-            },
-            {
-              "text": "v",
-              "sub": "min"
-            },
-            {
-              "text": " + "
-            },
-            {
-              "text": "k",
-              "sub": "1"
-            },
-            {
-              "text": " "
-            },
-            {
-              "text": "σ",
-              "sub": "cp"
-            }
-          ],
-          "citation": {
-            "zh": "EN 1992-1-1:2004, 6.4.4, Eq. (6.47)。",
-            "en": "EN 1992-1-1:2004, 6.4.4, Eq. (6.47)."
-          }
-        },
-        {
-          "label": {
-            "zh": "简化筛查：周长减少导致的需求放大",
-            "en": "Simplified screen: demand amplification caused by perimeter reduction"
-          },
-          "formula": "vEd,edge / vEd,int = uint / uedge",
-          "formulaTokens": [
-            {
-              "text": "v",
-              "sub": "Ed,edge"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "text": "v",
-              "sub": "Ed,int"
+              "text": "c",
+              "sub": "nom"
             },
             {
               "text": " = "
             },
             {
-              "text": "u",
-              "sub": "int"
+              "text": "c",
+              "sub": "min"
             },
             {
-              "text": " / "
+              "text": " + Δ"
             },
             {
-              "text": "u",
-              "sub": "edge"
+              "text": "c",
+              "sub": "dev"
             }
           ],
           "citation": {
-            "zh": "由 EN 1992-1-1:2004, 6.4.3, Eq. (6.38) 在相同 VEd、d 和 β 假设下推导；仅用于概念筛查。",
-            "en": "Derived from EN 1992-1-1:2004, 6.4.3, Eq. (6.38), assuming the same VEd, d, and β; for conceptual screening only."
+            "zh": "EN 1992-1-1:2004, 4.4.1.1, Eq. (4.1)。",
+            "en": "EN 1992-1-1:2004, 4.4.1.1, Eq. (4.1)."
+          }
+        },
+        {
+          "label": {
+            "zh": "最小保护层控制项",
+            "en": "Minimum cover controlling terms"
+          },
+          "formula": "cmin = max{cmin,b; cmin,dur + Δcdur,γ - Δcdur,st - Δcdur,add; 10 mm}",
+          "formulaTokens": [
+            {
+              "text": "c",
+              "sub": "min"
+            },
+            {
+              "text": " = max{"
+            },
+            {
+              "text": "c",
+              "sub": "min,b"
+            },
+            {
+              "text": "; "
+            },
+            {
+              "text": "c",
+              "sub": "min,dur"
+            },
+            {
+              "text": " + Δ"
+            },
+            {
+              "text": "c",
+              "sub": "dur,γ"
+            },
+            {
+              "text": " - Δ"
+            },
+            {
+              "text": "c",
+              "sub": "dur,st"
+            },
+            {
+              "text": " - Δ"
+            },
+            {
+              "text": "c",
+              "sub": "dur,add"
+            },
+            {
+              "text": "; 10 mm}"
+            }
+          ],
+          "citation": {
+            "zh": "EN 1992-1-1:2004, 4.4.1.2, Eq. (4.2)。",
+            "en": "EN 1992-1-1:2004, 4.4.1.2, Eq. (4.2)."
+          }
+        },
+        {
+          "label": {
+            "zh": "简化筛查：图纸名义值",
+            "en": "Simplified screen: drawing nominal value"
+          },
+          "formula": "cnom = 25 mm + 10 mm = 35 mm",
+          "formulaTokens": [
+            {
+              "text": "c",
+              "sub": "nom"
+            },
+            {
+              "text": " = 25 mm + 10 mm = 35 mm"
+            }
+          ],
+          "citation": {
+            "zh": "由 EN 1992-1-1:2004, 4.4.1.1, Eq. (4.1) 推导；示例数值仅用于说明名义保护层与施工偏差关系。",
+            "en": "Derived from EN 1992-1-1:2004, 4.4.1.1, Eq. (4.1); example values are used only to illustrate the relation between nominal cover and construction deviation."
           }
         }
       ],
       "note": {
-        "zh": "例如内柱控制周长为 4.8 m，边柱有效控制周长为 3.2 m，在相同 VEd、d 和 β 下，边柱名义冲切剪应力约为内柱的 4.8 / 3.2 = 1.5 倍。实际设计还必须考虑边柱弯矩传递、开洞、柱帽、抗冲切钢筋和规范指定的最外控制周长。",
-        "en": "For example, if an interior-column control perimeter is 4.8 m and an edge-column effective perimeter is 3.2 m, then under the same VEd, d, and β, the nominal punching shear stress at the edge column is about 4.8 / 3.2 = 1.5 times the interior-column value. Real design must also consider edge-column moment transfer, openings, drop panels or column heads, punching reinforcement, and the code-specified outer control perimeter."
+        "zh": "如果现场实测保护层为30 mm，这并不必然说明构件失效，但它说明图纸名义35 mm中的10 mm施工余量已被消耗一半。审查时应回到控制环境类别、耐久性最低值、钢筋直径、防火要求和项目验收容差，而不是简单判断“差5 mm是否可以”。",
+        "en": "If measured site cover is 30 mm, the member is not automatically unsafe, but half of the 10 mm construction allowance embedded in the 35 mm nominal cover has been consumed. Review should return to the governing exposure class, durability minimum, bar diameter, fire requirement, and project acceptance tolerance, rather than asking only whether a 5 mm shortfall is acceptable."
       }
     },
     "references": [
-      "EN 1992-1-1:2004, 6.4.3 and 6.4.4.",
-      "ACI 318-19, Chapter 22 two-way shear provisions.",
-      "Wahab et al., Comparative Analysis of Shear Strength Prediction Models for Reinforced Concrete Slab-Column Connections, arXiv:2311.12824."
+      "EN 1992-1-1:2004, 4.4.1.1 and 4.4.1.2.",
+      "ACI 318-19, concrete cover and exposure durability provisions.",
+      "AS 3600:2018, durability and cover requirements for reinforced concrete."
     ],
     "referenceLinks": [
       {
-        "label": "arXiv: Slab-column shear strength model comparison",
-        "url": "https://arxiv.org/abs/2311.12824"
+        "label": "European Commission: Eurocodes design standards",
+        "url": "https://eurocodes.jrc.ec.europa.eu/"
       },
       {
         "label": "ACI: ACI 318 Building Code Requirements for Structural Concrete",
         "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=31819"
       },
       {
-        "label": "European Commission: Eurocodes design standards",
-        "url": "https://eurocodes.jrc.ec.europa.eu/"
+        "label": "Standards Australia: AS 3600 Concrete structures",
+        "url": "https://store.standards.org.au/product/as-3600-2018"
       }
     ]
   }
