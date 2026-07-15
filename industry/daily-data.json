@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,76 +7,76 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "AI基础设施",
-        "en": "AI infrastructure"
+        "zh": "半导体",
+        "en": "Semiconductors"
       },
       "title": {
-        "zh": "纽约暂停大型数据中心许可一年，AI算力扩张开始正面碰到电力与气候监管",
-        "en": "New York pauses large data-centre permits for a year as AI compute expansion meets power and climate regulation"
+        "zh": "ASML上调2026年收入和毛利率指引，AI芯片周期继续推高先进制程设备稀缺性",
+        "en": "ASML raises 2026 revenue and margin guidance as the AI chip cycle tightens advanced-tool scarcity"
       },
       "summary": {
-        "zh": "AP报道，纽约州对大型数据中心建设发布一年暂停令，以研究电力、水资源、噪声和气候影响。这个动作说明，AI基础设施的约束正在从GPU供应转向地方许可、公共电价和环境承载力。对行业而言，数据中心不再只是科技公司资本开支问题，而是能源规划、社区关系和气候政策的交叉审批问题。后续要看其他州是否跟进，以及项目是否转向电力更宽松地区。",
-        "en": "AP reports that New York has ordered a one-year pause on large data-centre construction while it studies power, water, noise, and climate impacts. The signal is that AI-infrastructure constraints are moving from GPU supply toward local permits, household utility costs, and environmental capacity. Data centres are no longer only a technology-capex issue; they are now an energy-planning, community-relations, and climate-policy approval problem. Watch whether other states follow and whether projects migrate toward power-abundant regions."
+        "zh": "MarketWatch报道，ASML在强劲二季度后把2026年收入指引上调至430亿至450亿欧元，并提高毛利率预期。作为EUV光刻设备唯一供应商，ASML的扩产节奏直接影响TSMC、Samsung、Intel等先进制程客户。行业信号是，AI芯片需求并没有只停留在GPU公司财报里，而是在向上游设备、产能排队和议价能力传导。下一步要看2027与2028年EUV、High-NA设备交付能力是否成为先进芯片扩张瓶颈。",
+        "en": "MarketWatch reports that ASML raised its 2026 revenue guidance to €43bn-€45bn and lifted its gross-margin outlook after a strong second quarter. As the sole supplier of EUV lithography systems, ASML's capacity path directly affects advanced-node customers such as TSMC, Samsung, and Intel. The signal is that AI-chip demand is not confined to GPU earnings; it is propagating upstream into equipment scarcity, production queues, and pricing power. Watch whether 2027 and 2028 EUV and High-NA deliveries become the limiting factor for advanced-chip expansion."
       },
       "watch": {
-        "zh": "关注暂停期后的能耗、水耗、排放和备用电源标准是否成为美国其他州的数据中心审批模板。",
-        "en": "Watch whether post-moratorium standards on energy use, water use, emissions, and backup power become a template for other US states."
+        "zh": "关注ASML扩产是否能跟上先进封装、HBM和逻辑芯片需求，以及中国订单变化是否影响长期产能配置。",
+        "en": "Watch whether ASML capacity can keep pace with advanced packaging, HBM, and logic demand, and whether China-order shifts affect long-term capacity allocation."
       },
-      "reference": "AP, New York data-center moratorium, published 2026-07-15",
+      "reference": "MarketWatch, ASML beat-and-raise quarter and capacity expansion, published 2026-07-16",
       "referenceLinks": [
         {
-          "label": "AP: New York data-centre moratorium",
-          "url": "https://apnews.com/article/c1e05b74208a6c570eec7c658ac8f187"
+          "label": "MarketWatch: ASML raises 2026 outlook",
+          "url": "https://www.marketwatch.com/story/asml-is-scrambling-to-build-more-capacity-after-blockbuster-beat-and-raise-quarter-89e2febb"
         }
       ]
     },
     {
       "topic": {
-        "zh": "数字支付",
-        "en": "Digital payments"
+        "zh": "教育科技",
+        "en": "Education technology"
       },
       "title": {
-        "zh": "美联储加速稳定币规则征求意见，数字美元支付进入银行监管主航道",
-        "en": "The Fed accelerates stablecoin rulemaking as digital-dollar payments enter the banking-regulation mainstream"
+        "zh": "Google在印度推出AI教育与开发者计划，AI人才培养正在从工具培训走向生态绑定",
+        "en": "Google launches AI education and developer programmes in India as talent building becomes ecosystem strategy"
       },
       "summary": {
-        "zh": "Barron's报道，美联储正赶在GENIUS Act期限前发布支付稳定币监管规则并征求意见。稳定币的竞争点正在从链上交易速度转向储备资产、赎回机制、银行接口和监管报告。对金融科技公司而言，合规能力会变成产品能力的一部分；对银行和支付网络而言，稳定币可能成为跨境结算与商户收款的新接口，而不是游离在金融体系外的加密资产。",
-        "en": "Barron's reports that the Federal Reserve is racing to release payment-stablecoin rules for public comment under the GENIUS Act deadline. Competition is shifting from on-chain speed toward reserve assets, redemption mechanics, bank interfaces, and regulatory reporting. For fintech firms, compliance becomes part of product capability; for banks and payment networks, stablecoins may become a new interface for cross-border settlement and merchant collection rather than a crypto asset outside the financial system."
+        "zh": "Times of India报道，Google在I/O Connect India 2026推出面向开发者、初创企业和企业的AI工具、教育课程与安全合作，并强调数据本地化与负责任AI。教育科技的重点正在从单个AI学习产品转向平台生态：云服务、模型工具、课程、创业支持和合规框架被打包在一起。对印度市场而言，AI教育不只是培训学生使用工具，而是争夺下一代开发者入口和企业采用路径。",
+        "en": "The Times of India reports that Google used I/O Connect India 2026 to launch AI tools, education programmes, safety partnerships, and developer support for startups and enterprises, while emphasising data localisation and responsible AI. Edtech is moving from single AI learning products toward platform ecosystems in which cloud services, model tools, curricula, startup support, and compliance frameworks are bundled. For India, AI education is not only training students to use tools; it is a contest for the next generation of developers and enterprise adoption pathways."
       },
       "watch": {
-        "zh": "重点看规则是否要求高流动性储备、实时赎回和银行级运营风险控制，这会决定小型发行方是否还能独立竞争。",
-        "en": "Watch whether the rules require highly liquid reserves, real-time redemption, and bank-grade operational-risk controls, which will determine whether smaller issuers can compete independently."
+        "zh": "关注印度高校、政府培训项目和企业云采购是否形成闭环，以及本地数据要求是否促使更多AI基础设施落地印度。",
+        "en": "Watch whether Indian universities, public training schemes, and enterprise cloud procurement form a closed loop, and whether data-localisation requirements pull more AI infrastructure into India."
       },
-      "reference": "Barron's, Fed racing to release stablecoin rules, published 2026-07-15",
+      "reference": "Times of India, Google I/O Connect India 2026 AI education programmes, published 2026-07-15",
       "referenceLinks": [
         {
-          "label": "Barron's: Fed stablecoin rulemaking",
-          "url": "https://www.barrons.com/livecoverage/fed-kevin-warsh-congress-testimony/card/fed-racing-to-release-stablecoin-rules-NO4hQNFK01hHRF8t9jpV"
+          "label": "Times of India: Google AI education push in India",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/google-launches-new-ai-tools-education-programs-for-indias-developers-and-startups-at-i/o-connect-india-2026/articleshow/132384447.cms"
         }
       ]
     },
     {
       "topic": {
-        "zh": "自动驾驶",
-        "en": "Autonomous mobility"
+        "zh": "游戏与电竞",
+        "en": "Gaming and esports"
       },
       "title": {
-        "zh": "NHTSA警告Robotaxi阻碍急救响应，自动驾驶监管从事故率转向场景责任",
-        "en": "NHTSA warns robotaxis over emergency-response interference, moving AV regulation from crash rates to scenario responsibility"
+        "zh": "电竞世界杯迁至巴黎，游戏赛事正从娱乐产品变成国家级软实力和资本项目",
+        "en": "The Esports World Cup moves to Paris as gaming events become soft-power and capital projects"
       },
       "summary": {
-        "zh": "San Antonio Express-News报道，NHTSA因Robotaxi阻碍急救车辆、误入应急现场等事件，要求Waymo、Tesla、Zoox等公司与监管方会面。这个信号很关键：自动驾驶商业化不能只证明平均安全性，还必须证明在洪水、警灯、路锥、消防车和临时管制场景下的可解释响应。监管重心正在从“有没有撞车”转向“系统是否理解城市应急秩序”。",
-        "en": "The San Antonio Express-News reports that NHTSA has warned robotaxi operators, including Waymo, Tesla, and Zoox, after incidents involving blocked emergency vehicles and entry into active response scenes. The signal is important: commercial AV deployment cannot prove only average safety; it must prove interpretable behaviour around floods, flashing lights, cones, firetrucks, and temporary control. Regulation is moving from whether vehicles crash to whether systems understand urban emergency order."
+        "zh": "Le Monde报道，2026年电竞世界杯因中东冲突迁至巴黎，约2000名选手参加24个项目，总奖金接近7500万美元，背后仍由沙特资本承担主要组织成本。这个事件说明，电竞已经不只是游戏发行的营销渠道，而是旅游、城市品牌、主权基金、青年文化和地缘政治叙事的交叉平台。对游戏产业而言，未来增长越来越依赖赛事版权、场馆运营、政府合作和国际舆论风险管理。",
+        "en": "Le Monde reports that the 2026 Esports World Cup has been relocated to Paris because of Middle East conflict, with about 2,000 players across 24 titles and nearly $75m in prize money, while Saudi-linked capital remains central to organisation costs. The event shows that esports is no longer merely a marketing channel for game publishers; it is a platform connecting tourism, city branding, sovereign capital, youth culture, and geopolitical narrative. Future gaming growth will increasingly depend on event rights, venue operations, government cooperation, and international-reputation risk management."
       },
       "watch": {
-        "zh": "关注NHTSA是否要求统一应急场景测试、远程接管流程和城市级数据共享，这可能重塑Robotaxi扩张节奏。",
-        "en": "Watch whether NHTSA requires standard emergency-scenario testing, remote-intervention protocols, and city-level data sharing, which could reshape robotaxi rollout speed."
+        "zh": "关注法国本地游戏产业是否真正受益，以及主权资本主导的大型赛事是否会推动电竞治理、赞助披露和人权审查规则。",
+        "en": "Watch whether France's local game industry actually benefits, and whether sovereign-capital-led events push stronger esports governance, sponsorship disclosure, and human-rights review rules."
       },
-      "reference": "San Antonio Express-News, NHTSA warning to robotaxi companies, published 2026-07-15",
+      "reference": "Le Monde, EWC 2026 in Paris and France-Saudi esports partnership, published 2026-07-09",
       "referenceLinks": [
         {
-          "label": "Express-News: NHTSA robotaxi emergency-response warning",
-          "url": "https://www.expressnews.com/business/article/nhtsa-waymo-tesla-zoox-robotaxi-emergency-response-22343989.php"
+          "label": "Le Monde: Esports World Cup 2026 in Paris",
+          "url": "https://www.lemonde.fr/en/pixels/article/2026/07/09/ewc-2026-in-paris-behind-the-scenes-of-the-controversial-partnership-between-france-and-saudi-arabia-in-esports_6755290_13.html"
         }
       ]
     }
@@ -84,276 +84,279 @@
   "insights": [
     {
       "area": {
-        "zh": "低碳结构设计",
-        "en": "Low-carbon structural design"
+        "zh": "材料疲劳",
+        "en": "Material fatigue"
       },
       "title": {
-        "zh": "拓扑优化RC梁试验显示，同等材料下承载力可显著提高，低碳不只是换材料",
-        "en": "Topology-optimised RC beam tests show higher capacity with the same material, so low carbon is not only a material-substitution problem"
+        "zh": "UHPC与高强钢疲劳模拟正在从逐周循环计算走向加速断裂框架",
+        "en": "UHPC and high-strength-steel fatigue simulation is moving from cycle-by-cycle analysis toward accelerated fracture frameworks"
       },
       "evidence": {
-        "zh": "研究类型：2026年预印本；内容：拓扑优化钢筋混凝土梁的设计、制作与试验，报告同等材料用量下承载力提高36%至42%。",
-        "en": "Evidence: 2026 preprint on the design, fabrication, and testing of topology-optimised reinforced-concrete beams, reporting 36% to 42% higher loads with the same material use."
+        "zh": "研究类型：2026年预印本；内容：用加速PF-CZM框架模拟UHPC和HSS的混合断裂与高周疲劳。",
+        "en": "Evidence: 2026 preprint using an accelerated phase-field cohesive-zone framework to simulate mixed-mode fracture and high-cycle fatigue in UHPC and HSS."
       },
       "summary": {
-        "zh": "这项研究的价值在于把低碳混凝土议题从“换水泥、换掺合料”扩展到“用更合理的受力路径减少材料浪费”。作者用结构拓扑优化生成非传统RC梁几何，并通过制作和试验验证其延性破坏与承载提升。对结构工程师而言，未来低碳能力不只是会查LCA数据库，还包括理解力流、构造可制造性、施工误差和规范验算之间的关系。边界也很明确：复杂几何、钢筋布置、模板成本、质量控制和审图接受度，都会决定这种方法能否从实验室进入常规工程。",
-        "en": "The value of this work is that it expands low-carbon concrete from cement replacement and supplementary binders to the reduction of material waste through more rational load paths. The authors use structural topology optimisation to generate non-conventional RC beam geometries, then fabricate and test them, observing ductile failure and higher load capacity. For structural engineers, future low-carbon competence is not only the ability to read LCA databases; it also requires understanding force flow, constructability, construction tolerance, and code verification. The boundary is clear: complex geometry, reinforcement detailing, formwork cost, quality control, and review acceptance will determine whether this moves from laboratory evidence to routine practice."
+        "zh": "高性能材料正在进入桥梁、风电基础、轨道和工业结构，但疲劳行为往往仍依赖昂贵试验和保守经验曲线。这项研究把UHPC与高强钢的断裂和高周疲劳放进PF-CZM框架，并用包络荷载和自适应循环增量减少逐周循环计算成本。对结构工程师的意义是，未来疲劳评估可能不再只查S-N曲线，而会结合裂纹驱动力、材料本构和数字孪生更新。局限是数值模型仍需要大量试验校准，工程应用前必须证明对焊接细节、施工缺陷和环境退化的泛化能力。",
+        "en": "High-performance materials are entering bridges, wind foundations, rail assets, and industrial structures, but their fatigue behaviour still often relies on costly tests and conservative empirical curves. This study places fracture and high-cycle fatigue of UHPC and high-strength steel within a PF-CZM framework, using envelope loading and adaptive cycle increments to reduce the cost of cycle-by-cycle simulation. For structural engineers, fatigue assessment may shift from simply selecting S-N curves toward combining crack-driving force, material constitutive behaviour, and digital-twin updating. The limitation is that numerical models still require substantial experimental calibration, and practical use must prove generalisation across welded details, construction defects, and environmental degradation."
       },
       "caveat": {
-        "zh": "这是有价值的设计方向，但不能直接替代现行规范的常规构件承载、裂缝、挠度和耐久性验算。",
-        "en": "This is a valuable design direction, but it cannot directly replace standard code checks for member strength, cracking, deflection, and durability."
+        "zh": "该方法适合作为研究和高价值构件评估工具，短期不应脱离规范疲劳细节分类独立使用。",
+        "en": "The method is suited to research and high-value component assessment, but should not yet be used independently of code fatigue-detail classifications."
       },
-      "reference": "Jewett and Carstensen, Topology Optimization for Materially Efficient Reinforced Concrete Design, arXiv:2604.22070",
+      "reference": "Li et al., High performance construction materials fracture and high cycle fatigue assessment based on accelerated PF-CZM, arXiv:2606.23468",
       "referenceLinks": [
         {
-          "label": "arXiv: Topology optimisation for materially efficient RC design",
-          "url": "https://arxiv.org/abs/2604.22070"
+          "label": "arXiv: Accelerated PF-CZM for UHPC and HSS fatigue",
+          "url": "https://arxiv.org/abs/2606.23468"
         }
       ]
     },
     {
       "area": {
-        "zh": "桥梁方案韧性",
-        "en": "Bridge design robustness"
+        "zh": "桥梁水毁风险",
+        "en": "Bridge hydraulic risk"
       },
       "title": {
-        "zh": "代理模型用于RC铁路桥早期设计，说明施工约束应在方案阶段进入可靠度判断",
-        "en": "Surrogate models for RC rail bridges show that construction constraints should enter reliability judgement at concept stage"
+        "zh": "桥梁冲刷风险提醒结构工程师：基础安全不能只看承载力，还要看河床会不会消失",
+        "en": "Bridge scour risk reminds structural engineers that foundation safety is not only bearing capacity, but whether the riverbed remains"
       },
       "evidence": {
-        "zh": "研究类型：2025年预印本；内容：用Kriging等代理模型加速RC铁路桥在几何不确定性下的使用性能设计。",
-        "en": "Evidence: 2025 preprint using Kriging and related surrogate models to accelerate serviceability-based RC rail-bridge design under geometric uncertainty."
+        "zh": "资料类型：FHWA/USGS等公开技术资料；内容：冲刷被长期列为桥梁失效的重要水力因素，评估需考虑收缩冲刷、局部冲刷和长期河床演变。",
+        "en": "Evidence: public FHWA/USGS technical material identifying scour as a major hydraulic contributor to bridge failure, requiring assessment of contraction scour, local scour, and long-term bed change."
       },
       "summary": {
-        "zh": "铁路桥设计常把桥墩位置、几何变化和施工约束视为后期协调问题，但这项研究把这些不确定性作为随机变量进入早期有限元与代理模型流程。它的工程启发是，真正稳健的桥梁方案不是把一次确定性模型算得很精，而是快速探索大量可行几何、识别失效边界，并提前知道哪些现场变化会触发重新设计。对未来工程师而言，代理模型不是为了取代FE，而是为了把高成本分析转化为可迭代的方案筛选。局限是论文仍以特定桥型和数值模型为例，落地需要与业主风险偏好和现场变更机制结合。",
-        "en": "Rail-bridge design often treats pier relocation, geometric variation, and construction constraints as late coordination issues, but this study brings such uncertainties into the early finite-element and surrogate-modelling workflow as random variables. The engineering lesson is that a robust bridge concept is not a single deterministic model solved with high precision; it is the rapid exploration of many feasible geometries, identification of failure boundaries, and early knowledge of which site changes trigger redesign. For future engineers, surrogate modelling does not replace FE analysis; it converts expensive analysis into an iterative concept-screening tool. The limitation is that the paper is still tied to a specific bridge type and numerical model, so practical use needs owner risk criteria and site-change procedures."
+        "zh": "桥梁基础设计常被结构专业简化为桩承载力和墩台稳定，但洪水条件下真正危险的是基础周围河床被局部或整体冲走。冲刷风险受流速、桥孔收缩、墩形、漂浮物、河床材料、河道迁移和洪水历程共同控制。对结构工程师的启发是，桥梁可靠度不能只建立在静态地勘剖面上，必须和水文、地貌、检查维护和封桥预案相连。未来气候变化增加极端降雨后，既有桥梁的冲刷筛查、监测和优先维修会成为基础设施运维的重要能力。局限是经验公式受试验条件影响大，现场校准和洪后检查仍不可替代。",
+        "en": "Bridge-foundation design is often simplified by structural teams into pile capacity and pier stability, but during floods the critical danger can be the local or general removal of the bed around foundations. Scour is governed by velocity, bridge opening contraction, pier shape, debris, bed material, channel migration, and flood history. The lesson is that bridge reliability cannot rest on a static geotechnical profile alone; it must connect hydrology, geomorphology, inspection, maintenance, and closure planning. As climate change increases extreme rainfall, scour screening, monitoring, and repair prioritisation for existing bridges will become a core infrastructure-management capability. The limitation is that empirical equations are sensitive to test conditions, so field calibration and post-flood inspection remain essential."
       },
       "caveat": {
-        "zh": "代理模型必须保留误差验证和适用范围说明，否则会把快速筛选误用成最终设计证明。",
-        "en": "Surrogate models must retain error validation and domain limits, otherwise rapid screening can be mistaken for final design proof."
+        "zh": "冲刷评估应由水文、水力、地质和结构专业联合完成，不能只由结构计算软件内部假设替代。",
+        "en": "Scour assessment should be shared by hydrology, hydraulics, geology, and structural teams, not replaced by assumptions embedded in structural software."
       },
-      "reference": "Achhab et al., Accelerating the Serviceability-Based Design of Reinforced Concrete Rail Bridges, arXiv:2511.10129",
+      "reference": "FHWA HEC-18 and USGS bridge scour technical material",
       "referenceLinks": [
         {
-          "label": "arXiv: Surrogate modelling for RC rail-bridge design",
-          "url": "https://arxiv.org/abs/2511.10129"
+          "label": "FHWA: Evaluating Scour at Bridges, HEC-18",
+          "url": "https://www.fhwa.dot.gov/engineering/hydraulics/library_arc.cfm?pub_number=17&id=151"
+        },
+        {
+          "label": "USGS: Stream stability and scour assessment at bridges",
+          "url": "https://pubs.usgs.gov/sir/2011/5136/"
         }
       ]
     },
     {
       "area": {
-        "zh": "城市灾害风险",
-        "en": "Urban hazard risk"
+        "zh": "气候适应融资",
+        "en": "Climate adaptation finance"
       },
       "title": {
-        "zh": "城市结构损伤可能出现相变行为，单栋建筑安全不等于城市风险平滑",
-        "en": "Urban structural damage can show phase-transition behaviour, so individual-building safety does not imply smooth city-scale risk"
+        "zh": "基础设施气候适应的瓶颈不只是技术，而是长期收益和短期资本之间的错配",
+        "en": "The bottleneck in infrastructure climate adaptation is not only technical, but the mismatch between long-term benefit and short-term capital"
       },
       "evidence": {
-        "zh": "研究类型：2026年预印本；内容：用随机场Ising模型解释自然灾害下城市结构损伤的群体耦合与突变。",
-        "en": "Evidence: 2026 preprint using a random-field Ising model to explain collective coupling and abrupt transitions in urban structural damage under natural hazards."
+        "zh": "研究类型：2025年预印本；内容：提出用综合碳市场为城市基础设施气候适应筹集资金。",
+        "en": "Evidence: 2025 preprint proposing integrated carbon markets as a financing mechanism for urban infrastructure climate adaptation."
       },
       "summary": {
-        "zh": "这项研究把城市建筑群损伤看成相互耦合的系统，而不是很多单栋建筑损伤概率的简单相加。作者指出，在中等地震等自然灾害下，结构组合、空间聚集和建模不确定性可能导致损伤从局部安全突然转向大范围受损。对结构工程师的意义是，城市韧性评估不能只堆叠单体fragility曲线，还要考虑建筑类型多样性、相邻基础设施依赖和修复资源竞争。未来职业能力会更多接触区域风险、保险、政府投资排序和灾后恢复计划。局限是物理类比模型需要用本地建筑清单与真实损伤数据校准。",
-        "en": "This study treats urban building damage as a coupled system rather than a simple sum of individual-building damage probabilities. It argues that under natural hazards such as moderate earthquakes, structural diversity, spatial clustering, and modelling uncertainty can cause damage to shift abruptly from mostly safe to widely damaged states. For structural engineers, urban resilience assessment cannot merely stack single-building fragility curves; it must consider portfolio diversity, infrastructure interdependencies, and competition for repair resources. Future professional work will increasingly touch regional risk, insurance, public-investment prioritisation, and recovery planning. The limitation is that the physics-inspired model must be calibrated with local inventories and observed damage data."
+        "zh": "很多城市知道需要加固排水、桥梁、海岸防护和热浪适应设施，但项目回报周期长、不确定性高，很难吸引短期资本。这项研究从融资机制切入，提出把碳税、碳市场和基础设施适应投资联动，用持续资金流支持公共资产韧性提升。对结构工程师而言，这说明未来基础设施项目不只需要技术可行性，还要能把风险降低、服务连续性、碳减排和社会收益翻译成投资语言。边界是市场机制设计复杂，若缺少透明治理和绩效审计，容易把适应资金变成低效补贴。",
+        "en": "Many cities know they need stronger drainage, bridges, coastal protection, and heat-adaptation assets, but the benefits are long dated and uncertain, making them hard to finance with short-term capital. This study approaches the problem through financing, proposing a link between carbon taxes, carbon markets, and infrastructure-adaptation investment to create a continuous funding stream for public-asset resilience. For structural engineers, this means future infrastructure projects need not only technical feasibility, but also the ability to translate risk reduction, service continuity, carbon mitigation, and social benefit into investment language. The boundary is that market design is complex; without transparent governance and performance auditing, adaptation finance can become inefficient subsidy."
       },
       "caveat": {
-        "zh": "该模型适合启发区域风险诊断，但不应脱离本地建筑类型、地震危险度和维修能力独立使用。",
-        "en": "The model is useful for regional risk diagnosis, but should not be used without local building typologies, seismic hazard, and repair-capacity information."
+        "zh": "融资创新不能替代工程优先级排序；最脆弱资产、失效后果和可实施维护路径仍应先被量化。",
+        "en": "Financial innovation cannot replace engineering prioritisation; the most vulnerable assets, failure consequences, and feasible maintenance pathways still need to be quantified first."
       },
-      "reference": "Oh et al., Phase Transitions in Collective Damage of Civil Structures under Natural Hazards, arXiv:2602.16195",
+      "reference": "Li et al., Bridging financial gaps for infrastructure climate adaptation via integrated carbon markets, arXiv:2501.08004",
       "referenceLinks": [
         {
-          "label": "arXiv: Phase transitions in collective civil-structure damage",
-          "url": "https://arxiv.org/abs/2602.16195"
+          "label": "arXiv: Infrastructure climate adaptation finance",
+          "url": "https://arxiv.org/abs/2501.08004"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "混凝土保护层不是随手取数：为什么中外规范把耐久性、粘结、防火和施工偏差放进同一个厚度？",
-      "en": "Concrete cover is not an arbitrary number: why design codes combine durability, bond, fire resistance, and construction tolerance in one thickness"
+      "zh": "层间位移不是简单挠度：为什么中外抗震审查要同时看漂移、二阶效应和构件延性？",
+      "en": "Storey drift is not ordinary deflection: why seismic review must consider drift, second-order effects, and member ductility together"
     },
     "text": {
-      "zh": "混凝土保护层常被现场理解成“钢筋离模板多少毫米”，但设计含义更复杂。它同时服务于钢筋粘结锚固、氯离子和碳化耐久性、防火隔热、施工偏差以及检测可实施性。中国、澳洲、美国和欧洲规范都用暴露环境、构件类型、混凝土质量、钢筋直径和施工控制水平来决定保护层，但表达方式不同：欧洲把最小保护层与施工偏差明确相加，美国和澳洲更多通过表格按暴露条件、浇筑位置和构件类别给出要求，中国则结合环境类别、设计使用年限和构造要求。跨规范复核时，不能只比较一个cover数值；应说明它到底是在满足耐久性、粘结、防火还是施工容差控制。",
-      "en": "Concrete cover is often read on site as the distance from reinforcement to formwork, but its design meaning is broader. It serves bond and anchorage, chloride and carbonation durability, fire insulation, construction tolerance, and inspectability at the same time. Chinese, Australian, US, and European codes all use exposure environment, member type, concrete quality, bar diameter, and construction control to determine cover, but they express the logic differently. Eurocode separates minimum cover and allowance for deviation; US and Australian provisions rely more on tabulated requirements by exposure, casting condition, and member class; Chinese provisions combine environmental category, design working life, and detailing requirements. In cross-code review, comparing one cover number is not enough; the reviewer should state whether durability, bond, fire resistance, or construction tolerance is governing."
+      "zh": "抗震设计中的层间位移不是普通梁挠度。它描述的是相邻楼层在地震侧移下的相对位移，直接关系到隔墙、幕墙、机电管线、楼梯、门窗以及柱端塑性铰的变形需求。中国、澳洲、美国和欧洲规范都控制层间位移，但逻辑不同：有的强调弹性分析位移乘以放大系数，有的用位移角限值区分多遇地震和罕遇地震，有的把延性等级、重要性系数和二阶效应一起放进稳定审查。跨规范沟通时，不能把 drift ratio 当成静态舒适度指标；它同时是非结构损伤、结构延性和整体稳定的共同语言。",
+      "en": "Storey drift in seismic design is not ordinary beam deflection. It is the relative lateral displacement between adjacent floors under earthquake response, and it directly affects partitions, curtain walls, MEP services, stairs, doors, windows, and plastic hinge deformation demand at column ends. Chinese, Australian, US, and European codes all limit drift, but the logic differs: some amplify elastic analysis displacement; some use drift-ratio limits for frequent and rare earthquakes; some combine ductility class, importance factors, and second-order effects in stability checks. In cross-code communication, drift ratio should not be treated as a static comfort index; it is a shared language for non-structural damage, structural ductility, and global stability."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "最小值与名义值",
-          "en": "Minimum vs nominal"
+          "zh": "位移来源",
+          "en": "Source of displacement"
         },
         "text": {
-          "zh": "设计图纸通常标注名义保护层，施工验收关注实际偏差。欧洲规范明确把最小保护层和允许偏差相加，这有助于区分设计需求和施工容错。",
-          "en": "Drawings usually state nominal cover, while site acceptance deals with actual deviation. Eurocode explicitly adds minimum cover and an allowance for deviation, which separates design need from construction tolerance."
+          "zh": "地震层间位移通常来自弹性分析结果再经放大或折减处理。不同规范对弹性位移、设计位移和验算位移的定义不完全相同，直接比较数值容易误判。",
+          "en": "Seismic storey drift is usually obtained from elastic analysis and then amplified or modified. Codes define elastic, design, and check displacements differently, so direct numerical comparison can be misleading."
         }
       },
       {
         "label": {
-          "zh": "暴露环境",
-          "en": "Exposure environment"
+          "zh": "二阶效应",
+          "en": "Second-order effects"
         },
         "text": {
-          "zh": "室内干燥、沿海氯盐、冻融、化学侵蚀和海工环境对应不同耐久性需求。保护层不足时，强度合格的构件也可能因钢筋腐蚀提前失效。",
-          "en": "Dry interiors, coastal chlorides, freeze-thaw, chemical attack, and marine exposure impose different durability demands. A member with adequate strength can still fail prematurely through reinforcement corrosion if cover is insufficient."
+          "zh": "当楼层侧移较大时，竖向重力荷载会通过 P-Delta 效应增加倾覆和构件弯矩需求。漂移控制因此不仅是非结构损伤问题，也是整体稳定问题。",
+          "en": "When lateral displacement is large, gravity loads increase overturning and member moment demand through P-Delta effects. Drift control is therefore not only a non-structural damage issue, but also a global stability issue."
         }
       },
       {
         "label": {
-          "zh": "厚保护层的反作用",
-          "en": "Penalty of excessive cover"
+          "zh": "延性与限值",
+          "en": "Ductility and limits"
         },
         "text": {
-          "zh": "保护层并非越厚越好。过厚保护层可能增加裂缝宽度、降低表层钢筋控制裂缝的效率，并带来浇筑密实度和尺寸控制问题。",
-          "en": "More cover is not always better. Excessive cover can increase crack width, reduce the effectiveness of surface reinforcement in crack control, and create compaction and dimensional-control problems."
+          "zh": "延性较高的体系可以通过塑性耗能承受更大变形，但这不等于所有构件和非结构系统都能接受同样漂移。漂移限值必须与构件细部和使用功能一起解释。",
+          "en": "A ductile system can dissipate energy through plastic deformation, but that does not mean all members and non-structural systems can tolerate the same drift. Drift limits must be interpreted together with detailing and occupancy function."
         }
       }
     ],
     "takeaway": {
-      "zh": "保护层审查的关键不是背一个毫米数，而是追问控制因素。跨规范项目中，同一个35 mm可能代表不同假设：暴露等级、钢筋直径、施工偏差、防火要求和设计年限都可能不同。专业表达应写清楚“名义保护层、最小保护层、允许偏差和控制环境”。",
-      "en": "Cover review is not memorising a millimetre value; it is identifying the governing factor. In cross-code projects, the same 35 mm can reflect different assumptions about exposure class, bar diameter, construction deviation, fire requirement, and design life. A professional note should state nominal cover, minimum cover, deviation allowance, and governing exposure environment."
+      "zh": "层间位移审查应同时写清楚：位移来自哪种分析、是否乘以位移放大系数、使用哪个限值、是否需要 P-Delta 稳定检查，以及非结构构件是否采用同一漂移限值。跨规范项目最常见的错误，是把一个 drift ratio 数字脱离地震水准、延性假设和二阶效应单独比较。",
+      "en": "A drift review should state the analysis source, whether displacement amplification is applied, which limit is used, whether P-Delta stability must be checked, and whether non-structural components use the same drift limit. The common cross-code error is comparing a single drift-ratio number without the seismic hazard level, ductility assumption, and second-order-effect treatment."
     },
     "example": {
       "title": {
-        "zh": "参考实例：为什么名义保护层需要加施工偏差？",
-        "en": "Reference example: why does nominal cover include construction deviation?"
+        "zh": "参考实例：弹性位移如何变成设计层间位移？",
+        "en": "Reference example: how does elastic displacement become design storey drift?"
       },
       "intro": {
-        "zh": "假设某RC构件按耐久性和粘结要求确定的最小保护层为25 mm，项目采用10 mm施工偏差 allowance。图纸若只标25 mm，现场轻微偏差就可能让实际保护层低于耐久性最低要求。",
-        "en": "Assume an RC member requires a 25 mm minimum cover from durability and bond considerations, and the project uses a 10 mm allowance for construction deviation. If the drawing states only 25 mm, a small site deviation can place actual cover below the durability minimum."
+        "zh": "假设某层弹性分析得到相邻楼层位移差为 12 mm，层高为 3.6 m。若体系位移放大系数 Cd 为 5.5，重要性系数 Ie 为 1.0，则美国体系下设计位移不是直接采用 12 mm，而需要进行位移放大。",
+        "en": "Assume elastic analysis gives a relative displacement of 12 mm between adjacent floors, with a storey height of 3.6 m. If the displacement amplification factor Cd is 5.5 and the importance factor Ie is 1.0, the US framework does not use 12 mm directly; displacement amplification is required."
       },
       "equations": [
         {
           "label": {
-            "zh": "欧洲规范名义保护层",
-            "en": "Eurocode nominal cover"
+            "zh": "美国规范位移放大",
+            "en": "US displacement amplification"
           },
-          "formula": "cnom = cmin + Δcdev",
+          "formula": "δx = Cd δxe / Ie",
           "formulaTokens": [
             {
-              "text": "c",
-              "sub": "nom"
+              "text": "δ",
+              "sub": "x"
             },
             {
               "text": " = "
             },
             {
-              "text": "c",
-              "sub": "min"
+              "text": "C",
+              "sub": "d"
             },
             {
-              "text": " + Δ"
+              "text": " "
             },
             {
-              "text": "c",
-              "sub": "dev"
+              "text": "δ",
+              "sub": "xe"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "text": "I",
+              "sub": "e"
             }
           ],
           "citation": {
-            "zh": "EN 1992-1-1:2004, 4.4.1.1, Eq. (4.1)。",
-            "en": "EN 1992-1-1:2004, 4.4.1.1, Eq. (4.1)."
+            "zh": "ASCE/SEI 7-22, Sec. 12.8.6, Eq. (12.8-15)。",
+            "en": "ASCE/SEI 7-22, Sec. 12.8.6, Eq. (12.8-15)."
           }
         },
         {
           "label": {
-            "zh": "最小保护层控制项",
-            "en": "Minimum cover controlling terms"
+            "zh": "P-Delta 稳定系数",
+            "en": "P-Delta stability coefficient"
           },
-          "formula": "cmin = max{cmin,b; cmin,dur + Δcdur,γ - Δcdur,st - Δcdur,add; 10 mm}",
+          "formula": "θ = Px Δ Ie / (Vx hsx Cd)",
           "formulaTokens": [
             {
-              "text": "c",
-              "sub": "min"
+              "text": "θ = "
             },
             {
-              "text": " = max{"
+              "text": "P",
+              "sub": "x"
             },
             {
-              "text": "c",
-              "sub": "min,b"
+              "text": " Δ "
             },
             {
-              "text": "; "
+              "text": "I",
+              "sub": "e"
             },
             {
-              "text": "c",
-              "sub": "min,dur"
+              "text": " / ("
             },
             {
-              "text": " + Δ"
+              "text": "V",
+              "sub": "x"
             },
             {
-              "text": "c",
-              "sub": "dur,γ"
+              "text": " "
             },
             {
-              "text": " - Δ"
+              "text": "h",
+              "sub": "sx"
             },
             {
-              "text": "c",
-              "sub": "dur,st"
+              "text": " "
             },
             {
-              "text": " - Δ"
+              "text": "C",
+              "sub": "d"
             },
             {
-              "text": "c",
-              "sub": "dur,add"
-            },
-            {
-              "text": "; 10 mm}"
+              "text": ")"
             }
           ],
           "citation": {
-            "zh": "EN 1992-1-1:2004, 4.4.1.2, Eq. (4.2)。",
-            "en": "EN 1992-1-1:2004, 4.4.1.2, Eq. (4.2)."
+            "zh": "ASCE/SEI 7-22, Sec. 12.8.7, Eq. (12.8-16)。",
+            "en": "ASCE/SEI 7-22, Sec. 12.8.7, Eq. (12.8-16)."
           }
         },
         {
           "label": {
-            "zh": "简化筛查：图纸名义值",
-            "en": "Simplified screen: drawing nominal value"
+            "zh": "简化位移角筛查",
+            "en": "Simplified drift-ratio screen"
           },
-          "formula": "cnom = 25 mm + 10 mm = 35 mm",
+          "formula": "drift ratio = Δ / h = 66 mm / 3600 mm = 1.83%",
           "formulaTokens": [
             {
-              "text": "c",
-              "sub": "nom"
-            },
-            {
-              "text": " = 25 mm + 10 mm = 35 mm"
+              "text": "drift ratio = Δ / h = 66 mm / 3600 mm = 1.83%"
             }
           ],
           "citation": {
-            "zh": "由 EN 1992-1-1:2004, 4.4.1.1, Eq. (4.1) 推导；示例数值仅用于说明名义保护层与施工偏差关系。",
-            "en": "Derived from EN 1992-1-1:2004, 4.4.1.1, Eq. (4.1); example values are used only to illustrate the relation between nominal cover and construction deviation."
+            "zh": "由 ASCE/SEI 7-22, Sec. 12.8.6 位移放大关系推导；示例仅用于概念筛查，实际限值需按规范表格和结构体系确定。",
+            "en": "Derived from the displacement-amplification relation in ASCE/SEI 7-22, Sec. 12.8.6; example for conceptual screening only, with actual limits taken from the applicable code table and structural system."
           }
         }
       ],
       "note": {
-        "zh": "如果现场实测保护层为30 mm，这并不必然说明构件失效，但它说明图纸名义35 mm中的10 mm施工余量已被消耗一半。审查时应回到控制环境类别、耐久性最低值、钢筋直径、防火要求和项目验收容差，而不是简单判断“差5 mm是否可以”。",
-        "en": "If measured site cover is 30 mm, the member is not automatically unsafe, but half of the 10 mm construction allowance embedded in the 35 mm nominal cover has been consumed. Review should return to the governing exposure class, durability minimum, bar diameter, fire requirement, and project acceptance tolerance, rather than asking only whether a 5 mm shortfall is acceptable."
+        "zh": "在示例中，12 mm 弹性层间位移被放大为约 66 mm，位移角约 1.83%。这说明抗震漂移审查不能只看分析软件输出的弹性位移；还要说明放大系数、重要性系数、层高、限值来源和 P-Delta 稳定系数是否满足要求。",
+        "en": "In the example, the 12 mm elastic storey displacement is amplified to about 66 mm, giving a drift ratio of about 1.83%. This shows why seismic drift review cannot rely only on elastic displacement output from analysis software; it must state the amplification factor, importance factor, storey height, limit source, and whether the P-Delta stability coefficient is acceptable."
       }
     },
     "references": [
-      "EN 1992-1-1:2004, 4.4.1.1 and 4.4.1.2.",
-      "ACI 318-19, concrete cover and exposure durability provisions.",
-      "AS 3600:2018, durability and cover requirements for reinforced concrete."
+      "ASCE/SEI 7-22, Sec. 12.8.6 and 12.8.7.",
+      "Eurocode 8, EN 1998-1, displacement and second-order-effect provisions.",
+      "GB 50011 and AS 1170.4 seismic drift and stability review concepts."
     ],
     "referenceLinks": [
       {
-        "label": "European Commission: Eurocodes design standards",
-        "url": "https://eurocodes.jrc.ec.europa.eu/"
+        "label": "ASCE: ASCE/SEI 7-22 Minimum Design Loads and Associated Criteria",
+        "url": "https://www.asce.org/publications-and-news/asce-7"
       },
       {
-        "label": "ACI: ACI 318 Building Code Requirements for Structural Concrete",
-        "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=31819"
+        "label": "European Commission: Eurocode 8 seismic design",
+        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-8-design-structures-earthquake-resistance"
       },
       {
-        "label": "Standards Australia: AS 3600 Concrete structures",
-        "url": "https://store.standards.org.au/product/as-3600-2018"
+        "label": "Standards Australia: AS 1170.4 Earthquake actions",
+        "url": "https://store.standards.org.au/product/as-1170-4-2007"
       }
     ]
   }
