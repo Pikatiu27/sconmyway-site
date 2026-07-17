@@ -148,6 +148,19 @@ def main() -> None:
 
     period_start = date.fromisoformat(first_data["periodStart"])
     period_end = date.fromisoformat(first_data["periodEnd"])
+    fallback_replacements = {
+        r'periodMeta\?\.dataset\.periodStart \|\| "\d{4}-\d{2}-\d{2}"': (
+            f'periodMeta?.dataset.periodStart || "{first_data["periodStart"]}"'
+        ),
+        r'periodMeta\?\.dataset\.periodEnd \|\| "\d{4}-\d{2}-\d{2}"': (
+            f'periodMeta?.dataset.periodEnd || "{first_data["periodEnd"]}"'
+        ),
+    }
+    for pattern, replacement in fallback_replacements.items():
+        html, count = re.subn(pattern, replacement, html, count=1)
+        if count != 1:
+            raise RuntimeError(f"Could not update fallback period: {pattern}")
+
     month_en = [
         "Jan", "Feb", "Mar", "Apr", "May", "Jun",
         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
