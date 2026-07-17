@@ -1,6 +1,6 @@
 # Kids Page Backup Plan
 
-Current policy: no API-based weekly generation. A recurring Codex task should start the Friday refresh at 05:00 Australia/Sydney, perform fresh web research, update local files, push GitHub, and verify the public page. GitHub Actions is the independent watchdog: it checks freshness at 05:00 and again at 07:00, but it does not generate event content.
+Current policy: no API-based weekly generation. `kids-weekly-refresh` starts the Friday refresh at 05:00 Australia/Sydney and `kids-weekly-retry` performs a 07:00 no-op/recovery review. Both are local Codex automations that can research, update files, push GitHub and verify the public page. GitHub Actions is the independent watchdog: it performs one final audit at 08:30, but it does not generate event content.
 
 The recurring Codex task is external to this repository. If that task is unavailable or disabled, GitHub will report a failed freshness check rather than silently reusing last week's page.
 

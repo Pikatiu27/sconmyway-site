@@ -7,6 +7,7 @@ Public GitHub Pages repo for SConmyway.
 - Kids finder: `kids/`
   - Public URL: `https://pikatiu27.github.io/sconmyway-site/kids/`
   - Guide: `kids/KIDS_PAGE_GUIDE.md`
+  - Automation contract: `kids/KIDS_AUTOMATION_PROMPTS.md`
 - Industry brief: `industry/`
   - Public URL: `https://pikatiu27.github.io/sconmyway-site/industry/`
   - Guide: `industry/INDUSTRY_BRIEFING_GUIDE.md`

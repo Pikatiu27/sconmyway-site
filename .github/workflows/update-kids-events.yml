@@ -2,9 +2,9 @@ name: Kids event page checks
 
 on:
   schedule:
-    # GitHub cron is UTC. The local-time gate keeps only Friday 05:00 and
-    # 07:00 Australia/Sydney across daylight-saving changes.
-    - cron: "0 18,19,20,21 * * 4"
+    # GitHub cron is UTC. Two candidates cover AEST/AEDT; the local-time gate
+    # keeps only Friday 08:30 Australia/Sydney, after the 07:00 Codex retry.
+    - cron: "30 21,22 * * 4"
   workflow_dispatch:
 
 permissions:
@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Check Sydney refresh window
+      - name: Check final audit window
         id: gate
         run: node scripts/check-kids-update.mjs gate kids/data/events.json
 

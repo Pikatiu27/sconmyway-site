@@ -12,6 +12,7 @@ function localParts(date = new Date()) {
       month: "2-digit",
       day: "2-digit",
       hour: "2-digit",
+      minute: "2-digit",
       hourCycle: "h23"
     }).formatToParts(date).filter((part) => part.type !== "literal").map((part) => [part.type, part.value])
   );
@@ -155,19 +156,8 @@ if (command === "gate") {
     await writeOutput({ should_run: "true", reason: "manual run" });
   } else {
     const parts = localParts();
-    let shouldRun = parts.weekday === "Fri" && parts.hour === "05";
-    let reason = shouldRun ? "Friday 05:00 primary refresh" : "outside refresh window";
-
-    if (parts.weekday === "Fri" && parts.hour === "07") {
-      try {
-        const data = await readData();
-        shouldRun = localDateKey(new Date(data.updatedAt)) !== localDateKey(new Date());
-        reason = shouldRun ? "Friday 07:00 recovery check" : "05:00 refresh already confirmed";
-      } catch {
-        shouldRun = true;
-        reason = "Friday 07:00 recovery check after missing or invalid data";
-      }
-    }
+    const shouldRun = parts.weekday === "Fri" && parts.hour === "08" && parts.minute === "30";
+    const reason = shouldRun ? "Friday 08:30 final publication audit" : "outside final audit window";
 
     await writeOutput({ should_run: String(shouldRun), reason });
   }

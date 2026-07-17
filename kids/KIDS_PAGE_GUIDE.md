@@ -4,9 +4,11 @@
 ## Current Refresh Rule
 
 - Default update path is a recurring Codex task at Friday 05:00 Australia/Sydney: fresh web search, local JSON write, static HTML fallback sync, GitHub push, and public verification.
+- The recurring tasks mirror the proven Industry Review model. Their canonical prompts and recovery proof are recorded in `kids/KIDS_AUTOMATION_PROMPTS.md`.
 - Do not use an API key or automated content generation unless the user explicitly asks to restore that path.
 - Each Friday update must fresh-search Sydney and Melbourne activities; never roll old dates forward.
-- GitHub Actions checks freshness at 05:00 and 07:00. It is a watchdog only and must never generate or roll forward event content.
+- GitHub Actions performs a final freshness and link audit at Friday 08:30, after the Codex primary and recovery tasks. It is a watchdog only and must never generate or roll forward event content.
+- Local Codex automation IDs are `kids-weekly-refresh` (Friday 05:00) and `kids-weekly-retry` (Friday 07:00).
 - First four cards in each city must be newly found or short-window current-week activities.
 - Long-running activities can remain only after fresher current-week options.
 - Library storytime, toddler-only, and weak discovery leads belong in More or are skipped.
@@ -45,7 +47,7 @@
 - 每周五 7:00 做补偿检查；如果 5:00 已成功刷新当天内容，7:00 必须 no-op。
 - 自动更新流程固定：重新检索 → 候选打 Region → 过滤过期和弱活动 → 排序 → 生成双语 JSON → 同步 HTML fallback → 同步 More → 写候选池和 token 记录 → 校验 → commit → push。
 - 如果 AI/API 不可用，且 fallback 不能证明前 4 条是新/短期/明确日期活动，必须失败并保留旧页面，不能发布弱内容。
-- GitHub Actions 不生成内容；当前 workflow 在周五 5:00 和 7:00 自动检查 freshness，也保留手动校验入口。内容更新由外部 Codex 定时任务完成重新检索、写入和 push。
+- GitHub Actions 不生成内容；当前 workflow 在周五 8:30 做最终 freshness/link 审计，也保留手动校验入口。内容更新由 5:00 主 Codex 任务和 7:00 补偿 Codex 任务完成重新检索、写入和 push。
 
 ### 0.4 推送上线逻辑
 
