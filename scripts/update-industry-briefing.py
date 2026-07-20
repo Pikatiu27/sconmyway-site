@@ -69,7 +69,7 @@ def safe_url(url: str) -> bool:
 
 
 def assert_no_mojibake(text: str, label: str) -> None:
-    bad_markers = ["锟", "脙", "脗", "冒鸥", "鈥�"]
+    bad_markers = ["�", "锟", "脙", "脗", "冒鸥", "鈥�", "����", "ʩ��", "Ƭ"]
     if any(marker in text for marker in bad_markers):
         raise AssertionError(f"{label} appears to contain mojibake")
 
@@ -88,6 +88,37 @@ def validate_references(item: dict, label: str) -> None:
             raise AssertionError(f"{label} has a reference link without label")
         if not safe_url(link.get("url", "")):
             raise AssertionError(f"{label} has a non-HTTPS reference URL: {link}")
+
+
+def validate_formula_style(equation: dict, label: str) -> None:
+    formula = equation.get("formula", "")
+    if "_" in formula:
+        raise AssertionError(f"{label} formula must not use underscore notation")
+
+    banned_fragments = {
+        "<=": "use ≤",
+        ">=": "use ≥",
+        "sqrt(": "use √",
+        "sum(": "use ∑",
+        "*": "use × or an implied product",
+    }
+    for fragment, suggestion in banned_fragments.items():
+        if fragment in formula:
+            raise AssertionError(
+                f"{label} formula uses programming-style notation {fragment!r}; {suggestion}"
+            )
+
+    tokens = equation.get("formulaTokens", [])
+    if not tokens:
+        raise AssertionError(f"{label} requires formulaTokens")
+    for token_index, token in enumerate(tokens, start=1):
+        if not isinstance(token, dict):
+            raise AssertionError(f"{label}.formulaTokens[{token_index}] must be an object")
+        text = str(token.get("text", ""))
+        if "_" in text or "<=" in text or ">=" in text or "sqrt(" in text or "sum(" in text:
+            raise AssertionError(
+                f"{label}.formulaTokens[{token_index}] contains non-written formula notation"
+            )
 
 
 def validate_data(data: dict, html_text: str, *, require_today: bool) -> None:
@@ -129,10 +160,7 @@ def validate_data(data: dict, html_text: str, *, require_today: bool) -> None:
     if len(equations) < 3:
         raise AssertionError("Expected at least 3 classroom equations")
     for index, equation in enumerate(equations, start=1):
-        if "_" in equation.get("formula", ""):
-            raise AssertionError(f"equations[{index}] formula must not use underscore notation")
-        if not equation.get("formulaTokens"):
-            raise AssertionError(f"equations[{index}] requires formulaTokens")
+        validate_formula_style(equation, f"equations[{index}]")
         validate_bilingual(equation.get("citation"), f"equations[{index}].citation")
 
     fallback_start, fallback_end = extract_fallback_block(html_text)
@@ -146,6 +174,8 @@ def validate_data(data: dict, html_text: str, *, require_today: bool) -> None:
         "formatDate(dailyData.date)",
         "overflow-wrap: anywhere;",
         "@media (max-width: 520px)",
+        "white-space: nowrap;",
+        "overflow-x: auto;",
         '[pick(item.summary), pick(item.watch)].filter(Boolean).join(" ")',
         '[pick(item.summary), pick(item.caveat)].filter(Boolean).join(" ")',
         '${equation.citation ? `<p class="equation-citation">',
