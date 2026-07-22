@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-22",
+  "date": "2026-07-23",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,84 +7,88 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "AI电力基础设施",
-        "en": "AI power infrastructure"
+        "zh": "AI算力基础设施",
+        "en": "AI compute infrastructure"
       },
       "title": {
-        "zh": "National Grid投资Joulent，AI数据中心供电正在从并网申请变成专属能源项目开发",
-        "en": "National Grid backs Joulent as AI data-center power shifts from grid queues to dedicated energy projects"
+        "zh": "OpenAI的Project Camellia把社区成本承诺放进超大规模AI数据中心交付条件",
+        "en": "OpenAI's Project Camellia puts community-cost commitments into hyperscale AI delivery"
       },
       "summary": {
-        "zh": "Joulent宣布获得National Grid Ventures 17.5亿美元战略少数股权投资，用于推进面向美国工业和AI算力需求的多吉瓦电力项目。Chevron同期披露，Project Kilby将为微软在西德州的数据中心提供约2.67 GW专属电力。这个组合信号说明，AI基础设施的瓶颈已从芯片采购扩展到发电、输电、燃气供应、储能和用地许可。对园区开发商和公用事业而言，未来竞争力会取决于能否把能源项目、负荷曲线和社区影响一起设计，而不是只等待公共电网扩容。",
-        "en": "Joulent announced a USD1.75 billion strategic minority investment from National Grid Ventures to advance multi-gigawatt power projects for US industry and AI compute demand. Chevron has also disclosed that Project Kilby is expected to provide about 2.67 GW of dedicated power to a Microsoft data center in West Texas. The combined signal is that AI infrastructure constraints now extend from chips into generation, transmission, gas supply, storage, and land permitting. For campus developers and utilities, competitiveness will depend on designing energy projects, load profiles, and community impacts together rather than simply waiting for grid capacity."
+        "zh": "OpenAI和佐治亚州Effingham County披露，Project Camellia将在Savannah Gateway Industrial Hub建设长期数据中心项目，并与Georgia Power签约3.2 GW电力，计划在2028至2032年分阶段交付。OpenAI同时承诺项目电力服务和配套基础设施费用由自身承担、不转嫁给现有居民用户，并强调闭环冷却、社区沟通和教育合作。行业含义是，AI基础设施竞争已进入“算力+电力+水资源+地方许可+社会接受度”的整体交付阶段。对开发商和公用事业而言，未来项目能否落地，不只取决于GPU或土地储备，也取决于能否把费率保护、峰值削减、施工影响和地方收益写成可审查的承诺。",
+        "en": "OpenAI and Effingham County, Georgia disclosed Project Camellia, a long-term data-center development at the Savannah Gateway Industrial Hub, with 3.2 GW of power contracted from Georgia Power for phased delivery from 2028 to 2032. OpenAI also committed to covering the electric-service and infrastructure costs required for the project, not passing those costs to existing residential ratepayers, while emphasising closed-loop cooling, community engagement, and education partnerships. The industry signal is that AI infrastructure is now delivered as an integrated package of compute, power, water, local permission, and social licence. Developers and utilities will be judged not only by GPU or land capacity, but by auditable commitments on rates, peak curtailment, construction impacts, and local benefits."
       },
       "watch": {
-        "zh": "关注专属燃气发电、可再生能源和电池组合是否能按期交付，以及监管机构是否要求AI园区证明其成本不会转嫁给普通电力用户。",
-        "en": "Watch whether dedicated gas generation, renewables, and battery packages can be delivered on schedule, and whether regulators require AI campuses to prove that costs are not shifted to ordinary ratepayers."
+        "zh": "关注公开说明会、Georgia PSC费率处理、并网里程碑和水资源许可是否把这些承诺转化为可执行条件。",
+        "en": "Watch whether public meetings, Georgia PSC rate treatment, interconnection milestones, and water permitting convert these commitments into enforceable conditions."
       },
-      "reference": "Joulent and Chevron announcements on AI data-center power infrastructure, July 2026",
+      "reference": "OpenAI and Effingham County announcements on Project Camellia, July 2026",
       "referenceLinks": [
         {
-          "label": "Joulent: National Grid strategic investment",
-          "url": "https://www.joulent.com/in-the-news/strategic-investment"
+          "label": "OpenAI: Building AI infrastructure with Effingham County",
+          "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
         },
         {
-          "label": "Chevron: 20-year Microsoft power agreement",
-          "url": "https://chevroncorp.gcs-web.com/news-releases/news-release-details/chevron-signs-20-year-power-agreement-microsoft-west-texas-data"
+          "label": "Effingham County: Project Camillia press release",
+          "url": "https://effinghamcounty.org/m/newsflash/home/detail/455"
         }
       ]
     },
     {
       "topic": {
-        "zh": "实体AI与机器人",
-        "en": "Physical AI and robotics"
+        "zh": "AI半导体与算力供应链",
+        "en": "AI semiconductors and compute supply chains"
       },
       "title": {
-        "zh": "Humanoid完成1.52亿美元A轮融资，机器人赛道的焦点从演示视频转向工业客户部署和制造供应链",
-        "en": "Humanoid raises USD152 million as robotics attention moves from demos to industrial deployment and manufacturing supply chains"
+        "zh": "AMD拟向Anthropic投资至多50亿美元，AI芯片采购正在按吉瓦级系统容量谈判",
+        "en": "AMD's planned USD5bn Anthropic investment shows AI chip procurement moving to gigawatt-scale systems"
       },
       "summary": {
-        "zh": "Reuters报道，英国机器人创业公司Humanoid完成1.52亿美元A轮融资，投后估值13.5亿美元，资金将用于下一代平台、KinetIQ AI软件、客户现场部署和轮式机器人量产。参投方和合作方包括Bosch、Schaeffler、Nvidia、SAP和Siemens等工业生态角色。这条新闻的重点不是又一家机器人公司融资，而是实体AI正在进入制造、物流和零售的生产接口。投资人现在更关心可维护硬件、合同制造、现场安全、任务可靠性和客户工作流，而不是单纯的人形外观。",
-        "en": "Reuters reports that UK robotics startup Humanoid raised USD152 million in Series A funding at a USD1.35 billion post-money valuation, with proceeds directed to next-generation platforms, the KinetIQ AI software stack, customer-site deployments, and mass manufacturing of wheeled robots. Investors and partners include industrial ecosystem names such as Bosch, Schaeffler, Nvidia, SAP, and Siemens. The point is not just another robotics financing round; physical AI is entering production interfaces in manufacturing, logistics, and retail. Investors are now testing maintainable hardware, contract manufacturing, site safety, task reliability, and customer workflow integration rather than humanoid appearance alone."
+        "zh": "Reuters报道，AMD将向Anthropic投资至多50亿美元，Anthropic将从2027年上半年开始购买至多2 GW的新一代AMD AI芯片。AMD本周还宣布Microsoft将在Azure规模化部署AMD Helios机架级方案，用于前沿模型推理和AI服务。这个组合信号说明，AI芯片竞争正从单颗加速卡性能转向整机架、网络、软件栈、供电和长期融资安排的绑定。对云厂商和模型公司而言，关键问题是能否在Nvidia之外形成可验证的第二供应体系；对芯片公司而言，客户锁定正在通过工程协同、资本投入和多年供货节奏共同完成。",
+        "en": "Reuters reported that AMD will invest up to USD5 billion in Anthropic, while Anthropic will buy up to 2 GW of AMD's latest AI chips starting in the first half of 2027. AMD also announced this week that Microsoft will deploy AMD Helios rack-scale systems on Azure for frontier-model inference and AI services. The combined signal is that AI chip competition is shifting from individual accelerator performance toward bundled rack-scale systems, networking, software stacks, power delivery, and long-term financing. For cloud and model companies, the question is whether a verifiable second supply path beyond Nvidia can be built; for chipmakers, customer lock-in is being formed through engineering alignment, capital commitments, and multi-year delivery schedules."
       },
       "watch": {
-        "zh": "关注第四季度beta部署能否形成持续运行小时数、维护成本和安全事件数据；如果没有现场指标，估值很难转化为工业采用。",
-        "en": "Watch whether fourth-quarter beta deployments generate credible operating-hour, maintenance-cost, and safety-incident data; without field metrics, valuation will not translate into industrial adoption."
+        "zh": "关注首个吉瓦级部署能否按2027年上半年启动，以及ROCm软件成熟度、互连效率和数据中心租赁背书是否成为采购约束。",
+        "en": "Watch whether the first gigawatt deployment starts in H1 2027, and whether ROCm maturity, interconnect efficiency, and data-center lease backstops become procurement constraints."
       },
-      "reference": "Reuters report on Humanoid Series A financing, July 2026",
+      "reference": "Reuters and AMD announcements on Anthropic, Microsoft Azure, and Helios AI infrastructure, July 2026",
       "referenceLinks": [
         {
-          "label": "Euronext/Reuters: Humanoid raises Series A",
-          "url": "https://live.euronext.com/en/financial-news/robotics-startup-humanoid-raises-152-million-series-round-135-billion-valuation"
+          "label": "Reuters: AMD to invest up to USD5bn in Anthropic",
+          "url": "https://m.investing.com/news/stock-market-news/amd-to-invest-up-to-5-billion-in-anthropic-wsj-reports-4805909?ampMode=1"
+        },
+        {
+          "label": "AMD: Microsoft to deploy next-gen AMD Instinct and EPYC",
+          "url": "https://www.amd.com/en/newsroom/press-releases/2026-7-20-microsoft-to-deploy-next-gen-amd-instinct-and-amd-.html"
         }
       ]
     },
     {
       "topic": {
-        "zh": "AI生物技术融资",
-        "en": "AI biotechnology funding"
+        "zh": "稳定币支付基础设施",
+        "en": "Stablecoin payment infrastructure"
       },
       "title": {
-        "zh": "Dimension完成8亿美元基金，AI制药的资本叙事正在接受临床转化能力检验",
-        "en": "Dimension closes an USD800 million fund as AI drug discovery capital faces the translation test"
+        "zh": "Visa推出稳定币平台，数字美元支付从试点叙事走向托管、铸造和赎回的企业接口",
+        "en": "Visa's stablecoin platform moves digital-dollar payments from pilots toward enterprise minting, custody, and redemption rails"
       },
       "summary": {
-        "zh": "BioPharma Dive报道，Dimension完成8亿美元第三期基金，管理资产增至16.5亿美元，继续押注人工智能与生物技术交叉领域。FT同日指出，投资人仍在追逐AI药物发现，但目前尚无完全由AI开发的药物获得监管批准。行业含义在于，AI生物技术已从小规模工具投资走向专门基金和平台化资本配置；但下一阶段的分水岭不是模型能生成多少候选分子，而是候选药物能否通过湿实验、毒理、临床设计和监管审评。",
-        "en": "BioPharma Dive reports that Dimension closed an USD800 million third fund, bringing assets under management to USD1.65 billion while continuing to back the intersection of artificial intelligence and biotechnology. The Financial Times also notes that investors are still chasing AI drug discovery even though no fully AI-developed medicine has yet secured regulatory approval. The industry implication is that AI biotech has moved from small tool bets into dedicated funds and platform-scale capital allocation. The next divide, however, is not how many candidate molecules a model can generate, but whether candidates can pass wet-lab validation, toxicology, clinical design, and regulatory review."
+        "zh": "Visa发布Visa Stablecoin Platform，面向金融机构、金融科技公司和支付服务商提供稳定币铸造、移动和管理环境，并从Open USD和钱包即服务能力切入。同一周，加密行业继续围绕GENIUS Act一周年和最终规则延期讨论储备、客户识别、赎回和监管边界。行业含义是，稳定币不再只是交易所或加密原生公司工具，而正在被包装成银行和支付机构可以接入的受管基础设施。真正的竞争点会落在储备透明度、反洗钱流程、破产隔离、跨链操作风险和现有支付网络的清算体验，而不是单纯链上转账速度。",
+        "en": "Visa launched the Visa Stablecoin Platform, giving financial institutions, fintechs, and payment providers an environment for stablecoin minting, movement, and management, initially around Open USD and wallet-as-a-service capability. In the same week, the crypto industry continued to debate the one-year GENIUS Act milestone and delays to final implementing rules on reserves, customer identification, redemption, and supervisory boundaries. The industry implication is that stablecoins are no longer only exchange or crypto-native tools; they are being packaged as governed infrastructure that banks and payment companies can connect to. The real competition will sit in reserve transparency, AML processes, bankruptcy remoteness, cross-chain operating risk, and the clearing experience beside existing payment networks rather than raw on-chain transfer speed."
       },
       "watch": {
-        "zh": "关注Dimension组合公司是否披露进入临床、复用失败药物或缩短实验周期的硬指标；资本规模本身不能证明药物发现效率已经改变。",
-        "en": "Watch whether Dimension portfolio companies disclose hard evidence on clinical entry, failed-drug repurposing, or shorter experimental cycles; fund size alone does not prove that discovery productivity has changed."
+        "zh": "关注试点客户是否披露真实交易量、赎回时效和合规成本；没有这些指标，平台发布仍难证明主流支付采用。",
+        "en": "Watch whether beta customers disclose transaction volume, redemption timing, and compliance cost; without those metrics, a platform launch does not yet prove mainstream payment adoption."
       },
-      "reference": "BioPharma Dive and Financial Times reports on Dimension and AI drug discovery funding, July 2026",
+      "reference": "Visa announcement and digital-asset policy coverage on stablecoin implementation, July 2026",
       "referenceLinks": [
         {
-          "label": "BioPharma Dive: Dimension closes USD800m fund",
-          "url": "https://www.biopharmadive.com/news/dimension-biotech-startups-third-fund-tech-ai/825748/"
+          "label": "Visa: Stablecoin Platform announcement",
+          "url": "https://investor.visa.com/news/news-details/2026/Visa-Introduces-Platform-for-Stablecoin-Minting-Movement-and-Management/"
         },
         {
-          "label": "Financial Times: AI drug discovery investment",
-          "url": "https://www.ft.com/content/d75ca6b2-46f5-4343-a364-21a4440f5197"
+          "label": "CoinDesk: GENIUS Act turns one",
+          "url": "https://www.coindesk.com/policy/2026/07/19/the-genius-act-turns-1-state-of-crypto"
         }
       ]
     }
@@ -92,165 +96,266 @@
   "insights": [
     {
       "area": {
-        "zh": "结构防火职责",
-        "en": "Structural fire responsibility"
+        "zh": "AI驱动材料研发",
+        "en": "AI-driven materials R&D"
       },
       "title": {
-        "zh": "结构防火设计正在从“满足耐火时间”转向明确结构工程师在功能要求中的判断边界",
-        "en": "Structural fire design is moving from fire-resistance duration toward explicit engineering responsibility under functional requirements"
+        "zh": "Genesis Mission说明工程材料研发正在从单点试验转向高性能计算、自动实验和数据治理的联合流程",
+        "en": "The Genesis Mission shows engineering-materials R&D moving from isolated tests to coupled HPC, autonomous experiments, and data governance"
       },
       "evidence": {
-        "zh": "资料类型：IStructE 2026年7月发布的建筑结构防火设计指导，以及英国Approved Document B修订咨询；内容：强调结构工程师在防火设计、既有建筑、外墙、开放停车楼和功能要求符合性中的角色。",
-        "en": "Evidence: IStructE's July 2026 guidance on designing building structures for fire and the UK consultation on Approved Document B, both emphasising the engineer's role in fire design, existing buildings, external walls, open-sided car parks, and compliance with functional requirements."
+        "zh": "资料类型：美国能源部2026年7月22日公告和白宫Genesis Mission说明；内容：DOE选择278个AI科学工作流项目，并把能源、智能芯片设计、商业聚变、材料和国家实验室高性能计算资源放入同一任务框架。",
+        "en": "Evidence: U.S. Department of Energy and White House Genesis Mission releases dated 22 July 2026, selecting 278 AI-enabled scientific-workflow projects and placing energy, intelligent chip design, commercial fusion, materials, and national-laboratory HPC resources within one mission framework."
       },
       "summary": {
-        "zh": "传统项目常把结构防火简化为构件达到某个耐火极限，例如60、90或120分钟。但近期专业指导的重点更接近责任分工：结构工程师需要说明火灾情景、承载功能、分隔功能、构件温升、结构体系连续性、施工和改造条件如何影响符合性。对工程师来说，这会改变设计文件的写法。防火不应只留给建筑专业或产品证书处理，而应在结构概念设计阶段就识别关键承重路径、转换结构、开敞停车楼、既有构件和外墙连接的失效后果。边界在于结构工程师不应替代消防工程师或审批机构，但必须清楚哪些结构假设支撑了防火策略。",
-        "en": "Many projects still reduce structural fire design to members achieving a stated resistance period such as 60, 90, or 120 minutes. Recent professional guidance is more about responsibility allocation: structural engineers need to explain how fire scenario, loadbearing function, separating function, member heating, system continuity, construction, and alteration conditions affect compliance. For engineers, this changes the design record. Fire should not be left solely to architectural coordination or product certification; concept design should identify critical load paths, transfer structures, open-sided car parks, existing members, and facade connections whose failure consequences matter. The boundary is that structural engineers do not replace fire engineers or regulators, but they must state the structural assumptions supporting the fire strategy."
+        "zh": "对土木和结构工程师来说，这类国家级AI科学计划的直接价值不在于让模型替代规范验算，而在于改变材料证据的生成方式。耐久混凝土、低碳胶凝材料、耐高温钢材、涂层、复合材料和核能构筑物材料都依赖长期试验、环境暴露和多尺度表征；如果高性能计算、自动实验室和统一数据平台可以缩短筛选周期，工程材料会更快进入性能化设计讨论。但风险同样明确：模型训练数据的边界、试验可重复性、批次差异和现场施工质量仍会决定材料能否进入规范、业主标准和保险认可。工程师应把AI材料成果看成加速试验设计和证据组织的工具，而不是绕过特征值、耐久性等级和施工验收的捷径。",
+        "en": "For civil and structural engineers, the direct value of national AI-for-science programmes is not that models replace code checks; it is that the evidence pipeline for materials may change. Durable concrete, low-carbon binders, high-temperature steels, coatings, composites, and nuclear-facility materials all depend on long-duration tests, environmental exposure, and multiscale characterisation. If HPC, autonomous laboratories, and common data platforms shorten the screening cycle, engineering materials can enter performance-based design discussions faster. The risk is equally clear: training-data boundaries, repeatability, batch variability, and site workmanship still determine whether a material can enter codes, owner standards, and insurance acceptance. Engineers should treat AI materials work as an accelerator for test design and evidence organisation, not a shortcut around characteristic values, durability classes, and construction acceptance."
       },
       "caveat": {
-        "zh": "耐火时间是结果表达之一，不是完整防火策略；既有建筑和复杂结构需要把材料性能、温度作用和整体稳定性一起复核。",
-        "en": "A fire-resistance period is one output, not a complete fire strategy; existing buildings and complex structures require joint review of material behaviour, thermal action, and overall stability."
+        "zh": "AI生成的材料建议只有在试验矩阵、环境暴露、统计置信度和施工容差公开时，才具有工程采用价值。",
+        "en": "AI-generated material recommendations become useful for engineering adoption only when the test matrix, exposure conditions, statistical confidence, and construction tolerances are explicit."
       },
-      "reference": "IStructE structural fire guidance and UK Approved Document B review, 2026",
+      "reference": "DOE and White House Genesis Mission materials and AI-for-science sources, July 2026",
       "referenceLinks": [
         {
-          "label": "IStructE: new guidance for building structures in fire",
-          "url": "https://www.istructe.org/journal/volumes/volume-104-%282026%29/issue-7/new-guidance-design-of-building-structure-for-fire/"
+          "label": "DOE: First Genesis Mission projects selected",
+          "url": "https://www.energy.gov/articles/secretary-energy-chris-wright-announces-first-genesis-mission-projects-selected-accelerate"
         },
         {
-          "label": "GOV.UK: Review of Approved Document B",
-          "url": "https://www.gov.uk/government/consultations/review-of-approved-document-b-fire-safety-guidance"
+          "label": "White House: More than USD5bn for the Genesis Mission",
+          "url": "https://www.whitehouse.gov/releases/2026/07/45502/?query-11-page=3"
         }
       ]
     },
     {
       "area": {
-        "zh": "AI结构健康监测",
-        "en": "AI-enabled structural health monitoring"
+        "zh": "桥梁数字孪生",
+        "en": "Bridge digital twins"
       },
       "title": {
-        "zh": "PZT结构健康监测的难点正在从传感器布置转向信号解释、环境修正和可审计AI判断",
-        "en": "PZT structural health monitoring is shifting from sensor placement to signal interpretation, environmental correction, and auditable AI decisions"
+        "zh": "桥梁数字孪生的工程难点不是建模酷炫度，而是业主需要、最小数据集和可维护决策闭环",
+        "en": "The hard part of bridge digital twins is not visual modelling, but owner needs, minimum datasets, and maintainable decision loops"
       },
       "evidence": {
-        "zh": "资料类型：Infrastructures 2026年7月开放综述；内容：总结PZT导波、信号处理、机器学习、深度学习、混合框架和物理约束方法在金属、复合材料和混凝土结构监测中的应用。",
-        "en": "Evidence: a July 2026 open-access review in Infrastructures covering PZT guided waves, signal processing, machine learning, deep learning, hybrid frameworks, and physics-informed approaches for metallic, composite, and concrete structures."
+        "zh": "资料类型：IABMAS工作组在2026年7月发表的桥梁数字孪生综述，以及IABSE新任务组资料；内容：调查桥梁业主对数字孪生定义、输入输出、潜在收益和可实施性的看法，并推进既有桥梁数字孪生文件和案例研究。",
+        "en": "Evidence: a July 2026 IABMAS working-group article on bridge digital twins and IABSE task-group material, covering bridge-owner views on definitions, inputs, outputs, benefits, feasibility, and future structural-engineering documents and case studies for existing bridges."
       },
       "summary": {
-        "zh": "PZT传感器的优势在于可同时激励和接收导波，适合疲劳裂纹、脱粘、腐蚀和局部损伤的早期识别。但工程瓶颈不再只是“贴多少传感器”，而是如何把温度、湿度、边界条件、车辆荷载和噪声导致的信号变化同真实损伤区分开。AI可以提高特征提取和分类效率，却也带来训练数据偏差、可解释性和误报责任问题。更成熟的工程路径是把PZT监测用于明确的损伤模式和细部位置，配合基线更新、现场复核和阈值管理，而不是把模型输出直接当作承载能力结论。",
-        "en": "PZT transducers are attractive because they can both actuate and receive guided waves, supporting early identification of fatigue cracks, debonding, corrosion, and local damage. The engineering bottleneck is no longer just how many sensors are installed; it is how to distinguish signal changes caused by temperature, humidity, boundary conditions, traffic loading, and noise from true damage. AI can improve feature extraction and classification, but it also introduces training-data bias, explainability, and false-alarm responsibility. A more mature path is to use PZT monitoring for defined damage modes and detail locations, with baseline updating, field verification, and threshold governance rather than treating model output as a direct capacity conclusion."
+        "zh": "数字孪生在桥梁管理中容易被展示成三维模型、传感器面板或AI预测界面，但业主真正需要的是可审计的资产决策：哪些桥需要检查，哪些构件需要限载，哪些维修可以推迟，哪些数据足以改变风险排序。近期工作显示，数字孪生的价值取决于最小可用数据集、检测记录、有限元模型可信度、交通荷载、环境退化、监测阈值和维护预算之间能否形成闭环。对工程师的能力要求也随之改变：不仅要会建模，还要能说明模型更新规则、数据缺口、传感器漂移、失效模式和决策责任。边界在于，并非每座桥都需要高保真孪生；低价值或数据稀缺资产可能更适合分级检查、简化风险模型和目标化监测。",
+        "en": "Bridge digital twins are often presented as 3D models, sensor dashboards, or AI prediction interfaces, but owners need auditable asset decisions: which bridges need inspection, which members require load restriction, which repairs can wait, and which data are strong enough to change risk ranking. Recent work shows that value depends on closing the loop between minimum viable datasets, inspection records, finite-element model credibility, traffic actions, environmental deterioration, monitoring thresholds, and maintenance budgets. The capability requirement for engineers therefore changes: they must not only model, but also state update rules, data gaps, sensor drift, failure modes, and decision responsibility. The boundary is that not every bridge needs a high-fidelity twin; low-value or data-poor assets may be better served by tiered inspection, simplified risk models, and targeted monitoring."
       },
       "caveat": {
-        "zh": "SHM应服务于检查和维护决策；没有校准、可解释阈值和现场验证，AI监测结果不应替代工程复核。",
-        "en": "SHM should support inspection and maintenance decisions; without calibration, explainable thresholds, and field verification, AI monitoring output should not replace engineering review."
+        "zh": "数字孪生若没有明确决策用途和更新责任，容易变成昂贵的数据展示，而不是桥梁安全和维护工具。",
+        "en": "Without a defined decision use and update responsibility, a digital twin can become an expensive data display rather than a bridge safety and maintenance tool."
       },
-      "reference": "Infrastructures 2026 review on AI and signal processing for PZT-based SHM",
+      "reference": "IABMAS and IABSE bridge digital twin sources, 2026",
       "referenceLinks": [
         {
-          "label": "MDPI Infrastructures: PZT-based SHM review",
-          "url": "https://www.mdpi.com/2412-3811/11/7/228"
+          "label": "ASNT Materials Evaluation: Digital Twins for Bridge Management",
+          "url": "https://www.asnt.org/me/26/7/digital-twins-for-bridge-management"
+        },
+        {
+          "label": "IABSE Task Group 5.7: Digital twins for existing bridges",
+          "url": "https://www.iabse.org/TG5.7/"
         }
       ]
     },
     {
       "area": {
-        "zh": "基础设施韧性评估",
-        "en": "Infrastructure resilience assessment"
+        "zh": "低碳混凝土与机器学习",
+        "en": "Low-carbon concrete and machine learning"
       },
       "title": {
-        "zh": "基础设施韧性评估正在把“抗住灾害”拆成稳健性、冗余、敏捷性和适应性等可讨论维度",
-        "en": "Infrastructure resilience assessment is decomposing hazard survival into robustness, redundancy, agility, and adaptiveness"
+        "zh": "机器学习低碳混凝土的工程价值在多目标配合比优化，风险在数据异质性和可解释性不足",
+        "en": "Machine learning for low-carbon concrete is valuable for multi-objective mix optimisation, but limited by data heterogeneity and interpretability"
       },
       "evidence": {
-        "zh": "资料类型：Civil Engineering Sciences 2026开放论文和NIST未来灾害韧性研究计划；内容：提出以多维指标和非平稳未来灾害为基础的基础设施韧性评估框架。",
-        "en": "Evidence: a 2026 open-access Civil Engineering Sciences paper and NIST's future-hazard resilience research plan, both framing infrastructure resilience through multidimensional indices and nonstationary future conditions."
+        "zh": "资料类型：npj Materials Sustainability 2026年7月开放综述；内容：总结机器学习在水泥生产、配合比设计、辅助胶凝材料、替代胶结料和再生骨料混凝土中的应用，并指出数据异质性、泛化能力和解释性限制。",
+        "en": "Evidence: a July 2026 open-access review in npj Materials Sustainability, covering machine-learning applications in cement production, mix design, supplementary cementitious materials, alternative binders, and recycled-aggregate concrete, while identifying data heterogeneity, generalisability, and interpretability limits."
       },
       "summary": {
-        "zh": "韧性常被口号化为“更强”或“更快恢复”，但近期研究把它拆成可检查的组成：构件和系统的稳健性、替代路径的冗余、应急响应的敏捷性，以及长期适应新风险的能力。这个拆解对结构和土木工程师很重要，因为不同项目的最优投资并不相同。桥梁网络可能更需要冗余和绕行能力；水务或能源系统可能更需要快速恢复和可替换设备；既有建筑群则可能优先需要低成本加固和监测触发。局限是韧性评分高度依赖权重和情景，适合支持投资排序和方案沟通，不能替代单个结构的承载、疲劳、地基和耐久性验算。",
-        "en": "Resilience is often reduced to slogans such as being stronger or recovering faster, but recent research decomposes it into checkable components: robustness of members and systems, redundancy of alternative paths, agility of emergency response, and adaptive capacity for new risks. This matters for structural and civil engineers because the best investment differs by asset. A bridge network may need redundancy and diversion capacity; a water or energy system may need rapid recovery and replaceable equipment; an existing building portfolio may prioritise low-cost strengthening and monitoring triggers. The limitation is that resilience scores depend heavily on weights and scenarios, making them useful for investment ranking and option communication but not a substitute for asset-specific capacity, fatigue, foundation, and durability checks."
+        "zh": "低碳混凝土不是把水泥含量简单降到最低，而是在强度发展、早龄期收缩、泵送性、耐久性、氯离子渗透、碳化、养护条件、材料供应和碳排放之间做多目标权衡。机器学习适合处理这种高维筛选问题，尤其能帮助工程师把历史试配、材料化学、温湿度和性能目标联系起来，减少盲目试验次数。但结构采用不能只看模型预测的28天强度或单一碳指标。工程师还需要确认训练数据是否覆盖本地水泥、矿物掺合料、骨料级配、外加剂、施工温度和长期耐久性环境。未来更有价值的能力，是把机器学习输出转化为可验证的性能规范、试验计划和质量控制范围，而不是给出一个无法解释的“最佳配合比”。",
+        "en": "Low-carbon concrete is not a simple exercise in minimising cement content; it is a multi-objective trade-off among strength gain, early-age shrinkage, pumpability, durability, chloride penetration, carbonation, curing conditions, material supply, and embodied carbon. Machine learning is well suited to this high-dimensional screening problem, especially where historical trial mixes, material chemistry, temperature and humidity, and performance targets can be connected to reduce blind testing. Structural adoption, however, cannot rely only on predicted 28-day strength or a single carbon metric. Engineers still need to know whether the training data cover local cement, supplementary cementitious materials, aggregate grading, admixtures, placement temperature, and long-term durability exposure. The more useful future capability is translating ML output into verifiable performance specifications, test plans, and quality-control ranges rather than an unexplained optimum mix."
       },
       "caveat": {
-        "zh": "韧性指标越综合，越需要公开权重、情景和不确定性；否则数字会掩盖真正的工程判断。",
-        "en": "The more aggregated a resilience metric becomes, the more openly it must state weights, scenarios, and uncertainty; otherwise the number can hide the engineering judgement."
+        "zh": "低碳配合比的预测模型必须与本地材料认证、耐久性试验和施工质量控制绑定，才可能进入正式项目。",
+        "en": "Predictive models for low-carbon mixes must be tied to local material certification, durability testing, and construction quality control before they can enter formal projects."
       },
-      "reference": "Civil Engineering Sciences and NIST resilience research sources, 2026",
+      "reference": "npj Materials Sustainability review on machine learning for low-carbon concrete, July 2026",
       "referenceLinks": [
         {
-          "label": "ScienceDirect: integrated infrastructure resilience framework",
-          "url": "https://www.sciencedirect.com/science/article/pii/S3067780726000030"
-        },
-        {
-          "label": "NIST: resilient communities for future hazards",
-          "url": "https://www.nist.gov/programs-projects/resilient-communities-future-hazards-and-changing-conditions"
+          "label": "Nature: Machine learning-enabled pathways for low-carbon concrete",
+          "url": "https://www.nature.com/articles/s44296-026-00109-8"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "地基承载力不是沉降控制：为什么浅基础设计必须同时检查强度和使用性？",
-      "en": "Bearing capacity is not settlement control: why shallow foundation design must check both strength and serviceability"
+      "zh": "有效长度不是构件长度：为什么柱稳定设计取决于约束、侧移和二阶效应？",
+      "en": "Effective length is not member length: why column stability design depends on restraint, sway, and second-order effects"
     },
     "text": {
-      "zh": "浅基础设计常被误解为只要地基承载力够大就安全。实际上，地基至少有两个不同问题：第一，土体是否会发生剪切破坏或局部冲切，这是承载力和极限状态问题；第二，在工作荷载下沉降、差异沉降和转角是否会影响上部结构、幕墙、管线和使用功能，这是使用性问题。中国、澳洲、欧洲和美国体系的表达不同：GB 50007使用地基承载力特征值、修正和变形验算组织设计；澳洲实践常结合AS 2870住宅地基运动、AS 2159桩基和岩土报告给出的allowable bearing pressure或geotechnical strength reduction；Eurocode 7把作用、地基抗力和设计方法放在geotechnical design approach中；美国项目常在IBC/ASCE体系下由岩土工程师给出allowable soil pressure并要求沉降评估。跨规范复核时，关键不是把一个“允许承载力”数字直接搬到另一个体系，而是确认它是净压力还是总压力、短期还是长期、排水还是不排水、包含多大安全储备、对应多大基础尺寸和埋深，以及是否已经考虑沉降限值。",
-      "en": "Shallow foundation design is often misunderstood as safe once bearing capacity is large enough. In reality, foundation design contains at least two different questions. First, can the soil avoid shear failure or local punching under the design action? That is a bearing-capacity and ultimate-limit-state issue. Second, will settlement, differential settlement, and rotation under working loads affect the superstructure, facade, services, and use? That is a serviceability issue. Chinese, Australian, European, and US systems express this differently. GB 50007 organises design around characteristic bearing capacity, modification, and deformation checks. Australian practice often combines AS 2870 ground movement for housing, AS 2159 for piles, and geotechnical reports that state allowable bearing pressure or geotechnical strength reduction. Eurocode 7 places actions, ground resistance, and design approaches within geotechnical design. US projects commonly rely on geotechnical recommendations for allowable soil pressure under the IBC/ASCE framework, with settlement assessment where required. In cross-code review, the key is not to transfer one allowable-bearing number directly into another system; it is to confirm whether the pressure is net or gross, short-term or long-term, drained or undrained, what safety margin it contains, which footing size and embedment it assumes, and whether settlement limits have already been considered."
+      "zh": "柱子设计常被初学者误解为只要截面强度足够、构件实际长度确定，承载力就可以直接算出。稳定问题的本质不同：受压构件可能在材料强度尚未充分发挥前发生整体屈曲，临界承载力取决于弯曲刚度、端部约束、侧移条件和体系二阶效应。因此，“有效长度”不是钢尺量出来的净高，而是把真实框架约束、节点转动、支撑刚度和是否可侧移等因素折算成一个稳定计算长度。中国、澳洲、欧洲和美国体系表达不同。GB 50017通过长细比、稳定系数和构件计算长度组织轴心受压稳定；AS 4100使用构件长度、有效长度系数、截面和构件能力，并把框架侧移和二阶分析作为体系问题处理；Eurocode 3用非维长细比、屈曲曲线和折减系数表达稳定抗力；AISC 360则结合有效长度法、直接分析法、notional loads和二阶效应处理柱与框架。跨规范复核时，关键不是把K值或有效长度系数机械搬运，而是确认模型是否反映了支撑体系、节点刚度、初始缺陷、荷载组合、P-Delta效应和构件端部边界。若这些假设不一致，同一个“3.6 m柱”在不同体系下可能代表完全不同的稳定问题。",
+      "en": "Column design is often misunderstood as a direct capacity calculation once section strength and physical member length are known. Stability is different: a compression member can buckle globally before material strength is fully mobilised, and its critical resistance depends on flexural stiffness, end restraint, sway condition, and system second-order effects. Effective length is therefore not the clear height measured with a tape; it is a stability length that converts real frame restraint, joint rotation, bracing stiffness, and sway permission into a calculation model. Chinese, Australian, European, and US systems express this differently. GB 50017 organises axial-compression stability through slenderness, stability factors, and calculated member length. AS 4100 uses member length, effective-length factors, section and member capacities, while treating frame sway and second-order analysis as system issues. Eurocode 3 expresses buckling resistance through non-dimensional slenderness, buckling curves, and reduction factors. AISC 360 combines the effective-length method, direct analysis method, notional loads, and second-order effects for columns and frames. In cross-code review, the key is not to transfer a K factor mechanically, but to confirm whether the model captures bracing, joint stiffness, imperfections, load combinations, P-Delta effects, and end boundary conditions. If those assumptions are not aligned, the same 3.6 m column can represent very different stability problems."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "承载力看破坏机制",
-          "en": "Bearing capacity checks the failure mechanism"
+          "zh": "稳定承载力看体系约束",
+          "en": "Stability capacity depends on system restraint"
         },
         "text": {
-          "zh": "承载力问题关注基础下土体是否形成剪切破坏面、局部压碎或冲切。它与土的抗剪强度、基础宽度、埋深、地下水、荷载偏心和倾斜有关。",
-          "en": "Bearing capacity asks whether soil below the footing forms a shear failure surface, local crushing, or punching mechanism. It depends on shear strength, footing width, embedment, groundwater, load eccentricity, and load inclination."
+          "zh": "柱子的屈曲形态由端部转动约束、侧向支撑、相邻梁柱刚度和框架是否可侧移共同决定。构件实际长度相同，不代表有效长度相同。",
+          "en": "A column's buckling mode is governed by end rotational restraint, lateral bracing, adjacent beam-column stiffness, and whether the frame can sway. Equal physical length does not imply equal effective length."
         }
       },
       {
         "label": {
-          "zh": "沉降看变形协调",
-          "en": "Settlement checks deformation compatibility"
+          "zh": "二阶效应不是附加小修正",
+          "en": "Second-order effects are not a small afterthought"
         },
         "text": {
-          "zh": "沉降问题关注基础和上部结构能否协调变形。黏土固结、砂土压缩、填土再压密、相邻基础相互影响和施工扰动，都可能在承载力未用尽时控制设计。",
-          "en": "Settlement asks whether the foundation and superstructure can deform compatibly. Clay consolidation, sand compression, fill recompaction, interaction between nearby footings, and construction disturbance can govern even when bearing capacity is far from exhausted."
+          "zh": "轴力与侧移或初弯曲相乘会放大弯矩和变形。当框架接近稳定敏感区时，一阶内力图可能低估真实需求，必须通过二阶分析或规范放大方法处理。",
+          "en": "Axial force multiplied by sway or initial curvature amplifies moments and deformations. When a frame is stability-sensitive, first-order action effects may underestimate demand and must be handled through second-order analysis or code amplification methods."
         }
       },
       {
         "label": {
-          "zh": "允许压力不是通用材料强度",
-          "en": "Allowable pressure is not a universal material strength"
+          "zh": "K值是模型结论，不是输入常数",
+          "en": "The K factor is a modelling conclusion, not a fixed input"
         },
         "text": {
-          "zh": "岩土报告中的允许承载力通常绑定某个基础尺寸、埋深、地下水假设和沉降限值。把它当成像钢材屈服强度一样的通用参数，会掩盖真正的岩土边界条件。",
-          "en": "Allowable bearing pressure in a geotechnical report is usually tied to footing size, embedment, groundwater assumptions, and settlement limits. Treating it like a universal steel yield strength hides the actual geotechnical boundary conditions."
+          "zh": "有效长度系数应来自明确的边界条件和侧移判断。把表格K值当作默认材料参数，会掩盖支撑失效、节点半刚性和施工阶段临时约束变化。",
+          "en": "An effective-length factor should come from stated boundary conditions and sway classification. Treating tabulated K as a default material parameter hides bracing failure, semi-rigid joints, and temporary restraint changes during construction."
         }
       }
     ],
     "takeaway": {
-      "zh": "浅基础复核应写清楚：采用总压力还是净压力、基础尺寸和埋深、地下水位、荷载偏心、承载力安全储备、沉降计算假设、差异沉降限值，以及岩土报告是否已把使用性纳入允许压力。若这些输入没有对齐，跨规范比较会变成表面数值比较，而不是基础设计判断。",
-      "en": "A shallow-foundation review should state whether pressure is gross or net, footing size and embedment, groundwater level, load eccentricity, bearing-capacity margin, settlement assumptions, differential-settlement limits, and whether the geotechnical recommendation has already embedded serviceability. Without aligning those inputs, cross-code comparison becomes a superficial number comparison rather than foundation design judgement."
+      "zh": "柱稳定复核应写清楚：构件实际长度、计算长度、有效长度系数来源、侧移分类、端部约束、支撑点有效性、初始缺陷、采用一阶还是二阶分析，以及轴力与弯矩相互作用。有效长度的意义是把体系稳定假设转化为构件验算输入；若体系假设没有被审查，单独比较构件承载力数字会产生虚假的安全感。",
+      "en": "A column-stability review should state physical length, calculated length, source of effective-length factor, sway classification, end restraint, bracing effectiveness, imperfections, whether first- or second-order analysis is used, and axial-moment interaction. Effective length converts system-stability assumptions into member-check inputs; if the system assumptions are not reviewed, comparing member-capacity numbers alone creates false confidence."
     },
     "example": {
       "title": {
-        "zh": "参考实例：同一个柱脚压力为什么要分承载力和沉降两条线检查？",
-        "en": "Reference example: why should the same column load be checked separately for bearing and settlement?"
+        "zh": "参考实例：同一根柱为什么在有支撑框架和可侧移框架中承载力不同？",
+        "en": "Reference example: why does the same column have different capacity in braced and sway frames?"
       },
       "intro": {
-        "zh": "假设一个方形独立基础承受竖向设计力和弯矩。工程师通常先把作用换算为基底压力，再分别与地基抗力和沉降限值比较。下面公式用于说明概念流程；真实项目必须按岩土报告、适用规范、地下水条件、长期固结和上部结构容许变形复核。",
-        "en": "Assume a square isolated footing carries a vertical design action and moment. Engineers usually convert the actions into base pressure, then compare separately with ground resistance and settlement limits. The equations below explain the concept path only; real projects must follow the geotechnical report, applicable code, groundwater condition, long-term consolidation, and superstructure deformation tolerance."
+        "zh": "假设同一根钢柱长度为L、弯曲刚度为EI。若梁柱节点和支撑体系能有效限制侧移，计算长度可能接近实际层高；若框架可侧移或端部转动约束较弱，稳定半波长度会增加，临界力下降。下面公式只用于解释概念路径，真实项目必须按适用规范、结构分析模型、节点和支撑刚度、初始缺陷、荷载组合和施工阶段条件复核。",
+        "en": "Assume the same steel column has physical length L and flexural stiffness EI. If beam-column joints and bracing effectively restrain sway, the calculated length may be close to storey height; if the frame can sway or end rotational restraint is weak, the buckling half-wave length increases and critical force falls. The equations below explain the concept path only; real projects must follow the applicable code, analysis model, joint and bracing stiffness, imperfections, load combinations, and construction-stage conditions."
       },
       "equations": [
         {
           "label": {
-            "zh": "平均基底压力",
-            "en": "Average base pressure"
+            "zh": "有效长度定义",
+            "en": "Effective length definition"
           },
-          "formula": "qEd = NEd / A",
+          "formula": "Le = K L",
           "formulaTokens": [
             {
-              "var": "q",
-              "sub": "Ed"
+              "var": "L",
+              "sub": "e"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "K"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "L"
+            }
+          ],
+          "citation": {
+            "zh": "Simplified stability-model relation；K应由端部约束、侧移条件和支撑体系确定，不是构件材料属性。AS 4100、AISC 360、EN 1993和GB 50017均要求稳定长度或等效体系假设与结构模型一致。",
+            "en": "Simplified stability-model relation; K should be determined from end restraint, sway condition, and bracing system, not treated as a material property. AS 4100, AISC 360, EN 1993, and GB 50017 all require stability length or equivalent system assumptions to be consistent with the structural model."
+          }
+        },
+        {
+          "label": {
+            "zh": "Euler弹性临界力",
+            "en": "Euler elastic critical force"
+          },
+          "formula": "Ncr = π² E I / Le²",
+          "formulaTokens": [
+            {
+              "var": "N",
+              "sub": "cr"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "π",
+              "sup": "2"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "E"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "I"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "L",
+              "sub": "e",
+              "sup": "2"
+            }
+          ],
+          "citation": {
+            "zh": "Derived mechanics relation，基于理想弹性压杆屈曲；不是某一规范的完整构件设计公式。规范设计还需考虑残余应力、初始缺陷、截面分类、屈曲曲线和分项系数。",
+            "en": "Derived mechanics relation for ideal elastic column buckling; not a complete member-design equation from any one code. Code design also considers residual stress, imperfections, section classification, buckling curves, and partial or resistance factors."
+          }
+        },
+        {
+          "label": {
+            "zh": "长细比概念",
+            "en": "Slenderness concept"
+          },
+          "formula": "λ = Le / r",
+          "formulaTokens": [
+            {
+              "var": "λ"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "L",
+              "sub": "e"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "r"
+            }
+          ],
+          "citation": {
+            "zh": "Derived section-stability relation；r为截面回转半径。各规范可能使用普通长细比或非维长细比，符号和折减表达不同，但物理含义均为长度效应与截面抗弯刚度的相对关系。",
+            "en": "Derived section-stability relation where r is radius of gyration. Codes may use ordinary or non-dimensional slenderness with different notation and reduction formats, but the physical meaning is the relation between length effect and section flexural stiffness."
+          }
+        },
+        {
+          "label": {
+            "zh": "二阶敏感度概念",
+            "en": "Second-order sensitivity concept"
+          },
+          "formula": "η = NEd / Ncr",
+          "formulaTokens": [
+            {
+              "var": "η"
             },
             {
               "text": " = "
@@ -263,169 +368,67 @@
               "text": " / "
             },
             {
-              "var": "A"
+              "var": "N",
+              "sub": "cr"
             }
           ],
           "citation": {
-            "zh": "Derived relation，基于竖向作用除以基础接触面积的平均压力定义；不是某一规范的编号公式，真实项目需区分总压力、净压力和基础自重。",
-            "en": "Derived relation based on vertical action divided by footing contact area; not a numbered code equation. Real projects must distinguish gross pressure, net pressure, and footing self-weight."
+            "zh": "Derived relation，用于说明轴力接近弹性临界力时二阶效应会变得敏感；不是规范验算的唯一指标。真实项目应按规范采用二阶分析、放大系数或直接分析方法。",
+            "en": "Derived relation used to illustrate that second-order effects become sensitive as axial action approaches elastic critical force; it is not the sole code check. Real projects should use code-specified second-order analysis, amplification, or direct-analysis methods."
           }
         },
         {
           "label": {
-            "zh": "偏心距",
-            "en": "Load eccentricity"
+            "zh": "构件稳定验算表达",
+            "en": "Member stability check expression"
           },
-          "formula": "e = MEd / NEd",
+          "formula": "NEd ≤ Nb,Rd",
           "formulaTokens": [
-            {
-              "var": "e"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "M",
-              "sub": "Ed"
-            },
-            {
-              "text": " / "
-            },
             {
               "var": "N",
-              "sub": "Ed"
-            }
-          ],
-          "citation": {
-            "zh": "Derived relation，基于力矩等效为竖向力偏心的静力平衡；用于说明基底压力分布，不是承载力结论。",
-            "en": "Derived relation from static equilibrium by representing moment as eccentric vertical action; used to explain base-pressure distribution, not a bearing-capacity conclusion."
-          }
-        },
-        {
-          "label": {
-            "zh": "矩形基础线性压力边缘值",
-            "en": "Linear edge pressure for a rectangular footing"
-          },
-          "formula": "qmax = (NEd / A)(1 + 6e / B)",
-          "formulaTokens": [
-            {
-              "var": "q",
-              "sub": "max"
-            },
-            {
-              "text": " = ("
-            },
-            {
-              "var": "N",
-              "sub": "Ed"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "A"
-            },
-            {
-              "text": ")(1 + 6"
-            },
-            {
-              "var": "e"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "B"
-            },
-            {
-              "text": ")"
-            }
-          ],
-          "citation": {
-            "zh": "Derived elastic contact-pressure relation，适用于合力落在中三分之一内且基底全压的概念筛查；真实基础需按土体非线性、上拔、刚度和规范方法修正。",
-            "en": "Derived elastic contact-pressure relation for conceptual screening when the resultant lies within the middle third and the base remains in compression; real foundations require adjustment for soil nonlinearity, uplift, stiffness, and code method."
-          }
-        },
-        {
-          "label": {
-            "zh": "承载力极限状态表达",
-            "en": "Bearing-capacity ultimate-limit-state expression"
-          },
-          "formula": "qEd ≤ Rd",
-          "formulaTokens": [
-            {
-              "var": "q",
               "sub": "Ed"
             },
             {
               "text": " ≤ "
             },
             {
-              "var": "R",
-              "sub": "d"
+              "var": "N",
+              "sub": "b,Rd"
             }
           ],
           "citation": {
-            "zh": "Simplified screen，表达作用效应不超过设计地基抗力的极限状态思路；EN 1997-1、GB 50007和各地岩土报告会用不同符号、分项系数和修正方法给出设计值。",
-            "en": "Simplified screen expressing the ultimate-limit-state idea that action effect should not exceed design ground resistance; EN 1997-1, GB 50007, and local geotechnical reports use different notation, factors, and modification methods."
-          }
-        },
-        {
-          "label": {
-            "zh": "使用性沉降验算",
-            "en": "Serviceability settlement check"
-          },
-          "formula": "scalc ≤ slim",
-          "formulaTokens": [
-            {
-              "var": "s",
-              "sub": "calc"
-            },
-            {
-              "text": " ≤ "
-            },
-            {
-              "var": "s",
-              "sub": "lim"
-            }
-          ],
-          "citation": {
-            "zh": "Simplified serviceability screen，表示计算沉降不应超过结构和使用功能可接受限值；限值应由项目、上部结构敏感性和规范或业主要求确定。",
-            "en": "Simplified serviceability screen stating that calculated settlement should not exceed limits acceptable for structure and use; limits should be set by the project, superstructure sensitivity, and code or owner requirements."
+            "zh": "Simplified screen，表达设计轴力不超过构件屈曲设计抗力的极限状态思想；EN 1993-1-1使用屈曲折减系数，AS 4100、AISC 360和GB 50017采用各自的构件能力、稳定系数或抗力格式。",
+            "en": "Simplified screen expressing the limit-state idea that design axial action should not exceed member buckling design resistance; EN 1993-1-1 uses buckling reduction factors, while AS 4100, AISC 360, and GB 50017 use their own member-capacity, stability-factor, or resistance formats."
           }
         }
       ],
       "note": {
-        "zh": "同一个基础可能承载力满足但沉降控制，也可能沉降满足但偏心导致局部基底压力过高。若岩土报告给出的allowable bearing pressure已经由沉降控制，结构工程师再用它做极限状态抗力会混淆安全水平；若报告只给出极限承载力，则还需要单独检查使用性。",
-        "en": "The same footing may satisfy bearing capacity but be governed by settlement, or satisfy settlement while eccentricity creates excessive local base pressure. If a geotechnical report's allowable bearing pressure is already settlement-controlled, using it again as an ultimate resistance can mix safety levels; if the report gives only ultimate bearing capacity, serviceability still needs a separate check."
+        "zh": "同一根柱若被可靠支撑，可能由截面强度或较短有效长度控制；若位于可侧移框架中，可能在材料强度尚未用尽前由整体稳定控制。跨规范比较时，应先对齐支撑体系和二阶分析假设，再比较构件抗力。",
+        "en": "The same column may be governed by section strength or a shorter effective length when reliably braced, but by global stability before full material strength is mobilised in a sway frame. Cross-code comparison should align bracing and second-order analysis assumptions before comparing member resistance."
       }
     },
     "references": [
-      "EN 1997-1, Eurocode 7: Geotechnical design, basis for geotechnical design and verification formats.",
-      "GB 50007-2011, Code for design of building foundation, bearing capacity and deformation design concepts.",
-      "AS 2870 and AS 2159 context: Australian practice distinguishes ground movement, shallow footing recommendations, and pile design from structural member strength checks.",
-      "IBC/ASCE project practice: allowable soil pressure and settlement recommendations are normally project-specific geotechnical inputs, not universal material strengths."
+      "EN 1993-1-1, Eurocode 3: steel member buckling resistance, non-dimensional slenderness and buckling curves.",
+      "AS 4100, Steel structures: member capacity, effective length and frame stability concepts in Australian steel design.",
+      "AISC 360, Specification for Structural Steel Buildings: effective length, direct analysis, notional loads and second-order effects.",
+      "GB 50017, Standard for design of steel structures: calculated length, slenderness and axial compression stability concepts."
     ],
     "referenceLinks": [
       {
-        "label": "European Commission: Eurocode 7 geotechnical design",
-        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-7-geotechnical-design"
+        "label": "European Commission: Eurocode 3 steel structures",
+        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-3-design-steel-structures"
       },
       {
-        "label": "GB 50007-2011 public standard summary",
-        "url": "https://www.codeofchina.com/standard/GB50007-2011.html"
+        "label": "Standards Australia: AS 4100 steel structures",
+        "url": "https://store.standards.org.au/product/as-4100-2020"
       },
       {
-        "label": "Standards Australia: AS 2870 residential slabs and footings",
-        "url": "https://store.standards.org.au/product/as-2870-2011"
+        "label": "AISC: Specification for Structural Steel Buildings",
+        "url": "https://www.aisc.org/Specification-for-Structural-Steel-Buildings-ANSIAISC-360-22"
       },
       {
-        "label": "Standards Australia: AS 2159 piling design and installation",
-        "url": "https://store.standards.org.au/product/as-2159-2009"
-      },
-      {
-        "label": "International Code Council: IBC code information",
-        "url": "https://www.iccsafe.org/products-and-services/i-codes/2024-i-codes/ibc/"
+        "label": "GB 50017 public standard summary",
+        "url": "https://www.codeofchina.com/standard/GB50017-2017.html"
       }
     ]
   }
