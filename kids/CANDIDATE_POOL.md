@@ -1,45 +1,43 @@
-# Kids Candidate Pool
+# Kids candidate pool - 2026-07-24 to 2026-07-31
 
-Publication week: 2026-07-10 to 2026-07-17
+Fresh research pass for the Friday-to-Friday Australia/Sydney publication week. Social/discovery pages were used only to expand leads; selected cards use organiser, council, venue, tourism-board or official ticketing/listing sources.
 
-Refresh mode: manual Codex web search, official-source verification, local JSON write, static HTML fallback sync, GitHub push.
+## Sydney selected
 
-## Selection Rule
+1. Community planting for National Tree Day - Harold Park - City of Sydney - Forest Lodge - 24 Jul - selected card 1.
+2. STS Young Endeavour Open Day at the Maritime Museum - City of Sydney / Australian National Maritime Museum - Darling Harbour - 25 Jul - selected card 2.
+3. Monthly QVB Classical Pop-Up Concert - City of Sydney / Concerts for All - CBD - 25 Jul - selected card 3.
+4. National Tree Day Celebration - City of Sydney / Foundation and Friends of the Botanical Gardens - Royal Botanic Garden - 26 Jul - selected card 4.
+5. Paint a Friendship Bookmark Workshop - City of Sydney / Darling Harbour - Chinese Garden of Friendship - 30 Jul - selected card 5.
+6. Community planting for National Tree Day: Prince Alfred Park - City of Sydney - Surry Hills - 26 Jul - selected card 6.
+7. Bloodsuckers: Nature's Vampires - City of Sydney / Australian Museum - Darlinghurst - ongoing current-week exhibition - selected card 7, long-term.
+8. Mike Hewson: The Key's Under the Mat - City of Sydney / Art Gallery of NSW - Sydney - ongoing current-week family exhibition - selected card 8, long-term.
 
-- First four cards in each city must be newly found or short-window current-week options.
-- Long-running activities can stay, but they move behind fresher short-window options.
-- Library storytime, toddler-only craft, and under-3-only sessions go into More or are skipped.
-- Preference goes to adult-friendly family outings: festivals, shows, markets, outdoor trails, light walks, theatre, food-plus-activity, and major venue programs.
-- Do not roll dates forward from old DATA. Each Friday run starts with fresh search and source checks.
+## Sydney checked but not main 8
 
-## Sydney Shortlist
+- Winterfest at Hay St - City of Sydney - current week, good family lead, kept in More because it is a longer precinct activation.
+- Alchemy of a Rainforest exhibition - Botanic Gardens of Sydney - current week, kept in More because main 8 already has two Botanic/Tree Day items.
+- Horizon Line - Australian National Maritime Museum - current week, kept in More as a quiet museum backup.
+- Sydney children and family events - City of Sydney - official backup entry point.
+- Forever K-Pop - Ticketek/TEG Dainty showed postponed, rejected.
+- Library storytime/rhymetime and toddler/baby-only items - rejected from main cards by guide rule.
 
-1. Penrith NAIDOC Event - selected; official Penrith City Council page; one-day free community festival format.
-2. Christmas in July at The Rocks - selected; official The Rocks page; winter market, Snow Lane, live shows, food and Firepit Cinema.
-3. Midwinter Festival - selected; official AtParramatta page; Parramatta Square winter festival with firepits, immersive cinema and food.
-4. Bastille Festival - selected; official The Rocks page; starts within this publication week and is family-walkable.
-5. The Princess Bride in Concert - selected; Darling Harbour/ICC page; film plus live symphony.
-6. The Gruffalo's Child - selected; Darling Harbour page; short-run theatre for ages 3+.
-7. Kids Kung Fu Animal Adventures - selected; Darling Harbour page; active short sessions at Chinese Garden.
-8. Darling Harbour Ice Rink - selected; longer-running but useful city backup with clear family ticketing.
+## Melbourne selected
 
-More links: Darling Harbour winter campaign, Winni Wizard, The Greatest Magic Show, City of Sydney kids category, The Rocks What's On.
+1. Melbourne Quarter's Public Art: Open House - City of Melbourne / Open House Melbourne - Docklands - 25 Jul - selected card 1.
+2. Make a Memory - Visit Victoria / State Library Victoria - Melbourne CBD - 25 and 26 Jul - selected card 2.
+3. The Southbank Makers Market - City of Melbourne - Southbank - starts 26 Jul - selected card 3.
+4. Dinos at the Zoo - Melbourne Zoo - Visit Melbourne / Zoos Victoria lead - Parkville - current week - selected card 4.
+5. Lightscape - City of Melbourne / Royal Botanic Gardens Melbourne - current week - selected card 5, long-term.
+6. Play School: Come and Play - City of Melbourne / ACMI - current week until 26 Jul - selected card 6, long-term.
+7. NINJAGO: The True Ninja Trials - Visit Victoria / LEGOLAND Discovery Centre - Chadstone - current week - selected card 7, long-term.
+8. Children's Play: Ragnar Kjartansson - City of Melbourne / NGV - current week - selected card 8, long-term.
 
-## Melbourne Shortlist
+## Melbourne checked but not main 8
 
-1. Pokemon GO Fest: Global - selected; City of Melbourne page; free outdoor community/game event.
-2. Melbourne Magic Festival - selected; City of Melbourne page; short-window show/workshop program.
-3. Play School: Come and Play - selected; City of Melbourne/ACMI listing; free hands-on exhibition.
-4. Dinos at the Zoo - selected; City of Melbourne listing; outdoor zoo and dinosaur trail.
-5. Bluey's Big Play - selected; City of Melbourne page; indoor family theatre.
-6. Lightscape - selected; City of Melbourne page; adult-friendly night light trail.
-7. Fitzroy Gardens Outdoor Adventure - selected behind fresher items; free map hunt, long-running.
-8. Chocolate Family Adventure Day - selected behind fresher items; paid booked food/activity trail, long-running.
-
-More links: Family Mystery Picnic, City of Melbourne family category, Melbourne Museum What's On, NGV Kids.
-
-## Rejected / Demoted This Week
-
-- Library activities: not shown in the main eight unless they are part of a larger festival.
-- Pure toddler storytime or baby-only sessions: too narrow for the page goal.
-- Old July 3 cycle items that had ended or lacked a current-week source check: removed.
+- Open House Melbourne Weekend - City of Melbourne - current week, kept in More as an official event cluster.
+- Winter Night Market - Queen Victoria Market / City of Melbourne - current week, kept in More because it is a longer recurring night market.
+- Machu Picchu: Journey to the Lost City - City of Melbourne - current week, kept in More as a paid attraction backup.
+- Melbourne family and kids events - City of Melbourne What's On - official backup entry point.
+- An Uncertain Time and Baby Bounce - rejected from main cards as baby/toddler/carer focused.
+- Generic family directories and discovery listings - used only for leads, not as selected card proof where an event-specific page was available.

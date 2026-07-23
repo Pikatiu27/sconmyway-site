@@ -9,6 +9,7 @@ It does **not** include Codex/ChatGPT conversation tokens, GitHub runtime, GitHu
 <!-- TOKEN_USAGE_ROWS_START -->
 | Run time (Sydney) | Mode | Melbourne input | Melbourne output | Sydney input | Sydney output | Total API tokens |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| 24 July 2026 05:30 | Manual web search and local sync, no API call | 0 | 0 | 0 | 0 | 0 |
 | 10 July 2026 05:00 | Manual web search and local sync, no API call | 0 | 0 | 0 | 0 | 0 |
 | 04 July 2026 12:30 | Manual official-source refresh, no API call | 0 | 0 | 0 | 0 | 0 |
 | 03 July 2026 05:23 | Fallback, no API call | 0 | 0 | 0 | 0 | 0 |
