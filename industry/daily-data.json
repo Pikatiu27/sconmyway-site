@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-23",
+  "date": "2026-07-24",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,88 +7,84 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "AI算力基础设施",
-        "en": "AI compute infrastructure"
+        "zh": "AI数据中心与电力监管",
+        "en": "AI data centers and power regulation"
       },
       "title": {
-        "zh": "OpenAI的Project Camellia把社区成本承诺放进超大规模AI数据中心交付条件",
-        "en": "OpenAI's Project Camellia puts community-cost commitments into hyperscale AI delivery"
+        "zh": "美国Ratepayer Protection Pledge扩展到数据中心开发商和公用事业，AI算力开始被要求“自己付电网账单”",
+        "en": "The expanded Ratepayer Protection Pledge makes AI compute pay for its own grid burden"
       },
       "summary": {
-        "zh": "OpenAI和佐治亚州Effingham County披露，Project Camellia将在Savannah Gateway Industrial Hub建设长期数据中心项目，并与Georgia Power签约3.2 GW电力，计划在2028至2032年分阶段交付。OpenAI同时承诺项目电力服务和配套基础设施费用由自身承担、不转嫁给现有居民用户，并强调闭环冷却、社区沟通和教育合作。行业含义是，AI基础设施竞争已进入“算力+电力+水资源+地方许可+社会接受度”的整体交付阶段。对开发商和公用事业而言，未来项目能否落地，不只取决于GPU或土地储备，也取决于能否把费率保护、峰值削减、施工影响和地方收益写成可审查的承诺。",
-        "en": "OpenAI and Effingham County, Georgia disclosed Project Camellia, a long-term data-center development at the Savannah Gateway Industrial Hub, with 3.2 GW of power contracted from Georgia Power for phased delivery from 2028 to 2032. OpenAI also committed to covering the electric-service and infrastructure costs required for the project, not passing those costs to existing residential ratepayers, while emphasising closed-loop cooling, community engagement, and education partnerships. The industry signal is that AI infrastructure is now delivered as an integrated package of compute, power, water, local permission, and social licence. Developers and utilities will be judged not only by GPU or land capacity, but by auditable commitments on rates, peak curtailment, construction impacts, and local benefits."
+        "zh": "美国白宫更新的Ratepayer Protection Pledge页面显示，已有200多个组织加入，覆盖约80%的美国居民和企业供电，并把州长、云厂商、公用事业和数据中心开发商都纳入同一承诺框架。承诺核心是：数据中心需要的新发电、电力输送升级、专用费率和社区韧性投入，应由需求方承担，而不是转嫁给普通用户。行业含义是，AI基础设施审批正在从“能不能拿到电”升级为“谁为新增容量、备用电源、并网和地方影响负责”。未来项目融资、选址和电力采购会更像基础设施特许经营，监管机构会要求可审计的成本分摊，而不是只看算力投资规模。",
+        "en": "The White House's updated Ratepayer Protection Pledge page says more than 200 organisations have joined, covering roughly 80% of U.S. power delivered to homes and businesses and bringing governors, hyperscalers, utilities, and data-center developers into one commitment framework. The central commitment is that new generation, delivery upgrades, dedicated rate structures, and community-resilience contributions required by data centers should be paid for by the demand creators, not ordinary ratepayers. The industry signal is that AI infrastructure permitting is moving from 'can the project secure power?' to 'who is accountable for new capacity, backup generation, interconnection, and local impacts?' Future financing, siting, and power procurement will look more like infrastructure concessions, with regulators asking for auditable cost allocation rather than accepting headline compute investment."
       },
       "watch": {
-        "zh": "关注公开说明会、Georgia PSC费率处理、并网里程碑和水资源许可是否把这些承诺转化为可执行条件。",
-        "en": "Watch whether public meetings, Georgia PSC rate treatment, interconnection milestones, and water permitting convert these commitments into enforceable conditions."
+        "zh": "关注州监管机构是否把自愿承诺写入具体费率、并网协议和开发许可；没有强制条款，承诺仍可能停留在政治风险管理。",
+        "en": "Watch whether state regulators turn the voluntary pledge into rate orders, interconnection agreements, and development approvals; without enforceable terms, it remains partly political risk management."
       },
-      "reference": "OpenAI and Effingham County announcements on Project Camellia, July 2026",
+      "reference": "White House Ratepayer Protection Pledge page and public reporting on the July 2026 expansion",
       "referenceLinks": [
         {
-          "label": "OpenAI: Building AI infrastructure with Effingham County",
-          "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/"
+          "label": "White House: Ratepayer Protection Pledge",
+          "url": "https://www.whitehouse.gov/ratepayer-protection-pledge/"
         },
         {
-          "label": "Effingham County: Project Camillia press release",
-          "url": "https://effinghamcounty.org/m/newsflash/home/detail/455"
+          "label": "AP: Trump expands pledge on AI data-center utility bills",
+          "url": "https://apnews.com/article/490ea7e4c7227d5e550b00a0056c33c9"
         }
       ]
     },
     {
       "topic": {
-        "zh": "AI半导体与算力供应链",
-        "en": "AI semiconductors and compute supply chains"
+        "zh": "AI数据中心安全标准",
+        "en": "AI data-center security standards"
       },
       "title": {
-        "zh": "AMD拟向Anthropic投资至多50亿美元，AI芯片采购正在按吉瓦级系统容量谈判",
-        "en": "AMD's planned USD5bn Anthropic investment shows AI chip procurement moving to gigawatt-scale systems"
+        "zh": "NIST把AI数据中心安全放到架构、供应链、OT和设施施工同一张桌面上",
+        "en": "NIST puts AI data-center security across architecture, supply chain, OT, and facility delivery"
       },
       "summary": {
-        "zh": "Reuters报道，AMD将向Anthropic投资至多50亿美元，Anthropic将从2027年上半年开始购买至多2 GW的新一代AMD AI芯片。AMD本周还宣布Microsoft将在Azure规模化部署AMD Helios机架级方案，用于前沿模型推理和AI服务。这个组合信号说明，AI芯片竞争正从单颗加速卡性能转向整机架、网络、软件栈、供电和长期融资安排的绑定。对云厂商和模型公司而言，关键问题是能否在Nvidia之外形成可验证的第二供应体系；对芯片公司而言，客户锁定正在通过工程协同、资本投入和多年供货节奏共同完成。",
-        "en": "Reuters reported that AMD will invest up to USD5 billion in Anthropic, while Anthropic will buy up to 2 GW of AMD's latest AI chips starting in the first half of 2027. AMD also announced this week that Microsoft will deploy AMD Helios rack-scale systems on Azure for frontier-model inference and AI services. The combined signal is that AI chip competition is shifting from individual accelerator performance toward bundled rack-scale systems, networking, software stacks, power delivery, and long-term financing. For cloud and model companies, the question is whether a verifiable second supply path beyond Nvidia can be built; for chipmakers, customer lock-in is being formed through engineering alignment, capital commitments, and multi-year delivery schedules."
+        "zh": "NIST在2026年7月22日至23日举行“Securing AI Data Center”线上研讨会，并在7月23日更新页面，议题覆盖AI数据中心架构、硬件软件、数据存储、访问控制、供应链、Operational Technology、设施施工、供电、可持续性、物理安全和人员安全。这个范围说明，AI数据中心正在从普通商业机房变成国家级关键基础设施：模型安全不只由算法团队负责，也取决于电气系统、冷却系统、施工质量、供应链可追溯性和物理访问控制。对行业而言，下一阶段的数据中心竞争会同时考验网络安全、工程交付和运营合规能力，单纯追求更高机柜功率密度已不够。",
+        "en": "NIST held its 'Securing AI Data Center' virtual workshop on 22-23 July 2026 and updated the event page on 23 July. The agenda spans AI data-center architecture, hardware and software, data storage, access control, supply chain, operational technology, facility construction, power, sustainability, physical security, and personnel security. That scope shows AI data centers moving from ordinary commercial facilities toward critical national infrastructure: model security is not only an algorithm-team problem, but also depends on electrical systems, cooling systems, construction quality, supply-chain traceability, and physical access control. For the industry, the next phase of data-center competition will test cybersecurity, engineering delivery, and operating compliance together; higher rack power density alone is no longer enough."
       },
       "watch": {
-        "zh": "关注首个吉瓦级部署能否按2027年上半年启动，以及ROCm软件成熟度、互连效率和数据中心租赁背书是否成为采购约束。",
-        "en": "Watch whether the first gigawatt deployment starts in H1 2027, and whether ROCm maturity, interconnect efficiency, and data-center lease backstops become procurement constraints."
+        "zh": "关注NIST后续是否发布可执行的安全控制、测试方法或标准路线图，尤其是OT、供电和物理安全如何进入数据中心验收。",
+        "en": "Watch whether NIST follows with actionable controls, test methods, or standards roadmaps, especially for OT, power, and physical security acceptance."
       },
-      "reference": "Reuters and AMD announcements on Anthropic, Microsoft Azure, and Helios AI infrastructure, July 2026",
+      "reference": "NIST workshop on AI data-center security, architecture and emerging standards, July 2026",
       "referenceLinks": [
         {
-          "label": "Reuters: AMD to invest up to USD5bn in Anthropic",
-          "url": "https://m.investing.com/news/stock-market-news/amd-to-invest-up-to-5-billion-in-anthropic-wsj-reports-4805909?ampMode=1"
-        },
-        {
-          "label": "AMD: Microsoft to deploy next-gen AMD Instinct and EPYC",
-          "url": "https://www.amd.com/en/newsroom/press-releases/2026-7-20-microsoft-to-deploy-next-gen-amd-instinct-and-amd-.html"
+          "label": "NIST: Securing AI Data Center workshop",
+          "url": "https://www.nist.gov/news-events/events/2026/07/securing-ai-data-center-architecture-security-posture-and-emerging"
         }
       ]
     },
     {
       "topic": {
-        "zh": "稳定币支付基础设施",
-        "en": "Stablecoin payment infrastructure"
+        "zh": "数字健康设备监管",
+        "en": "Digital health device regulation"
       },
       "title": {
-        "zh": "Visa推出稳定币平台，数字美元支付从试点叙事走向托管、铸造和赎回的企业接口",
-        "en": "Visa's stablecoin platform moves digital-dollar payments from pilots toward enterprise minting, custody, and redemption rails"
+        "zh": "FDA选择TEMPO首个数字健康设备试点，慢病管理AI进入“真实世界数据换取监管弹性”的阶段",
+        "en": "FDA's first TEMPO participant moves digital health AI into a real-world-data-for-regulatory-flexibility phase"
       },
       "summary": {
-        "zh": "Visa发布Visa Stablecoin Platform，面向金融机构、金融科技公司和支付服务商提供稳定币铸造、移动和管理环境，并从Open USD和钱包即服务能力切入。同一周，加密行业继续围绕GENIUS Act一周年和最终规则延期讨论储备、客户识别、赎回和监管边界。行业含义是，稳定币不再只是交易所或加密原生公司工具，而正在被包装成银行和支付机构可以接入的受管基础设施。真正的竞争点会落在储备透明度、反洗钱流程、破产隔离、跨链操作风险和现有支付网络的清算体验，而不是单纯链上转账速度。",
-        "en": "Visa launched the Visa Stablecoin Platform, giving financial institutions, fintechs, and payment providers an environment for stablecoin minting, movement, and management, initially around Open USD and wallet-as-a-service capability. In the same week, the crypto industry continued to debate the one-year GENIUS Act milestone and delays to final implementing rules on reserves, customer identification, redemption, and supervisory boundaries. The industry implication is that stablecoins are no longer only exchange or crypto-native tools; they are being packaged as governed infrastructure that banks and payment companies can connect to. The real competition will sit in reserve transparency, AML processes, bankruptcy remoteness, cross-chain operating risk, and the clearing experience beside existing payment networks rather than raw on-chain transfer speed."
+        "zh": "FDA在2026年7月22日宣布TEMPO数字健康设备试点的首个参与者为Dexcom Glucose Health Program，适用场景为早期心肾代谢和心肾代谢慢病管理，意图通过数字健康指标、实时数据和AI洞察支持患者和护理团队决策。FDA同时说明，试点设备有效性尚未被FDA评价，参与企业需要收集、监测和报告真实世界数据。行业含义是，数字健康不再只靠软件发布速度竞争，而是进入“覆盖支付模型、真实世界证据、安全监测和监管边界”的组合赛道。对医疗AI公司来说，能否把数据闭环写成合规流程，将决定产品能否从健康管理工具走向临床和医保场景。",
+        "en": "On 22 July 2026, the FDA announced Dexcom Glucose Health Program as the first participant in the TEMPO digital health devices pilot, covering early cardio-kidney-metabolic and cardio-kidney-metabolic chronic disease use cases, with digital health metrics, real-time data, and AI insights intended to support patients and care teams. FDA also states that the effectiveness of devices in the pilot has not yet been evaluated by the agency, and participating manufacturers must collect, monitor, and report real-world data. The industry implication is that digital health is no longer competing only on software release speed; it is entering a combined lane of coverage models, real-world evidence, safety monitoring, and regulatory boundaries. For medical AI companies, the ability to turn data loops into compliant processes will determine whether products can move from wellness tools into clinical and reimbursement settings."
       },
       "watch": {
-        "zh": "关注试点客户是否披露真实交易量、赎回时效和合规成本；没有这些指标，平台发布仍难证明主流支付采用。",
-        "en": "Watch whether beta customers disclose transaction volume, redemption timing, and compliance cost; without those metrics, a platform launch does not yet prove mainstream payment adoption."
+        "zh": "关注真实世界数据指标、患者安全事件、医保支付效果和FDA后续参与者名单；这些会决定TEMPO是监管沙盒还是可复制审批路径。",
+        "en": "Watch real-world-data metrics, patient safety events, reimbursement outcomes, and later FDA participant selections; these will show whether TEMPO is a sandbox or a repeatable pathway."
       },
-      "reference": "Visa announcement and digital-asset policy coverage on stablecoin implementation, July 2026",
+      "reference": "FDA TEMPO digital health devices pilot update, July 2026",
       "referenceLinks": [
         {
-          "label": "Visa: Stablecoin Platform announcement",
-          "url": "https://investor.visa.com/news/news-details/2026/Visa-Introduces-Platform-for-Stablecoin-Minting-Movement-and-Management/"
+          "label": "FDA: First participant selected for TEMPO pilot",
+          "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/participant-selected-tempo-digital-health-devices-pilot"
         },
         {
-          "label": "CoinDesk: GENIUS Act turns one",
-          "url": "https://www.coindesk.com/policy/2026/07/19/the-genius-act-turns-1-state-of-crypto"
+          "label": "FDA Newsroom: July 2026 press announcements",
+          "url": "https://www.fda.gov/news-events/fda-newsroom"
         }
       ]
     }
@@ -96,339 +92,322 @@
   "insights": [
     {
       "area": {
-        "zh": "AI驱动材料研发",
-        "en": "AI-driven materials R&D"
+        "zh": "基础设施气候韧性",
+        "en": "Infrastructure climate resilience"
       },
       "title": {
-        "zh": "Genesis Mission说明工程材料研发正在从单点试验转向高性能计算、自动实验和数据治理的联合流程",
-        "en": "The Genesis Mission shows engineering-materials R&D moving from isolated tests to coupled HPC, autonomous experiments, and data governance"
+        "zh": "气候韧性正在从单个构件加固转向交通、水、电和城市系统之间的服务连续性设计",
+        "en": "Climate resilience is moving from isolated asset hardening to service-continuity design across transport, water, power, and urban systems"
       },
       "evidence": {
-        "zh": "资料类型：美国能源部2026年7月22日公告和白宫Genesis Mission说明；内容：DOE选择278个AI科学工作流项目，并把能源、智能芯片设计、商业聚变、材料和国家实验室高性能计算资源放入同一任务框架。",
-        "en": "Evidence: U.S. Department of Energy and White House Genesis Mission releases dated 22 July 2026, selecting 278 AI-enabled scientific-workflow projects and placing energy, intelligent chip design, commercial fusion, materials, and national-laboratory HPC resources within one mission framework."
+        "zh": "资料类型：UNECE 2026年6月交通基础设施适应报告和ASCE 2026年系统韧性报道；内容：交通网络将面对洪水、高温、海平面、冰雪和永久冻土变化等更强风险，社区需要用系统方法识别道路、桥梁、水务和电力网络之间的相互依赖。",
+        "en": "Evidence: UNECE's June 2026 transport-infrastructure adaptation release and ASCE's 2026 coverage of system-of-systems resilience; transport networks face stronger flood, heat, sea-level, snow, ice, and permafrost risks, while communities need system methods to identify dependencies among roads, bridges, water, and power networks."
       },
       "summary": {
-        "zh": "对土木和结构工程师来说，这类国家级AI科学计划的直接价值不在于让模型替代规范验算，而在于改变材料证据的生成方式。耐久混凝土、低碳胶凝材料、耐高温钢材、涂层、复合材料和核能构筑物材料都依赖长期试验、环境暴露和多尺度表征；如果高性能计算、自动实验室和统一数据平台可以缩短筛选周期，工程材料会更快进入性能化设计讨论。但风险同样明确：模型训练数据的边界、试验可重复性、批次差异和现场施工质量仍会决定材料能否进入规范、业主标准和保险认可。工程师应把AI材料成果看成加速试验设计和证据组织的工具，而不是绕过特征值、耐久性等级和施工验收的捷径。",
-        "en": "For civil and structural engineers, the direct value of national AI-for-science programmes is not that models replace code checks; it is that the evidence pipeline for materials may change. Durable concrete, low-carbon binders, high-temperature steels, coatings, composites, and nuclear-facility materials all depend on long-duration tests, environmental exposure, and multiscale characterisation. If HPC, autonomous laboratories, and common data platforms shorten the screening cycle, engineering materials can enter performance-based design discussions faster. The risk is equally clear: training-data boundaries, repeatability, batch variability, and site workmanship still determine whether a material can enter codes, owner standards, and insurance acceptance. Engineers should treat AI materials work as an accelerator for test design and evidence organisation, not a shortcut around characteristic values, durability classes, and construction acceptance."
+        "zh": "传统工程韧性常被理解为把单个资产做得更结实，例如提高桥梁通航水位、加大排水能力或增强边坡防护。近期资料提醒，基础设施真正失效时往往不是单一构件问题，而是服务链断裂：道路被淹导致维修队伍无法到达泵站，供电中断导致交通控制失效，极端高温同时影响轨道、路面、医院和通信设施。因此，结构和土木工程师需要把设计问题从“单体安全系数是否足够”扩展到“系统在扰动后能否维持关键服务”。这会改变项目前期工作：风险地图、冗余路线、跨部门数据、恢复时间目标和全寿命成本将更早进入方案比选。边界是，系统韧性不能替代构件验算；它要求构件设计、运营计划和应急恢复共同被审查。",
+        "en": "Traditional engineering resilience is often treated as making individual assets stronger, such as raising bridge clearances, increasing drainage capacity, or improving slope protection. Recent sources underline that infrastructure failure is often not a single-member problem but a service-chain failure: flooded roads prevent crews from reaching pump stations, power loss disables traffic control, and extreme heat can affect rail, pavement, hospitals, and communications at the same time. Civil and structural engineers therefore need to expand the design question from 'is the asset factor of safety adequate?' to 'can the system maintain critical service after disruption?' This changes early project work: risk maps, redundant routes, cross-agency data, recovery-time objectives, and life-cycle cost enter option selection earlier. The boundary is that system resilience does not replace member checks; it requires asset design, operating plans, and recovery strategy to be reviewed together."
       },
       "caveat": {
-        "zh": "AI生成的材料建议只有在试验矩阵、环境暴露、统计置信度和施工容差公开时，才具有工程采用价值。",
-        "en": "AI-generated material recommendations become useful for engineering adoption only when the test matrix, exposure conditions, statistical confidence, and construction tolerances are explicit."
+        "zh": "韧性指标必须和具体服务目标绑定，例如通行能力、供水恢复时间或电力备用水平；抽象评分本身不能证明项目更安全。",
+        "en": "Resilience metrics must be tied to service targets such as traffic capacity, water restoration time, or backup power level; an abstract score alone does not prove a safer project."
       },
-      "reference": "DOE and White House Genesis Mission materials and AI-for-science sources, July 2026",
+      "reference": "UNECE and ASCE sources on transport and system-of-systems resilience, 2026",
       "referenceLinks": [
         {
-          "label": "DOE: First Genesis Mission projects selected",
-          "url": "https://www.energy.gov/articles/secretary-energy-chris-wright-announces-first-genesis-mission-projects-selected-accelerate"
+          "label": "UNECE: Climate-resilient transport systems",
+          "url": "https://unece.org/media/press/415015"
         },
         {
-          "label": "White House: More than USD5bn for the Genesis Mission",
-          "url": "https://www.whitehouse.gov/releases/2026/07/45502/?query-11-page=3"
+          "label": "ASCE: System-of-systems method for resilient infrastructure",
+          "url": "https://www.asce.org/publications-and-news/civil-engineering-source/article/2026/05/15/system-of-systems-method-can-bring-cities-resilient-infrastructure-report-finds"
         }
       ]
     },
     {
       "area": {
-        "zh": "桥梁数字孪生",
-        "en": "Bridge digital twins"
+        "zh": "工程计算模型质量控制",
+        "en": "Quality control for engineering calculation models"
       },
       "title": {
-        "zh": "桥梁数字孪生的工程难点不是建模酷炫度，而是业主需要、最小数据集和可维护决策闭环",
-        "en": "The hard part of bridge digital twins is not visual modelling, but owner needs, minimum datasets, and maintainable decision loops"
+        "zh": "软件计算模型的核心风险不是是否“高级”，而是输入、假设、版本和独立校核是否可追溯",
+        "en": "The key risk in software-based calculation models is not sophistication, but traceable inputs, assumptions, versions, and independent checking"
       },
       "evidence": {
-        "zh": "资料类型：IABMAS工作组在2026年7月发表的桥梁数字孪生综述，以及IABSE新任务组资料；内容：调查桥梁业主对数字孪生定义、输入输出、潜在收益和可实施性的看法，并推进既有桥梁数字孪生文件和案例研究。",
-        "en": "Evidence: a July 2026 IABMAS working-group article on bridge digital twins and IABSE task-group material, covering bridge-owner views on definitions, inputs, outputs, benefits, feasibility, and future structural-engineering documents and case studies for existing bridges."
+        "zh": "资料类型：IStructE在2026年7月发布的计算模型指南说明；内容：新指南为软件计算模型的开发、使用和验证提供质量保证和质量控制框架。",
+        "en": "Evidence: IStructE's July 2026 calculation-model guidance note; it describes a quality-assurance and quality-control framework for developing, using, and verifying software-based calculation models."
       },
       "summary": {
-        "zh": "数字孪生在桥梁管理中容易被展示成三维模型、传感器面板或AI预测界面，但业主真正需要的是可审计的资产决策：哪些桥需要检查，哪些构件需要限载，哪些维修可以推迟，哪些数据足以改变风险排序。近期工作显示，数字孪生的价值取决于最小可用数据集、检测记录、有限元模型可信度、交通荷载、环境退化、监测阈值和维护预算之间能否形成闭环。对工程师的能力要求也随之改变：不仅要会建模，还要能说明模型更新规则、数据缺口、传感器漂移、失效模式和决策责任。边界在于，并非每座桥都需要高保真孪生；低价值或数据稀缺资产可能更适合分级检查、简化风险模型和目标化监测。",
-        "en": "Bridge digital twins are often presented as 3D models, sensor dashboards, or AI prediction interfaces, but owners need auditable asset decisions: which bridges need inspection, which members require load restriction, which repairs can wait, and which data are strong enough to change risk ranking. Recent work shows that value depends on closing the loop between minimum viable datasets, inspection records, finite-element model credibility, traffic actions, environmental deterioration, monitoring thresholds, and maintenance budgets. The capability requirement for engineers therefore changes: they must not only model, but also state update rules, data gaps, sensor drift, failure modes, and decision responsibility. The boundary is that not every bridge needs a high-fidelity twin; low-value or data-poor assets may be better served by tiered inspection, simplified risk models, and targeted monitoring."
+        "zh": "结构工程已经离不开有限元、参数化脚本、电子表格和专业设计软件，但模型越复杂，错误越可能藏在默认设置、单位、边界条件、荷载组合映射、网格收敛或版本变化里。新指南的行业信号是，未来工程师的价值不会只体现在会操作软件，而是能把计算模型变成可审查的工程证据：为什么选这个模型层级，哪些输入来自图纸或规范，哪些假设需要设计负责人批准，哪些结果需要手算量级复核，哪些版本变更会影响既有结论。AI辅助建模会放大这个要求，因为自动生成的模型更需要可追溯输入和独立验证。边界在于，质量控制不是把所有模型都做得更重，而是按风险等级匹配验证深度。",
+        "en": "Structural engineering now depends on finite-element models, parametric scripts, spreadsheets, and specialist design software, but the more complex the model, the more likely mistakes hide in defaults, units, boundary conditions, load-combination mapping, mesh convergence, or version changes. The industry signal from the new guidance is that future engineering value will not only be software operation, but turning calculation models into reviewable engineering evidence: why this model level was chosen, which inputs came from drawings or codes, which assumptions need design-lead approval, which results need hand-check magnitude verification, and which version changes affect previous conclusions. AI-assisted modelling will intensify this requirement because automatically generated models need traceable inputs and independent verification even more. The boundary is that QA does not mean making every model heavier; it means matching verification depth to risk."
       },
       "caveat": {
-        "zh": "数字孪生若没有明确决策用途和更新责任，容易变成昂贵的数据展示，而不是桥梁安全和维护工具。",
-        "en": "Without a defined decision use and update responsibility, a digital twin can become an expensive data display rather than a bridge safety and maintenance tool."
+        "zh": "低风险草算和关键安全验算不应采用同一套验证强度；模型控制应按后果、复杂度和可逆性分级。",
+        "en": "A low-risk scoping calculation and a critical safety check should not use the same verification intensity; model control should be graded by consequence, complexity, and reversibility."
       },
-      "reference": "IABMAS and IABSE bridge digital twin sources, 2026",
+      "reference": "IStructE guidance on calculation models for engineering calculations, July 2026",
       "referenceLinks": [
         {
-          "label": "ASNT Materials Evaluation: Digital Twins for Bridge Management",
-          "url": "https://www.asnt.org/me/26/7/digital-twins-for-bridge-management"
-        },
-        {
-          "label": "IABSE Task Group 5.7: Digital twins for existing bridges",
-          "url": "https://www.iabse.org/TG5.7/"
+          "label": "IStructE: Calculation models guidance",
+          "url": "https://www.istructe.org/journal/volumes/volume-104-%282026%29/issue-7/calculation-models-new-guidance/"
         }
       ]
     },
     {
       "area": {
-        "zh": "低碳混凝土与机器学习",
-        "en": "Low-carbon concrete and machine learning"
+        "zh": "岩土设计交付与规范化",
+        "en": "Geotechnical design delivery and standardisation"
       },
       "title": {
-        "zh": "机器学习低碳混凝土的工程价值在多目标配合比优化，风险在数据异质性和可解释性不足",
-        "en": "Machine learning for low-carbon concrete is valuable for multi-objective mix optimisation, but limited by data heterogeneity and interpretability"
+        "zh": "岩土工程交付正在更强调“报告、规格和设计参数”的闭环，而不是只给一个承载力数字",
+        "en": "Geotechnical delivery is putting more weight on the report-specification-parameter loop, not just a bearing value"
       },
       "evidence": {
-        "zh": "资料类型：npj Materials Sustainability 2026年7月开放综述；内容：总结机器学习在水泥生产、配合比设计、辅助胶凝材料、替代胶结料和再生骨料混凝土中的应用，并指出数据异质性、泛化能力和解释性限制。",
-        "en": "Evidence: a July 2026 open-access review in npj Materials Sustainability, covering machine-learning applications in cement production, mix design, supplementary cementitious materials, alternative binders, and recycled-aggregate concrete, while identifying data heterogeneity, generalisability, and interpretability limits."
+        "zh": "资料类型：Caltrans Geotechnical Manual公开页面；内容：该手册记录岩土调查、设计和报告的标准做法，并列出2026年更新或实施的报告、挡土、地震、土钉、地基、下穿结构、土工合成加筋路堤和规格说明相关模块。",
+        "en": "Evidence: Caltrans' public Geotechnical Manual page; it documents standards of practice for geotechnical investigations, design, and reporting, with multiple 2026 implementation or update dates for reporting, earth-retaining, seismic, soil-nail, foundation, below-grade, geosynthetic embankment, and specification-note modules."
       },
       "summary": {
-        "zh": "低碳混凝土不是把水泥含量简单降到最低，而是在强度发展、早龄期收缩、泵送性、耐久性、氯离子渗透、碳化、养护条件、材料供应和碳排放之间做多目标权衡。机器学习适合处理这种高维筛选问题，尤其能帮助工程师把历史试配、材料化学、温湿度和性能目标联系起来，减少盲目试验次数。但结构采用不能只看模型预测的28天强度或单一碳指标。工程师还需要确认训练数据是否覆盖本地水泥、矿物掺合料、骨料级配、外加剂、施工温度和长期耐久性环境。未来更有价值的能力，是把机器学习输出转化为可验证的性能规范、试验计划和质量控制范围，而不是给出一个无法解释的“最佳配合比”。",
-        "en": "Low-carbon concrete is not a simple exercise in minimising cement content; it is a multi-objective trade-off among strength gain, early-age shrinkage, pumpability, durability, chloride penetration, carbonation, curing conditions, material supply, and embodied carbon. Machine learning is well suited to this high-dimensional screening problem, especially where historical trial mixes, material chemistry, temperature and humidity, and performance targets can be connected to reduce blind testing. Structural adoption, however, cannot rely only on predicted 28-day strength or a single carbon metric. Engineers still need to know whether the training data cover local cement, supplementary cementitious materials, aggregate grading, admixtures, placement temperature, and long-term durability exposure. The more useful future capability is translating ML output into verifiable performance specifications, test plans, and quality-control ranges rather than an unexplained optimum mix."
+        "zh": "岩土风险常被压缩成一个看似简单的数值，例如允许承载力、桩端阻力或主动土压力系数。但真实项目的风险来自链条：现场调查是否覆盖关键地层，试验参数是否与设计模型一致，地下水和腐蚀条件是否进入耐久性判断，施工方法是否改变土体状态，规格说明是否把设计假设转化为可执行验收要求。Caltrans持续更新模块化手册说明，大型基础设施业主正在把岩土交付从“提交报告”推向“报告、设计参数、图纸、规格和施工反馈”闭环。对工程师的趋势要求是，岩土建议需要可追溯、可更新、可被施工团队执行，而不是只在设计阶段给出一个保守数字。边界是，标准化不能替代项目特定判断，尤其在软土、液化、滑坡和临时开挖条件下。",
+        "en": "Geotechnical risk is often compressed into a simple-looking number, such as allowable bearing pressure, pile toe resistance, or an active earth pressure coefficient. In real projects, risk sits in the chain: whether investigation covers critical strata, whether test parameters match the design model, whether groundwater and corrosion conditions enter durability decisions, whether construction methods change soil state, and whether specifications turn design assumptions into enforceable acceptance requirements. Caltrans' continuing modular manual updates show major infrastructure owners pushing geotechnical delivery from 'submit a report' toward a closed loop among reports, design parameters, drawings, specifications, and construction feedback. The trend requirement for engineers is that geotechnical recommendations must be traceable, updateable, and executable by construction teams, not just conservative numbers at design stage. The boundary is that standardisation cannot replace project-specific judgement, especially in soft soils, liquefaction, landslide, and temporary excavation conditions."
       },
       "caveat": {
-        "zh": "低碳配合比的预测模型必须与本地材料认证、耐久性试验和施工质量控制绑定，才可能进入正式项目。",
-        "en": "Predictive models for low-carbon mixes must be tied to local material certification, durability testing, and construction quality control before they can enter formal projects."
+        "zh": "岩土参数具有场地依赖性；手册和模板能提高一致性，但不能消除补充勘察、现场观察和施工阶段再判断的需要。",
+        "en": "Geotechnical parameters are site-dependent; manuals and templates improve consistency but do not remove the need for supplemental investigation, field observation, and construction-stage re-judgement."
       },
-      "reference": "npj Materials Sustainability review on machine learning for low-carbon concrete, July 2026",
+      "reference": "Caltrans Geotechnical Manual public module list and 2026 implementation updates",
       "referenceLinks": [
         {
-          "label": "Nature: Machine learning-enabled pathways for low-carbon concrete",
-          "url": "https://www.nature.com/articles/s44296-026-00109-8"
+          "label": "Caltrans: Geotechnical Manual",
+          "url": "https://dot.ca.gov/programs/engineering-services/manuals/geotechnical-manual"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "有效长度不是构件长度：为什么柱稳定设计取决于约束、侧移和二阶效应？",
-      "en": "Effective length is not member length: why column stability design depends on restraint, sway, and second-order effects"
+      "zh": "耐火极限不是温度标签：为什么结构防火设计要同时看火灾场景、升温、承载力和疏散目标？",
+      "en": "Fire resistance is not a temperature label: why structural fire design must link fire scenario, heating, capacity, and evacuation objectives"
     },
     "text": {
-      "zh": "柱子设计常被初学者误解为只要截面强度足够、构件实际长度确定，承载力就可以直接算出。稳定问题的本质不同：受压构件可能在材料强度尚未充分发挥前发生整体屈曲，临界承载力取决于弯曲刚度、端部约束、侧移条件和体系二阶效应。因此，“有效长度”不是钢尺量出来的净高，而是把真实框架约束、节点转动、支撑刚度和是否可侧移等因素折算成一个稳定计算长度。中国、澳洲、欧洲和美国体系表达不同。GB 50017通过长细比、稳定系数和构件计算长度组织轴心受压稳定；AS 4100使用构件长度、有效长度系数、截面和构件能力，并把框架侧移和二阶分析作为体系问题处理；Eurocode 3用非维长细比、屈曲曲线和折减系数表达稳定抗力；AISC 360则结合有效长度法、直接分析法、notional loads和二阶效应处理柱与框架。跨规范复核时，关键不是把K值或有效长度系数机械搬运，而是确认模型是否反映了支撑体系、节点刚度、初始缺陷、荷载组合、P-Delta效应和构件端部边界。若这些假设不一致，同一个“3.6 m柱”在不同体系下可能代表完全不同的稳定问题。",
-      "en": "Column design is often misunderstood as a direct capacity calculation once section strength and physical member length are known. Stability is different: a compression member can buckle globally before material strength is fully mobilised, and its critical resistance depends on flexural stiffness, end restraint, sway condition, and system second-order effects. Effective length is therefore not the clear height measured with a tape; it is a stability length that converts real frame restraint, joint rotation, bracing stiffness, and sway permission into a calculation model. Chinese, Australian, European, and US systems express this differently. GB 50017 organises axial-compression stability through slenderness, stability factors, and calculated member length. AS 4100 uses member length, effective-length factors, section and member capacities, while treating frame sway and second-order analysis as system issues. Eurocode 3 expresses buckling resistance through non-dimensional slenderness, buckling curves, and reduction factors. AISC 360 combines the effective-length method, direct analysis method, notional loads, and second-order effects for columns and frames. In cross-code review, the key is not to transfer a K factor mechanically, but to confirm whether the model captures bracing, joint stiffness, imperfections, load combinations, P-Delta effects, and end boundary conditions. If those assumptions are not aligned, the same 3.6 m column can represent very different stability problems."
+      "zh": "结构防火设计常被误解为给梁、柱、楼板贴上一个“1小时”或“2小时”耐火标签。真实问题更复杂：火灾首先是一个随时间变化的热作用，构件温度由火灾曲线、通风、可燃物、保护层、截面形状和热惯性共同决定；结构安全则取决于高温下材料强度和刚度退化、约束热膨胀产生的附加内力、整体体系能否在局部构件受热后重新分配作用，以及人员疏散和消防介入的时间目标。中国、澳洲、欧洲和美国体系表达不同。中国工程实践通常把建筑防火规范的耐火等级、构件耐火极限和专项结构防火标准结合使用；澳洲体系通过NCC的性能要求、Deemed-to-Satisfy路径和工程化Performance Solution组织防火设计；Eurocode体系把火灾作用、构件温度和高温材料折减写成结构火灾设计链条；美国体系常在建筑规范、ASTM E119/UL试验评级和性能化消防工程之间组织要求。跨体系复核时，关键不是把“120 min”直接等同为同一安全水平，而是确认设计火灾、荷载水平、构件边界、保护系统、失效准则和疏散目标是否一致。若这些假设没有对齐，同样的耐火时间可能对应完全不同的热输入和结构可靠度。",
+      "en": "Structural fire design is often misunderstood as assigning a one-hour or two-hour fire-resistance label to beams, columns, or slabs. The real problem is more complex: fire is a time-dependent thermal action, and member temperature depends on the fire curve, ventilation, fuel load, protection, section shape, and thermal inertia. Structural safety then depends on strength and stiffness degradation at elevated temperature, additional actions from restrained thermal expansion, whether the system can redistribute actions after local heating, and the time objectives for evacuation and fire-fighting intervention. Chinese, Australian, European, and U.S. systems express this differently. Chinese practice usually combines building fire-code fire-resistance ratings, member fire-resistance limits, and specialist structural fire standards. Australia organises fire design through NCC performance requirements, Deemed-to-Satisfy pathways, and engineered Performance Solutions. Eurocode links fire actions, member temperature, and elevated-temperature material reduction in a structural fire-design chain. The U.S. commonly combines building-code requirements, ASTM E119 or UL tested ratings, and performance-based fire engineering. In cross-system review, the key is not to treat '120 min' as automatically equivalent safety, but to confirm whether design fire, load level, member boundary condition, protection system, failure criterion, and evacuation objective are aligned. If those assumptions differ, the same fire-resistance duration may represent very different heat input and structural reliability."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "稳定承载力看体系约束",
-          "en": "Stability capacity depends on system restraint"
+          "zh": "标准火不是唯一真实火灾",
+          "en": "A standard fire is not the only real fire"
         },
         "text": {
-          "zh": "柱子的屈曲形态由端部转动约束、侧向支撑、相邻梁柱刚度和框架是否可侧移共同决定。构件实际长度相同，不代表有效长度相同。",
-          "en": "A column's buckling mode is governed by end rotational restraint, lateral bracing, adjacent beam-column stiffness, and whether the frame can sway. Equal physical length does not imply equal effective length."
+          "zh": "标准升温曲线便于试验和分级，但真实建筑火灾受房间几何、通风、燃料、喷淋、开口和消防介入影响。性能化设计需要说明为何选用标准火、参数火或自然火灾模型。",
+          "en": "A standard time-temperature curve supports testing and rating, but real building fires depend on enclosure geometry, ventilation, fuel, sprinklers, openings, and fire-fighting intervention. Performance-based design must state why a standard, parametric, or natural-fire model is selected."
         }
       },
       {
         "label": {
-          "zh": "二阶效应不是附加小修正",
-          "en": "Second-order effects are not a small afterthought"
+          "zh": "高温降低的是材料和体系能力",
+          "en": "Heating reduces material and system capacity"
         },
         "text": {
-          "zh": "轴力与侧移或初弯曲相乘会放大弯矩和变形。当框架接近稳定敏感区时，一阶内力图可能低估真实需求，必须通过二阶分析或规范放大方法处理。",
-          "en": "Axial force multiplied by sway or initial curvature amplifies moments and deformations. When a frame is stability-sensitive, first-order action effects may underestimate demand and must be handled through second-order analysis or code amplification methods."
+          "zh": "钢材、混凝土、木材和连接件在高温下退化方式不同。工程判断不能只看保护层厚度，还要看构件温度、剩余强度、刚度、连接、变形兼容和荷载重分配。",
+          "en": "Steel, concrete, timber, and connections degrade differently at elevated temperature. Engineering judgement cannot stop at protection thickness; it must consider member temperature, residual strength, stiffness, connections, deformation compatibility, and load redistribution."
         }
       },
       {
         "label": {
-          "zh": "K值是模型结论，不是输入常数",
-          "en": "The K factor is a modelling conclusion, not a fixed input"
+          "zh": "耐火时间要服务于明确目标",
+          "en": "Fire duration must serve defined objectives"
         },
         "text": {
-          "zh": "有效长度系数应来自明确的边界条件和侧移判断。把表格K值当作默认材料参数，会掩盖支撑失效、节点半刚性和施工阶段临时约束变化。",
-          "en": "An effective-length factor should come from stated boundary conditions and sway classification. Treating tabulated K as a default material parameter hides bracing failure, semi-rigid joints, and temporary restraint changes during construction."
+          "zh": "耐火极限的意义是为人员疏散、消防行动、相邻空间保护和结构整体稳定争取时间。若目标建筑、占用、疏散策略或消防条件不同，同一时间标签不能直接比较。",
+          "en": "Fire-resistance duration is intended to support evacuation, fire service operations, adjacent-space protection, and structural stability. If occupancy, evacuation strategy, or fire-fighting conditions differ, the same time label is not directly comparable."
         }
       }
     ],
     "takeaway": {
-      "zh": "柱稳定复核应写清楚：构件实际长度、计算长度、有效长度系数来源、侧移分类、端部约束、支撑点有效性、初始缺陷、采用一阶还是二阶分析，以及轴力与弯矩相互作用。有效长度的意义是把体系稳定假设转化为构件验算输入；若体系假设没有被审查，单独比较构件承载力数字会产生虚假的安全感。",
-      "en": "A column-stability review should state physical length, calculated length, source of effective-length factor, sway classification, end restraint, bracing effectiveness, imperfections, whether first- or second-order analysis is used, and axial-moment interaction. Effective length converts system-stability assumptions into member-check inputs; if the system assumptions are not reviewed, comparing member-capacity numbers alone creates false confidence."
+      "zh": "结构防火复核应写清楚：设计火灾场景、采用的时间-温度曲线或自然火模型、荷载水平、构件温度计算、材料高温折减、边界约束、保护系统、连接和整体稳定检查，以及与疏散和消防策略的关系。耐火极限不是单独的材料属性，而是火灾作用、热传递、构件抗力和建筑目标共同形成的设计结论。",
+      "en": "A structural fire review should state the design fire scenario, selected time-temperature curve or natural-fire model, load level, member-temperature calculation, elevated-temperature material reductions, boundary restraint, protection system, connections, global stability checks, and the relationship to evacuation and fire-fighting strategy. Fire resistance is not a standalone material property; it is a design conclusion formed by fire action, heat transfer, member resistance, and building objectives together."
     },
     "example": {
       "title": {
-        "zh": "参考实例：同一根柱为什么在有支撑框架和可侧移框架中承载力不同？",
-        "en": "Reference example: why does the same column have different capacity in braced and sway frames?"
+        "zh": "参考实例：为什么同一根钢梁的耐火验算不能只看“保护层厚度”？",
+        "en": "Reference example: why can the fire check of one steel beam not rely only on protection thickness?"
       },
       "intro": {
-        "zh": "假设同一根钢柱长度为L、弯曲刚度为EI。若梁柱节点和支撑体系能有效限制侧移，计算长度可能接近实际层高；若框架可侧移或端部转动约束较弱，稳定半波长度会增加，临界力下降。下面公式只用于解释概念路径，真实项目必须按适用规范、结构分析模型、节点和支撑刚度、初始缺陷、荷载组合和施工阶段条件复核。",
-        "en": "Assume the same steel column has physical length L and flexural stiffness EI. If beam-column joints and bracing effectively restrain sway, the calculated length may be close to storey height; if the frame can sway or end rotational restraint is weak, the buckling half-wave length increases and critical force falls. The equations below explain the concept path only; real projects must follow the applicable code, analysis model, joint and bracing stiffness, imperfections, load combinations, and construction-stage conditions."
+        "zh": "假设一根受保护钢梁在火灾中承受设计弯矩。保护层厚度会影响升温速度，但构件是否满足要求还取决于火灾持续时间、截面系数、钢材温度、荷载比、边界约束和连接。下面公式用于说明概念路径；真实项目必须按适用建筑规范、结构防火标准、产品测试资料、构件边界条件和消防工程报告复核。",
+        "en": "Assume a protected steel beam carries a design bending action during fire. Protection thickness affects heating rate, but compliance also depends on fire duration, section factor, steel temperature, load ratio, boundary restraint, and connections. The equations below explain the concept path; real projects must be checked against the applicable building code, structural fire standard, product test data, member boundary conditions, and fire-engineering report."
       },
       "equations": [
         {
           "label": {
-            "zh": "有效长度定义",
-            "en": "Effective length definition"
+            "zh": "火灾极限状态基本判断",
+            "en": "Basic fire limit-state check"
           },
-          "formula": "Le = K L",
+          "formula": "Efi,d ≤ Rfi,d",
           "formulaTokens": [
             {
-              "var": "L",
-              "sub": "e"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "K"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "L"
-            }
-          ],
-          "citation": {
-            "zh": "Simplified stability-model relation；K应由端部约束、侧移条件和支撑体系确定，不是构件材料属性。AS 4100、AISC 360、EN 1993和GB 50017均要求稳定长度或等效体系假设与结构模型一致。",
-            "en": "Simplified stability-model relation; K should be determined from end restraint, sway condition, and bracing system, not treated as a material property. AS 4100, AISC 360, EN 1993, and GB 50017 all require stability length or equivalent system assumptions to be consistent with the structural model."
-          }
-        },
-        {
-          "label": {
-            "zh": "Euler弹性临界力",
-            "en": "Euler elastic critical force"
-          },
-          "formula": "Ncr = π² E I / Le²",
-          "formulaTokens": [
-            {
-              "var": "N",
-              "sub": "cr"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "π",
-              "sup": "2"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "E"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "I"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "L",
-              "sub": "e",
-              "sup": "2"
-            }
-          ],
-          "citation": {
-            "zh": "Derived mechanics relation，基于理想弹性压杆屈曲；不是某一规范的完整构件设计公式。规范设计还需考虑残余应力、初始缺陷、截面分类、屈曲曲线和分项系数。",
-            "en": "Derived mechanics relation for ideal elastic column buckling; not a complete member-design equation from any one code. Code design also considers residual stress, imperfections, section classification, buckling curves, and partial or resistance factors."
-          }
-        },
-        {
-          "label": {
-            "zh": "长细比概念",
-            "en": "Slenderness concept"
-          },
-          "formula": "λ = Le / r",
-          "formulaTokens": [
-            {
-              "var": "λ"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "L",
-              "sub": "e"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "r"
-            }
-          ],
-          "citation": {
-            "zh": "Derived section-stability relation；r为截面回转半径。各规范可能使用普通长细比或非维长细比，符号和折减表达不同，但物理含义均为长度效应与截面抗弯刚度的相对关系。",
-            "en": "Derived section-stability relation where r is radius of gyration. Codes may use ordinary or non-dimensional slenderness with different notation and reduction formats, but the physical meaning is the relation between length effect and section flexural stiffness."
-          }
-        },
-        {
-          "label": {
-            "zh": "二阶敏感度概念",
-            "en": "Second-order sensitivity concept"
-          },
-          "formula": "η = NEd / Ncr",
-          "formulaTokens": [
-            {
-              "var": "η"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "N",
-              "sub": "Ed"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "N",
-              "sub": "cr"
-            }
-          ],
-          "citation": {
-            "zh": "Derived relation，用于说明轴力接近弹性临界力时二阶效应会变得敏感；不是规范验算的唯一指标。真实项目应按规范采用二阶分析、放大系数或直接分析方法。",
-            "en": "Derived relation used to illustrate that second-order effects become sensitive as axial action approaches elastic critical force; it is not the sole code check. Real projects should use code-specified second-order analysis, amplification, or direct-analysis methods."
-          }
-        },
-        {
-          "label": {
-            "zh": "构件稳定验算表达",
-            "en": "Member stability check expression"
-          },
-          "formula": "NEd ≤ Nb,Rd",
-          "formulaTokens": [
-            {
-              "var": "N",
-              "sub": "Ed"
+              "var": "E",
+              "sub": "fi,d"
             },
             {
               "text": " ≤ "
             },
             {
-              "var": "N",
-              "sub": "b,Rd"
+              "var": "R",
+              "sub": "fi,d"
             }
           ],
           "citation": {
-            "zh": "Simplified screen，表达设计轴力不超过构件屈曲设计抗力的极限状态思想；EN 1993-1-1使用屈曲折减系数，AS 4100、AISC 360和GB 50017采用各自的构件能力、稳定系数或抗力格式。",
-            "en": "Simplified screen expressing the limit-state idea that design axial action should not exceed member buckling design resistance; EN 1993-1-1 uses buckling reduction factors, while AS 4100, AISC 360, and GB 50017 use their own member-capacity, stability-factor, or resistance formats."
+            "zh": "Simplified screen；表达火灾设计作用效应不超过火灾设计抗力的极限状态思想。Eurocode结构防火部分采用火灾设计状况和高温材料折减；NCC、GB体系和美国建筑规范也要求把耐火目标与作用、构件和体系能力联系起来。",
+            "en": "Simplified screen expressing the limit-state idea that fire design action effect should not exceed fire design resistance. Eurocode structural fire parts use fire design situations and elevated-temperature material reductions; NCC, GB practice, and U.S. building codes also require fire objectives to be linked to actions, members, and system capacity."
+          }
+        },
+        {
+          "label": {
+            "zh": "钢材高温强度折减概念",
+            "en": "Steel strength reduction at elevated temperature"
+          },
+          "formula": "fy,θ = ky,θ fy",
+          "formulaTokens": [
+            {
+              "var": "f",
+              "sub": "y,θ"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "k",
+              "sub": "y,θ"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "f",
+              "sub": "y"
+            }
+          ],
+          "citation": {
+            "zh": "Code-based concept from EN 1993-1-2 material reduction format；θ为钢材温度，ky,θ为高温屈服强度折减系数。实际取值应按适用规范表格、钢材类型和温度范围确定。",
+            "en": "Code-based concept from the EN 1993-1-2 material-reduction format; θ is steel temperature and ky,θ is the elevated-temperature yield-strength reduction factor. Actual values should follow the applicable code table, steel type, and temperature range."
+          }
+        },
+        {
+          "label": {
+            "zh": "截面系数影响升温速度",
+            "en": "Section factor affects heating rate"
+          },
+          "formula": "F = Am / V",
+          "formulaTokens": [
+            {
+              "var": "F"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "A",
+              "sub": "m"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "V"
+            }
+          ],
+          "citation": {
+            "zh": "Derived heat-transfer indicator；Am为受火暴露表面积，V为单位长度体积。较大截面系数通常意味着升温更快，但真实温度还取决于保护材料、火灾曲线、阴影效应和边界条件。",
+            "en": "Derived heat-transfer indicator; Am is exposed surface area and V is volume per unit length. A larger section factor generally means faster heating, but real temperature also depends on protection, fire curve, shadow effect, and boundary conditions."
+          }
+        },
+        {
+          "label": {
+            "zh": "火灾设计弯矩抗力概念",
+            "en": "Fire design bending resistance concept"
+          },
+          "formula": "Mfi,Rd = kθ MRd",
+          "formulaTokens": [
+            {
+              "var": "M",
+              "sub": "fi,Rd"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "k",
+              "sub": "θ"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "M",
+              "sub": "Rd"
+            }
+          ],
+          "citation": {
+            "zh": "Simplified screen；用于说明高温下抗弯能力可按材料和构件行为折减。真实设计不得只用单一折减系数替代规范方法，还需考虑截面分类、稳定、连接、热膨胀约束和荷载组合。",
+            "en": "Simplified screen used to show that bending resistance may be reduced for elevated-temperature material and member behaviour. Real design must not replace code methods with one reduction factor; section classification, stability, connections, restrained thermal expansion, and load combinations still matter."
+          }
+        },
+        {
+          "label": {
+            "zh": "时间目标对比",
+            "en": "Time objective comparison"
+          },
+          "formula": "tresistance ≥ tevacuation",
+          "formulaTokens": [
+            {
+              "var": "t",
+              "sub": "resistance"
+            },
+            {
+              "text": " ≥ "
+            },
+            {
+              "var": "t",
+              "sub": "evacuation"
+            }
+          ],
+          "citation": {
+            "zh": "Derived performance relation；用于说明结构耐火时间应服务于人员疏散、消防行动和防止非比例倒塌等目标，不是单独的产品宣传指标。",
+            "en": "Derived performance relation used to show that structural resistance time should support evacuation, fire service operations, and prevention of disproportionate collapse, not function as an isolated product label."
           }
         }
       ],
       "note": {
-        "zh": "同一根柱若被可靠支撑，可能由截面强度或较短有效长度控制；若位于可侧移框架中，可能在材料强度尚未用尽前由整体稳定控制。跨规范比较时，应先对齐支撑体系和二阶分析假设，再比较构件抗力。",
-        "en": "The same column may be governed by section strength or a shorter effective length when reliably braced, but by global stability before full material strength is mobilised in a sway frame. Cross-code comparison should align bracing and second-order analysis assumptions before comparing member resistance."
+        "zh": "同一保护层厚度在不同截面、火灾曲线、荷载比和边界条件下可能产生不同安全水平。跨规范或跨产品比较时，应先对齐火灾场景、温度计算、试验依据、构件约束和目标性能，再比较耐火时间。",
+        "en": "The same protection thickness can produce different safety levels for different sections, fire curves, load ratios, and boundary conditions. Cross-code or cross-product comparison should align fire scenario, temperature calculation, test basis, member restraint, and target performance before comparing fire-resistance time."
       }
     },
     "references": [
-      "EN 1993-1-1, Eurocode 3: steel member buckling resistance, non-dimensional slenderness and buckling curves.",
-      "AS 4100, Steel structures: member capacity, effective length and frame stability concepts in Australian steel design.",
-      "AISC 360, Specification for Structural Steel Buildings: effective length, direct analysis, notional loads and second-order effects.",
-      "GB 50017, Standard for design of steel structures: calculated length, slenderness and axial compression stability concepts."
+      "IStructE, The Structural Engineer, Volume 104 Issue 7, 2026: guidance clarifying the role of the structural engineer in designing building structures for fire.",
+      "EN 1993-1-2, Eurocode 3: Structural fire design for steel structures, including elevated-temperature material reduction concepts.",
+      "National Construction Code of Australia: performance requirements and fire-resistance pathways for building design.",
+      "ASTM E119 and UL fire-resistance testing frameworks: standard fire exposure and rating context used in U.S. practice."
     ],
     "referenceLinks": [
+      {
+        "label": "IStructE: New guidance supports design of building structures for fire",
+        "url": "https://www.istructe.org/journal/volumes/volume-104-%282026%29/issue-7/new-guidance-design-of-building-structure-for-fire/"
+      },
       {
         "label": "European Commission: Eurocode 3 steel structures",
         "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-3-design-steel-structures"
       },
       {
-        "label": "Standards Australia: AS 4100 steel structures",
-        "url": "https://store.standards.org.au/product/as-4100-2020"
+        "label": "ABCB: National Construction Code",
+        "url": "https://ncc.abcb.gov.au/"
       },
       {
-        "label": "AISC: Specification for Structural Steel Buildings",
-        "url": "https://www.aisc.org/Specification-for-Structural-Steel-Buildings-ANSIAISC-360-22"
+        "label": "ASTM: E119 fire test standard",
+        "url": "https://www.astm.org/e0119.html"
       },
       {
-        "label": "GB 50017 public standard summary",
-        "url": "https://www.codeofchina.com/standard/GB50017-2017.html"
+        "label": "UL: Fire-resistance ratings information",
+        "url": "https://www.ul.com/resources/fire-resistance-ratings"
       }
     ]
   }
