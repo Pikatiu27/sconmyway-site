@@ -1,82 +1,90 @@
 {
-  "date": "2026-07-26",
+  "date": "2026-07-27",
   "edition": {
-    "zh": "????",
+    "zh": "晨间简报",
     "en": "Morning Brief"
   },
   "liveUpdates": [
     {
       "topic": {
-        "zh": "??AI??????",
-        "en": "Physical AI and industrial robotics"
+        "zh": "AI算力与半导体供应",
+        "en": "AI compute and semiconductor supply"
       },
       "title": {
-        "zh": "Humanoid??1.52???A??????????????????????????",
-        "en": "Humanoid's $152 million Series A shifts robotics attention from prototypes to deployable industrial capacity"
+        "zh": "AMD与Anthropic把AI算力采购推进到吉瓦级合作",
+        "en": "AMD and Anthropic move AI compute procurement into gigawatt-scale partnership"
       },
       "summary": {
-        "zh": "Reuters?7?21?????????????Humanoid??1.52???A????????13.5???????????????????????????????????????????????????????????????????????AI?????????????????????????????????????????????????????????????????????????????????????????????????????????????",
-        "en": "Reuters reported on 21 July that UK robotics startup Humanoid raised $152 million in Series A funding at a $1.35 billion post-money valuation and plans beta deployments this year across manufacturing, logistics, retail, and other industrial settings. The signal is not simply that humanoid robotics is still attracting capital; it is that investors are backing teams that can connect AI, hardware, manufacturing partners, and customer deployment cadence. Manufacturers and logistics operators need maintainable, repeatable systems that work in imperfect environments, not isolated demonstrations. The next competition will centre on safety certification, scalable supply chains, task-learning speed, and the cost of downtime at customer sites."
+        "zh": "AMD在7月22日宣布与Anthropic建立战略合作，Anthropic计划在AMD Helios机架级方案中部署最高2吉瓦的Instinct MI450系列GPU，首批1吉瓦预计于2027年上半年启动，AMD还承诺最高50亿美元战略股权投资。这不是普通硬件订单，而是模型公司、加速器供应商、数据中心容量和软件生态绑定在一起的长期产业安排。AI竞争正在从单卡性能转向可融资、可供电、可运维的整套算力交付能力。",
+        "en": "AMD announced on 22 July that Anthropic plans to deploy up to 2 GW of AMD Instinct MI450-series GPUs in Helios rack-scale systems, with the first 1 GW expected to start in the first half of 2027, alongside AMD's commitment of up to $5 billion in strategic equity investment. This is not a routine hardware order. It ties a frontier model company, accelerator supplier, data-center capacity, and software ecosystem into a long-horizon industrial arrangement. AI competition is shifting from single-device performance toward financeable, powerable, and operable compute delivery."
       },
       "watch": {
-        "zh": "???????????????????????????????????????????????",
-        "en": "Watch whether fourth-quarter customer deployments occur on schedule and whether pilots expand from one task to multi-shift, multi-station work with auditable safety limits."
+        "zh": "关注首批1吉瓦部署地点、供电安排、ROCm软件成熟度，以及Anthropic是否把多供应商算力真正转化为训练和推理韧性。",
+        "en": "Watch the site selection for the first gigawatt, power arrangements, ROCm software maturity, and whether Anthropic converts multi-supplier compute into real training and inference resilience."
       },
-      "reference": "Reuters report distributed via Euronext Live on Humanoid's July 2026 Series A financing",
+      "reference": "AMD announcement on the Anthropic strategic partnership and 2 GW MI450-series GPU deployment plan, 22 July 2026",
       "referenceLinks": [
         {
-          "label": "Reuters via Euronext: Humanoid raises $152 million Series A",
-          "url": "https://live.euronext.com/en/financial-news/robotics-startup-humanoid-raises-152-million-series-round-135-billion-valuation"
+          "label": "AMD: Anthropic strategic partnership for up to 2 GW of MI450 GPUs",
+          "url": "https://www.amd.com/zh-cn/newsroom/press-releases/amd-anthropic-strategic-partnership.html"
+        },
+        {
+          "label": "AMD Advancing AI 2026 event page",
+          "url": "https://www.amd.com/en/corporate/events/advancing-ai.html"
         }
       ]
     },
     {
       "topic": {
-        "zh": "AI???????",
-        "en": "AI infrastructure and energy"
+        "zh": "数据中心与电力监管",
+        "en": "Data centers and power regulation"
       },
       "title": {
-        "zh": "??NNSA??Amentum??Savannah River Site AI???????????????????????",
-        "en": "NNSA's Savannah River Site selection ties AI data-center siting more tightly to dedicated energy"
+        "zh": "美国扩大数据中心电费保护承诺，AI基础设施进入公用事业成本审查",
+        "en": "U.S. ratepayer pledge puts AI data-center buildout under utility-cost scrutiny"
       },
       "summary": {
-        "zh": "?????NNSA?7?20?????Amentum?????????Savannah River Site??1??AI?????????2?????????????????????????????AI????????????????????????????????????????????????????????????GPU??????????????????????????????????????????????AI?????????????????????????????????????",
-        "en": "DOE's National Nuclear Security Administration announced on 20 July that it selected Amentum for lease negotiations to develop a 1 GW AI data center at the Savannah River Site, paired with about 2 GW of on-site generation that would bridge from natural gas to nuclear energy. The project shows large AI infrastructure joining land, power, interconnection, permitting, and national-security objectives in one delivery package rather than treating data centers as ordinary commercial real estate. Industry attention is moving beyond rack density and GPU procurement to who bears new generation, backup capacity, cooling, water, transmission, and local impacts. For engineering and capital markets, AI data centers are starting to resemble energy infrastructure projects with longer permitting cycles, risk allocation, and public-interest tests."
+        "zh": "白宫7月23日宣布扩大Ratepayer Protection Pledge，称参与方覆盖美国约80%的供电，并要求大型数据中心为新增发电和输配电升级承担成本。AP同日指出，该承诺仍引发执行力、州监管和居民电价影响方面的争议。产业信号很清楚：AI数据中心不再只是科技公司选址问题，而是公用事业、州政府、社区、输电容量和长期购电结构共同审查的基础设施问题。",
+        "en": "The White House announced on 23 July an expanded Ratepayer Protection Pledge, saying participants cover roughly 80% of U.S. delivered power and commit large data-center users to pay for new generation and delivery upgrades. AP's coverage noted continuing debate over enforceability, state regulation, and household bill impacts. The industry signal is clear: AI data centers are no longer only a technology-company siting issue. They are becoming infrastructure projects reviewed through utilities, governors, communities, transmission capacity, and long-term power-purchase structures."
       },
       "watch": {
-        "zh": "??????????????????????????????????????????",
-        "en": "Watch lease negotiations, environmental and security approvals, the on-site generation pathway, and whether costs are genuinely kept away from existing ratepayers."
+        "zh": "关注自愿承诺是否转化为州级费率命令、并网合同和数据中心退出费用，而不只是政策口号。",
+        "en": "Watch whether the voluntary pledge becomes state rate orders, interconnection contracts, and data-center exit charges rather than a policy slogan."
       },
-      "reference": "U.S. DOE/NNSA announcement on the Savannah River Site AI Infrastructure and Energy Generation Project, 20 July 2026",
+      "reference": "White House release and AP reporting on the expanded Ratepayer Protection Pledge, 23 July 2026",
       "referenceLinks": [
         {
-          "label": "DOE/NNSA: Amentum selected for AI data center and energy project",
-          "url": "https://www.energy.gov/nnsa/articles/nnsa-selects-amentum-ai-data-center-and-energy-project-savannah-river-site"
+          "label": "White House: Ratepayer Protection Pledge expansion",
+          "url": "https://www.whitehouse.gov/releases/2026/07/president-trumps-ratepayer-protection-pledge-secures-american-ai-dominance-protects-consumers/"
+        },
+        {
+          "label": "AP: Trump expands voluntary pledge on AI data centers and utility bills",
+          "url": "https://apnews.com/article/490ea7e4c7227d5e550b00a0056c33c9"
         }
       ]
     },
     {
       "topic": {
-        "zh": "????ETF??",
-        "en": "Digital-asset ETF regulation"
+        "zh": "AI教育与劳动力能力",
+        "en": "AI education and workforce capability"
       },
       "title": {
-        "zh": "SEC??Novel ETFs??????????ETF???????????????????",
-        "en": "SEC's Novel ETFs request puts digital-asset product innovation and market protection in the same review lane"
+        "zh": "西弗吉尼亚发布AI与数字科学框架，K-12教育开始转向岗位能力建设",
+        "en": "West Virginia's AI and digital science framework shifts K-12 AI education toward workforce capability"
       },
       "summary": {
-        "zh": "??SEC?6?30????7?6????????Novel ETFs??????????????????????ETF????????8?31??????????????????????????????????????????????????????????ETF????????????????????????????????????????????????????????????????????????????????????",
-        "en": "The SEC's request for comment on Novel ETFs, issued on 30 June and published in the Federal Register on 6 July, covers ETFs seeking exposure to innovative asset classes or novel strategies, with comments due on 31 August. It is not limited to crypto, but digital assets, multi-token portfolios, staking proceeds, active management, and derivative exposures are all affected by the same policy lane. The industry signal is that ETF innovation is moving from 'can it list?' toward whether disclosure, liquidity, valuation, custody, arbitrage mechanisms, and investor protection can work together. For asset managers and trading venues, speed to market will matter less than explainable product structure and supervisable operations."
+        "zh": "西弗吉尼亚州教育厅7月24日宣布推出AI and Digital Science Framework，并在7月27日至29日向教育工作者开展专业培训。该框架把AI素养、数字科学、学生认证和教师效率放进同一个教育模型。对教育科技和工程行业而言，重点不是学生是否会使用某个工具，而是学校系统是否开始把AI理解、数据判断、隐私意识和职业路径能力作为基础教育的一部分。",
+        "en": "The West Virginia Department of Education announced on 24 July an AI and Digital Science Framework, with professional development sessions for educators running from 27 to 29 July. The framework places AI literacy, digital science, student credentials, and teacher efficiency into one education model. For edtech and engineering employers, the important point is not whether students can use a particular tool; it is that school systems are beginning to treat AI understanding, data judgment, privacy awareness, and career-path capability as part of basic education."
       },
       "watch": {
-        "zh": "??SEC????????????ETF?????????????????????????",
-        "en": "Watch whether comments push digital-asset ETFs from single-token passive exposure toward multi-asset, active, and distribution-based structures."
+        "zh": "关注该框架是否形成可迁移课程、教师评估标准和雇主认可的学生能力证明。",
+        "en": "Watch whether the framework produces transferable curricula, teacher assessment standards, and employer-recognised evidence of student capability."
       },
-      "reference": "SEC Request for Comment on Novel ETFs, Release Nos. 33-11426, 34-105808, IC-36228",
+      "reference": "West Virginia Department of Education announcement on the AI and Digital Science Framework, 24 July 2026",
       "referenceLinks": [
         {
-          "label": "SEC: Request for Comment on Novel ETFs",
-          "url": "https://www.sec.gov/rules-regulations/2026/06/s7-2026-24"
+          "label": "WVDE: AI and Digital Science Framework announcement",
+          "url": "https://wvde.us/articles/wv-superintendent-schools-launches-first-ai-digital-science-framework-nation"
         }
       ]
     }
@@ -84,333 +92,320 @@
   "insights": [
     {
       "area": {
-        "zh": "??????AI",
-        "en": "Physical AI on construction sites"
+        "zh": "工程计算模型治理",
+        "en": "Engineering calculation-model governance"
       },
       "title": {
-        "zh": "???????????????????????????????????????",
-        "en": "The hard part of construction robotics is not the arm alone, but mud, weather, material flow, and site decisions"
+        "zh": "软件计算模型的核心风险不是软件本身，而是假设、边界和复核责任",
+        "en": "The core risk in software calculation models is not the software alone, but assumptions, boundaries, and checking responsibility"
       },
       "evidence": {
-        "zh": "?????Gritt 2026?7?21???????????????????AI?????????????????????????????????????????????????",
-        "en": "Evidence: Gritt's 21 July 2026 launch and financing release; it connects robotics and AI to existing construction equipment for material handling, assembly, verification, and planning on solar, data-center, bridge, road, and other large infrastructure sites."
+        "zh": "证据：IStructE于2026年7月刊介绍Calculation Models新指南，该指南覆盖手算、有限元和自动化设计，强调概念模型、责任、清晰记录和独立复核。",
+        "en": "Evidence: IStructE's July 2026 issue introduced its Calculation Models guidance, covering hand calculations, finite element analysis, and automated design while emphasising conceptual models, responsibility, clear records, and independent verification."
       },
       "summary": {
-        "zh": "????????????????????????????????????????????????????????????????????????????????????????Gritt???AI???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????AI?????????????????????????????????????????????",
-        "en": "Civil construction has lagged factory automation not because robots do not exist, but because jobsites change every day: ground is uneven, weather is uncontrolled, material delivery varies, temporary roads and lifting radii are constrained, and safety boundaries are shared with human crews. Gritt's choice to attach AI and robotics to equipment contractors already know, such as skid steers and forklifts, points to a pragmatic path rather than requiring a site to be rebuilt around a new platform. For structural and construction engineers, the future value is not only whether a robot can tie reinforcement or place panels; it is whether the system creates auditable work records, material-flow data, deviation checks, and safe shutdown logic. The boundary is that physical AI does not replace method statements, temporary-works checks, or site-supervisor acceptance; it should first be a controlled tool for repetitive, high-risk work."
+        "zh": "结构工程越来越依赖商业软件、参数化表格、自动校核和AI辅助工作流，但模型风险通常不是来自“软件会不会算”，而是来自工程师有没有定义正确问题。支座约束、荷载路径、刚度假定、构件有效长度、二阶效应、施工阶段、网格敏感性和局部细部如果没有被明确记录，漂亮的输出反而会掩盖错误。IStructE的新指南值得关注，因为它把计算模型当作专业判断的记录，而不是把软件结果当作设计结论。未来工程师的重要能力会是建立概念模型、说明边界条件、安排独立简化复核，并让自动化输出可以被审计。",
+        "en": "Structural practice increasingly depends on commercial software, parametric spreadsheets, automated checks, and AI-assisted workflows, but model risk rarely starts with the question of whether software can calculate. It starts with whether the engineer has defined the right problem. Supports, load paths, stiffness assumptions, effective lengths, second-order effects, construction stages, mesh sensitivity, and local detailing can all be hidden behind polished output if they are not recorded explicitly. IStructE's guidance matters because it treats a calculation model as a record of professional judgment rather than treating software output as the design conclusion. A future core skill will be building conceptual models, stating boundary conditions, arranging independent simplified checks, and making automated output auditable."
       },
       "caveat": {
-        "zh": "????????????????????????????????????????????????",
-        "en": "Robotics productivity metrics should report rework, downtime, human supervision, weather windows, and safety events; one-off speed does not prove engineering usability."
+        "zh": "模型治理不等于增加表格数量；复核必须针对控制假设和失败后果，而不是只检查输入是否填满。",
+        "en": "Model governance is not the same as adding more forms; checking must target controlling assumptions and failure consequences, not only whether every input cell is filled."
       },
-      "reference": "Gritt launch announcement on physical AI for infrastructure construction, July 2026",
+      "reference": "Institution of Structural Engineers July 2026 material on Calculation Models guidance",
       "referenceLinks": [
         {
-          "label": "Gritt: Physical AI for infrastructure buildout",
-          "url": "https://www.gritt.ai/news/gritt-launches-physical-ai"
+          "label": "IStructE: Calculation models new guidance",
+          "url": "https://www.istructe.org/journal/volumes/volume-104-%282026%29/issue-7/calculation-models-new-guidance/"
+        },
+        {
+          "label": "IStructE: Calculation Models guidance page",
+          "url": "https://www.istructe.org/resources/guidance/calculation-models/"
         }
       ]
     },
     {
       "area": {
-        "zh": "?????????",
-        "en": "Modular and industrialized construction"
+        "zh": "市政系统数字孪生",
+        "en": "Utility-system digital twins"
       },
       "title": {
-        "zh": "?????????????????????????????????",
-        "en": "Modular construction's bottleneck is moving from fabrication to front-loaded design, code alignment, and digital configuration"
+        "zh": "真正有用的数字孪生先解决资产数据、网络拓扑和运行数据，而不是先追求三维展示",
+        "en": "Useful digital twins solve asset data, network topology, and operating data before chasing 3D presentation"
       },
       "evidence": {
-        "zh": "?????ASCE Civil Engineering 2026?7/8????????????????????????????????NextHouse?????????????????????????????",
-        "en": "Evidence: ASCE Civil Engineering's July/August 2026 article; it discusses the U.S. housing shortage, skilled-labour constraints, factory-built construction, NextHouse research, digital configuration platforms, and local code variation as barriers to scaling modular construction."
+        "zh": "证据：ASCE 2026年7/8月文章介绍UNC Charlotte校园给水系统数字孪生项目，该项目从低消防流量问题出发，重建GIS网络、校正拓扑并引入用水数据和水力模型。",
+        "en": "Evidence: ASCE's July/August 2026 article describes UNC Charlotte's water-system digital twin, which began with low fire-flow findings and rebuilt GIS network data, topology, demand records, and hydraulic modelling."
       },
       "summary": {
-        "zh": "???????????????????????????????????????????????????????????????????????????????????????????????????????????ASCE??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
-        "en": "Modular construction is often reduced to making components in a factory, but the real engineering shift is that design decisions move earlier. Conventional projects can keep developing and changing during construction; factory production requires structure, architecture, MEP, transport dimensions, lifting, joints, fire, acoustics, and maintenance interfaces to be resolved before manufacturing. The digital configuration platforms discussed by ASCE suggest that future modular housing may behave more like an industrial product, giving feedback on code compliance, materials, cost, and supply before an order is placed. For structural engineers, this changes the workflow: connection standardisation, tolerances, transport actions, module stability, inspectability, and local code variation become early option parameters. The boundary is that industrialisation does not make every project suitable for standard modules; without volume and regulatory alignment, factory efficiency can be lost to customisation and approval friction."
+        "zh": "基础设施数字孪生常被包装成可视化产品，但UNC Charlotte案例显示，工程价值首先来自数据可信度。校园给水系统出现多个项目消防流量偏低后，团队没有只做局部补救，而是把资产位置、管网连接关系、计量记录和水力行为整合成可持续更新的模型。对土木工程师而言，这类工作说明数字孪生的关键不是“实时大屏”，而是能否解释系统性问题、识别计量和瓶颈误差、支持未来扩建决策。边界也很明确：模型只会随着数据治理和现场校核而变好，不能替代压力测试、阀门调查和运行人员经验。",
+        "en": "Infrastructure digital twins are often marketed as visual products, but the UNC Charlotte case shows that engineering value starts with data trust. After several projects encountered low fire-flow findings, the team did not stop at local fixes. It combined asset locations, network connectivity, meter records, and hydraulic behaviour into a model that can improve over time. For civil engineers, the lesson is that a digital twin is not mainly a real-time dashboard; it is a way to explain systemwide behaviour, identify metering and bottleneck errors, and support future expansion decisions. The boundary is equally important: the model improves only through data governance and field verification, and it does not replace pressure tests, valve investigations, or operator knowledge."
       },
       "caveat": {
-        "zh": "???????????????????????????????????????????????",
-        "en": "A modular scheme must check transport, lifting, temporary support, and final structural states separately; factory quality does not automatically remove site-connection risk."
+        "zh": "数字孪生项目应先定义要回答的工程问题，再决定传感器、GIS、模型精度和更新周期。",
+        "en": "A digital-twin project should define the engineering question first, then choose sensors, GIS structure, model precision, and update frequency."
       },
-      "reference": "ASCE Civil Engineering July/August 2026 article on modular construction and housing delivery",
+      "reference": "ASCE Civil Engineering July/August 2026 article on UNC Charlotte's water-system digital twin",
       "referenceLinks": [
         {
-          "label": "ASCE: Modular construction could ease America's housing crisis",
-          "url": "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/issues/magazine-issue/article/2026/07/modular-construction-could-ease-americas-housing-crisis"
+          "label": "ASCE: UNC Charlotte water-system digital twin",
+          "url": "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/issues/magazine-issue/article/2026/07/unc-charlotte-learns-about-its-water-system-through-a-digital-twin"
         }
       ]
     },
     {
       "area": {
-        "zh": "???????",
-        "en": "Structural embodied-carbon assessment"
+        "zh": "既有建筑评估与规范响应",
+        "en": "Existing-building assessment and code response"
       },
       "title": {
-        "zh": "????????????????????????????",
-        "en": "Structural decarbonisation is moving from material slogans to tiered measurement, scope definition, and comparable data"
+        "zh": "Surfside事故后的规范响应提醒工程师：既有建筑安全依赖评估、维修路径和风险沟通",
+        "en": "Post-Surfside code response reminds engineers that existing-building safety depends on assessment, repair pathways, and risk communication"
       },
       "evidence": {
-        "zh": "?????STRUCTURE Magazine 2026?7???????????ASCE/SEI?????????Prestandard?????????Assessment Tiers???????????????????????",
-        "en": "Evidence: STRUCTURE Magazine's July 2026 article; it explains the ASCE/SEI Prestandard for assessing embodied carbon of structural systems, including goal and scope, assessment tiers, material quantities, data quality, and appropriate depth at different design stages."
+        "zh": "证据：STRUCTURE Magazine 2026年7月文章梳理Champlain Towers South倒塌后，Florida法规、ICC-1500、ASCE/SEI-11、ACI-562、AISC 360附录和TMS既有结构文件的响应。",
+        "en": "Evidence: STRUCTURE Magazine's July 2026 article traces responses after the Champlain Towers South collapse across Florida laws, ICC-1500, ASCE/SEI-11, ACI-562, AISC 360 appendices, and TMS existing-structure work."
       },
       "summary": {
-        "zh": "????????????????????????????????????????????????????????????????????????????????????????????????????????????ASCE/SEI Prestandard??????????????????????????????????????????????????????????????????????????????EPD?????????????????????????????????????????????????????????????????????????????????????????",
-        "en": "Low-carbon structural design is moving from 'use less steel and cement' into a more reviewable measurement stage. A useful embodied-carbon assessment must first state its purpose: early option comparison, owner reporting, green certification, or detailed life-cycle accounting; it must then define scope, including structural components, life-cycle stages, material quantities, and data sources. The ASCE/SEI Prestandard uses assessment tiers, recognising that concept, developed design, construction documentation, and handover can justify different precision levels. For engineers, the emerging capability is not memorising a carbon coefficient, but explaining structural efficiency, durability, construction method, EPD data quality, uncertainty, and functional unit together. The boundary is that low-carbon comparison cannot be separated from safety, service life, and functional equivalence; if two schemes differ in span, durability, or maintenance cycle, comparing total tonnage or emissions per cubic metre can mislead the decision."
+        "zh": "新建结构设计通常有清晰的荷载、材料和构造路径，而既有建筑评估更依赖不完整资料、现场损伤、维护记录、业主资金和管辖机构要求。STRUCTURE的综述说明，Surfside事故后的变化并不只是“提高一个安全系数”，而是把检查周期、维修优先级、危险状态判定、材料专项修复标准和工程师风险沟通放到规范体系中。对结构工程师来说，未来既有建筑业务需要同时具备调查方法、耐久性判断、临时安全措施、修复设计和清晰报告能力。边界是，规范文件更新速度慢，地方采纳更慢；工程师不能等到新规范完全落地才对明显危险作出专业判断。",
+        "en": "New-building design usually has a clear path through actions, materials, and detailing. Existing-building assessment is harder because information is incomplete and decisions depend on observed damage, maintenance history, owner funding, and jurisdictional requirements. STRUCTURE's review shows that post-Surfside changes are not simply about increasing a factor of safety. They are about inspection intervals, repair priority, dangerous-condition classification, material-specific repair standards, and how engineers communicate urgency. For structural engineers, existing-building work will increasingly require investigation methods, durability judgment, temporary safety measures, repair design, and clear reporting. The boundary is that codes update slowly and local adoption can be slower; engineers cannot wait for every new document before acting on evident risk."
       },
       "caveat": {
-        "zh": "???????????????????????????????????????????",
-        "en": "Carbon results should state scope, stage, data tier, and uncertainty; without those conditions, numbers may look precise but remain unreproducible."
+        "zh": "既有建筑评估报告必须区分观察事实、工程判断、立即风险和建议维修，不应把所有缺陷写成同一等级。",
+        "en": "Existing-building reports should separate observed facts, engineering judgment, immediate risk, and recommended repair; not every defect belongs in the same urgency category."
       },
-      "reference": "STRUCTURE Magazine July 2026 article on ASCE/SEI embodied-carbon assessment prestandard",
+      "reference": "STRUCTURE Magazine July 2026 article on building-code and standards response after Champlain Towers South",
       "referenceLinks": [
         {
-          "label": "STRUCTURE: Assessing Structural Embodied Carbon",
-          "url": "https://www.structuremag.org/article/assessing-structural-embodied-carbon/"
+          "label": "STRUCTURE: Codes and standards respond to Champlain Towers South",
+          "url": "https://www.structuremag.org/article/structural-building-codes-and-standards-developers-respond-to-champlain-towers-south-collapse/"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "???????????????????????????????????????????",
-      "en": "Slip-resistant connections are not bolt shear strength: why friction-type high-strength bolts depend on preload, faying surface, and service-stage slip"
+      "zh": "冲切剪切不是梁剪切：为什么无梁楼盖要看临界周长、弯矩传递和脆性破坏",
+      "en": "Punching shear is not beam shear: why flat slabs need critical perimeter, moment transfer, and brittle-failure checks"
     },
     "text": {
-      "zh": "???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????AS 4100?8.8/TF?10.9/TF?????????????????????????Eurocode 3?????????????????????????????????????????????????AISC/RCSC????snug-tight?pretensioned?slip-critical??????faying surface????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
-      "en": "Bolted steel connections are often misunderstood as safe once bolt shear strength is adequate. That is already incomplete for ordinary bearing connections; for friction-type or slip-resistant connections it can directly mislead design. A slip-resistant connection is usually intended not to let the bolt shank immediately bear against the hole, but to clamp the plates with high-strength bolt preload so that friction between faying surfaces prevents relative movement at a specified load level. The controlling variables therefore include bolt preload, surface preparation, slip coefficient, number of friction planes, hole type, ply thickness, coating cure, tightening method, inspection, and any concurrent tension. Chinese, Australian, European, and U.S. systems express this differently. Chinese practice emphasises high-strength friction-type bolting, testing of the anti-slip coefficient of connected surfaces, and construction acceptance. AS 4100 uses categories such as 8.8/TF and 10.9/TF to connect high-strength friction grip bolting with service-stage slip control. Eurocode 3 classifies preloaded bolted joints by serviceability or ultimate slip resistance and organises the check through slip factor, hole coefficient, and partial factor. The AISC/RCSC system distinguishes snug-tight, pretensioned, and slip-critical joints, with strong emphasis on faying-surface class and qualified coatings. In cross-system review, the key is not to apply a bolt shear table to a slip-resistant joint, but to confirm whether slip is treated as a serviceability limit, an ultimate limit, or a detailing requirement. If the faying surface is wrongly coated, preload is not verified, or the hole type does not match the coefficient used, unacceptable slip can occur before strength failure."
+      "zh": "冲切剪切常出现在柱支承楼板、筏板、基础承台和局部集中荷载附近。它与普通梁剪切的第一差别是破坏面：梁剪切沿构件跨度形成斜裂缝并由梁宽、有效高度、箍筋和受弯钢筋共同影响；冲切剪切则围绕柱、墙端或集中荷载形成近似封闭的三维破坏锥或破坏面。由于破坏范围局部、变形预警有限，冲切通常被视为需要特别谨慎控制的脆性极限状态。中国GB/T 50010、澳大利亚AS 3600、欧洲EN 1992和美国ACI 318都会围绕“临界截面或临界周长”组织校核，但它们选择的周长位置、有效高度定义、混凝土抗剪模型、尺寸效应、边柱或角柱修正、开洞影响、弯矩不平衡传递和抗冲切钢筋规则并不相同。跨体系审查时，工程师不能只问楼板厚度够不够，也不能把梁剪公式直接套到柱周板带。正确路径是先定义荷载从楼板进入柱的局部传力机制，再确定临界周长、扣除开洞和自由边影响，考虑重力剪力与不平衡弯矩共同造成的剪应力，最后分别检查无抗冲切钢筋、有抗冲切钢筋、最大混凝土压碎限制和构造延性要求。",
+      "en": "Punching shear is common near slab-column supports, raft slabs, pile caps, footings, and local concentrated loads. Its first difference from ordinary beam shear is the failure surface. Beam shear forms diagonal cracking along the span and is influenced by member width, effective depth, stirrups, and flexural reinforcement. Punching shear forms a near-closed three-dimensional failure cone or surface around a column, wall end, or local load. Because the failure zone is local and deformation warning can be limited, punching is treated as a brittle ultimate limit state requiring particular care. China's GB/T 50010, Australia's AS 3600, Europe's EN 1992, and U.S. ACI 318 all organise checks around a critical section or critical perimeter, but they differ in perimeter location, effective-depth definition, concrete shear model, size effect, edge and corner treatment, opening effects, unbalanced moment transfer, and punching-shear reinforcement rules. In cross-system review, the engineer should not ask only whether the slab is thick enough, and should not apply a beam-shear equation directly to the slab around a column. The correct path is to define the local load transfer from slab into support, establish the critical perimeter, reduce it for openings and free edges, consider shear stress caused by gravity shear and unbalanced moment, and then check concrete-only resistance, punching reinforcement, maximum crushing limits, and ductility detailing separately."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "???????????",
-          "en": "Slip resistance is governed by clamping and friction"
+          "zh": "临界周长是设计模型，不是柱边轮廓",
+          "en": "The critical perimeter is a design model, not the column outline"
         },
         "text": {
-          "zh": "????????????????????????????????????????????????????????????????",
-          "en": "A bearing connection transfers force after the bolt shank bears against the hole; a slip-resistant joint primarily transfers force before slip through normal clamping force and faying-surface slip coefficient. The design objectives are different."
+          "zh": "不同规范把临界截面放在距离柱边不同的位置，并对边柱、角柱、洞口和自由边作不同扣减。直接比较名义剪应力前，必须确认周长位置和有效高度定义一致。",
+          "en": "Different codes place the critical section at different distances from the column face and apply different reductions for edge columns, corner columns, openings, and free edges. Before comparing nominal shear stress, the perimeter location and effective-depth definition must be aligned."
         }
       },
       {
         "label": {
-          "zh": "??????????",
-          "en": "A faying surface is not ordinary paint"
+          "zh": "柱周剪应力可能来自剪力和不平衡弯矩",
+          "en": "Stress around the column can come from shear and unbalanced moment"
         },
         "text": {
-          "zh": "??????????????????????????????????????????????????????????????",
-          "en": "Blast-cleaned, galvanized, uncoated, and qualified coated surfaces can have different slip coefficients. If drawings require a friction-type joint, drawings and specifications must state surface preparation, masking during painting, and acceptance testing."
+          "zh": "内柱在均匀重力作用下可能接近对称，但边柱、角柱、侧向荷载、楼板开洞和刚度不均会引入弯矩传递，使某些周长位置的剪应力显著增大。",
+          "en": "An interior column under nearly uniform gravity loading can be close to symmetric, but edge columns, corner columns, lateral actions, slab openings, and stiffness irregularity introduce moment transfer, increasing shear stress at selected parts of the perimeter."
         }
       },
       {
         "label": {
-          "zh": "????????????",
-          "en": "Service and strength checks must be separated"
+          "zh": "抗冲切钢筋不是任意加密钢筋",
+          "en": "Punching reinforcement is not arbitrary extra bars"
         },
         "text": {
-          "zh": "??????????????????????????????????????????????????????????????",
-          "en": "Some joints require no slip at service load, but the strength stage still needs checks for bolt shear, bearing, tear-out, combined tension and shear, and net section. Slip resistance does not replace full connection design."
+          "zh": "抗冲切钢筋需要满足布置范围、锚固、间距、首排位置和最大承载限制。通过一个简化周长校核并不等于构造已经具备延性。",
+          "en": "Punching reinforcement must satisfy layout extent, anchorage, spacing, first-row position, and maximum resistance limits. Passing a simplified perimeter check does not automatically mean the detailing has adequate ductility."
         }
       }
     ],
     "takeaway": {
-      "zh": "?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
-      "en": "A slip-resistant connection review should state the connection category, load level at which slip is controlled, bolt grade and preload, number of friction planes, hole type, surface preparation and source of slip coefficient, coating qualification, installation and inspection method, concurrent tension, and whether ultimate strength checks are performed separately. It is not simply a stronger ordinary bolted joint; it is a service-performance design strongly controlled by workmanship and contact-surface condition."
+      "zh": "冲切审查应至少说明：支承类型、荷载和弯矩传递路径、有效高度、临界周长、自由边和开洞扣减、混凝土抗剪模型、是否有抗冲切钢筋、最大承载限制、抗震或连续倒塌构造要求，以及所用规范版本。它不是梁剪切的二维变体，而是局部三维传力和脆性破坏控制问题。",
+      "en": "A punching-shear review should state the support type, shear and moment-transfer path, effective depth, critical perimeter, reductions for free edges and openings, concrete shear model, presence of punching reinforcement, maximum resistance limit, seismic or progressive-collapse detailing requirements, and code edition. It is not a two-dimensional variant of beam shear; it is a local three-dimensional load-transfer and brittle-failure control problem."
     },
     "example": {
       "title": {
-        "zh": "??????????????????????????????????????",
-        "en": "Reference example: why can the same group of high-strength bolts not use one capacity conclusion for both bearing and slip-resistant joints?"
+        "zh": "概念例子：同一根柱周楼板，为什么不能只用一个梁剪结论？",
+        "en": "Concept example: why can the same slab around one column not be checked only by a beam-shear conclusion?"
       },
       "intro": {
-        "zh": "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
-        "en": "Assume a steel plate splice uses high-strength bolts to transfer design shear. If the intent allows slip followed by bearing transfer, the main checks are hole bearing, bolt shear, and plate failure. If the intent is no service-stage slip, the first focus becomes preload and faying surface. The equations below explain the concept path; real projects must follow the applicable code, project specification, hole type, surface preparation, installation record, and acceptance testing."
+        "zh": "假设一块无梁楼盖把楼面荷载传给内柱。梁剪思路会关注一条截面上的剪力；冲切思路则要在柱周临界周长上分布剪力，并检查弯矩传递造成的局部应力集中。以下公式只用于说明审查路径；实际工程必须使用项目适用规范的完整条文、系数、构造和施工要求。",
+        "en": "Assume a flat slab transfers floor actions into an interior column. A beam-shear approach focuses on shear across a line section; a punching-shear approach distributes shear around a critical perimeter and checks stress concentration caused by moment transfer. The equations below only explain the review path; real projects must use the complete clauses, factors, detailing, and construction requirements of the applicable code."
       },
       "equations": [
         {
           "label": {
-            "zh": "?????",
-            "en": "Preload concept"
+            "zh": "周长平均剪应力",
+            "en": "Average shear stress on a perimeter"
           },
-          "formula": "Fp,C = 0.7 fub As",
+          "formula": "vEd = VEd / (u d)",
           "formulaTokens": [
             {
-              "var": "F",
-              "sub": "p,C"
-            },
-            {
-              "text": " = 0.7 "
-            },
-            {
-              "var": "f",
-              "sub": "ub"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "A",
-              "sub": "s"
-            }
-          ],
-          "citation": {
-            "zh": "Code-based concept from EN 1993-1-8 preloaded bolt format?0.7???????????????????????????????????????????????????????????",
-            "en": "Code-based concept from the EN 1993-1-8 preloaded-bolt format; the 0.7 factor illustrates that bolt preload is related to bolt tensile strength and tensile-stress area. Actual installation preload, inspection method, and tolerance must follow the applicable code and project specification."
-          }
-        },
-        {
-          "label": {
-            "zh": "????????",
-            "en": "Slip resistance concept"
-          },
-          "formula": "Rslip = ? n Fp,C",
-          "formulaTokens": [
-            {
-              "var": "R",
-              "sub": "slip"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "?"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "n"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "F",
-              "sub": "p,C"
-            }
-          ],
-          "citation": {
-            "zh": "Simplified screen???????????????????????????????Eurocode?AISC/RCSC?AS 4100?????????????????????????????????",
-            "en": "Simplified screen used to show that slip resistance mainly comes from slip coefficient, number of friction planes, and bolt preload. Eurocode, AISC/RCSC, AS 4100, and Chinese practice further introduce hole factors, partial factors, capacity factors, and tension effects."
-          }
-        },
-        {
-          "label": {
-            "zh": "????",
-            "en": "Slip check"
-          },
-          "formula": "Vd ? ? Rslip",
-          "formulaTokens": [
-            {
-              "var": "V",
-              "sub": "d"
-            },
-            {
-              "text": " ? "
-            },
-            {
-              "var": "?"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "R",
-              "sub": "slip"
-            }
-          ],
-          "citation": {
-            "zh": "Simplified screen??????????????????????Eurocode?????????????????????????????????????????????",
-            "en": "Simplified screen expressing that design shear should not exceed design slip resistance. In Eurocode form this is usually handled through partial factors; in Australian or North American practice it should be rewritten with the relevant capacity factor and serviceability or strength requirement."
-          }
-        },
-        {
-          "label": {
-            "zh": "?????????",
-            "en": "Anti-slip coefficient test definition"
-          },
-          "formula": "? = N / P",
-          "formulaTokens": [
-            {
-              "var": "?"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "N"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "P"
-            }
-          ],
-          "citation": {
-            "zh": "Code-based test concept from GB/T 34478-2017?N?????????????P?????????????????????????????????",
-            "en": "Code-based test concept from GB/T 34478-2017; N is the load at slip between faying surfaces and P is the sum of bolt tightening axial forces. This is a test definition, not a complete connection design equation."
-          }
-        },
-        {
-          "label": {
-            "zh": "???????",
-            "en": "Bearing-type strength remains separate"
-          },
-          "formula": "? = Vd / Rd ? 1.0",
-          "formulaTokens": [
-            {
-              "var": "?"
+              "var": "v",
+              "sub": "Ed"
             },
             {
               "text": " = "
             },
             {
               "var": "V",
-              "sub": "d"
+              "sub": "Ed"
             },
             {
-              "text": " / "
+              "text": " / ("
             },
             {
-              "var": "R",
-              "sub": "d"
+              "var": "u"
             },
             {
-              "text": " ? 1.0"
+              "text": " "
+            },
+            {
+              "var": "d"
+            },
+            {
+              "text": ")"
             }
           ],
           "citation": {
-            "zh": "Derived relation?????????????????????????????????????Rd???????????????????????????",
-            "en": "Derived relation used to remind that bolt shear, bearing, tear-out, net section, and combined tension-shear checks remain necessary after a slip check passes. Rd should come from the applicable code's strength provisions, not from the slip-resistance equation."
+            "zh": "Derived relation：用于说明冲切平均剪应力由设计剪力、临界周长和有效高度控制；不是GB/T 50010、AS 3600、EN 1992或ACI 318的完整规范公式。",
+            "en": "Derived relation: used to show that average punching stress depends on design shear, critical perimeter, and effective depth; not a complete code equation from GB/T 50010, AS 3600, EN 1992, or ACI 318."
+          }
+        },
+        {
+          "label": {
+            "zh": "简化极限状态表达",
+            "en": "Simplified limit-state expression"
+          },
+          "formula": "vEd ≤ vRd",
+          "formulaTokens": [
+            {
+              "var": "v",
+              "sub": "Ed"
+            },
+            {
+              "text": " ≤ "
+            },
+            {
+              "var": "v",
+              "sub": "Rd"
+            }
+          ],
+          "citation": {
+            "zh": "Simplified screen：用于表达设计剪应力不应超过设计抗力；各规范会用不同的抗力模型、分项系数、强度折减系数或容量系数。",
+            "en": "Simplified screen: expresses that design shear stress should not exceed design resistance; different codes use different resistance models, partial factors, strength-reduction factors, or capacity factors."
+          }
+        },
+        {
+          "label": {
+            "zh": "开洞或自由边后的有效周长",
+            "en": "Effective perimeter after openings or free edges"
+          },
+          "formula": "ueff < u1",
+          "formulaTokens": [
+            {
+              "var": "u",
+              "sub": "eff"
+            },
+            {
+              "text": " < "
+            },
+            {
+              "var": "u",
+              "sub": "1"
+            }
+          ],
+          "citation": {
+            "zh": "Derived relation：用于提醒洞口、楼板边缘和角部会减少有效传力周长；具体扣减规则必须按适用规范执行。",
+            "en": "Derived relation: reminds that openings, slab edges, and corners can reduce the effective load-transfer perimeter; specific reductions must follow the applicable code."
+          }
+        },
+        {
+          "label": {
+            "zh": "弯矩传递的附加剪应力概念",
+            "en": "Additional stress from moment transfer"
+          },
+          "formula": "vmax = vavg + ΔvM",
+          "formulaTokens": [
+            {
+              "var": "v",
+              "sub": "max"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "v",
+              "sub": "avg"
+            },
+            {
+              "text": " + Δ"
+            },
+            {
+              "var": "v",
+              "sub": "M"
+            }
+          ],
+          "citation": {
+            "zh": "Derived relation：用于说明不平衡弯矩会使柱周剪应力不均匀；ACI 318、EN 1992及其他体系有各自的弯矩传递和周长应力处理方法。",
+            "en": "Derived relation: used to show that unbalanced moment makes shear stress around the column non-uniform; ACI 318, EN 1992, and other systems have their own moment-transfer and perimeter-stress methods."
+          }
+        },
+        {
+          "label": {
+            "zh": "承载通过后仍需构造检查",
+            "en": "Detailing remains after resistance passes"
+          },
+          "formula": "s ≤ smax",
+          "formulaTokens": [
+            {
+              "var": "s"
+            },
+            {
+              "text": " ≤ "
+            },
+            {
+              "var": "s",
+              "sub": "max"
+            }
+          ],
+          "citation": {
+            "zh": "Simplified screen：用于提醒抗冲切钢筋间距、锚固和布置范围必须单独满足规范；这不是完整构造条文。",
+            "en": "Simplified screen: reminds that punching-reinforcement spacing, anchorage, and layout extent must separately satisfy the code; this is not a complete detailing clause."
           }
         }
       ],
       "note": {
-        "zh": "???M20 8.8?????????????????????????????????????????????????????????????????????????",
-        "en": "The same M20 grade 8.8 high-strength bolts can produce different slip conclusions when surface preparation, hole type, coating, preload verification, and load stage differ. Cross-code comparison should align connection category and slip-control objective before comparing numbers."
+        "zh": "同一块楼板在内柱、边柱、角柱、洞口旁和侧向荷载组合下可能给出不同冲切结论。跨规范比较时，应先统一临界周长、有效高度、荷载组合和弯矩传递假定，再比较抗力数值。",
+        "en": "The same slab can produce different punching conclusions at an interior column, edge column, corner column, near an opening, or under lateral-action combinations. In cross-code comparison, align the critical perimeter, effective depth, action combination, and moment-transfer assumption before comparing resistance values."
       }
     },
     "references": [
-      "GB/T 34478-2017: Chinese national standard for determining the anti-slip coefficient of bolted steel plate surfaces.",
-      "EN 1993-1-8: Eurocode 3 steel joint design provisions for preloaded bolts and slip-resistant connections.",
-      "AISC/RCSC practice: slip-critical bolted joints depend on pretension and qualified faying-surface slip coefficient.",
-      "AS 4100: Australian steel structures practice distinguishes friction-type high-strength bolting categories and service-stage slip control."
+      "GB/T 50010-2010 with later revisions: Chinese concrete structure design standard, including reinforced concrete design provisions.",
+      "AS 3600: Australian concrete structures standard referenced through the National Construction Code for concrete structural resistance.",
+      "EN 1992: Eurocode 2 concrete structures, including shear and punching-shear design provisions.",
+      "ACI 318: U.S. Building Code Requirements for Structural Concrete, including two-way shear and slab-column provisions."
     ],
     "referenceLinks": [
       {
-        "label": "SAMR: GB/T 34478-2017 anti-slip coefficient standard",
-        "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=EBDB01CD56C06666A0ACF4B041D0C633"
+        "label": "National Digital Standard Library: GB/T 50010-2010",
+        "url": "https://www.ndls.org.cn/standard/detail/014e65148c363cdb8f1b3b520abf9d36"
       },
       {
-        "label": "European Commission: Eurocode 3 steel structures",
-        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-3-design-steel-structures"
-      },
-      {
-        "label": "AISC FAQ: faying surfaces in slip-critical connections",
-        "url": "https://www.aisc.org/aisc/solutions-center/engineering-faqs/67-faying-surfaces/"
-      },
-      {
-        "label": "NCC: AS 4100 as steel structural reference",
+        "label": "NCC: AS 3600 referenced for concrete structures",
         "url": "https://ncc.abcb.gov.au/editions/ncc-2022/adopted/volume-one/b-structure/part-b1-structural-provisions"
+      },
+      {
+        "label": "European Commission JRC: Eurocode 2",
+        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-2-design-concrete-structures?field_event_not_associated_euroc_value=0&page=21"
+      },
+      {
+        "label": "ACI: 318 Building Code Portal",
+        "url": "https://www.concrete.org/topicsinconcrete/318buildingcodeportal.aspx"
       }
     ]
   }
