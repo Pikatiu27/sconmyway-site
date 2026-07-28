@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-29",
   "edition": {
     "zh": "晨间简报",
     "en": "Morning Brief"
@@ -7,84 +7,84 @@
   "liveUpdates": [
     {
       "topic": {
-        "zh": "主权AI基础设施",
-        "en": "Sovereign AI infrastructure"
+        "zh": "AI芯片与资本市场",
+        "en": "AI chips and capital markets"
       },
       "title": {
-        "zh": "NAVER、NVIDIA与Brookfield把韩国AI工厂扩容推向200兆瓦级",
-        "en": "NAVER, NVIDIA and Brookfield push Korea's AI factory buildout toward 200 MW"
+        "zh": "亚洲芯片股回落，AI资本开支开始接受盈利与竞争压力检验",
+        "en": "Asian chip shares retreat as AI capex faces earnings and competition tests"
       },
       "summary": {
-        "zh": "NAVER、NVIDIA与Brookfield在7月25日宣布扩大韩国主权AI工厂基础设施，计划把NAVER GAK Sejong数据中心的NVIDIA DSX部署从55兆瓦提升到200兆瓦，目标是在2028年前形成面向韩国和美国AI企业的生产级算力。Brookfield将作为资本伙伴提供最高90亿美元，NVIDIA投资10亿美元，NAVER承担剩余资金。这条消息说明，AI算力竞争继续从单个芯片和模型能力转向数据中心选址、长期资本、能源容量和区域数字主权的组合能力。",
-        "en": "NAVER, NVIDIA and Brookfield announced on 25 July that they will expand Korea's sovereign AI factory infrastructure, increasing the NVIDIA DSX deployment at NAVER's GAK Sejong data center from 55 MW to 200 MW, with production-scale compute targeted for Korean and U.S. AI companies by 2028. Brookfield is expected to provide up to $9 billion as capital partner, NVIDIA will invest $1 billion, and NAVER will fund the balance. The signal is that AI competition keeps moving beyond individual chips and models toward site control, long-term capital, power capacity, and regional digital sovereignty."
+        "zh": "7月28日路透报道，亚洲多只芯片相关股票在近期上涨后回落，投资者重新评估AI基础设施支出的兑现速度、美国大型科技公司财报、以及中国AI竞争带来的价格和需求压力。这条消息的产业意义不在于一天的股价波动，而在于AI产业链正在从“算力稀缺驱动估值”进入“资本开支、利用率、客户集中度和替代供应”共同定价的阶段。对工程和基础设施侧而言，数据中心、供电、冷却和芯片供应的长期合同会更依赖真实负载和现金流，而不是只依赖AI叙事。",
+        "en": "Reuters reported on 28 July that several Asian chip-linked shares fell after a strong run, as investors reassessed the delivery speed of AI infrastructure spending, large U.S. technology earnings, and pricing or demand pressure from Chinese AI competition. The industry signal is not a one-day equity move. It is that the AI supply chain is shifting from valuation driven mainly by compute scarcity toward pricing that also reflects capex discipline, utilisation, customer concentration, and alternative supply. For engineering and infrastructure teams, long-term data-centre, power, cooling, and chip-supply commitments will depend more on real workload and cash-flow evidence, not only the AI narrative."
       },
       "watch": {
-        "zh": "关注200兆瓦阶段能否按2028节点交付，以及多租户AI云是否能把主权AI诉求转化为稳定收入，而不只是国家级展示项目。",
-        "en": "Watch whether the 200 MW phase reaches the 2028 schedule and whether the multi-tenant AI cloud converts sovereign-AI demand into durable revenue rather than remaining a national showcase."
+        "zh": "关注本周大型科技公司财报是否给出清晰的AI收入、GPU利用率和数据中心交付节奏；这些指标会影响后续算力园区和电网接入项目的融资假设。",
+        "en": "Watch whether this week's large technology earnings disclose clearer AI revenue, GPU utilisation, and data-centre delivery schedules; those metrics will affect financing assumptions for compute campuses and grid-connection projects."
       },
-      "reference": "NAVER, NVIDIA and Brookfield releases on the Korea national AI factory expansion, 25 July 2026",
+      "reference": "Reuters market report on Asian chip shares and AI-spending scrutiny, 28 July 2026",
       "referenceLinks": [
         {
-          "label": "NAVER: Korea national AI factory infrastructure expansion",
-          "url": "https://www.navercorp.com/media/pressReleasesDetail?seq=10034517"
-        },
-        {
-          "label": "NVIDIA investor release: NAVER, NVIDIA and Brookfield expansion",
-          "url": "https://investor.nvidia.com/news/press-release-details/2026/NAVER-NVIDIA-and-Brookfield-to-Expand-Koreas-National-AI-Factory-Infrastructure-Buildout/default.aspx"
+          "label": "Reuters via Investing.com: Asian chip shares slide as AI worries rise",
+          "url": "https://www.investing.com/news/stock-market-news/asian-chip-shares-slide-as-ai-worries-rise-4184961"
         }
       ]
     },
     {
       "topic": {
-        "zh": "数字货币与金融基础设施",
-        "en": "Digital currency and financial infrastructure"
+        "zh": "AI能耗与数据中心治理",
+        "en": "AI energy use and data-centre governance"
       },
       "title": {
-        "zh": "加纳央行启动零售CBDC试点，数字货币进入真实支付网络验证阶段",
-        "en": "Bank of Ghana launches retail CBDC pilot, moving digital currency into payment-network testing"
+        "zh": "联合国气候机构把AI数据中心能耗推向更透明的能源治理议题",
+        "en": "UN climate work pushes AI data-centre demand toward more transparent energy governance"
       },
       "summary": {
-        "zh": "加纳央行7月27日宣布与Giesecke+Devrient合作试点通用型零售央行数字货币，方案将在银行、支付服务商、商户、消费者和其他参与方中进行测试。它的产业意义不在于又多一个数字钱包，而在于央行、商业银行、支付公司和商户需要一起验证身份识别、离线可用性、结算完整性、消费者保护和运营韧性。对金融科技公司来说，CBDC试点正在从概念证明进入制度和基础设施共同适配阶段。",
-        "en": "The Bank of Ghana announced on 27 July that it is partnering with Giesecke+Devrient to pilot a general-purpose retail central bank digital currency with banks, payment service providers, merchants, consumers, and other stakeholders. The industry signal is not simply another wallet. It is a coordinated test of identity, offline usability, settlement integrity, consumer protection, and operational resilience across central banks, commercial banks, payment firms, and merchants. For fintech providers, CBDC pilots are moving from proof of concept into institutional and infrastructure adaptation."
+        "zh": "联合国气候变化机构近期强调，AI算力扩张需要与电力需求、可再生能源采购、冷却用水、供应链排放和公开披露机制同时管理。它把AI基础设施从科技公司的内部运营问题，推向城市、电网、公用事业和气候政策共同约束的产业议题。真正的变化是，数据中心项目不再只比PUE或机柜功率密度，还要解释新增负荷从哪里接入、是否挤占现有电网容量、是否有可审计的清洁电力匹配，以及如何处理峰值负荷、备用电源和水资源压力。",
+        "en": "Recent UN climate work has emphasised that AI compute growth must be managed together with electricity demand, renewable procurement, cooling water, supply-chain emissions, and public disclosure. That moves AI infrastructure from an internal technology-company operations problem into an industry issue constrained by cities, grids, utilities, and climate policy. The real change is that data-centre projects can no longer compare only PUE or rack density. They must explain where incremental load connects, whether it displaces existing grid capacity, whether clean-power matching is auditable, and how peak demand, backup power, and water stress are handled."
       },
       "watch": {
-        "zh": "关注试点是否公布交易量、离线支付表现、商户接入成本和银行体系资金稳定性影响，这些指标会决定它是否能超越演示阶段。",
-        "en": "Watch whether the pilot discloses transaction volumes, offline-payment performance, merchant onboarding cost, and banking-system funding effects; those metrics will decide whether it moves beyond demonstration."
+        "zh": "关注主要云厂商和园区开发商是否把小时级清洁电力匹配、电网约束和水资源指标写入公开披露，而不是只公布年度可再生能源采购。",
+        "en": "Watch whether major cloud firms and campus developers disclose hourly clean-power matching, grid constraints, and water metrics rather than only annual renewable-energy procurement."
       },
-      "reference": "Bank of Ghana press release on the CBDC pilot with Giesecke+Devrient, 27 July 2026",
+      "reference": "UN climate and policy sources on AI, data centres, energy demand and sustainability",
       "referenceLinks": [
         {
-          "label": "Bank of Ghana: CBDC pilot with Giesecke+Devrient",
-          "url": "https://www.bog.gov.gh/news/press-release-bank-of-ghana-partners-with-gieseckedevrient-to-pilot-first-general-purpose-central-bank-digital-currency-in-africa/"
+          "label": "UNFCCC: AI, energy demand and climate action",
+          "url": "https://unfccc.int/news/how-ai-can-help-fight-climate-change"
+        },
+        {
+          "label": "United Nations: AI environmental impact and governance context",
+          "url": "https://www.un.org/en/desa/artificial-intelligence-and-sustainable-development"
         }
       ]
     },
     {
       "topic": {
-        "zh": "稳定币支付与发卡基础设施",
-        "en": "Stablecoin payments and card infrastructure"
+        "zh": "自动驾驶运营基础设施",
+        "en": "Autonomous-mobility operating infrastructure"
       },
       "title": {
-        "zh": "zerohash与Marqeta把稳定币余额接入全球银行卡消费场景",
-        "en": "zerohash and Marqeta connect stablecoin balances to global card spending"
+        "zh": "Robotaxi扩张进入城市运营阶段，车队维护和调度能力变成竞争要点",
+        "en": "Robotaxi expansion moves into city operations, making fleet maintenance and dispatch capability decisive"
       },
       "summary": {
-        "zh": "zerohash与Marqeta在7月22日宣布合作，把zerohash的稳定币基础设施接入Marqeta发卡能力，使Marqeta客户能够在新老金融产品中嵌入稳定币消费，而不必重建核心系统或直接承担完整加密资产基础设施。它反映了稳定币应用从交易所和链上转账，继续向日常发卡、商户收单和企业资金管理延伸。真正值得看的是合规发行、KYC、退款争议处理和传统卡网络风控能否与链上结算保持一致。",
-        "en": "zerohash and Marqeta announced on 22 July that they will integrate zerohash stablecoin infrastructure into Marqeta's card-issuing capabilities, allowing Marqeta customers to embed stablecoin spending into new and existing financial products without rebuilding core systems or directly operating the full crypto stack. This reflects stablecoin use moving beyond exchanges and on-chain transfers toward everyday issuing, merchant acceptance, and treasury workflows. The real test is whether regulated issuance, KYC, disputes, refunds, and card-network risk controls can remain coherent with on-chain settlement."
+        "zh": "Waymo近期继续扩大美国城市服务版图，行业关注点正在从单车自动驾驶能力，转向车队补能、清洁、检查、远程协助、事故处置、乘客支持和城市许可的运营系统。自动驾驶如果要从示范线路进入常态商业服务，必须证明它能在雨雪、道路施工、临时管制、大型活动和高峰需求下稳定调度车辆，并把维护停场时间控制在可接受范围内。对基础设施和地产合作方来说，robotaxi不只是软件产品，它需要车库、充电、通信、安保和城市路侧协调能力。",
+        "en": "Waymo has continued expanding its U.S. city service footprint, while industry attention is moving from the autonomy of a single vehicle toward the operating system around fleets: charging, cleaning, inspection, remote assistance, incident response, rider support, and city permitting. For autonomous driving to move from demonstration corridors into routine commercial service, it must show stable dispatch through weather, road works, temporary controls, major events, and peak demand, while keeping maintenance downtime within an acceptable range. For infrastructure and real-estate partners, robotaxi is not just software; it needs depots, charging, communications, security, and city curbside coordination."
       },
       "watch": {
-        "zh": "关注早期客户是否把它用于跨境支出、承包商付款和B2B资金管理，而不是只作为加密用户的小众卡产品。",
-        "en": "Watch whether early customers use it for cross-border spend, contractor payouts, and B2B treasury management rather than only niche cards for crypto-native users."
+        "zh": "关注新城市服务是否披露单位车辆日订单量、充电周转、人工远程协助频率和安全事件处理时长；这些才是商业化运营质量的关键指标。",
+        "en": "Watch whether new-city operations disclose rides per vehicle per day, charging turnaround, remote-assistance frequency, and incident-resolution time; those are core indicators of commercial operating quality."
       },
-      "reference": "Marqeta investor release on the zerohash stablecoin spending partnership, 22 July 2026",
+      "reference": "Waymo public updates and current reporting on U.S. robotaxi city expansion and operating infrastructure",
       "referenceLinks": [
         {
-          "label": "Marqeta: zerohash partnership for stablecoin spending",
-          "url": "https://investors.marqeta.com/news-releases/news-release-details/zerohash-and-marqeta-announce-partnership-enable-stablecoin"
+          "label": "Waymo: official service updates",
+          "url": "https://waymo.com/blog/"
         },
         {
-          "label": "Mastercard: stablecoin settlement optionality context",
-          "url": "https://www.mastercard.com/global/en/news-and-trends/press/2026/june/mastercard-expands-settlement-capabilities-to-include-stablecoin.html"
+          "label": "Axios: robotaxi expansion and operating footprint coverage",
+          "url": "https://www.axios.com/technology"
         }
       ]
     }
@@ -92,339 +92,332 @@
   "insights": [
     {
       "area": {
-        "zh": "结构隐含碳与设计决策",
-        "en": "Structural embodied carbon and design decisions"
+        "zh": "地震岩土与场地效应",
+        "en": "Geotechnical seismic design and site effects"
       },
       "title": {
-        "zh": "隐含碳评估正在从宣传指标变成结构工程师的设计输入",
-        "en": "Embodied-carbon assessment is becoming a design input for structural engineers, not a publicity metric"
+        "zh": "液化不再只是岩土附录问题，正在进入结构抗震性能的前置设计假设",
+        "en": "Liquefaction is no longer a geotechnical appendix; it is becoming a front-end assumption in seismic performance"
       },
       "evidence": {
-        "zh": "证据：STRUCTURE Magazine 2026年7月文章介绍ASCE/SEI结构体系隐含碳评估预标准，强调评估范围、计算方法和分层评估框架，用于减少不同项目和设计阶段之间的口径差异。",
-        "en": "Evidence: STRUCTURE Magazine's July 2026 article describes the ASCE/SEI Prestandard for assessing embodied carbon in structural systems, emphasising scope, methodology, and assessment tiers to reduce inconsistency across projects and design stages."
+        "zh": "证据：USGS在2026年7月发布关于美国本土风险目标液化规范建议的研究，强调把液化触发概率、地震危险度和工程性能目标更一致地联系起来。",
+        "en": "Evidence: USGS published July 2026 work on risk-targeted liquefaction-code recommendations for the conterminous United States, emphasising a more consistent connection between liquefaction triggering probability, seismic hazard, and engineering performance targets."
       },
       "summary": {
-        "zh": "低碳结构设计的难点不只是选择木材、钢材或混凝土，而是把工程量、环境产品声明、功能单位、设计阶段精度和采购条款放到同一个可审查框架里。ASCE/SEI预标准的价值在于，它让结构工程师能够说明自己在比较什么：是整个结构体系、某类构件、某个材料替代方案，还是某个设计阶段的基线。这样做能减少“低碳”叙述中的选择性边界，也能让方案优化从口号变成可复核的设计记录。边界是，早期估算仍然受材料EPD质量、地区供应和施工方案影响，不能把一个总碳数值当成绝对排名。",
-        "en": "The hard part of low-carbon structural design is not only choosing timber, steel, or concrete; it is bringing quantities, environmental product declarations, functional units, design-stage precision, and procurement language into one auditable framework. The ASCE/SEI prestandard matters because it helps structural engineers state what is being compared: a whole structural system, a family of elements, a material substitution, or a stage-specific baseline. That reduces selective boundaries in low-carbon claims and turns optimisation into a reviewable design record. The boundary is that early estimates still depend on EPD quality, regional supply, and construction methods, so a single carbon number should not be treated as an absolute ranking."
+        "zh": "传统项目中，液化常被放在岩土报告后部，结构工程师只接收一个“需要处理”或“不需要处理”的结论。但风险目标方法提醒我们，液化判断本质上影响上部结构的位移需求、基础形式、桩基侧向变形、地下管线、地坪沉降和灾后可恢复性。对结构工程师的重要性在于，抗震设计不能只使用标准反应谱和构件延性，还要确认场地是否可能在设计地震下改变支承条件。如果液化触发概率和后果没有进入概念设计，后期再用局部地基处理或加大构件补救，往往会更贵且不一定改善整体性能。边界是，风险目标图谱不能替代场地勘察、室内试验和项目特定的变形分析。",
+        "en": "In many projects, liquefaction is still placed near the back of the geotechnical report, and structural engineers receive only a binary conclusion: mitigation required or not required. Risk-targeted methods remind us that liquefaction directly affects superstructure displacement demand, foundation type, pile lateral deformation, buried services, slab settlement, and post-event recoverability. For structural engineers, the issue is that seismic design cannot rely only on a standard response spectrum and member ductility; it must confirm whether the site may change the support condition during the design earthquake. If liquefaction probability and consequence are not considered during concept design, later remediation through local ground improvement or stronger members is often more expensive and may not improve whole-system performance. The boundary is that risk-targeted maps do not replace site investigation, laboratory testing, and project-specific deformation analysis."
       },
       "caveat": {
-        "zh": "隐含碳评估不应替代承载力、耐久性和使用性校核；它应与安全和可施工性一起进入方案选择。",
-        "en": "Embodied-carbon assessment should not replace strength, durability, or serviceability checks; it should sit alongside safety and constructability in option selection."
+        "zh": "液化筛查应早于基础方案冻结，并与可恢复性、沉降容许值、地下管线和施工可行性一起评审。",
+        "en": "Liquefaction screening should occur before the foundation scheme is locked, and should be reviewed together with recoverability, settlement tolerance, buried services, and constructability."
       },
-      "reference": "STRUCTURE Magazine July 2026 article on assessing structural embodied carbon and ASCE/SEI prestandard context",
+      "reference": "USGS July 2026 publication on risk-targeted liquefaction code recommendations",
       "referenceLinks": [
         {
-          "label": "STRUCTURE: Assessing Structural Embodied Carbon",
-          "url": "https://www.structuremag.org/article/assessing-structural-embodied-carbon/"
-        },
-        {
-          "label": "ASCE: Towards Zero Carbon 2026 program",
-          "url": "https://www.asce.org/education-and-events/events/meetings/towards-zero-carbon-2026/program"
+          "label": "USGS Publications Warehouse: Risk-targeted liquefaction code recommendations",
+          "url": "https://pubs.usgs.gov/publication/70275558"
         }
       ]
     },
     {
       "area": {
-        "zh": "结构不锈钢与耐久性材料",
-        "en": "Structural stainless steel and durable materials"
+        "zh": "工程计算模型质量控制",
+        "en": "Engineering calculation-model quality control"
       },
       "title": {
-        "zh": "结构不锈钢标准更新说明耐久性设计正在进入更正式的主结构语言",
-        "en": "Updated structural stainless standards show durability design moving into formal primary-structure language"
+        "zh": "结构工程的软件能力正在从“会建模”转向“能审查模型假设”",
+        "en": "Structural software skill is shifting from building models to auditing modelling assumptions"
       },
       "evidence": {
-        "zh": "证据：AISC在2026年6月30日发布ANSI/AISC 370-25和ANSI/AISC 313-25，说明新版与碳钢标准体系协调，并改进合金指定、单轴对称I形构件和单角钢弯曲设计、不锈钢螺栓抗剪等内容。",
-        "en": "Evidence: AISC released ANSI/AISC 370-25 and ANSI/AISC 313-25 on 30 June 2026, noting alignment with carbon-steel standards and updates for alloy specification, flexural design of singly symmetric I-shaped members and single angles, and stainless steel bolt shear strength."
+        "zh": "证据：IStructE关于计算模型的专业指南持续强调模型目的、边界条件、荷载路径、敏感性、验证和独立检查，而不是把软件输出当成自动正确的设计结果。",
+        "en": "Evidence: IStructE professional guidance on calculation models continues to emphasise model purpose, boundary conditions, load path, sensitivity, validation, and independent checking, rather than treating software output as automatically correct design."
       },
       "summary": {
-        "zh": "不锈钢在结构工程中常被当作特殊材料，用于腐蚀环境、建筑外露构件、桥梁细部和高维护成本区域。AISC不锈钢标准进入第二代，说明行业正在把这种材料从项目特例推进到可重复的设计、制作和验收体系。对工程师而言，关键变化不是把碳钢公式简单换一个材料强度，而是理解不锈钢的应力应变曲线、合金选择、连接件性能、焊接与制作公差、表面状态和生命周期维护成本。边界也很清楚：材料耐蚀性不能替代排水、避免缝隙腐蚀、隔离异种金属和现场质量控制。",
-        "en": "Stainless steel is often treated as a special structural material for corrosive environments, exposed architectural members, bridge details, and zones with high maintenance cost. AISC's second-generation stainless standards show the material moving from project exception into a repeatable framework for design, fabrication, and acceptance. For engineers, the important shift is not simply replacing carbon-steel strength values; it is understanding stress-strain behaviour, alloy selection, connection performance, welding and fabrication tolerances, surface condition, and life-cycle maintenance cost. The boundary is clear: corrosion resistance does not replace drainage, avoidance of crevice corrosion, isolation from dissimilar metals, or site quality control."
+        "zh": "AI辅助计算、参数化建模和商用有限元工具让工程师能更快地产生模型，但真正稀缺的能力是判断模型是否回答了正确问题。结构计算模型至少应说明目标是初步尺寸、荷载分配、局部构件设计、施工阶段复核、动力响应还是非线性性能评估；边界条件如何代表真实支承；荷载路径是否被模型隐含改变；网格、连接刚度和二阶效应是否影响结论；以及手算或简化模型能否独立复核关键数量级。未来职业能力的分界线会更清楚：初级工程师可以更快建模，但能发现错误约束、错误刚度、错误组合和错误解释的人，才真正承担设计责任。",
+        "en": "AI-assisted calculation, parametric modelling, and commercial finite-element tools allow engineers to generate models faster, but the scarce skill is judging whether the model answers the right question. A structural calculation model should state whether its purpose is preliminary sizing, load distribution, local member design, construction-stage review, dynamic response, or nonlinear performance assessment; how its boundary conditions represent real support; whether the load path has been implicitly changed; whether mesh, connection stiffness, and second-order effects affect the conclusion; and whether hand calculations or simplified models independently check the key order of magnitude. The future professional boundary will be clearer: junior engineers may build models faster, but engineers who can find wrong restraints, wrong stiffness, wrong combinations, and wrong interpretations will still carry the design responsibility."
       },
       "caveat": {
-        "zh": "当项目选择不锈钢时，规格书应同时锁定合金、表面、连接件、焊接、检查和与相邻材料的隔离要求。",
-        "en": "When stainless steel is selected, the specification should lock in alloy, finish, fasteners, welding, inspection, and isolation from adjacent materials."
+        "zh": "模型审查记录应随计算书提交，而不是只保存软件文件；没有目的和边界说明的模型很难被独立复核。",
+        "en": "Model-review notes should be submitted with the calculation package, not only stored inside the software file; a model without purpose and boundary explanation is hard to check independently."
       },
-      "reference": "AISC release and standards page for ANSI/AISC 370-25 and ANSI/AISC 313-25",
+      "reference": "IStructE professional guidance on calculation models and structural engineering model checks",
       "referenceLinks": [
         {
-          "label": "AISC news: updated structural stainless steel standards",
-          "url": "https://www.aisc.org/news/"
-        },
-        {
-          "label": "AISC: Specification for Structural Stainless Steel Buildings",
-          "url": "https://www.aisc.org/aisc/publications/current-standards/aisc-370/"
+          "label": "IStructE: Structural use of calculation models",
+          "url": "https://www.istructe.org/resources/guidance/structural-use-of-calculation-models/"
         }
       ]
     },
     {
       "area": {
-        "zh": "预制模块化与结构接口",
-        "en": "Prefabrication, modularity, and structural interfaces"
+        "zh": "结构健康监测与数字孪生",
+        "en": "Structural health monitoring and digital twins"
       },
       "title": {
-        "zh": "模块化建筑的核心优化不是模块越多越好，而是接口、运输和重复性的平衡",
-        "en": "The core optimisation in modular building is not maximum modularity, but the balance of interfaces, transport, and repetition"
+        "zh": "数字孪生的价值不在三维界面，而在可校准的结构状态证据链",
+        "en": "The value of a digital twin is not the 3D interface; it is a calibratable evidence chain for structural condition"
       },
       "evidence": {
-        "zh": "证据：ASCE Journal of Construction Engineering and Management 2026年7月刊收录关于建筑预制策略中模块化与复杂度平衡的研究；Modular Building Institute也在7月报告美国永久模块化市场规模和增长预期。",
-        "en": "Evidence: the July 2026 Journal of Construction Engineering and Management includes research on balancing modularity and complicatedness in prefabrication strategy, while the Modular Building Institute reported July market growth for U.S. permanent modular construction."
+        "zh": "证据：ASCE和工程研究机构持续把数字孪生、传感器、结构健康监测和资产管理联系起来，重点从可视化展示转向数据质量、模型更新、异常解释和维护决策。",
+        "en": "Evidence: ASCE and engineering research organisations increasingly connect digital twins, sensors, structural health monitoring, and asset management, with emphasis moving from visual display toward data quality, model updating, anomaly interpretation, and maintenance decisions."
       },
       "summary": {
-        "zh": "模块化常被理解为工厂制造越多、现场工作越少就越好，但结构工程角度更复杂。模块尺寸会受运输限制、吊装半径、临时受力、节点公差、楼板振动、耐火和防水接口、机电穿越、连接可达性和现场纠偏能力控制。研究和市场数据共同说明，模块化的价值来自可重复的构件族、清晰接口和早期协同，而不是把所有部位都硬拆成盒子。未来结构工程师需要更早参与物流、临时工况和连接策略，因为这些因素会决定方案是否真正节省工期和风险。边界是，低重复度、复杂机电或高不确定既有条件的项目可能更适合局部预制，而不是完整体积模块化。",
-        "en": "Modular construction is often framed as more factory work and less site work, but the structural problem is more nuanced. Module size is controlled by transport, crane radius, temporary actions, connection tolerance, floor vibration, fire and waterproofing interfaces, services penetrations, connection access, and site correction capacity. Research and market evidence point to value from repeatable element families, clear interfaces, and early coordination rather than forcing every zone into volumetric boxes. Structural engineers will need to enter logistics, temporary works, and connection strategy earlier because those choices decide whether modular delivery genuinely reduces programme and risk. The boundary is that low-repeatability projects, complex services, or uncertain existing conditions may suit partial prefabrication better than full volumetric modularisation."
+        "zh": "很多数字孪生项目把重点放在漂亮的三维界面，但结构工程中的核心问题是：传感器测到的应变、加速度、位移、温度和裂缝信息，能否可靠地更新结构模型并支持维护决策。工程师需要关心采样频率、传感器漂移、环境温度影响、基线工况、有限元模型简化、报警阈值、误报漏报成本和检修闭环。一个可信的数字孪生应能解释“为什么报警”“结构状态如何变化”“建议行动的风险依据是什么”。边界是，传感器不能直接替代检查和工程判断；没有校准、数据治理和责任边界的系统，只是更复杂的仪表盘。",
+        "en": "Many digital-twin projects focus on an attractive 3D interface, but the structural-engineering question is whether measured strain, acceleration, displacement, temperature, and cracking data can reliably update a structural model and support maintenance decisions. Engineers need to care about sampling frequency, sensor drift, thermal effects, baseline condition, finite-element simplification, alarm thresholds, false-positive and false-negative cost, and the inspection feedback loop. A credible digital twin should explain why an alarm occurred, how structural condition is changing, and what risk basis supports the recommended action. The boundary is that sensors do not directly replace inspection and engineering judgement; without calibration, data governance, and responsibility boundaries, the system is only a more complicated dashboard."
       },
       "caveat": {
-        "zh": "模块化方案评审应包括永久受力和临时受力两套路径；运输和吊装阶段不能只留给施工单位后期解决。",
-        "en": "A modular option review should include both permanent and temporary load paths; transport and lifting stages should not be left solely to late contractor resolution."
+        "zh": "在桥梁、塔桅和关键设施中，数字孪生应先定义可行动问题，再选择传感器和可视化，而不是反过来。",
+        "en": "For bridges, towers, and critical facilities, a digital twin should first define actionable questions, then select sensors and visualisation, not the other way around."
       },
-      "reference": "ASCE JCEM July 2026 prefabrication optimisation paper and Modular Building Institute 2026 market report context",
+      "reference": "ASCE infrastructure resilience and digital-twin context for monitoring-informed asset management",
       "referenceLinks": [
         {
-          "label": "ASCE Library: Optimizing Building Prefabrication Strategies",
-          "url": "https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-17877"
+          "label": "ASCE: Future World Vision and digital twin context",
+          "url": "https://www.asce.org/communities/institutes-and-technical-groups/future-world-vision"
         },
         {
-          "label": "Modular Building Institute: 2026 modular construction press releases",
-          "url": "https://www.modular.org/press-releases/"
+          "label": "NIST: Smart infrastructure and structural monitoring research",
+          "url": "https://www.nist.gov/el"
         }
       ]
     }
   ],
   "classroom": {
     "title": {
-      "zh": "裂缝控制不是强度设计：为什么钢筋混凝土使用性要看钢筋应力、间距、保护层和环境",
-      "en": "Crack control is not strength design: why reinforced-concrete serviceability depends on steel stress, spacing, cover, and exposure"
+      "zh": "抗震设计不是只放大水平力：为什么反应谱、延性、层间位移和构造细节必须一起看",
+      "en": "Seismic design is not just larger horizontal force: why spectra, ductility, drift, and detailing must be read together"
     },
     "text": {
-      "zh": "钢筋混凝土构件即使满足承载力，也可能因为裂缝宽度、外观、渗水、耐久性或使用者接受度而不满足使用性要求。裂缝控制与强度设计的第一差别在于目标不同：强度设计关注极限状态下构件是否有足够抗力；裂缝控制关注正常使用阶段拉区混凝土开裂后，钢筋应力、钢筋间距、粘结、保护层厚度、构件约束、收缩温度作用和环境暴露如何共同影响表面裂缝。中国GB/T 50010、澳大利亚AS 3600、欧洲EN 1992和美国ACI体系都承认裂缝是钢筋混凝土的正常现象，但它们控制裂缝的语言不同：有的直接计算特征裂缝宽度，有的通过钢筋应力、直径和间距的表格或构造规则间接控制，有的在环境、耐久性和外观要求之间分层处理。跨规范比较时，不能只说“裂缝限值是0.3 mm”或“钢筋够多就可以”。必须先说明构件处于弯曲、轴拉、约束收缩还是温度作用；裂缝要求是为了耐久性、水密性、外观还是普通使用；计算采用短期还是长期荷载组合；钢筋应力是开裂截面服务应力还是极限设计应力；保护层和间距是否使表面裂缝被放大。工程提醒是：更多钢筋不一定自动带来更好裂缝控制，如果钢筋布置太集中、保护层过大、间距过宽或约束没有释放，裂缝仍可能集中；同样，较小裂缝宽度也不等于耐久性已经解决，混凝土质量、保护层、排水、氯盐、碳化和施工养护同样重要。",
-      "en": "A reinforced-concrete member can satisfy strength and still fail serviceability because of crack width, appearance, leakage, durability, or user acceptance. The first difference between crack control and strength design is the objective. Strength design asks whether the member has enough resistance at an ultimate limit state. Crack control asks how steel stress, bar spacing, bond, cover, restraint, shrinkage, temperature action, and exposure influence surface cracks after the tensile concrete has cracked under service conditions. China's GB/T 50010, Australia's AS 3600, Europe's EN 1992, and the U.S. ACI system all accept cracking as normal in reinforced concrete, but they control it with different language: direct calculation of characteristic crack width, indirect limits on steel stress, bar diameter and spacing, or detailing rules linked to environment, durability, and appearance. In cross-code review, it is not enough to say that the limit is 0.3 mm or that extra steel has been provided. The engineer must identify whether the member is governed by flexure, direct tension, restrained shrinkage, or temperature action; whether the limit is for durability, water-tightness, appearance, or ordinary service; whether the calculation uses short-term or long-term service combinations; whether steel stress is a cracked-section service stress or an ultimate design stress; and whether cover and spacing amplify surface crack width. The design reminder is that more reinforcement does not automatically mean better crack control if bars are too concentrated, cover is too large, spacing is too wide, or restraint is not relieved. Likewise, a smaller calculated crack width does not solve durability by itself; concrete quality, cover, drainage, chlorides, carbonation, and curing remain decisive."
+      "zh": "抗震设计与普通重力设计最大的不同，是目标并不只是让构件在一个放大的水平力下保持弹性。地震作用是随机、循环、方向相关且与场地条件密切相关的动力输入；结构体系通过周期、质量、阻尼、延性、超强、耗能机制和构造细节共同决定性能。中国GB 50011、澳大利亚AS 1170.4、美国ASCE/SEI 7和欧洲EN 1998都使用反应谱思想，但表达方式不同：有的强调地震影响系数和等效重力荷载，有的使用设计谱和行为系数，有的使用风险目标地震参数、反应修正系数和重要性系数。跨规范比较时，不能只比较一个基底剪力系数。必须先说明危险度水平、场地类别、结构周期、延性等级、重要性、规则性、扭转、二阶效应、层间位移限值和延性构造要求。工程提醒是：较小的设计剪力并不一定代表较低安全水平，可能是因为规范允许结构通过延性耗能；但这种折减只有在梁柱节点、剪力墙边缘构件、钢连接、箍筋约束、强柱弱梁和能力设计路径真正落实时才成立。",
+      "en": "The main difference between seismic design and ordinary gravity design is that the objective is not simply to keep members elastic under a larger horizontal force. Earthquake action is stochastic, cyclic, direction-dependent, and strongly linked to site conditions. Structural performance is governed together by period, mass, damping, ductility, overstrength, energy-dissipation mechanism, and detailing. China's GB 50011, Australia's AS 1170.4, the U.S. ASCE/SEI 7, and Europe's EN 1998 all use response-spectrum concepts, but their language differs: seismic influence coefficients and equivalent gravity load, design spectra and behaviour factors, or risk-targeted seismic parameters, response modification factors, and importance factors. In cross-code comparison, it is not enough to compare one base-shear coefficient. The engineer must align hazard level, site class, structural period, ductility class, importance, regularity, torsion, second-order effects, drift limits, and ductile detailing requirements. The design reminder is that a lower design shear does not automatically mean a lower safety level; it may reflect permitted ductile energy dissipation. That reduction is valid only when beam-column joints, wall boundary elements, steel connections, transverse confinement, strong-column weak-beam hierarchy, and capacity-design load paths are actually delivered."
     },
     "comparisonPoints": [
       {
         "label": {
-          "zh": "裂缝控制使用服务阶段应力",
-          "en": "Crack control uses service-stage stress"
+          "zh": "反应谱控制需求的形状",
+          "en": "Response spectra define the shape of demand"
         },
         "text": {
-          "zh": "强度设计可以使用折减抗力和极限组合，但裂缝宽度通常与开裂截面在使用组合下的钢筋应力和平均应变相关。把极限设计内力直接代入裂缝公式，会混淆校核目标。",
-          "en": "Strength design can use reduced resistance and ultimate combinations, but crack width is usually tied to steel stress and mean strain in a cracked section under service combinations. Substituting ultimate design effects directly into a crack formula confuses the check objective."
+          "zh": "同样的峰值地面加速度，短周期刚性结构和长周期柔性结构的设计加速度可能不同。比较规范时，应先统一场地类别、阻尼、周期取值和设计地震水平。",
+          "en": "For the same peak ground acceleration, a short-period stiff structure and a long-period flexible structure may have different design accelerations. Cross-code review should first align site class, damping, period estimate, and design earthquake level."
         }
       },
       {
         "label": {
-          "zh": "间距和保护层控制裂缝分布",
-          "en": "Spacing and cover control crack distribution"
+          "zh": "延性折减必须由构造细节兑现",
+          "en": "Ductility reduction must be paid for by detailing"
         },
         "text": {
-          "zh": "同样的钢筋面积，如果集中成少数大直径钢筋，表面裂缝可能更宽；较均匀的小间距布置通常更有利于分散裂缝。保护层越大，表面裂缝宽度也可能被放大。",
-          "en": "The same steel area can produce wider surface cracks if it is concentrated into a few large bars. More distributed reinforcement at closer spacing usually spreads cracking more effectively. Larger cover can also amplify surface crack width."
+          "zh": "反应修正系数、行为系数或延性等级都隐含结构可进入非弹性耗能。若节点、墙端、连接、箍筋和能力设计没有落实，不能只享受较低水平力而不承担构造要求。",
+          "en": "Response modification factors, behaviour factors, and ductility classes all imply inelastic energy dissipation. If joints, wall ends, connections, transverse reinforcement, and capacity design are not delivered, the design cannot take the lower force without the detailing obligation."
         }
       },
       {
         "label": {
-          "zh": "环境决定裂缝宽度的意义",
-          "en": "Exposure changes what crack width means"
+          "zh": "层间位移是性能而不是附属校核",
+          "en": "Interstorey drift is performance, not an afterthought"
         },
         "text": {
-          "zh": "室内普通梁板、海洋暴露构件、水池、地下室外墙和外观要求高的清水混凝土，对同一裂缝宽度的风险判断不同。裂缝控制应与暴露等级、渗漏要求和耐久性策略一起确定。",
-          "en": "An internal floor beam, marine-exposed member, liquid-retaining tank, basement wall, and architectural concrete surface do not carry the same risk at the same crack width. Crack control must be selected with exposure class, leakage requirement, and durability strategy."
+          "zh": "基底剪力满足并不保证非结构构件、幕墙、设备、楼梯、电梯和使用后恢复性满足。层间位移应与重要性、使用功能、二阶效应和非结构损伤目标一起审查。",
+          "en": "Passing base shear does not prove that non-structural components, curtain walls, equipment, stairs, lifts, or post-event recovery will perform. Drift should be checked together with importance, occupancy, second-order effects, and non-structural damage objectives."
         }
       }
     ],
     "takeaway": {
-      "zh": "裂缝控制至少应记录：服务荷载组合、开裂截面钢筋应力、钢筋直径和间距、保护层、环境或外观目标、是否存在约束收缩或温度作用、采用直接裂缝宽度计算还是 deemed-to-satisfy 构造规则，以及所用规范版本。它不是承载力设计的附属结果，而是独立的使用性和耐久性判断。",
-      "en": "A crack-control check should record the service load combination, cracked-section steel stress, bar diameter and spacing, cover, exposure or appearance objective, whether restrained shrinkage or temperature action is present, whether direct crack-width calculation or deemed-to-satisfy detailing is used, and the code edition. It is not a by-product of strength design; it is a separate serviceability and durability judgment."
+      "zh": "抗震设计记录至少应写清：地震危险度来源、场地类别、设计谱、结构周期、质量取值、延性或行为系数、重要性、规则性、基底剪力、层间位移、P-Delta效应、能力设计路径和关键构造细节。跨规范复核的重点不是把某个系数互相换算，而是确认两套体系是否在相同危险度和相同性能目标下比较。",
+      "en": "A seismic-design record should state the hazard source, site class, design spectrum, structural period, seismic weight, ductility or behaviour factor, importance, regularity, base shear, interstorey drift, P-Delta effects, capacity-design path, and critical detailing. Cross-code review is not a coefficient conversion exercise; it asks whether two systems are being compared at the same hazard level and performance objective."
     },
     "example": {
       "title": {
-        "zh": "概念例子：同样的抗弯强度，为什么裂缝结论可能不同？",
-        "en": "Concept example: why can the same bending strength give different crack-control outcomes?"
+        "zh": "概念例子：为什么两个规范的基底剪力不能直接比较？",
+        "en": "Concept example: why can two code base shears not be compared directly?"
       },
       "intro": {
-        "zh": "假设两根钢筋混凝土梁在极限状态下都有足够抗弯承载力。梁A使用少数大直径钢筋，梁B使用更多小直径钢筋并保持较小间距。两者的强度可能接近，但服务阶段的钢筋应力、裂缝间距和表面裂缝宽度可能不同。以下公式只用于说明审查路径；实际项目必须采用项目适用规范的完整荷载组合、材料系数、构造限值和耐久性要求。",
-        "en": "Assume two reinforced-concrete beams both have adequate flexural resistance at ultimate limit state. Beam A uses a few large bars; Beam B uses more small bars at closer spacing. Their strength can be similar, but service-stage steel stress, crack spacing, and surface crack width can differ. The equations below only explain the review path; real projects must use the complete load combinations, material factors, detailing limits, and durability requirements of the applicable code."
+        "zh": "假设同一栋规则多层建筑分别按不同规范做等效静力抗震初步设计。一个体系给出较高的弹性谱加速度但允许较大的延性折减，另一个体系给出较低的谱值但要求更严格的位移或构造限制。以下公式只用于说明审查路径；实际项目必须采用项目适用规范的完整地震危险度、场地参数、质量定义、组合、偶然偏心、扭转和构造条款。",
+        "en": "Assume the same regular multistorey building is checked by equivalent static seismic design under different codes. One system may give a higher elastic spectral acceleration but permit a larger ductility reduction, while another may give a lower spectral value but impose tighter drift or detailing limits. The equations below only explain the review path; real projects must use the full seismic hazard, site parameters, mass definition, combinations, accidental eccentricity, torsion, and detailing provisions of the applicable code."
       },
       "equations": [
         {
           "label": {
-            "zh": "特征裂缝宽度",
-            "en": "Characteristic crack width"
+            "zh": "概念性设计基底剪力",
+            "en": "Conceptual design base shear"
           },
-          "formula": "wₖ = sᵣ,max(εₛₘ − ε꜀ₘ)",
+          "formula": "V ≈ Sₐ(T) W / R𝑑",
           "formulaTokens": [
             {
-              "var": "w",
-              "sub": "k"
-            },
-            {
-              "text": " = "
-            },
-            {
-              "var": "s",
-              "sub": "r,max"
-            },
-            {
-              "text": "("
-            },
-            {
-              "var": "ε",
-              "sub": "sm"
-            },
-            {
-              "text": " − "
-            },
-            {
-              "var": "ε",
-              "sub": "cm"
-            },
-            {
-              "text": ")"
-            }
-          ],
-          "citation": {
-            "zh": "EN 1992-1-1:2004, Cl. 7.3.4(1), Eq. (7.8)：用于说明特征裂缝宽度由最大裂缝间距和钢筋与混凝土平均应变差控制。",
-            "en": "EN 1992-1-1:2004, Cl. 7.3.4(1), Eq. (7.8): used to express characteristic crack width as maximum crack spacing multiplied by the mean strain difference between reinforcement and concrete."
-          }
-        },
-        {
-          "label": {
-            "zh": "开裂截面钢筋服务应力",
-            "en": "Service steel stress in a cracked section"
-          },
-          "formula": "σₛ ≈ Mₛ / (Aₛ z)",
-          "formulaTokens": [
-            {
-              "var": "σ",
-              "sub": "s"
+              "var": "V"
             },
             {
               "text": " ≈ "
             },
             {
-              "var": "M",
-              "sub": "s"
+              "var": "S",
+              "sub": "a"
             },
             {
-              "text": " / ("
+              "text": "("
             },
             {
-              "var": "A",
-              "sub": "s"
+              "var": "T"
+            },
+            {
+              "text": ") "
+            },
+            {
+              "var": "W"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "R",
+              "sub": "d"
+            }
+          ],
+          "citation": {
+            "zh": "Derived relation：用于概括反应谱需求、地震重量和延性或行为折减之间的关系；不是GB 50011、AS 1170.4、ASCE/SEI 7或EN 1998的完整规范公式。ASCE/SEI 7-22 Ch. 12、EN 1998-1 Cl. 4.3.3.2和AS 1170.4等效静力法均体现了谱需求与结构体系折减共同控制水平设计作用的思想。",
+            "en": "Derived relation: used to summarise the relationship among spectral demand, seismic weight, and ductility or behaviour reduction; not a complete code equation from GB 50011, AS 1170.4, ASCE/SEI 7, or EN 1998. ASCE/SEI 7-22 Chapter 12, EN 1998-1 Clause 4.3.3.2, and the AS 1170.4 equivalent static method all reflect that horizontal design action is controlled by spectral demand together with structural-system reduction."
+          }
+        },
+        {
+          "label": {
+            "zh": "层间位移需求放大",
+            "en": "Amplified storey-drift demand"
+          },
+          "formula": "Δₘ ≈ C𝑑 Δₑ / Iₑ",
+          "formulaTokens": [
+            {
+              "var": "Δ",
+              "sub": "m"
+            },
+            {
+              "text": " ≈ "
+            },
+            {
+              "var": "C",
+              "sub": "d"
             },
             {
               "text": " "
             },
             {
-              "var": "z"
+              "var": "Δ",
+              "sub": "e"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "I",
+              "sub": "e"
+            }
+          ],
+          "citation": {
+            "zh": "Simplified screen：用于说明弹性分析位移通常需要按体系延性和重要性进行放大或调整后再做位移验算；ASCE/SEI 7-22 Sec. 12.8.6采用类似的位移放大逻辑。其他规范体系的符号、限值和调整方式不同，应按项目适用规范执行。",
+            "en": "Simplified screen: used to show that elastic-analysis displacement commonly needs amplification or adjustment for system ductility and importance before drift checking; ASCE/SEI 7-22 Section 12.8.6 uses a similar displacement-amplification logic. Other code systems use different notation, limits, and adjustment methods, which must follow the applicable project code."
+          }
+        },
+        {
+          "label": {
+            "zh": "二阶效应敏感性",
+            "en": "Second-order sensitivity"
+          },
+          "formula": "θ ≈ P Δ / (V h)",
+          "formulaTokens": [
+            {
+              "var": "θ"
+            },
+            {
+              "text": " ≈ "
+            },
+            {
+              "var": "P"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "Δ"
+            },
+            {
+              "text": " / ("
+            },
+            {
+              "var": "V"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "h"
             },
             {
               "text": ")"
             }
           ],
           "citation": {
-            "zh": "Derived relation：基于开裂钢筋混凝土截面内力平衡，用于说明服务弯矩、钢筋面积和内力臂对钢筋应力的影响；不是GB/T 50010、AS 3600、EN 1992或ACI的完整规范公式。",
-            "en": "Derived relation: based on equilibrium of a cracked reinforced-concrete section, used to show how service moment, steel area, and lever arm influence steel stress; not a complete code equation from GB/T 50010, AS 3600, EN 1992, or ACI."
+            "zh": "Derived relation：基于重力荷载、侧移、层剪力和层高的稳定敏感性表达，用于提示P-Delta效应会把位移问题转化为强度和稳定问题；不是任一规范的完整验算式。ASCE/SEI 7和EN 1998均要求考虑二阶效应或稳定影响。",
+            "en": "Derived relation: based on stability sensitivity from gravity load, lateral displacement, storey shear, and storey height, used to show how P-Delta effects turn drift into a strength and stability issue; not a complete code check from any one standard. ASCE/SEI 7 and EN 1998 both require second-order or stability effects to be considered."
           }
         },
         {
           "label": {
-            "zh": "钢筋间距构造筛查",
-            "en": "Bar-spacing detailing screen"
+            "zh": "位移限值筛查",
+            "en": "Drift-limit screen"
           },
-          "formula": "s ≤ sₘₐₓ",
+          "formula": "Δₘ / h ≤ δₗᵢₘ",
           "formulaTokens": [
             {
-              "var": "s"
+              "var": "Δ",
+              "sub": "m"
+            },
+            {
+              "text": " / "
+            },
+            {
+              "var": "h"
             },
             {
               "text": " ≤ "
             },
             {
-              "var": "s",
-              "sub": "max"
-            }
-          ],
-          "citation": {
-            "zh": "Simplified screen：用于表达钢筋间距不应超过裂缝控制构造限值；AS 3600:2018 Cl. 8.6.2.2和Cl. 9.5.2.1以及EN 1992-1-1:2004 Table 7.3均体现了通过钢筋应力、直径和间距间接控制裂缝的思想。",
-            "en": "Simplified screen: expresses that bar spacing should not exceed a crack-control detailing limit; AS 3600:2018 Cl. 8.6.2.2 and Cl. 9.5.2.1, and EN 1992-1-1:2004 Table 7.3, all reflect indirect control through steel stress, diameter, and spacing."
-          }
-        },
-        {
-          "label": {
-            "zh": "保护层耐久性筛查",
-            "en": "Cover durability screen"
-          },
-          "formula": "cₙₒₘ ≥ cₘᵢₙ",
-          "formulaTokens": [
-            {
-              "var": "c",
-              "sub": "nom"
-            },
-            {
-              "text": " ≥ "
-            },
-            {
-              "var": "c",
-              "sub": "min"
-            }
-          ],
-          "citation": {
-            "zh": "Simplified screen：用于提醒裂缝控制必须与耐久性保护层同时满足；具体保护层和暴露等级要求应按项目适用规范执行，例如AS 3600耐久性条款、EN 1992 Section 4或GB/T 50010相关耐久性规定。",
-            "en": "Simplified screen: reminds that crack control must be checked together with durability cover; specific cover and exposure-class requirements must follow the applicable project code, such as AS 3600 durability provisions, EN 1992 Section 4, or relevant GB/T 50010 durability provisions."
-          }
-        },
-        {
-          "label": {
-            "zh": "使用性限值表达",
-            "en": "Serviceability limit expression"
-          },
-          "formula": "wₖ ≤ wₗᵢₘ",
-          "formulaTokens": [
-            {
-              "var": "w",
-              "sub": "k"
-            },
-            {
-              "text": " ≤ "
-            },
-            {
-              "var": "w",
+              "var": "δ",
               "sub": "lim"
             }
           ],
           "citation": {
-            "zh": "Simplified screen：用于表达特征裂缝宽度不应超过按环境、外观、水密性或功能选定的限值；不同规范体系的限值、组合和适用范围不同，不能脱离条件直接比较。",
-            "en": "Simplified screen: expresses that characteristic crack width should not exceed a limit selected for exposure, appearance, water-tightness, or function; limits, combinations, and scope differ by code system and should not be compared without conditions."
+            "zh": "Simplified screen：用于表达层间位移角不应超过按结构体系、重要性和非结构损伤目标选定的限值；具体限值应按GB 50011、AS 1170.4、ASCE/SEI 7或EN 1998及项目性能目标确定。",
+            "en": "Simplified screen: expresses that interstorey drift ratio should not exceed the limit selected for structural system, importance, and non-structural damage objective; the actual limit must be taken from GB 50011, AS 1170.4, ASCE/SEI 7, or EN 1998 together with the project performance objective."
           }
         }
       ],
       "note": {
-        "zh": "如果两根梁的极限抗弯承载力相同，梁B仍可能因为更小的钢筋间距和较低服务钢筋应力而得到更好的裂缝控制。跨规范复核时，应先统一服务荷载组合、裂缝控制目标、钢筋应力定义、保护层和环境类别，再比较裂缝宽度或 deemed-to-satisfy 规则。",
-        "en": "If two beams have the same ultimate flexural resistance, Beam B can still produce better crack control because of closer bar spacing and lower service steel stress. In cross-code review, align the service load combination, crack-control objective, steel-stress definition, cover, and exposure class before comparing crack width or deemed-to-satisfy rules."
+        "zh": "如果一个规范给出的V较小，但同时要求更严格的延性构造、能力设计、位移验算和二阶效应控制，它不应被简单理解为“更不安全”。跨规范抗震复核应比较完整设计链条：危险度、谱、质量、折减、位移、构造和性能目标。",
+        "en": "If one code gives a smaller V but also requires stricter ductile detailing, capacity design, drift checking, and second-order control, it should not be read simply as less safe. Cross-code seismic review should compare the full design chain: hazard, spectrum, mass, reduction, drift, detailing, and performance objective."
       }
     },
     "references": [
-      "GB/T 50010-2010 with later revisions: Chinese concrete structure design standard, including serviceability and durability provisions for reinforced concrete.",
-      "AS 3600:2018: Australian concrete structures standard, including crack-control provisions for reinforced concrete beams and slabs.",
-      "EN 1992-1-1:2004+A1:2014: Eurocode 2 concrete structures, including serviceability and crack-width provisions.",
-      "ACI PRC-224: American Concrete Institute guide on control of cracking in concrete structures."
+      "GB 50011-2010 with later revisions: Chinese seismic design code for buildings, including seismic influence coefficient, site class, regularity, drift and detailing requirements.",
+      "AS 1170.4: Australian earthquake actions standard, including equivalent static and dynamic procedures for earthquake actions.",
+      "ASCE/SEI 7-22: U.S. minimum design loads and associated criteria, including seismic design requirements in Chapter 12.",
+      "EN 1998-1:2004+A1:2013: Eurocode 8 design of structures for earthquake resistance, including design spectra and behaviour-factor concepts."
     ],
     "referenceLinks": [
       {
-        "label": "National Digital Standard Library: GB/T 50010-2010",
-        "url": "https://www.ndls.org.cn/standard/detail/014e65148c363cdb8f1b3b520abf9d36"
+        "label": "National Digital Standard Library: GB 50011-2010",
+        "url": "https://www.ndls.org.cn/standard/detail/40fb4e1230cbe2c8fbf115bc76a56943"
       },
       {
-        "label": "NCC: AS 3600 referenced for concrete structures",
+        "label": "ABCB NCC: AS 1170.4 referenced earthquake actions context",
         "url": "https://ncc.abcb.gov.au/editions/ncc-2022/adopted/volume-one/b-structure/part-b1-structural-provisions"
       },
       {
-        "label": "European Commission JRC: Eurocode 2",
-        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-2-design-concrete-structures?field_event_not_associated_euroc_value=0&page=21"
+        "label": "ASCE Library: ASCE/SEI 7-22",
+        "url": "https://ascelibrary.org/doi/book/10.1061/9780784415788"
       },
       {
-        "label": "ACI: Control of Cracking in Concrete Structures",
-        "url": "https://www.concrete.org/store/productdetail.aspx?Format=DOWNLOAD&ItemID=22401&Language=English&Units=US_AND_METRIC"
+        "label": "European Commission JRC: Eurocode 8",
+        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-8-design-structures-earthquake-resistance"
       }
     ]
   }
