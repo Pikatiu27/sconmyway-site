@@ -1,424 +1,343 @@
 {
-  "date": "2026-07-29",
-  "edition": {
-    "zh": "晨间简报",
-    "en": "Morning Brief"
-  },
-  "liveUpdates": [
-    {
-      "topic": {
-        "zh": "AI芯片与资本市场",
-        "en": "AI chips and capital markets"
-      },
-      "title": {
-        "zh": "亚洲芯片股回落，AI资本开支开始接受盈利与竞争压力检验",
-        "en": "Asian chip shares retreat as AI capex faces earnings and competition tests"
-      },
-      "summary": {
-        "zh": "7月28日路透报道，亚洲多只芯片相关股票在近期上涨后回落，投资者重新评估AI基础设施支出的兑现速度、美国大型科技公司财报、以及中国AI竞争带来的价格和需求压力。这条消息的产业意义不在于一天的股价波动，而在于AI产业链正在从“算力稀缺驱动估值”进入“资本开支、利用率、客户集中度和替代供应”共同定价的阶段。对工程和基础设施侧而言，数据中心、供电、冷却和芯片供应的长期合同会更依赖真实负载和现金流，而不是只依赖AI叙事。",
-        "en": "Reuters reported on 28 July that several Asian chip-linked shares fell after a strong run, as investors reassessed the delivery speed of AI infrastructure spending, large U.S. technology earnings, and pricing or demand pressure from Chinese AI competition. The industry signal is not a one-day equity move. It is that the AI supply chain is shifting from valuation driven mainly by compute scarcity toward pricing that also reflects capex discipline, utilisation, customer concentration, and alternative supply. For engineering and infrastructure teams, long-term data-centre, power, cooling, and chip-supply commitments will depend more on real workload and cash-flow evidence, not only the AI narrative."
-      },
-      "watch": {
-        "zh": "关注本周大型科技公司财报是否给出清晰的AI收入、GPU利用率和数据中心交付节奏；这些指标会影响后续算力园区和电网接入项目的融资假设。",
-        "en": "Watch whether this week's large technology earnings disclose clearer AI revenue, GPU utilisation, and data-centre delivery schedules; those metrics will affect financing assumptions for compute campuses and grid-connection projects."
-      },
-      "reference": "Reuters market report on Asian chip shares and AI-spending scrutiny, 28 July 2026",
-      "referenceLinks": [
-        {
-          "label": "Reuters via Investing.com: Asian chip shares slide as AI worries rise",
-          "url": "https://www.investing.com/news/stock-market-news/asian-chip-shares-slide-as-ai-worries-rise-4184961"
-        }
-      ]
-    },
-    {
-      "topic": {
-        "zh": "AI能耗与数据中心治理",
-        "en": "AI energy use and data-centre governance"
-      },
-      "title": {
-        "zh": "联合国气候机构把AI数据中心能耗推向更透明的能源治理议题",
-        "en": "UN climate work pushes AI data-centre demand toward more transparent energy governance"
-      },
-      "summary": {
-        "zh": "联合国气候变化机构近期强调，AI算力扩张需要与电力需求、可再生能源采购、冷却用水、供应链排放和公开披露机制同时管理。它把AI基础设施从科技公司的内部运营问题，推向城市、电网、公用事业和气候政策共同约束的产业议题。真正的变化是，数据中心项目不再只比PUE或机柜功率密度，还要解释新增负荷从哪里接入、是否挤占现有电网容量、是否有可审计的清洁电力匹配，以及如何处理峰值负荷、备用电源和水资源压力。",
-        "en": "Recent UN climate work has emphasised that AI compute growth must be managed together with electricity demand, renewable procurement, cooling water, supply-chain emissions, and public disclosure. That moves AI infrastructure from an internal technology-company operations problem into an industry issue constrained by cities, grids, utilities, and climate policy. The real change is that data-centre projects can no longer compare only PUE or rack density. They must explain where incremental load connects, whether it displaces existing grid capacity, whether clean-power matching is auditable, and how peak demand, backup power, and water stress are handled."
-      },
-      "watch": {
-        "zh": "关注主要云厂商和园区开发商是否把小时级清洁电力匹配、电网约束和水资源指标写入公开披露，而不是只公布年度可再生能源采购。",
-        "en": "Watch whether major cloud firms and campus developers disclose hourly clean-power matching, grid constraints, and water metrics rather than only annual renewable-energy procurement."
-      },
-      "reference": "UN climate and policy sources on AI, data centres, energy demand and sustainability",
-      "referenceLinks": [
-        {
-          "label": "UNFCCC: AI, energy demand and climate action",
-          "url": "https://unfccc.int/news/how-ai-can-help-fight-climate-change"
-        },
-        {
-          "label": "United Nations: AI environmental impact and governance context",
-          "url": "https://www.un.org/en/desa/artificial-intelligence-and-sustainable-development"
-        }
-      ]
-    },
-    {
-      "topic": {
-        "zh": "自动驾驶运营基础设施",
-        "en": "Autonomous-mobility operating infrastructure"
-      },
-      "title": {
-        "zh": "Robotaxi扩张进入城市运营阶段，车队维护和调度能力变成竞争要点",
-        "en": "Robotaxi expansion moves into city operations, making fleet maintenance and dispatch capability decisive"
-      },
-      "summary": {
-        "zh": "Waymo近期继续扩大美国城市服务版图，行业关注点正在从单车自动驾驶能力，转向车队补能、清洁、检查、远程协助、事故处置、乘客支持和城市许可的运营系统。自动驾驶如果要从示范线路进入常态商业服务，必须证明它能在雨雪、道路施工、临时管制、大型活动和高峰需求下稳定调度车辆，并把维护停场时间控制在可接受范围内。对基础设施和地产合作方来说，robotaxi不只是软件产品，它需要车库、充电、通信、安保和城市路侧协调能力。",
-        "en": "Waymo has continued expanding its U.S. city service footprint, while industry attention is moving from the autonomy of a single vehicle toward the operating system around fleets: charging, cleaning, inspection, remote assistance, incident response, rider support, and city permitting. For autonomous driving to move from demonstration corridors into routine commercial service, it must show stable dispatch through weather, road works, temporary controls, major events, and peak demand, while keeping maintenance downtime within an acceptable range. For infrastructure and real-estate partners, robotaxi is not just software; it needs depots, charging, communications, security, and city curbside coordination."
-      },
-      "watch": {
-        "zh": "关注新城市服务是否披露单位车辆日订单量、充电周转、人工远程协助频率和安全事件处理时长；这些才是商业化运营质量的关键指标。",
-        "en": "Watch whether new-city operations disclose rides per vehicle per day, charging turnaround, remote-assistance frequency, and incident-resolution time; those are core indicators of commercial operating quality."
-      },
-      "reference": "Waymo public updates and current reporting on U.S. robotaxi city expansion and operating infrastructure",
-      "referenceLinks": [
-        {
-          "label": "Waymo: official service updates",
-          "url": "https://waymo.com/blog/"
-        },
-        {
-          "label": "Axios: robotaxi expansion and operating footprint coverage",
-          "url": "https://www.axios.com/technology"
-        }
-      ]
-    }
-  ],
-  "insights": [
-    {
-      "area": {
-        "zh": "地震岩土与场地效应",
-        "en": "Geotechnical seismic design and site effects"
-      },
-      "title": {
-        "zh": "液化不再只是岩土附录问题，正在进入结构抗震性能的前置设计假设",
-        "en": "Liquefaction is no longer a geotechnical appendix; it is becoming a front-end assumption in seismic performance"
-      },
-      "evidence": {
-        "zh": "证据：USGS在2026年7月发布关于美国本土风险目标液化规范建议的研究，强调把液化触发概率、地震危险度和工程性能目标更一致地联系起来。",
-        "en": "Evidence: USGS published July 2026 work on risk-targeted liquefaction-code recommendations for the conterminous United States, emphasising a more consistent connection between liquefaction triggering probability, seismic hazard, and engineering performance targets."
-      },
-      "summary": {
-        "zh": "传统项目中，液化常被放在岩土报告后部，结构工程师只接收一个“需要处理”或“不需要处理”的结论。但风险目标方法提醒我们，液化判断本质上影响上部结构的位移需求、基础形式、桩基侧向变形、地下管线、地坪沉降和灾后可恢复性。对结构工程师的重要性在于，抗震设计不能只使用标准反应谱和构件延性，还要确认场地是否可能在设计地震下改变支承条件。如果液化触发概率和后果没有进入概念设计，后期再用局部地基处理或加大构件补救，往往会更贵且不一定改善整体性能。边界是，风险目标图谱不能替代场地勘察、室内试验和项目特定的变形分析。",
-        "en": "In many projects, liquefaction is still placed near the back of the geotechnical report, and structural engineers receive only a binary conclusion: mitigation required or not required. Risk-targeted methods remind us that liquefaction directly affects superstructure displacement demand, foundation type, pile lateral deformation, buried services, slab settlement, and post-event recoverability. For structural engineers, the issue is that seismic design cannot rely only on a standard response spectrum and member ductility; it must confirm whether the site may change the support condition during the design earthquake. If liquefaction probability and consequence are not considered during concept design, later remediation through local ground improvement or stronger members is often more expensive and may not improve whole-system performance. The boundary is that risk-targeted maps do not replace site investigation, laboratory testing, and project-specific deformation analysis."
-      },
-      "caveat": {
-        "zh": "液化筛查应早于基础方案冻结，并与可恢复性、沉降容许值、地下管线和施工可行性一起评审。",
-        "en": "Liquefaction screening should occur before the foundation scheme is locked, and should be reviewed together with recoverability, settlement tolerance, buried services, and constructability."
-      },
-      "reference": "USGS July 2026 publication on risk-targeted liquefaction code recommendations",
-      "referenceLinks": [
-        {
-          "label": "USGS Publications Warehouse: Risk-targeted liquefaction code recommendations",
-          "url": "https://pubs.usgs.gov/publication/70275558"
-        }
-      ]
-    },
-    {
-      "area": {
-        "zh": "工程计算模型质量控制",
-        "en": "Engineering calculation-model quality control"
-      },
-      "title": {
-        "zh": "结构工程的软件能力正在从“会建模”转向“能审查模型假设”",
-        "en": "Structural software skill is shifting from building models to auditing modelling assumptions"
-      },
-      "evidence": {
-        "zh": "证据：IStructE关于计算模型的专业指南持续强调模型目的、边界条件、荷载路径、敏感性、验证和独立检查，而不是把软件输出当成自动正确的设计结果。",
-        "en": "Evidence: IStructE professional guidance on calculation models continues to emphasise model purpose, boundary conditions, load path, sensitivity, validation, and independent checking, rather than treating software output as automatically correct design."
-      },
-      "summary": {
-        "zh": "AI辅助计算、参数化建模和商用有限元工具让工程师能更快地产生模型，但真正稀缺的能力是判断模型是否回答了正确问题。结构计算模型至少应说明目标是初步尺寸、荷载分配、局部构件设计、施工阶段复核、动力响应还是非线性性能评估；边界条件如何代表真实支承；荷载路径是否被模型隐含改变；网格、连接刚度和二阶效应是否影响结论；以及手算或简化模型能否独立复核关键数量级。未来职业能力的分界线会更清楚：初级工程师可以更快建模，但能发现错误约束、错误刚度、错误组合和错误解释的人，才真正承担设计责任。",
-        "en": "AI-assisted calculation, parametric modelling, and commercial finite-element tools allow engineers to generate models faster, but the scarce skill is judging whether the model answers the right question. A structural calculation model should state whether its purpose is preliminary sizing, load distribution, local member design, construction-stage review, dynamic response, or nonlinear performance assessment; how its boundary conditions represent real support; whether the load path has been implicitly changed; whether mesh, connection stiffness, and second-order effects affect the conclusion; and whether hand calculations or simplified models independently check the key order of magnitude. The future professional boundary will be clearer: junior engineers may build models faster, but engineers who can find wrong restraints, wrong stiffness, wrong combinations, and wrong interpretations will still carry the design responsibility."
-      },
-      "caveat": {
-        "zh": "模型审查记录应随计算书提交，而不是只保存软件文件；没有目的和边界说明的模型很难被独立复核。",
-        "en": "Model-review notes should be submitted with the calculation package, not only stored inside the software file; a model without purpose and boundary explanation is hard to check independently."
-      },
-      "reference": "IStructE professional guidance on calculation models and structural engineering model checks",
-      "referenceLinks": [
-        {
-          "label": "IStructE: Structural use of calculation models",
-          "url": "https://www.istructe.org/resources/guidance/structural-use-of-calculation-models/"
-        }
-      ]
-    },
-    {
-      "area": {
-        "zh": "结构健康监测与数字孪生",
-        "en": "Structural health monitoring and digital twins"
-      },
-      "title": {
-        "zh": "数字孪生的价值不在三维界面，而在可校准的结构状态证据链",
-        "en": "The value of a digital twin is not the 3D interface; it is a calibratable evidence chain for structural condition"
-      },
-      "evidence": {
-        "zh": "证据：ASCE和工程研究机构持续把数字孪生、传感器、结构健康监测和资产管理联系起来，重点从可视化展示转向数据质量、模型更新、异常解释和维护决策。",
-        "en": "Evidence: ASCE and engineering research organisations increasingly connect digital twins, sensors, structural health monitoring, and asset management, with emphasis moving from visual display toward data quality, model updating, anomaly interpretation, and maintenance decisions."
-      },
-      "summary": {
-        "zh": "很多数字孪生项目把重点放在漂亮的三维界面，但结构工程中的核心问题是：传感器测到的应变、加速度、位移、温度和裂缝信息，能否可靠地更新结构模型并支持维护决策。工程师需要关心采样频率、传感器漂移、环境温度影响、基线工况、有限元模型简化、报警阈值、误报漏报成本和检修闭环。一个可信的数字孪生应能解释“为什么报警”“结构状态如何变化”“建议行动的风险依据是什么”。边界是，传感器不能直接替代检查和工程判断；没有校准、数据治理和责任边界的系统，只是更复杂的仪表盘。",
-        "en": "Many digital-twin projects focus on an attractive 3D interface, but the structural-engineering question is whether measured strain, acceleration, displacement, temperature, and cracking data can reliably update a structural model and support maintenance decisions. Engineers need to care about sampling frequency, sensor drift, thermal effects, baseline condition, finite-element simplification, alarm thresholds, false-positive and false-negative cost, and the inspection feedback loop. A credible digital twin should explain why an alarm occurred, how structural condition is changing, and what risk basis supports the recommended action. The boundary is that sensors do not directly replace inspection and engineering judgement; without calibration, data governance, and responsibility boundaries, the system is only a more complicated dashboard."
-      },
-      "caveat": {
-        "zh": "在桥梁、塔桅和关键设施中，数字孪生应先定义可行动问题，再选择传感器和可视化，而不是反过来。",
-        "en": "For bridges, towers, and critical facilities, a digital twin should first define actionable questions, then select sensors and visualisation, not the other way around."
-      },
-      "reference": "ASCE infrastructure resilience and digital-twin context for monitoring-informed asset management",
-      "referenceLinks": [
-        {
-          "label": "ASCE: Future World Vision and digital twin context",
-          "url": "https://www.asce.org/communities/institutes-and-technical-groups/future-world-vision"
-        },
-        {
-          "label": "NIST: Smart infrastructure and structural monitoring research",
-          "url": "https://www.nist.gov/el"
-        }
-      ]
-    }
-  ],
-  "classroom": {
-    "title": {
-      "zh": "抗震设计不是只放大水平力：为什么反应谱、延性、层间位移和构造细节必须一起看",
-      "en": "Seismic design is not just larger horizontal force: why spectra, ductility, drift, and detailing must be read together"
-    },
-    "text": {
-      "zh": "抗震设计与普通重力设计最大的不同，是目标并不只是让构件在一个放大的水平力下保持弹性。地震作用是随机、循环、方向相关且与场地条件密切相关的动力输入；结构体系通过周期、质量、阻尼、延性、超强、耗能机制和构造细节共同决定性能。中国GB 50011、澳大利亚AS 1170.4、美国ASCE/SEI 7和欧洲EN 1998都使用反应谱思想，但表达方式不同：有的强调地震影响系数和等效重力荷载，有的使用设计谱和行为系数，有的使用风险目标地震参数、反应修正系数和重要性系数。跨规范比较时，不能只比较一个基底剪力系数。必须先说明危险度水平、场地类别、结构周期、延性等级、重要性、规则性、扭转、二阶效应、层间位移限值和延性构造要求。工程提醒是：较小的设计剪力并不一定代表较低安全水平，可能是因为规范允许结构通过延性耗能；但这种折减只有在梁柱节点、剪力墙边缘构件、钢连接、箍筋约束、强柱弱梁和能力设计路径真正落实时才成立。",
-      "en": "The main difference between seismic design and ordinary gravity design is that the objective is not simply to keep members elastic under a larger horizontal force. Earthquake action is stochastic, cyclic, direction-dependent, and strongly linked to site conditions. Structural performance is governed together by period, mass, damping, ductility, overstrength, energy-dissipation mechanism, and detailing. China's GB 50011, Australia's AS 1170.4, the U.S. ASCE/SEI 7, and Europe's EN 1998 all use response-spectrum concepts, but their language differs: seismic influence coefficients and equivalent gravity load, design spectra and behaviour factors, or risk-targeted seismic parameters, response modification factors, and importance factors. In cross-code comparison, it is not enough to compare one base-shear coefficient. The engineer must align hazard level, site class, structural period, ductility class, importance, regularity, torsion, second-order effects, drift limits, and ductile detailing requirements. The design reminder is that a lower design shear does not automatically mean a lower safety level; it may reflect permitted ductile energy dissipation. That reduction is valid only when beam-column joints, wall boundary elements, steel connections, transverse confinement, strong-column weak-beam hierarchy, and capacity-design load paths are actually delivered."
-    },
-    "comparisonPoints": [
-      {
-        "label": {
-          "zh": "反应谱控制需求的形状",
-          "en": "Response spectra define the shape of demand"
-        },
-        "text": {
-          "zh": "同样的峰值地面加速度，短周期刚性结构和长周期柔性结构的设计加速度可能不同。比较规范时，应先统一场地类别、阻尼、周期取值和设计地震水平。",
-          "en": "For the same peak ground acceleration, a short-period stiff structure and a long-period flexible structure may have different design accelerations. Cross-code review should first align site class, damping, period estimate, and design earthquake level."
-        }
-      },
-      {
-        "label": {
-          "zh": "延性折减必须由构造细节兑现",
-          "en": "Ductility reduction must be paid for by detailing"
-        },
-        "text": {
-          "zh": "反应修正系数、行为系数或延性等级都隐含结构可进入非弹性耗能。若节点、墙端、连接、箍筋和能力设计没有落实，不能只享受较低水平力而不承担构造要求。",
-          "en": "Response modification factors, behaviour factors, and ductility classes all imply inelastic energy dissipation. If joints, wall ends, connections, transverse reinforcement, and capacity design are not delivered, the design cannot take the lower force without the detailing obligation."
-        }
-      },
-      {
-        "label": {
-          "zh": "层间位移是性能而不是附属校核",
-          "en": "Interstorey drift is performance, not an afterthought"
-        },
-        "text": {
-          "zh": "基底剪力满足并不保证非结构构件、幕墙、设备、楼梯、电梯和使用后恢复性满足。层间位移应与重要性、使用功能、二阶效应和非结构损伤目标一起审查。",
-          "en": "Passing base shear does not prove that non-structural components, curtain walls, equipment, stairs, lifts, or post-event recovery will perform. Drift should be checked together with importance, occupancy, second-order effects, and non-structural damage objectives."
-        }
-      }
-    ],
-    "takeaway": {
-      "zh": "抗震设计记录至少应写清：地震危险度来源、场地类别、设计谱、结构周期、质量取值、延性或行为系数、重要性、规则性、基底剪力、层间位移、P-Delta效应、能力设计路径和关键构造细节。跨规范复核的重点不是把某个系数互相换算，而是确认两套体系是否在相同危险度和相同性能目标下比较。",
-      "en": "A seismic-design record should state the hazard source, site class, design spectrum, structural period, seismic weight, ductility or behaviour factor, importance, regularity, base shear, interstorey drift, P-Delta effects, capacity-design path, and critical detailing. Cross-code review is not a coefficient conversion exercise; it asks whether two systems are being compared at the same hazard level and performance objective."
-    },
-    "example": {
-      "title": {
-        "zh": "概念例子：为什么两个规范的基底剪力不能直接比较？",
-        "en": "Concept example: why can two code base shears not be compared directly?"
-      },
-      "intro": {
-        "zh": "假设同一栋规则多层建筑分别按不同规范做等效静力抗震初步设计。一个体系给出较高的弹性谱加速度但允许较大的延性折减，另一个体系给出较低的谱值但要求更严格的位移或构造限制。以下公式只用于说明审查路径；实际项目必须采用项目适用规范的完整地震危险度、场地参数、质量定义、组合、偶然偏心、扭转和构造条款。",
-        "en": "Assume the same regular multistorey building is checked by equivalent static seismic design under different codes. One system may give a higher elastic spectral acceleration but permit a larger ductility reduction, while another may give a lower spectral value but impose tighter drift or detailing limits. The equations below only explain the review path; real projects must use the full seismic hazard, site parameters, mass definition, combinations, accidental eccentricity, torsion, and detailing provisions of the applicable code."
-      },
-      "equations": [
-        {
-          "label": {
-            "zh": "概念性设计基底剪力",
-            "en": "Conceptual design base shear"
-          },
-          "formula": "V ≈ Sₐ(T) W / R𝑑",
-          "formulaTokens": [
-            {
-              "var": "V"
-            },
-            {
-              "text": " ≈ "
-            },
-            {
-              "var": "S",
-              "sub": "a"
-            },
-            {
-              "text": "("
-            },
-            {
-              "var": "T"
-            },
-            {
-              "text": ") "
-            },
-            {
-              "var": "W"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "R",
-              "sub": "d"
-            }
-          ],
-          "citation": {
-            "zh": "Derived relation：用于概括反应谱需求、地震重量和延性或行为折减之间的关系；不是GB 50011、AS 1170.4、ASCE/SEI 7或EN 1998的完整规范公式。ASCE/SEI 7-22 Ch. 12、EN 1998-1 Cl. 4.3.3.2和AS 1170.4等效静力法均体现了谱需求与结构体系折减共同控制水平设计作用的思想。",
-            "en": "Derived relation: used to summarise the relationship among spectral demand, seismic weight, and ductility or behaviour reduction; not a complete code equation from GB 50011, AS 1170.4, ASCE/SEI 7, or EN 1998. ASCE/SEI 7-22 Chapter 12, EN 1998-1 Clause 4.3.3.2, and the AS 1170.4 equivalent static method all reflect that horizontal design action is controlled by spectral demand together with structural-system reduction."
-          }
-        },
-        {
-          "label": {
-            "zh": "层间位移需求放大",
-            "en": "Amplified storey-drift demand"
-          },
-          "formula": "Δₘ ≈ C𝑑 Δₑ / Iₑ",
-          "formulaTokens": [
-            {
-              "var": "Δ",
-              "sub": "m"
-            },
-            {
-              "text": " ≈ "
-            },
-            {
-              "var": "C",
-              "sub": "d"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "Δ",
-              "sub": "e"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "I",
-              "sub": "e"
-            }
-          ],
-          "citation": {
-            "zh": "Simplified screen：用于说明弹性分析位移通常需要按体系延性和重要性进行放大或调整后再做位移验算；ASCE/SEI 7-22 Sec. 12.8.6采用类似的位移放大逻辑。其他规范体系的符号、限值和调整方式不同，应按项目适用规范执行。",
-            "en": "Simplified screen: used to show that elastic-analysis displacement commonly needs amplification or adjustment for system ductility and importance before drift checking; ASCE/SEI 7-22 Section 12.8.6 uses a similar displacement-amplification logic. Other code systems use different notation, limits, and adjustment methods, which must follow the applicable project code."
-          }
-        },
-        {
-          "label": {
-            "zh": "二阶效应敏感性",
-            "en": "Second-order sensitivity"
-          },
-          "formula": "θ ≈ P Δ / (V h)",
-          "formulaTokens": [
-            {
-              "var": "θ"
-            },
-            {
-              "text": " ≈ "
-            },
-            {
-              "var": "P"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "Δ"
-            },
-            {
-              "text": " / ("
-            },
-            {
-              "var": "V"
-            },
-            {
-              "text": " "
-            },
-            {
-              "var": "h"
-            },
-            {
-              "text": ")"
-            }
-          ],
-          "citation": {
-            "zh": "Derived relation：基于重力荷载、侧移、层剪力和层高的稳定敏感性表达，用于提示P-Delta效应会把位移问题转化为强度和稳定问题；不是任一规范的完整验算式。ASCE/SEI 7和EN 1998均要求考虑二阶效应或稳定影响。",
-            "en": "Derived relation: based on stability sensitivity from gravity load, lateral displacement, storey shear, and storey height, used to show how P-Delta effects turn drift into a strength and stability issue; not a complete code check from any one standard. ASCE/SEI 7 and EN 1998 both require second-order or stability effects to be considered."
-          }
-        },
-        {
-          "label": {
-            "zh": "位移限值筛查",
-            "en": "Drift-limit screen"
-          },
-          "formula": "Δₘ / h ≤ δₗᵢₘ",
-          "formulaTokens": [
-            {
-              "var": "Δ",
-              "sub": "m"
-            },
-            {
-              "text": " / "
-            },
-            {
-              "var": "h"
-            },
-            {
-              "text": " ≤ "
-            },
-            {
-              "var": "δ",
-              "sub": "lim"
-            }
-          ],
-          "citation": {
-            "zh": "Simplified screen：用于表达层间位移角不应超过按结构体系、重要性和非结构损伤目标选定的限值；具体限值应按GB 50011、AS 1170.4、ASCE/SEI 7或EN 1998及项目性能目标确定。",
-            "en": "Simplified screen: expresses that interstorey drift ratio should not exceed the limit selected for structural system, importance, and non-structural damage objective; the actual limit must be taken from GB 50011, AS 1170.4, ASCE/SEI 7, or EN 1998 together with the project performance objective."
-          }
-        }
-      ],
-      "note": {
-        "zh": "如果一个规范给出的V较小，但同时要求更严格的延性构造、能力设计、位移验算和二阶效应控制，它不应被简单理解为“更不安全”。跨规范抗震复核应比较完整设计链条：危险度、谱、质量、折减、位移、构造和性能目标。",
-        "en": "If one code gives a smaller V but also requires stricter ductile detailing, capacity design, drift checking, and second-order control, it should not be read simply as less safe. Cross-code seismic review should compare the full design chain: hazard, spectrum, mass, reduction, drift, detailing, and performance objective."
-      }
-    },
-    "references": [
-      "GB 50011-2010 with later revisions: Chinese seismic design code for buildings, including seismic influence coefficient, site class, regularity, drift and detailing requirements.",
-      "AS 1170.4: Australian earthquake actions standard, including equivalent static and dynamic procedures for earthquake actions.",
-      "ASCE/SEI 7-22: U.S. minimum design loads and associated criteria, including seismic design requirements in Chapter 12.",
-      "EN 1998-1:2004+A1:2013: Eurocode 8 design of structures for earthquake resistance, including design spectra and behaviour-factor concepts."
-    ],
-    "referenceLinks": [
-      {
-        "label": "National Digital Standard Library: GB 50011-2010",
-        "url": "https://www.ndls.org.cn/standard/detail/40fb4e1230cbe2c8fbf115bc76a56943"
-      },
-      {
-        "label": "ABCB NCC: AS 1170.4 referenced earthquake actions context",
-        "url": "https://ncc.abcb.gov.au/editions/ncc-2022/adopted/volume-one/b-structure/part-b1-structural-provisions"
-      },
-      {
-        "label": "ASCE Library: ASCE/SEI 7-22",
-        "url": "https://ascelibrary.org/doi/book/10.1061/9780784415788"
-      },
-      {
-        "label": "European Commission JRC: Eurocode 8",
-        "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-8-design-structures-earthquake-resistance"
-      }
-    ]
-  }
+    "date":  "2026-07-31",
+    "edition":  {
+                    "zh":  "晨间简报",
+                    "en":  "Morning Brief"
+                },
+    "liveUpdates":  [
+                        {
+                            "topic":  {
+                                          "zh":  "机器人与物理AI",
+                                          "en":  "Robotics and physical AI"
+                                      },
+                            "title":  {
+                                          "zh":  "Humanoid完成1.52亿美元融资，工业机器人开始进入“部署与维护”阶段",
+                                          "en":  "Humanoid raises $152 million as industrial robotics moves toward deployment and maintenance"
+                                      },
+                            "summary":  {
+                                            "zh":  "英国机器人公司Humanoid完成1.52亿美元A轮融资，公开报道显示投资者关注点已从单次演示转向制造、物流和仓储中的真实部署。行业变化不只在机器人本体，而在于安全认证、备件供应、远程运维、工作单元改造和客户流程重构。对土木与结构工程而言，机器人进入工厂和施工现场后，会反向影响地坪荷载、设备基础、通行净空、维护空间和人机隔离；项目评估应把机器人作为持续运行的生产设备，而不是一次性采购的智能终端。",
+                                            "en":  "UK robotics company Humanoid has raised a $152 million Series A, with public reporting indicating that investor attention is moving from demonstrations toward deployment in manufacturing, logistics, and warehousing. The shift is not only about the robot itself: it also requires safety certification, spare-parts supply, remote maintenance, work-cell modification, and redesigned customer processes. For civil and structural engineers, robots entering factories and construction sites will affect floor loading, equipment foundations, clearances, maintenance access, and human-machine separation. A project should treat the robot as continuously operating production equipment, not as a one-off smart appliance."
+                                        },
+                            "watch":  {
+                                          "zh":  "关注实际客户的机器人日运行时间、人工接管频率、维护停机和现场改造成本；这些指标比融资金额更能说明规模化能力。",
+                                          "en":  "Watch daily operating hours, human intervention, maintenance downtime, and site-modification cost; these indicators say more about scale-up than the funding amount."
+                                      },
+                            "reference":  "Reuters report on Humanoid\u0027s Series A financing and industrial deployment",
+                            "referenceLinks":  [
+                                                   {
+                                                       "label":  "Reuters via Euronext: Humanoid raises $152 million",
+                                                       "url":  "https://live.euronext.com/en/financial-news/robotics-startup-humanoid-raises-152-million-series-round-135-billion-valuation"
+                                                   }
+                                               ]
+                        },
+                        {
+                            "topic":  {
+                                          "zh":  "AI科学与生物医药",
+                                          "en":  "AI for science and biomedicine"
+                                      },
+                            "title":  {
+                                          "zh":  "美国Genesis Mission获超过50亿美元支持，自主实验室成为AI基础设施的新方向",
+                                          "en":  "The U.S. Genesis Mission receives more than $5 billion for AI-enabled science and autonomous laboratories"
+                                      },
+                            "summary":  {
+                                            "zh":  "美国白宫公布Genesis Mission，计划投入超过50亿美元，建设面向科学研究的AI驱动全栈系统，并把自主实验室、机器人、边缘AI和实时分析纳入国家级研发基础设施。它对生物医药和材料研发的影响，在于实验设计、样品制备、检测和数据分析可能被串成连续闭环。工程团队需要关注的不只是模型精度，还包括实验设备的可靠性、数据可追溯、洁净空间、机电系统和机器人安全边界；“AI研发”因此越来越像一类复杂的实验设施工程。",
+                                            "en":  "The White House has announced the Genesis Mission with more than $5 billion in support for an AI-enabled, full-stack scientific research system, including autonomous laboratories, robotics, edge AI, and real-time analysis. Its significance for biomedicine and materials research is the possibility of linking experiment design, sample preparation, testing, and data analysis into a continuous loop. Engineering teams must consider more than model accuracy: equipment reliability, data traceability, clean spaces, building services, and robot safety boundaries also matter. AI research is increasingly becoming a form of complex laboratory infrastructure engineering."
+                                        },
+                            "watch":  {
+                                          "zh":  "关注项目是否形成可重复的实验流程、开放数据接口和跨机构验证，而不是只公布模型或单次实验结果。",
+                                          "en":  "Watch whether the programme produces repeatable workflows, open data interfaces, and cross-institution validation rather than only models or isolated demonstrations."
+                                      },
+                            "reference":  "The White House Genesis Mission announcement on AI for science and autonomous laboratories",
+                            "referenceLinks":  [
+                                                   {
+                                                       "label":  "White House: Genesis Mission announcement",
+                                                       "url":  "https://www.whitehouse.gov/releases/2026/07/45502/?query-11-page=3"
+                                                   }
+                                               ]
+                        },
+                        {
+                            "topic":  {
+                                          "zh":  "半导体封装与热管理",
+                                          "en":  "Semiconductor packaging and thermal management"
+                                      },
+                            "title":  {
+                                          "zh":  "Intel与Lens Technology合作推进先进封装，AI硬件竞争延伸到结构与热可靠性",
+                                          "en":  "Intel and Lens Technology advance advanced packaging as AI hardware competition reaches structural and thermal reliability"
+                                      },
+                            "summary":  {
+                                            "zh":  "Intel与Lens Technology宣布合作，方向包括先进封装、玻璃基板研发、精密制造和面向数据中心服务器的高可靠结构与热解决方案。AI芯片性能提升正在把瓶颈从晶体管数量扩展到封装翘曲、热循环、连接可靠性、振动运输和可维护性。对结构工程和机电协同而言，服务器机架、冷却系统、地板承载、设备抗震和热管理不应再被分成互不相干的专业包；硬件路线变化会直接改变数据中心的荷载、冷却和运维设计假设。",
+                                            "en":  "Intel and Lens Technology have announced a collaboration covering advanced packaging, glass-substrate research, precision manufacturing, and high-reliability structural and thermal solutions for data-centre servers. As AI chips improve, constraints are expanding beyond transistor count to package warpage, thermal cycling, interconnect reliability, transport vibration, and maintainability. For structural and building-services coordination, server racks, cooling systems, floor capacity, equipment restraint, and thermal management should not be treated as unrelated packages. Changes in the hardware roadmap directly alter data-centre load, cooling, and maintenance assumptions."
+                                        },
+                            "watch":  {
+                                          "zh":  "关注玻璃基板、封装互连和液冷系统的量产验证，以及这些方案对机架密度、楼板荷载和维护通道的实际影响。",
+                                          "en":  "Watch volume qualification of glass substrates, package interconnects, and liquid-cooling systems, together with their effects on rack density, floor loading, and maintenance access."
+                                      },
+                            "reference":  "Intel Newsroom announcement on advanced semiconductor packaging with Lens Technology",
+                            "referenceLinks":  [
+                                                   {
+                                                       "label":  "Intel Newsroom: advanced semiconductor packaging collaboration",
+                                                       "url":  "https://newsroom.intel.com/new-technologies/intel-and-lens-technology-collaborate-to-enable-advanced-semiconductor-packaging-for-the-ai-era"
+                                                   }
+                                               ]
+                        }
+                    ],
+    "insights":  [
+                     {
+                         "area":  {
+                                      "zh":  "低碳混凝土与全寿命安全",
+                                      "en":  "Low-carbon concrete and life-cycle safety"
+                                  },
+                         "title":  {
+                                       "zh":  "低碳材料的工程价值，不应只用初始碳排衡量",
+                                       "en":  "The engineering value of low-carbon materials cannot be measured by upfront carbon alone"
+                                   },
+                         "evidence":  "2026 Engineering Structures study from the University of Liverpool repository",
+                         "summary":  {
+                                         "zh":  "利物浦大学公开的2026年研究把低碳混凝土的结构安全、服役期退化和气候变化影响放到同一分析框架中。这个方向的重要性在于，替代胶凝材料或降低熟料比例可能改变强度增长、收缩徐变、耐久性和维护周期；若只比较生产阶段的kg CO₂e，可能把风险和后续维修成本隐藏起来。对结构工程师而言，未来的低碳设计能力应包括材料不确定性、环境作用、时间相关性能和全寿命可靠度的联合判断。研究仍依赖模型假设和场景参数，不能直接替代项目级试验、耐久性设计或规范验算，但它提示职业能力会从“选一个低碳材料”转向“证明结构在全寿命内仍满足性能目标”。",
+                                         "en":  "A 2026 study made available through the University of Liverpool examines structural safety, in-service deterioration, and climate-change effects for low-carbon concrete within one framework. The significance is that replacing binders or reducing clinker can change strength development, shrinkage and creep, durability, and maintenance intervals. Comparing only production-stage kg CO2e can hide risk and future repair cost. Structural engineers will increasingly need to combine material uncertainty, environmental actions, time-dependent performance, and life-cycle reliability. The research remains dependent on model assumptions and scenario parameters; it does not replace project testing, durability design, or code checks. It does, however, point toward a professional shift from choosing a low-carbon material to demonstrating that performance targets remain satisfied throughout the design life."
+                                     },
+                         "caveat":  {
+                                        "zh":  "寿命期模型的结果对暴露环境、维护策略、材料参数和气候情景高度敏感；不能把单一案例的碳排或可靠度结果直接外推到所有项目。",
+                                        "en":  "Life-cycle results are highly sensitive to exposure, maintenance strategy, material parameters, and climate scenarios; a single case cannot be transferred directly to every project."
+                                    },
+                         "reference":  "University of Liverpool repository record for the 2026 Engineering Structures paper",
+                         "referenceLinks":  [
+                                                {
+                                                    "label":  "University of Liverpool: life-cycle structural safety and embodied carbon study",
+                                                    "url":  "https://livrepository.liverpool.ac.uk/3198396/"
+                                                }
+                                            ]
+                     },
+                     {
+                         "area":  {
+                                      "zh":  "自感知混凝土与结构监测",
+                                      "en":  "Self-sensing concrete and structural monitoring"
+                                  },
+                         "title":  {
+                                       "zh":  "材料本身开始承担传感功能，但监测系统仍需结构工程校准",
+                                       "en":  "When concrete becomes a sensor, structural calibration still matters"
+                                   },
+                         "evidence":  "2026 Construction and Building Materials research on recycled-carbon-fibre and EAF-slag concrete",
+                         "summary":  {
+                                         "zh":  "近期研究测试了掺再生碳纤维、金属纤维和电弧炉钢渣骨料的自感知混凝土，在静力和循环弯曲作用下利用电阻变化识别响应。其潜力在于把材料、受力和监测结合起来，减少传统传感器布置的局部性，并为桥梁、楼板和修复构件提供连续状态信息。但电阻变化并不天然等于裂缝宽度、刚度退化或剩余承载力；温度、含水率、接触电极、材料离散性和加载历史都可能改变信号。对结构工程师而言，关键能力是建立“电信号—力学状态—决策阈值”的可审计映射，并用独立试验和物理模型验证，而不是把机器学习分类准确率当作安全证明。",
+                                         "en":  "Recent research has tested self-sensing concrete containing recycled carbon fibres, metallic fibres, and electric-arc-furnace slag aggregate, using resistance changes to identify response under static and cyclic flexure. The potential is to combine material, mechanics, and monitoring, reducing the spatial limitations of conventional sensors and providing continuous condition information for bridges, floors, and repaired members. Electrical change is not automatically crack width, stiffness loss, or residual capacity: temperature, moisture, electrode contact, material variability, and loading history also affect the signal. The engineering task is to establish an auditable mapping from electrical response to mechanical state and decision threshold, validated by independent testing and physics-based models rather than treating machine-learning accuracy as proof of safety."
+                                     },
+                         "caveat":  {
+                                        "zh":  "目前结果多处于材料试验或受控构件试验阶段；长期耐久性、现场标定、传感器漂移和数据解释仍是工程化应用的主要边界。",
+                                        "en":  "Much of the evidence remains at material or controlled-member scale; long-term durability, field calibration, sensor drift, and interpretation remain major limits to deployment."
+                                    },
+                         "reference":  "ScienceDirect study on self-sensing concrete with recycled carbon fibres and EAF slag aggregate",
+                         "referenceLinks":  [
+                                                {
+                                                    "label":  "ScienceDirect: self-sensing concrete under static and cyclic flexure",
+                                                    "url":  "https://www.sciencedirect.com/science/article/pii/S0950061826024748"
+                                                }
+                                            ]
+                     },
+                     {
+                         "area":  {
+                                      "zh":  "生成式AI与结构健康监测",
+                                      "en":  "Generative AI and structural health monitoring"
+                                  },
+                         "title":  {
+                                       "zh":  "结构监测正在从数据可视化走向物理约束的诊断工作流",
+                                       "en":  "Structural monitoring is moving from data visualisation to physics-constrained diagnosis"
+                                   },
+                         "evidence":  "Curtin University research listing on generative and physics-informed AI for structural health monitoring",
+                         "summary":  {
+                                         "zh":  "Curtin大学公开的研究方向把生成式AI、物理信息AI和结构健康监测结合起来，目标是从传感器数据中识别损伤、退化和异常状态。对既有桥梁、海洋混凝土和大型基础设施而言，真正困难的不是生成一张状态图，而是在传感器稀疏、数据缺失、环境变化和模型不确定条件下，判断异常是否具有工程意义。这个方向会提高结构工程师对时序数据、有限元模型、贝叶斯更新和异常检测的要求。AI输出仍必须保留传感器质量控制、物理一致性检查、人工复核和记录追溯；它适合辅助检查和风险排序，不应绕过正式的承载力、耐久性或维修决策流程。",
+                                         "en":  "Curtin University research directions combine generative AI, physics-informed AI, and structural health monitoring to identify damage, deterioration, and abnormal states from sensor data. For existing bridges, marine concrete, and major infrastructure, the hard problem is not producing a condition image; it is deciding whether an apparent anomaly is engineering-significant when sensors are sparse, data are missing, environments change, and models are uncertain. This direction raises the need for structural engineers who can work with time-series data, finite-element models, Bayesian updating, and anomaly detection. AI outputs still require sensor-quality control, physics checks, human review, and traceable records. They are suitable for inspection support and risk ranking, not for bypassing formal capacity, durability, or repair decisions."
+                                     },
+                         "caveat":  {
+                                        "zh":  "生成式模型可能产生看似合理但缺乏物理依据的解释；没有独立验证集、基线模型和异常事件记录时，不能把诊断结果当作可靠度结论。",
+                                        "en":  "Generative models can produce plausible but physically unsupported explanations; without independent validation, baseline models, and documented anomalies, a diagnosis is not a reliability conclusion."
+                                    },
+                         "reference":  "Curtin University structural engineering and monitoring research portfolio",
+                         "referenceLinks":  [
+                                                {
+                                                    "label":  "Curtin University: structural engineering and monitoring research",
+                                                    "url":  "https://www.curtin.edu.au/research/research_areas/structural-engineering-and-monitoring/"
+                                                }
+                                            ]
+                     }
+                 ],
+    "classroom":  {
+                      "title":  {
+                                    "zh":  "疲劳不是一次性强度验算：为什么中国与国际钢结构设计都必须追踪应力循环？",
+                                    "en":  "Fatigue is not a one-time strength check: why Chinese and international steel design must track stress cycles"
+                                },
+                      "text":  {
+                                   "zh":  "疲劳破坏的核心不是某一次荷载是否超过屈服强度，而是大量应力循环在焊缝、孔洞、连接板和几何突变处逐步累积损伤。中国GB 50017-2017将钢结构疲劳作为专门验算内容，并对适用条件和构造细节作出规定；欧洲EN 1993-1-9则以疲劳作用、应力范围、细部类别和疲劳强度曲线组织设计。两者的共同逻辑是把“构件强度”转化为“细部在目标寿命内承受多少循环”，但荷载谱、统计分级、细部分类、焊接质量和检查维护策略不能直接互换。美国、澳洲和欧洲工程实践也常把疲劳设计与桥梁、起重机、风机、轨道和机械振动的运行谱结合起来。设计时不能只看最大应力；应明确应力范围的来源、循环次数、应力集中、残余应力、腐蚀环境和检修可达性。对于既有结构，监测数据可以帮助更新荷载谱，但不能在没有细部复核和材料、焊缝证据的情况下直接延长设计寿命。",
+                                   "en":  "Fatigue is governed not by whether one load event exceeds yield strength, but by the accumulation of many stress cycles at welds, holes, connection plates, and geometric discontinuities. GB 50017-2017 treats fatigue as a dedicated steel-design verification with defined applicability and detailing requirements; EN 1993-1-9 organises the assessment around fatigue actions, stress ranges, detail categories, and fatigue-strength curves. The shared logic is to convert member strength into the number of cycles a detail can sustain over the target life, but load spectra, statistical classes, detail categories, welding quality, and inspection strategies cannot be transferred directly between systems. U.S., Australian, and European practice likewise links fatigue design to operating spectra for bridges, cranes, wind turbines, rail, and machinery. Design should not examine only peak stress: the source of stress range, cycle count, stress concentration, residual stress, corrosion environment, and inspectability must be stated. For existing structures, monitoring can update a load spectrum, but it cannot extend design life without detail verification and evidence on materials and welds."
+                               },
+                      "comparisonPoints":  [
+                                               {
+                                                   "label":  {
+                                                                 "zh":  "比较对象是细部，不只是截面",
+                                                                 "en":  "The detail, not only the section, is the comparison object"
+                                                             },
+                                                   "text":  {
+                                                                "zh":  "疲劳裂纹通常从焊趾、焊根、孔边或截面突变处起始，因此规范会按细部类别、缺口效应和施工质量给出不同疲劳强度。",
+                                                                "en":  "Fatigue cracks usually initiate at weld toes, weld roots, hole edges, or section changes, so codes classify details by notch effect and execution quality."
+                                                            }
+                                               },
+                                               {
+                                                   "label":  {
+                                                                 "zh":  "荷载谱决定寿命",
+                                                                 "en":  "The load spectrum controls life"
+                                                             },
+                                                   "text":  {
+                                                                "zh":  "同一构件在不同运行频率、应力范围和停机策略下可能得到完全不同的疲劳寿命；最大荷载不能代表全部疲劳损伤。",
+                                                                "en":  "The same member can have very different fatigue lives under different operating frequency, stress range, and shutdown regimes; the maximum load does not represent total fatigue damage."
+                                                            }
+                                               },
+                                               {
+                                                   "label":  {
+                                                                 "zh":  "检查与设计是一体的",
+                                                                 "en":  "Inspection is part of design"
+                                                             },
+                                                   "text":  {
+                                                                "zh":  "疲劳设计应同时考虑裂纹可发现性、检查间隔、腐蚀防护和维修可达性，否则计算寿命与实际安全管理并不闭合。",
+                                                                "en":  "Fatigue design should include crack detectability, inspection intervals, corrosion protection, and repair access; otherwise calculated life is disconnected from safety management."
+                                                            }
+                                               }
+                                           ],
+                      "takeaway":  {
+                                       "zh":  "中外规范在符号和细部分类上不完全相同，但都要求工程师把应力范围、循环次数、细部类别和目标寿命连接起来。疲劳设计最重要的输出不是一个“安全系数”，而是一条可追溯的荷载谱—细部—寿命—检查链。",
+                                       "en":  "Chinese and international codes use different symbols and detail classifications, but all require a connection between stress range, cycle count, detail category, and target life. The most important fatigue output is not one safety factor, but a traceable load-spectrum–detail–life–inspection chain."
+                                   },
+                      "example":  {
+                                      "title":  {
+                                                    "zh":  "参考实例：焊接细部的应力范围与循环损伤",
+                                                    "en":  "Worked reference: stress range and cumulative damage at a welded detail"
+                                                },
+                                      "intro":  {
+                                                    "zh":  "以下公式用于解释疲劳审查路径，属于力学和疲劳评估中的派生关系，不替代GB 50017-2017或EN 1993-1-9中的细部类别、疲劳曲线、荷载谱和安全系数规定。实际项目应根据焊缝形式、应力方向、应力范围分级、腐蚀环境和检验策略进行完整验算。",
+                                                    "en":  "The equations below explain the fatigue-review pathway. They are derived relations used in mechanics and fatigue assessment, not substitutes for the detail categories, fatigue curves, load spectra, or safety factors in GB 50017-2017 or EN 1993-1-9. A project must assess weld form, stress direction, stress-range classes, corrosion environment, and inspection strategy."
+                                                },
+                                      "equations":  [
+                                                        {
+                                                            "label":  {
+                                                                          "zh":  "S–N关系的示意形式",
+                                                                          "en":  "Illustrative S–N relation"
+                                                                      },
+                                                            "formula":  "Δσ = A Nᵇ",
+                                                            "formulaTokens":  [
+                                                                                  {
+                                                                                      "var":  "Δσ"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " = "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "A"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "N",
+                                                                                      "sup":  "b"
+                                                                                  }
+                                                                              ],
+                                                            "citation":  {
+                                                                             "zh":  "Derived relation：表示应力范围Δσ与允许循环次数N之间的幂律关系；不是GB 50017-2017或EN 1993-1-9中的可直接套用原公式，A和b应由相应细部类别的疲劳曲线确定。",
+                                                                             "en":  "Derived relation: represents a power-law relationship between stress range Δσ and allowable cycles N; it is not a directly transferable code equation, and A and b must come from the fatigue curve for the relevant detail category."
+                                                                         }
+                                                        },
+                                                        {
+                                                            "label":  {
+                                                                          "zh":  "应力范围定义",
+                                                                          "en":  "Stress-range definition"
+                                                                      },
+                                                            "formula":  "Δσ = σₘₐₓ − σₘᵢₙ",
+                                                            "formulaTokens":  [
+                                                                                  {
+                                                                                      "var":  "Δσ"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " = "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "σ",
+                                                                                      "sub":  "max"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " − "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "σ",
+                                                                                      "sub":  "min"
+                                                                                  }
+                                                                              ],
+                                                            "citation":  {
+                                                                             "zh":  "Derived relation：用于说明一个循环中的应力范围由最大应力与最小应力之差确定；实际疲劳验算仍需按应力类型、组合方式和细部类别采用规范规定。",
+                                                                             "en":  "Derived relation: defines the stress range in one cycle as the difference between maximum and minimum stress; the fatigue check must still follow the code rules for stress type, combination, and detail category."
+                                                                         }
+                                                        },
+                                                        {
+                                                            "label":  {
+                                                                          "zh":  "Miner累积损伤筛查",
+                                                                          "en":  "Miner cumulative-damage screen"
+                                                                      },
+                                                            "formula":  "D = ∑ nᵢ / Nᵢ ≤ 1",
+                                                            "formulaTokens":  [
+                                                                                  {
+                                                                                      "var":  "D"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " = "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "∑"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "n",
+                                                                                      "sub":  "i"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " / "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "N",
+                                                                                      "sub":  "i"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " ≤ 1"
+                                                                                  }
+                                                                              ],
+                                                            "citation":  {
+                                                                             "zh":  "Derived relation：用于把不同应力范围等级的循环损伤进行线性累积筛查；实际规范可能对荷载谱、部分系数、疲劳强度和损伤准则作出不同规定。",
+                                                                             "en":  "Derived relation: linearly accumulates damage from stress-range classes as a screening model; the applicable code may define different load-spectrum, partial-factor, fatigue-strength, and damage criteria."
+                                                                         }
+                                                        }
+                                                    ],
+                                      "note":  {
+                                                   "zh":  "例如，若某细部在两个应力范围等级下分别经历n₁和n₂个循环，工程师不能只比较最大应力，而要按对应疲劳曲线求N₁、N₂，再检查累积损伤、细部类别、焊接质量和检验安排。",
+                                                   "en":  "For example, if a detail experiences n₁ and n₂ cycles in two stress-range classes, the engineer should not compare only the maximum stress. The corresponding fatigue curve must provide N₁ and N₂, followed by checks of cumulative damage, detail category, weld quality, and inspection planning."
+                                               }
+                                  },
+                      "references":  [
+                                         "GB 50017-2017, Standard for design of steel structures, Chapter 16 fatigue provisions.",
+                                         "EN 1993-1-9:2005, Eurocode 3: Design of steel structures – Part 1-9: Fatigue.",
+                                         "JRC Eurocodes overview and official Eurocode 3 listing."
+                                     ],
+                      "referenceLinks":  [
+                                             {
+                                                 "label":  "GB 50017-2017 fatigue provisions (public PDF)",
+                                                 "url":  "https://pro5323b5d3-pic11.ysjianzhan.cn/upload/2_7GB50017-2017GJGSJBZ.pdf"
+                                             },
+                                             {
+                                                 "label":  "JRC Eurocodes: Eurocode 3 and EN 1993-1-9",
+                                                 "url":  "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-3-design-steel-structures?page=2"
+                                             },
+                                             {
+                                                 "label":  "NEN: EN 1993-1-9 fatigue scope",
+                                                 "url":  "https://www.nen.nl/en/nen-en-1993-1-9-2023-ontw-en-307775"
+                                             }
+                                         ]
+                  }
 }
