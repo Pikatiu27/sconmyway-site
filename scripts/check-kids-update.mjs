@@ -40,7 +40,7 @@ function isFreshLeadEvent(event) {
 }
 
 const libraryActivityPattern = /\b(library|libraries|storytime|story time|rhyme time|baby rhyme|book club)\b|\u56fe\u4e66\u9986|\u6545\u4e8b\u4f1a/i;
-const lowAgeOnlyPattern = /\b(baby rhyme|rhyme time|storytime|story time|playgroup|toddler time|under 3|0\s*-\s*3|0 to 3|0-3|babies only|toddlers only)\b/i;
+const lowAgeOnlyPattern = /\b(baby rhyme|rhyme time|storytime|story time|playgroup|toddler time|0\s*-\s*3|0 to 3|0-3|babies only|toddlers only)\b|\bunder 3\b(?!\s+free)/i;
 
 function isLibraryActivity(event) {
   return libraryActivityPattern.test(Object.values(event || {}).join(" "));
