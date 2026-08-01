@@ -1,76 +1,374 @@
 {
   "date": "2026-08-02",
-  "edition": {"zh": "2026年8月2日行业简报", "en": "Industry Briefing for 2 August 2026"},
+  "edition": {
+    "zh": "2026年8月2日行业简报",
+    "en": "Industry Briefing for 2 August 2026"
+  },
   "liveUpdates": [
     {
-      "topic": {"zh": "机器人与实体AI", "en": "Robotics and physical AI"},
-      "title": {"zh": "LG成立机器人业务中心，把Physical AI从研发议题推向交付组织", "en": "LG establishes a robotics business centre to move physical AI toward delivery"},
-      "summary": {"zh": "LG宣布成立独立的Robotics Business Center，并配套建设数据工厂能力，负责从业务开发到销售和运营的完整链条。值得关注的不是一次组织调整，而是机器人产业开始把训练数据、现场部署、维护服务和商业交付放在同一套组织里。对工程行业，这意味着“机器人进入工地或工厂”不再只是设备采购问题，还会牵涉地面平整度、荷载路径、作业安全、定位基准、充电设施和人机协同边界。结构与土木工程师未来需要理解设备运行工况和维护周期，才能把自动化设备真正纳入建筑与基础设施的全寿命设计。", "en": "LG has created a dedicated Robotics Business Center, together with data-factory capability, covering business development, sales, and operations. The important signal is not merely an organisational change: robotics is beginning to combine training data, field deployment, maintenance, and commercial delivery in one operating model. For the built environment, robots entering factories or construction sites will involve more than equipment procurement. Floor flatness, load paths, operational safety, positioning references, charging infrastructure, and human-machine boundaries become design inputs. Civil and structural engineers will increasingly need to understand equipment duty cycles and maintenance requirements if automation is to be integrated into buildings and infrastructure over the asset life."},
-      "watch": {"zh": "关注机器人数据工厂是否转化为可量化的安全验证、维护责任和现场验收标准。", "en": "Watch whether the data-factory model becomes measurable safety validation, maintenance accountability, and site-acceptance criteria."},
-      "reference": "LG Electronics announcement on its Robotics Business Center", "referenceLinks": [{"label": "LG: Robotics Business Center", "url": "https://www.lg.com/global/newsroom/news/corporate/lg-electronics-establishes-robotics-business-center-to-accelerate-future-growth/"}]
+      "topic": {
+        "zh": "AI数据中心与能源基础设施",
+        "en": "AI data centres and energy infrastructure"
+      },
+      "title": {
+        "zh": "美国能源部推动Paducah旧铀浓缩场址转型为AI数据中心与电力综合体",
+        "en": "US plan would turn the Paducah uranium site into an AI data-centre and power complex"
+      },
+      "summary": {
+        "zh": "AP报道，美国能源部计划把肯塔基州Paducah旧铀浓缩厂场址改造为约1000亿美元的AI数据中心综合体，并配套新建燃气发电和电池储能。这个事件的行业意义不只是“又一个大型数据中心”：AI算力正在把退役工业场地、环境治理、燃气调峰、储能接入、输电容量和社区许可捆绑成同一个基础设施问题。对土木和结构工程师而言，场址复用会带来地基污染边界、重型设备基础、长期沉降、厂区道路、冷却水和电力构筑物接口等一组早期风险；项目能否交付，取决于能源、环境和结构约束能否在概念阶段被同时验证。",
+        "en": "AP reports that the U.S. Department of Energy plans to convert the former Paducah uranium-enrichment site in Kentucky into an AI data-centre complex of roughly $100 billion, supported by new gas generation and battery storage. The signal is larger than another hyperscale campus: AI compute is tying brownfield reuse, environmental stewardship, gas peaking, storage interconnection, transmission capacity, and community consent into one infrastructure problem. For civil and structural engineers, reuse of a legacy industrial site brings early risks around contamination boundaries, heavy equipment foundations, long-term settlement, internal roads, cooling water, and power structures. Delivery will depend on verifying energy, environmental, and structural constraints together at concept stage."
+      },
+      "watch": {
+        "zh": "关注场址清理、发电许可和数据中心分期是否能形成同一套可审计的工程接口。",
+        "en": "Watch whether site cleanup, generation permitting, and data-centre phasing are governed through one auditable engineering interface."
+      },
+      "reference": "Associated Press reporting on the Paducah AI data-centre and energy complex",
+      "referenceLinks": [
+        {
+          "label": "AP: Kentucky uranium plant AI data center plan",
+          "url": "https://apnews.com/article/a4cf07af1b6776971dc5d609c996ca13"
+        }
+      ]
     },
     {
-      "topic": {"zh": "半导体先进封装", "en": "Advanced semiconductor packaging"},
-      "title": {"zh": "Intel与LËNS Technology合作推进AI时代先进封装，封装设备成为产能瓶颈之一", "en": "Intel and LËNS Technology collaborate on advanced packaging for the AI era"},
-      "summary": {"zh": "Intel与LËNS Technology宣布合作，目标是提升先进半导体封装设备的自动化、精度和产能。AI芯片竞争正在从单纯的晶体管性能延伸到封装、互连、热管理和良率控制，意味着制造能力本身成为产品路线的一部分。对跨行业工程师而言，先进封装厂房不是普通轻工业建筑：洁净室振动、设备基础、温湿度稳定、极端洁净、工艺气体和维护吊装共同决定产线可用率。结构工程设计应更早参与设备荷载、微振动控制和后续工艺升级，而不是等设备清单冻结后再被动配合。", "en": "Intel and LËNS Technology announced a collaboration intended to improve the automation, precision, and capacity of advanced semiconductor-packaging equipment. AI-chip competition is moving beyond transistor performance into packaging, interconnects, thermal management, and yield control, making manufacturing capability part of the product roadmap. For engineers working across sectors, an advanced-packaging facility is not an ordinary light-industrial building: cleanroom vibration, equipment foundations, environmental stability, process gases, and maintenance lifting all influence line availability. Structural design needs to engage earlier with equipment loads, micro-vibration control, and future process upgrades instead of waiting for the equipment list to be frozen."},
-      "watch": {"zh": "关注先进封装扩产是否带动旧厂房改造、设备基础加固和洁净室结构性能验证。", "en": "Watch whether packaging expansion drives brownfield retrofits, equipment-foundation strengthening, and structural verification for cleanrooms."},
-      "reference": "Intel and LËNS Technology collaboration announcement", "referenceLinks": [{"label": "Intel Newsroom: Intel and LËNS Technology", "url": "https://newsroom.intel.com/new-technologies/intel-and-lens-technology-collaborate-to-enable-advanced-semiconductor-packaging-for-the-ai-era"}]
+      "topic": {
+        "zh": "机器人供应链与电网设备安全",
+        "en": "Robotics supply chains and grid-device security"
+      },
+      "title": {
+        "zh": "美国把部分外国机器人和电力逆变器纳入安全限制，实体AI进入基础设施审查范围",
+        "en": "US restrictions on foreign robots and inverters move physical AI into infrastructure security review"
+      },
+      "summary": {
+        "zh": "AP报道，美国FCC已对部分外国制造的人形、四足机器人以及电力逆变器实施新的进口和市场准入限制，理由是网络连接设备可能带来安全风险。它把“机器人”和“逆变器”放在同一政策框架下，说明实体AI不再只是制造业自动化议题，也涉及建筑、电网、数据中心和现场安全系统的可信供应链。工程行业需要关注的不只是设备是否可用，还包括传感器数据流向、固件更新、远程控制、维护责任和备用方案。未来在厂房、物流设施、能源站和数据中心采用机器人或智能电气设备时，规范化的设备审查、隔离网络和验收记录会变得更接近工程交付的一部分。",
+        "en": "AP reports that the FCC has introduced new import and marketing restrictions for some foreign-made humanoid and quadruped robots and power inverters, citing security risks from connected devices. Placing robots and inverters in the same policy frame shows that physical AI is no longer just a manufacturing-automation topic; it is part of trusted supply chains for buildings, grids, data centres, and site safety systems. Engineers need to look beyond whether equipment works and examine sensor data paths, firmware updates, remote-control authority, maintenance responsibility, and fallback modes. In factories, logistics facilities, energy stations, and data centres, formal equipment review, isolated networks, and acceptance records will increasingly look like part of engineering delivery."
+      },
+      "watch": {
+        "zh": "关注业主是否把联网机器人和逆变器纳入机电、信息安全和运行维护联合验收。",
+        "en": "Watch whether owners include connected robots and inverters in combined MEP, cybersecurity, and operations acceptance."
+      },
+      "reference": "Associated Press reporting on FCC restrictions for foreign-made robots and power inverters",
+      "referenceLinks": [
+        {
+          "label": "AP: US bans foreign-made humanoid robots",
+          "url": "https://apnews.com/article/c9f5e3c94d91d00eff3b61b141fab366"
+        }
+      ]
     },
     {
-      "topic": {"zh": "国家级AI基础设施", "en": "National AI infrastructure"},
-      "title": {"zh": "美国Genesis Mission把AI科研基础设施纳入国家级能源与计算计划", "en": "The US Genesis Mission places AI research infrastructure inside a national energy and computing programme"},
-      "summary": {"zh": "美国白宫发布Genesis Mission，提出把联邦科研数据、超级计算、实验设施和AI工具连接起来，以加速能源、材料和生物医学研究。它释放出的行业信号是：AI基础设施正在从企业数据中心扩展为由公共科研设施、能源系统和长期数据治理共同支撑的国家级工程。对土木和结构专业，机会不只在机房建设，还在实验设施改造、重型设备基础、极端环境防护、数据中心能源冗余和跨机构资产管理。项目成功与否取决于接口治理和可验证性能，而不是单一模型或单一建筑的先进程度。", "en": "The White House Genesis Mission proposes connecting federal research data, supercomputing, experimental facilities, and AI tools to accelerate work in energy, materials, and biomedicine. The industry signal is that AI infrastructure is expanding from corporate data centres into national engineering programmes supported by public research facilities, energy systems, and long-term data governance. For civil and structural professionals, the opportunity extends beyond server halls to laboratory retrofits, heavy-equipment foundations, extreme-environment protection, energy redundancy, and cross-agency asset management. Delivery will depend on governed interfaces and verifiable performance, not on the sophistication of one model or one building."},
-      "watch": {"zh": "关注科研设施的算力、能源和实验设备是否形成统一的容量规划与资产接口。", "en": "Watch whether compute, energy, and laboratory equipment are managed through one capacity plan and asset-interface strategy."},
-      "reference": "The White House Genesis Mission announcement", "referenceLinks": [{"label": "White House: Genesis Mission", "url": "https://www.whitehouse.gov/releases/2026/07/45502/?query-11-page=3"}]
+      "topic": {
+        "zh": "区域技术制造与产业基础",
+        "en": "Regional technology manufacturing and industrial foundations"
+      },
+      "title": {
+        "zh": "美国商务部拟向六个Tech Hubs投入1.69亿美元，先进制药、量子、关键矿物和核能同列产业基础",
+        "en": "US Commerce plans $169 million for six Tech Hubs across pharma, quantum, minerals, biomanufacturing, and nuclear"
+      },
+      "summary": {
+        "zh": "美国商务部经济发展署宣布，拟向六个区域Tech Hubs投入1.69亿美元，覆盖AI赋能先进制药、量子材料与部件、关键矿物加工、生物制造、森林生物制品和下一代核能。这个组合说明未来产业竞争越来越依赖“区域工程能力”：实验室、洁净生产、危险品和生物安全控制、公用工程冗余、物流走廊、人才住房和能源接入必须一起落地。对工程师来说，产业园区设计不应只按单栋建筑分包，而要把可扩建基础、工艺弹性、许可边界和韧性公用工程作为早期总图约束。区域技术政策正在把土木基础设施重新推到创新产业的核心位置。",
+        "en": "The U.S. Economic Development Administration announced intended awards of $169 million across six regional Tech Hubs, spanning AI-enabled advanced pharmaceutical manufacturing, quantum materials and components, critical-minerals processing, biomanufacturing, forest bioproducts, and next-generation nuclear energy. The mix shows that future industrial competition depends on regional engineering capacity: laboratories, clean production, hazardous-material and biosafety controls, utility redundancy, logistics corridors, workforce housing, and energy access must be delivered together. For engineers, industrial-campus design should not be divided only by individual buildings; expandable foundations, process flexibility, permitting boundaries, and resilient utilities need to be early master-plan constraints. Regional technology policy is pulling civil infrastructure back into the centre of innovation delivery."
+      },
+      "watch": {
+        "zh": "关注Tech Hubs资金是否转化为可施工的场地、能源和洁净制造能力，而不只是研发补贴。",
+        "en": "Watch whether Tech Hubs funding becomes buildable site, energy, and clean-manufacturing capacity rather than only research subsidy."
+      },
+      "reference": "U.S. Economic Development Administration Tech Hubs funding announcement",
+      "referenceLinks": [
+        {
+          "label": "EDA: $169 million Tech Hubs funding",
+          "url": "https://www.eda.gov/news/article/2026/07/20/us-department-commerce-intends-invest-169-million-tech-hubs-funding-enhance"
+        }
+      ]
     }
   ],
   "insights": [
     {
-      "area": {"zh": "钢结构连接与模块化建造", "en": "Steel connections and modular construction"},
-      "title": {"zh": "模块化结构的性能上限，往往由连接细节而不是构件强度决定", "en": "For modular steel structures, connection detailing can govern performance before member strength"},
-      "evidence": "Peer-reviewed study of long-bolted connections in panelized modular houses", "summary": {"zh": "关于板式模块化住宅长螺栓连接的同行评审研究表明，连接板厚度、螺栓布置和螺栓直径会显著改变连接的承载力、破坏模式和转动能力。这个结论对结构工程的启发很直接：模块化建造把制造公差、吊装阶段、现场拼装和最终受力状态压缩到同一个连接节点中，节点的滑移、孔壁承压、板件屈曲和施工可达性可能比构件名义强度更早控制。未来工程师需要把连接设计、装配顺序、可检查性和替换策略一起建模，并用试验或经验证的非线性分析校准关键假设。研究基于特定模块体系和有限元参数分析，不能直接替代项目规范验算。", "en": "A peer-reviewed study of long-bolted connections in panelized modular housing found that plate thickness, bolt arrangement, and bolt diameter materially affect capacity, failure mode, and rotational behaviour. The engineering implication is direct: modular construction compresses manufacturing tolerance, lifting, site assembly, and the final load path into the same joint. Slip, bearing, plate instability, and inspection access may govern before nominal member strength. Future engineers will need to model connection design together with erection sequence, inspectability, and replacement strategy, using tests or validated nonlinear analysis to calibrate critical assumptions. The study is based on a particular modular system and parametric finite-element work; it does not replace project-specific code verification."},
-      "caveat": {"zh": "连接研究的结果依赖板件、摩擦面、预紧和装配误差；不能把单一试验或模型参数直接外推到所有模块体系。", "en": "Connection results depend on plates, faying surfaces, pretension, and erection tolerances; one test or model parameter set cannot be generalised to every modular system."},
-      "reference": "Elhadary, Bediwy and Elshaer, Advances in Structural Engineering", "referenceLinks": [{"label": "UAEU: Capacity and failure mode prediction of long-bolted connections", "url": "https://research.uaeu.ac.ae/en/publications/capacity-and-failure-mode-prediction-of-long-bolted-connection-in/"}]
+      "area": {
+        "zh": "低碳结构与服役安全",
+        "en": "Low-carbon structures and service safety"
+      },
+      "title": {
+        "zh": "低碳设计不能只数材料碳，还要把服役失效风险纳入碳责任",
+        "en": "Low-carbon design must count service failure risk, not only material carbon"
+      },
+      "evidence": "Engineering Structures article on structural safety and embodied carbon under climate change",
+      "summary": {
+        "zh": "2026年8月发表于Engineering Structures的研究把混凝土结构服役安全、气候变化退化和隐含碳联系起来，指出传统LCA通常假设结构在寿命期内安全服役，因此可能低估失效、维修或替换带来的碳后果。这个观点对结构工程很关键：低碳不是简单降低水泥或钢筋用量，而是在可靠性、耐久性、维护策略和施工质量变异之间做工程平衡。对于未来设计，工程师需要把碳评估从“材料清单统计”推进到“性能条件下的寿命决策”，说明退化模型、检查周期、维修触发条件和安全储备如何影响全寿命排放。研究仍是模型化框架，项目应用时不能直接把论文参数当作规范系数；它更适合作为审查低碳方案边界条件和敏感性的提醒。",
+        "en": "A 2026 Engineering Structures study links service safety, climate-driven degradation, and embodied carbon for concrete structures, arguing that conventional LCA often assumes safe service throughout the design life and can therefore miss carbon consequences from failure, repair, or replacement. The point matters for structural practice: low carbon is not simply a reduction in cement or reinforcement; it is an engineering balance among reliability, durability, maintenance strategy, and construction-quality variability. Future design needs to move carbon assessment from material schedules toward performance-conditioned life-cycle decisions, stating how deterioration models, inspection intervals, repair triggers, and safety reserve affect whole-life emissions. The study remains a modelling framework, so its parameters should not be used as code coefficients; its value is in forcing boundary-condition and sensitivity checks for low-carbon options."
+      },
+      "caveat": {
+        "zh": "低碳优化若削弱耐久性或检查可达性，可能把排放从建造阶段转移到维修和失效阶段。",
+        "en": "If low-carbon optimisation weakens durability or inspection access, emissions may move from construction into repair and failure consequences."
+      },
+      "reference": "Xia, Xiao, Beer and Guan, Engineering Structures / University of Liverpool repository",
+      "referenceLinks": [
+        {
+          "label": "University of Liverpool: structural safety and embodied carbon",
+          "url": "https://livrepository.liverpool.ac.uk/3198396/"
+        }
+      ]
     },
     {
-      "area": {"zh": "混凝土收缩与徐变", "en": "Concrete shrinkage and creep"},
-      "title": {"zh": "收缩徐变正在从材料附加项变成结构全寿命的接口问题", "en": "Shrinkage and creep are becoming a whole-life interface problem, not a material add-on"},
-      "evidence": "University of Queensland structural engineering research portfolio", "summary": {"zh": "昆士兰大学将混凝土早龄期行为、收缩徐变、低碳高性能混凝土与结构全寿命分析并列为研究方向，反映出时间效应已不再只是材料专业的附加修正。连续梁、组合构件、预应力结构和高层建筑中，收缩徐变会改变内力重分配、长期挠度、预应力损失、裂缝风险以及机电和幕墙接口的变形需求。对未来结构工程师，关键能力是把材料模型的时间参数、施工龄期、约束条件和监测数据带回结构分析，而不是在软件里默认一个固定的长期系数。模型仍受环境、配合比、养护和施工历史影响，现场试验和项目适用性审查不可省略。", "en": "The University of Queensland places early-age concrete behaviour, shrinkage and creep, low-carbon high-performance concrete, and whole-life analysis within the same structural research portfolio. This reflects a broader shift: time-dependent behaviour is no longer merely a material add-on. In continuous beams, composite members, prestressed structures, and tall buildings, shrinkage and creep alter force redistribution, long-term deflection, prestress loss, cracking risk, and movement demands at façade and services interfaces. For future structural engineers, the important capability is to carry material time parameters, construction age, restraint, and monitoring evidence back into the structural model rather than accepting a default long-term factor. Models remain sensitive to environment, mix, curing, and construction history; testing and project-specific applicability review remain essential."},
-      "caveat": {"zh": "时间效应模型的参数不确定性很大；在重要构件中应说明参数来源、龄期假设和敏感性，而不是只报告一个长期结果。", "en": "Time-dependent parameters are uncertain; important designs should state their sources, age assumptions, and sensitivity rather than reporting one long-term result."},
-      "reference": "University of Queensland structural engineering research portfolio", "referenceLinks": [{"label": "UQ: Structural engineering research", "url": "https://civil.uq.edu.au/research-expertise-and-consulting/structural-engineering/structural-engineering-research"}]
+      "area": {
+        "zh": "气候适应型地基设计",
+        "en": "Climate-informed foundation design"
+      },
+      "title": {
+        "zh": "膨胀土基础设计正在从经验湿润深度转向气候情景输入",
+        "en": "Expansive-soil foundation design is moving from empirical wetting depth toward climate scenario inputs"
+      },
+      "evidence": "Research in Engineering study on climate change, water migration, and drilled-pier design",
+      "summary": {
+        "zh": "2026年Research in Engineering一项研究用经试验和现场数据校准的有限元模型，分析气候变化对膨胀土水分迁移和钻孔墩长度的影响。结论不是简单说未来基础一定更深或更浅，而是指出温度、降雨和土层深度会共同改变湿润深度与饱和度，进而影响刚性和弹性方法下的墩长判断。对工程师的启发是，气候适应型地基设计不应只在报告里引用历史气候平均值，还应说明所用情景、土水特征曲线、边界条件和敏感性。对于住宅基础、轻型工业厂房和长期运营资产，这类方法可帮助识别哪些项目需要保守处理，哪些项目只是需要更好的现场水分管理和监测。局限在于研究基于特定地区与土型，不能直接外推到所有膨胀土场地。",
+        "en": "A 2026 Research in Engineering study used finite-element modelling calibrated with laboratory and field data to examine how climate change affects moisture migration in expansive soils and drilled-pier length. The lesson is not that future foundations are always deeper or shallower; temperature, rainfall, and clay profile jointly change wetting depth and degree of saturation, which then changes pier-length decisions under rigid and elastic methods. For engineers, climate-informed foundation design should not rely only on historic climate averages in the geotechnical report. It should state the scenario, soil-water characteristic curve, boundary conditions, and sensitivity. For housing, light industrial buildings, and long-life assets, this approach can separate projects that need conservative foundations from projects that mainly need better site moisture control and monitoring. The limitation is that the study is region- and soil-specific, so it cannot be transferred directly to every expansive-soil site."
+      },
+      "caveat": {
+        "zh": "气候情景不能替代现场勘察；土层、排水、植被和维护条件仍会支配基础表现。",
+        "en": "Climate scenarios do not replace site investigation; soil profile, drainage, vegetation, and maintenance still govern foundation performance."
+      },
+      "reference": "Research in Engineering article on climate change and expansive-soil foundation design",
+      "referenceLinks": [
+        {
+          "label": "ScienceDirect: climate change and expansive-soil foundation design",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2590123026016555"
+        }
+      ]
     },
     {
-      "area": {"zh": "结构监测与工程数据", "en": "Structural monitoring and engineering data"},
-      "title": {"zh": "结构健康监测的职业价值，在于把数据变成可审计的工程判断", "en": "The professional value of structural health monitoring is turning data into auditable engineering judgement"},
-      "evidence": "University of Nebraska-Lincoln structural engineering research programme", "summary": {"zh": "内布拉斯加大学林肯分校把结构性能、结构健康监测、无损检测、大数据分析、风险可靠度和性能化评估放在同一研究版图中。对行业来说，这比“给桥梁装更多传感器”更重要：监测系统只有在基准状态、数据质量、异常判据和工程处置流程都可追溯时，才会改善维护决策。结构工程师未来需要同时理解传感器不确定性、模型更新、损伤识别和规范责任边界，把连续数据转化为检查优先级、限载建议或进一步试验的证据。大学研究平台能够验证方法，但现场传感器漂移、环境影响和样本不足仍会限制自动化结论。", "en": "The University of Nebraska-Lincoln places structural performance, structural health monitoring, nondestructive testing, big-data analytics, risk and reliability, and performance-based assessment within one research landscape. For practice, this is more important than simply installing more sensors: monitoring improves maintenance only when the baseline state, data quality, anomaly criteria, and engineering response are traceable. Future structural engineers will need to understand sensor uncertainty, model updating, damage identification, and the boundary of professional responsibility, converting continuous data into evidence for inspection priority, load restriction, or further testing. University platforms can validate methods, but sensor drift, environmental effects, and limited samples still constrain automated conclusions in the field."},
-      "caveat": {"zh": "监测数据不能独立替代现场检查和责任工程师判断；异常检测必须有明确的升级路径与人工复核。", "en": "Monitoring data cannot independently replace inspection or the responsible engineer's judgement; anomaly detection needs a defined escalation path and human review."},
-      "reference": "University of Nebraska-Lincoln structural engineering research overview", "referenceLinks": [{"label": "UNL: Structural engineering research", "url": "https://engineering.unl.edu/civil/structural-engineering-research/"}]
+      "area": {
+        "zh": "桩基耐久性与土-结构相互作用",
+        "en": "Pile durability and soil-structure interaction"
+      },
+      "title": {
+        "zh": "埋地钢桩腐蚀不能只按截面折减处理，它也是土-结构可靠度问题",
+        "en": "Buried steel-pile corrosion is not just section loss; it is a soil-structure reliability problem"
+      },
+      "evidence": "Structures state-of-the-art review on corrosion effects for steel piles embedded in soils",
+      "summary": {
+        "zh": "2026年Structures综述指出，钢桩在土中腐蚀的长期性能仍有明显知识缺口，尤其是土壤化学、地下水、微生物、电化学机制、截面损失和承载性能之间的耦合关系。传统做法容易把问题简化为“腐蚀裕量”或统一截面折减，但实际工程中，桩身局部腐蚀、土压力重分布、侧阻与端阻变化、施工损伤和检测盲区会共同影响可靠度。对结构与岩土工程师而言，关键不是给所有钢桩套一个固定折减，而是建立环境分类、可检测性、保护措施、设计寿命和监测触发值之间的闭环。该综述强调研究仍需要更多试验和现场数据，因此项目设计应保留保守性并明确假设来源。",
+        "en": "A 2026 Structures review shows that the long-term performance of steel piles embedded in soils still contains major knowledge gaps, especially in the coupling among soil chemistry, groundwater, microbial and electrochemical mechanisms, section loss, and bearing performance. Practice can be tempted to reduce the problem to a corrosion allowance or uniform section reduction, but real projects involve localised loss, soil-pressure redistribution, changes in shaft and end resistance, construction damage, and inspection blind spots. For structural and geotechnical engineers, the important task is not to apply one fixed reduction to every steel pile; it is to close the loop among environmental classification, inspectability, protective measures, design life, and monitoring trigger values. Because the review highlights the need for more test and field data, project design should remain conservative and state the source of each assumption."
+      },
+      "caveat": {
+        "zh": "桩基腐蚀评估需要岩土、材料和结构共同输入；单一专业模型容易漏掉控制边界。",
+        "en": "Pile corrosion assessment needs geotechnical, materials, and structural input; a single-discipline model can miss governing boundaries."
+      },
+      "reference": "Structures review on corrosion of steel piles embedded in soils",
+      "referenceLinks": [
+        {
+          "label": "ScienceDirect: corrosion effects on steel piles embedded in soils",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2352012426008702"
+        }
+      ]
     }
   ],
   "classroom": {
-    "title": {"zh": "高强螺栓连接不只是“螺栓够不够”：中国与国际设计如何处理滑移、承压和预紧？", "en": "A high-strength bolted joint is more than bolt count: how Chinese and international design treat slip, bearing, and pretension"},
-    "text": {"zh": "钢结构连接的中外差异，首先不是某一个螺栓强度数字，而是连接性能被定义为什么。在中国规范语境中，普通螺栓连接和高强度螺栓连接分别组织抗剪、抗拉、孔壁承压以及摩擦型连接的验算；美国AISC 360和RCSC则明确区分bearing-type与slip-critical连接，并把预紧、摩擦面、安装方法和滑移临界状态纳入设计选择。欧洲Eurocode 3同样将承压型和抗滑移连接分开处理。工程师不能把“高强螺栓”直接等同于“不会滑移”：螺栓等级、预紧力、摩擦面处理、孔型、施工质量和荷载是否反复都会改变控制机制。真正可靠的比较，应先确定功能要求，再确定连接类别和可验证的施工与检查条件。", "en": "The key difference between Chinese and international steel-connection practice is not one bolt-strength number, but what performance the joint is required to provide. Chinese design provisions organise checks for ordinary and high-strength bolted joints, including shear, tension, bearing, and friction-type behaviour. AISC 360 and the RCSC Specification explicitly distinguish bearing-type and slip-critical joints, linking the choice to pretension, faying surfaces, installation method, and the slip limit state. Eurocode 3 likewise separates bearing and slip-resistant connections. A high-strength bolt must not be assumed to be slip-free: bolt grade, pretension, surface treatment, hole type, installation quality, and repeated loading can change the governing mechanism. A reliable comparison starts with the functional requirement, then selects a connection category and construction and inspection controls that can be verified."},
-    "comparisonPoints": [
-      {"label": {"zh": "先定义功能，再选连接类别", "en": "Define the function before selecting the joint category"}, "text": {"zh": "如果允许少量滑移后由螺栓和孔壁承压传力，承压型连接的验算逻辑可能适用；如果变形、疲劳或设备定位不允许滑移，就必须按抗滑移目标组织预紧和摩擦面控制。", "en": "If limited slip followed by bolt and hole bearing is acceptable, a bearing-type check may be appropriate. If deformation, fatigue, or equipment alignment does not tolerate slip, pretension and faying-surface control must be organised around a slip-resistant objective."}},
-      {"label": {"zh": "预紧力不是材料强度的同义词", "en": "Pretension is not a synonym for material strength"}, "text": {"zh": "高强钢材提高了抗拉和抗剪能力，但抗滑移能力还取决于夹紧力、摩擦系数、表面状态、孔型和安装质量；这些参数应由规范和施工记录共同支持。", "en": "Higher-strength steel increases tensile and shear capacity, but slip resistance also depends on clamping force, friction coefficient, surface condition, hole type, and installation quality; the code and construction records must support those parameters."}},
-      {"label": {"zh": "重复荷载会改变设计问题", "en": "Repeated loading changes the design problem"}, "text": {"zh": "风振、机械振动、桥梁交通或设备运行会让滑移、预紧力保持和疲劳相互耦合；静力承载力通过并不代表连接在长期运行中满足性能要求。", "en": "Wind-induced movement, machinery vibration, traffic, or operating equipment can couple slip, pretension retention, and fatigue. Passing a static strength check does not prove satisfactory long-term performance."}}
-    ],
-    "takeaway": {"zh": "设计文件应明确连接是承压型还是抗滑移型，说明预紧、摩擦面、孔型、安装和检查要求，并把连接的实际功能与验算限值对应起来。", "en": "The design record should state whether the joint is bearing-type or slip-resistant, identify pretension, faying-surface, hole, installation, and inspection requirements, and connect the actual joint function to the checked limit state."},
-    "example": {
-      "title": {"zh": "参考实例：摩擦型连接的滑移承载力筛查", "en": "Worked reference: a screening check for slip resistance"},
-      "intro": {"zh": "以下关系用于解释摩擦型连接的基本力学逻辑，属于派生关系和简化筛查，不是对任一规范条文的逐字转录。正式设计必须采用适用规范规定的预紧力、摩擦面系数、孔型系数、分项系数和施工验收要求。", "en": "The relations below explain the basic mechanics of a slip-resistant joint. They are derived relations and simplified screens, not verbatim reproductions of a particular code equation. Formal design must use the pretension, faying-surface factor, hole factor, resistance factors, and installation requirements specified by the applicable standard."},
-      "equations": [
-        {"label": {"zh": "单个摩擦界面的可用摩擦力（派生关系）", "en": "Available friction at one faying interface (derived relation)"}, "formula": "Vₛ = μ Fₚ", "formulaTokens": [{"var": "V", "sub": "s"}, {"text": " = "}, {"var": "μ"}, {"text": " "}, {"var": "F", "sub": "p"}], "citation": {"zh": "Derived relation：由库仑摩擦力学得到的概念表达；不是规范编号公式。正式设计应按AISC/RCSC、EN 1993-1-8或GB 50017的具体连接类别和参数取值。", "en": "Derived relation: a conceptual expression from Coulomb friction mechanics; it is not a numbered code equation. Formal design must follow the joint category and parameters in AISC/RCSC, EN 1993-1-8, or GB 50017."}},
-        {"label": {"zh": "多界面滑移阻力（派生关系）", "en": "Slip resistance with multiple interfaces (derived relation)"}, "formula": "Vᵣ = n μ Fₚ", "formulaTokens": [{"var": "V", "sub": "r"}, {"text": " = "}, {"var": "n"}, {"text": " "}, {"var": "μ"}, {"text": " "}, {"var": "F", "sub": "p"}], "citation": {"zh": "Derived relation：n表示有效摩擦界面数；实际规范还会规定孔型、连接形式、预紧控制和安全格式，不能仅凭螺栓数量放大承载力。", "en": "Derived relation: n denotes the number of effective faying interfaces. Codes also prescribe hole, joint, pretension, and safety-format provisions; resistance must not be increased by bolt count alone."}},
-        {"label": {"zh": "滑移验算的通用形式", "en": "Generic form of a slip check"}, "formula": "Vₑd ≤ Vᵣd", "formulaTokens": [{"var": "V", "sub": "Ed"}, {"text": " ≤ "}, {"var": "V", "sub": "Rd"}], "citation": {"zh": "Code-format citation：Eurocode 3采用设计作用效应不超过设计抗力的格式；EN 1993-1-8中抗滑移连接的具体设计抗力、分项系数和适用条件应按对应条文确定。GB 50017和AISC/RCSC也有各自的安全格式。", "en": "Code-format citation: Eurocode 3 uses the format in which the design action effect does not exceed the design resistance. The specific resistance, partial factors, and applicability for slip-resistant joints must be taken from the relevant provisions of EN 1993-1-8. GB 50017 and AISC/RCSC use their own safety formats."}}
-      ],
-      "note": {"zh": "例如，若一个连接有两片有效摩擦界面，名义筛查关系可写为Vᵣ≈2μFₚ；但这只是帮助理解“界面数×摩擦×预紧”的关系。实际工程仍需核对螺栓抗拉、孔壁承压、板件净截面、块体破坏、预紧施工和滑移限值。", "en": "For example, with two effective faying interfaces, a nominal screening relation may be written as Vᵣ ≈ 2μFₚ. This only explains the relationship between interfaces, friction, and pretension. The project must still check bolt tension, hole bearing, net section, block shear, pretension installation, and the applicable slip limit."}
+    "title": {
+      "zh": "施工阶段不是设计之后的临时状态：中国与国际规范如何看待模板、支撑和未成体系结构",
+      "en": "Construction stage is not an afterthought: how Chinese and international practice treats formwork, shoring, and incomplete structures"
     },
-    "references": "GB 50017; AISC 360 and RCSC Specification; EN 1993-1-8", "referenceLinks": [
-      {"label": "GB 50017-2017 public reference PDF", "url": "https://pro5323b5d3-pic11.ysjianzhan.cn/upload/2_7GB50017-2017GJGSJBZ.pdf"},
-      {"label": "Eurocode 3: design of steel structures", "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-3-design-steel-structures?page=2"},
-      {"label": "NEN EN 1993-1-8: joints", "url": "https://www.nen.nl/en/nen-en-1993-1-8-2023-ontw-en-307774"},
-      {"label": "AISC standards and specifications", "url": "https://www.aisc.org/standards/"}
+    "text": {
+      "zh": "永久结构图纸通常展示最终受力体系，但施工现场每天面对的是尚未闭合、尚未达到强度、或由临时支撑维持稳定的中间状态。中国的JGJ 162和脚手架安全标准强调模板、支架的强度、稳定、刚度、安装和拆除安全；澳大利亚AS 3610把成型混凝土质量、模板设计和支撑体系与永久结构稳定联系起来；美国ACI 347R强调模板设计荷载、安全系数、施工方法和责任分工；英国BS 5975则更突出临时工程的管理程序、角色、检查和许可使用。差异的本质不是哪个体系“更严格”，而是控制对象不同：有的从构件计算进入，有的从临时工程流程进入，有的从承包商责任和验收记录进入。工程师需要把浇筑顺序、混凝土龄期、支撑拆除、重支撑、材料堆载、风和施工设备荷载视为真实设计输入，而不是等同于最终结构的简化荷载。",
+      "en": "Permanent structural drawings usually show the final load-resisting system, while the site is often governed by intermediate states that are incomplete, not yet at strength, or stable only because temporary supports are present. China's JGJ 162 and scaffold safety standards emphasise strength, stability, stiffness, erection, and removal safety for formwork and supports. Australia's AS 3610 connects formed-concrete quality, formwork design, support systems, and stability of the permanent works. ACI 347R in the United States emphasises formwork design loads, safety factors, construction methods, and allocation of responsibility. BS 5975 in the United Kingdom gives stronger attention to temporary-works management procedures, roles, design checking, inspection, and permits to load or remove. The difference is not simply that one system is stricter; each controls a different object: member calculation, temporary-works process, contractor responsibility, or acceptance record. Engineers should treat pour sequence, concrete age, support removal, reshoring, material storage, wind, and construction equipment loads as real design inputs rather than simplified loads on the final structure."
+    },
+    "comparisonPoints": [
+      {
+        "label": {
+          "zh": "先定义临时受力体系",
+          "en": "Define the temporary load path first"
+        },
+        "text": {
+          "zh": "施工阶段的梁、板、柱和支撑可能与最终体系完全不同。若转换层尚未闭合、楼板混凝土未达到要求强度、或抗侧力构件尚未连通，荷载路径应按当天的实际体系建立，而不是自动采用竣工模型。",
+          "en": "Beams, slabs, columns, and shores during construction may not match the final system. If a transfer level is incomplete, slab concrete has not reached the required strength, or lateral elements are not connected, the load path must follow the actual stage rather than the completed model."
+        }
+      },
+      {
+        "label": {
+          "zh": "拆模和重支撑是工程决策",
+          "en": "Stripping and reshoring are engineering decisions"
+        },
+        "text": {
+          "zh": "拆除支撑会改变楼层间荷载分配；重支撑会把上部施工荷载传回较早浇筑的楼层。设计记录应说明混凝土龄期、强度验证、支撑刚度、荷载传递和允许堆载，而不能只写一个笼统的拆模时间。",
+          "en": "Removing shores changes load sharing between floors; reshoring can send upper construction loads back into earlier slabs. The design record should state concrete age, strength verification, shore stiffness, load transfer, and permitted storage loads instead of only giving a generic stripping time."
+        }
+      },
+      {
+        "label": {
+          "zh": "管理程序也是结构安全的一部分",
+          "en": "Management procedure is part of structural safety"
+        },
+        "text": {
+          "zh": "临时工程失效常来自接口漂移：材料临时堆放、泵管改线、施工设备提前进场、支撑被局部拆除或检查记录缺失。国际实践把设计检查、许可使用和现场复核纳入控制链条，正是为了防止现场状态脱离计算假设。",
+          "en": "Temporary-works failures often begin with interface drift: material storage, pump-line changes, early equipment access, partial support removal, or missing inspection records. International practice uses design checks, permits to use, and site verification to keep the actual condition aligned with calculation assumptions."
+        }
+      }
+    ],
+    "takeaway": {
+      "zh": "施工阶段设计应把“何时形成稳定体系、何时达到材料强度、何时允许加载、何时允许拆除”写成可检查的工程条件。最终结构满足规范，不代表每个施工阶段自然安全。",
+      "en": "Construction-stage design should turn stability formation, material strength, loading permission, and support removal into checkable engineering conditions. A code-compliant final structure does not automatically make every construction stage safe."
+    },
+    "example": {
+      "title": {
+        "zh": "参考实例：新浇楼板支撑体系的简化阶段筛查",
+        "en": "Worked reference: simplified stage screening for a freshly cast supported slab"
+      },
+      "intro": {
+        "zh": "以下关系只用于解释施工阶段筛查逻辑，属于基于力学的派生关系，不是对任一规范条文的逐字复制。正式设计必须采用适用规范规定的模板荷载、施工活荷载、材料强度、支撑刚度、安全系数、检查类别和许可程序。",
+        "en": "The relations below explain stage-screening logic only. They are mechanics-based derived relations, not verbatim reproductions of any code clause. Formal design must use the formwork loads, construction live loads, material strength, shore stiffness, safety factors, checking category, and permit procedure required by the applicable standard."
+      },
+      "equations": [
+        {
+          "label": {
+            "zh": "施工阶段均布线荷载（派生关系）",
+            "en": "Construction-stage line load (derived relation)"
+          },
+          "formula": "wₛ = γc t b + q₍c₎ b",
+          "formulaTokens": [
+            {
+              "var": "w",
+              "sub": "s"
+            },
+            {
+              "text": " = "
+            },
+            {
+              "var": "γ",
+              "sub": "c"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "t"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "b"
+            },
+            {
+              "text": " + "
+            },
+            {
+              "var": "q",
+              "sub": "c"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "b"
+            }
+          ],
+          "citation": {
+            "zh": "Derived relation：用于把混凝土自重与施工面荷载换算为每米线荷载；不是规范编号公式。模板和支撑正式设计应按JGJ 162、AS 3610.2、ACI 347R或BS 5975采用适用荷载和安全格式。",
+            "en": "Derived relation: converts concrete self-weight and construction area load into line load; it is not a numbered code equation. Formal formwork and shoring design should use the applicable loads and safety format in JGJ 162, AS 3610.2, ACI 347R, or BS 5975."
+          }
+        },
+        {
+          "label": {
+            "zh": "简支阶段弯矩筛查（派生关系）",
+            "en": "Simply supported stage moment screen (derived relation)"
+          },
+          "formula": "Mₛ ≈ wₛ L² / 8",
+          "formulaTokens": [
+            {
+              "var": "M",
+              "sub": "s"
+            },
+            {
+              "text": " ≈ "
+            },
+            {
+              "var": "w",
+              "sub": "s"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "L",
+              "sup": "2"
+            },
+            {
+              "text": " / 8"
+            }
+          ],
+          "citation": {
+            "zh": "Derived relation：基于均布荷载简支梁弹性内力，用于施工阶段量级筛查；连续板、早龄期混凝土、支撑沉降和重支撑传力应另行分析。",
+            "en": "Derived relation: elastic internal force for a simply supported member under uniform load, used only for order-of-magnitude stage screening; continuous slabs, early-age concrete, shore settlement, and reshoring load transfer require separate analysis."
+          }
+        },
+        {
+          "label": {
+            "zh": "刚度敏感的挠度筛查（派生关系）",
+            "en": "Stiffness-sensitive deflection screen (derived relation)"
+          },
+          "formula": "Δₛ ≈ 5 wₛ L⁴ / 384 E I",
+          "formulaTokens": [
+            {
+              "var": "Δ",
+              "sub": "s"
+            },
+            {
+              "text": " ≈ "
+            },
+            {
+              "text": "5 "
+            },
+            {
+              "var": "w",
+              "sub": "s"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "L",
+              "sup": "4"
+            },
+            {
+              "text": " / 384 "
+            },
+            {
+              "var": "E"
+            },
+            {
+              "text": " "
+            },
+            {
+              "var": "I"
+            }
+          ],
+          "citation": {
+            "zh": "Derived relation：基于Euler-Bernoulli梁理论的服务性筛查；对于模板、支撑和未成熟混凝土，E、I、边界条件和支撑沉降必须按实际阶段确定。",
+            "en": "Derived relation: a serviceability screen from Euler-Bernoulli beam theory. For formwork, shores, and immature concrete, E, I, boundary conditions, and shore settlement must be taken from the actual stage."
+          }
+        }
+      ],
+      "note": {
+        "zh": "例如，若楼板按3.0 m施工带宽进行临时筛查，wₛ只说明该带宽内自重和施工荷载的量级；它不能替代支撑体系整体稳定、立杆承载力、连接节点、水平荷载、拆除顺序和现场验收记录。正式文件应把“允许浇筑”“允许堆载”“允许拆除”分别作为检查节点。",
+        "en": "For example, if a 3.0 m slab strip is used for a temporary stage screen, wₛ only describes the order of magnitude of self-weight and construction load in that strip. It does not replace global shore stability, prop capacity, connections, horizontal loads, stripping sequence, or site acceptance records. Formal documents should treat permission to pour, permission to store materials, and permission to remove supports as separate hold points."
+      }
+    },
+    "references": "JGJ 162; AS 3610.2; ACI 347R; BS 5975",
+    "referenceLinks": [
+      {
+        "label": "Code of China: JGJ 162-2008 formwork safety",
+        "url": "https://codeofchina.com/standard/JGJ162-2008.html"
+      },
+      {
+        "label": "Building Information Gateway: AS 3610.2 formwork design and construction",
+        "url": "https://www.buildinginformationgateway.com.au/library/as-3610.2-_int_-2023-formwork-for-concrete-part-2-design-and-construction"
+      },
+      {
+        "label": "ACI: Committee 347 Formwork for Concrete",
+        "url": "https://www.concrete.org/getinvolved/committees/directoryofcommittees/acommitteehome.aspx?committee_code=C0034700"
+      },
+      {
+        "label": "BSI: BS 5975-1 temporary works management procedures",
+        "url": "https://knowledge.bsigroup.com/products/temporary-works-management-procedures-for-the-control-of-temporary-works-code-of-practice"
+      }
     ]
   }
 }
