@@ -1,15 +1,341 @@
 {
-  "date":"2026-08-26",
-  "edition":{"zh":"2026年8月26日行业简报","en":"Industry Briefing for 26 August 2026"},
-  "liveUpdates":[
-    {"topic":{"zh":"机器人产业生态","en":"Robotics ecosystem"},"title":{"zh":"高通在日本设立机器人中心，推动物理AI从芯片走向产业协同","en":"Qualcomm establishes a Japan robotics centre to move physical AI from chips toward ecosystem deployment"},"summary":{"zh":"高通宣布在日本设立机器人中心，并联合制造、自动化、通信和高校伙伴推进物理AI。重要变化是机器人竞争不再只有单机性能，而是芯片、传感器、控制软件、工厂部署和人才体系的组合。对工程行业，现场机器人会带来新的安全验证、空间规划、维护和人机协同要求，不能只用实验室演示判断成熟度。","en":"Qualcomm has announced a Japan robotics centre with industrial, communications, manufacturing, and university partners. The competitive unit is no longer a robot alone but a combination of chips, sensing, control software, deployment, and skills. Engineering applications will need new approaches to safety validation, spatial planning, maintenance, and human–machine collaboration; laboratory demonstrations are not sufficient evidence of readiness."},"watch":{"zh":"关注机器人生态能否把安全验证、部署接口和现场维护标准化。","en":"Watch whether safety validation, deployment interfaces, and field maintenance become standardised."},"reference":"Qualcomm Japan robotics initiative","referenceLinks":[{"label":"Qualcomm: Japan Robotics Center","url":"https://www.qualcomm.com/news/releases/2026/08/qualcomm-launches-comprehensive-robotics-investment-initiative-i"}]},
-    {"topic":{"zh":"AI基础设施","en":"AI infrastructure"},"title":{"zh":"Cisco与NVIDIA强化液冷AI工厂，算力扩张越来越受电力与散热约束","en":"Cisco and NVIDIA expand liquid-cooled AI factories as power and cooling constrain compute growth"},"summary":{"zh":"Cisco宣布与NVIDIA及Supermicro扩展Secure AI Factory方案，强调高密度计算、液冷与全栈安全。对数据中心和土木基础设施而言，算力扩张正在变成电力容量、冷却水、设备荷载、振动、消防和网络冗余的综合设计问题。真正的项目风险不只是买到芯片，而是能否在可用电力和全寿命运维成本内稳定运行。","en":"Cisco is expanding its Secure AI Factory architecture with NVIDIA and Supermicro, highlighting high-density compute, liquid cooling, and full-stack security. For data centres and civil infrastructure, compute growth is becoming a combined problem of power, cooling water, equipment loading, vibration, fire protection, and network redundancy. The project risk is not simply procuring chips but operating reliably within available power and whole-life maintenance cost."},"watch":{"zh":"关注液冷系统如何改变楼板荷载、机房布局、消防和运维策略。","en":"Watch how liquid cooling changes floor loading, room layout, fire protection, and maintenance strategy."},"reference":"Cisco AI infrastructure announcement","referenceLinks":[{"label":"Cisco: Secure AI Factory with NVIDIA","url":"https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-secure-ai-factory-nvidia-rack-scale.html"}]},
-    {"topic":{"zh":"离岸可再生能源","en":"Offshore renewable infrastructure"},"title":{"zh":"UTS提出缆索加固方案，回应离岸风机的风浪震联合工况","en":"UTS proposes cable-stay reinforcement for combined wind, wave, and seismic loading of offshore turbines"},"summary":{"zh":"悉尼科技大学研究了一种缆索加固的离岸风机塔架概念，用于改善15 MW风机在风、波浪和地震共同作用下的动力性能。它说明可再生能源基础设施的结构设计不再只是单一荷载工况，而是基础、塔架、土体、海况与控制系统的耦合问题。工程化仍需关注疲劳、腐蚀、安装、检修和海床不确定性。","en":"A UTS study investigates a cable-stay reinforcement concept for a 15 MW offshore wind turbine under combined wind, wave, and seismic actions. Renewable infrastructure is therefore becoming a coupled problem involving foundation, tower, soil, sea state, and control system rather than one load case. Engineering adoption still requires evidence on fatigue, corrosion, installation, inspection, and seabed uncertainty."},"watch":{"zh":"关注概念加固方案能否在疲劳、腐蚀、施工和海床不确定性下保持全寿命优势。","en":"Watch whether the concept retains whole-life value under fatigue, corrosion, construction, and seabed uncertainty."},"reference":"University of Technology Sydney offshore wind research","referenceLinks":[{"label":"UTS: safer offshore wind turbines in earthquake-prone regions","url":"https://www.uts.edu.au/news/2026/07/new-research-proposes-safer-offshore-wind-turbines-earthquake-prone-regions"}]}
-  ],
-  "insights":[
-    {"area":{"zh":"结构鲁棒性","en":"Structural robustness"},"title":{"zh":"鲁棒性设计关注局部损伤后能否形成新的平衡，而不只是增加构件强度","en":"Robustness asks whether a structure can find a new equilibrium after local damage, not merely whether members are stronger"},"evidence":"University of Michigan progressive-collapse research","summary":{"zh":"渐进倒塌研究把局部构件失效、非线性变形、接触冲击和替代荷载路径放在同一系统问题中。对结构工程师而言，鲁棒性不是简单加大截面，而是检查连续性、冗余、膜作用、连接延性和局部失效后的整体稳定。未来能力需要把简化拆除分析与非线性动力模型合理衔接，并明确偶然事件、后果等级和模型边界。","en":"Progressive-collapse research treats local failure, nonlinear deformation, contact, impact, and alternate load paths as one system problem. Robustness is not simply larger members; it involves continuity, redundancy, membrane action, connection ductility, and global stability after local damage. Engineers will need to connect simplified removal analyses with nonlinear dynamic models and state the accidental event, consequence class, and modelling limits."},"caveat":{"zh":"拆柱分析或简化模型不能代表所有偶然事件，关键结论必须通过适用的非线性和构造复核。","en":"A column-removal analysis or simplified model does not represent every accidental event; critical conclusions require suitable nonlinear and detailing checks."},"reference":"University of Michigan structural robustness research","referenceLinks":[{"label":"Michigan: progressive collapse modelling","url":"https://websites.umich.edu/~eltawil/progressive-collapse.html"}]},
-    {"area":{"zh":"离岸地基与循环荷载","en":"Offshore foundations and cyclic loading"},"title":{"zh":"离岸基础设计的难点正在从静态承载力转向长期循环变形","en":"Offshore foundation design is shifting from static capacity toward long-term cyclic deformation"},"evidence":"Imperial College London offshore geotechnics research","summary":{"zh":"帝国理工的离岸岩土研究关注波浪和风引起的长期循环侧向荷载、桩安装、地震性能和数据驱动设计。对风电基础而言，数万次循环下的变形累积可能控制服役性能，即使瞬时承载力满足要求。工程师需要把高循环累积模型、场地变异、安装影响和结构控制系统连接起来，避免把一次静力极限状态当作全寿命答案。","en":"Imperial College London research addresses long-term cyclic lateral loading from waves and wind, pile installation, seismic performance, and data-centric offshore foundation design. Accumulated deformation over many thousands of cycles may govern service performance even when instantaneous capacity is adequate. Engineers need to connect high-cycle accumulation models, ground variability, installation effects, and structural controls rather than treating one static limit state as the whole-life answer."},"caveat":{"zh":"离岸循环模型对土体参数、海况和安装历史敏感，不能脱离现场勘察和监测直接外推。","en":"Offshore cyclic models are sensitive to soil parameters, sea state, and installation history and cannot be transferred without site investigation and monitoring."},"reference":"Imperial College London offshore geotechnics","referenceLinks":[{"label":"Imperial: offshore foundation research","url":"https://www.imperial.ac.uk/geotechnics/research/facilities-and-expertise/mage/research-at-mage/offshore-geotechnics/"}]},
-    {"area":{"zh":"AI辅助结构评估","en":"AI-assisted structural assessment"},"title":{"zh":"AI辅助评估的核心不是自动签字，而是让证据链更快被复核","en":"The point of AI-assisted assessment is faster review of evidence, not automated sign-off"},"evidence":"University of Texas at Arlington structural health monitoring research","summary":{"zh":"桥梁研究正在把无损检测、数字孪生、荷载评级和维修决策连接起来。AI可以帮助从图像、振动或车载数据中筛选异常，但工程责任仍要求说明数据来源、模型训练范围、置信度、误报和人工复核。对职业发展而言，结构工程师需要同时理解结构机理、信号处理和审计记录，把AI输出转化为可解释的检查优先级，而不是把概率分数直接当作损伤结论。","en":"Bridge research is connecting nondestructive evaluation, digital twins, load rating, and maintenance decisions. AI can screen anomalies in images, vibration, or drive-by data, but professional responsibility still requires sources, training range, confidence, false alarms, and human review. Future structural engineers will need mechanics, signal processing, and audit records to convert AI output into explainable inspection priorities rather than treating a probability score as a damage conclusion."},"caveat":{"zh":"AI识别结果必须经过现场验证和专业复核，尤其是未见过的损伤类型和环境条件。","en":"AI results require field validation and professional review, especially for unseen damage types and environmental conditions."},"reference":"University of Texas at Arlington bridge research","referenceLinks":[{"label":"UTA: bridge engineering and structural health monitoring","url":"https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/civil/research/expertise"}]}
-  ],
-  "classroom":{"title":{"zh":"局部失效之后怎么办：中国与国外如何理解结构鲁棒性？","en":"What happens after local failure: how Chinese and international practice understands structural robustness"},"text":{"zh":"结构鲁棒性讨论的是局部损伤发生后，结构能否通过连续性、冗余和替代荷载路径避免不成比例的整体倒塌。它不同于把整栋建筑直接按异常荷载设计，也不同于只提高单个构件的强度。中国、澳洲、美国和欧洲体系在偶然作用、拆除构件、系杆、延性和后果等级方面的表达不同，但共同要求设计者明确局部损伤情景、允许的破坏范围、剩余结构的传力机制和验算方法。","en":"Structural robustness asks whether continuity, redundancy, and alternate load paths can prevent disproportionate collapse after local damage. It is different from designing the whole building for one abnormal load and from simply increasing one member's strength. Chinese, Australian, US, and European systems express accidental actions, element removal, tying, ductility, and consequence classes differently, but all require an explicit local-damage scenario, acceptable damage extent, residual load path, and verification method."},"comparisonPoints":[{"label":{"zh":"鲁棒性不等于强度储备","en":"Robustness is not reserve strength"},"text":{"zh":"局部失效后，结构是否能重分配内力和保持整体稳定才是关键。","en":"The key is whether the system can redistribute action and remain stable after local failure."}},{"label":{"zh":"场景必须先定义","en":"Define the scenario first"},"text":{"zh":"拆柱、冲击、爆炸或火灾对应不同的局部损伤和动力响应，不能混用。","en":"Column removal, impact, explosion, and fire produce different local damage and dynamic response and cannot be interchanged."}},{"label":{"zh":"构造连续性很重要","en":"Detailing continuity matters"},"text":{"zh":"连接延性、系杆、楼板膜作用和隔断边界会共同决定替代路径。","en":"Connection ductility, ties, floor membrane action, and compartment boundaries jointly govern alternate paths."}}],"takeaway":{"zh":"鲁棒性设计的核心是局部损伤—替代路径—整体稳定的可复核链条；简单增加构件强度不能替代系统性分析。","en":"Robustness design is a reviewable chain from local damage to alternate paths and global stability; adding member strength alone is not a system analysis."},"example":{"title":{"zh":"参考实例：局部构件移除后的荷载路径筛查","en":"Worked reference: screening an alternate load path after local member removal"},"intro":{"zh":"以下是派生的概念关系，不是某一规范的编号公式。正式设计必须按偶然事件、模型层级、非线性行为和适用规范复核。","en":"The following are derived conceptual relations, not numbered code equations. Formal design must follow the accidental event, model level, nonlinear behaviour, and applicable provisions."},"equations":[{"label":{"zh":"剩余路径需求比（派生关系）","en":"Residual-path demand ratio (derived relation)"},"formula":"λ = Eᵣ / Rᵣ","formulaTokens":[{"var":"λ"},{"text":" = "},{"var":"E","sub":"r"},{"text":" / "},{"var":"R","sub":"r"}],"citation":{"zh":"Derived relation；用局部失效后的剩余作用效应Er与剩余系统抗力Rr比较需求，不能替代完整鲁棒性验算。","en":"Derived relation; compares residual action effect Er with residual system resistance Rr after local failure and does not replace a complete robustness assessment."}},{"label":{"zh":"连续性系数（派生关系）","en":"Continuity coefficient (derived relation)"},"formula":"C = Lₐ / L₀","formulaTokens":[{"var":"C"},{"text":" = "},{"var":"L","sub":"a"},{"text":" / "},{"var":"L","sub":"0"}],"citation":{"zh":"Derived relation；以可动员的替代传力路径La与原路径基准L0的比值表示连续性量级，具体定义必须项目化。","en":"Derived relation; represents continuity using the ratio of mobilisable alternate path La to the original-path reference L0; the definition must be project-specific."}},{"label":{"zh":"局部损伤比例（派生关系）","en":"Local-damage ratio (derived relation)"},"formula":"δ = Aₗ / Aₜ","formulaTokens":[{"var":"δ"},{"text":" = "},{"var":"A","sub":"l"},{"text":" / "},{"var":"A","sub":"t"}],"citation":{"zh":"Derived relation；用于描述局部损伤面积Al相对于受影响体系面积At的量级，不是可接受倒塌范围的规范判据。","en":"Derived relation; describes the scale of local damaged area Al relative to affected system area At and is not a code criterion for acceptable collapse extent."}}],"note":{"zh":"正式实例应建立局部构件失效情景，定义剩余结构、荷载组合、几何非线性、材料非线性、接触和动力效应，再判断是否形成可接受的替代路径。参考框架可对照GSA progressive collapse guidelines、ASCE/SEI 7、EN 1991-1-7及中国GB 50011、JGJ 3等适用条文，具体版本必须核对。","en":"A formal example should define the local failure scenario, residual structure, load combination, geometric and material nonlinearity, contact, and dynamic effects before judging whether an acceptable alternate path exists. Compare applicable frameworks such as GSA progressive-collapse guidance, ASCE/SEI 7, EN 1991-1-7, and relevant Chinese provisions including GB 50011 and JGJ 3; check the project edition."}},"references":"GSA progressive-collapse guidance; ASCE/SEI 7; EN 1991-1-7; GB 50011; JGJ 3","referenceLinks":[{"label":"University of Michigan: progressive collapse modelling","url":"https://websites.umich.edu/~eltawil/progressive-collapse.html"},{"label":"University of Stuttgart: FAILNOMORE robustness research","url":"https://www.ke.uni-stuttgart.de/en/research/rfcs-2019-899371/"},{"label":"Lund University: alternate load paths and robustness","url":"https://www.lunduniversity.lu.se/publication/8921194"}]}
+    "date":  "2026-08-27",
+    "edition":  {
+                    "zh":  "2026年8月27日行业简报",
+                    "en":  "Industry Briefing for 27 August 2026"
+                },
+    "liveUpdates":  [
+                        {
+                            "topic":  {
+                                          "zh":  "AI算力基础设施",
+                                          "en":  "AI compute infrastructure"
+                                      },
+                            "title":  {
+                                          "zh":  "高密度算力建设把电力、液冷和安全变成同一个工程问题",
+                                          "en":  "High-density compute turns power, liquid cooling, and security into one engineering problem"
+                                      },
+                            "summary":  {
+                                            "zh":  "Cisco与NVIDIA扩展Secure AI Factory方案，强调高密度计算、液冷和全栈安全。对工程行业而言，AI基础设施不再只是采购服务器，而是电力容量、楼板荷载、冷却、消防、网络冗余和全寿命运维的组合设计。项目决策应同时审查峰值热负荷、设备更新、维护通道与停机后果。",
+                                            "en":  "Cisco and NVIDIA are expanding Secure AI Factory architectures around high-density compute, liquid cooling, and full-stack security. AI infrastructure is no longer only a server procurement problem; it combines power capacity, floor loading, cooling, fire protection, network redundancy, and whole-life operations. Project decisions should review peak heat load, equipment refresh, maintenance access, and outage consequence together."
+                                        },
+                            "watch":  {
+                                          "zh":  "关注液冷和设备更新是否改变机房结构荷载、消防分区与运维策略。",
+                                          "en":  "Watch how liquid cooling and equipment refresh change room loading, fire compartments, and maintenance strategy."
+                                      },
+                            "reference":  "Cisco AI infrastructure announcement",
+                            "referenceLinks":  [
+                                                   {
+                                                       "label":  "Cisco: Secure AI Factory with NVIDIA",
+                                                       "url":  "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-secure-ai-factory-nvidia-rack-scale.html"
+                                                   }
+                                               ]
+                        },
+                        {
+                            "topic":  {
+                                          "zh":  "日本机器人产业",
+                                          "en":  "Japan robotics industry"
+                                      },
+                            "title":  {
+                                          "zh":  "高通在日本设立机器人中心，物理AI进入产业生态建设阶段",
+                                          "en":  "Qualcomm establishes a Japan robotics centre as physical AI enters ecosystem-building"
+                                      },
+                            "summary":  {
+                                            "zh":  "高通宣布在日本设立机器人中心，并联合制造、自动化、通信和高校伙伴推进物理AI。行业竞争的基本单元正在从单机性能转向芯片、传感、控制软件、工厂部署和人才体系。施工、仓储与巡检场景需要新的安全验证、空间规划、维护接口和人机协同流程，实验室演示不能替代现场验证。",
+                                            "en":  "Qualcomm has announced a Japan robotics centre with manufacturing, automation, communications, and university partners. Competition is shifting from robot specifications to a combined ecosystem of chips, sensing, control software, deployment, and skills. Construction, logistics, and inspection will need new safety validation, spatial planning, maintenance interfaces, and human–machine workflows; demonstrations cannot replace field validation."
+                                        },
+                            "watch":  {
+                                          "zh":  "关注机器人部署接口、异常接管和现场维护能否形成可审计标准。",
+                                          "en":  "Watch whether deployment interfaces, exception handover, and field maintenance become auditable standards."
+                                      },
+                            "reference":  "Qualcomm Japan robotics initiative",
+                            "referenceLinks":  [
+                                                   {
+                                                       "label":  "Qualcomm: Japan Robotics Center",
+                                                       "url":  "https://www.qualcomm.com/news/releases/2026/08/qualcomm-launches-comprehensive-robotics-investment-initiative-i"
+                                                   }
+                                               ]
+                        },
+                        {
+                            "topic":  {
+                                          "zh":  "离岸能源工程",
+                                          "en":  "Offshore energy engineering"
+                                      },
+                            "title":  {
+                                          "zh":  "离岸风机加固研究提醒行业：海况、地震与基础响应必须协同建模",
+                                          "en":  "Offshore turbine reinforcement research highlights the need to model sea state, earthquakes, and foundations together"
+                                      },
+                            "summary":  {
+                                            "zh":  "悉尼科技大学研究缆索加固的15 MW离岸风机塔架概念，目标是改善风、波浪和地震联合工况下的动力性能。它反映出可再生能源工程正在从单一结构构件设计转向塔架、基础、土体、海况与控制系统的耦合。工程化还必须覆盖疲劳、腐蚀、安装、检修和海床不确定性。",
+                                            "en":  "A UTS study investigates cable-stay reinforcement for a 15 MW offshore turbine under combined wind, wave, and seismic actions. Renewable infrastructure is moving from isolated member design toward coupled tower, foundation, soil, sea-state, and control-system modelling. Engineering deployment must also address fatigue, corrosion, installation, inspection, and seabed uncertainty."
+                                        },
+                            "watch":  {
+                                          "zh":  "关注概念加固能否在疲劳、腐蚀、施工和海床不确定性下保持全寿命优势。",
+                                          "en":  "Watch whether the concept retains whole-life value under fatigue, corrosion, construction, and seabed uncertainty."
+                                      },
+                            "reference":  "University of Technology Sydney offshore wind research",
+                            "referenceLinks":  [
+                                                   {
+                                                       "label":  "UTS: offshore wind turbines in earthquake-prone regions",
+                                                       "url":  "https://www.uts.edu.au/news/2026/07/new-research-proposes-safer-offshore-wind-turbines-earthquake-prone-regions"
+                                                   }
+                                               ]
+                        }
+                    ],
+    "insights":  [
+                     {
+                         "area":  {
+                                      "zh":  "结构鲁棒性与替代路径",
+                                      "en":  "Structural robustness and alternate paths"
+                                  },
+                         "title":  {
+                                       "zh":  "鲁棒性设计的重点是局部损伤后的系统重分配，而不是单纯增加强度",
+                                       "en":  "Robustness design is about system redistribution after local damage, not simply more strength"
+                                   },
+                         "evidence":  "University of Michigan progressive-collapse research",
+                         "summary":  {
+                                         "zh":  "密歇根大学的渐进倒塌研究关注局部构件失效后产生的非线性变形、接触冲击、替代荷载路径和整体稳定。对设计人员而言，鲁棒性要求同时理解连接延性、连续性、冗余、膜作用和失效后的新平衡状态。拆柱分析是工具而非结论，必须把偶然事件、后果等级、模型不确定性和构造细节写进可审计的设计记录。",
+                                         "en":  "University of Michigan research examines nonlinear deformation, contact, impact, alternate load paths, and global stability after local member failure. Robustness requires understanding connection ductility, continuity, redundancy, membrane action, and the new equilibrium after damage. Column-removal analysis is a tool rather than a conclusion; accidental event, consequence class, modelling uncertainty, and detailing must be recorded in an auditable design trail."
+                                     },
+                         "caveat":  {
+                                        "zh":  "简化拆除模型不能代表所有偶然事件，关键结论需用适用的非线性分析和构造复核。",
+                                        "en":  "A simplified removal model does not represent every accidental event; critical conclusions need suitable nonlinear analysis and detailing review."
+                                    },
+                         "reference":  "University of Michigan structural robustness research",
+                         "referenceLinks":  [
+                                                {
+                                                    "label":  "Michigan: progressive collapse modelling",
+                                                    "url":  "https://websites.umich.edu/~eltawil/progressive-collapse.html"
+                                                }
+                                            ]
+                     },
+                     {
+                         "area":  {
+                                      "zh":  "离岸基础与土—结构相互作用",
+                                      "en":  "Offshore foundations and soil–structure interaction"
+                                  },
+                         "title":  {
+                                       "zh":  "离岸基础的控制问题正在从静态承载力转向长期循环变形",
+                                       "en":  "Offshore foundation control is shifting from static capacity toward long-term cyclic deformation"
+                                   },
+                         "evidence":  "Imperial College London offshore geotechnics research",
+                         "summary":  {
+                                         "zh":  "帝国理工研究离岸基础在波浪和风引起的重复侧向荷载下的长期响应，并关注桩安装、地震性能和数据驱动设计。数万次循环可能造成永久转角和刚度变化，即使瞬时承载力满足要求，服役性能仍可能失控。工程师需要把高循环累积模型、场地变异、安装影响与结构控制系统连起来。",
+                                         "en":  "Imperial College research addresses long-term response of offshore foundations under repeated lateral loading, pile installation, seismic performance, and data-centric design. Tens of thousands of cycles can produce permanent rotation and stiffness change even when instantaneous capacity is adequate. Engineers need to connect high-cycle accumulation models, ground variability, installation effects, and structural control."
+                                     },
+                         "caveat":  {
+                                        "zh":  "循环响应高度依赖土体参数、海况和安装历史，不能脱离场地资料直接外推。",
+                                        "en":  "Cyclic response depends strongly on soil parameters, sea state, and installation history and cannot be transferred without site data."
+                                    },
+                         "reference":  "Imperial College London offshore geotechnics",
+                         "referenceLinks":  [
+                                                {
+                                                    "label":  "Imperial: offshore foundation research",
+                                                    "url":  "https://www.imperial.ac.uk/geotechnics/research/facilities-and-expertise/mage/research-at-mage/offshore-geotechnics/"
+                                                }
+                                            ]
+                     },
+                     {
+                         "area":  {
+                                      "zh":  "可审计的AI工程工具",
+                                      "en":  "Auditable AI engineering tools"
+                                  },
+                         "title":  {
+                                       "zh":  "AI进入结构评估后，证据链和失败模式比单一准确率更重要",
+                                       "en":  "Once AI enters structural assessment, evidence chains and failure modes matter more than one accuracy score"
+                                   },
+                         "evidence":  "University of Texas at Arlington structural health monitoring research",
+                         "summary":  {
+                                         "zh":  "桥梁研究把无损检测、数字孪生、荷载评级和维修决策连接起来，也暴露出AI工程化的核心问题：数据分布、置信度、误报、未见损伤和人工复核如何进入责任链。结构工程师未来需要同时理解机理模型、信号处理和版本化记录，把识别结果转成可解释的检查优先级，而不是把概率分数直接视为安全结论。",
+                                         "en":  "Bridge research connects nondestructive evaluation, digital twins, load rating, and maintenance decisions while exposing the core engineering issues for AI: data distribution, confidence, false alarms, unseen damage, and human review. Structural engineers will need mechanics, signal processing, and versioned records to turn detections into explainable inspection priorities rather than treating a probability score as a safety conclusion."
+                                     },
+                         "caveat":  {
+                                        "zh":  "现场部署必须进行独立验证、异常测试和专业复核，尤其要关注训练数据之外的损伤。",
+                                        "en":  "Field deployment requires independent validation, anomaly testing, and professional review, especially for damage outside the training data."
+                                    },
+                         "reference":  "University of Texas at Arlington bridge research",
+                         "referenceLinks":  [
+                                                {
+                                                    "label":  "UTA: bridge engineering and structural health monitoring",
+                                                    "url":  "https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/civil/research/expertise"
+                                                }
+                                            ]
+                     }
+                 ],
+    "classroom":  {
+                      "title":  {
+                                    "zh":  "离岸基础不是固定边界：中国与国外如何处理土—结构相互作用？",
+                                    "en":  "An offshore foundation is not a fixed boundary: how Chinese and international practice treats soil–structure interaction"
+                                },
+                      "text":  {
+                                   "zh":  "离岸风机基础承受风、波浪、地震和长期循环荷载，基础刚度与土体变形会反过来改变塔架动力响应。中国、澳洲、美国和欧洲的设计体系在场地参数、循环模型、安装影响和极限状态表达上有所不同，但共同原则是把海床、桩或沉箱、结构和控制系统作为相互作用的整体。静态承载力满足，并不意味着永久转角、累积位移、疲劳和检修条件满足。",
+                                   "en":  "Offshore turbine foundations experience wind, waves, earthquakes, and long-term cyclic loading, while foundation stiffness and soil deformation feed back into tower dynamics. Chinese, Australian, US, and European systems differ in site parameters, cyclic models, installation effects, and limit-state expression, but share the principle of treating seabed, pile or caisson, structure, and control system as an interacting whole. Static capacity is not enough to demonstrate acceptable rotation, accumulated displacement, fatigue, or inspection access."
+                               },
+                      "comparisonPoints":  [
+                                               {
+                                                   "label":  {
+                                                                 "zh":  "基础是动力系统的一部分",
+                                                                 "en":  "The foundation is part of the dynamic system"
+                                                             },
+                                                   "text":  {
+                                                                "zh":  "土体刚度和阻尼会影响结构周期、内力和控制响应。",
+                                                                "en":  "Soil stiffness and damping influence period, action distribution, and control response."
+                                                            }
+                                               },
+                                               {
+                                                   "label":  {
+                                                                 "zh":  "循环荷载改变长期状态",
+                                                                 "en":  "Cyclic loading changes the long-term state"
+                                                             },
+                                                   "text":  {
+                                                                "zh":  "重复荷载可能引起累积位移、刚度退化和永久转角。",
+                                                                "en":  "Repeated loading can cause accumulated displacement, stiffness degradation, and permanent rotation."
+                                                            }
+                                               },
+                                               {
+                                                   "label":  {
+                                                                 "zh":  "安装历史不能被忽略",
+                                                                 "en":  "Installation history cannot be ignored"
+                                                             },
+                                                   "text":  {
+                                                                "zh":  "打桩、吸力沉箱安装和施工扰动会改变后续土体响应。",
+                                                                "en":  "Driving, suction-caisson installation, and construction disturbance can change later soil response."
+                                                            }
+                                               }
+                                           ],
+                      "takeaway":  {
+                                       "zh":  "离岸基础设计的核心是海床—基础—塔架的长期相互作用；承载力、变形、疲劳和安装效应必须在同一可复核模型中闭合。",
+                                       "en":  "The core of offshore foundation design is long-term seabed–foundation–tower interaction; capacity, deformation, fatigue, and installation effects must close in one reviewable model."
+                                   },
+                      "example":  {
+                                      "title":  {
+                                                    "zh":  "参考实例：循环荷载下的基础刚度概念筛查",
+                                                    "en":  "Worked reference: conceptual foundation-stiffness screening under cyclic loading"
+                                                },
+                                      "intro":  {
+                                                    "zh":  "以下关系为力学上的派生关系，不是某一规范的编号公式。正式设计须按场地、海况、土体本构、基础形式和适用规范复核。",
+                                                    "en":  "The following are mechanics-based derived relations, not numbered code equations. Formal design must follow the site, sea state, soil model, foundation type, and applicable provisions."
+                                                },
+                                      "equations":  [
+                                                        {
+                                                            "label":  {
+                                                                          "zh":  "等效固有频率（派生关系）",
+                                                                          "en":  "Equivalent natural frequency (derived relation)"
+                                                                      },
+                                                            "formula":  "fₙ = (1 / 2π) √(kₑ / m)",
+                                                            "formulaTokens":  [
+                                                                                  {
+                                                                                      "var":  "f",
+                                                                                      "sub":  "n"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " = (1 / 2π) "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "√"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  "("
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "k",
+                                                                                      "sub":  "e"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " / "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "m"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  ")"
+                                                                                  }
+                                                                              ],
+                                                            "citation":  {
+                                                                             "zh":  "Derived relation；用等效刚度ke和质量m估算基础—结构体系自振频率，不能替代土—结构动力分析。",
+                                                                             "en":  "Derived relation; estimates system natural frequency from equivalent stiffness ke and mass m and cannot replace soil–structure dynamic analysis."
+                                                                         }
+                                                        },
+                                                        {
+                                                            "label":  {
+                                                                          "zh":  "循环位移幅值比（派生关系）",
+                                                                          "en":  "Cyclic displacement amplitude ratio (derived relation)"
+                                                                      },
+                                                            "formula":  "χ = uₐ / uₗ",
+                                                            "formulaTokens":  [
+                                                                                  {
+                                                                                      "var":  "χ"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " = "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "u",
+                                                                                      "sub":  "a"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " / "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "u",
+                                                                                      "sub":  "l"
+                                                                                  }
+                                                                              ],
+                                                            "citation":  {
+                                                                             "zh":  "Derived relation；比较循环位移幅值ua与允许或基准位移ul的量级，具体限值须按项目规范和功能要求确定。",
+                                                                             "en":  "Derived relation; compares cyclic displacement amplitude ua with an allowable or reference displacement ul; project limits must follow the code and functional requirement."
+                                                                         }
+                                                        },
+                                                        {
+                                                            "label":  {
+                                                                          "zh":  "循环刚度退化率（派生关系）",
+                                                                          "en":  "Cyclic stiffness degradation ratio (derived relation)"
+                                                                      },
+                                                            "formula":  "ηₖ = kₙ / k₀",
+                                                            "formulaTokens":  [
+                                                                                  {
+                                                                                      "var":  "η",
+                                                                                      "sub":  "k"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " = "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "k",
+                                                                                      "sub":  "N"
+                                                                                  },
+                                                                                  {
+                                                                                      "text":  " / "
+                                                                                  },
+                                                                                  {
+                                                                                      "var":  "k",
+                                                                                      "sub":  "0"
+                                                                                  }
+                                                                              ],
+                                                            "citation":  {
+                                                                             "zh":  "Derived relation；用循环后刚度kN与初始刚度k0的比值描述退化量级，不能替代经试验校准的循环本构模型。",
+                                                                             "en":  "Derived relation; describes degradation using post-cyclic stiffness kN relative to initial stiffness k0 and cannot replace a test-calibrated cyclic constitutive model."
+                                                                         }
+                                                        }
+                                                    ],
+                                      "note":  {
+                                                   "zh":  "正式分析应明确循环荷载谱、海床剖面、安装扰动、排水条件、土体本构、基础边界、结构控制和允许转角。可对照IEC 61400-3-1、DNV-ST-0126、API RP 2GEO、AS 2159及中国海上风电基础相关条文，具体版本必须核对。",
+                                                   "en":  "Formal analysis should define cyclic loading spectrum, seabed profile, installation disturbance, drainage, soil constitutive model, foundation boundary, structural control, and allowable rotation. Relevant frameworks include IEC 61400-3-1, DNV-ST-0126, API RP 2GEO, AS 2159, and applicable Chinese offshore-wind foundation provisions; check the project edition."
+                                               }
+                                  },
+                      "references":  "IEC 61400-3-1; DNV-ST-0126; API RP 2GEO; AS 2159; Chinese offshore wind provisions",
+                      "referenceLinks":  [
+                                             {
+                                                 "label":  "University of Melbourne: offshore geotechnics",
+                                                 "url":  "https://infrastructure.eng.unimelb.edu.au/offshore-geomechanics"
+                                             },
+                                             {
+                                                 "label":  "Imperial College: offshore foundation research",
+                                                 "url":  "https://www.imperial.ac.uk/geotechnics/research/facilities-and-expertise/mage/research-at-mage/offshore-geotechnics/"
+                                             },
+                                             {
+                                                 "label":  "Leibniz University Hannover: soil–fluid–structure interaction",
+                                                 "url":  "https://www.sfb1463.uni-hannover.de/en/research/project-area-a/subproject-a4"
+                                             }
+                                         ]
+                  }
 }
