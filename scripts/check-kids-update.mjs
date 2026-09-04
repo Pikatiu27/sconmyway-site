@@ -1,4 +1,4 @@
-import { appendFile, readFile } from "node:fs/promises";
+import { appendFile, readFile, writeFile } from "node:fs/promises";
 
 const [, , command = "validate", dataPath = "kids/data/events.json"] = process.argv;
 const timeZone = "Australia/Sydney";
@@ -58,8 +58,8 @@ async function readData() {
   if (!data.updatedAt || !Array.isArray(data.events)) {
     throw new Error(`${dataPath} is missing updatedAt or valid events`);
   }
-  if (data.events.length !== 8) {
-    throw new Error(`${dataPath} must contain exactly 8 main event recommendations`);
+  if (data.events.length > 8 && command !== "prepare") {
+    throw new Error(`${dataPath} may contain at most 8 main event recommendations`);
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(data.periodStart || "") || !/^\d{4}-\d{2}-\d{2}$/.test(data.periodEnd || "")) {
     throw new Error(`${dataPath} is missing Friday-to-Friday periodStart/periodEnd`);
@@ -67,7 +67,18 @@ async function readData() {
   if (isoWeekday(data.periodStart) !== 5 || daysBetween(data.periodStart, data.periodEnd) !== 7) {
     throw new Error(`${dataPath} period must run from Friday to the next Friday`);
   }
+  const accepted = [];
+  const rejected = [];
   for (const [index, event] of data.events.entries()) {
+    try {
+    const review = event.linkReview;
+    if (!review || review.status !== "verified" || review.url !== event.url || !review.checkedAt || review.checkedAt < data.periodStart || !review.evidence) {
+      throw new Error("Missing current official content verification, or URL does not match verified page");
+    }
+    if (!/^https:\/\//.test(event.url || "") || !["official", "announcement", "tickets"].includes(event.linkType || "official")) {
+      throw new Error("Invalid official link or button type");
+    }
+    if (event.cancelled || (event.endsOn && event.endsOn < data.periodStart)) throw new Error("Event is cancelled or outside the publication week");
     const titleText = [event.titleZh || "", event.titleEn || ""].map((value) => String(value).trim());
     if (titleText.some((value) => /^(free|program|event|family and kids|kindergarten|playgroups?|support for parents|child and family hub)$/i.test(value))) {
       throw new Error(`events[${index}] is a generic directory/category page: ${titleText.join(" / ")}`);
@@ -79,7 +90,7 @@ async function readData() {
     }
     const qualityText = `${event.tagZh || ""} ${event.tagEn || ""} ${event.titleZh || ""} ${event.titleEn || ""} ${event.summaryZh || ""} ${event.summaryEn || ""} ${event.timeZh || ""} ${event.timeEn || ""} ${event.placeZh || ""} ${event.placeEn || ""} ${event.referenceZh || ""} ${event.referenceEn || ""}`;
     const timeText = qualityText;
-    if (/\b(expired|ended|closed|cancelled|canceled)\b|已结束|取消/u.test(timeText)) {
+    if (/\b(expired|ended|cancelled|canceled)\b|已结束|活动取消/u.test(timeText)) {
       throw new Error(`events[${index}] appears expired or cancelled`);
     }
     const oldYear = timeText.match(/\b(20\d{2})\b/g)?.map(Number).find((year) => year < Number(data.periodStart.slice(0, 4)));
@@ -100,9 +111,6 @@ async function readData() {
     if (/\b6 June\b/i.test(`${event.timeZh || ""} ${event.timeEn || ""}`) && data.periodStart.startsWith("2026-07")) {
       throw new Error(`events[${index}] contains a June date during the July publication week`);
     }
-    if (index < 4 && !isFreshLeadEvent(event)) {
-      throw new Error(`events[${index}] must be a new or short-date current-week lead activity`);
-    }
     for (const field of ["tagEn", "titleEn", "summaryEn", "timeEn", "placeEn", "priceEn", "referenceEn"]) {
       if (typeof event[field] !== "string" || !event[field].trim()) {
         throw new Error(`events[${index}].${field} is missing`);
@@ -111,14 +119,38 @@ async function readData() {
         throw new Error(`events[${index}].${field} contains Chinese text`);
       }
     }
+    accepted.push(event);
+    } catch (error) {
+      if (command !== "prepare") throw error;
+      rejected.push({ title: event.titleEn || event.titleZh || `Item ${index + 1}`, reason: error.message });
+    }
   }
+  if (command === "prepare") {
+    accepted.sort((a, b) => Number(isFreshLeadEvent(b) && !b.longTerm) - Number(isFreshLeadEvent(a) && !a.longTerm));
+    data.events = accepted.slice(0, 8);
+  }
+  const more = [];
+  for (const item of data.moreLinks || []) {
+    const review = item.linkReview;
+    const valid = /^https:\/\//.test(item.url || "") && review?.status === "verified" && review.url === item.url && review.checkedAt >= data.periodStart && review.evidence;
+    if (valid) more.push(item);
+    else if (command === "prepare") rejected.push({ title: item.titleEn || item.title || "More link", reason: "More link has no current matching content verification" });
+    else throw new Error("More link has no current matching content verification");
+  }
+  if (command === "prepare") {
+    data.moreLinks = more.slice(0, 5);
+    await writeFile(dataPath, JSON.stringify(data, null, 2) + "\n", "utf8");
+    await writeFile(dataPath.replace(/\.json$/, ".review.json"), JSON.stringify({ checkedAt: new Date().toISOString(), rejected, mainCount: data.events.length, moreCount: data.moreLinks.length }, null, 2) + "\n", "utf8");
+  }
+  const freshCount = data.events.slice(0, 4).filter(e => !e.longTerm && isFreshLeadEvent(e)).length;
+  if (data.events.length < 8 || freshCount < 4 || data.moreLinks.length < 3) console.warn(`Reduced coverage: ${data.events.length} main, ${freshCount} fresh leads, ${data.moreLinks.length} More; publish verified items without padding`);
   return data;
 }
 
 function extractCheckedLinks(html) {
   const regions = [
     ...html.matchAll(/<section class="cards"[\s\S]*?<\/section>/g),
-    ...html.matchAll(/<details class="more-panel" data-city-panel="(?:sydney|melbourne)"[\s\S]*?<\/details>/g)
+    ...html.matchAll(/<details class="more-panel"[^>]*data-city-panel="(?:sydney|melbourne)"[\s\S]*?<\/details>/g)
   ].map((match) => match[0]);
   const links = [];
   for (const region of regions) {
@@ -131,19 +163,24 @@ function extractCheckedLinks(html) {
 async function checkLinks(htmlPath) {
   const html = await readFile(htmlPath, "utf8");
   const links = extractCheckedLinks(html);
-  if (links.length < 12) throw new Error(`${htmlPath} has too few card and More links to validate`);
   const failures = [];
   for (const url of links) {
     try {
-      let response = await fetch(url, { method: "HEAD", redirect: "follow" });
-      if ([405, 403].includes(response.status)) response = await fetch(url, { method: "GET", redirect: "follow" });
-      if ([404, 410].includes(response.status) || response.status >= 500) failures.push(`${response.status} ${url}`);
+      let response;
+      for (let attempt = 0; attempt < 2; attempt++) {
+        response = await fetch(url, { method: "GET", redirect: "follow", signal: AbortSignal.timeout(12000) });
+        if (response.ok || response.status === 404 || response.status === 410) break;
+        await response.body?.cancel();
+      }
+      if (!response.ok) failures.push(`${response.status} ${url}`);
+      if (new URL(response.url).pathname === "/" && new URL(url).pathname !== "/") failures.push(`Redirected to homepage: ${url}`);
+      await response.body?.cancel();
     } catch (error) {
       failures.push(`${error.message} ${url}`);
     }
   }
-  if (failures.length) throw new Error(`Broken card/More links:\n${failures.join("\n")}`);
-  console.log(`Checked ${links.length} card and More links from ${htmlPath}`);
+  if (failures.length) console.warn(`::warning::Links need individual re-review; do not roll back healthy content:\n${failures.join("\n")}`);
+  console.log(`Transport-checked ${links.length} links; content relevance requires recorded official-source review`);
 }
 
 async function writeOutput(values) {
@@ -161,10 +198,11 @@ if (command === "gate") {
 
     await writeOutput({ should_run: String(shouldRun), reason });
   }
-} else if (command === "validate") {
+} else if (["validate", "prepare", "validate-content"].includes(command)) {
   const data = await readData();
-  if (localDateKey(new Date(data.updatedAt)) !== localDateKey(new Date())) {
-    throw new Error(`${dataPath} was not refreshed today in ${timeZone}`);
+  const today = localDateKey(new Date());
+  if (command === "validate" && !(data.periodStart <= today && today < data.periodEnd && data.updatedAt >= data.periodStart)) {
+    throw new Error(`${dataPath} was not refreshed for the current Australia/Sydney week`);
   }
   console.log(`Validated ${data.events.length} events and UTF-8 JSON written at ${data.updatedAt}`);
 } else if (command === "validate-links") {

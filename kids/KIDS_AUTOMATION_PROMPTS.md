@@ -2,6 +2,8 @@
 
 ## Purpose
 
+The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed-count and all-links-must-pass rules. Run per-item preparation before static sync; publish verified items even when below the target count.
+
 The kids page uses the same execution model as the Industry Review:
 
 - A scheduled Codex task performs fresh public-web research and publication.
@@ -29,16 +31,16 @@ The automation RRULE is evaluated in the Codex app's local project schedule, mat
 6. Cover Sydney and Melbourne councils, major venues, official event pages, family festivals, shows, markets, exhibitions, outdoor programs and community/open days.
 7. Use social media and discovery sites only as leads, then verify against an organiser, council, venue or official ticketing page.
 8. Remove expired, cancelled, date-unclear and weakly verified items.
-9. Publish exactly 8 main events per city. Cards 1-4 must be newly found, one-off, short-window or concretely dated within the new publication week.
+9. Target 8 main events per city; publish fewer if replacement research yields fewer verified events. Cards 1-4 must be newly found, one-off, short-window or concretely dated within the new publication week.
 10. Put long-running attractions at card 5 or later. Put library/storytime, toddler-only and generic directory links in More or omit them.
 11. Rewrite both JSON files completely, including `updatedAt`, `periodStart`, `periodEnd`, main events and More links.
 12. Keep Chinese and English facts equivalent. English fields and English UI text must contain no Chinese.
 13. Run `py -3 scripts/sync-kids-static.py`.
-14. Validate JSON, UTF-8, Friday-to-Friday dates, 8+8 cards, English fields, official links, More links and `git diff --check`.
+14. Validate JSON, UTF-8, Friday-to-Friday dates, actual per-city card counts (target 8+8), English fields, official links, More links and `git diff --check`.
 15. Commit only the intentional kids files, rebase on current `origin/main`, push with `git push origin HEAD:main`, and verify `origin/main`.
-16. Fetch cache-busted public JSON and Pages HTML. Confirm the period, both first titles, 8+8 cards and mobile layout before reporting success.
+16. Fetch cache-busted public JSON and Pages HTML. Confirm the period, both first titles, actual per-city card counts (target 8+8) and mobile layout before reporting success.
 
-Changing only the date, reusing old cards as fresh research, publishing fewer than 8 cards, or leaving expired cards in place is a failed run.
+Changing only the date, reusing old cards as fresh research, leaving unverified or expired cards in place is a failed run.
 
 ## Recovery Review Contract
 

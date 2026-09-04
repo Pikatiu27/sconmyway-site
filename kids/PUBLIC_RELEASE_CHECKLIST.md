@@ -2,6 +2,8 @@
 
 ## 1. Page Purpose
 
+The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed-count and all-links-must-pass rules. Run per-item preparation before static sync; publish verified items even when below the target count.
+
 - Help adults quickly choose a family outing in Sydney or Melbourne.
 - Default state: Sydney + Events + Chinese.
 - Keep Events and Playgrounds as separate views under the same city selection.
@@ -12,7 +14,7 @@
 - Publication window is Friday to the following Friday.
 - Search again every week; never reuse old cards by changing dates only.
 - Remove ended, cancelled, weakly verified, and generic directory entries.
-- Each city has 8 main cards. Cards 1-4 must be newly found, one-off, short-window, or clearly dated current-week outings.
+- Each city targets 8 main cards; fewer verified cards are allowed. Cards 1-4 must be newly found, one-off, short-window, or clearly dated current-week outings.
 - Prefer activities adults can enjoy with children: festivals, shows, markets, exhibitions, outdoor trails, major venues, and food-plus-activity outings.
 - Put library storytime, baby/toddler-only sessions, generic venue pages, and lower-confidence leads in More or omit them.
 - Verify date, time, location, price, age limits, booking conditions, and official URL against the organiser or venue page.
@@ -24,7 +26,7 @@
 - Chinese mode uses natural Chinese for descriptions, regions, tags, actions, and source labels; official place and event names may remain in English.
 - Each card uses one concise body paragraph: what it is, what the family will do, and who it suits.
 - Do not show prefixes such as `亮点：`, `推荐理由：`, `Why go:`, or star ratings.
-- Status labels describe timing only: `本周精选 / Weekly pick`, `继续推荐 / More picks`, `长期活动 / Ongoing`.
+- Status labels describe timing only: `本周精选 / Weekly pick` or `持续活动 / Ongoing`. Set `longTerm` explicitly after research; never infer status from card position.
 
 ## 4. Card Structure
 
@@ -40,6 +42,10 @@
 - City and view selectors appear together in the finder controls; do not duplicate them elsewhere.
 - At 430px and below, action buttons remain a three-column row.
 - More and Sources remain collapsed by default.
+- More links use a title on the first line and a smaller source below, with bilingual fields and one disclosure icon.
+- Show the publication week first, with the update date smaller underneath; do not advance dates when someone opens the page.
+- Chinese cards use a short Chinese title and a smaller official English name. English cards show only the English title.
+- Preserve existing unique share keys when correcting official URLs; do not give two cards the same share target.
 - Playground filters apply to the selected city's complete directory and hide empty regions.
 - Chinese mode translates region names, feature tags, actions, descriptions, and half-day suggestions.
 

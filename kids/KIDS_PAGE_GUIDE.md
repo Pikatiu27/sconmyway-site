@@ -3,6 +3,8 @@
 <!-- MANUAL_REFRESH_RULE_START -->
 ## Current Refresh Rule
 
+The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed-count and all-links-must-pass rules. Run per-item preparation before static sync; publish verified items even when below the target count.
+
 - Default update path is a recurring Codex task at Friday 05:00 Australia/Sydney: fresh web search, local JSON write, static HTML fallback sync, GitHub push, and public verification.
 - The recurring tasks mirror the proven Industry Review model. Their canonical prompts and recovery proof are recorded in `kids/KIDS_AUTOMATION_PROMPTS.md`.
 - Do not use an API key or automated content generation unless the user explicitly asks to restore that path.
@@ -27,7 +29,7 @@
 - 默认打开：Sydney / 悉尼 + Events / 本周活动。
 - 顶部只保留一个清楚的选择区：当前城市 + 当前内容类型 + 城市切换 + Events/Playgrounds 切换。
 - 标题固定一行：`今天带娃去哪儿？` / `Where to take the kids today?`
-- Events 每个城市显示 8 条主推荐；Playgrounds 是地区地点库，不按 8 条限制。
+- Events 每个城市目标 8 条主推荐，允许核实后不足；Playgrounds 是地区地点库，不按 8 条限制。
 - 活动卡片按钮顺序固定：`官网 / 导航 / 分享`，英文为 `Official / Map / Share`。
 - `More` 必须折叠，放 3-5 条本周候选或大型官方入口，不放空链接、过期链接或装饰性链接。
 
@@ -65,7 +67,7 @@
 2. 按 `kids/KIDS_BACKUP_PLAN.md` 分成配置失败、来源失败、内容质量失败三类处理。
 3. 如果周五更新失败，不能只改日期；必须重新检索、重写 JSON、同步 HTML fallback，再重新 push。
 4. 如果 key 存在但某些来源返回 `403/404`，不要降级发布静态旧内容；先替换坏 URL、增加可访问官方来源或 direct event 来源，再 rerun。
-5. 如果 AI 产出不足 8 条，说明候选池质量不够；扩展 sources、检查 `kids/CANDIDATE_POOL.md`，然后手动 rerun。
+5. 不足 8 条时扩展检索和候选池；仍不足则发布已核实条目，不等待凑数。
 6. 手动 rerun 成功后必须确认：JSON `updatedAt` 是当天、周期是本周五到下周五、前 4 条是新/短期活动、Pages 已刷新。
 7. 如果 08:00 仍无法满足内容 gate，保留旧页面并报告 `Pages not refreshed`；不能只改日期或用旧活动补位。
 
@@ -75,7 +77,7 @@
 - 不是完整活动数据库，而是每周精选 8 条可靠、适合孩子、信息清楚的活动。
 - 首页必须 answer-first：打开后马上知道“这周带娃去哪儿”。
 - 同一个网页支持 Sydney / Melbourne 城市切换和中文 / English 切换。
-- 每个城市主推荐固定 8 条活动，底部 `More` 折叠区只放额外 3-5 条链接。
+- 每个城市主推荐目标 8 条（核实不足时可减少）活动，底部 `More` 折叠区只放额外 3-5 条链接。
 - `More` 不是装饰区；每周也必须更新，链接必须可打开，并来自本周检索候选或可靠官方入口。
 - 分享链接应定位到具体城市、语言和被分享的活动卡片。
 - 页面可以扩展成 `Events / Playgrounds` 双 tab：Events 解决“本周有什么活动”，Playgrounds 解决“今天临时去哪儿放电”。
@@ -185,7 +187,7 @@ Finder controls 结构：
 3. 新活动、单日活动、短期活动放在前排。
 4. 每个城市前 4 条必须是本周新检索到的新活动、单日活动、短期活动或明确日期活动。
 5. 仍在持续的长期展览、长期开放项目、场馆入口和泛 `What's On` 页面只能放在第 5 条以后。
-6. 每个城市保留 8 条主推荐。
+6. 每个城市目标 8 条主推荐，核实不足时减少。
 7. `More` 区保留 3-5 条有效链接，不无限增加，不放失效、空白或长期无人维护的入口。
 8. 每周保留候选池报告，记录 8 条主推荐之外的候选和来源，方便追溯为什么入选或未入选。
 
@@ -380,7 +382,7 @@ Official or council finder / Map
 - 自动任务必须 UTF-8 读写，防止中文乱码破坏 JSON。
 - 生成后校验 JSON 可解析。
 - 校验英文页面无中文泄漏。
-- 校验每个城市仍为 8 条主推荐，`More` 区保持 3-5 条链接。
+- 校验主推荐不超过 8 条、More 不超过 5 条；核实不足只告警。
 - 校验每个城市前 4 条都是本周新检索到的新活动、单日活动、短期活动或明确日期活动；长期展览、持续开放项目、场馆入口、泛 `What's On` 页面不能进入前 4。
 - 校验卡片官网链接和 `More` 链接；Sources 大列表可作为参考来源，不作为每周卡片链接校验范围。
 - 校验活动文本没有明显 `expired / ended / closed / cancelled / 已结束 / 取消` 等过期或取消信号。
@@ -463,7 +465,7 @@ content gate passed
 内容 gate：
 
 - Sydney 和 Melbourne 都重新检索，不复用旧 JSON 或旧 HTML 当作事实来源。
-- 每个城市 8 条主卡、More 至少 3 条有效链接。
+- 每个城市目标 8 条主卡、More 目标 3-5 条有效链接，不足时按实际数量发布。
 - 前 4 条必须是本周新检索到、单日、短期或明确日期活动。
 - Library、storytime、rhyme time、baby/toddler-only、0-3、playgroup 只能进 More，不能进主 8 条。
 - 候选池必须记录 Region，避免长期集中在 CBD / City core。
@@ -481,9 +483,9 @@ content gate passed
 
 - 只改了 `updatedAt`、周期日期或页面日期，但活动内容没有实质更新。
 - AI enrichment 不可用，且 fallback 不能证明前 4 条是新/短期/明确日期活动。
-- 任一城市少于 8 条有效主卡，或 More 少于 3 条有效链接。
+- 数量不足不阻止发布；删除未核实条目，记录缺口，不凑数。
 - 前 4 条包含泛 `What's On` 页面、长期场馆入口、过期活动、图书馆低龄活动或旧日期。
-- JSON、HTML fallback、英文-only、链接、UTF-8、Friday-to-Friday 任一校验失败。
+- JSON、HTML fallback、UTF-8、Friday-to-Friday 整体校验失败；单条内容或链接失败先剔除，再校验剩余条目。
 - 当前工作树包含 unrelated 改动且无法只 stage kids 相关文件。
 
 ### 14.4 Commit 规则
@@ -600,8 +602,8 @@ Public cards should stay visually light:
 
 ```text
 Source / area tag
-One status tag only: 本周精选 / Weekly pick, 继续推荐 / More picks, or 长期活动 / Ongoing
-Title
+One status tag only: 本周精选 / Weekly pick or 持续活动 / Ongoing, based on event duration, never card position
+Short Chinese title, with the official English name in smaller text; English mode shows the official name only
 Merged summary
 Time / place / cost
 Official / Map / Share

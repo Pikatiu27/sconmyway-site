@@ -60,21 +60,29 @@ def card(event: dict, index: int, city: str) -> str:
     if event.get("longTerm"):
         class_names.append("long-term")
 
-    status_zh = "长期活动" if event.get("longTerm") else ("本周精选" if index < 4 else "继续推荐")
-    status_en = "Ongoing" if event.get("longTerm") else ("Weekly pick" if index < 4 else "More picks")
+    status_zh = "持续活动" if event.get("longTerm") else "本周精选"
+    status_en = "Ongoing" if event.get("longTerm") else "Weekly pick"
     map_query = text(event.get("mapQuery") or event.get("placeEn") or event.get("placeZh") or event.get("titleEn"))
     map_url = f"https://www.google.com/maps/search/?api=1&query={quote_plus(map_query)}"
     official = text(event.get("url"))
     event_id = f"{city}-event-{index + 1}"
+    share_key = pair(event.get("shareKey") or official)
+    official_title = (
+        f'<p class="official-title zh" lang="en">{pair(event.get("titleEn"))}</p>'
+        if event.get("titleZh") != event.get("titleEn") else ""
+    )
 
     actions = []
     if official:
-        actions.append(action(official, "官网", "Official", "action primary"))
+        labels = {"official": ("官网", "Official"), "announcement": ("官方公告", "Announcement"), "tickets": ("官方购票", "Tickets")}
+        label_zh, label_en = labels.get(event.get("linkType", "official"), labels["official"])
+        actions.append(action(official, label_zh, label_en, "action primary" + (" announcement" if event.get("linkType") == "announcement" else "")))
     actions.append(action(map_url, "导航", "Map"))
 
-    return f"""        <article class="{' '.join(class_names)}" id="{event_id}" data-city="{city}" style="--accent:{accent};--wash:{wash};">
+    return f"""        <article class="{' '.join(class_names)}" id="{event_id}" data-city="{city}" data-share-key="{share_key}" style="--accent:{accent};--wash:{wash};">
           <div class="card-top"><span class="tag"><span class="zh">{pair(event.get('tagZh'))}</span><span class="en">{pair(event.get('tagEn'))}</span></span><span class="status"><span class="zh">{status_zh}</span><span class="en">{status_en}</span></span></div>
           <h3><span class="zh">{pair(event.get('titleZh'))}</span><span class="en">{pair(event.get('titleEn'))}</span></h3>
+          {official_title}
           <p class="summary zh">{pair(event.get('summaryZh'))}</p><p class="summary en">{pair(event.get('summaryEn'))}</p>
           <div class="facts"><div class="fact"><span>&#128337;</span><span class="zh">{pair(event.get('timeZh'))}</span><span class="en">{pair(event.get('timeEn'))}</span></div><div class="fact"><span>&#128205;</span><span class="zh">{pair(event.get('placeZh'))}</span><span class="en">{pair(event.get('placeEn'))}</span></div><div class="fact"><span>&#127915;</span><span class="zh">{pair(event.get('priceZh'))}</span><span class="en">{pair(event.get('priceEn'))}</span></div></div>
           <div class="actions">{''.join(actions)}</div>
@@ -95,7 +103,10 @@ def more_links(data: dict) -> str:
             return ""
         body = "".join(
             f'            <a href="{escape(text(item.get("url")), quote=True)}" target="_blank" rel="noreferrer">'
-            f'{pair(item.get("title"))}<small>{pair(item.get("source"))}</small></a>\n'
+            f'<span class="more-title"><span class="zh">{pair(item.get("titleZh") or item.get("title"))}</span>'
+            f'<span class="en">{pair(item.get("titleEn") or item.get("title"))}</span></span>'
+            f'<small><span class="zh">{pair(item.get("sourceZh") or item.get("source"))}</span>'
+            f'<span class="en">{pair(item.get("sourceEn") or item.get("source"))}</span></small></a>\n'
             for item in items
         ).rstrip()
         return f"""          <div class="more-group">
@@ -131,8 +142,14 @@ def main() -> None:
 
     for city, event_marker, more_marker, data_path in CITY_CONFIGS:
         data = json.loads(data_path.read_text(encoding="utf-8"))
+        if first_data and (data["periodStart"], data["periodEnd"]) != (first_data["periodStart"], first_data["periodEnd"]):
+            raise ValueError("City publication periods do not match; refusing to generate mixed-week HTML")
         first_data = first_data or data
-        cards = "\n".join(card(event, index, city) for index, event in enumerate(data["events"]))
+        total = len(data["events"])
+        count = f'<p class="event-count"><span class="zh">本周 {total} 条活动</span><span class="en">{total} activities this week</span></p>'
+        cards = count + "\n" + "\n".join(card(event, index, city) for index, event in enumerate(data["events"]))
+        if not total:
+            cards += '<p class="empty-events"><span class="zh">本周暂无已核实活动。</span><span class="en">No verified events for this week yet.</span></p>'
         html = replace_block(html, event_marker, cards)
         html = replace_block(html, more_marker, more_links(data))
 
