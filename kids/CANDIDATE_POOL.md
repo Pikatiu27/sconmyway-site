@@ -1,42 +1,50 @@
-# Kids candidate pool - 2026-08-21 to 2026-08-28
+# Kids candidate pool - 2026-09-11 to 2026-09-18
 
-Fresh official-source research for the Friday-to-Friday Australia/Sydney publication week. Discovery pages were used only to expand leads; selected cards use council, venue, organiser, tourism-board or official ticketing/listing sources.
+Research checked on 11 September 2026. Main and More destinations were opened and their event identity checked against council, venue, organiser or organiser-ticketing content. Per-item URLs and evidence are stored in the two city JSON files. This is a genuine replacement, not a metadata-only rollover.
 
 ## Sydney selected
 
-1. Room on the Broom - City of Parramatta / Riverside Live - Parramatta - 21-22 Aug - selected card 1.
-2. Sydney City Farm Open Day: Seeds of Science - City of Sydney - Sydney - 22 Aug - selected card 2.
-3. Sydney Science Trail Community Day - Botanic Gardens of Sydney - Mount Annan - 22 Aug - selected card 3.
-4. Harry Potter Two-Part Marathon - 25th Anniversary - City of Sydney / Hayden Orpheum - Cremorne - 23 Aug - selected card 4.
-5. Harry Potter: The Exhibition - official exhibition site - Sydney Olympic Park - ongoing current-week exhibition - selected card 5.
-6. Titanic: A Voyage Through Time - Sydney Olympic Park - Sydney Olympic Park - ongoing current-week experience - selected card 6.
-7. Bloodsuckers: Nature's Vampires - Australian Museum - Darlinghurst - ongoing current-week exhibition - selected card 7.
-8. Sydney Observatory Family Tours - City of Sydney - The Rocks - current-week sessions - selected card 8.
-
-## Sydney checked but not main 8
-
-- City of Sydney family listings, Sydney Observatory, Australian Museum, Botanic Gardens of Sydney and City of Parramatta were checked as official sources.
-- Library, storytime, toddler-only, class-style and generic directory leads were rejected from the main cards.
-- Later-August items such as City2Surf, Skate!, The Planets and other future listings were held for later weeks.
+1. REAL Festival: Take Flight - new dated event.
+2. Festival of the Winds 2026 - new dated event.
+3. Sydney 000 Expo 2026 - new dated event.
+4. Big Day Out at The Canopy + Made in Lane Cove Markets - new dated event.
+5. Let's Go Greek Festival - new dated event.
+6. Carnival of the Animals - new dated event.
+7. Bloodsuckers: Nature's Vampires - ongoing, rechecked and placed after new events.
+8. Harry Potter: The Exhibition - ongoing, rechecked and placed after new events.
 
 ## Melbourne selected
 
-1. PAW Patrol Live: Race to the Rescue - Visit Melbourne / official ticketing - Melbourne Park - 22-23 Aug - selected card 1.
-2. Rose St. Artists' Market - organiser / Visit Melbourne - Fitzroy - 22 Aug weekend market - selected card 2.
-3. The Dark Alchemy Expo - Visit Melbourne - Coburg - 22 Aug - selected card 3.
-4. Slowfood Spotswood Farmers Market - Visit Melbourne / Slow Food Melbourne - Spotswood - 22 Aug - selected card 4.
-5. Now or Never - City of Melbourne - multiple city venues - 19-30 Aug - selected card 5, ongoing festival.
-6. Children's Play: Ragnar Kjartansson - City of Melbourne / NGV - Southbank - ongoing current-week exhibition - selected card 6, long-term.
-7. NINJAGO: The True Ninja Trials - LEGOLAND Discovery Centre Melbourne - Docklands - through 23 Aug - selected card 7.
-8. Imaginator - City of Melbourne - Fed Square - through 30 Sep - selected card 8, long-term.
+1. THE CUBE - new dated event.
+2. Science is a Superpower Festival - new dated event.
+3. Indian Community Day 2026 - new dated event.
+4. Zero Waste Festival - new dated event.
+5. NFL Kickoff Festival - new dated event.
+6. Tesselaar Tulip Festival: Turkish Weekend - new dated event.
+7. Ice Hockey Junior Showcase - new dated event.
+8. Children's Play: Ragnar Kjartansson - ongoing, rechecked and placed after new events.
 
-## Melbourne checked but not main 8
+## Coverage and decisions
 
-- Visit Melbourne, City of Melbourne What's On, Rose St. Artists' Market, NGV and LEGOLAND Discovery Centre were checked as official sources.
-- Book Week and Make a Memory were moved out of the main-card shortlist because the repository validator treats library activities as More-only.
-- MIFF, Now or Never and other ongoing programs were kept after the four dated leads; expired July selections were removed.
+- Sydney main coverage: Penrith, Bondi, Castle Hill, Lane Cove, Parramatta, city centre/Darlinghurst and Olympic Park. Melbourne: Preston, Spotswood, city/St Kilda Road, Silvan and Docklands.
+- Expanded search also covered Ryde, Burwood, The Rocks, Darling Square, Darling Harbour, Wyndham, Casey and Greater Dandenong. Searching a district is not proof of a suitable candidate; no unverified result was promoted to fill a quota.
+- Ryde Armenian Film Festival: broad programme; no specific child-suitable screening verified, so not selected. Ryde Pride is a teen group, not a general family outing. Eastwood spring gala is 20 September, outside this week. Burwood mooncake workshop was 10 September, already past. HSC study sessions do not fit family recreation.
+- Greater Dandenong poetry and Wyndham financial education were not selected for the family-play focus. Dandenong Parkrun was lower priority than this week's dated festivals. Generic precinct programme PDFs are not event-detail replacements.
+- Sydney More: Canterbury-Bankstown Children's Festival (date/place/time verified; fee unstated, no free-entry claim); Kids Dream It Up (ages 8-12, drop-off, not an adult-child outing); Alchemy of a Rainforest (closure dates displayed).
+- Melbourne More: Bloom & Graze (12-13 September, not the later Blossom Festival); Record Fair (12 September); Joyful Place under-five event (booking required, kept out of main).
+- Removed prior-week Strathfield, Chatswood, Cecil Hills, ship open day and Father's Day recommendations. Ongoing recommendations were researched again, not copied forward as new.
 
-## More links
+## Important source details
 
-- Sydney More links were refreshed from current City of Sydney and City of Parramatta official pages.
-- Melbourne More now includes Rose St. Artists' Market, Adventure Park's Winter Glow, City of Melbourne family events and Visit Melbourne family activities.
+- REAL Festival: Friday/Saturday 4-10pm, Sunday 10am-4pm; entry free, some experiences ticketed. Programme: https://www.penrithcity.nsw.gov.au/community-library/realfestival ; hours/fees: https://www.penrithcity.nsw.gov.au/community-library/realfestival/real-festival-faqs . Fixed a validator false positive caused by the council URL's community-library path.
+- Scienceworks festival activities finish at 3pm; do not substitute the museum's later general closing time.
+- Tesselaar has a reduced flower display in 2026 and discounted prices; current FAQ takes precedence over generic lush-field marketing: https://tulipfestival.com.au/faq/ .
+- Harry Potter official page has conflicting generic FAQ and weekly hours; use the explicit weekly schedule, avoid conflicting last-entry and infant-free thresholds, and ask visitors to confirm their booked session.
+- Calyx official closure list includes 11 and 14-16 September; show this warning directly in the More link title.
+- Ice hockey on 17 September starts at 8pm; explicitly recommended for older children, not toddlers.
+
+## Release acceptance
+
+- Expected: Sydney 8 main + 3 More, Melbourne 8 main + 3 More. First four in each city are newly researched dated events.
+- Period: 11-18 September, Friday to Friday. First titles: REAL Festival: Take Flight; THE CUBE.
+- Local content, UTF-8, static parity and regression checks run before commit. Public parity must be checked after deployment; a docs-only commit never satisfies this release.

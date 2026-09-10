@@ -25,6 +25,8 @@ function prepare(mutate, expected, expectFailure = false) {
 }
 try {
   prepare(() => {}, 8);
+  prepare(d => { d.events[0].url = 'https://www.penrithcity.nsw.gov.au/community-library/realfestival'; d.events[0].linkReview.url = d.events[0].url; }, 8);
+  prepare(d => { d.events[0].titleEn = 'Library Storytime'; }, 7);
   prepare(d => { d.events[0].linkReview.status = 'unrelated'; }, 7);
   prepare(d => { d.events[0].url = 'https://example.com/'; }, 7);
   prepare(d => { delete d.events[0].linkReview; }, 7);

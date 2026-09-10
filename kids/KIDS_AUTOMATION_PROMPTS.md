@@ -21,7 +21,16 @@ The kids page uses the same execution model as the Industry Review:
 
 The automation RRULE is evaluated in the Codex app's local project schedule, matching the Industry Review setup.
 
+As of 11 September 2026, both 05:00 and 07:00 use the same `kids-weekly-refresh` heartbeat in this conversation. The older standalone `kids-weekly-retry` cron is paused to avoid creating another conversation. The 07:00 run follows the same current-week comparison and stops only after verified success.
+
 ## Primary Refresh Contract
+
+### Completion and recovery guard
+
+- During a scheduled refresh or recovery, resume the current publication week after any interruption. Do not replace the task with older design/documentation requests from this conversation.
+- After research, write the selected candidates and evidence to local files before continuing. The publication is unfinished until both event JSON files and the generated fallback contain the newly researched week.
+- Run `validate` (current-week freshness) as well as `validate-content` for both city files. A passing layout test or successful documentation push does not prove a content refresh.
+- Completion requires cache-busted public JSON to match local JSON for both cities, with current period, newly researched first four items, counts and first titles. Report failure if this proof is absent; never report a docs-only deployment as a weekly refresh.
 
 1. Work only on `kids/` and the kids synchronization/validation helpers.
 2. Read `kids/KIDS_PAGE_GUIDE.md`, `kids/PUBLIC_RELEASE_CHECKLIST.md` and `kids/LINK_PUBLICATION_POLICY.md` first.

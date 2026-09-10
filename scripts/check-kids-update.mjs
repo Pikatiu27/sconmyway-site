@@ -43,7 +43,8 @@ const libraryActivityPattern = /\b(library|libraries|storytime|story time|rhyme 
 const lowAgeOnlyPattern = /\b(baby rhyme|rhyme time|storytime|story time|playgroup|toddler time|0\s*-\s*3|0 to 3|0-3|babies only|toddlers only)\b|\bunder 3\b(?!\s+free)/i;
 
 function isLibraryActivity(event) {
-  return libraryActivityPattern.test(Object.values(event || {}).join(" "));
+  // Council URL paths can contain "library" even for unrelated festivals.
+  return libraryActivityPattern.test(["tagZh", "tagEn", "titleZh", "titleEn", "summaryZh", "summaryEn", "placeZh", "placeEn"].map(key => event?.[key] || "").join(" "));
 }
 
 function isLowAgeOnlyActivity(event) {

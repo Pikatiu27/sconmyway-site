@@ -10,7 +10,7 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 - Do not use an API key or automated content generation unless the user explicitly asks to restore that path.
 - Each Friday update must fresh-search Sydney and Melbourne activities; never roll old dates forward.
 - GitHub Actions performs a final freshness and link audit at Friday 08:30, after the Codex primary and recovery tasks. It is a watchdog only and must never generate or roll forward event content.
-- Local Codex automation IDs are `kids-weekly-refresh` (Friday 05:00) and `kids-weekly-retry` (Friday 07:00).
+- Local Codex automation `kids-weekly-refresh` runs Friday 05:00 and 07:00 in this conversation. The old standalone `kids-weekly-retry` is paused; the 07:00 heartbeat checks and recovers the same publication.
 - First four cards in each city must be newly found or short-window current-week activities.
 - Long-running activities can remain only after fresher current-week options.
 - Library storytime, toddler-only, and weak discovery leads belong in More or are skipped.
