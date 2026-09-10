@@ -24,7 +24,7 @@ The automation RRULE is evaluated in the Codex app's local project schedule, mat
 ## Primary Refresh Contract
 
 1. Work only on `kids/` and the kids synchronization/validation helpers.
-2. Read `kids/KIDS_PAGE_GUIDE.md` and `kids/PUBLIC_RELEASE_CHECKLIST.md` first.
+2. Read `kids/KIDS_PAGE_GUIDE.md`, `kids/PUBLIC_RELEASE_CHECKLIST.md` and `kids/LINK_PUBLICATION_POLICY.md` first.
 3. Fetch the public Sydney and Melbourne JSON and inspect the local files.
 4. Determine the current Friday-to-Friday publication period in Australia/Sydney.
 5. Search current public sources again. Do not treat last week's JSON as a candidate source.
@@ -32,10 +32,10 @@ The automation RRULE is evaluated in the Codex app's local project schedule, mat
 7. Use social media and discovery sites only as leads, then verify against an organiser, council, venue or official ticketing page.
 8. Remove expired, cancelled, date-unclear and weakly verified items.
 9. Target 8 main events per city; publish fewer if replacement research yields fewer verified events. Cards 1-4 must be newly found, one-off, short-window or concretely dated within the new publication week.
-10. Put long-running attractions at card 5 or later. Put library/storytime, toddler-only and generic directory links in More or omit them.
+10. Put long-running attractions after fresh dated events, normally at card 5 or later. Only verified library/storytime and toddler-only items may go in More; generic directories must be labelled backup finders. Never put unresolved links in More.
 11. Rewrite both JSON files completely, including `updatedAt`, `periodStart`, `periodEnd`, main events and More links.
 12. Keep Chinese and English facts equivalent. English fields and English UI text must contain no Chinese.
-13. Run `py -3 scripts/sync-kids-static.py`.
+13. Record matching current `linkReview` evidence for every selected main and More URL. Run `prepare` with `scripts/check-kids-update.mjs` for both JSON files, inspect both review reports, then run `py -3 scripts/sync-kids-static.py`. Resolve structural errors; individual rejected links must not block healthy content.
 14. Validate JSON, UTF-8, Friday-to-Friday dates, actual per-city card counts (target 8+8), English fields, official links, More links and `git diff --check`.
 15. Commit only the intentional kids files, rebase on current `origin/main`, push with `git push origin HEAD:main`, and verify `origin/main`.
 16. Fetch cache-busted public JSON and Pages HTML. Confirm the period, both first titles, actual per-city card counts (target 8+8) and mobile layout before reporting success.
