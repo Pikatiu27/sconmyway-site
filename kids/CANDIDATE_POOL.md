@@ -1,134 +1,139 @@
-# Kids candidate pool - 2026-10-09 to 2026-10-16
+# Kids candidate pool - 2026-10-16 to 2026-10-23
 
-Official research checked 9 October 2026, Australia/Sydney. Initial local, origin/main and public feeds all held the 2 October edition. This is a fresh content replacement, not a date-only rollover. Validation and public parity are recorded during publication.
+Checked 16 October 2026, Australia/Sydney. Initial local, origin/main and public feeds all held the 9 October edition. This is newly researched content, not a date-only rollover. Public parity must be checked after publication.
 
 ## Sydney
 
-1. Les moutons at the Opera House
-   Source: https://www.sydneyoperahouse.com/wild-things/les-moutons
-   Evidence: Les moutons at the Opera House. Friday 9–Sunday 11 October, daily at 11am and 1pm. Sydney Opera House Forecourt, Bennelong Point NSW. Free; children aged 15 and under must be accompanied. Watch Canada's CORPUS performers become a flock of sheep in a playful blend of dance and wordless comedy. This 30-minute show welcomes all ages; it is theatre, not an animal encounter, and performances are weather dependent.
-   Placement: newly researched current-week lead
+1. Granny Smith Festival
+   Source: https://www.ryde.nsw.gov.au/Events/Granny-Smith-Festival
+   Evidence: City of Ryde festival and FAQ confirm Saturday 17 October 2026, 9am-8:30pm, Eastwood shopping precinct and Oval, free family entry. Parade, stages, children's activities and fireworks. Some precincts close earlier; rides and food are separate purchases. FAQ: https://www.ryde.nsw.gov.au/Events/Granny-Smith-Festival/FAQ
+   Placement: newly researched, concretely dated current-week lead
 
-2. Marrickville Music Festival
-   Source: https://www.innerwest.nsw.gov.au/news/marrickville-music-festival-brings-six-stages-free-live-music-inner-west
-   Evidence: Marrickville Music Festival. Sunday 11 October, noon–6pm. Marrickville Road and surrounding laneways, Marrickville NSW. Free entry; food sold separately. Explore six stages across the streets and laneways, with live music, roaming performances and creative stalls. An easy shared outing for adults and children, with nearby eateries and festival food to buy.
-   Placement: newly researched current-week lead
+2. Parramatta Lanes
+   Source: https://atparramatta.com/lanes/about
+   Evidence: Parramatta Lanes. This week: Wednesday 21 and Thursday 22 October, 5–10pm; the full festival continues until 24 October. Parramatta CBD, multiple laneways and public spaces NSW; follow the festival map. Free entry; food sold separately. Explore laneways, gardens and rooftop spaces filled with large-scale art, live music and street food. Arrive earlier in the evening with children and check transport changes before a relaxed family wander.
+   Placement: newly researched, concretely dated current-week lead
 
-3. NSW Police Force Open Day
-   Source: https://www.darlingharbour.com/whats-on/events/nsw-police-force-open-day
-   Evidence: NSW Police Force Open Day. Sunday 11 October, 10am–3pm. Tumbalong Park, Darling Harbour NSW. Free. Explore police vehicles and meet specialist teams including rescue, marine policing and forensics. A family outing for curious children and adults, with the police band performing from 11am to 12:30pm, with a break.
-   Placement: newly researched current-week lead
+3. Moore Park South Family Fun Day
+   Source: https://whatson.cityofsydney.nsw.gov.au/events/moore-park-south-family-fun-day
+   Evidence: Moore Park South Family Fun Day. Saturday 17 October, 11am–2pm. Moore Park South, Moore Park NSW. Free activities; registration encouraged, food extra. Try lawn games, sports activities, nature experiences and a reptile zoo together in open parkland. Face painting, community stalls and food trucks round out a relaxed family outing; registration is encouraged.
+   Placement: newly researched, concretely dated current-week lead
 
-4. NATGAT XX Parkour Gathering
-   Source: https://atparramatta.com/whats-on/natgat-xx
-   Evidence: NATGAT XX Parkour Gathering. Saturday 10 October, 8am–6pm; skills 10am–2pm, style finals 3–5pm. Junction Street Plaza, Granville NSW. Free to watch; participation requirements are separate. Watch parkour athletes tackle skill challenges and stylish moves, with live DJs. A spectator outing for older children and adults: skills run from 10am–2pm and style finals from 3–5pm. Watching is separate from participating; do not copy the stunts.
-   Placement: newly researched current-week lead
+4. Addi Road Fiesta
+   Source: https://whatson.cityofsydney.nsw.gov.au/events/addi-road-fiesta
+   Evidence: Addi Road Fiesta. Saturday 17 October, 10:30am–2pm. Addison Road Community Centre, 142 Addison Road, Marrickville NSW. Free entry; food and purchases extra. Browse local markets and entertainment at the community centre's multicultural 50th-birthday celebration. Make a relaxed visit together and pair it with lunch in Marrickville; register online for event updates.
+   Placement: newly researched, concretely dated current-week lead
 
-5. SWING at the Opera House
-   Source: https://www.sydneyoperahouse.com/wild-things/swing
-   Evidence: SWING at the Opera House. Friday 9 and Saturday 10 October, 11am–6pm; Sunday 11 October, 11am–4pm. Sydney Opera House Forecourt, Bennelong Point NSW. Free; join the queue, children under 16 must be accompanied. A nine-metre swing structure puts the harbour behind your ride. The large swing is for ages 9+, with a smaller swing for younger visitors. Queues can reach two hours and close early at capacity; check staff instructions and weather.
-   Placement: continuing attraction after fresh leads
+5. Crows Nest Fest
+   Source: https://www.northsydney.nsw.gov.au/events/event/1666/crows-nest-fest-2026
+   Evidence: Crows Nest Fest. Sunday 18 October, 10am–5pm. Willoughby Road and surrounding streets, Crows Nest NSW. Free entry; food and purchases extra. Explore more than 200 stalls, live entertainment across four stages, roaming performers and family activities along Willoughby Road. Wander, eat and meet local makers and businesses together.
+   Placement: additional newly researched weekly outing
 
-6. The Greatest Magic Show: Final Weekend
-   Source: https://sydneyfringe.com/events/the-greatest-magic-show/
-   Evidence: The Greatest Magic Show: Final Weekend. This week: 9–11 October; select a remaining performance on the official ticket page. The Virago, Fool's Paradise, Entertainment Quarter, 122 Lang Road, Moore Park NSW. From $33; $4.60 fee per paid transaction. Enjoy an hour of comic magic and playful audience interaction, aimed at ages 4–12 and their families. Children receive a magic wand; the show uses haze, so check the selected performance before booking.
-   Placement: continuing attraction after fresh leads
+6. Sail Expo
+   Source: https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on/sail-expo-2026
+   Evidence: Sail Expo. Saturday 17 and Sunday 18 October, 10am–4pm daily. Royal Prince Alfred Yacht Club, 16 Mitala Street, Newport NSW. Free; food and any extras separate. Explore sailing boats and marine displays, enjoy live entertainment and stop for a waterfront meal. A shared outing for curious children and adults; this is a boat show, not a promise of a sailing trip.
+   Placement: additional newly researched weekly outing
 
-7. Bloodsuckers: Final Weekend
-   Source: https://australian.museum/exhibition/bloodsuckers/
-   Evidence: Bloodsuckers: Final Weekend. This week: 9–11 October, timed entry; closes Sunday 11 October. Australian Museum, 1 William Street, Darlinghurst NSW. Advance adults $24, ages 4–15 $16; same-day adults $29, children $19. Explore blood-feeding animals through microscopes, models and interactive displays. Designed for ages 8+, with around 50–70 minutes to explore. Vampire imagery may unsettle younger children; there are no live animals or real blood.
-   Placement: continuing attraction after fresh leads
+7. The Great Graze
+   Source: https://www.nsw.gov.au/visiting-and-exploring-nsw/nsw-events/great-graze
+   Evidence: The Great Graze. Saturday 17 and Sunday 18 October, noon–6pm daily. The Streets of Barangaroo, Wulugul Walk and Waterman's Cove NSW. Free entry; food and drinks extra. Wander waterfront pop-ups along Wulugul Walk and Waterman's Cove, with live music, food and family-friendly entertainment. Combine lunch with a harbour stroll; entry is free, but food and special menus are paid.
+   Placement: additional newly researched weekly outing
 
 8. Harry Potter: The Exhibition
    Source: https://harrypotterexhibition.com/locations/sydney/
-   Evidence: Harry Potter: The Exhibition. This week: Fri noon–7:30pm; Sat/Sun 9am–6:30pm; Mon/Thu 10am–5:30pm. Last entry 90 minutes before closing; closed Tue/Wed. Paddington Pavilion, Sydney Showground, Sydney Olympic Park NSW; entry via Olympic Boulevard. Adult timed-entry tickets from $33 including fees; check child prices for the selected session. Explore film costumes and props, try Quidditch-themed activities and spot familiar magical details together. Recommended for ages 5+, allowing 60–90 minutes; strollers are not permitted inside, so check entry sessions before booking.
-   Placement: continuing attraction after fresh leads
+   Evidence: Current Sydney event page confirms Paddington Pavilion, Olympic Boulevard access, published five-day weekly hours, timed adult tickets from $33 including fees, recommended ages 5+, 60-90 minutes and no strollers. The page conflicts on last entry (listed day times versus a two-hour statement), so do not repeat a fixed last-entry offset; direct readers to the chosen date's ticket calendar. Infant ticket rules are also inconsistent and omitted.
+   Placement: continuing attraction, after fresh leads
 
 ### More
 
-- 9–11 October: Little Chef (booking required) (current)
-  Source: https://www.darlingharbour.com/whats-on/events/little-chef
-  Evidence: Official programme runs 3–11 October; remaining 9–11 October sessions last 90 minutes. Ages 6–12 grouped by age, Darling Quarter North Village Green beside Harbour Street. Free, limited places and booking essential; parents wait on the terrace.
+- 18 October: Dee Why Filipino Culture Celebration (includes religious observance) (current)
+  Source: https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on/northern-beaches-celebration-filipino-culture
+  Evidence: Sunday 18 October 2026, 11:30am-4:30pm. St Kevin's Church Dee Why, Mass at 11:45am followed by lunch and cultural programme in the Upper Hall. Free admission, everyone welcome; Filipino music, dance and traditional games. Food is not assumed free.
 
-- 9–10 October: Into the Box Creative Play (current)
-  Source: https://atparramatta.com/whats-on/box
-  Evidence: Official event runs 7–10 October 2026, 9am–3pm, Riverside Theatres Courtyard, corner Church and Market Streets, Parramatta. Free, no booking; storytime, colouring, balloons and face painting. Ages 1+, face painting ages 3+; deliberately in More rather than main.
+- 18 October: Moby Dick Performance at Sydney Fish Market (current)
+  Source: https://www.sydneyfishmarket.com.au/seascapes/
+  Evidence: Seascapes official page lists Greg Sindel with Studio A, Call me Ishmael! A Moby Dick Storytelling, Civic Plaza, Sunday 18 October 2026 at 1pm. Free live performance; sea adventure and darker themes, not promoted as a toddler session. Other dates on the page are not included as current recommendations.
 
-- Until 11 October: BLAST LAB Science (current)
-  Source: https://sydneyfringe.com/events/blast-lab-science/
-  Evidence: Official detail lists 19 September–11 October, one-hour science show, The Bunker, Entertainment Quarter, 122 Lang Road Moore Park. $33 plus $4.60 transaction fee; select remaining sessions. Haze and sudden loud noises.
+- 16–18 October: The Rocks Markets (current)
+  Source: https://therocks.com/whats-on/market-overview
+  Evidence: Official recurring market detail gives Friday 10am-3pm and Saturday/Sunday 10am-5pm, Jack Mundey Place, Playfair Street and weekend George Street. The official stall selector lists 16, 17 and 18 October. Food/art/design/music market; purchases extra. Halloween edition is later, not this weekend.
 
 ## Melbourne
 
-1. Spring Fling Grassland Festival
-   Source: https://vnpa.org.au/event/spring-fling-grassland-festival-2026/
-   Evidence: Spring Fling Grassland Festival. Sunday 11 October, noon–4pm. Iramoo Wildflower Grassland Reserve, near Iramoo Native Plant Nursery, St Albans. Free; registration available through the organiser. Take a free wildflower-reserve tour, try grassland games, enjoy Bhangra dance and music, and browse community stalls. Explore western Melbourne's native grasslands together and keep to designated paths in the reserve.
-   Placement: newly researched current-week lead
+1. Italian Festa & Expo
+   Source: https://www.italianfesta.com.au/
+   Evidence: Italian Festa & Expo. Saturday 17 October, 11am–10:30pm; Sunday 18 October, 11am–8:30pm. Royal Exhibition Building and grounds, 9 Nicholson Street, Carlton. Free main entry; food, purchases and selected experiences extra. Explore Italian food, makers and cultural performances around the Royal Exhibition Building and its grounds, with live music throughout. A shared family wander; main entry is free, while selected tastings and jazz sessions require separate tickets.
+   Placement: newly researched, concretely dated current-week lead
 
-2. Community Safety Family Fun Day
-   Source: https://www.greaterdandenong.vic.gov.au/greater-dandenong-council/events/community-safety-family-fun-day
-   Evidence: Community Safety Family Fun Day. Saturday 10 October, 10am–2pm. Palm Plaza, McCrae Street, Dandenong. Free; car-seat checks require a separate appointment, check official booking updates. Meet emergency-service teams, explore their vehicles and learn practical safety tips together. This free community day welcomes families; child car-seat checks are a separate appointment service, not a guaranteed walk-in activity.
-   Placement: newly researched current-week lead
+2. Queensberry Cup
+   Source: https://whatson.melbourne.vic.gov.au/things-to-do/queensberry-cup
+   Evidence: Queensberry Cup. Saturday 17 October, 1–7pm. Errol Street, North Melbourne. Free, no booking required; food extra. Watch creative billycarts race through the streets, then explore performances, food and family activities. Enjoy a lively North Melbourne community afternoon together; spectating is separate from entering the race.
+   Placement: newly researched, concretely dated current-week lead
 
-3. Housewarming
-   Source: https://whatson.melbourne.vic.gov.au/things-to-do/housewarming
-   Evidence: Housewarming. Friday 9 October, 6pm/8pm; Saturday 10 October, 2pm/5pm/8pm; Sunday 11 October, 1pm/3:30pm; about one hour per performance. Ian Potter State Theatre, Arts Centre Melbourne, 100 St Kilda Road, Southbank. Free; book a performance session through the official link. See a free performance in the renewed Ian Potter State Theatre, then explore collection displays and celebrations nearby. Pair a theatre visit with a Southbank walk; book a performance session and check separate programme times.
-   Placement: newly researched current-week lead
+3. Dog Lovers Festival
+   Source: https://dogloversfestival.com.au/melbourne/
+   Evidence: Organiser's Melbourne 2026 page and FAQ confirm 17-18 October, 9:30am-5pm daily, Melbourne Showgrounds Epsom Road Ascot Vale. Paid Eventbrite booking via organiser; price not guessed. Same ticket enters Cat Lovers Festival on the same day only, not both dates; personal pets not permitted. FAQ: https://dogloversfestival.com.au/melbourne/visitor-info/frequently-asked-questions/ . Eventbrite retrieval returned 429, so ticket inventory is not guaranteed.
+   Placement: newly researched, concretely dated current-week lead
 
-4. Melbourne Alternative Comics Expo Market Day
-   Source: https://whatson.melbourne.vic.gov.au/things-to-do/melbourne-alternative-comics-expo-market-day
-   Evidence: Melbourne Alternative Comics Expo Market Day. Sunday 11 October, 10am–4pm. Kensington Town Hall, 30/34 Bellair Street, Kensington. Free entry, no booking required; purchases extra. Meet over 120 comic creators and artists, browse exhibitions and check the programme for children's and adults' workshops. Discover independent publishing and different drawing styles together; purchases are extra.
-   Placement: newly researched current-week lead
+4. Melbourne United v Illawarra Hawks
+   Source: https://www.axs.com/au/events/1554509/melbourne-united-v-illawarra-hawks-tickets
+   Evidence: Official AXS event 1554509 confirms Melbourne United v Illawarra Hawks on Sunday 18 October 2026, game 5pm, doors 3:30pm, John Cain Arena Olympic Boulevard. Family offer is two adults and two juniors; no base price assumed. Sold-out label applies to accessible parking offer, not general tickets. Team schedule confirms opponent/date; council listing incorrectly names Cairns in body and is not used as authority.
+   Placement: newly researched, concretely dated current-week lead
 
-5. A Minecraft Movie: Outdoor Cinema
-   Source: https://www.greaterdandenong.vic.gov.au/events/minecraft-movie-pg
-   Evidence: A Minecraft Movie: Outdoor Cinema. Saturday 10 October, 6–8pm. Springvale Community Hub, 5 Hillcrest Grove, Springvale. Free, no booking required. Bring a picnic blanket and snacks for an adventure in a world of blocks on the community lawn. The film is rated PG, so consider your child's suitability and check the weather before this outdoor screening.
-   Placement: additional dated weekly outing
+5. Free Jazz at Fed Square
+   Source: https://www.melbournejazz.com/events/free-jazz-at-fed-square/
+   Evidence: Official detailed programme supersedes the site's generic 2pm card: Saturday 17 October 2026, Second Line Street Party 1pm starts Red Stair Amphitheatre, 1 Southbank Boulevard; Rebirth Brass Band at Fed Square 1:45pm, BIGYUKI 2:30pm, Allysha Joy 3:45pm. Header covers afternoon until 5pm. Free/family. This card recommends Saturday music only; Sunday's Soul has a separate dated film card.
+   Placement: additional newly researched weekly outing
 
-6. Tesselaar Tulip Festival: Final Weekend
-   Source: https://tulipfestival.com.au/faq/
-   Evidence: Tesselaar Tulip Festival: Final Weekend. 9–11 October, daily 10am–5pm; Irish Weekend on 10–11 October. Tesselaar, 357 Monbulk Road, Silvan. Friday adults $19; weekend adults $27.50; food and some experiences extra. Explore the gardens, Irish Weekend entertainment, food and family activities. The official FAQ warns that this year's flower display is reduced and tickets are discounted; treat it as a garden festival rather than expecting full tulip fields.
-   Placement: continuing attraction after fresh leads
+6. Soul: Jazz on Film
+   Source: https://www.melbournejazz.com/events/soul/
+   Evidence: Soul: Jazz on Film. Sunday 18 October, starts 3pm. Fed Square, corner Swanston and Flinders Streets, Melbourne. Free. Watch Pixar's Soul as music teacher Joe explores purpose, everyday life and jazz. Rated PG, with themes of life and death, so consider your child's suitability; check the weather for this outdoor square screening.
+   Placement: additional newly researched weekly outing
 
-7. DinoFest at Nortons Park
-   Source: https://events.humanitix.com/dinofest-melbourne-nortons-park
-   Evidence: DinoFest at Nortons Park. Saturday 10 and Sunday 11 October, daily 10:30am–noon, 1–2:30pm and 3–4:30pm. Nortons Park, Nortons Lane, Wantirna South. Ticketed; check the price for your selected session. Follow a trail of more than 30 life-size dinosaur models, enjoy a 45-minute dinosaur encounter, and try digging and fossil activities. Especially suited to dinosaur fans under 9 and their adults; each booked session lasts 90 minutes.
-   Placement: continuing attraction after fresh leads
+7. Inside Out: Jump, Jive, Jazz
+   Source: https://www.melbournejazz.com/events/inside-out-jump-jive-jazz/
+   Evidence: Inside Out: Jump, Jive, Jazz. This week: Thursday 22 October, 10:30am–12:30pm; the full programme continues until 25 October. ArtPlay, Birrarung Marr, Russell Street Extension, Melbourne. Free, no booking required; wait if at capacity. Build, draw or dance together with cushions, felt, ribbon and rope while live jazz plays. For children aged 2–7 with an accompanying adult; the space is dimly lit, entry may involve a wait at capacity, and facilitated groups cannot attend.
+   Placement: additional newly researched weekly outing
 
 8. Colour: See the World in a New Light
    Source: https://museumsvictoria.com.au/scienceworks/whats-on/colour/
    Evidence: Colour: See the World in a New Light. Daily, 10am–4:30pm; until 26 January 2027. Scienceworks, 2 Booker Street, Spotswood. Adults $25, children $10, concession $10, seniors $22; members $8. Experiment together with light, colour and optical illusions to discover how the eyes and brain work. Recommended for ages 5–14 with adults welcome to join in; admission includes Scienceworks entry.
-   Placement: continuing attraction after fresh leads
+   Placement: continuing attraction, after fresh leads
 
 ### More
 
-- 9–11 October: The Finders Keepers Design Market (current)
-  Source: https://whatson.melbourne.vic.gov.au/things-to-do/the-finders-keepers-melbourne-design-market
-  Evidence: Friday 9 October 4–9pm, Saturday 10 and Sunday 11 October 10am–5pm, Royal Exhibition Building, 9 Nicholson Street Carlton. $7–10; children under 13 free. 230+ designers and makers; no booking required.
+- 17–18 October: Melbourne Donut Festival (current)
+  Source: https://whatson.melbourne.vic.gov.au/things-to-do/melbourne-donut-festival
+  Evidence: Council's current event detail confirms Saturday 17 and Sunday 18 October, 9am-4pm, C and D Sheds at Queen Victoria Market, Queen Street. Free entry, no booking; food purchases extra. Confirmed against state tourism event listing; do not use old June dates.
 
-- 9–10 October: Supreme Construction Pop-up (current)
-  Source: https://whatson.melbourne.vic.gov.au/things-to-do/supreme-construction-pop-up
-  Evidence: Remaining Friday 9 October 9am–4pm and Saturday 10 October 10am–3pm, NC-G17 Ground Level, The District Docklands, 440 Docklands Drive. Adults $5.50, children $20; no booking required. Construction and STEM play.
+- 17–18 October: Botanic Gardens Spring Plant Sale (current)
+  Source: https://whatson.melbourne.vic.gov.au/things-to-do/friends-of-the-royal-botanic-gardens-spring-plant-sale
+  Evidence: Saturday 17 October 10am-4pm and Sunday 18 October 10am-3pm, inside Southern Gate at Royal Botanic Gardens Melbourne. Free entry, no booking; plants/coffee/snacks are purchases. Official Gardens spring 2026 programme also lists 17-18 October.
 
-- Until 11 October: Games Week Programme Finder (backup)
-  Source: https://whatson.melbourne.vic.gov.au/things-to-do/melbourne-international-games-week
-  Evidence: Official Melbourne International Games Week listing covers 2–11 October 2026, including showcases at ACMI and other city venues. Backup programme finder only: check each remaining session's age suitability, location, booking and price separately.
+- 17–18 October: Wyndham Vale Durga Puja (confirm hours) (current)
+  Source: https://www.wyndham.vic.gov.au/whats-on/festival-cultural-harmony-durga-puja
+  Evidence: Council detail was read directly with HTTP 200 after web-tool access errors: 17-18 October 2026, Riverbend Primary School Wyndham Vale, free entry, all ages, rituals, cultural performances, food and stalls. Organiser detail https://www.melba.org.au/events/durga-pujo-2026/ confirms 1 Communal Road. Neither publishes opening hours; contact organiser before travelling. Do not confuse this event with BSM at Werribee Racing Club or IndClub at Werribee Indoor Sports Centre.
 
-## Coverage and exclusions
+## Coverage, exclusions and conflicts
 
-Sydney searches covered Parramatta, Penrith, Inner West, Blacktown, Ryde, Burwood, Northern Beaches, The Rocks, Darling Harbour, Darling Square and Sydney Opera House. Melbourne searches covered City of Melbourne, Brimbank, Greater Dandenong, Knox, Wyndham and major venues including Scienceworks, Arts Centre Melbourne and outer-eastern festival organisers. This is a curated selection, not an exhaustive council census; Sydney's selected items remain concentrated around inner-city, inner-west and western venues.
+Sydney searches covered City of Sydney, Inner West, Parramatta, Ryde, Burwood, Blacktown, Penrith, North Sydney, Northern Beaches, Darling Harbour, The Rocks, Barangaroo, Sydney Fish Market, Sydney Opera House and the Maritime Museum. Selected main cards span Eastwood, Parramatta, Moore Park, Marrickville, Crows Nest, Newport, Barangaroo and Olympic Park.
 
-- Removed last week's Big Ideas Factory, Transport Heritage Expo, Mooncake, Erth's Wild Rumpus and Darling Square Moon Festival sessions; their listed dates are over.
-- Removed Be Bold, Penguins of Madagascar, Test Garden bird sessions, Street Dance Experience, Melbourne Royal Show, Melbourne Country Show and NGV Children's Play; their listed dates are over.
-- The Rocks Halloween programme (29 October onward), Parramatta Lanes (21-24 October) and Kings Langley (18 October) are outside this week.
-- Private/member-restricted events and adult-focused wellness/comedy programmes were not promoted without a clear public family offer.
-- Blacktown The Last Splash: official indexed council announcement confirms 10 October, noon-4pm, free at Blacktown Aquatic Centre. The announcement and venue detail returned repeated HTTP 403 in both research and direct retrieval. This is inconclusive, not evidence of cancellation. Replaced with a readable official family performance; recheck Blacktown's announcement on a later recovery pass. Announcement: https://www.blacktown.nsw.gov.au/News-Media/The-Last-Splash-to-celebrate-65-years-of-Blacktown-Aquatic-Centre-before-redevelopment
-- Community Safety Family Fun Day: council detail says Saturday 10 October 2026; an organiser page has a conflicting header date. Use council detail, whose body and programme agree. Child-seat appointments are not assumed available.
-- Housewarming: the organiser site routed to a queue during checking. The City of Melbourne's matching detail page provides seven dated free performances, venue and booking link; use that official council destination. Remaining booking inventory was not confirmed.
-- Tesselaar's FAQ explicitly warns of a reduced flower display this year and discounted prices. Both languages state this limitation. Do not promote the homepage's broader flower-field imagery as a current guarantee.
-- Little Chef is child-focused and Into the Box includes low-age/storytime activities; both are checked More links, not main cards.
-- Games Week is a dated programme finder, explicitly marked backup, not a single current event. No generic directories are main cards.
+Melbourne searches covered City of Melbourne, Wyndham, Greater Dandenong, Maribyrnong, Brimbank, Casey, Knox and major venue/festival organisers. Main selections remain concentrated around the inner city this week; the verified Wyndham Vale community celebration is in More because no start time is published. Do not pad the main list with an outer-suburb listing whose participation details are unconfirmed. These searches are curated, not an exhaustive council census.
+
+- Removed all previous short events ending 10-11 October and their More entries. Only Harry Potter and Colour return, each freshly rechecked and at card 8. Both first-four title sets are entirely different from 9 October.
+- Kings Langley Festival still lists 18 October but explicitly says postponed: excluded. https://www.blacktown.nsw.gov.au/Events-and-activities/2026-Kings-Langley-Festival
+- NCG Navratri at Dural has a matching 17 October organiser announcement, but the actual ticket page marks tickets sold out: excluded, not moved to More. https://www.navratriculturalgroup.org/garba-ticket
+- Marnong Estate Petting Zoo has a detailed 18 October programme, but the final booking section explicitly says Sold out and there are no gate sales: excluded after checking the whole ticket page. https://events.humanitix.com/the-petting-zoo-at-marnong-estate-october-2026
+- Manly Dam night walk is 15 October, before this period. Brookvale Halloween (24 October), Northern Beaches Ocean Festival (November), Museum Children's Week (24 October onward), and Burwood Ford Lane (30 October) are outside the week. No older-year Children's Week dates were reused.
+- Penrith pet microchipping is a resident service, not a general family outing; adult wellness sessions were not used as fillers. Oktoberfest in the Gardens is 18+ and excluded.
+- Scouts Victoria ARAP detail is image-led; the textual organiser page did not establish the advertised adventure details. It was not promoted based only on the discovery listing.
+- The Sydney Harry Potter page conflicts on last-admission offset and infant admission. The public card deliberately omits the disputed offset and infant rule, and points to the chosen-date ticket calendar.
+- Free Jazz's generic teaser says 2pm but its detailed programme starts with the 1pm Southbank parade and 1:45pm Fed Square set; the card uses the detailed schedule. Saturday music and Sunday's Soul are different dated experiences, not duplicate cards for the same session.
+- Melbourne's NBL council listing incorrectly names Cairns in its body and conflates arrival with game time. Official AXS and the team schedule establish Illawarra Hawks, doors 3:30pm, tip-off 5pm on 18 October. AXS's Sold Out label belongs to accessible parking only, not general admission.
+- Dog Lovers organiser FAQ establishes same-day Cat Lovers entry and no personal pets. Eventbrite retrieval returned HTTP 429, so live ticket inventory and a specific price were not claimed; the displayed organiser URL remains readable and directly relevant.
+- Wyndham council page failed in the web tool but direct retrieval returned HTTP 200 with full matching event detail; its organiser confirms the exact school address. This is different from BSM's Werribee Racing Club festival and IndClub's Werribee Indoor Sports Centre festival. No timings were borrowed from those events.
+- Seascapes More links specifically to the 18 October Greg Sindel/Studio A performance, not the past 4/11 October items on the same programme page. The Rocks More uses normal weekly markets, not the later Halloween edition.
 
 ## Publication safeguards
 
-Both cities target and currently contain 8 main cards plus 3 checked More links. The first four in each city were absent from the previous edition and were newly researched for dates within 9-16 October. Returning attraction share keys are retained. Publication preparation may remove individual failures; document any resulting shortage rather than pad. Official pages establish event identity, advertised dates, location and prices, not live ticket inventory or weather. Chinese and English facts are equivalent; unknown child ticket prices are not guessed. Sydney's police programme was cross-checked against NSW Police; Spring Fling was cross-checked against Brimbank/VNPA; Tulip prices and flower conditions against the festival FAQ.
+Target achieved in the written feeds: 8 main cards and 3 checked More links for each city. Seven main cards per city are new to this edition; each first four is newly researched with explicit current-week dates. Publication window is 16 October inclusive to 23 October exclusive; full festival end dates may extend beyond it, but displayed recommendations distinguish the sessions inside this week. Returning attraction share keys are retained, no library/storytime or toddler-only item occupies a main card, and all English fields use English. No API generation was used. Official pages prove advertised details, not future ticket availability or weather. Research replacements for individual failures; never roll old dates forward.
