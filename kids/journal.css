@@ -1,0 +1,61 @@
+/* Approved text-first journal layout. Event photography is not published. */
+:root { --ink: #2d3d43; --muted: #69777c; }
+body { background: #f6f9f8; }
+.shell { max-width: 600px; }
+.hero { margin: 4px 0 8px; padding: 14px 0 12px; }
+.hero::before { height: 128px; opacity: .5; }
+h1 .zh { font-size: 28px; }
+.brand .mark { background: #f7e8df; border-radius: 8px; }
+.sticker.one, .sticker.three { display: none; }
+.city-switch { background: #edf3f2; border-color: #dce7e3; }
+.city-switch button[aria-pressed="true"] { background: #c7eadc; color: #265c4d; }
+.mode-tabs .mode-tab[aria-pressed="true"] { color: #944e49; border-bottom-color: #e99d95; }
+.event-count { margin: 0; font-size: 12px; font-weight: 500; color: #63756f; }
+.cards { gap: 20px; }
+.card[data-kind] { --accent: #c8dcd3; --wash: #f4f8f6; --tone: #47665a; padding: 18px; background: #fff; border: 1px solid #e0e7e3; box-shadow: 0 5px 16px #2b4c430c; }
+.card[data-kind="festival"] { --accent: #e6cb78; --wash: #fff9e7; --tone: #705918; }
+.card[data-kind="outdoor"] { --accent: #a6d0b8; --wash: #f0f8f2; --tone: #38654c; }
+.card[data-kind="show"] { --accent: #e5afa3; --wash: #fff3ee; --tone: #875045; }
+.card[data-kind="exhibition"] { --accent: #c7bae0; --wash: #f7f3fc; --tone: #675385; }
+.card[data-kind]::before { width: 3px; background: var(--accent); }
+.card[data-kind]::after { display: none; }
+.card .card-top { margin: 0 0 10px; }
+.date-ticket { display: inline-flex; align-items: center; min-height: 24px; padding: 2px 9px; color: var(--tone); background: var(--wash); border-radius: 2px; border-left: 2px solid var(--accent); font-size: 11px; line-height: 1.5; font-weight: 600; }
+.card h3 { font-size: 20px; line-height: 1.45; margin: 0; color: var(--ink); }
+.card .event-region { margin: 4px 0 14px; font-size: 12px; line-height: 1.5; color: #69797d; }
+.card .facts { display: grid; grid-template-columns: 1.15fr 1fr; gap: 10px 12px; margin: 0 0 14px; padding-bottom: 13px; border-bottom: 1px solid #edf0ee; }
+.card .fact { display: grid; grid-template-columns: 18px minmax(0,1fr); align-items: start; gap: 5px; font-size: 12px; line-height: 1.65; color: #43585e; font-weight: 400; }
+.card .fact:first-child { grid-column: 1 / -1; font-weight: 500; color: #30484e; }
+.card .fact > span:first-child { font-size: 12px; width: 16px; height: 20px; }
+.card .summary { margin: 0 0 14px; font-size: 14px; line-height: 1.8; color: #4c6067; }
+.half-day-route { margin: 0 0 15px; padding: 0; border: 0; background: transparent; }
+.half-day-route > summary { display: grid; grid-template-columns: minmax(0,1fr) 20px; gap: 12px; align-items: center; min-height: 58px; cursor: pointer; font-size: 12px; line-height: 1.65; padding: 12px 0; color: #53676d; border-top: 1px solid #e7ece9; list-style: none; }
+.half-day-route > summary::marker, .half-day-route > summary::-webkit-details-marker { display: none; content: ""; }
+.route-summary-copy { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.half-day-route > summary strong { display: block; font-size: 12px; font-weight: 600; color: #364f55; }
+.route-chevron { width: 18px; height: 18px; opacity: .6; transition: transform .15s ease; }
+.half-day-route[open] .route-chevron { transform: rotate(180deg); }
+.route-short-path { overflow-wrap: anywhere; }
+.route-expanded { padding: 6px 0 12px; }
+.half-day-route ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.half-day-route li { display: grid; grid-template-columns: 82px minmax(0,1fr); gap: 12px; align-items: baseline; min-width: 0; padding: 9px 0; border-bottom: 1px solid #f0f3f1; }
+.half-day-route small { display: block; font-size: 11px; line-height: 1.6; color: #6b7b80; }
+.half-day-route a { font-size: 13px; line-height: 1.6; font-weight: 500; color: #3c575e; text-decoration-color: #a9bdb5; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.half-day-route p { font-size: 12px; line-height: 1.75; color: #63747a; margin: 12px 0 0; }
+.card .actions { margin-top: 0; }
+.card .action, .card .action.primary { background: #fff; color: #465b62; border: 1px solid #e0e7e3; border-radius: 6px; font-weight: 500; }
+.card .action.primary { background: var(--wash); }
+.card .reference { font-size: 10px; color: #718087; margin: 12px 0 0; padding-top: 10px; border-top: 0; }
+.route-sources { display: block; margin-top: 9px; font-size: 10px; line-height: 1.65; color: #718087; }
+.route-sources a { font-size: inherit; font-weight: 400; color: inherit; }
+.ended-events { border-top: 1px dashed #cad9d3; padding-top: 15px; }
+.ended-events > summary { cursor: pointer; font-size: 13px; font-weight: 500; color: #60756c; min-height: 44px; }
+.ended-list { display: grid; gap: 18px; }
+.ended-events .card { box-shadow: none; }
+.card a:focus-visible, .half-day-route summary:focus-visible { outline: 2px solid #47796c; outline-offset: 3px; }
+@media (max-width: 390px) {
+  .card[data-kind] { padding: 16px; }
+  .card h3 { font-size: 19px; }
+  h1 .zh { font-size: 26px; }
+}
+@media (prefers-reduced-motion: reduce) { .card:hover { transform: none; } .route-chevron { transition: none; } }

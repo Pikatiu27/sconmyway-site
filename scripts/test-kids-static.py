@@ -30,6 +30,7 @@ class KidsStaticTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.html = (ROOT / "kids/index.html").read_text(encoding="utf-8")
+        cls.presentation = json.loads(SYNC.PRESENTATION_PATH.read_text(encoding="utf-8"))
         cls.cities = [(city, marker, more, json.loads(path.read_text(encoding="utf-8")))
                       for city, marker, more, path in SYNC.CITY_CONFIGS]
 
@@ -53,7 +54,7 @@ class KidsStaticTests(unittest.TestCase):
 
     def test_generated_blocks_match_data(self):
         for city, marker, more, data in self.cities:
-            cards = "\n".join(SYNC.card(event, index, city) for index, event in enumerate(data["events"]))
+            cards = "\n".join(SYNC.card(event, index, city, SYNC.presentation_for(data, event, self.presentation)) for index, event in enumerate(data["events"]))
             self.assertIn(cards, self.html)
             self.assertIn(SYNC.more_links(data), self.html)
 
@@ -61,7 +62,7 @@ class KidsStaticTests(unittest.TestCase):
         event = dict(self.cities[0][3]["events"][0])
         for index in [0, 4, 7]:
             event["longTerm"] = False
-            self.assertIn("Weekly pick", SYNC.card(event, index, "sydney"))
+            self.assertIn("This week", SYNC.card(event, index, "sydney"))
             self.assertNotIn("More picks", SYNC.card(event, index, "sydney"))
             event["longTerm"] = True
             self.assertIn("Ongoing", SYNC.card(event, index, "sydney"))
@@ -72,7 +73,38 @@ class KidsStaticTests(unittest.TestCase):
         rendered = SYNC.card(event, 0, "sydney")
         self.assertIn("&lt;unsafe&gt; &amp; &quot;title&quot;", rendered)
         self.assertNotIn("<unsafe>", rendered)
-        self.assertIn('class="official-title zh" lang="en"', rendered)
+        self.assertNotIn('class="official-title', rendered)
+        self.assertIn('class="date-ticket"', rendered)
+
+    def test_presentation_is_scoped_to_publication_week(self):
+        data = self.cities[0][3]
+        event = data["events"][1]
+        self.assertTrue(SYNC.presentation_for(data, event, self.presentation))
+        next_week = {**data, "periodStart": "2026-10-23", "periodEnd": "2026-10-30"}
+        self.assertEqual(SYNC.presentation_for(next_week, event, self.presentation), {})
+        self.assertEqual(SYNC.presentation_for(data, {**event, "shareKey": "new-event"}, self.presentation), {})
+
+    def test_routes_and_no_published_event_photographs(self):
+        for item in self.presentation["items"].values():
+            for key, value in item.items():
+                if key.endswith("En"):
+                    self.assertNotRegex(value, r"[\u3400-\u9fff\ufffd]")
+            route = item.get("route")
+            if not route:
+                continue
+            self.assertTrue(route["checkedAt"])
+            self.assertNotRegex(route["summaryEn"] + route["noteEn"], r"[\u3400-\u9fff\ufffd]")
+            rendered = SYNC.route_html(route)
+            self.assertIn('<details class="half-day-route">', rendered)
+            self.assertEqual(rendered.count('class="route-place"'), len(route["steps"]))
+            for step in route["steps"]:
+                self.assertEqual(len(step), 5)
+                self.assertNotRegex(step[1] + step[3], r"[\u3400-\u9fff\ufffd]")
+            for _, url in route["sources"]:
+                self.assertTrue(url.startswith("https://"))
+        self.assertNotIn("preview/", self.html)
+        self.assertNotIn("event-photo", self.html)
+        self.assertNotIn("harry-potter.webp", self.html)
 
     def test_more_title_and_source_are_separate_bilingual_elements(self):
         for _, _, _, data in self.cities:

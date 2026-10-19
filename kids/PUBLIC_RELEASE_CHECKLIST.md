@@ -26,11 +26,14 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 - Chinese mode uses natural Chinese for descriptions, regions, tags, actions, and source labels; official place and event names may remain in English.
 - Each card uses one concise body paragraph: what it is, what the family will do, and who it suits.
 - Do not show prefixes such as `亮点：`, `推荐理由：`, `Why go:`, or star ratings.
-- Status labels describe timing only: `本周精选 / Weekly pick` or `持续活动 / Ongoing`. Set `longTerm` explicitly after research; never infer status from card position.
+- Small date tabs describe verified timing only; use `持续展出 / On now` for continuing exhibitions. No ratings or duplicate recommendation/category labels. Set `longTerm` explicitly after research.
 
 ## 4. Card Structure
 
-- Tag -> status -> title -> concise description -> time/location/price facts -> actions -> reference.
+- Small date tab -> title -> one region line -> time/location/price facts -> concise description -> optional collapsed half-day route -> actions -> reference.
+- Public event cards contain no photographs or gallery. Local trial assets and screenshots are excluded from publication.
+- Use white cards with fine category accents, not competing coloured sections. Keep timing on one row, with place and cost below in separate columns.
+- Half-day disclosures use a title, a short summary and one right-aligned chevron. Expanded rows align phase and specific map-linked place; notes and sources remain inside the disclosure.
 - Facts use icons instead of visible Time/Place/Cost words.
 - Action order is always verified source, `导航 / Map`, `分享 / Share`. Source labels match their destination: `官网 / Official`, `官方公告 / Announcement`, or `购票 / Tickets`.
 - Share links preserve city, language, view, and the exact card target.
@@ -44,7 +47,9 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 - More and Sources remain collapsed by default.
 - More links use a title on the first line and a smaller source below, with bilingual fields and one disclosure icon.
 - Show the publication week first, with the update date smaller underneath; do not advance dates when someone opens the page.
-- Chinese cards use a short Chinese title and a smaller official English name. English cards show only the English title.
+- Use one title per card in the selected language; do not add a duplicate English subtitle in Chinese mode.
+- Fold activities that have ended within the publication week, using Australia/Sydney dates, while keeping share targets and deep-link auto-expansion. Do not change publication dates or claim a weekly refresh for this display behaviour.
+- Presentation metadata is matched by shareKey and exact publication period; missing or mismatched metadata must not inject old dates, copy or routes into a new week.
 - Preserve existing unique share keys when correcting official URLs; do not give two cards the same share target.
 - Playground filters apply to the selected city's complete directory and hide empty regions.
 - Chinese mode translates region names, feature tags, actions, descriptions, and half-day suggestions.

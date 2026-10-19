@@ -10,23 +10,7 @@ from urllib.parse import quote_plus
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "kids" / "index.html"
-
-ACCENTS = [
-    ("#ffcdbd", "#fff9ea"),
-    ("#d7f8e4", "#f1fbff"),
-    ("#d8ecff", "#fff3f9"),
-    ("#ffe8a8", "#f4edff"),
-    ("#f8d6e7", "#effbf4"),
-    ("#d9f2ff", "#fff5df"),
-    ("#e6defc", "#f7fff0"),
-    ("#ffe1cc", "#eff7ff"),
-]
-
-LONG_ACCENTS = [
-    ("#ece8ff", "#f9fff0"),
-    ("#e4f3ff", "#fff6e7"),
-    ("#fff0ca", "#f1f8ff"),
-]
+PRESENTATION_PATH = ROOT / "kids" / "data" / "event-presentation.json"
 
 CITY_CONFIGS = [
     ("sydney", "EVENTS", "SYDNEY_MORE", ROOT / "kids" / "data" / "events.json"),
@@ -52,25 +36,46 @@ def action(url: str, label_zh: str, label_en: str, class_name: str = "action") -
     )
 
 
-def card(event: dict, index: int, city: str) -> str:
-    accent, wash = LONG_ACCENTS[index % len(LONG_ACCENTS)] if event.get("longTerm") else ACCENTS[index % len(ACCENTS)]
+def presentation_for(data: dict, event: dict, presentation: dict) -> dict:
+    if (presentation.get("periodStart"), presentation.get("periodEnd")) != (data["periodStart"], data["periodEnd"]):
+        return {}
+    return presentation.get("items", {}).get(event.get("shareKey") or event.get("url"), {})
+
+
+def bilingual(zh: object, en: object) -> str:
+    return f'<span class="zh">{pair(zh)}</span><span class="en">{pair(en)}</span>'
+
+
+def route_html(route: dict | None) -> str:
+    if not route or not route.get("steps"):
+        return ""
+    steps = []
+    for phase_zh, phase_en, place_zh, place_en, query in route["steps"]:
+        url = f"https://www.google.com/maps/search/?api=1&query={quote_plus(query)}"
+        steps.append(f'<li><small>{bilingual(phase_zh, phase_en)}</small>{action(url, pair(place_zh), pair(place_en), "route-place")}</li>')
+    sources = " · ".join(f'<a href="{pair(url)}" target="_blank" rel="noreferrer">{pair(label)}</a>' for label, url in route.get("sources", []))
+    return f'''<details class="half-day-route"><summary><span class="route-summary-copy"><strong>{bilingual("半日路线", "Half-day plan")}</strong><span class="route-short-path">{bilingual(route.get("summaryZh"), route.get("summaryEn"))}</span></span><img class="route-chevron" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true"></summary><div class="route-expanded"><ol>{"".join(steps)}</ol><p>{bilingual(route.get("noteZh"), route.get("noteEn"))}</p><span class="route-sources">{bilingual("路线地点：", "Route places: ")}{sources}</span></div></details>'''
+
+
+def card(event: dict, index: int, city: str, presentation: dict | None = None) -> str:
+    presentation = presentation or {}
+    display = {**event, **{key: value for key, value in presentation.items() if key.endswith(("Zh", "En")) and not key.startswith("date")}}
     class_names = ["card", f"{city}-event"]
-    if index == 0:
-        class_names.append("featured")
     if event.get("longTerm"):
         class_names.append("long-term")
 
-    status_zh = "持续活动" if event.get("longTerm") else "本周精选"
-    status_en = "Ongoing" if event.get("longTerm") else "Weekly pick"
+    status_zh = presentation.get("dateZh") or ("持续活动" if event.get("longTerm") else "本周活动")
+    status_en = presentation.get("dateEn") or ("Ongoing" if event.get("longTerm") else "This week")
     map_query = text(event.get("mapQuery") or event.get("placeEn") or event.get("placeZh") or event.get("titleEn"))
     map_url = f"https://www.google.com/maps/search/?api=1&query={quote_plus(map_query)}"
     official = text(event.get("url"))
     event_id = f"{city}-event-{index + 1}"
     share_key = pair(event.get("shareKey") or official)
-    official_title = (
-        f'<p class="official-title zh" lang="en">{pair(event.get("titleEn"))}</p>'
-        if event.get("titleZh") != event.get("titleEn") else ""
-    )
+    kind = presentation.get("kind", "event")
+    if kind not in {"event", "festival", "outdoor", "show", "exhibition"}:
+        raise ValueError(f"Unknown event presentation kind: {kind}")
+    region_zh = text(event.get("tagZh")).split(" · ")[0]
+    region_en = text(event.get("tagEn")).split(" · ")[0]
 
     actions = []
     if official:
@@ -79,15 +84,17 @@ def card(event: dict, index: int, city: str) -> str:
         actions.append(action(official, label_zh, label_en, "action primary" + (" announcement" if event.get("linkType") == "announcement" else "")))
     actions.append(action(map_url, "导航", "Map"))
 
-    return f"""        <article class="{' '.join(class_names)}" id="{event_id}" data-city="{city}" data-share-key="{share_key}" style="--accent:{accent};--wash:{wash};">
-          <div class="card-top"><span class="tag"><span class="zh">{pair(event.get('tagZh'))}</span><span class="en">{pair(event.get('tagEn'))}</span></span><span class="status"><span class="zh">{status_zh}</span><span class="en">{status_en}</span></span></div>
-          <h3><span class="zh">{pair(event.get('titleZh'))}</span><span class="en">{pair(event.get('titleEn'))}</span></h3>
-          {official_title}
-          <p class="summary zh">{pair(event.get('summaryZh'))}</p><p class="summary en">{pair(event.get('summaryEn'))}</p>
-          <div class="facts"><div class="fact"><span>&#128337;</span><span class="zh">{pair(event.get('timeZh'))}</span><span class="en">{pair(event.get('timeEn'))}</span></div><div class="fact"><span>&#128205;</span><span class="zh">{pair(event.get('placeZh'))}</span><span class="en">{pair(event.get('placeEn'))}</span></div><div class="fact"><span>&#127915;</span><span class="zh">{pair(event.get('priceZh'))}</span><span class="en">{pair(event.get('priceEn'))}</span></div></div>
+    rendered = f"""        <article class="{' '.join(class_names)}" id="{event_id}" data-city="{city}" data-kind="{kind}" data-ends-on="{pair(event.get('endsOn'))}" data-share-key="{share_key}">
+          <div class="card-top"><div class="date-ticket">{bilingual(status_zh, status_en)}</div></div>
+          <h3>{bilingual(display.get('titleZh'), display.get('titleEn'))}</h3>
+          <p class="event-region">{bilingual(region_zh, region_en)}</p>
+          <div class="facts"><div class="fact"><span>&#128337;</span>{bilingual(display.get('timeZh'), display.get('timeEn'))}</div><div class="fact"><span>&#128205;</span>{bilingual(display.get('placeZh'), display.get('placeEn'))}</div><div class="fact"><span>&#127915;</span>{bilingual(display.get('priceZh'), display.get('priceEn'))}</div></div>
+          <p class="summary zh">{pair(display.get('summaryZh'))}</p><p class="summary en">{pair(display.get('summaryEn'))}</p>
+          {route_html(presentation.get('route'))}
           <div class="actions">{''.join(actions)}</div>
           <p class="reference"><b><span class="zh">参考来源：</span><span class="en">Reference:</span></b> <span class="zh">{pair(event.get('referenceZh'))}</span><span class="en">{pair(event.get('referenceEn'))}</span></p>
         </article>"""
+    return "\n".join(line.rstrip() for line in rendered.splitlines())
 
 
 def more_links(data: dict) -> str:
@@ -138,6 +145,7 @@ def replace_block(html: str, marker: str, content: str) -> str:
 
 def main() -> None:
     html = INDEX.read_text(encoding="utf-8")
+    presentation = json.loads(PRESENTATION_PATH.read_text(encoding="utf-8")) if PRESENTATION_PATH.exists() else {}
     first_data = None
 
     for city, event_marker, more_marker, data_path in CITY_CONFIGS:
@@ -147,7 +155,7 @@ def main() -> None:
         first_data = first_data or data
         total = len(data["events"])
         count = f'<p class="event-count"><span class="zh">本周 {total} 条活动</span><span class="en">{total} activities this week</span></p>'
-        cards = count + "\n" + "\n".join(card(event, index, city) for index, event in enumerate(data["events"]))
+        cards = count + "\n" + "\n".join(card(event, index, city, presentation_for(data, event, presentation)) for index, event in enumerate(data["events"]))
         if not total:
             cards += '<p class="empty-events"><span class="zh">本周暂无已核实活动。</span><span class="en">No verified events for this week yet.</span></p>'
         html = replace_block(html, event_marker, cards)

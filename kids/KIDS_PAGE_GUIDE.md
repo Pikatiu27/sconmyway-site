@@ -32,6 +32,7 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 - Events 每个城市目标 8 条主推荐，允许核实后不足；Playgrounds 是地区地点库，不按 8 条限制。
 - 活动卡片按钮顺序固定：`官网 / 导航 / 分享`，英文为 `Official / Map / Share`。
 - `More` 必须折叠，放 3-5 条本周候选或大型官方入口，不放空链接、过期链接或装饰性链接。
+- 正式 Events 采用无照片的紧凑手账：小日期签 → 标题 → 单行区域 → 图标事实栏 → 简介 → 可展开半日路线 → 操作 → 来源。2026-10-19 用户决定不公开官网试用照片，也不发布相册。
 
 ### 0.2 内容筛选逻辑
 
@@ -86,7 +87,7 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 
 - 沿用 SConmyway industry 页面的轻量结构感，但 kids 页面更可爱。
 - 手机优先：所有字号、按钮、间距先按竖屏手机判断。
-- 马卡龙色、轻贴纸、手帐感、轻悬浮卡片；卡片可用小贴纸标注 `免费 / 需确认 / 室内 / 户外 / 幼儿友好 / 周末` 等快速判断信息。
+- 马卡龙色、手账感和轻悬浮卡片；颜色只用于小日期签、细边线及轻微主按钮底色，不叠加重复活动标签或推荐贴纸。
 - Sticker 不能遮挡城市切换、语言切换、标题或按钮。
 - Sydney / Melbourne 城市切换优先使用明显的 segmented control，而不是很小的下拉框。
 - 顶部保持简洁，不放解释性长文。
@@ -116,15 +117,15 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 - 品牌标题约 15-16px，副标题和浏览量 10-11px，弱于城市和内容切换。
 - 城市切换是一级操作，约 15px；Events / Playgrounds 是同组二级操作，约 14px。
 - 活动卡标题约 18-20px；正文约 14px，行高约 1.6；事实栏约 12.5-13px；Reference 约 10.5-11px。
-- 卡片只保留一个状态标签：`本周精选 / Weekly pick`、`继续推荐 / More picks` 或 `长期活动 / Ongoing`。标签表示时间位置，不代表星级或质量评分。
+- 日期签只显示核实后的日期范围，持续项目写 `持续展出 / On now`；缺少日期签数据时回退为 `本周活动 / This week` 或 `持续活动 / Ongoing`，不猜日期、不加星级和重复精选标签。
 
 背景和颜色：
 
-- 页面底色以 warm cream `#fff8ea` 为底，轻网格和很淡的马卡龙光晕只做氛围，不喧宾夺主。
+- 页面底色使用清淡灰绿 `#f6f9f8`，保留很轻的顶部网格；不添加渐变光晕、装饰色团或大面积彩色背景。
 - 主文字 `#2e3a40`，辅助文字 `#667680`。
 - 主色盘固定为：mint `#cff7e8`、yellow `#fff1b8`、peach `#ffe1d3`、lavender `#ece8ff`、green `#ddf7d8`、blue `#ddf1ff`、pink `#ffddea`。
-- 卡片主体保持白/奶白，不做大面积随机彩色底；活泼感来自左侧 4-6px 色条、轻胶带、贴纸和小标签。
-- 第一张本周活动可以略微 featured；长期展览用 lavender 系列，不能和短期新活动抢视觉优先级。
+- 卡片主体为白色，左侧细线约 3px。节庆用浅黄，户外用薄荷绿，演出用浅珊瑚，展览用淡紫；未分类时使用中性的灰绿。
+- 标题是卡片唯一主要视觉中心，不做大 featured 卡片。正式版无活动照片、无相册；本地预览照片及截图不得跟随发布。
 
 页面节奏：
 
@@ -213,10 +214,12 @@ Finder controls 结构：
 ## 7. 卡片结构
 
 ```text
-Tag
+Small Date Tab
 Title
-Summary
+Region
 Time / Location / Price
+Summary
+Half-day Plan (optional, collapsed)
 Official / Map / Share
 Reference
 ```
@@ -228,6 +231,15 @@ Reference
 - `Official` 打开官网或可信官方页。
 - `Map` 打开 Google Maps 搜索或导航。
 - `Share` 复制深链接，朋友打开后定位到该活动。
+- 日期签约 11px，标题 19-20px，区域 12px，正文 14px，事实栏 12px，来源 10-11px；中英文采用相同视觉层级。
+- 时间独占一行，地点与费用在下一行分列，内容可自然换行，不能挤成连续一串文字；继续使用图标，不加 Time/Place/Cost 文本表头。
+- 简介不加“亮点”等前缀，也不重复事实栏。中文不再额外复制一行英文活动名。
+- 半日路线只在有核实过的具体站点时出现。折叠态为两行：`半日路线 / Half-day plan` 标题和短摘要；右侧为标准展开箭头。
+- 展开后每站按“时段/阶段 + 具体地点”两列排齐，不显示漂浮序号或多段错位缩进；各地点独立打开地图，补充说明和地点来源放在展开区内。
+- 周内已结束活动按 Australia/Sydney 日期折叠进 `本周已结束 / Finished this week`，不占当前活动前排。分享至已结束活动仍自动展开定位。此折叠不改变发布周期，也不替代周五重新检索和删除过期条目。
+- `kids/data/event-presentation.json` 用唯一 shareKey 关联日期签、活动类型、精简文案和半日路线，必须与两城活动的 periodStart/periodEnd 一致；不同周的数据不应用，避免旧日期和旧路线残留。
+- 周五重检后同步更新该文件，或清除对应活动的旧展示数据。没有合适半日路线时省略，不编造内容；模板、排版和折叠交互由 sync helper 保留。
+- 无 JavaScript 时仍有完整静态卡片、事实、官网/地图和原生路线展开；分享和按当天折叠属于渐进增强。
 
 ## 8. 双语规则
 

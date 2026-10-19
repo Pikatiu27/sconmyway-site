@@ -1,0 +1,66 @@
+{
+  "periodStart": "2026-10-16",
+  "periodEnd": "2026-10-23",
+  "items": {
+    "https://www.ryde.nsw.gov.au/Events/Granny-Smith-Festival": {"kind": "festival", "dateZh": "10月17日", "dateEn": "17 OCT"},
+    "https://atparramatta.com/lanes/about": {
+      "kind": "festival", "dateZh": "10月21–24日", "dateEn": "21–24 OCT",
+      "titleZh": "Parramatta Lanes 小巷艺术节",
+      "summaryZh": "在小巷、花园和屋顶之间，找艺术装置、听现场音乐、尝街头小吃。大人孩子一起慢慢逛，傍晚早点到更从容。",
+      "summaryEn": "Wander between laneways, gardens and rooftops for art, live music and street food. Arrive early in the evening for a relaxed family visit.",
+      "timeZh": "本周10月21–22日 17:00–22:00；节庆至24日",
+      "timeEn": "This week: 21–22 Oct, 5–10pm; festival until 24 Oct",
+      "placeZh": "Parramatta CBD · 多个小巷及公共空间",
+      "placeEn": "Parramatta CBD · multiple festival sites",
+      "priceZh": "免费入场；餐饮另购", "priceEn": "Free entry; food extra",
+      "route": {
+        "summaryZh": "公园 → 晚餐 → 小巷艺术节", "summaryEn": "Park → dinner → Lanes",
+        "steps": [
+          ["下午", "Afternoon", "Parramatta Park", "Parramatta Park", "Parramatta Park, Parramatta NSW"],
+          ["早点吃晚餐", "Early dinner", "Church Street 餐饮街", "Church Street / Eat Street", "Eat Street, Church Street, Parramatta NSW"],
+          ["17:00 起", "From 5pm", "Lanes 艺术与音乐", "Lanes art & music", "Parramatta Square, Parramatta NSW"]
+        ],
+        "noteZh": "先在公园玩，再吃饭、逛夜间艺术节；按官方地图选站点，带孩子不必逛到闭场。",
+        "noteEn": "Start in the park, have dinner, then explore the festival. Pick stops from the official map; there is no need to stay until closing.",
+        "sources": [["Parramatta Park", "https://www.greatersydneyparklands.nsw.gov.au/parramatta-park-facilities"], ["Church Street", "https://atparramatta.com/church-street"]],
+        "checkedAt": "2026-10-19"
+      }
+    },
+    "https://whatson.cityofsydney.nsw.gov.au/events/moore-park-south-family-fun-day": {"kind": "outdoor", "dateZh": "10月17日", "dateEn": "17 OCT"},
+    "https://whatson.cityofsydney.nsw.gov.au/events/addi-road-fiesta": {"kind": "festival", "dateZh": "10月17日", "dateEn": "17 OCT"},
+    "https://www.northsydney.nsw.gov.au/events/event/1666/crows-nest-fest-2026": {"kind": "festival", "dateZh": "10月18日", "dateEn": "18 OCT"},
+    "https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on/sail-expo-2026": {"kind": "outdoor", "dateZh": "10月17–18日", "dateEn": "17–18 OCT"},
+    "https://www.nsw.gov.au/visiting-and-exploring-nsw/nsw-events/great-graze": {"kind": "festival", "dateZh": "10月17–18日", "dateEn": "17–18 OCT"},
+    "https://harrypotterexhibition.com/locations/sydney/": {
+      "kind": "exhibition", "dateZh": "持续展出", "dateEn": "On now",
+      "titleZh": "哈利波特展：走进魔法世界",
+      "summaryZh": "看电影服装道具、试试魁地奇互动，一起寻找熟悉的魔法细节。建议5岁起，留60–90分钟；展内不允许推车。",
+      "summaryEn": "Discover film costumes, props and Quidditch interactions together. Recommended for ages 5+; allow 60–90 minutes. Strollers are not allowed inside.",
+      "timeZh": "周一、四10:00–17:30；周五12:00–19:30；周末9:00–18:30（周二、三闭馆）",
+      "timeEn": "Mon/Thu 10am–5:30pm; Fri noon–7:30pm; weekends 9am–6:30pm. Closed Tue/Wed.",
+      "placeZh": "Paddington Pavilion · Sydney Showground，Olympic Park",
+      "placeEn": "Paddington Pavilion · Sydney Showground, Olympic Park",
+      "priceZh": "成人$33起（含费用）；儿童按场次", "priceEn": "Adults from $33 incl. fees; child prices vary",
+      "route": {
+        "summaryZh": "看展 → 公园野餐 → 湖畔散步", "summaryEn": "Exhibition → picnic → lake walk",
+        "steps": [
+          ["预约场次", "Booked session", "哈利波特展", "Harry Potter exhibition", "Paddington Pavilion, Sydney Showground, Sydney Olympic Park NSW"],
+          ["带上野餐", "Picnic stop", "Bicentennial Park", "Bicentennial Park", "Bicentennial Park, Sydney Olympic Park NSW"],
+          ["饭后散步", "After lunch", "Lake Belvedere 湖畔", "Lake Belvedere", "Lake Belvedere, Sydney Olympic Park NSW"]
+        ],
+        "noteZh": "选上午或中午场次，看展后转去公园野餐、湖边散步，两个场地需另行移动。展览从 Olympic Boulevard 进入；末班入场请查所选日期的购票日历。",
+        "noteEn": "Choose a morning or midday session, then transfer to the park for a picnic and lakeside walk. Enter the exhibition via Olympic Boulevard; check the ticket calendar for last admission on your chosen date.",
+        "sources": [["Bicentennial Park", "https://www.sydneyolympicpark.nsw.gov.au/parks-and-playgrounds/bicentennial-park"]],
+        "checkedAt": "2026-10-19"
+      }
+    },
+    "https://www.italianfesta.com.au/": {"kind": "festival", "dateZh": "10月17–18日", "dateEn": "17–18 OCT"},
+    "https://whatson.melbourne.vic.gov.au/things-to-do/queensberry-cup": {"kind": "festival", "dateZh": "10月17日", "dateEn": "17 OCT"},
+    "https://dogloversfestival.com.au/melbourne/": {"kind": "festival", "dateZh": "10月17–18日", "dateEn": "17–18 OCT"},
+    "https://www.axs.com/au/events/1554509/melbourne-united-v-illawarra-hawks-tickets": {"kind": "show", "dateZh": "10月18日", "dateEn": "18 OCT"},
+    "https://www.melbournejazz.com/events/free-jazz-at-fed-square/": {"kind": "show", "dateZh": "10月17日", "dateEn": "17 OCT"},
+    "https://www.melbournejazz.com/events/soul/": {"kind": "show", "dateZh": "10月18日", "dateEn": "18 OCT"},
+    "https://www.melbournejazz.com/events/inside-out-jump-jive-jazz/": {"kind": "show", "dateZh": "10月22–25日", "dateEn": "22–25 OCT"},
+    "https://museumsvictoria.com.au/scienceworks/whats-on/colour/": {"kind": "exhibition", "dateZh": "持续展出", "dateEn": "On now"}
+  }
+}
