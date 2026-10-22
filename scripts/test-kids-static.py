@@ -4,7 +4,7 @@ import json
 import re
 import sys
 import unittest
-from datetime import date
+from datetime import date, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -80,7 +80,8 @@ class KidsStaticTests(unittest.TestCase):
         data = self.cities[0][3]
         event = data["events"][1]
         self.assertTrue(SYNC.presentation_for(data, event, self.presentation))
-        next_week = {**data, "periodStart": "2026-10-23", "periodEnd": "2026-10-30"}
+        next_week = {**data, **{key: (date.fromisoformat(data[key]) + timedelta(days=7)).isoformat()
+                               for key in ("periodStart", "periodEnd")}}
         self.assertEqual(SYNC.presentation_for(next_week, event, self.presentation), {})
         self.assertEqual(SYNC.presentation_for(data, {**event, "shareKey": "new-event"}, self.presentation), {})
 
