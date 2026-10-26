@@ -2,79 +2,386 @@
   "periodStart": "2026-10-23",
   "periodEnd": "2026-10-30",
   "items": {
-    "https://festa.net.au/": {"kind": "festival", "dateZh": "10月25日", "dateEn": "25 OCT"},
-    "https://www.sydneyoperahouse.com/dancerites": {"kind": "show", "dateZh": "10月24–25日", "dateEn": "24–25 OCT"},
-    "https://events.mosman.nsw.gov.au/events/encore-street-party": {"kind": "festival", "dateZh": "10月23日", "dateEn": "23 OCT"},
-    "https://www.cityofparramatta.nsw.gov.au/community/events/upcoming-events/africultures-festival": {"kind": "festival", "dateZh": "10月24日", "dateEn": "24 OCT"},
-    "https://maroubrafunrun.com.au/": {"kind": "outdoor", "dateZh": "10月25日", "dateEn": "25 OCT"},
+    "https://festa.net.au/": {
+      "kind": "festival",
+      "dateZh": "10月25日",
+      "dateEn": "25 OCT",
+      "dates": [
+        "2026-10-25"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://festa.net.au/",
+        "evidence": "Organiser confirms 25 October 2026, 10am-5pm, Norton Street Leichhardt, food, performances, cooking, cars and children's activities. Participating venue confirms free attendance: https://www.theroyalleichhardt.com.au/norton-street-italian-festa"
+      }
+    },
+    "https://www.sydneyoperahouse.com/dancerites": {
+      "kind": "show",
+      "dateZh": "10月24–25日",
+      "dateEn": "24–25 OCT",
+      "dates": [
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://www.sydneyoperahouse.com/dancerites",
+        "evidence": "Venue confirms 24-25 October 2026, Forecourt, opens 1:30pm, program from 2pm, free without registration, all ages. Event footprint prohibits strollers; children aged 15 and under must be accompanied."
+      }
+    },
+    "https://events.mosman.nsw.gov.au/events/encore-street-party": {
+      "kind": "festival",
+      "dateZh": "10月23日",
+      "dateEn": "23 OCT",
+      "dates": [
+        "2026-10-23"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://events.mosman.nsw.gov.au/events/encore-street-party",
+        "evidence": "Event-specific council page states Friday 23 October 2026, 5-8:30pm, Middle Head Road between Mosman Junction and Muston Street, free. Live bands, food, arcade games and decoration stalls. Broader Encore overview includes Saturday too; do not infer Saturday hours from Friday details."
+      }
+    },
+    "https://www.cityofparramatta.nsw.gov.au/community/events/upcoming-events/africultures-festival": {
+      "kind": "festival",
+      "dateZh": "10月24日",
+      "dateEn": "24 OCT",
+      "dates": [
+        "2026-10-24"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://www.cityofparramatta.nsw.gov.au/community/events/upcoming-events/africultures-festival",
+        "evidence": "Council confirms 24 October 2026, 11am-8pm, Cathy Freeman Park, donation ticket $6 plus booking fee, live culture and food. Venue lists 10am-8pm: https://www.sydneyolympicpark.nsw.gov.au/things-to-see-and-do/africultures-festival . Difference disclosed; plan from 11am. Council links official Raisely booking."
+      }
+    },
+    "https://maroubrafunrun.com.au/": {
+      "kind": "outdoor",
+      "dateZh": "10月25日",
+      "dateEn": "25 OCT",
+      "dates": [
+        "2026-10-25"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://maroubrafunrun.com.au/",
+        "evidence": "Organiser confirms Sunday 25 October 2026 at Arthur Byrne Reserve, family run and community festival. /oktoberfest/ confirms free festival entry and separate food/amusements. Council lists overall 7:30am-5pm, not all ride opening hours: https://www.randwick.nsw.gov.au/community/whats-on/events/community-events/maroubra-fun-run-and-oktoberfest"
+      }
+    },
     "https://atparramatta.com/lanes/about": {
-      "kind": "festival", "dateZh": "10月23–24日", "dateEn": "23–24 OCT",
+      "kind": "festival",
+      "dateZh": "10月23–24日",
+      "dateEn": "23–24 OCT",
       "route": {
-        "summaryZh": "公园游玩 → 早点吃饭 → 小巷艺术节", "summaryEn": "Park play → early dinner → Lanes",
+        "summaryZh": "公园游玩 → 早点吃饭 → 小巷艺术节",
+        "summaryEn": "Park play → early dinner → Lanes",
         "steps": [
-          ["下午", "Afternoon", "Parramatta Park 公园", "Parramatta Park", "Parramatta Park, Parramatta NSW"],
-          ["早点吃饭", "Early dinner", "Church Street 餐饮街", "Church Street / Eat Street", "Eat Street, Church Street, Parramatta NSW"],
-          ["17:00起", "From 5pm", "Lanes 艺术与音乐", "Lanes art and music", "Parramatta Square, Parramatta NSW"]
+          [
+            "下午",
+            "Afternoon",
+            "Parramatta Park 公园",
+            "Parramatta Park",
+            "Parramatta Park, Parramatta NSW"
+          ],
+          [
+            "早点吃饭",
+            "Early dinner",
+            "Church Street 餐饮街",
+            "Church Street / Eat Street",
+            "Eat Street, Church Street, Parramatta NSW"
+          ],
+          [
+            "17:00起",
+            "From 5pm",
+            "Lanes 艺术与音乐",
+            "Lanes art and music",
+            "Parramatta Square, Parramatta NSW"
+          ]
         ],
         "noteZh": "仅适用于23、24日。公园官网列有游乐场和野餐设施，Church Street 是餐饮街；选哪家店需另外确认营业与位置。晚上按节庆地图挑站点，出发前查道路封闭。",
         "noteEn": "For 23–24 October only. The park lists playgrounds and picnic facilities; Church Street offers dining. Check your chosen restaurant's hours and location separately, then select festival stops from the map and check road closures.",
-        "sources": [["Parramatta Park", "https://www.greatersydneyparklands.nsw.gov.au/parramatta-park-facilities"], ["Church Street", "https://atparramatta.com/church-street"], ["Lanes", "https://atparramatta.com/lanes/about"]],
+        "sources": [
+          [
+            "Parramatta Park",
+            "https://www.greatersydneyparklands.nsw.gov.au/parramatta-park-facilities"
+          ],
+          [
+            "Church Street",
+            "https://atparramatta.com/church-street"
+          ],
+          [
+            "Lanes",
+            "https://atparramatta.com/lanes/about"
+          ]
+        ],
         "checkedAt": "2026-10-23",
         "evidence": "Park authority confirms two playgrounds and picnic facilities; AT Parramatta confirms Church Street dining and Lanes Friday/Saturday 5-10:30pm. These are separate named stops; no journey duration or restaurant hours asserted."
+      },
+      "dates": [
+        "2026-10-23",
+        "2026-10-24"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://atparramatta.com/lanes/about",
+        "evidence": "Official 2026 schedule states Friday 23 and Saturday 24 October 5-10:30pm, free multi-site Parramatta CBD arts/music/food festival. Refreshed final-two-night copy replaces last week's Wednesday/Thursday details; road closures apply."
       }
     },
-    "https://sculpturebythesea.com/bondi/": {"kind": "outdoor", "dateZh": "至11月2日", "dateEn": "UNTIL 2 NOV"},
+    "https://sculpturebythesea.com/bondi/": {
+      "kind": "outdoor",
+      "dateZh": "至11月2日",
+      "dateEn": "UNTIL 2 NOV",
+      "dates": [
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://sculpturebythesea.com/bondi/",
+        "evidence": "Organiser confirms free Bondi-Tamarama exhibition 16 October-2 November 2026. https://visit.sculpturebythesea.com/ gives Sculpture Inside at Marks Park daily 10am-6pm. https://transportnsw.info/events/2026/10/sculpture-by-sea warns of crowds and 24-25 October rail trackwork. Daylight visit is editorial advice, not an asserted outdoor gate time."
+      }
+    },
     "https://harrypotterexhibition.com/locations/sydney/": {
-      "kind": "exhibition", "dateZh": "持续展出", "dateEn": "On now",
+      "kind": "exhibition",
+      "dateZh": "持续展出",
+      "dateEn": "On now",
       "route": {
-        "summaryZh": "魔法展 → 公园野餐 → 湖畔散步", "summaryEn": "Exhibition → picnic → lake walk",
+        "summaryZh": "魔法展 → 公园野餐 → 湖畔散步",
+        "summaryEn": "Exhibition → picnic → lake walk",
         "steps": [
-          ["预约场次", "Booked session", "哈利波特展", "Harry Potter exhibition", "Paddington Pavilion, Sydney Showground, Sydney Olympic Park NSW"],
-          ["野餐休息", "Picnic break", "Bicentennial Park 公园", "Bicentennial Park", "Bicentennial Park, Sydney Olympic Park NSW"],
-          ["饭后散步", "After lunch", "Lake Belvedere 湖畔", "Lake Belvedere", "Lake Belvedere, Sydney Olympic Park NSW"]
+          [
+            "预约场次",
+            "Booked session",
+            "哈利波特展",
+            "Harry Potter exhibition",
+            "Paddington Pavilion, Sydney Showground, Sydney Olympic Park NSW"
+          ],
+          [
+            "野餐休息",
+            "Picnic break",
+            "Bicentennial Park 公园",
+            "Bicentennial Park",
+            "Bicentennial Park, Sydney Olympic Park NSW"
+          ],
+          [
+            "饭后散步",
+            "After lunch",
+            "Lake Belvedere 湖畔",
+            "Lake Belvedere",
+            "Lake Belvedere, Sydney Olympic Park NSW"
+          ]
         ],
         "noteZh": "先选上午或中午可预约的场次，再转去公园野餐；两个场地需另行移动。公园有步道和湖畔野餐空间，按天气量力走，展内不能带推车。",
         "noteEn": "Book an available morning or midday session, then transfer to the park for a picnic. The venues are separate; follow park paths and lakeside picnic areas as weather allows. Strollers are not allowed inside the exhibition.",
-        "sources": [["Harry Potter exhibition", "https://harrypotterexhibition.com/locations/sydney/"], ["Bicentennial Park", "https://www.sydneyolympicpark.nsw.gov.au/parks-and-playgrounds/bicentennial-park"]],
+        "sources": [
+          [
+            "Harry Potter exhibition",
+            "https://harrypotterexhibition.com/locations/sydney/"
+          ],
+          [
+            "Bicentennial Park",
+            "https://www.sydneyolympicpark.nsw.gov.au/parks-and-playgrounds/bicentennial-park"
+          ]
+        ],
         "checkedAt": "2026-10-23",
         "evidence": "Exhibition current hours and no-stroller condition rechecked. Park authority identifies shared paths and Lake Belvedere picnic pavilion. Route is an optional separate-venue suggestion, not a timed itinerary or invented adjacent entrance."
+      },
+      "dates": [
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-29"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://harrypotterexhibition.com/locations/sydney/",
+        "evidence": "Official Sydney page confirms now open at Paddington Pavilion via Olympic Boulevard, weekly hours shown, timed adults from $33 including fees, ages 5+ recommended, 60-90 minute visit, no strollers. Summer dates through January 2027 but exact final day not stated. Conflicting free-child and last-entry snippets are not repeated; use dated ticket calendar."
       }
     },
-    "https://www.greaterdandenong.vic.gov.au/major-events-and-celebrations/noble-park-family-fun-day": {"kind": "festival", "dateZh": "10月25日", "dateEn": "25 OCT"},
+    "https://www.greaterdandenong.vic.gov.au/major-events-and-celebrations/noble-park-family-fun-day": {
+      "kind": "festival",
+      "dateZh": "10月25日",
+      "dateEn": "25 OCT",
+      "dates": [
+        "2026-10-25"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://www.greaterdandenong.vic.gov.au/major-events-and-celebrations/noble-park-family-fun-day",
+        "evidence": "Council event detail confirms Sunday 25 October 2026 11am-4pm, Ross Reserve Memorial Drive, entry via Corrigan Road. Free community event, amusement rides for a fee, sports, animal/magic shows, dance and stalls. No cancellation notice on the checked detail page."
+      }
+    },
     "https://fedsquare.com/events/festival-indonesia-2026": {
-      "kind": "festival", "dateZh": "10月24日", "dateEn": "24 OCT",
+      "kind": "festival",
+      "dateZh": "10月24日",
+      "dateEn": "24 OCT",
       "route": {
-        "summaryZh": "文化节与午餐 → ACMI 互动影像展", "summaryEn": "Festival and lunch → ACMI screen play",
+        "summaryZh": "文化节与午餐 → ACMI 互动影像展",
+        "summaryEn": "Festival and lunch → ACMI screen play",
         "steps": [
-          ["白天到访", "Daytime visit", "Fed Square 印尼文化节", "Festival Indonesia, Fed Square", "Federation Square, Melbourne VIC"],
-          ["室内一站", "Indoor stop", "ACMI 影像互动展", "The Story of the Moving Image, ACMI", "ACMI, Federation Square, Melbourne VIC"]
+          [
+            "白天到访",
+            "Daytime visit",
+            "Fed Square 印尼文化节",
+            "Festival Indonesia, Fed Square",
+            "Federation Square, Melbourne VIC"
+          ],
+          [
+            "室内一站",
+            "Indoor stop",
+            "ACMI 影像互动展",
+            "The Story of the Moving Image, ACMI",
+            "ACMI, Federation Square, Melbourne VIC"
+          ]
         ],
         "noteZh": "仅24日可组合文化节。ACMI 免费常设展开放至17:00，可以先看展再回广场；有闪烁展示，敏感家庭先查看参观提示。午餐从节庆餐摊自行选择。",
         "noteEn": "Combine the festival on 24 October only. ACMI's free permanent exhibition closes at 5pm, so you can visit it first and return to the square. Check strobing warnings if sensitive; choose lunch from festival food stalls.",
-        "sources": [["Festival Indonesia", "https://fedsquare.com/events/festival-indonesia-2026"], ["ACMI exhibition", "https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/"]],
+        "sources": [
+          [
+            "Festival Indonesia",
+            "https://fedsquare.com/events/festival-indonesia-2026"
+          ],
+          [
+            "ACMI exhibition",
+            "https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/"
+          ]
+        ],
         "checkedAt": "2026-10-23",
         "evidence": "Venue verifies 24 October festival at Fed Square with food stalls; ACMI exact exhibition page confirms Ground Floor Fed Square, free entry 10am-5pm, strobing warning. No assumed travel time or third-party restaurant hours."
+      },
+      "dates": [
+        "2026-10-24"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://fedsquare.com/events/festival-indonesia-2026",
+        "evidence": "Venue confirms free Saturday 24 October 2026, Main Square/Swanston Street Forecourt, 10am-8pm. Organiser https://festivalindonesia.com.au/2026-outdoor-festival/ lists 10am-7pm, food, music, performances and batik/craft workshops. Closing discrepancy disclosed; daytime visit recommended."
       }
     },
-    "https://rotarymanninghamcity.au/page/manningham-family-festival": {"kind": "festival", "dateZh": "10月25日", "dateEn": "25 OCT"},
-    "https://events.humanitix.com/melbourne-s-halloween-fest-2026": {"kind": "festival", "dateZh": "10月24–25日", "dateEn": "24–25 OCT"},
+    "https://rotarymanninghamcity.au/page/manningham-family-festival": {
+      "kind": "festival",
+      "dateZh": "10月25日",
+      "dateEn": "25 OCT",
+      "dates": [
+        "2026-10-25"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://rotarymanninghamcity.au/page/manningham-family-festival",
+        "evidence": "Organiser confirms 25 October 2026 9am-4pm, Ruffey Lake Park George Street Doncaster, free entry, King Street parking, stalls, animal farm, local entertainment, Scout World and rides. Advertised advance unlimited ride ticket $25. Separate all-age mental-health walk is optional; no participation requirement implied."
+      }
+    },
+    "https://events.humanitix.com/melbourne-s-halloween-fest-2026": {
+      "kind": "festival",
+      "dateZh": "10月24–25日",
+      "dateEn": "24–25 OCT",
+      "dates": [
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://events.humanitix.com/melbourne-s-halloween-fest-2026",
+        "evidence": "Official host ticket page confirms Saturday 24 and Sunday 25 October 2026, 2-9pm, Penrose Place opposite Tarneit Gardens Shopping Centre, 52 Wickford Road. Costume, trick-or-treat, horror/magic, reptiles, ponies, face painting and castles. Exact current ticket amounts/inclusions not exposed in text; no unverified numeric price quoted."
+      }
+    },
     "https://www.melbournejazz.com/events/inside-out-jump-jive-jazz/": {
-      "kind": "show", "dateZh": "10月23–25日", "dateEn": "23–25 OCT",
+      "kind": "show",
+      "dateZh": "10月23–25日",
+      "dateEn": "23–25 OCT",
       "route": {
-        "summaryZh": "ArtPlay 爵士创作 → ACMI 互动影像展", "summaryEn": "ArtPlay jazz-making → ACMI screen play",
+        "summaryZh": "ArtPlay 爵士创作 → ACMI 互动影像展",
+        "summaryEn": "ArtPlay jazz-making → ACMI screen play",
         "steps": [
-          ["10:30–12:30", "10:30am–12:30pm", "ArtPlay 爵士创作", "Inside Out at ArtPlay", "ArtPlay, Birrarung Marr, Melbourne VIC"],
-          ["下午任选", "Optional afternoon", "ACMI 影像互动展", "The Story of the Moving Image, ACMI", "ACMI, Federation Square, Melbourne VIC"]
+          [
+            "10:30–12:30",
+            "10:30am–12:30pm",
+            "ArtPlay 爵士创作",
+            "Inside Out at ArtPlay",
+            "ArtPlay, Birrarung Marr, Melbourne VIC"
+          ],
+          [
+            "下午任选",
+            "Optional afternoon",
+            "ACMI 影像互动展",
+            "The Story of the Moving Image, ACMI",
+            "ACMI, Federation Square, Melbourne VIC"
+          ]
         ],
         "noteZh": "仅23–25日。先参加2–7岁适用的亲子音乐创作，再按体力决定要不要去 ACMI；后者至17:00、免费，部分展示有闪烁效果。不要默认 ArtPlay 门口游乐设施开放。",
         "noteEn": "For 23–25 October only. Start with the ages 2–7 adult-accompanied music session, then add ACMI only if everyone has energy. It is free until 5pm with some strobing displays. Nearby outdoor playground availability is not assumed.",
-        "sources": [["ArtPlay jazz session", "https://www.melbournejazz.com/events/inside-out-jump-jive-jazz/"], ["ACMI exhibition", "https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/"]],
+        "sources": [
+          [
+            "ArtPlay jazz session",
+            "https://www.melbournejazz.com/events/inside-out-jump-jive-jazz/"
+          ],
+          [
+            "ACMI exhibition",
+            "https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/"
+          ]
+        ],
         "checkedAt": "2026-10-23",
         "evidence": "Jazz festival gives ArtPlay address and session 10:30am-12:30pm through 25 October; ACMI confirms Fed Square Ground Floor, free until 5pm. Both are named verified city-centre stops, no journey times or unverified playground opening claimed."
+      },
+      "dates": [
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://www.melbournejazz.com/events/inside-out-jump-jive-jazz/",
+        "evidence": "Festival organiser confirms 22-25 October 2026 daily 10:30am-12:30pm, ArtPlay Birrarung Marr, ages 2-7 with adult, free/no booking, capacity wait, dim lighting, jazz plus creative play. Current week dates narrowed to 23-25 October, not the previous week's Thursday alone."
       }
     },
-    "https://museumsvictoria.com.au/scienceworks/whats-on/colour/": {"kind": "exhibition", "dateZh": "持续展出", "dateEn": "On now"},
-    "https://www.legolanddiscoverycentre.com/melbourne/whats-inside/events/jurassic-world/": {"kind": "exhibition", "dateZh": "至11月4日", "dateEn": "UNTIL 4 NOV"},
-    "https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/": {"kind": "exhibition", "dateZh": "持续开放", "dateEn": "On now"}
+    "https://museumsvictoria.com.au/scienceworks/whats-on/colour/": {
+      "kind": "exhibition",
+      "dateZh": "持续展出",
+      "dateEn": "On now",
+      "dates": [
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://museumsvictoria.com.au/scienceworks/whats-on/colour/",
+        "evidence": "Museum exhibition page confirms until Tuesday 26 January 2027, 10am-4:30pm, 2 Booker Street Spotswood, recommended ages 5-14, adult $25/child $10 including museum entry. Interactive light and perception exhibits; do not replace exhibition price with general admission."
+      }
+    },
+    "https://www.legolanddiscoverycentre.com/melbourne/whats-inside/events/jurassic-world/": {
+      "kind": "exhibition",
+      "dateZh": "至11月4日",
+      "dateEn": "UNTIL 4 NOV"
+    },
+    "https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/": {
+      "kind": "exhibition",
+      "dateZh": "持续开放",
+      "dateEn": "On now",
+      "dates": [
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25",
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-10-23",
+        "url": "https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/",
+        "evidence": "Exact centrepiece exhibition page confirms ongoing free all-age exhibition, 10am-5pm, Ground Floor Fed Square, screen/game/animation/film-sound interactives. Under-13s require supervising adult, strobing warning. Not a generic venue-entry card."
+      }
+    }
   }
 }

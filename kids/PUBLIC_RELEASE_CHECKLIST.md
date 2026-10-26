@@ -32,7 +32,7 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 
 - Small date tab -> title -> one region line -> time/location/price facts -> concise description -> optional collapsed half-day route -> actions -> reference.
 - Public event cards contain no photographs or gallery. Local trial assets and screenshots are excluded from publication.
-- Use white cards with fine category accents, not competing coloured sections. Keep timing on one row, with place and cost below in separate columns.
+- Use white 8px cards and small category-coloured date tickets. On phones, time, place and cost each occupy a full-width icon row; only wider layouts may put place and cost in columns.
 - Half-day disclosures use a title, a short summary and one right-aligned chevron. Expanded rows align phase and specific map-linked place; notes and sources remain inside the disclosure.
 - Facts use icons instead of visible Time/Place/Cost words.
 - Action order is always verified source, `导航 / Map`, `分享 / Share`. Source labels match their destination: `官网 / Official`, `官方公告 / Announcement`, or `购票 / Tickets`.
@@ -42,17 +42,23 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 ## 5. Layout and Interaction
 
 - Hero title stays on one line on common phone widths.
-- City and view selectors appear together in the finder controls; do not duplicate them elsewhere.
+- Order: brand/language -> one-line title -> publication week -> city dropdown and view tabs on one row -> filters -> cards. The selection summary is screen-reader-only.
+- The native city select is 16px on phones, at least 120px wide on narrow screens. Sydney and Melbourne must remain complete on one line.
 - At 430px and below, action buttons remain a three-column row.
 - More and Sources remain collapsed by default.
 - More links use a title on the first line and a smaller source below, with bilingual fields and one disclosure icon.
-- Show the publication week first, with the update date smaller underneath; do not advance dates when someone opens the page.
+- Show the publication week with a smaller update date beside it (wrapping only when needed); do not advance dates when someone opens the page.
 - Use one title per card in the selected language; do not add a duplicate English subtitle in Chinese mode.
 - Fold activities that have ended within the publication week, using Australia/Sydney dates, while keeping share targets and deep-link auto-expansion. Do not change publication dates or claim a weekly refresh for this display behaviour.
 - Presentation metadata is matched by shareKey and exact publication period; missing or mismatched metadata must not inject old dates, copy or routes into a new week.
 - Preserve existing unique share keys when correcting official URLs; do not give two cards the same share target.
 - Playground filters apply to the selected city's complete directory and hide empty regions.
 - Chinese mode translates region names, feature tags, actions, descriptions, and half-day suggestions.
+- Phone descriptions are 15px/1.7; facts and primary actions are approximately 13px. Actions are 46px high. Do not solve overflow by shrinking the entire interface.
+- Area/date/free-entry filters are functional and independent per city. A phone bottom sheet scrolls its choices while keeping close/apply reachable, including at 320x568 and with safe-area insets.
+- `event-presentation.json` records optional verified publication-week `dates` plus `dateReview` (checkedAt, matching official URL, concrete evidence) per stable shareKey. Unknown calendars show a warning, not an assumed daily session. Never reuse mismatched-week dates.
+- Preserve `field-notes.css`, `field-notes.js`, `event-filters.mjs`, journal behaviour and the generated static heading/facts/actions on every Friday refresh. Do not reintroduce preview paths, photographs, old CSS, duplicate headings or event-specific dates in runtime code.
+- Fonts are self-hosted Unicode-range variable subsets with licenses, not a snapshot-only character subset.
 
 ## 6. Friday Schedule
 
@@ -70,4 +76,5 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 - Verify the actual content of every selected event and More destination. Retry temporary failures, find verified alternatives, then replace or omit unresolved entries without blocking healthy items. HTTP status alone is not verification.
 - Default state is Sydney + Events; city, view, language, filters, navigation, and deep-link sharing work.
 - Check phone-width layout for overflow, wrapping, overlaps, and three-button action rows.
+- Run `py -3 scripts/test-kids-static.py`, `node scripts/test-kids-publication.mjs`, and `node scripts/test-kids-filters.mjs`; check sync idempotence. Use the Playwright CLI with `scripts/check-kids-layout.js` for both cities/languages and common phone widths, including route/map/share and ended links.
 - Push only after all checks pass, then verify `origin/main`, GitHub Pages deployment, public JSON, and the public page separately.

@@ -24,10 +24,10 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 
 每次维护 kids 页面先按这个短大纲执行，再看后面的细则。
 
-### 0.1 页面显示逻辑
+### 0.1 页面显示逻辑（2026-10-26 手机版定稿）
 
 - 默认打开：Sydney / 悉尼 + Events / 本周活动。
-- 顶部只保留一个清楚的选择区：当前城市 + 当前内容类型 + 城市切换 + Events/Playgrounds 切换。
+- 顶部顺序固定：品牌/语言 → 一行标题 → 发布周期 → 城市下拉与 Events/Playgrounds 同排 → 地区/日期/只看免费 → 卡片。
 - 标题固定一行：`今天带娃去哪儿？` / `Where to take the kids today?`
 - Events 每个城市目标 8 条主推荐，允许核实后不足；Playgrounds 是地区地点库，不按 8 条限制。
 - 活动卡片按钮顺序固定：`官网 / 导航 / 分享`，英文为 `Official / Map / Share`。
@@ -87,19 +87,18 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 
 - 沿用 SConmyway industry 页面的轻量结构感，但 kids 页面更可爱。
 - 手机优先：所有字号、按钮、间距先按竖屏手机判断。
-- 马卡龙色、手账感和轻悬浮卡片；颜色只用于小日期签、细边线及轻微主按钮底色，不叠加重复活动标签或推荐贴纸。
+- 手机竖屏为主要使用场景，不以缩小桌面版代替手机设计。纸灰绿背景、白卡片、小日期签和轻微主按钮底色，不叠加重复活动标签或推荐贴纸。
 - Sticker 不能遮挡城市切换、语言切换、标题或按钮。
-- Sydney / Melbourne 城市切换优先使用明显的 segmented control，而不是很小的下拉框。
+- Sydney / Melbourne 使用明显的原生下拉框，手机字号 16px、宽度至少 120px，两个英文名称必须一行完整显示；旁边为 Events/Playgrounds 双按钮。
 - 顶部保持简洁，不放解释性长文。
 - 顶部浏览量必须弱于品牌副标题。
 - 主标题固定：中文 `今天带娃去哪儿？`；英文 `Where to take the kids today?`
 - `More` 区可以分成 `本周候选 / More this week` 和 `备用入口 / Backup sources` 两组，仍保持折叠。
 - 如果运行时数据加载失败，页面必须显示 HTML fallback，并用很轻的提示提醒用户出发前确认官网。
 - Playgrounds tab 使用同一套马卡龙手帐视觉，但信息密度可以更偏地点库：区域筛选、设施标签和正文里的半日建议必须比长正文更突出。
-- Playgrounds 视觉应接近“亲子旅行手账”：轻胶带、stamp、地图/路线感、可爱 sticker，但当前版本不放图片，优先保证文字信息清楚。
-- 配色不仅是装饰，也要帮助用户定位：城市切换用 city 色，内容类型切换用 view 色；Events、Playgrounds 不要共用同一种高亮色。
-- Playground 卡片颜色按信息类别分配：water play 偏浅蓝，nature/park 偏浅绿，indoor/gallery 偏淡紫，fenced/toddler 偏粉，big kids/adventure 偏桃橙；不要用 `half-day` 决定颜色，因为每个地点都可以有半日建议。
-- 卡片的 `官网 / Official` 主按钮可以轻微跟随卡片 accent；`地图 / Map` 和 `分享 / Share` 保持白底，避免手机上一排按钮显得太花。
+- Playgrounds 延续文字手账和地图/路线感，但不加胶带、stamp 或悬浮 sticker；当前版本不放图片，优先保证文字信息清楚。
+- 城市下拉为浅薄荷底；当前内容类型为深墨绿底白字。Playgrounds 保持白卡与少量功能标签，不恢复大面积彩卡或装饰贴纸；不以 half-day 决定颜色。
+- 卡片的来源主按钮为浅薄荷底；`地图 / Map` 和 `分享 / Share` 保持白底，避免手机上一排按钮显得太花。
 
 ### 2.1 Figma 视觉调整大纲
 
@@ -107,29 +106,29 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 
 字体：
 
-- 中文优先 `Noto Sans SC / PingFang SC / Microsoft YaHei`，英文优先 `Nunito Sans / Inter / Segoe UI`。
+- 中文优先 `Noto Sans SC / PingFang SC / Microsoft YaHei`，英文优先 `Nunito Sans / Segoe UI`。使用本地托管、按 Unicode 范围加载的完整字体资源；不能发布仅覆盖某一周文案的试用字体子集。
 - 不使用过重的 900 字重。主标题、卡片标题、按钮以 700-780 为主；正文保持 400-500。
 - 中英文同一层级使用相近视觉重量，不让英文页面显得像未整理的 fallback。
 
 层级：
 
-- H1 中文控制在手机一行内，约 25-30px；桌面也不超过 34px。
+- H1 中文控制在手机一行内，约 24-26px；英文约 19-22px；桌面也不超过 34px。
 - 品牌标题约 15-16px，副标题和浏览量 10-11px，弱于城市和内容切换。
-- 城市切换是一级操作，约 15px；Events / Playgrounds 是同组二级操作，约 14px。
-- 活动卡标题约 18-20px；正文约 14px，行高约 1.6；事实栏约 12.5-13px；Reference 约 10.5-11px。
+- 城市切换是一级操作，手机 16px；Events / Playgrounds 是同组二级操作，约 12-13px。
+- 活动卡标题约 18-20px；手机正文 15px、行高 1.7；事实栏 13px；来源约 10-11px。主要操作按钮高度 46px，保持三列一行。
 - 日期签只显示核实后的日期范围，持续项目写 `持续展出 / On now`；缺少日期签数据时回退为 `本周活动 / This week` 或 `持续活动 / Ongoing`，不猜日期、不加星级和重复精选标签。
 
 背景和颜色：
 
-- 页面底色使用清淡灰绿 `#f6f9f8`，保留很轻的顶部网格；不添加渐变光晕、装饰色团或大面积彩色背景。
-- 主文字 `#2e3a40`，辅助文字 `#667680`。
-- 主色盘固定为：mint `#cff7e8`、yellow `#fff1b8`、peach `#ffe1d3`、lavender `#ece8ff`、green `#ddf7d8`、blue `#ddf1ff`、pink `#ffddea`。
-- 卡片主体为白色，左侧细线约 3px。节庆用浅黄，户外用薄荷绿，演出用浅珊瑚，展览用淡紫；未分类时使用中性的灰绿。
+- 页面底色 `#f5f7f5`，不放顶部网格、渐变光晕、装饰色团或大面积彩色背景。
+- 主文字 `#263c38`，辅助文字 `#667671`，边线 `#dce5df`，强调色 `#365d4b`。
+- 日期签色盘：mint `#d9ede1`、coral `#f3d7d0`、lemon `#f1e5b2`、lavender `#e8e1f1`。
+- 卡片为白底、1px 边框、8px 圆角，不放彩色侧边条。节庆日期签浅黄，户外薄荷绿，演出珊瑚，展览淡紫。
 - 标题是卡片唯一主要视觉中心，不做大 featured 卡片。正式版无活动照片、无相册；本地预览照片及截图不得跟随发布。
 
 页面节奏：
 
-- 第一屏顺序必须稳定：Header → H1 → 当前选择/城市/内容切换 → 周期 → 内容卡片。
+- 第一屏顺序必须稳定：Header → H1 → 发布周期 → 城市/内容切换 → 筛选 → 内容卡片。
 - More 是折叠候选入口，视觉上像补充抽屉，不要像第三个主 tab。
 - 长期活动暂不独立成顶层 tab；如果数量增加，先在 Events 内部作为 `长期活动 / Ongoing` 区块或第 5 条以后处理。
 
@@ -139,28 +138,29 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 
 1. Header：品牌名、弱浏览量、语言切换。
 2. Hero：主标题 `今天带娃去哪儿？` / `Where to take the kids today?`。
-3. Finder controls：当前选择摘要 + 城市切换 + 内容类型切换。
-4. Week meta：Friday-to-Friday 更新周期。
-5. Content：根据当前城市和内容类型显示 Events 或 Playgrounds。
+3. Week meta：Friday-to-Friday 发布周期和弱化的核实/更新日期。
+4. Finder controls：城市下拉 + 内容类型切换同排；当前选择摘要仅供读屏，不重复占一行。
+5. Events filters：地区、日期、只看免费；Playgrounds 使用自己的地区和设施筛选。
+6. Content：根据当前城市和内容类型显示 Events 或 Playgrounds。
 
 顶部层级规则：
 
 - Header 不放城市切换；城市切换只放在 Finder controls。
 - 内容类型切换只放在 Finder controls，不再放到日期下面或内容列表上方。
 - Finder controls 必须同时回答两个问题：`我在哪个城市？`、`我在看活动还是游乐场？`
-- 当前选择摘要必须实时显示：中文 `当前：悉尼 · 本周活动`，英文 `Now showing: Sydney · Events`。
+- 当前城市和内容类型由可见选择控件直接表达；实时摘要保留为读屏文本，避免重复标签。
 - 无 URL 分享参数时，页面默认必须是 `Sydney / 悉尼` + `Events / 本周活动`；不要用上一次浏览留下的 localStorage 覆盖默认首页。
 - 只有分享链接或深链接参数可以覆盖默认，例如 `?city=melbourne&view=playgrounds`。
 - 主标题必须一行显示，中文不要断成两行；字号服务于定位，不做夸张 hero。
-- 左上品牌副标题保持中性：`活动 · 游乐场 · 一键导航`，不要写 `本周 8 条`，避免切到 Playgrounds 时误导。
+- 左上品牌固定 `SConmyway kids`，副标题 `亲子城市指南 / A family city guide`；不要写 `本周 8 条`，避免切到 Playgrounds 时误导。
 - 语言切换可以在 Header 右侧；它是辅助设置，视觉权重低于城市和内容类型。
 
 Finder controls 结构：
 
 ```text
-当前：Sydney/Melbourne · 本周活动/游乐场
-[ Sydney | Melbourne ]
-[ 本周活动/Events | 游乐场/Playgrounds ]
+发布周期                         小更新日期
+[ 悉尼/Sydney v ] [ 本周活动/Events | 游乐场/Playgrounds ]
+[ 地区/Area ] [ 日期/Date ] [ ] 只看免费/Free only
 ```
 
 不要再出现：
@@ -231,15 +231,26 @@ Reference
 - `Official` 打开官网或可信官方页。
 - `Map` 打开 Google Maps 搜索或导航。
 - `Share` 复制深链接，朋友打开后定位到该活动。
-- 日期签约 11px，标题 19-20px，区域 12px，正文 14px，事实栏 12px，来源 10-11px；中英文采用相同视觉层级。
-- 时间独占一行，地点与费用在下一行分列，内容可自然换行，不能挤成连续一串文字；继续使用图标，不加 Time/Place/Cost 文本表头。
+- 日期签为小矩形：单日大数字 25px、多日范围约 17px，附小月份；持续项目保留核实后的短标签。标题 18-20px、区域 12px、手机正文 15px、事实栏 13px、来源 10-11px。
+- 手机时间、地点、费用各占一个完整图标行，不挤成两个窄栏；宽屏可将地点和费用分列。继续使用图标，不加 Time/Place/Cost 文本表头。
 - 简介不加“亮点”等前缀，也不重复事实栏。中文不再额外复制一行英文活动名。
 - 半日路线只在有核实过的具体站点时出现。折叠态为两行：`半日路线 / Half-day plan` 标题和短摘要；右侧为标准展开箭头。
 - 展开后每站按“时段/阶段 + 具体地点”两列排齐，不显示漂浮序号或多段错位缩进；各地点独立打开地图，补充说明和地点来源放在展开区内。
 - 周内已结束活动按 Australia/Sydney 日期折叠进 `本周已结束 / Finished this week`，不占当前活动前排。分享至已结束活动仍自动展开定位。此折叠不改变发布周期，也不替代周五重新检索和删除过期条目。
 - `kids/data/event-presentation.json` 用唯一 shareKey 关联日期签、活动类型、精简文案和半日路线，必须与两城活动的 periodStart/periodEnd 一致；不同周的数据不应用，避免旧日期和旧路线残留。
 - 周五重检后同步更新该文件，或清除对应活动的旧展示数据。没有合适半日路线时省略，不编造内容；模板、排版和折叠交互由 sync helper 保留。
+- 日期筛选读取同一文件每项的 `dates`（本周期确实有场次的 ISO 日期数组）和 `dateReview`（checkedAt、官方 URL、具体证据）。每天开放只能在官网明确说明时展开为每日；闭馆日不得纳入，无法核实则不填 dates，筛选时提示确认预约日历。
+- 日期元数据必须按每周检索重建，并通过 `node scripts/test-kids-filters.mjs`。禁止在 CSS、JS 或独立静态索引里硬编码某周日期、活动名或路线。
 - 无 JavaScript 时仍有完整静态卡片、事实、官网/地图和原生路线展开；分享和按当天折叠属于渐进增强。
+
+### 7.1 手机交互与每周保留项
+
+- `kids/field-notes.css`、`kids/field-notes.js`、`kids/event-filters.mjs` 为正式手机版实现；保留 journal 的周内结束折叠和 sync helper 的静态结构，不恢复旧版布局。
+- 手机边距通常 16px，极窄屏 14px，适配安全区；主标题和城市名不换行，操作按钮始终一行。
+- 地区、日期、免费筛选按城市分别保存于本次浏览内；切城不串条件，切语言不丢状态，重置和空结果可恢复。
+- 手机筛选使用底部面板，选项独立滚动，关闭和应用按钮不被短屏或安全区挡住；Escape 可关闭，焦点可返回触发按钮。
+- 每周更新后跑静态、发布和筛选测试，再使用 `scripts/check-kids-layout.js` 在两个城市、两种语言及 320/360/375/390/393/412/430px 检查。首屏、路线展开、分享定位、已结束折叠和无照片均需保留。
+- `kids/preview/`、`kids/output/`、截图和试用图片不提交；这次排版发布不改本周活动日期，也不冒充一次新内容检索。
 
 ## 8. 双语规则
 

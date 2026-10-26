@@ -142,6 +142,36 @@ class KidsStaticTests(unittest.TestCase):
                 self.assertTrue(attrs.get("href"))
         self.assertEqual(self.html.count('timeZone: "Australia/Sydney"'), 6)
 
+    def test_mobile_template_and_assets(self):
+        total = sum(len(data["events"]) for _, _, _, data in self.cities)
+        self.assertEqual(self.html.count('class="event-heading"'), total)
+        self.assertIn('id="city-select"', self.html)
+        self.assertIn('viewport-fit=cover', self.html)
+        self.assertLess(self.html.index('<section class="meta-bar"'), self.html.index('<section class="finder-controls"'))
+        self.assertIn('href="field-notes.css?v=20261026"', self.html)
+        self.assertIn('src="field-notes.js?v=20261026"', self.html)
+        for _, attrs in Tags(self.html).tags:
+            if attrs.get("class") == "fn-icon":
+                self.assertTrue((ROOT / "kids" / attrs["src"]).exists())
+        for filename in ["field-notes.css", "field-notes.js", "event-filters.mjs"]:
+            self.assertNotIn("preview/", (ROOT / "kids" / filename).read_text(encoding="utf-8"))
+        fonts = (ROOT / "kids/assets/fonts.css").read_text(encoding="utf-8")
+        self.assertIn("unicode-range:", fonts)
+        self.assertNotIn("https://", fonts)
+        for path in re.findall(r"url\(([^)]+)\)", fonts):
+            self.assertTrue((ROOT / "kids/assets" / path).exists(), path)
+
+    def test_date_ticket_all_months_and_fallback(self):
+        for number, name in enumerate(SYNC.month_abbr):
+            if not name:
+                continue
+            rendered = SYNC.date_ticket(f"{number}月25日", f"25 {name.upper()}")
+            self.assertIn('class="date-number"', rendered)
+            self.assertIn(f"{number}月", rendered)
+        self.assertIn('class="date-number date-range"', SYNC.date_ticket("1月24–25日", "24–25 JAN"))
+        for label in ["On now", "UNTIL 2 NOV", "This week", "30 OCT–2 NOV"]:
+            self.assertNotIn('class="date-number', SYNC.date_ticket("核实标签", label))
+
 
 if __name__ == "__main__":
     unittest.main()

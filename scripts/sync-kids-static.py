@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+from calendar import month_abbr
 from datetime import date
 from html import escape
 from pathlib import Path
@@ -28,10 +29,15 @@ def pair(value: object) -> str:
     return escape(text(value), quote=True)
 
 
-def action(url: str, label_zh: str, label_en: str, class_name: str = "action") -> str:
+def icon(name: str) -> str:
+    return f'<img class="fn-icon" src="assets/icons/{name}.svg" alt="" aria-hidden="true">'
+
+
+def action(url: str, label_zh: str, label_en: str, class_name: str = "action", icon_name: str | None = None) -> str:
+    glyph = icon(icon_name) if icon_name else ""
     return (
         f'<a class="{class_name}" href="{escape(url, quote=True)}" '
-        f'target="_blank" rel="noreferrer"><span class="zh">{label_zh}</span>'
+        f'target="_blank" rel="noreferrer">{glyph}<span class="zh">{label_zh}</span>'
         f'<span class="en">{label_en}</span></a>'
     )
 
@@ -44,6 +50,18 @@ def presentation_for(data: dict, event: dict, presentation: dict) -> dict:
 
 def bilingual(zh: object, en: object) -> str:
     return f'<span class="zh">{pair(zh)}</span><span class="en">{pair(en)}</span>'
+
+
+def date_ticket(zh: str, en: str) -> str:
+    match = re.fullmatch(r"(\d{1,2}(?:[–-]\d{1,2})?) ([A-Z]{3})", en)
+    months = {name.upper(): number for number, name in enumerate(month_abbr) if name}
+    if not match or match[2] not in months:
+        return bilingual(zh, en)
+    number = match[1]
+    number_class = "date-number date-range" if len(number) > 2 else "date-number"
+    return (f'<span class="sr-only">{bilingual(zh, en)}</span>'
+            f'<span class="{number_class}" aria-hidden="true">{pair(number)}</span>'
+            f'<span class="date-caption" aria-hidden="true">{bilingual(str(months[match[2]]) + "月", match[2])}</span>')
 
 
 def route_html(route: dict | None) -> str:
@@ -81,14 +99,12 @@ def card(event: dict, index: int, city: str, presentation: dict | None = None) -
     if official:
         labels = {"official": ("官网", "Official"), "announcement": ("官方公告", "Announcement"), "tickets": ("官方购票", "Tickets")}
         label_zh, label_en = labels.get(event.get("linkType", "official"), labels["official"])
-        actions.append(action(official, label_zh, label_en, "action primary" + (" announcement" if event.get("linkType") == "announcement" else "")))
-    actions.append(action(map_url, "导航", "Map"))
+        actions.append(action(official, label_zh, label_en, "action primary" + (" announcement" if event.get("linkType") == "announcement" else ""), "external-link"))
+    actions.append(action(map_url, "导航", "Map", icon_name="map-pin"))
 
     rendered = f"""        <article class="{' '.join(class_names)}" id="{event_id}" data-city="{city}" data-kind="{kind}" data-ends-on="{pair(event.get('endsOn'))}" data-share-key="{share_key}">
-          <div class="card-top"><div class="date-ticket">{bilingual(status_zh, status_en)}</div></div>
-          <h3>{bilingual(display.get('titleZh'), display.get('titleEn'))}</h3>
-          <p class="event-region">{bilingual(region_zh, region_en)}</p>
-          <div class="facts"><div class="fact"><span>&#128337;</span>{bilingual(display.get('timeZh'), display.get('timeEn'))}</div><div class="fact"><span>&#128205;</span>{bilingual(display.get('placeZh'), display.get('placeEn'))}</div><div class="fact"><span>&#127915;</span>{bilingual(display.get('priceZh'), display.get('priceEn'))}</div></div>
+          <div class="event-heading"><div class="card-top"><div class="date-ticket">{date_ticket(status_zh, status_en)}</div></div><div class="event-heading-copy"><h3>{bilingual(display.get('titleZh'), display.get('titleEn'))}</h3><p class="event-region">{bilingual(region_zh, region_en)}</p></div></div>
+          <div class="facts"><div class="fact"><span aria-hidden="true">{icon('calendar')}</span>{bilingual(display.get('timeZh'), display.get('timeEn'))}</div><div class="fact"><span aria-hidden="true">{icon('map-pin')}</span>{bilingual(display.get('placeZh'), display.get('placeEn'))}</div><div class="fact"><span aria-hidden="true">{icon('ticket')}</span>{bilingual(display.get('priceZh'), display.get('priceEn'))}</div></div>
           <p class="summary zh">{pair(display.get('summaryZh'))}</p><p class="summary en">{pair(display.get('summaryEn'))}</p>
           {route_html(presentation.get('route'))}
           <div class="actions">{''.join(actions)}</div>

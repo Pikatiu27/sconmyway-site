@@ -44,11 +44,22 @@ As of 11 September 2026, both 05:00 and 07:00 use the same `kids-weekly-refresh`
 10. Put long-running attractions after fresh dated events, normally at card 5 or later. Only verified library/storytime and toddler-only items may go in More; generic directories must be labelled backup finders. Never put unresolved links in More.
 11. Rewrite both JSON files completely, including `updatedAt`, `periodStart`, `periodEnd`, main events and More links.
     Refresh `kids/data/event-presentation.json` for that same period: verified date tabs, category, equivalent concise bilingual copy and optional evidence-backed half-day routes, keyed by stable shareKey. Omit uncertain routes. Never carry a previous period's dates or routes forward. Public cards remain text-only; do not commit local preview photographs, screenshots or preview files.
+    Rebuild optional `dates` and `dateReview` for date filtering from current official session/opening facts. dates contains only actual ISO days within this publication week; dateReview stores checkedAt, the matching official URL and concrete evidence. Omit dates for unknown calendars rather than assuming daily opening. Never reuse a previous week's dates or hardcode current event identities/dates into the filter code.
 12. Keep Chinese and English facts equivalent. English fields and English UI text must contain no Chinese.
 13. Record matching current `linkReview` evidence for every selected main and More URL. Run `prepare` with `scripts/check-kids-update.mjs` for both JSON files, inspect both review reports, then run `py -3 scripts/sync-kids-static.py`. Resolve structural errors; individual rejected links must not block healthy content.
 14. Validate JSON, UTF-8, Friday-to-Friday dates, actual per-city card counts (target 8+8), English fields, official links, More links and `git diff --check`.
 15. Commit only the intentional kids files, rebase on current `origin/main`, push with `git push origin HEAD:main`, and verify `origin/main`.
 16. Fetch cache-busted public JSON and Pages HTML. Confirm the period, both first titles, actual per-city card counts (target 8+8) and mobile layout before reporting success.
+
+## Approved Mobile Layout, 26 October 2026
+
+- The phone is the primary interface. Preserve `kids/field-notes.css`, `kids/field-notes.js`, `kids/event-filters.mjs`, existing journal behaviour and the static generator, not a frozen preview page.
+- Header/language -> one-line H1 -> publication week -> 16px native city dropdown and adjacent Events/Playgrounds tabs -> Area/Date/Free filters -> white cards with small coloured date tickets.
+- Phone facts use three full-width icon rows: time, place, cost. Description 15px/1.7, facts/actions about 13px. Source/Map/Share remain one 46px-high row. No photographs, coloured sidebars, duplicate titles or extra visible selection summary.
+- Half-day disclosure retains its title, short summary and chevron; expanded phase/place rows have verified named map stops, notes and official sources inside.
+- Preserve per-city filtering, verified session dates and unknown-calendar warning. The mobile filter sheet must keep actions visible on short screens and respect safe-area insets.
+- Run static/publication/filter tests and sync twice to confirm no layout rollback. Use `scripts/check-kids-layout.js` via Playwright CLI on both cities/languages at common phone widths; inspect screenshots, route toggle, maps, share deep links and ended auto-expansion.
+- Existing Friday 05:00 primary and 07:00 recovery schedule and notification policy stay unchanged. A design-only release is not a researched weekly content refresh.
 
 Changing only the date, reusing old cards as fresh research, leaving unverified or expired cards in place is a failed run.
 
