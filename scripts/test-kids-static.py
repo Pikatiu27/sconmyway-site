@@ -149,11 +149,11 @@ class KidsStaticTests(unittest.TestCase):
         self.assertIn('viewport-fit=cover', self.html)
         self.assertLess(self.html.index('<section class="meta-bar"'), self.html.index('<section class="finder-controls"'))
         self.assertIn('href="field-notes.css?v=20261026"', self.html)
-        self.assertIn('src="field-notes.js?v=20261026"', self.html)
+        self.assertIn('src="field-notes.js?v=20261029"', self.html)
         for _, attrs in Tags(self.html).tags:
             if attrs.get("class") == "fn-icon":
                 self.assertTrue((ROOT / "kids" / attrs["src"]).exists())
-        for filename in ["field-notes.css", "field-notes.js", "event-filters.mjs"]:
+        for filename in ["field-notes.css", "field-notes.js", "event-filters.mjs", "family-journal.css", "family-journal.js", "journal.js"]:
             self.assertNotIn("preview/", (ROOT / "kids" / filename).read_text(encoding="utf-8"))
         fonts = (ROOT / "kids/assets/fonts.css").read_text(encoding="utf-8")
         self.assertIn("unicode-range:", fonts)
@@ -171,6 +171,21 @@ class KidsStaticTests(unittest.TestCase):
         self.assertIn('class="date-number date-range"', SYNC.date_ticket("1月24–25日", "24–25 JAN"))
         for label in ["On now", "UNTIL 2 NOV", "This week", "30 OCT–2 NOV"]:
             self.assertNotIn('class="date-number', SYNC.date_ticket("核实标签", label))
+        self.assertIn('date-prelude', SYNC.date_ticket("至11月2日", "UNTIL 2 NOV"))
+        self.assertIn('date-state', SYNC.date_ticket("持续展出", "On now"))
+
+    def test_family_copy_and_time_fallback(self):
+        event = self.cities[0][3]["events"][0]
+        metadata = {"introZh": "简短介绍", "introEn": "Short introduction",
+                    "familyFitZh": "须成人陪同", "familyFitEn": "Adult required",
+                    "noteZh": "预约后入场", "noteEn": "Booking required",
+                    "timeShortZh": "查看场次", "timeShortEn": "Check sessions", "showFullTime": True}
+        rendered = SYNC.card(event, 0, "sydney", metadata)
+        for value in ["family-fit", "outing-note", "schedule-copy", event["timeEn"], "Short introduction"]:
+            self.assertIn(value, rendered)
+        fallback = SYNC.card(event, 0, "sydney")
+        self.assertIn(SYNC.pair(event["summaryEn"]), fallback)
+        self.assertNotIn("family-fit", fallback)
 
 
 if __name__ == "__main__":

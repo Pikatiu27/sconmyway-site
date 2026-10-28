@@ -1,5 +1,13 @@
 # Kids Public Release Outline
 
+## Current Design Contract - 29 October 2026
+
+This section supersedes older inline-disclosure and palette descriptions below. Preserve the approved cold-white, pale strawberry/aqua family journal and compact phone header, browser-local bookmarks for events/playgrounds, and the new family-journal CSS/JS alongside the existing filter and sync code. Cards have no inline arrow disclosures: route summaries and Full opening hours open native detail sheets, with closures/booking/critical family conditions still visible. Finished-this-week uses a View text entry and one sheet for list -> outing -> secondary details, with back/close controls, an explicit finished status and working historical share/saved targets. Never stack an outing detail modal inside the finished modal. More/Sources retain independent collapsed behaviour.
+
+Weekly presentation fields are period-scoped: intro, familyFit, note and timeShort bilingual pairs, showFullTime, copyReview, and optional route.purposes aligned with checked route.steps. Facts, stops, dates and sources must be freshly verified, not hardcoded into runtime code or copied from a previous week. Missing fields fall back to complete event copy. No photographs, preview files, screenshots or private research attachments are published.
+
+In addition to the tests below, run scripts/check-kids-family.js through Playwright CLI. Inspect current cards, saved list, finished list/detail/secondary navigation, all short-phone sheets and both languages. A layout-only release with unchanged event feeds must be reported as such, not as a content refresh.
+
 ## 1. Page Purpose
 
 The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed-count and all-links-must-pass rules. Run per-item preparation before static sync; publish verified items even when below the target count.

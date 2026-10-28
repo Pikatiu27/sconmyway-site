@@ -53,6 +53,18 @@ def bilingual(zh: object, en: object) -> str:
 
 
 def date_ticket(zh: str, en: str) -> str:
+    until = re.fullmatch(r"至(\d{1,2})月(\d{1,2})日", zh)
+    if until:
+        month, day = map(int, until.groups())
+        if 1 <= month <= 12:
+            return (f'<span class="sr-only">{bilingual(zh, en)}</span>'
+                    f'<span class="date-prelude" aria-hidden="true">{bilingual("至", "UNTIL")}</span>'
+                    f'<span class="date-number" aria-hidden="true">{day}</span>'
+                    f'<span class="date-caption" aria-hidden="true">{bilingual(str(month) + "月", month_abbr[month].upper())}</span>')
+    if zh in {"持续展出", "持续开放"}:
+        return (f'<span class="sr-only">{bilingual(zh, en)}</span>'
+                f'<span class="zh" aria-hidden="true"><span class="date-state"><span>持续</span><span>{zh[2:]}</span></span></span>'
+                '<span class="en" aria-hidden="true"><span class="date-state date-state-en"><span>ON</span><span>NOW</span></span></span>')
     match = re.fullmatch(r"(\d{1,2}(?:[–-]\d{1,2})?) ([A-Z]{3})", en)
     months = {name.upper(): number for number, name in enumerate(month_abbr) if name}
     if not match or match[2] not in months:
@@ -68,9 +80,11 @@ def route_html(route: dict | None) -> str:
     if not route or not route.get("steps"):
         return ""
     steps = []
-    for phase_zh, phase_en, place_zh, place_en, query in route["steps"]:
+    for index, (phase_zh, phase_en, place_zh, place_en, query) in enumerate(route["steps"]):
         url = f"https://www.google.com/maps/search/?api=1&query={quote_plus(query)}"
-        steps.append(f'<li><small>{bilingual(phase_zh, phase_en)}</small>{action(url, pair(place_zh), pair(place_en), "route-place")}</li>')
+        purposes = route.get("purposes", [])
+        purpose = f'<span class="route-stop-purpose">{bilingual(*purposes[index])}</span>' if index < len(purposes) else ""
+        steps.append(f'<li><small>{bilingual(phase_zh, phase_en)}</small>{action(url, pair(place_zh), pair(place_en), "route-place")}{purpose}</li>')
     sources = " · ".join(f'<a href="{pair(url)}" target="_blank" rel="noreferrer">{pair(label)}</a>' for label, url in route.get("sources", []))
     return f'''<details class="half-day-route"><summary><span class="route-summary-copy"><strong>{bilingual("半日路线", "Half-day plan")}</strong><span class="route-short-path">{bilingual(route.get("summaryZh"), route.get("summaryEn"))}</span></span><img class="route-chevron" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true"></summary><div class="route-expanded"><ol>{"".join(steps)}</ol><p>{bilingual(route.get("noteZh"), route.get("noteEn"))}</p><span class="route-sources">{bilingual("路线地点：", "Route places: ")}{sources}</span></div></details>'''
 
@@ -94,6 +108,16 @@ def card(event: dict, index: int, city: str, presentation: dict | None = None) -
         raise ValueError(f"Unknown event presentation kind: {kind}")
     region_zh = text(event.get("tagZh")).split(" · ")[0]
     region_en = text(event.get("tagEn")).split(" · ")[0]
+    time_zh = presentation.get("timeShortZh") or display.get("timeZh")
+    time_en = presentation.get("timeShortEn") or display.get("timeEn")
+    full_time = (f'<details class="schedule-details"><summary>{bilingual("完整时间", "Full opening hours")}</summary>'
+                 f'<p class="schedule-copy">{bilingual(display.get("timeZh"), display.get("timeEn"))}</p></details>') if presentation.get("showFullTime") else ""
+    family_fit = f'<p class="family-fit">{bilingual(presentation["familyFitZh"], presentation["familyFitEn"])}</p>' if presentation.get("familyFitZh") and presentation.get("familyFitEn") else ""
+    intro_zh = presentation.get("introZh") or display.get("summaryZh")
+    intro_en = presentation.get("introEn") or display.get("summaryEn")
+    note = (f'<p class="outing-note zh">{pair(presentation["noteZh"])}</p>'
+            f'<p class="outing-note en">{pair(presentation["noteEn"])}</p>') if presentation.get("noteZh") and presentation.get("noteEn") else ""
+    ticket_class = "date-ticket date-until" if re.fullmatch(r"至\d{1,2}月\d{1,2}日", status_zh) else "date-ticket"
 
     actions = []
     if official:
@@ -103,9 +127,10 @@ def card(event: dict, index: int, city: str, presentation: dict | None = None) -
     actions.append(action(map_url, "导航", "Map", icon_name="map-pin"))
 
     rendered = f"""        <article class="{' '.join(class_names)}" id="{event_id}" data-city="{city}" data-kind="{kind}" data-ends-on="{pair(event.get('endsOn'))}" data-share-key="{share_key}">
-          <div class="event-heading"><div class="card-top"><div class="date-ticket">{date_ticket(status_zh, status_en)}</div></div><div class="event-heading-copy"><h3>{bilingual(display.get('titleZh'), display.get('titleEn'))}</h3><p class="event-region">{bilingual(region_zh, region_en)}</p></div></div>
-          <div class="facts"><div class="fact"><span aria-hidden="true">{icon('calendar')}</span>{bilingual(display.get('timeZh'), display.get('timeEn'))}</div><div class="fact"><span aria-hidden="true">{icon('map-pin')}</span>{bilingual(display.get('placeZh'), display.get('placeEn'))}</div><div class="fact"><span aria-hidden="true">{icon('ticket')}</span>{bilingual(display.get('priceZh'), display.get('priceEn'))}</div></div>
-          <p class="summary zh">{pair(display.get('summaryZh'))}</p><p class="summary en">{pair(display.get('summaryEn'))}</p>
+          <div class="event-heading"><div class="card-top"><div class="{ticket_class}">{date_ticket(status_zh, status_en)}</div></div><div class="event-heading-copy"><h3>{bilingual(display.get('titleZh'), display.get('titleEn'))}</h3><p class="event-region">{bilingual(region_zh, region_en)}</p></div></div>
+          <div class="facts"><div class="fact" data-original-time-zh="{pair(display.get('timeZh'))}" data-original-time-en="{pair(display.get('timeEn'))}"><span aria-hidden="true">{icon('calendar')}</span>{bilingual(time_zh, time_en)}</div><div class="fact"><span aria-hidden="true">{icon('map-pin')}</span>{bilingual(display.get('placeZh'), display.get('placeEn'))}</div><div class="fact"><span aria-hidden="true">{icon('ticket')}</span>{bilingual(display.get('priceZh'), display.get('priceEn'))}</div></div>
+          {full_time}{family_fit}
+          <p class="summary zh">{pair(intro_zh)}</p><p class="summary en">{pair(intro_en)}</p>{note}
           {route_html(presentation.get('route'))}
           <div class="actions">{''.join(actions)}</div>
           <p class="reference"><b><span class="zh">参考来源：</span><span class="en">Reference:</span></b> <span class="zh">{pair(event.get('referenceZh'))}</span><span class="en">{pair(event.get('referenceEn'))}</span></p>

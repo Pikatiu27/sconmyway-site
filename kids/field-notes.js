@@ -193,15 +193,8 @@ function refresh() {
     const archive = section.querySelector('.ended-events');
     if (archive) {
       archive.hidden = endedCount === 0;
-      archive.querySelector('summary').replaceChildren(pair(`本周已结束 · ${endedCount} 条`, `Finished this week · ${endedCount}`));
-      if (localFilters.date && endedCount) {
-        archive.open = true;
-        archive.dataset.filterOpened = 'true';
-      } else if (archive.dataset.filterOpened) {
-        const linkedCard = document.getElementById(new URLSearchParams(location.search).get('event'));
-        archive.open = Boolean(linkedCard && archive.contains(linkedCard));
-        delete archive.dataset.filterOpened;
-      }
+      archive.querySelector('.ended-count').replaceChildren(pair(`本周已结束 · ${endedCount} 条`, `Finished this week · ${endedCount}`));
+      archive.dispatchEvent(new Event('kids:archive-filter'));
     }
     const includeEnded = Boolean(localFilters.date);
     renderCount(section, activeCount + (includeEnded ? endedCount : 0), activeFilters, includeEnded && endedCount > 0);
@@ -237,7 +230,8 @@ try {
   root.dataset.fieldNotesReady = 'true';
   refresh();
   const target = document.getElementById(new URLSearchParams(location.search).get('event'));
-  if (target) requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+  if (target?.closest('.ended-events')) target.closest('.ended-events').dispatchEvent(new CustomEvent('kids:open-ended',{detail:{id:target.id}}));
+  else if (target) requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
 } catch (error) {
   // The original full static list remains usable when the optional filters cannot load.
   root.dataset.fieldNotesReady = 'fallback';

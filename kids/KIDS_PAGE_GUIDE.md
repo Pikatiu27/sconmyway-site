@@ -1,5 +1,28 @@
 # Kids Page Guide
 
+## 2026-10-29 正式设计与周更约定（优先于旧版设计说明）
+
+- 手机优先的清爽亲子手账：冷白 `#FAFCFC`、白卡、浅草莓粉 `#F9B4CC`、浅汽水蓝 `#DDF3F4`、标题 `#29384A`、正文 `#526070`。页眉仅一个小彩虹，不放活动照片、相册或大贴纸。
+- 顶部顺序不变，收藏和语言同排，不能因语言控件隐藏一半而保留空列。卡片仍是日期签、标题/区域、图标时间地点费用、家庭适配（可选）、简介、注意事项（可选）、路线摘要（可选）、官网/导航/分享、弱来源。
+- 卡片内不再使用箭头原位展开。完整时刻表和“看路线”打开原生底部弹层，不改变卡片高度；闭馆、预约、来源冲突及必要年龄/陪同条件必须直接显示。底部 More/Sources 保持独立折叠。
+- “本周已结束 · N 条 / Finished this week · N”是弱文字入口加“查看 / View”，不是箭头。打开列表仅显示名称、日期、区域；同一弹层切换活动详情、路线或完整时间，不能层层叠加弹窗。详情明确标记已结束；返回/关闭可达，历史分享与收藏链接直接打开对应活动。
+- 收藏覆盖活动与游乐场，仅保存在访问者当前浏览器的 localStorage，不上传、不跨设备同步。本地预览与线上域名不互通。已结束标注状态，本期未收录的收藏不得生成死链接，允许移除；保存失败不能显示成功。
+- 正式样式/交互为 `family-journal.css`、`family-journal.js`，加原有 `field-notes.*`、`event-filters.mjs`、`journal.*` 和 sync helper。不得将 preview 文件直接发布，也不得恢复旧的卡片内展开方式。
+- 每周同周期 `event-presentation.json` 可包含 `introZh/En`、`familyFitZh/En`、`noteZh/En`、`timeShortZh/En`、`showFullTime` 和 `copyReview`。简介与注意事项不重复；没有核实年龄/推车条件就不填。完整事实仍保留在 events JSON 中，showFullTime 时原文同步到详情。copyReview 记录真实核实日期、匹配官网和证据，不把排版编辑日期冒充内容检索日期。
+- 路线的 `purposes` 可提供与 steps 对齐的简短双语用途（如看展、野餐、散步），必须来自同一批已核实站点事实；steps、地图、note、sources、checkedAt/evidence 都需更新。额外站点按家庭体力选去，不编步行时长、开门时间或未核实设施。
+- 新一周必须重新检索并重建展示字段，绝不能复用旧活动的文案、日期、时刻或路线。缺少同周期展示字段时回退完整原文，而不是拼接上周数据。
+- 发布前跑 static/publication/filter/两城 validate 检查；sync 两次比较哈希；通过 Playwright 执行 `scripts/check-kids-layout.js` 和 `scripts/check-kids-family.js`，检查两城双语、320–430px/短屏、无箭头卡片、单弹层历史列表、收藏和真实分享目标。设计发布不等于本周重新检索成功。
+
+### 检索补充：覆盖面与可参加性
+
+1. 候选池按“城市 × 区域 × 活动类型 × 可参加状态”记录，而不只搜索 kids events。每城先扩至约20条真实候选再筛选；不足必须记录检查过哪些区域、什么原因剔除，不凑数。
+2. 每周扫 council 与其地方旅游/商业街活动站两条线。Sydney 兼顾 Parramatta、Penrith、Inner West、Burwood、Ryde、Northern Beaches、南区/西南；Melbourne 兼顾 city、北/东/西/东南/海湾各区。质量允许时主推荐至少3区、前4条至少2区，不强行配额。
+3. 用 festival、show、market、family day、open day、public art、night event、community celebration 等词补查，别只搜 children。大型场馆、商圈、文化社区、消防开放/展示日和 Bunnings 单店活动也可发现候选。
+4. 额外核对“家长能否共同参与”，区分亲子活动与儿童独立托管/营地；确认具体分店/场地、当年日期、预约场次、余票/售罄、取消和天气公告。目录与旧年度宣传页不作详情证据。
+5. 搜索摘要可过期或混入跨州同名地点。每个主推荐、More 和路线都回到官方详情/官方票务核实；预约已满的不作为现在可参加推荐，未知余量不能写成有票。
+6. 主推荐优先大人也值得参与的家庭出游；library/storytime、仅3岁以下和简单 playgroup 只进已核实 More 或省略。主办者跨多个渠道发布同一活动时去重，不占多个名额。
+7. 已检查的补充入口：[Penrith Council](https://www.penrithcity.nsw.gov.au/upcoming-events) 还指向 Visit Penrith 的非 Council 活动；[Bunnings](https://www.bunnings.com.au/services/in-store/kids-activities) 需落实到分店预约页；[FRV](https://www.frv.vic.gov.au/community-events) 的开放展示需查实际预约状态。上述是发现入口，不代表本周已有可报名项目。
+
 <!-- MANUAL_REFRESH_RULE_START -->
 ## Current Refresh Rule
 
@@ -32,7 +55,7 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 - Events 每个城市目标 8 条主推荐，允许核实后不足；Playgrounds 是地区地点库，不按 8 条限制。
 - 活动卡片按钮顺序固定：`官网 / 导航 / 分享`，英文为 `Official / Map / Share`。
 - `More` 必须折叠，放 3-5 条本周候选或大型官方入口，不放空链接、过期链接或装饰性链接。
-- 正式 Events 采用无照片的紧凑手账：小日期签 → 标题 → 单行区域 → 图标事实栏 → 简介 → 可展开半日路线 → 操作 → 来源。2026-10-19 用户决定不公开官网试用照片，也不发布相册。
+- 正式 Events 采用无照片的紧凑手账，具体结构和无箭头弹层规则以上方2026-10-29约定为准。
 
 ### 0.2 内容筛选逻辑
 
@@ -97,8 +120,8 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 - 如果运行时数据加载失败，页面必须显示 HTML fallback，并用很轻的提示提醒用户出发前确认官网。
 - Playgrounds tab 使用同一套马卡龙手帐视觉，但信息密度可以更偏地点库：区域筛选、设施标签和正文里的半日建议必须比长正文更突出。
 - Playgrounds 延续文字手账和地图/路线感，但不加胶带、stamp 或悬浮 sticker；当前版本不放图片，优先保证文字信息清楚。
-- 城市下拉为浅薄荷底；当前内容类型为深墨绿底白字。Playgrounds 保持白卡与少量功能标签，不恢复大面积彩卡或装饰贴纸；不以 half-day 决定颜色。
-- 卡片的来源主按钮为浅薄荷底；`地图 / Map` 和 `分享 / Share` 保持白底，避免手机上一排按钮显得太花。
+- 城市下拉浅汽水蓝，当前类型浅草莓粉；Playgrounds 保持白卡与少量功能标签，不以 half-day 决定颜色。
+- 来源主按钮浅粉，`导航 / Map` 和 `分享 / Share` 保持白底。
 
 ### 2.1 Figma 视觉调整大纲
 
@@ -120,8 +143,8 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 
 背景和颜色：
 
-- 页面底色 `#f5f7f5`，不放顶部网格、渐变光晕、装饰色团或大面积彩色背景。
-- 主文字 `#263c38`，辅助文字 `#667671`，边线 `#dce5df`，强调色 `#365d4b`。
+- 页面底色 `#FAFCFC`，不放顶部网格、渐变光晕、装饰色团或大面积彩色背景。
+- 主文字 `#29384A`，正文 `#526070`；完整色彩约定见本文首节。
 - 日期签色盘：mint `#d9ede1`、coral `#f3d7d0`、lemon `#f1e5b2`、lavender `#e8e1f1`。
 - 卡片为白底、1px 边框、8px 圆角，不放彩色侧边条。节庆日期签浅黄，户外薄荷绿，演出珊瑚，展览淡紫。
 - 标题是卡片唯一主要视觉中心，不做大 featured 卡片。正式版无活动照片、无相册；本地预览照片及截图不得跟随发布。
@@ -234,9 +257,9 @@ Reference
 - 日期签为小矩形：单日大数字 25px、多日范围约 17px，附小月份；持续项目保留核实后的短标签。标题 18-20px、区域 12px、手机正文 15px、事实栏 13px、来源 10-11px。
 - 手机时间、地点、费用各占一个完整图标行，不挤成两个窄栏；宽屏可将地点和费用分列。继续使用图标，不加 Time/Place/Cost 文本表头。
 - 简介不加“亮点”等前缀，也不重复事实栏。中文不再额外复制一行英文活动名。
-- 半日路线只在有核实过的具体站点时出现。折叠态为两行：`半日路线 / Half-day plan` 标题和短摘要；右侧为标准展开箭头。
-- 展开后每站按“时段/阶段 + 具体地点”两列排齐，不显示漂浮序号或多段错位缩进；各地点独立打开地图，补充说明和地点来源放在展开区内。
-- 周内已结束活动按 Australia/Sydney 日期折叠进 `本周已结束 / Finished this week`，不占当前活动前排。分享至已结束活动仍自动展开定位。此折叠不改变发布周期，也不替代周五重新检索和删除过期条目。
+- 半日路线只在有核实过的具体站点时出现，卡片上为短摘要和“看路线 / View route”，无展开箭头。
+- 路线底部弹层内按“阶段 + 地点/用途”排齐，各地点独立打开地图，原始说明和来源保留。
+- 周内已结束活动移入“查看”列表，同一个弹层切换详情，分享直接打开对应活动，不占主推荐前排。新周仍需删除过期条目。
 - `kids/data/event-presentation.json` 用唯一 shareKey 关联日期签、活动类型、精简文案和半日路线，必须与两城活动的 periodStart/periodEnd 一致；不同周的数据不应用，避免旧日期和旧路线残留。
 - 周五重检后同步更新该文件，或清除对应活动的旧展示数据。没有合适半日路线时省略，不编造内容；模板、排版和折叠交互由 sync helper 保留。
 - 日期筛选读取同一文件每项的 `dates`（本周期确实有场次的 ISO 日期数组）和 `dateReview`（checkedAt、官方 URL、具体证据）。每天开放只能在官网明确说明时展开为每日；闭馆日不得纳入，无法核实则不填 dates，筛选时提示确认预约日历。

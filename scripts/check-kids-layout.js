@@ -8,7 +8,7 @@ async page => {
   let assertions = 0;
   const check = (ok, message) => { assertions++; if (!ok) throw new Error(message); };
   const ready = async () => {
-    await page.waitForFunction(() => document.body.dataset.fieldNotesReady === 'true');
+    await page.waitForFunction(() => document.body.dataset.fieldNotesReady === 'true' && document.body.dataset.familyToolsReady === 'true');
     await page.evaluate(() => document.fonts.ready);
   };
   await ready();
@@ -24,7 +24,6 @@ async page => {
       await page.setViewportSize({width,height:844});
       for (const view of ['events','playgrounds']) {
         await page.locator(`[data-set-view="${view}"]`).click();
-        if (view === 'events') await page.locator(`.cards[data-city-panel="${city}"] .ended-events`).evaluateAll(items => items.forEach(item => item.open = true));
         const shape = await page.evaluate(() => {
           const visible = item => !!item.getClientRects().length && getComputedStyle(item).visibility !== 'hidden';
           const select = document.querySelector('#city-select');
@@ -96,16 +95,21 @@ async page => {
   }
   for (const language of ['zh','en']) for (const city of ['sydney','melbourne']) {
     await page.goto(`${base}?lang=${language}&city=${city}`); await ready();
-    await page.locator(`.cards[data-city-panel="${city}"] .ended-events`).evaluateAll(items=>items.forEach(item=>item.open=true));
-    const routes = page.locator(`.cards[data-city-panel="${city}"] .half-day-route`);
-    for (let i=0;i<await routes.count();i++) {
-      const route = routes.nth(i);
-      await route.locator('summary').click();
-      check(await route.getAttribute('open')!==null, 'Route expands');
-      const stops = await route.locator('li').evaluateAll(rows=>rows.map(row=>({gap:row.querySelector('a').getBoundingClientRect().left-row.querySelector('small').getBoundingClientRect().right,url:row.querySelector('a').href})));
+    const routeIds = await page.locator(`.cards[data-city-panel="${city}"] .card .half-day-route`).evaluateAll(routes=>routes.map(route=>route.closest('.card').id));
+    for (const id of routeIds) {
+      const card = page.locator(`[id="${id}"]`);
+      const archived = await card.evaluate(node=>Boolean(node.closest('.ended-events')));
+      if (archived) {
+        await page.locator(`.cards[data-city-panel="${city}"] .ended-open`).click();
+        await page.locator(`.ended-item-open[data-event-id="${id}"]`).click();
+      }
+      await card.locator('.route-open').click();
+      const sheet = archived ? page.locator('.ended-dialog[open] .ended-secondary') : card.locator('.outing-dialog[data-kind="route"]');
+      check(await sheet.isVisible(), 'Route sheet opens');
+      const stops = await sheet.locator('li').evaluateAll(rows=>rows.map(row=>({gap:row.querySelector('a').getBoundingClientRect().left-row.querySelector('small').getBoundingClientRect().right,url:row.querySelector('a').href})));
       check(stops.length>0 && stops.every(stop=>stop.gap>=11 && stop.url.startsWith('https://www.google.com/maps/search/?api=1')), 'Route phase/place alignment and map links');
-      await route.locator('summary').click();
-      check(await route.getAttribute('open')===null, 'Route collapses');
+      await page.keyboard.press('Escape');
+      check(!await sheet.isVisible(), 'Route sheet closes');
     }
   }
   await page.goto(`${base}?lang=zh`); await ready();

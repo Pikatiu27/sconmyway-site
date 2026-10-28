@@ -1,5 +1,15 @@
 # Kids Weekly Codex Automation
 
+## Approved Journal Contract - 29 October 2026
+
+This contract supersedes the 26 October colour and inline-disclosure instructions. On every 05:00 refresh and 07:00 recovery preserve family-journal.css, family-journal.js, journal.js, field-notes.*, event-filters.mjs, the self-hosted assets and sync template. Keep the pale strawberry/aqua, cold-white mobile journal; compact header with saved outings/language in one row; date tickets; separate icon facts; optional checked family-fit line; concise intro and practical note; route summary; source/Map/Share row; weak reference. No event photos or published preview assets.
+
+No arrow expansion inside cards. Full opening hours and View route use native detail sheets. Finished-this-week uses View and a single sheet for the list, exact activity and secondary details; preserve back/close, finished status and direct historical share/saved links. Never nest modals or unhide ended cards in the main list. Bookmark data stays only in the visitor's browser, with missing-edition and storage-failure handling.
+
+Refresh same-period presentation fields from current research: introZh/En, familyFitZh/En only if verified, noteZh/En, timeShortZh/En, showFullTime, copyReview with actual checkedAt/URL/evidence, and optional route.purposes paired with route.steps. Retain complete event time facts for details and visible closure/booking warnings. Never hardcode event identities or copy old-week display metadata. Keep exact shareKey stability. Run both scripts/check-kids-layout.js and scripts/check-kids-family.js via Playwright CLI after static sync, in addition to static/publication/filter/content/freshness checks.
+
+Research coverage: apply the guide's region/type/availability candidate matrix. Search council plus local tourism/precinct pages, major venues, family festivals/shows/markets, cultural/community days, open days/fire displays and store-specific Bunnings events. Distinguish adult-accompanied outings from child-only drop-off programs. Verify exact year, local venue, live booking/sold-out/cancelled state and weather notices; sold-out entries do not belong in available recommendations. Discovery/social pages remain leads only. Keep library/storytime/toddler-only entries out of the main cards. Record gaps and rejected leads rather than pad. This changes neither the Friday schedule nor notification policy.
+
 ## Purpose
 
 The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed-count and all-links-must-pass rules. Run per-item preparation before static sync; publish verified items even when below the target count.
