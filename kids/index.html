@@ -1375,11 +1375,11 @@
         </h1>
       </section>
 
-      <section class="meta-bar" aria-label="Page status" data-period-start="2026-10-23" data-period-end="2026-10-30">
+      <section class="meta-bar" aria-label="Page status" data-period-start="2026-10-23" data-period-end="2026-10-30" data-reviewed-at="2026-10-23">
         <div class="pill">
           <span aria-hidden="true">📅</span>
-          <span class="period-copy zh"><span data-week-zh>10 月 23 日至 10 月 30 日</span><small class="updated-label">更新于 <span data-today-zh>2026 年 10 月 23 日</span></small></span>
-          <span class="period-copy en"><span data-week-en>23 Oct to 30 Oct</span><small class="updated-label">Updated <span data-today-en>23 Oct 2026</span></small></span>
+          <span class="period-copy zh"><span data-week-zh>10 月 23 日至 10 月 30 日</span><small class="updated-label">核实于 <span data-today-zh>2026 年 10 月 23 日</span></small></span>
+          <span class="period-copy en"><span data-week-en>23 Oct to 30 Oct</span><small class="updated-label">Checked <span data-today-en>23 Oct 2026</span></small></span>
         </div>
       </section>
 
@@ -2433,19 +2433,20 @@
     const periodMeta = document.querySelector("[data-period-start][data-period-end]");
     const periodStart = new Date(`${periodMeta?.dataset.periodStart || "2026-10-23"}T12:00:00+10:00`);
     const periodEnd = new Date(`${periodMeta?.dataset.periodEnd || "2026-10-30"}T12:00:00+10:00`);
+    const reviewedDate = new Date(`${periodMeta?.dataset.reviewedAt || periodMeta?.dataset.periodStart}T12:00:00+10:00`);
 
     document.querySelector("[data-today-zh]").textContent = new Intl.DateTimeFormat("zh-CN", {
       timeZone: "Australia/Sydney",
       year: "numeric",
       month: "long",
       day: "numeric"
-    }).format(periodStart);
+    }).format(reviewedDate);
     document.querySelector("[data-today-en]").textContent = new Intl.DateTimeFormat("en-AU", {
       timeZone: "Australia/Sydney",
       day: "numeric",
       month: "short",
       year: "numeric"
-    }).format(periodStart);
+    }).format(reviewedDate);
     document.querySelector("[data-week-zh]").textContent = `${new Intl.DateTimeFormat("zh-CN", {
       timeZone: "Australia/Sydney",
       month: "long",

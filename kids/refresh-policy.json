@@ -1,0 +1,10 @@
+{
+  "timezone": "Australia/Sydney",
+  "effectiveFrom": "2026-10-30",
+  "refreshDays": ["Tue", "Fri"],
+  "primaryHour": 5,
+  "recoveryHour": 7,
+  "auditHour": 8,
+  "auditMinute": 30,
+  "periodAnchor": "Fri"
+}

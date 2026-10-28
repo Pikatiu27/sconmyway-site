@@ -1,5 +1,13 @@
 # Kids Public Release Outline
 
+## Twice-Weekly Schedule - From 30 October 2026
+
+- Tuesday/Friday 05:00 Australia/Sydney: primary research and publish; 07:00: failure recovery only; 08:30: kids-only GitHub freshness/link watchdog. Keep this conversation and the existing notification policy.
+- Friday rebuilds the edition with four genuinely fresh leading candidates, replacing expired/cancelled/sold-out items. Tuesday re-researches and rechecks the remaining week, removes ended/sold-out/cancelled items and adds verified new finds without forcing four new entries.
+- periodStart/periodEnd stay Friday-to-Friday and updatedAt stays that edition's Friday. lastReviewedAt is the actual latest research date; refreshKind is weekly or midweek. Both feeds and presentation metadata must agree on period and review date. Never roll the range to Tuesday or stamp a review date without real source checks.
+- From the effective date validate must prove the latest due Tuesday/Friday review, including retained item evidence. Run test-kids-refresh-calendar.mjs as well as existing tests. Check AEST/AEDT gates, midweek review display and second-sync idempotence. A correct Friday period does not prove Tuesday success.
+- Keep the current journal layout, native sheets, bookmarks, languages and source/Map/Share behaviour. Only the small checked-date value changes after a genuine midweek review; this schedule change does not alter activity content.
+
 ## Current Design Contract - 29 October 2026
 
 This section supersedes older inline-disclosure and palette descriptions below. Preserve the approved cold-white, pale strawberry/aqua family journal and compact phone header, browser-local bookmarks for events/playgrounds, and the new family-journal CSS/JS alongside the existing filter and sync code. Cards have no inline arrow disclosures: route summaries and Full opening hours open native detail sheets, with closures/booking/critical family conditions still visible. Finished-this-week uses a View text entry and one sheet for list -> outing -> secondary details, with back/close controls, an explicit finished status and working historical share/saved targets. Never stack an outing detail modal inside the finished modal. More/Sources retain independent collapsed behaviour.
@@ -68,10 +76,10 @@ The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed
 - Preserve `field-notes.css`, `field-notes.js`, `event-filters.mjs`, journal behaviour and the generated static heading/facts/actions on every Friday refresh. Do not reintroduce preview paths, photographs, old CSS, duplicate headings or event-specific dates in runtime code.
 - Fonts are self-hosted Unicode-range variable subsets with licenses, not a snapshot-only character subset.
 
-## 6. Friday Schedule
+## 6. Research Schedule
 
-- Friday 05:00 Australia/Sydney: recurring Codex task performs fresh research, rewrites both city JSON files, syncs the static HTML fallback, validates, commits, pushes, and checks the public page.
-- Friday 07:00: freshness recovery check. If the 05:00 publication is missing or invalid, rerun the complete research workflow; never publish a date-only retry.
+- Tuesday/Friday 05:00 Australia/Sydney: execute the respective midweek/full-edition research, sync, validation, commit, push and public verification.
+- Tuesday/Friday 07:00: recover only if that day's research/publication is missing or invalid; never publish a date-only retry.
 - GitHub Actions is the watchdog and deployment layer. It validates freshness and links but does not invent or select event content.
 - No OpenAI API key is required for the manual-research publication path.
 

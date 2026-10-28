@@ -1,27 +1,7 @@
 import { appendFile, readFile, writeFile } from "node:fs/promises";
+import { auditWindow, localParts, validateRefresh } from './kids-refresh-calendar.mjs';
 
 const [, , command = "validate", dataPath = "kids/data/events.json"] = process.argv;
-const timeZone = "Australia/Sydney";
-
-function localParts(date = new Date()) {
-  return Object.fromEntries(
-    new Intl.DateTimeFormat("en-CA", {
-      timeZone,
-      weekday: "short",
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit",
-      hourCycle: "h23"
-    }).formatToParts(date).filter((part) => part.type !== "literal").map((part) => [part.type, part.value])
-  );
-}
-
-function localDateKey(date) {
-  const parts = localParts(date);
-  return `${parts.year}-${parts.month}-${parts.day}`;
-}
 
 function isoWeekday(isoDate) {
   const date = new Date(`${isoDate}T00:00:00Z`);
@@ -68,6 +48,10 @@ async function readData() {
   if (isoWeekday(data.periodStart) !== 5 || daysBetween(data.periodStart, data.periodEnd) !== 7) {
     throw new Error(`${dataPath} period must run from Friday to the next Friday`);
   }
+  if (data.lastReviewedAt && (!/^\d{4}-\d{2}-\d{2}$/.test(data.lastReviewedAt) || data.lastReviewedAt < data.periodStart || data.lastReviewedAt >= data.periodEnd)) {
+    throw new Error(`${dataPath} lastReviewedAt must be inside the publication week`);
+  }
+  if (data.refreshKind && !['weekly', 'midweek'].includes(data.refreshKind)) throw new Error('Unknown refreshKind');
   const accepted = [];
   const rejected = [];
   for (const [index, event] of data.events.entries()) {
@@ -79,7 +63,8 @@ async function readData() {
     if (!/^https:\/\//.test(event.url || "") || !["official", "announcement", "tickets"].includes(event.linkType || "official")) {
       throw new Error("Invalid official link or button type");
     }
-    if (event.cancelled || (event.endsOn && event.endsOn < data.periodStart)) throw new Error("Event is cancelled or outside the publication week");
+    const reviewedAt = data.lastReviewedAt || data.periodStart;
+    if (event.cancelled || event.soldOut || (event.endsOn && event.endsOn < reviewedAt)) throw new Error("Event is cancelled, sold out or ended before the review date");
     const titleText = [event.titleZh || "", event.titleEn || ""].map((value) => String(value).trim());
     if (titleText.some((value) => /^(free|program|event|family and kids|kindergarten|playgroups?|support for parents|child and family hub)$/i.test(value))) {
       throw new Error(`events[${index}] is a generic directory/category page: ${titleText.join(" / ")}`);
@@ -91,7 +76,7 @@ async function readData() {
     }
     const qualityText = `${event.tagZh || ""} ${event.tagEn || ""} ${event.titleZh || ""} ${event.titleEn || ""} ${event.summaryZh || ""} ${event.summaryEn || ""} ${event.timeZh || ""} ${event.timeEn || ""} ${event.placeZh || ""} ${event.placeEn || ""} ${event.referenceZh || ""} ${event.referenceEn || ""}`;
     const timeText = qualityText;
-    if (/\b(expired|ended|cancelled|canceled)\b|已结束|活动取消/u.test(timeText)) {
+    if (/\b(expired|ended|cancelled|canceled|sold[ -]out|fully booked)\b|已结束|活动取消|已售罄|已订满/iu.test(timeText)) {
       throw new Error(`events[${index}] appears expired or cancelled`);
     }
     const oldYear = timeText.match(/\b(20\d{2})\b/g)?.map(Number).find((year) => year < Number(data.periodStart.slice(0, 4)));
@@ -133,7 +118,8 @@ async function readData() {
   const more = [];
   for (const item of data.moreLinks || []) {
     const review = item.linkReview;
-    const valid = /^https:\/\//.test(item.url || "") && review?.status === "verified" && review.url === item.url && review.checkedAt >= data.periodStart && review.evidence;
+    const requiredReviewDate = item.kind === 'backup' ? data.periodStart : (data.lastReviewedAt || data.periodStart);
+    const valid = /^https:\/\//.test(item.url || "") && review?.status === "verified" && review.url === item.url && review.checkedAt >= requiredReviewDate && review.evidence && !item.cancelled && !item.soldOut && !(item.endsOn && item.endsOn < (data.lastReviewedAt || data.periodStart));
     if (valid) more.push(item);
     else if (command === "prepare") rejected.push({ title: item.titleEn || item.title || "More link", reason: "More link has no current matching content verification" });
     else throw new Error("More link has no current matching content verification");
@@ -194,17 +180,14 @@ if (command === "gate") {
     await writeOutput({ should_run: "true", reason: "manual run" });
   } else {
     const parts = localParts();
-    const shouldRun = parts.weekday === "Fri" && parts.hour === "08" && parts.minute === "30";
-    const reason = shouldRun ? "Friday 08:30 final publication audit" : "outside final audit window";
+    const shouldRun = auditWindow();
+    const reason = shouldRun ? `${parts.weekday} 08:30 final publication audit` : "outside final audit window";
 
     await writeOutput({ should_run: String(shouldRun), reason });
   }
 } else if (["validate", "prepare", "validate-content"].includes(command)) {
   const data = await readData();
-  const today = localDateKey(new Date());
-  if (command === "validate" && !(data.periodStart <= today && today < data.periodEnd && data.updatedAt >= data.periodStart)) {
-    throw new Error(`${dataPath} was not refreshed for the current Australia/Sydney week`);
-  }
+  if (command === "validate") validateRefresh(data);
   console.log(`Validated ${data.events.length} events and UTF-8 JSON written at ${data.updatedAt}`);
 } else if (command === "validate-links") {
   await checkLinks(dataPath);

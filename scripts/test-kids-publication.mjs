@@ -33,6 +33,15 @@ try {
   prepare(d => { d.events[0].summaryEn = '\u4e2d\u6587'; }, 7);
   prepare(d => { d.events[0].endsOn = '2020-01-01'; }, 7);
   prepare(d => { d.events[0].cancelled = true; }, 7);
+  prepare(d => { d.events[0].soldOut = true; }, 7);
+  prepare(d => { d.events[0].summaryEn += ' Fully booked'; }, 7);
+  prepare(d => { d.lastReviewedAt = d.periodEnd; }, 0, true);
+  prepare(d => {
+    const shift = days => new Date(new Date(d.periodStart+'T12:00:00Z').getTime()+days*86400000).toISOString().slice(0,10);
+    d.lastReviewedAt = shift(4);
+    d.events.forEach((event,index) => { event.endsOn = shift(index === 0 ? 0 : 6); });
+    d.moreLinks = [];
+  }, 7);
   prepare(d => { d.events.forEach(e => e.linkReview.status = 'unavailable'); }, 0);
   prepare(d => { d.moreLinks.forEach(e => e.linkReview.status = 'empty'); }, 8);
   prepare(d => { d.events[0].timeEn += '; closed Tuesday'; }, 8);

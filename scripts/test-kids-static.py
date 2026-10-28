@@ -4,6 +4,8 @@ import json
 import re
 import sys
 import unittest
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
 from datetime import date, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
@@ -50,7 +52,8 @@ class KidsStaticTests(unittest.TestCase):
                         self.assertTrue(event[prefix + "Zh"])
                         self.assertTrue(event[prefix + "En"])
                         self.assertNotRegex(event[prefix + "En"], r"[\u3400-\u9fff\ufffd]")
-                self.assertFalse(any(e["longTerm"] for e in data["events"][:4]))
+                if data.get("refreshKind") != "midweek":
+                    self.assertFalse(any(e["longTerm"] for e in data["events"][:4]))
 
     def test_generated_blocks_match_data(self):
         for city, marker, more, data in self.cities:
@@ -186,6 +189,30 @@ class KidsStaticTests(unittest.TestCase):
         fallback = SYNC.card(event, 0, "sydney")
         self.assertIn(SYNC.pair(event["summaryEn"]), fallback)
         self.assertNotIn("family-fit", fallback)
+
+    def test_midweek_review_does_not_roll_publication_period(self):
+        with TemporaryDirectory() as folder:
+            root = Path(folder)
+            index = root / "index.html"
+            index.write_text(self.html, encoding="utf-8")
+            data = {"city": "Sydney", "periodStart": "2026-10-30", "periodEnd": "2026-11-06",
+                    "updatedAt": "2026-10-30", "lastReviewedAt": "2026-11-03", "refreshKind": "midweek", "events": [], "moreLinks": []}
+            configs = []
+            for city, marker, more, _ in SYNC.CITY_CONFIGS:
+                path = root / f"{city}.json"
+                path.write_text(json.dumps(data), encoding="utf-8")
+                configs.append((city, marker, more, path))
+            presentation = root / "presentation.json"
+            presentation.write_text(json.dumps({**{k: data[k] for k in ["periodStart", "periodEnd", "lastReviewedAt"]}, "items": {}}), encoding="utf-8")
+            with patch.object(SYNC, "INDEX", index), patch.object(SYNC, "PRESENTATION_PATH", presentation), patch.object(SYNC, "CITY_CONFIGS", configs):
+                SYNC.main()
+                rendered = index.read_text(encoding="utf-8")
+                self.assertIn('data-period-start="2026-10-30" data-period-end="2026-11-06" data-reviewed-at="2026-11-03"', rendered)
+                self.assertIn('<span data-today-en>3 Nov 2026</span>', rendered)
+                other = {**data, "lastReviewedAt": "2026-10-30"}
+                configs[1][3].write_text(json.dumps(other), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    SYNC.main()
 
 
 if __name__ == "__main__":

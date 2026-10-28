@@ -45,6 +45,8 @@ def action(url: str, label_zh: str, label_en: str, class_name: str = "action", i
 def presentation_for(data: dict, event: dict, presentation: dict) -> dict:
     if (presentation.get("periodStart"), presentation.get("periodEnd")) != (data["periodStart"], data["periodEnd"]):
         return {}
+    if data.get("lastReviewedAt") and presentation.get("lastReviewedAt") != data["lastReviewedAt"]:
+        return {}
     return presentation.get("items", {}).get(event.get("shareKey") or event.get("url"), {})
 
 
@@ -193,6 +195,10 @@ def main() -> None:
         data = json.loads(data_path.read_text(encoding="utf-8"))
         if first_data and (data["periodStart"], data["periodEnd"]) != (first_data["periodStart"], first_data["periodEnd"]):
             raise ValueError("City publication periods do not match; refusing to generate mixed-week HTML")
+        if first_data and (data.get("lastReviewedAt") or data["updatedAt"]) != (first_data.get("lastReviewedAt") or first_data["updatedAt"]):
+            raise ValueError("City review dates do not match")
+        if data.get("lastReviewedAt") and presentation.get("lastReviewedAt") != data["lastReviewedAt"]:
+            raise ValueError("Presentation metadata does not match the current review date")
         first_data = first_data or data
         total = len(data["events"])
         count = f'<p class="event-count"><span class="zh">本周 {total} 条活动</span><span class="en">{total} activities this week</span></p>'
@@ -204,8 +210,8 @@ def main() -> None:
 
     assert first_data is not None
     html, count = re.subn(
-        r'<section class="meta-bar" aria-label="Page status" data-period-start="[^"]*" data-period-end="[^"]*">',
-        f'<section class="meta-bar" aria-label="Page status" data-period-start="{first_data["periodStart"]}" data-period-end="{first_data["periodEnd"]}">',
+        r'<section class="meta-bar" aria-label="Page status" data-period-start="[^"]*" data-period-end="[^"]*"(?: data-reviewed-at="[^"]*")?>',
+        f'<section class="meta-bar" aria-label="Page status" data-period-start="{first_data["periodStart"]}" data-period-end="{first_data["periodEnd"]}" data-reviewed-at="{first_data.get("lastReviewedAt") or first_data["updatedAt"]}">',
         html,
         count=1,
     )
@@ -214,6 +220,7 @@ def main() -> None:
 
     period_start = date.fromisoformat(first_data["periodStart"])
     period_end = date.fromisoformat(first_data["periodEnd"])
+    reviewed_at = date.fromisoformat(first_data.get("lastReviewedAt") or first_data["updatedAt"])
     fallback_replacements = {
         r'periodMeta\?\.dataset\.periodStart \|\| "\d{4}-\d{2}-\d{2}"': (
             f'periodMeta?.dataset.periodStart || "{first_data["periodStart"]}"'
@@ -232,9 +239,9 @@ def main() -> None:
         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
     ]
     visible_replacements = {
-        r'<span data-today-zh>.*?</span>': f'<span data-today-zh>{period_start.year} 年 {period_start.month} 月 {period_start.day} 日</span>',
+        r'<span data-today-zh>.*?</span>': f'<span data-today-zh>{reviewed_at.year} 年 {reviewed_at.month} 月 {reviewed_at.day} 日</span>',
         r'<span data-week-zh>.*?</span>': f'<span data-week-zh>{period_start.month} 月 {period_start.day} 日至 {period_end.month} 月 {period_end.day} 日</span>',
-        r'<span data-today-en>.*?</span>': f'<span data-today-en>{period_start.day} {month_en[period_start.month - 1]} {period_start.year}</span>',
+        r'<span data-today-en>.*?</span>': f'<span data-today-en>{reviewed_at.day} {month_en[reviewed_at.month - 1]} {reviewed_at.year}</span>',
         r'<span data-week-en>.*?</span>': f'<span data-week-en>{period_start.day} {month_en[period_start.month - 1]} to {period_end.day} {month_en[period_end.month - 1]}</span>',
     }
     for pattern, replacement in visible_replacements.items():

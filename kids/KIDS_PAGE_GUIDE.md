@@ -1,5 +1,17 @@
 # Kids Page Guide
 
+## 每周两次更新（2026-10-30 起生效，优先于旧周五单次说明）
+
+- Australia/Sydney 本地时间周二、周五 05:00 主更新，07:00 仅失败补偿；沿用本对话的 kids-weekly-refresh，不创建新对话。夏令时随悉尼时区，非固定 UTC。
+- 周五：全网重新检索两城，完整替换新一期，前四条优先新发现、单日、短期或明确日期活动。删除过期、取消、已售罄条目；不足则记录短缺，不填弱内容。
+- 周二：同一期再次检索并逐条核实，清理周末已结束/取消/售罄，补入本周剩余日期的新活动，新发现靠前。不虚构新日期，也不硬凑四条新活动。
+- 发布范围仍为周五到下周五。updatedAt 固定该期周五，lastReviewedAt 记录真实最近检索日，refreshKind 为 weekly / midweek；周二不滚动 periodStart/periodEnd。两城和 event-presentation.json 的 lastReviewedAt 必须一致。
+- 周二需重新核实所有保留的主卡和本周 More 链接，linkReview.checkedAt/evidence 对应真实检索，不只改 metadata；展示字段、日期场次和保留路线一并重检，移除过时 key。新一期不得使用旧展示事实。
+- 小字日期显示最近核实日期，周范围独立不随点击改变。现有清爽手账、收藏、无箭头卡片、单弹层历史列表与路线/时间详情全部不变。
+- 07:00 仅在当天 05:00 未完成、数据不一致或核实证据不足时恢复相应任务。周二不能因为周五周期正确就 no-op；须证明当天已经重新查过两城（可以是有证据的无变化复核）。
+- kids/refresh-policy.json 与 scripts/kids-refresh-calendar.mjs 定义校验策略；从2026-10-30起 validate 要求最近一次到期的周二/周五检查已完成，逐项 review 支持日期。08:30 GitHub watchdog 同时覆盖两天，只校验不生成内容。
+- 本次规则更新不重写活动数据、不伪造最近核实日期；下一次主更新为2026-10-30周五05:00，第一次周二复核为2026-11-03 05:00。
+
 ## 2026-10-29 正式设计与周更约定（优先于旧版设计说明）
 
 - 手机优先的清爽亲子手账：冷白 `#FAFCFC`、白卡、浅草莓粉 `#F9B4CC`、浅汽水蓝 `#DDF3F4`、标题 `#29384A`、正文 `#526070`。页眉仅一个小彩虹，不放活动照片、相册或大贴纸。
@@ -28,12 +40,12 @@
 
 The [Link Publication Policy](LINK_PUBLICATION_POLICY.md) supersedes older fixed-count and all-links-must-pass rules. Run per-item preparation before static sync; publish verified items even when below the target count.
 
-- Default update path is a recurring Codex task at Friday 05:00 Australia/Sydney: fresh web search, local JSON write, static HTML fallback sync, GitHub push, and public verification.
+- Default update path is the same-conversation Codex heartbeat at Tuesday/Friday 05:00 Australia/Sydney, with 07:00 failure recovery. Friday rebuilds the edition; Tuesday reviews and supplements the remaining week without rolling its period.
 - The recurring tasks mirror the proven Industry Review model. Their canonical prompts and recovery proof are recorded in `kids/KIDS_AUTOMATION_PROMPTS.md`.
 - Do not use an API key or automated content generation unless the user explicitly asks to restore that path.
 - Each Friday update must fresh-search Sydney and Melbourne activities; never roll old dates forward.
-- GitHub Actions performs a final freshness and link audit at Friday 08:30, after the Codex primary and recovery tasks. It is a watchdog only and must never generate or roll forward event content.
-- Local Codex automation `kids-weekly-refresh` runs Friday 05:00 and 07:00 in this conversation. The old standalone `kids-weekly-retry` is paused; the 07:00 heartbeat checks and recovers the same publication.
+- GitHub Actions performs a final freshness/link audit Tuesday and Friday 08:30. It is a watchdog only and must never generate or roll forward event content.
+- Local Codex automation `kids-weekly-refresh` runs Tuesday/Friday 05:00 and 07:00 in this conversation. The old standalone `kids-weekly-retry` stays paused.
 - First four cards in each city must be newly found or short-window current-week activities.
 - Long-running activities can remain only after fresher current-week options.
 - Library storytime, toddler-only, and weak discovery leads belong in More or are skipped.
