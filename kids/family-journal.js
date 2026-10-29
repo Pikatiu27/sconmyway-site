@@ -233,8 +233,12 @@
     }
     if (focusedIndex >= 0 && dialog.open) (list.querySelectorAll('.saved-remove')[focusedIndex] || close).focus();
   }
-  new MutationObserver(() => render()).observe(root,{attributes:true,attributeFilter:['data-lang']});
+  const labelReadingGroups = () => document.querySelectorAll('[data-label-zh][data-label-en]').forEach(node => {
+    node.setAttribute('aria-label',lang() === 'zh' ? node.dataset.labelZh : node.dataset.labelEn);
+  });
+  new MutationObserver(() => { labelReadingGroups(); render(); }).observe(root,{attributes:true,attributeFilter:['data-lang']});
   window.addEventListener('storage',event => { if (event.key === storageKey || event.key === null) { saved = readSaved(); render(); } });
   render();
+  labelReadingGroups();
   root.dataset.familyToolsReady = 'true';
 })();

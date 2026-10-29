@@ -190,6 +190,29 @@ class KidsStaticTests(unittest.TestCase):
         self.assertIn(SYNC.pair(event["summaryEn"]), fallback)
         self.assertNotIn("family-fit", fallback)
 
+    def test_reading_groups_and_reminder_emphasis(self):
+        event = self.cities[0][3]["events"][0]
+        metadata = {"introZh": "一起看展", "introEn": "Explore together",
+                    "familyFitZh": "适合家庭", "familyFitEn": "For families",
+                    "noteZh": "需要预约，费用另计。", "noteEn": "Booking required; costs extra.",
+                    "noteEmphasis": {"zh": ["需要预约"], "en": ["Booking required"]},
+                    "showFullTime": True}
+        rendered = SYNC.card(event, 0, "sydney", metadata)
+        for name in ["reading-overview", "reading-experience", "reading-plan", "reading-time-copy"]:
+            self.assertIn(f'class="{name}"', rendered)
+        self.assertLess(rendered.index('class="summary zh"'), rendered.index('class="family-fit"'))
+        self.assertLess(rendered.index('class="family-fit"'), rendered.index('class="outing-note zh"'))
+        self.assertLess(rendered.index('class="reading-time-copy"'), rendered.index('class="schedule-details"'))
+        self.assertIn('<strong>需要预约</strong>，费用另计。', rendered)
+        self.assertIn('<strong>Booking required</strong>; costs extra.', rendered)
+        self.assertEqual(SYNC.emphasized_note('<unsafe> & text', ['<unsafe>']), '<strong>&lt;unsafe&gt;</strong> &amp; text')
+        for invalid in [["invented"], ["Booking", "Booking required"], "Booking"]:
+            with self.assertRaises(ValueError):
+                SYNC.emphasized_note("Booking required", invalid)
+        css = (ROOT / 'kids/family-journal.css').read_text(encoding='utf-8')
+        self.assertIn('.reading-experience .outing-note { margin: 12px 0 0; padding: 0; border: 0;', css)
+        self.assertIn('font-size: 15px; line-height: 1.7; font-weight: 400;', css)
+
     def test_midweek_review_does_not_roll_publication_period(self):
         with TemporaryDirectory() as folder:
             root = Path(folder)

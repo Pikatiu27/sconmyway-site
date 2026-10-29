@@ -1,5 +1,13 @@
 # Kids Public Release Outline
 
+## Approved Reading Hierarchy - 30 October 2026
+
+This supersedes older type sizes and card ordering, without changing the palette, controls, weekly research rules or today's researched content. Preserve three unframed static groups: heading/facts; description/family suitability/reminder; route/actions/reference. Body is15px/1.7 in existing dark ink; family suitability is14px regular muted text below body; reminders are14px/1.65 with12px top spacing, flush-left with NO vertical rule or indentation. References are12px regular muted text after the action row with a quiet horizontal separator. Titles are18-19px on phones; the page title remains one line. City select stays16px and action targets46px.
+
+Optional per-edition noteEmphasis {zh:[],en:[]} contains exact existing reminder phrases only. Safe static rendering must not alter copy, fabricate restrictions or retain old-week phrases; missing emphasis simply renders plain text. Never hardcode event-specific emphasis in runtime JS. Full hours sit beside time text and keep the native detail sheet. Routes, bookmarks, single-modal finished navigation and bilingual content remain intact.
+
+Run the static hierarchy/emphasis test and scripts/check-kids-reading.js through Playwright CLI in addition to existing release gates. Check mobile languages for correct hiding of nested time spans, no overflow and one-row actions; resync twice to ensure the structure survives regeneration. Do not publish the old preview HTML or change feed dates for a typography-only release. This contract applies equally to Tuesday/Friday primary and recovery runs; schedule and notification policy are unchanged.
+
 ## Twice-Weekly Schedule - From 30 October 2026
 
 - Tuesday/Friday 05:00 Australia/Sydney: primary research and publish; 07:00: failure recovery only; 08:30: kids-only GitHub freshness/link watchdog. Keep this conversation and the existing notification policy.
