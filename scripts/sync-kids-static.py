@@ -157,7 +157,7 @@ def card(event: dict, index: int, city: str, presentation: dict | None = None) -
           <div class="reading-plan" role="group" data-label-zh="路线与操作" data-label-en="Plan and actions" aria-label="路线与操作">
           {route_html(presentation.get('route'))}
           <div class="actions">{''.join(actions)}</div>
-          <p class="reference"><b><span class="zh">参考来源：</span><span class="en">Reference:</span></b> <span class="zh">{pair(event.get('referenceZh'))}</span><span class="en">{pair(event.get('referenceEn'))}</span></p>
+          <p class="reference"><b><span class="zh">来源：</span><span class="en">Source:</span></b> <span class="zh">{pair(display.get('referenceZh'))}</span><span class="en">{pair(display.get('referenceEn'))}</span></p>
           </div>
         </article>"""
     return "\n".join(line.rstrip() for line in rendered.splitlines())

@@ -23,6 +23,7 @@ async page => {
           if(card.querySelectorAll(':scope > [role="group"]').length!==3)failures.push('groups');
           if(card.querySelector(`.summary.${language}`).textContent!==(item['intro'+suffix]||event['summary'+suffix]))failures.push('intro changed');
           if(css('.summary').fontSize!=='15px'||css('.summary').fontWeight!=='400'||css('.summary').color!==css('h3').color)failures.push('body role');
+          if(css('.summary').webkitLineClamp!=='none'||css('.summary').maxHeight!=='none')failures.push('clipped body copy');
           const family=card.querySelector('.family-fit');
           if(family) {
             const style=getComputedStyle(family);
@@ -38,6 +39,10 @@ async page => {
             if(JSON.stringify([...note.querySelectorAll('strong')].map(node=>node.textContent))!==JSON.stringify([...expected].sort((a,b)=>note.textContent.indexOf(a)-note.textContent.indexOf(b))))failures.push('emphasis');
           }
           if(css('.reference').fontSize!=='12px'||css('.reference').borderTopWidth!=='1px')failures.push('source role');
+          if(item['reference'+suffix]) {
+            const source=card.querySelector('.reference > .'+language);
+            if(source.textContent!==item['reference'+suffix])failures.push('compact organisation source');
+          }
           const current=card.querySelector('.summary.'+language);
           if(!current.getClientRects().length&&card.getClientRects().length)failures.push('hidden current language');
           const other=card.querySelector('.summary.'+(language==='zh'?'en':'zh'));

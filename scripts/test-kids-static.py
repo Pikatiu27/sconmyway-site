@@ -213,6 +213,19 @@ class KidsStaticTests(unittest.TestCase):
         self.assertIn('.reading-experience .outing-note { margin: 12px 0 0; padding: 0; border: 0;', css)
         self.assertIn('font-size: 15px; line-height: 1.7; font-weight: 400;', css)
 
+    def test_compact_source_is_week_scoped_and_escaped(self):
+        data = self.cities[0][3]
+        event = data['events'][0]
+        metadata = {'referenceZh': '主办方', 'referenceEn': '<Organiser> & venue'}
+        rendered = SYNC.card(event, 0, 'sydney', metadata)
+        self.assertIn('<span class="zh">来源：</span><span class="en">Source:</span>', rendered)
+        self.assertIn('&lt;Organiser&gt; &amp; venue', rendered)
+        self.assertNotIn(SYNC.pair(event['referenceEn']), rendered)
+        fallback = SYNC.card(event, 0, 'sydney')
+        self.assertIn(SYNC.pair(event['referenceEn']), fallback)
+        other_week = {**self.presentation, 'periodStart': '2000-01-07', 'periodEnd': '2000-01-14'}
+        self.assertEqual(SYNC.presentation_for(data, event, other_week), {})
+
     def test_midweek_review_does_not_roll_publication_period(self):
         with TemporaryDirectory() as folder:
             root = Path(folder)

@@ -1,5 +1,13 @@
 # Kids Public Release Outline
 
+## Approved Compact Copy - 30 October 2026
+
+Keep the approved15px body and existing palette,spacing,unframed groups and native sheets. Aim for one concrete experience sentence,about25-45Chinese characters or15-25English words and2-3lines on375-430px phones. These are editorial targets,not clipping rules; narrow screens,long official names and essential conditions may need more lines. No smaller body font,line clamps,ellipsis or extra disclosures.
+
+Standalone family suitability is only for verified decision-relevant conditions,not generic family-friendly filler. Put charges in the price row once. Omit reminders that merely repeat free entry,purchases extra,included museum entry or an already-visible unknown fee/booking condition. Keep every material registration,age,accompaniment,stroller/access,weather,cancellation,source-conflict and separate start-location restriction visible; important multi-session timing may remain longer.
+
+Reference text is organisation names only using same-edition referenceZh/referenceEn presentation fields and Source/来源 labels. The real checked date stays in the header; complete sources and evidence remain in canonical event data. Missing matching presentation metadata falls back safely to full original copy. Check bilingual equivalence,unclipped15px text,compact organisation sources and route/time/share/bookmark behaviour. A copy-only release preserves event identity,counts,order,dates,official/map links,prices,More,evidence and routes and is not a new research run. Primary and recovery tasks use this density without changing schedule or notifications.
+
 ## Approved Reading Hierarchy - 30 October 2026
 
 This supersedes older type sizes and card ordering, without changing the palette, controls, weekly research rules or today's researched content. Preserve three unframed static groups: heading/facts; description/family suitability/reminder; route/actions/reference. Body is15px/1.7 in existing dark ink; family suitability is14px regular muted text below body; reminders are14px/1.65 with12px top spacing, flush-left with NO vertical rule or indentation. References are12px regular muted text after the action row with a quiet horizontal separator. Titles are18-19px on phones; the page title remains one line. City select stays16px and action targets46px.

@@ -15,11 +15,10 @@
         "url": "https://atparramatta.com/foundation-day",
         "evidence": "Council tourism detail and FAQ confirm 31 October 2026, 9am-2pm, Hambledon Cottage Reserve at 63 Hassall Street, free admission and drop-in heritage activities, music and stalls. FAQ says first come first served and dangerous-weather postponement. Companion listing: https://atparramatta.com/whats-on/foundation-day-2026 . No cancellation notice on the checked pages."
       },
-      "introZh": "到 Hambledon Cottage 看老建筑、逛历史与手作摊位，再一起参加互动活动、听现场音乐，把城市的过去变成全家能参与的小探险。",
-      "introEn": "Explore Hambledon Cottage, browse heritage and craft stalls, and join hands-on activities with live music for a shared journey into the city's past.",
-      "noteZh": "活动先到先得；恶劣天气可能延期，出发前查看官方消息。",
-      "noteEn": "Activities are first come, first served; dangerous weather may postpone the event, so check official updates before travelling.",
-      "noteEmphasis": {"zh": ["先到先得", "恶劣天气可能延期"], "en": ["first come, first served", "dangerous weather may postpone"]},
+      "introZh": "逛历史市集、听现场音乐，和孩子一起探索 Hambledon Cottage 的老建筑与互动活动。",
+      "introEn": "Browse heritage stalls, enjoy live music and explore Hambledon Cottage through hands-on family activities.",
+      "noteZh": "活动先到先得；恶劣天气可能延期，出发前查官方消息。",
+      "noteEn": "Activities are first come, first served; check for dangerous-weather postponements before travelling.",
       "timeShortZh": "周六 9:00–14:00",
       "timeShortEn": "Sat 9am–2pm",
       "showFullTime": false,
@@ -27,7 +26,19 @@
         "checkedAt": "2026-10-30",
         "url": "https://atparramatta.com/foundation-day",
         "evidence": "Council tourism detail and FAQ confirm 31 October 2026, 9am-2pm, Hambledon Cottage Reserve at 63 Hassall Street, free admission and drop-in heritage activities, music and stalls. FAQ says first come first served and dangerous-weather postponement. Companion listing: https://atparramatta.com/whats-on/foundation-day-2026 . No cancellation notice on the checked pages."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "先到先得",
+          "恶劣天气可能延期"
+        ],
+        "en": [
+          "first come, first served",
+          "dangerous-weather postponements"
+        ]
+      },
+      "referenceZh": "City of Parramatta",
+      "referenceEn": "City of Parramatta"
     },
     "https://www.randwick.nsw.gov.au/community/whats-on/events/2026/november/eco-living-festival": {
       "kind": "festival",
@@ -41,8 +52,8 @@
         "url": "https://www.randwick.nsw.gov.au/community/whats-on/events/2026/november/eco-living-festival",
         "evidence": "Council confirms Sunday 1 November 2026, 10am-3pm, Broadarrow Reserve Maroubra, free family event. Programme lists cooking and repair demonstrations, craft, toy swap, cultural workshops, food and live entertainment. Exact workshop times are on the page; no cancellation or capacity warning appeared. No registration is stated for general entry."
       },
-      "introZh": "大人看节能、修理和料理示范，孩子试手作和玩具交换，再一起听音乐、逛餐摊；把环保变成全家都能动手的一天。",
-      "introEn": "Adults can explore energy-saving, repair and cooking demonstrations while children try crafts and the toy swap; add music and food stalls for a hands-on family day.",
+      "introZh": "看修理与料理示范、玩手作和玩具交换，再一起听音乐、逛餐摊。",
+      "introEn": "Try crafts and the toy swap, watch repair and cooking demonstrations, then enjoy music and food together.",
       "timeShortZh": "周日 10:00–15:00",
       "timeShortEn": "Sun 10am–3pm",
       "showFullTime": true,
@@ -50,7 +61,9 @@
         "checkedAt": "2026-10-30",
         "url": "https://www.randwick.nsw.gov.au/community/whats-on/events/2026/november/eco-living-festival",
         "evidence": "Council confirms Sunday 1 November 2026, 10am-3pm, Broadarrow Reserve Maroubra, free family event. Programme lists cooking and repair demonstrations, craft, toy swap, cultural workshops, food and live entertainment. Exact workshop times are on the page; no cancellation or capacity warning appeared. No registration is stated for general entry."
-      }
+      },
+      "referenceZh": "Randwick Council",
+      "referenceEn": "Randwick Council"
     },
     "https://www.lanecove.nsw.gov.au/Events-directory/Lane-Cove-Diwali-Fest-2026": {
       "kind": "festival",
@@ -64,11 +77,10 @@
         "url": "https://www.lanecove.nsw.gov.au/Events-directory/Lane-Cove-Diwali-Fest-2026",
         "evidence": "Council exact event page confirms 31 October 2026, 10am-1pm, The Canopy 2 Rosenthal Avenue, free, cultural dance/music and fashion. Council links Eventbrite registration; ticket destination returned429 on review, which does not establish capacity or cancellation. Visible copy requests registration-status check. The separate8November lamp lighting is explicitly outside this edition."
       },
-      "introZh": "在 The Canopy 看文化舞蹈、时装展示和各地音乐，选一段轻松的上午节目，一家人一起感受排灯节的热闹。",
-      "introEn": "Watch cultural dance, a fashion showcase and music at The Canopy, choosing a relaxed morning programme to enjoy Diwali together.",
-      "noteZh": "官方提供免费登记入口，请先查报名状态；11月8日点灯是另一场活动，不在本周。",
-      "noteEn": "Use the council's free registration link and check its current status. The 8 November lamp-lighting is a separate event outside this week.",
-      "noteEmphasis": {"zh": ["先查报名状态"], "en": ["check its current status"]},
+      "introZh": "看文化舞蹈、时装展示和音乐表演，轻松感受排灯节的热闹。",
+      "introEn": "Enjoy cultural dance, a fashion showcase and music for a relaxed family Diwali morning.",
+      "noteZh": "先查免费登记状态；11月8日点灯是另一场活动。",
+      "noteEn": "Check free registration first; the 8 November lamp-lighting is a separate event.",
       "timeShortZh": "周六 10:00–13:00",
       "timeShortEn": "Sat 10am–1pm",
       "showFullTime": false,
@@ -76,7 +88,17 @@
         "checkedAt": "2026-10-30",
         "url": "https://www.lanecove.nsw.gov.au/Events-directory/Lane-Cove-Diwali-Fest-2026",
         "evidence": "Council exact event page confirms 31 October 2026, 10am-1pm, The Canopy 2 Rosenthal Avenue, free, cultural dance/music and fashion. Council links Eventbrite registration; ticket destination returned429 on review, which does not establish capacity or cancellation. Visible copy requests registration-status check. The separate8November lamp lighting is explicitly outside this edition."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "先查免费登记状态"
+        ],
+        "en": [
+          "Check free registration first"
+        ]
+      },
+      "referenceZh": "Lane Cove Council",
+      "referenceEn": "Lane Cove Council"
     },
     "https://www.cambridgemarkets.com.au/markets/burwood-spring-market": {
       "kind": "festival",
@@ -90,11 +112,10 @@
         "url": "https://www.cambridgemarkets.com.au/markets/burwood-spring-market",
         "evidence": "Organiser exact detail confirms31October2026 10am-4pm Burwood Park, market goods and food. NSW event-coordinator listing https://www.nsw.gov.au/visiting-and-exploring-nsw/nsw-events/burwood-spring-market confirms music/dance, free puppet show, bubbles and petting farm. No exact general-entry fee asserted. Applications Closed refers to stallholders, not public cancellation or sold-out admission."
       },
-      "introZh": "树荫下逛手作与美食摊、听本地表演，再陪孩子看木偶、泡泡和小动物互动，大人有得逛，孩子也有自己的乐趣。",
-      "introEn": "Browse crafts and food under the park trees, enjoy local performances, then share puppet, bubble and animal activities with the children.",
-      "noteZh": "官网未单列入场费用；部分儿童项目注明免费，餐饮、购物及其他项目另计。",
-      "noteEn": "The organiser detail page does not state an entry fee; some children's activities are listed as free, with food, purchases and other activities extra.",
-      "noteEmphasis": {"zh": ["未单列入场费用"], "en": ["does not state an entry fee"]},
+      "introZh": "树荫下逛手作和美食，陪孩子看木偶、泡泡和小动物，再听一段本地表演。",
+      "introEn": "Browse crafts and food, enjoy local performances and share puppet, bubble and animal activities.",
+      "noteZh": "入场费未列明；餐饮、购物及其他项目另计。",
+      "noteEn": "Entry fee not stated; food, purchases and other activities extra.",
       "timeShortZh": "周六 10:00–16:00",
       "timeShortEn": "Sat 10am–4pm",
       "showFullTime": false,
@@ -102,7 +123,17 @@
         "checkedAt": "2026-10-30",
         "url": "https://www.cambridgemarkets.com.au/markets/burwood-spring-market",
         "evidence": "Organiser exact detail confirms31October2026 10am-4pm Burwood Park, market goods and food. NSW event-coordinator listing https://www.nsw.gov.au/visiting-and-exploring-nsw/nsw-events/burwood-spring-market confirms music/dance, free puppet show, bubbles and petting farm. No exact general-entry fee asserted. Applications Closed refers to stallholders, not public cancellation or sold-out admission."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "入场费未列明"
+        ],
+        "en": [
+          "Entry fee not stated"
+        ]
+      },
+      "referenceZh": "Cambridge Markets · NSW Government",
+      "referenceEn": "Cambridge Markets · NSW Government"
     },
     "https://www.darlingharbour.com/whats-on/events/skeletopia-halloween-festival-at-cockle-bay-wharf": {
       "kind": "show",
@@ -116,10 +147,10 @@
         "url": "https://www.darlingharbour.com/whats-on/events/skeletopia-halloween-festival-at-cockle-bay-wharf",
         "evidence": "Precinct exact detail confirms31October2026 4-8:30pm free at Town Square Cockle Bay Wharf,201SussexSt. Venue corroboration https://www.cocklebaywharf.com.au/events/skeletopia-halloween-festival/ lists facepainting4-7,puppets5-7,roaming5:30-8:30. Giveaways limited, no booking stated. Playground stop separately rechecked on official place page."
       },
-      "introZh": "沿海港看巨型木偶和流动骷髅表演，孩子还可以画脸；提前在 Darling Quarter 玩一会儿，再到 Cockle Bay 接上傍晚节目。",
-      "introEn": "See giant puppets and roaming skeleton performers by the harbour, with face painting for children. Add earlier play at Darling Quarter before the evening programme at Cockle Bay.",
-      "noteZh": "画脸16:00–19:00；巨型木偶17:00–19:00；流动表演17:30–20:30。",
-      "noteEn": "Face painting runs 4–7pm, giant puppets 5–7pm and roaming performers 5:30–8:30pm.",
+      "introZh": "在海港看巨型木偶、流动骷髅表演，让孩子试试万圣节画脸。",
+      "introEn": "See giant puppets and roaming skeletons by the harbour, with Halloween face painting for children.",
+      "noteZh": "画脸16:00–19:00；木偶17:00–19:00；流动表演17:30–20:30。",
+      "noteEn": "Face painting 4–7pm; puppets 5–7pm; roaming performers 5:30–8:30pm.",
       "timeShortZh": "周六 16:00–20:30",
       "timeShortEn": "Sat 4–8:30pm",
       "showFullTime": true,
@@ -171,7 +202,9 @@
         ],
         "checkedAt": "2026-10-30",
         "evidence": "Both exact precinct pages rechecked30October: playground at1-25HarbourStreet with slides/climbing, venueSkeletopia atTownSquare201SussexStreet31October4-8:30,puppets5-7.No unverifiedrestaurant,journeytime or allfeatures guarantee."
-      }
+      },
+      "referenceZh": "Darling Harbour · Cockle Bay Wharf",
+      "referenceEn": "Darling Harbour · Cockle Bay Wharf"
     },
     "https://whatson.cityofsydney.nsw.gov.au/events/australias-biggest-halloween-festival-is-back": {
       "kind": "festival",
@@ -187,11 +220,10 @@
         "url": "https://whatson.cityofsydney.nsw.gov.au/events/australias-biggest-halloween-festival-is-back",
         "evidence": "Council exact2026 listing confirms29October-1November daily4-11pm, free streetfestival at The Rocks Square. Organiser https://ghostfestival.com.au/ corroborates2026dates/freeentry and distinguishes ticketed immersive experiences and bar activities. This edition exposes30Oct-1Nov only. Late-night road closure hours are not treated as all-event hours; no booking capacity claim for separate experiences."
       },
-      "introZh": "换上全家的装扮，沿老街找大型装置、流动表演和主题餐摊，边走边感受海港旁的万圣节气氛。",
-      "introEn": "Dress up together and explore oversized installations, roaming performances and themed food along the historic streets beside the harbour.",
-      "noteZh": "带孩子可在傍晚先逛免费街区；部分体验另售票或有年龄限制，先查规则。",
-      "noteEn": "With children, start in the free street areas early in the evening; separate experiences may require tickets or have age restrictions.",
-      "noteEmphasis": {"zh": ["另售票或有年龄限制"], "en": ["may require tickets or have age restrictions"]},
+      "introZh": "换上装扮，沿老街找大型装置、流动表演和主题餐摊。",
+      "introEn": "Dress up and explore oversized installations, roaming performances and themed food along the historic streets.",
+      "noteZh": "部分体验限龄；带孩子建议傍晚到访。",
+      "noteEn": "Some experiences have age limits; visit early in the evening with children.",
       "timeShortZh": "周五至周日 16:00–23:00",
       "timeShortEn": "Fri–Sun 4–11pm",
       "showFullTime": false,
@@ -199,7 +231,17 @@
         "checkedAt": "2026-10-30",
         "url": "https://whatson.cityofsydney.nsw.gov.au/events/australias-biggest-halloween-festival-is-back",
         "evidence": "Council exact2026 listing confirms29October-1November daily4-11pm, free streetfestival at The Rocks Square. Organiser https://ghostfestival.com.au/ corroborates2026dates/freeentry and distinguishes ticketed immersive experiences and bar activities. This edition exposes30Oct-1Nov only. Late-night road closure hours are not treated as all-event hours; no booking capacity claim for separate experiences."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "部分体验限龄"
+        ],
+        "en": [
+          "age limits"
+        ]
+      },
+      "referenceZh": "City of Sydney · Ghost Festival",
+      "referenceEn": "City of Sydney · Ghost Festival"
     },
     "https://atparramatta.com/whats-on/epping-night-market": {
       "kind": "festival",
@@ -213,11 +255,10 @@
         "url": "https://atparramatta.com/whats-on/epping-night-market",
         "evidence": "Exact council tourism page body explicitly lists Friday30October and regular hours5-9pm at BoroniaPark Epping, free. Its summary range ends28October, a visible inconsistency disclosed in copy. https://www.cityofparramatta.nsw.gov.au/home separately lists EppingNightMarket on30Oct2026. No cancellation warning on either source. This is one verified dated occurrence, not a generic directory."
       },
-      "introZh": "在 Boronia Park 把晚餐、现场音乐和本地手作摊串成轻松的一晚，按孩子的精神状态逛一圈就好。",
-      "introEn": "Combine dinner, live music and local makers at Boronia Park for an easy family evening, staying only as long as the children enjoy it.",
-      "noteZh": "页面正文列10月30日，但顶部日期有误；Council 首页也列当日，出发前再查主办方消息。",
-      "noteEn": "The page body and council homepage list 30 October, although its top date range is inconsistent; recheck organiser updates before travelling.",
-      "noteEmphasis": {"zh": ["顶部日期有误"], "en": ["top date range is inconsistent"]},
+      "introZh": "在公园吃晚餐、听现场音乐、逛本地手作摊，轻松安排一次全家夜游。",
+      "introEn": "Share dinner, live music and local makers at Boronia Park for an easy family evening.",
+      "noteZh": "官方页日期有冲突；正文列10月30日，出发前再向主办方确认。",
+      "noteEn": "Official date fields conflict; the body lists 30 October. Reconfirm with the organiser before travelling.",
       "timeShortZh": "周五 17:00–21:00",
       "timeShortEn": "Fri 5–9pm",
       "showFullTime": false,
@@ -225,7 +266,17 @@
         "checkedAt": "2026-10-30",
         "url": "https://atparramatta.com/whats-on/epping-night-market",
         "evidence": "Exact council tourism page body explicitly lists Friday30October and regular hours5-9pm at BoroniaPark Epping, free. Its summary range ends28October, a visible inconsistency disclosed in copy. https://www.cityofparramatta.nsw.gov.au/home separately lists EppingNightMarket on30Oct2026. No cancellation warning on either source. This is one verified dated occurrence, not a generic directory."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "日期有冲突"
+        ],
+        "en": [
+          "date fields conflict"
+        ]
+      },
+      "referenceZh": "City of Parramatta",
+      "referenceEn": "City of Parramatta"
     },
     "https://sculpturebythesea.com/bondi/": {
       "kind": "outdoor",
@@ -242,11 +293,10 @@
         "url": "https://sculpturebythesea.com/bondi/",
         "evidence": "Organiser current Bondi2026 page states now on until2November2026, free public sculpture exhibition on Bondi-Tamarama coastal walk. Accessibility and easywalking links checked separately. Daylight is editorial advice only; no unverified gate time or previous24-25October railwarning reused. This ongoing item follows seven fresh dated finds."
       },
-      "introZh": "沿 Bondi 至 Tamarama 海岸步道一起找雕塑，让海景和艺术串起一段轻松散步；走累了就折返，不必一次走完全程。",
-      "introEn": "Find sculptures along the Bondi–Tamarama coastal walk, pairing art and sea views with a relaxed stroll; turn back whenever the family needs a break.",
-      "noteZh": "部分路段有台阶与人流；带推车先查官方无障碍路线，并按天气决定行程。",
-      "noteEn": "Some sections have steps and crowds; check the official accessible route before taking a stroller and plan around the weather.",
-      "noteEmphasis": {"zh": ["台阶与人流"], "en": ["steps and crowds"]},
+      "introZh": "沿海岸步道一起找雕塑、看海景，走累了就折返，不必走完全程。",
+      "introEn": "Spot sculptures and sea views on the coastal walk; turn back whenever the family needs a break.",
+      "noteZh": "有台阶与人流，推车先查无障碍路线；留意天气。",
+      "noteEn": "Steps and crowds; check the access guide before taking a stroller, and check the weather.",
       "timeShortZh": "至周一11月2日；建议白天",
       "timeShortEn": "Until Mon 2 Nov; daylight suggested",
       "showFullTime": false,
@@ -254,7 +304,17 @@
         "checkedAt": "2026-10-30",
         "url": "https://sculpturebythesea.com/bondi/",
         "evidence": "Organiser current Bondi2026 page states now on until2November2026, free public sculpture exhibition on Bondi-Tamarama coastal walk. Accessibility and easywalking links checked separately. Daylight is editorial advice only; no unverified gate time or previous24-25October railwarning reused. This ongoing item follows seven fresh dated finds."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "台阶与人流"
+        ],
+        "en": [
+          "Steps and crowds"
+        ]
+      },
+      "referenceZh": "Sculpture by the Sea",
+      "referenceEn": "Sculpture by the Sea"
     },
     "https://fedsquare.com/events/diwali": {
       "kind": "festival",
@@ -268,10 +328,8 @@
         "url": "https://fedsquare.com/events/diwali",
         "evidence": "Venue confirms Saturday31October2026 11:30am-10pm, free, MainSquare/BirrarungMarrWalk/TheEdge. Music,dance,bazaar,streetfood and children craft are explicitly described. No reservation requirement or sold-out notice on the checked venue detail. This is distinct from the MarvelStadium Diwali event."
       },
-      "introZh": "在广场看传统与宝莱坞舞蹈、听现场音乐，逛手工集市与印度街头美食；孩子还能试创意手作，全家选喜欢的节目慢慢看。",
-      "introEn": "Enjoy traditional and Bollywood dance, live music, craft stalls and Indian street food, with creative activities for children and plenty for adults to explore.",
-      "noteZh": "广场活动免费，餐饮购物另计；晚间节目请查看当日官方安排。",
-      "noteEn": "The square programme is free, with food and purchases extra; check the official schedule for evening performances.",
+      "introZh": "看传统与宝莱坞舞蹈、听音乐、逛美食摊，再陪孩子试创意手作。",
+      "introEn": "Enjoy traditional and Bollywood dance, music, street food and creative activities for children.",
       "timeShortZh": "周六 11:30–22:00",
       "timeShortEn": "Sat 11:30am–10pm",
       "showFullTime": false,
@@ -323,7 +381,9 @@
         ],
         "checkedAt": "2026-10-30",
         "evidence": "Both exact venuepages reviewed30October.ACMI confirmsGroundFloorFedSquare,free10-17,interactives,strobing and under13adult.FedSquare confirms31October11:30-22festival withfood,dance,craft.Named stops are verified;no travel time or third-party openinghour inferred."
-      }
+      },
+      "referenceZh": "Fed Square",
+      "referenceEn": "Fed Square"
     },
     "https://events.brimbank.vic.gov.au/sunshine-halloween-kids-street-party-2/": {
       "kind": "festival",
@@ -337,10 +397,10 @@
         "url": "https://events.brimbank.vic.gov.au/sunshine-halloween-kids-street-party-2/",
         "evidence": "Current -2 council event detail states Saturday31October2026 2-4pm, HampshireRoad Sunshine, free family event organised by SunshineBusinessAssociation. Explicit facepainting,lollydens,craft,stage/costumes3:30pm and draw3:50pm. Use current Saturday2026 page rather than Friday2025 archive. No cancellation or booking requirement stated."
       },
-      "introZh": "换上装扮，沿 Hampshire Road 找糖果站、画脸和寻宝活动，再看舞台节目与变装比赛；大人也能顺路逛街、安排一顿饭。",
-      "introEn": "Dress up for treat stops, face painting and treasure hunts on Hampshire Road, then enjoy stage entertainment and the costume competition, with shops and dining nearby for adults too.",
-      "noteZh": "变装比赛15:30；寻宝抽奖15:50。只在有参与标志的商家讨糖。",
-      "noteEn": "The costume competition is at 3:30pm and treasure-hunt draw at 3:50pm; trick-or-treat only at businesses displaying participation signs.",
+      "introZh": "换上装扮，沿街讨糖、画脸和寻宝，再看舞台节目与变装比赛。",
+      "introEn": "Dress up for treats, face painting, treasure hunts, stage entertainment and a costume competition.",
+      "noteZh": "变装比赛15:30，寻宝抽奖15:50；只在有参与标志的商家讨糖。",
+      "noteEn": "Costume competition 3:30pm; hunt draw 3:50pm. Trick-or-treat at marked shops only.",
       "timeShortZh": "周六 14:00–16:00",
       "timeShortEn": "Sat 2–4pm",
       "showFullTime": false,
@@ -348,7 +408,9 @@
         "checkedAt": "2026-10-30",
         "url": "https://events.brimbank.vic.gov.au/sunshine-halloween-kids-street-party-2/",
         "evidence": "Current -2 council event detail states Saturday31October2026 2-4pm, HampshireRoad Sunshine, free family event organised by SunshineBusinessAssociation. Explicit facepainting,lollydens,craft,stage/costumes3:30pm and draw3:50pm. Use current Saturday2026 page rather than Friday2025 archive. No cancellation or booking requirement stated."
-      }
+      },
+      "referenceZh": "Brimbank Council",
+      "referenceEn": "Brimbank Council"
     },
     "https://www.greaterdandenong.vic.gov.au/greater-dandenong-council/events/diwali-festival-2026": {
       "kind": "festival",
@@ -362,11 +424,10 @@
         "url": "https://www.greaterdandenong.vic.gov.au/greater-dandenong-council/events/diwali-festival-2026",
         "evidence": "Council exact detail confirms Sunday1November2026 4-10pm,DandenongPark174LonsdaleSt,freeentry with purchases extra, BrightEventsAustralia family celebration. Council-linked https://www.premiertickets.co/event/diwali-festival-2026 checked for identity and registration; no overall sold-out or cancellation message found. No invented detailed performance schedule."
       },
-      "introZh": "到 Dandenong Park 参加面向全家的排灯节，感受文化庆典、社区相聚和现场娱乐，再逛本地商家摊位。",
-      "introEn": "Join a family-friendly Diwali celebration at Dandenong Park, sharing cultural festivities, community entertainment and local-business stalls.",
-      "noteZh": "Council 提供登记入口，请先查看；消费另计，不把免费入场当作所有项目免费。",
-      "noteEn": "Check the registration link on the council page first; purchases are extra and free entry does not mean every activity is free.",
-      "noteEmphasis": {"zh": ["消费另计"], "en": ["purchases are extra"]},
+      "introZh": "看文化表演、逛本地摊位，一起感受公园排灯节的热闹。",
+      "introEn": "Enjoy cultural entertainment and local stalls together at Dandenong Park's Diwali celebration.",
+      "noteZh": "先查看官网登记入口。",
+      "noteEn": "Check registration on the official page first.",
       "timeShortZh": "周日 16:00–22:00",
       "timeShortEn": "Sun 4–10pm",
       "showFullTime": false,
@@ -374,7 +435,17 @@
         "checkedAt": "2026-10-30",
         "url": "https://www.greaterdandenong.vic.gov.au/greater-dandenong-council/events/diwali-festival-2026",
         "evidence": "Council exact detail confirms Sunday1November2026 4-10pm,DandenongPark174LonsdaleSt,freeentry with purchases extra, BrightEventsAustralia family celebration. Council-linked https://www.premiertickets.co/event/diwali-festival-2026 checked for identity and registration; no overall sold-out or cancellation message found. No invented detailed performance schedule."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "登记入口"
+        ],
+        "en": [
+          "Check registration"
+        ]
+      },
+      "referenceZh": "Greater Dandenong Council",
+      "referenceEn": "Greater Dandenong Council"
     },
     "https://www.boroondara.vic.gov.au/events/kew-junction-spooky-day-out": {
       "kind": "outdoor",
@@ -388,10 +459,8 @@
         "url": "https://www.boroondara.vic.gov.au/events/kew-junction-spooky-day-out",
         "evidence": "Exact council detail and embedded calendar confirm31October2026 10am-1pm, HighStreet/CothamRoad KewJunction,free. Organiser is KewJunctionBusinessAssociation; children and their grownups follow hiddenclues/photoopportunities. Categories include kids,youngadults,family, not only under3. No specific bookings or cancellation notice stated."
       },
-      "introZh": "穿上小朋友喜欢的装扮，一起沿街找隐藏线索、发现惊喜和合影点；不必熬夜，也能体验一段轻松的万圣节街区散步。",
-      "introEn": "Put on a favourite costume and search the precinct for clues, surprises and photo spots together, enjoying a relaxed Halloween outing without a late night.",
-      "familyFitZh": "适合年幼孩子与大人一起参与",
-      "familyFitEn": "For younger children with their grown-ups",
+      "introZh": "穿上装扮，和年幼孩子沿街找线索、惊喜与合影点。",
+      "introEn": "Put on a costume and hunt for clues, surprises and photo spots with younger children.",
       "timeShortZh": "周六 10:00–13:00",
       "timeShortEn": "Sat 10am–1pm",
       "showFullTime": false,
@@ -399,7 +468,9 @@
         "checkedAt": "2026-10-30",
         "url": "https://www.boroondara.vic.gov.au/events/kew-junction-spooky-day-out",
         "evidence": "Exact council detail and embedded calendar confirm31October2026 10am-1pm, HighStreet/CothamRoad KewJunction,free. Organiser is KewJunctionBusinessAssociation; children and their grownups follow hiddenclues/photoopportunities. Categories include kids,youngadults,family, not only under3. No specific bookings or cancellation notice stated."
-      }
+      },
+      "referenceZh": "Boroondara Council",
+      "referenceEn": "Boroondara Council"
     },
     "https://fedsquare.com/events/dia-de-muertos-day-of-the-dead": {
       "kind": "festival",
@@ -413,10 +484,10 @@
         "url": "https://fedsquare.com/events/dia-de-muertos-day-of-the-dead",
         "evidence": "Venue exact2026 page confirms1November noon-9pm MainSquare, free family event presented by MEXVIC, liveentertainment,dance,food,marketstalls,facepainting and kids corner. CatrinaWalk starts2pm at StateLibrary and returns to FedSquare; not confused with festivalopening. No booking requirement or cancellation notice on checked page."
       },
-      "introZh": "用音乐、舞蹈、美食和文化摊位认识墨西哥的纪念传统，孩子可逛活动区和画脸，全家一起感受色彩与故事。",
-      "introEn": "Discover Mexican remembrance traditions through music, dance, food and cultural stalls, with a children's activity corner and face painting for a colourful family outing.",
-      "noteZh": "14:00巡游与广场活动的起点、时段不同，想参与先看完整时间及官网路线；部分造型有骷髅元素。",
-      "noteEn": "The 2pm costume walk has a different starting point and schedule from the square programme; check full times and the official route before joining. Some costumes feature skeleton imagery.",
+      "introZh": "听墨西哥音乐、看舞蹈、逛文化餐摊，孩子还能画脸、玩活动区。",
+      "introEn": "Explore Mexican music, dance and food, with face painting and a children's activity corner.",
+      "noteZh": "巡游14:00从 State Library 出发；部分造型有骷髅元素。",
+      "noteEn": "The costume walk starts at the State Library at 2pm; some costumes feature skeletons.",
       "timeShortZh": "周日 12:00–21:00",
       "timeShortEn": "Sun noon–9pm",
       "showFullTime": true,
@@ -424,7 +495,17 @@
         "checkedAt": "2026-10-30",
         "url": "https://fedsquare.com/events/dia-de-muertos-day-of-the-dead",
         "evidence": "Venue exact2026 page confirms1November noon-9pm MainSquare, free family event presented by MEXVIC, liveentertainment,dance,food,marketstalls,facepainting and kids corner. CatrinaWalk starts2pm at StateLibrary and returns to FedSquare; not confused with festivalopening. No booking requirement or cancellation notice on checked page."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "State Library 出发"
+        ],
+        "en": [
+          "State Library at 2pm"
+        ]
+      },
+      "referenceZh": "Fed Square · MEXVIC",
+      "referenceEn": "Fed Square · MEXVIC"
     },
     "https://www.melbournediwali.com.au/": {
       "kind": "festival",
@@ -438,11 +519,10 @@
         "url": "https://www.melbournediwali.com.au/",
         "evidence": "Organiser exact2026 event confirms31October2-10pm MarvelStadiumSquare,Docklands,allages,undercover. https://www.melbournediwali.com.au/faqs explicitly says freeentry,no ticketrequired,registrationoptional and external square not stadiumbowl. Eventbrite429 is not used to imply capacity; the organiser FAQ establishes non-ticketed admission."
       },
-      "introZh": "看舞蹈和音乐表演、逛文化摊位与美食，在有遮蔽的场地感受排灯节；与 Fed Square 那场不同，选一个地点慢慢玩就好。",
-      "introEn": "Enjoy dance, music, cultural stalls and food in an undercover festival setting. This is separate from the Fed Square celebration, so choose one venue for an unhurried visit.",
-      "noteZh": "免费且无需门票，登记自愿；在体育场外部广场，不是看台内。",
-      "noteEn": "Entry is free with no ticket required; registration is optional. The event is in the external stadium square, not inside the seating bowl.",
-      "noteEmphasis": {"zh": ["体育场外部广场"], "en": ["external stadium square"]},
+      "introZh": "在有遮蔽的广场看舞蹈、听音乐、逛文化与美食摊，轻松体验排灯节。",
+      "introEn": "Enjoy dance, music, cultural stalls and food at an undercover Diwali festival.",
+      "noteZh": "在体育场外部广场，非看台内；无需门票，登记自愿。",
+      "noteEn": "External stadium square, not the seating bowl; no ticket required, registration optional.",
       "timeShortZh": "周六 14:00–22:00",
       "timeShortEn": "Sat 2–10pm",
       "showFullTime": false,
@@ -450,7 +530,17 @@
         "checkedAt": "2026-10-30",
         "url": "https://www.melbournediwali.com.au/",
         "evidence": "Organiser exact2026 event confirms31October2-10pm MarvelStadiumSquare,Docklands,allages,undercover. https://www.melbournediwali.com.au/faqs explicitly says freeentry,no ticketrequired,registrationoptional and external square not stadiumbowl. Eventbrite429 is not used to imply capacity; the organiser FAQ establishes non-ticketed admission."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "体育场外部广场"
+        ],
+        "en": [
+          "External stadium square"
+        ]
+      },
+      "referenceZh": "Melbourne Diwali",
+      "referenceEn": "Melbourne Diwali"
     },
     "https://emg.org.au/event/halloween-family-picnic/": {
       "kind": "outdoor",
@@ -464,11 +554,8 @@
         "url": "https://emg.org.au/event/halloween-family-picnic/",
         "evidence": "Organiser2026 event page and flyer confirm Saturday31October2-5pm PowlettReserve,GreyStreet,EastMelbourne, costumeparade,treats,games/prizes, families and grandparents welcome,no booking. It does not state an entry price,so no free claim is made. No cancellation notice found."
       },
-      "introZh": "带上全家的装扮去公园，参加变装巡游、玩游戏、领小惊喜；节奏比大型夜场轻松，适合孩子、父母和祖辈一起相聚。",
-      "introEn": "Dress up for a park picnic with a costume parade, games and treats, a gentler afternoon gathering for children, parents and grandparents than a large night event.",
-      "noteZh": "无需预约；官网没有注明收费，出发前可向主办方确认。",
-      "noteEn": "No booking required; the organiser does not state a fee, so confirm costs directly if needed.",
-      "noteEmphasis": {"zh": ["没有注明收费"], "en": ["does not state a fee"]},
+      "introZh": "带上装扮参加公园巡游、游戏与糖果活动，和孩子及祖辈轻松相聚。",
+      "introEn": "Share a park costume parade, games and treats with children, parents and grandparents.",
       "timeShortZh": "周六 14:00–17:00",
       "timeShortEn": "Sat 2–5pm",
       "showFullTime": false,
@@ -476,7 +563,9 @@
         "checkedAt": "2026-10-30",
         "url": "https://emg.org.au/event/halloween-family-picnic/",
         "evidence": "Organiser2026 event page and flyer confirm Saturday31October2-5pm PowlettReserve,GreyStreet,EastMelbourne, costumeparade,treats,games/prizes, families and grandparents welcome,no booking. It does not state an entry price,so no free claim is made. No cancellation notice found."
-      }
+      },
+      "referenceZh": "East Melbourne Group",
+      "referenceEn": "East Melbourne Group"
     },
     "https://museumsvictoria.com.au/scienceworks/whats-on/colour/": {
       "kind": "exhibition",
@@ -496,13 +585,12 @@
         "url": "https://museumsvictoria.com.au/scienceworks/whats-on/colour/",
         "evidence": "Museum exact exhibition page confirms until26January2027,open daily10am-4:30pm,2BookerStreetSpotswood, recommended5-14,adult25/child10includingmuseum. Current official booking link opens a script-driven empty textresponse; no sold-out or cancellation statement on exhibition detail. No live inventory claim made; visitors choose date before travel. This verified continuing exhibition follows seven fresh dated outings."
       },
-      "introZh": "一起试彩色光线、视觉错觉和互动实验，把熟悉的颜色变成可动手探索的科学，适合大人和学龄孩子边玩边聊。",
-      "introEn": "Experiment with coloured light, optical illusions and interactive exhibits, turning familiar colours into hands-on science for adults and school-age children to explore together.",
+      "introZh": "一起试彩色光线、视觉错觉和互动实验，边玩边探索颜色的科学。",
+      "introEn": "Explore coloured light, optical illusions and hands-on experiments together.",
       "familyFitZh": "官方建议5–14岁",
       "familyFitEn": "Officially recommended for ages 5–14",
-      "noteZh": "展览票包含 Scienceworks 入场；先在票务页选择到访日期。",
-      "noteEn": "Exhibition tickets include Scienceworks admission; choose your visit date on the booking page first.",
-      "noteEmphasis": {"zh": ["包含 Scienceworks 入场"], "en": ["include Scienceworks admission"]},
+      "noteZh": "先在票务页选到访日期。",
+      "noteEn": "Choose a visit date on the booking page first.",
       "timeShortZh": "每天 10:00–16:30",
       "timeShortEn": "Daily 10am–4:30pm",
       "showFullTime": false,
@@ -510,7 +598,17 @@
         "checkedAt": "2026-10-30",
         "url": "https://museumsvictoria.com.au/scienceworks/whats-on/colour/",
         "evidence": "Museum exact exhibition page confirms until26January2027,open daily10am-4:30pm,2BookerStreetSpotswood, recommended5-14,adult25/child10includingmuseum. Current official booking link opens a script-driven empty textresponse; no sold-out or cancellation statement on exhibition detail. No live inventory claim made; visitors choose date before travel. This verified continuing exhibition follows seven fresh dated outings."
-      }
+      },
+      "noteEmphasis": {
+        "zh": [
+          "选到访日期"
+        ],
+        "en": [
+          "Choose a visit date"
+        ]
+      },
+      "referenceZh": "Scienceworks",
+      "referenceEn": "Scienceworks"
     }
   }
 }
