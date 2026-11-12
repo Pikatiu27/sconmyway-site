@@ -1,573 +1,558 @@
 {
-  "periodStart": "2026-11-06",
-  "periodEnd": "2026-11-13",
-  "lastReviewedAt": "2026-11-10",
+  "periodStart": "2026-11-13",
+  "periodEnd": "2026-11-20",
+  "lastReviewedAt": "2026-11-13",
   "items": {
-    "https://www.visitpenrith.com.au/events/family/community-fishing": {
-      "kind": "outdoor",
-      "dateZh": "11月10日",
-      "dateEn": "10 NOV",
-      "dates": [
-        "2026-11-10"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.visitpenrith.com.au/events/family/community-fishing",
-        "evidence": "Re-researched10Nov: exact council tourism page explicitly lists10November2026 9-15; NSW venue current calendar https://www.nsw.gov.au/sport-and-recreation/olympic-sport-venues/sydney-international-regatta-centre/whats-on explicitly lists10/11/26 CommunityFishing. Official regular-activities rules require own gear/barbless hooks,bait,no livebait,under16adultsupervision,licence,sign-in and only supervised designated Warm-upLake. No10Nov cancellation shown; no general programme fee invented."
-      },
-      "introZh": "在湖边试试放流垂钓，和孩子向志愿者学习钓鱼方法、辨认淡水鱼。",
-      "introEn": "Try catch-and-release fishing beside the lake, learning responsible techniques and freshwater fish identification together with the volunteers.",
-      "familyFitZh": "16岁以下须由家长或成人监护人监督",
-      "familyFitEn": "Under 16s need a parent or adult guardian",
-      "noteZh": "自备钓具、无倒刺钩与饵，禁活饵；先查许可要求，到场签到，仅在志愿者指定水域垂钓。",
-      "noteEn": "Bring your gear, barbless hooks and bait; no live bait. Check licence requirements, sign in and fish only in the supervised designated area.",
-      "timeShortZh": "周二 9:00–15:00",
-      "timeShortEn": "Tue 9am–3pm",
-      "showFullTime": false,
-      "referenceZh": "Visit Penrith · NSW Office of Sport",
-      "referenceEn": "Visit Penrith · NSW Office of Sport",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.visitpenrith.com.au/events/family/community-fishing",
-        "evidence": "Re-researched10Nov: exact council tourism page explicitly lists10November2026 9-15; NSW venue current calendar https://www.nsw.gov.au/sport-and-recreation/olympic-sport-venues/sydney-international-regatta-centre/whats-on explicitly lists10/11/26 CommunityFishing. Official regular-activities rules require own gear/barbless hooks,bait,no livebait,under16adultsupervision,licence,sign-in and only supervised designated Warm-upLake. No10Nov cancellation shown; no general programme fee invented."
-      },
-      "noteEmphasis": {
-        "zh": [
-          "禁活饵",
-          "到场签到"
-        ],
-        "en": [
-          "no live bait",
-          "sign in"
-        ]
-      },
-      "route": {
-        "summaryZh": "湖边垂钓 → 消防博物馆",
-        "summaryEn": "Lakeside fishing → Museum of Fire",
-        "steps": [
-          [
-            "先",
-            "First",
-            "Penrith Lakes 社区垂钓",
-            "Penrith Lakes Community Fishing",
-            "Sydney International Regatta Centre, Gate A, Old Castlereagh Road, Penrith NSW"
-          ],
-          [
-            "再任选",
-            "Optional next",
-            "Museum of Fire 消防博物馆",
-            "Museum of Fire",
-            "Museum of Fire, 1 Museum Drive, Penrith NSW"
-          ]
-        ],
-        "purposes": [
-          [
-            "体验放流垂钓",
-            "Try catch-and-release fishing"
-          ],
-          [
-            "看消防车展品与儿童互动区",
-            "Explore fire engines and children’s interactives"
-          ]
-        ],
-        "noteZh": "仅11月10日组合：垂钓9:00–15:00，博物馆9:30–16:30。博物馆另购门票；周二消防车乘坐常规10:00–11:00、13:00–14:00，每人另付$4.50，取决于志愿者到岗，不保证运行。",
-        "noteEn": "For 10 November: fishing 9am–3pm, museum 9:30am–4:30pm. Museum admission is extra. Regular Tuesday engine rides are 10–11am and 1–2pm, $4.50 extra each, subject to volunteers and not guaranteed.",
-        "sources": [
-          [
-            "Fishing programme",
-            "https://www.visitpenrith.com.au/events/family/community-fishing"
-          ],
-          [
-            "Museum of Fire",
-            "https://www.museumoffire.net/"
-          ]
-        ],
-        "checkedAt": "2026-11-10",
-        "evidence": "Fishing exact10Nov and NSW venue rules freshly read10Nov; Museum of Fire current official home gives1MuseumDrive,7days9:30-16:30,engine exhibits/child interactives,paid admission link,regularTuesday/Fridayrides10-11/13-14 $4.50subjecttovolunteersnotguaranteed. Route is optional samePenritharea,not a promised walking route or booked ride. No holiday closure on10Nov stated."
-      }
-    },
-    "https://www.woollahra.nsw.gov.au/Events/Head-On-Photo-Festival-2026": {
+    "https://multicultural.nsw.gov.au/event/greek-street-fair-burwood-2026/": {
       "kind": "festival",
-      "dateZh": "11月10–12日",
-      "dateEn": "10–12 NOV",
+      "dateZh": "11月14日",
+      "dateEn": "14 NOV",
       "dates": [
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12"
+        "2026-11-14"
       ],
       "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.woollahra.nsw.gov.au/Events/Head-On-Photo-Festival-2026",
-        "evidence": "Fresh10Nov council exact HeadOn2026 event read: festival6-29Nov; explicit10/11/12Nov11-16 entries atPaddingtonReservoirGardens251-255OxfordSt,Free. Recommend this named outdoor display,not all satellite venues or ended6Nov ticketed launch. Organiser contact/headon.org.au linked; no public reservation,cancellationorcapacityclosure stated. No invented family workshop or ticket availability claim."
+        "checkedAt": "2026-11-13",
+        "url": "https://multicultural.nsw.gov.au/event/greek-street-fair-burwood-2026/",
+        "evidence": "Fresh13Nov exact MulticulturalNSW event, updated11Nov13:45, confirms14Nov2026 noon-21, named Burwood streets,Free,Greek Orthodox Parish Saint Nectarios, music/dance/food/market/children activities. Burwood council exact linked detail returned403; this is a matching official state event detail,not a directory or unrelated homepage. No cancellation/reservation/overall capacity closure stated; no unsupported free-ride claim. Discovery incorrectly marked ended before14Nov; ignored in favour of current official date."
       },
-      "introZh": "在下沉花园边散步边看摄影作品，和孩子从不同镜头里发现人物、风景与世界故事。",
-      "introEn": "Stroll through the sunken gardens and explore photographic perspectives, discovering people, landscapes and stories together through different lenses.",
-      "timeShortZh": "每天 11:00–16:00",
-      "timeShortEn": "Daily 11am–4pm",
-      "showFullTime": true,
-      "referenceZh": "Woollahra Council · Head On",
-      "referenceEn": "Woollahra Council · Head On",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.woollahra.nsw.gov.au/Events/Head-On-Photo-Festival-2026",
-        "evidence": "Fresh10Nov council exact HeadOn2026 event read: festival6-29Nov; explicit10/11/12Nov11-16 entries atPaddingtonReservoirGardens251-255OxfordSt,Free. Recommend this named outdoor display,not all satellite venues or ended6Nov ticketed launch. Organiser contact/headon.org.au linked; no public reservation,cancellationorcapacityclosure stated. No invented family workshop or ticket availability claim."
-      }
-    },
-    "https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on/join-us-spin-2026": {
-      "kind": "event",
-      "dateZh": "11月12日",
-      "dateEn": "12 NOV",
-      "dates": [
-        "2026-11-12"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on/join-us-spin-2026",
-        "evidence": "Council exact SpinOff2026 event and linked organiser https://www.rideforcountrykids.com.au/event/spinoff/home freshly read10Nov:12Nov10-14 ManlyBeachfrontendCorso,publicfamilyfriendswelcome,liveDJ,biketryout,prizewheel; corporate5-rider100km fundraisingteams separate registration. No public spectator charge or trial-rider age/fee stated, so none invented and no free-entry/guaranteed child riding claim. No cancellation or public capacity closure shown."
-      },
-      "introZh": "在海边为公益骑行队助威，听现场 DJ、看看转盘活动，和孩子感受社区的热闹气氛。",
-      "introEn": "Cheer on the fundraising cycling teams by the beach, enjoy the live DJ and discover the community prize-wheel activities together.",
-      "noteZh": "公众观赛与团队100公里挑战不同；试骑和转盘的参加条件请先问现场工作人员。",
-      "noteEn": "Public spectators are separate from the team 100km challenge; ask staff about participation conditions for trial rides and the prize wheel.",
-      "timeShortZh": "周四 10:00–14:00",
-      "timeShortEn": "Thu 10am–2pm",
+      "introZh": "逛希腊风味摊位、看传统舞蹈与现场音乐，和孩子在街头一起感受热闹的文化庆典。",
+      "introEn": "Browse Greek food and market stalls, watch traditional dancing and live music, and share a lively street celebration together.",
+      "timeShortZh": "周六 12:00–21:00",
+      "timeShortEn": "Sat noon–9pm",
       "showFullTime": false,
-      "referenceZh": "Northern Beaches Council · Royal Far West",
-      "referenceEn": "Northern Beaches Council · Royal Far West",
+      "referenceZh": "Multicultural NSW · Burwood Greek Parish",
+      "referenceEn": "Multicultural NSW · Burwood Greek Parish",
       "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on/join-us-spin-2026",
-        "evidence": "Council exact SpinOff2026 event and linked organiser https://www.rideforcountrykids.com.au/event/spinoff/home freshly read10Nov:12Nov10-14 ManlyBeachfrontendCorso,publicfamilyfriendswelcome,liveDJ,biketryout,prizewheel; corporate5-rider100km fundraisingteams separate registration. No public spectator charge or trial-rider age/fee stated, so none invented and no free-entry/guaranteed child riding claim. No cancellation or public capacity closure shown."
+        "checkedAt": "2026-11-13",
+        "url": "https://multicultural.nsw.gov.au/event/greek-street-fair-burwood-2026/",
+        "evidence": "Fresh13Nov exact MulticulturalNSW event, updated11Nov13:45, confirms14Nov2026 noon-21, named Burwood streets,Free,Greek Orthodox Parish Saint Nectarios, music/dance/food/market/children activities. Burwood council exact linked detail returned403; this is a matching official state event detail,not a directory or unrelated homepage. No cancellation/reservation/overall capacity closure stated; no unsupported free-ride claim. Discovery incorrectly marked ended before14Nov; ignored in favour of current official date."
       }
     },
-    "https://powerhouse.com.au/program/opening-fest-come-home-again": {
-      "kind": "show",
-      "dateZh": "11月12日",
-      "dateEn": "12 NOV",
+    "https://www.macedonianfestival.com.au/": {
+      "kind": "festival",
+      "dateZh": "11月15日",
+      "dateEn": "15 NOV",
       "dates": [
-        "2026-11-12"
+        "2026-11-15"
       ],
       "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://powerhouse.com.au/program/opening-fest-come-home-again",
-        "evidence": "Retained main genuinely re-read10Nov: exact Powerhouse programme still explicitly lists12Nov2026 19:30/30min atQantasTerraceGround34PhillipSt, now labelled FreeGeneralWalk-in. The organiser removed the past7/8Nov exhausted-admission notice; obsolete weekend warning removed from copy,not mechanically carried. Installation depicts244 endangered/vulnerableNSWspecies with SydneyChamberOpera/communitychoirs. No12Nov cancellation/bookingrequirement stated. Only12Nov in remaining-edition dates; stable shareKey unchanged."
+        "checkedAt": "2026-11-13",
+        "url": "https://www.macedonianfestival.com.au/",
+        "evidence": "New13Nov exact annual organiser event landing and https://www.bayside.nsw.gov.au/community-noticeboard/macedonian-festival-sydney-2026 agree15Nov2026 10-19,BartonParkBesticStRockdale,freeentry/allwelcome,livebands/oro/food/stalls/childrenarea. This homepage is the exact2026 festival programme,not a generic organisation finder. Organiser explicitly contrasts2025CarssPark and gives marshalled walkways/bridge from offsite carparks. No booking/cancellation notice or overall sold-out block; stage-specific times not invented."
       },
-      "introZh": "在濒危物种的巨幅手绘与光影装置前听合唱，用半小时一起走进艺术与自然的世界。",
-      "introEn": "Hear live choirs beside illuminated drawings of threatened species, sharing a half-hour encounter with art, nature and community voices.",
-      "timeShortZh": "周四 19:30 · 约30分钟",
-      "timeShortEn": "Thu 7:30pm · about 30 min",
-      "showFullTime": true,
-      "referenceZh": "Powerhouse",
-      "referenceEn": "Powerhouse",
+      "introZh": "听现场乐队、看民族舞蹈，逛传统美食与社区摊位，和孩子一起认识马其顿文化。",
+      "introEn": "Hear live bands, watch traditional dancing and explore food and community stalls together, discovering Macedonian culture across generations.",
+      "noteZh": "今年在 Rockdale 的 Barton Park，不是往年的 Carss Park；停车场与会场之间需按指引步行。",
+      "noteEn": "This year’s venue is Barton Park in Rockdale, not the previous Carss Park; follow marshals’ walking routes from the car parks.",
+      "timeShortZh": "周日 10:00–19:00",
+      "timeShortEn": "Sun 10am–7pm",
+      "showFullTime": false,
+      "referenceZh": "Australian Macedonian Council of NSW · Bayside Council",
+      "referenceEn": "Australian Macedonian Council of NSW · Bayside Council",
       "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://powerhouse.com.au/program/opening-fest-come-home-again",
-        "evidence": "Retained main genuinely re-read10Nov: exact Powerhouse programme still explicitly lists12Nov2026 19:30/30min atQantasTerraceGround34PhillipSt, now labelled FreeGeneralWalk-in. The organiser removed the past7/8Nov exhausted-admission notice; obsolete weekend warning removed from copy,not mechanically carried. Installation depicts244 endangered/vulnerableNSWspecies with SydneyChamberOpera/communitychoirs. No12Nov cancellation/bookingrequirement stated. Only12Nov in remaining-edition dates; stable shareKey unchanged."
-      }
-    },
-    "https://lunathemission.com/sydney/": {
-      "kind": "exhibition",
-      "dateZh": "11月11–12日",
-      "dateEn": "11–12 NOV",
-      "dates": [
-        "2026-11-11",
-        "2026-11-12"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://lunathemission.com/sydney/",
-        "evidence": "Newly researched10Nov organiser Sydney LUNA site/FAQ, venue https://www.sydneyshowground.com.au/whats-on/luna-a-journey-to-the-moon/ and linkedFever711221. Browser selected11Nov then12Nov, both expose10:20-18:00 slots; adult43.50/reduced10-17student34.50/ID, no sold-out block. OfficialFAQ10+/min1.30m,10-15accompanied,unaccompaniedminorspre-signedwaiver,40minVR/allow1hour,arrive15minearly. No babycarriers/strollers; heartcondition/epilepsynotpermitted,pregnancy/vertigo/claustrophobia/motionsicknessnotrecommended,no subtitles,bending,manualmodeelectricchairs/canesuseonsitewheelchairs. Material conditions visible despite longer note. Existing September season not misrepresented as a November opening; ongoing card follows dated outings."
-      },
-      "introZh": "戴上 VR 头显进入阿波罗11号任务，从宇航员训练、火箭发射一路探索到月球表面。",
-      "introEn": "Step into the Apollo 11 mission in virtual reality, exploring astronaut training, rocket launch and the lunar surface together.",
-      "familyFitZh": "10岁起且身高至少130cm；10–15岁须成人陪同，其他未成年人按官网要求预签免责书",
-      "familyFitEn": "Ages 10+ and at least 130cm; ages 10–15 need an adult, and other unaccompanied minors need the required pre-signed waiver",
-      "noteZh": "提前15分钟到场签免责书；不能带婴儿或推车。主办方禁止心脏病或癫痫者参加，不建议孕期、晕动、恐高或幽闭者参加。无字幕且需弯腰；电动轮椅须手动模式，手杖使用者须换用现场轮椅。",
-      "noteEn": "Arrive 15 minutes early for the waiver; no babies or strollers. The organiser excludes heart conditions or epilepsy and advises against pregnancy, motion sickness, vertigo or claustrophobia. No subtitles; bending is required. Power wheelchairs need manual mode, and cane users must use onsite wheelchairs.",
-      "timeShortZh": "周三、四 · 分时段入场",
-      "timeShortEn": "Wed/Thu · timed entry",
-      "showFullTime": true,
-      "referenceZh": "LUNA · Virtual Zone · Fever",
-      "referenceEn": "LUNA · Virtual Zone · Fever",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://lunathemission.com/sydney/",
-        "evidence": "Newly researched10Nov organiser Sydney LUNA site/FAQ, venue https://www.sydneyshowground.com.au/whats-on/luna-a-journey-to-the-moon/ and linkedFever711221. Browser selected11Nov then12Nov, both expose10:20-18:00 slots; adult43.50/reduced10-17student34.50/ID, no sold-out block. OfficialFAQ10+/min1.30m,10-15accompanied,unaccompaniedminorspre-signedwaiver,40minVR/allow1hour,arrive15minearly. No babycarriers/strollers; heartcondition/epilepsynotpermitted,pregnancy/vertigo/claustrophobia/motionsicknessnotrecommended,no subtitles,bending,manualmodeelectricchairs/canesuseonsitewheelchairs. Material conditions visible despite longer note. Existing September season not misrepresented as a November opening; ongoing card follows dated outings."
+        "checkedAt": "2026-11-13",
+        "url": "https://www.macedonianfestival.com.au/",
+        "evidence": "New13Nov exact annual organiser event landing and https://www.bayside.nsw.gov.au/community-noticeboard/macedonian-festival-sydney-2026 agree15Nov2026 10-19,BartonParkBesticStRockdale,freeentry/allwelcome,livebands/oro/food/stalls/childrenarea. This homepage is the exact2026 festival programme,not a generic organisation finder. Organiser explicitly contrasts2025CarssPark and gives marshalled walkways/bridge from offsite carparks. No booking/cancellation notice or overall sold-out block; stage-specific times not invented."
       },
       "noteEmphasis": {
         "zh": [
-          "不能带婴儿或推车"
+          "不是往年的 Carss Park"
         ],
         "en": [
-          "no babies or strollers"
+          "not the previous Carss Park"
         ]
       }
     },
-    "https://mindgamesartalive.com.au/sydney/v1/": {
-      "kind": "exhibition",
-      "dateZh": "持续展出",
-      "dateEn": "On now",
+    "https://www.woollahra.nsw.gov.au/Events/Youre-invited-to-the-Rushcutters-Bay-Park-Youth-Recreation-Area-Opening": {
+      "kind": "outdoor",
+      "dateZh": "11月14日",
+      "dateEn": "14 NOV",
       "dates": [
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12"
+        "2026-11-14"
       ],
       "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://mindgamesartalive.com.au/sydney/v1/",
-        "evidence": "Fresh10Nov organiser practicalinfo and linkedFever491481:Level1/2 Broadway154-160,age3+recommended,60-90min,MonTue10-19:30last18:30/WedThu10-20last19. Browser10Novselected10am-18:30 and real adult13+39/child4-12 29; selected11Nov/12Nov and waited actual visible options10-19, not hidden ARIA placeholders. Liftout/NOTwheelchairaccessible overrides contradictory tourismdirectory access claim. No inventory guarantee or freechildage fabricated; no cancellation/soldoutblock."
+        "checkedAt": "2026-11-13",
+        "url": "https://www.woollahra.nsw.gov.au/Events/Youre-invited-to-the-Rushcutters-Bay-Park-Youth-Recreation-Area-Opening",
+        "evidence": "New13Nov exact council opening14Nov10-12 atNewSouthHeadRdEdgecliff,free/allwelcome,skate/basketball demonstrations/proskaters/live music/BBQgelato. Official project page confirms facilitiesfor8-14,not a strict minimum event age. Linked https://yoursay.woollahra.nsw.gov.au/youth-rec-opening opened in browser: live RSVP form name/email/numberincludingadultsandchildren and Submit,not closed; no submission made. Council wet-weather update link retained; no cancellation shown."
       },
-      "introZh": "走进镜面迷宫与错觉房间，和孩子一起破解视觉谜题，发现艺术、科学和感知的奇妙联系。",
-      "introEn": "Explore mirror mazes and illusion rooms together, solving visual puzzles and discovering playful connections between art, science and perception.",
-      "familyFitZh": "官方建议3岁起体验",
-      "familyFitEn": "Officially recommended for ages 3+",
-      "noteZh": "电梯暂时停运，场地目前不支持轮椅通行；先预订入场时段。",
-      "noteEn": "The lift is temporarily out of service and the venue is not wheelchair accessible; book your entry slot first.",
-      "timeShortZh": "周二至四 · 分时段入场",
-      "timeShortEn": "Tue–Thu · timed entry",
-      "showFullTime": true,
-      "referenceZh": "Mind Games · Fever",
-      "referenceEn": "Mind Games · Fever",
+      "introZh": "看滑板和篮球示范、和职业滑手见面，带孩子一起探索海湾边新落成的活动空间。",
+      "introEn": "Watch skateboarding and basketball demonstrations, meet professional skaters and explore the newly opened recreation space beside the bay together.",
+      "familyFitZh": "设施主要面向8–14岁；开幕活动欢迎所有人",
+      "familyFitEn": "Facilities are designed mainly for ages 8–14; the opening welcomes everyone",
+      "noteZh": "请先在市议会网页 RSVP；出发前查看官网雨天更新。",
+      "noteEn": "Please RSVP on the council page and check its wet-weather updates before travelling.",
+      "timeShortZh": "周六 10:00–12:00",
+      "timeShortEn": "Sat 10am–noon",
+      "showFullTime": false,
+      "referenceZh": "Woollahra Council",
+      "referenceEn": "Woollahra Council",
       "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://mindgamesartalive.com.au/sydney/v1/",
-        "evidence": "Fresh10Nov organiser practicalinfo and linkedFever491481:Level1/2 Broadway154-160,age3+recommended,60-90min,MonTue10-19:30last18:30/WedThu10-20last19. Browser10Novselected10am-18:30 and real adult13+39/child4-12 29; selected11Nov/12Nov and waited actual visible options10-19, not hidden ARIA placeholders. Liftout/NOTwheelchairaccessible overrides contradictory tourismdirectory access claim. No inventory guarantee or freechildage fabricated; no cancellation/soldoutblock."
+        "checkedAt": "2026-11-13",
+        "url": "https://www.woollahra.nsw.gov.au/Events/Youre-invited-to-the-Rushcutters-Bay-Park-Youth-Recreation-Area-Opening",
+        "evidence": "New13Nov exact council opening14Nov10-12 atNewSouthHeadRdEdgecliff,free/allwelcome,skate/basketball demonstrations/proskaters/live music/BBQgelato. Official project page confirms facilitiesfor8-14,not a strict minimum event age. Linked https://yoursay.woollahra.nsw.gov.au/youth-rec-opening opened in browser: live RSVP form name/email/numberincludingadultsandchildren and Submit,not closed; no submission made. Council wet-weather update link retained; no cancellation shown."
       },
       "noteEmphasis": {
         "zh": [
-          "不支持轮椅通行"
+          "先在市议会网页 RSVP"
         ],
         "en": [
-          "not wheelchair accessible"
+          "RSVP on the council page"
         ]
-      }
-    },
-    "https://harrypotterexhibition.com/locations/sydney/": {
-      "kind": "exhibition",
-      "dateZh": "11月12日",
-      "dateEn": "12 NOV",
-      "dates": [
-        "2026-11-12"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://harrypotterexhibition.com/locations/sydney/",
-        "evidence": "Re-researched10Nov organiser Sydney schedule/FAQ and linkedFever594690. Tue/Wedclosed;Thu10-15:30,lastentry14,OlympicBlvdonly,no strollers. BrowserGetTickets opened current12Novselected calendar with10amandlateroptions and24promotionalcategory;FeverFAQ15andunderwith16+companion,non-strobeflashingvisuals/sound/intenseelements. Do not use older organiser33 startingprice or conflicting freechildage;12Novonly in availability. No current cancellation/sold-out block."
-      },
-      "introZh": "近看电影道具、试魁地奇和魔药互动，和孩子把熟悉的魔法场景变成一次探索。",
-      "introEn": "Explore film props, try Quidditch and potion interactives, and discover familiar wizarding scenes together through hands-on activities.",
-      "familyFitZh": "15岁及以下须由至少16岁的同行者陪同",
-      "familyFitEn": "Guests 15 and under need a companion aged 16 or older",
-      "noteZh": "周二、三闭馆；推车不能入内，有音效和闪光。仅从 Olympic Boulevard 入口进入。",
-      "noteEn": "Closed Tuesday and Wednesday. No strollers inside; sound effects and flashing lights. Enter via Olympic Boulevard only.",
-      "timeShortZh": "周四 10:00–15:30；14:00末场",
-      "timeShortEn": "Thu 10am–3:30pm; last entry 2pm",
-      "showFullTime": true,
-      "referenceZh": "Harry Potter: The Exhibition · Fever",
-      "referenceEn": "Harry Potter: The Exhibition · Fever",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://harrypotterexhibition.com/locations/sydney/",
-        "evidence": "Re-researched10Nov organiser Sydney schedule/FAQ and linkedFever594690. Tue/Wedclosed;Thu10-15:30,lastentry14,OlympicBlvdonly,no strollers. BrowserGetTickets opened current12Novselected calendar with10amandlateroptions and24promotionalcategory;FeverFAQ15andunderwith16+companion,non-strobeflashingvisuals/sound/intenseelements. Do not use older organiser33 startingprice or conflicting freechildage;12Novonly in availability. No current cancellation/sold-out block."
-      }
-    },
-    "https://australian.museum/exhibition/agnpy-2026/": {
-      "kind": "exhibition",
-      "dateZh": "持续展出",
-      "dateEn": "On now",
-      "dates": [
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://australian.museum/exhibition/agnpy-2026/",
-        "evidence": "Exact2026AustralianMuseum exhibition freshly read10Nov:100natureimages,HintzeHallUpperGround,free,until14Feb2027. Museum-submitted council detail https://whatson.cityofsydney.nsw.gov.au/events/australian-geographic-nature-photographer-of-the-year reread10Nov confirmsdaily10-16 and William/CollegeStaddress. No currentbookingrequirement,cancellationorcapacityclosure stated; specificexhibition not genericmuseumlisting."
-      },
-      "introZh": "从海底到山林，在百幅自然影像里和孩子找动物、看地貌，开启轻松的室内探索。",
-      "introEn": "Discover wildlife and landscapes across a hundred nature photographs, sharing an indoor journey from ocean depths to mountains.",
-      "timeShortZh": "每天 10:00–16:00",
-      "timeShortEn": "Daily 10am–4pm",
-      "showFullTime": true,
-      "referenceZh": "Australian Museum",
-      "referenceEn": "Australian Museum",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://australian.museum/exhibition/agnpy-2026/",
-        "evidence": "Exact2026AustralianMuseum exhibition freshly read10Nov:100natureimages,HintzeHallUpperGround,free,until14Feb2027. Museum-submitted council detail https://whatson.cityofsydney.nsw.gov.au/events/australian-geographic-nature-photographer-of-the-year reread10Nov confirmsdaily10-16 and William/CollegeStaddress. No currentbookingrequirement,cancellationorcapacityclosure stated; specificexhibition not genericmuseumlisting."
-      }
-    },
-    "https://www.boroondara.vic.gov.au/events/gallery-series": {
-      "kind": "show",
-      "dateZh": "11月11日",
-      "dateEn": "11 NOV",
-      "dates": [
-        "2026-11-11"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.boroondara.vic.gov.au/events/gallery-series",
-        "evidence": "New10Nov research of exact production council GallerySeries page:11Nov2026 13-14 AdamSpiegl guitar,HawthornArtsCentre360BurwoodRd,free/no booking,everyonewelcome,familycategory. Not nextweekaccordion or25Novshakuhachi. Explicit currentdateandperformer;no cancellationorcapacityclosure shown. General programmecontinues to16Dec, but selected only11Novsession."
-      },
-      "introZh": "在画廊空间听 Adam Spiegl 弹吉他，和孩子用一个午休的时间感受轻松的现场音乐。",
-      "introEn": "Hear Adam Spiegl play guitar in the gallery spaces, sharing a relaxed lunchtime encounter with live music and art.",
-      "timeShortZh": "周三 13:00–14:00",
-      "timeShortEn": "Wed 1–2pm",
-      "showFullTime": false,
-      "referenceZh": "Boroondara Arts",
-      "referenceEn": "Boroondara Arts",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.boroondara.vic.gov.au/events/gallery-series",
-        "evidence": "New10Nov research of exact production council GallerySeries page:11Nov2026 13-14 AdamSpiegl guitar,HawthornArtsCentre360BurwoodRd,free/no booking,everyonewelcome,familycategory. Not nextweekaccordion or25Novshakuhachi. Explicit currentdateandperformer;no cancellationorcapacityclosure shown. General programmecontinues to16Dec, but selected only11Novsession."
       },
       "route": {
-        "summaryZh": "午间吉他 → Summer Salon 看展",
-        "summaryEn": "Lunchtime guitar → Summer Salon art",
+        "summaryZh": "开放日体验 · 海湾步道散步",
+        "summaryEn": "Opening celebration · Foreshore stroll",
         "steps": [
           [
             "先",
             "First",
-            "Hawthorn Arts Centre 吉他现场",
-            "Gallery Series at Hawthorn Arts Centre",
-            "Hawthorn Arts Centre, 360 Burwood Road, Hawthorn VIC"
+            "Rushcutters Bay 新游乐区",
+            "Rushcutters Bay Youth Recreation Area",
+            "Rushcutters Bay Youth Recreation Area, New South Head Road, Edgecliff NSW"
           ],
           [
             "再任选",
             "Optional next",
-            "Town Hall Gallery：Summer Salon 展",
-            "Summer Salon at Town Hall Gallery",
-            "Town Hall Gallery, 360 Burwood Road, Hawthorn VIC"
+            "Rushcutters Bay Park 海滨步道",
+            "Rushcutters Bay Park foreshore promenade",
+            "Rushcutters Bay Park foreshore promenade, Edgecliff NSW"
           ]
         ],
         "purposes": [
           [
-            "听 Adam Spiegl 吉他演奏",
-            "Hear Adam Spiegl play guitar"
+            "看滑板与篮球示范",
+            "Watch skateboarding and basketball demonstrations"
           ],
           [
-            "看本地艺术家的绘画、摄影与创作",
-            "Explore local painting, photography and art"
+            "沿海湾散步或在草地野餐",
+            "Stroll beside the bay or picnic on the grass"
           ]
         ],
-        "noteZh": "仅11月11日组合：演出13:00–14:00；Summer Salon 从当天开始，画廊工作日9:00–17:00，免费。两个站点都在360 Burwood Road。",
-        "noteEn": "For 11 November: music 1–2pm; Summer Salon begins that day and the gallery opens weekdays 9am–5pm, free. Both stops are at 360 Burwood Road.",
+        "noteZh": "适用于11月14日：开幕活动10:00–12:00，先完成 RSVP。散步和野餐在同一公园内，按天气与现场开放情况选去。",
+        "noteEn": "For 14 November: the opening is 10am–noon; RSVP first. The promenade and picnic lawns are in the same park; choose according to weather and onsite access.",
         "sources": [
           [
-            "Gallery Series",
-            "https://www.boroondara.vic.gov.au/events/gallery-series"
+            "Opening event",
+            "https://www.woollahra.nsw.gov.au/Events/Youre-invited-to-the-Rushcutters-Bay-Park-Youth-Recreation-Area-Opening"
           ],
           [
-            "Summer Salon",
-            "https://www.boroondara.vic.gov.au/events/2026-boroondara-summer-salon"
+            "Park and recreation project",
+            "https://www.woollahra.nsw.gov.au/Council/Current-works-and-projects/Major-Projects/Rushcutters-Bay-Youth-Recreation-Area"
           ]
         ],
-        "checkedAt": "2026-11-10",
-        "evidence": "Both exact council pages reread10Nov. GallerySeries11Nov13-14 atHawthornArtsCentre;SummerSalon productionpage11Nov2026-23Jan2027,free,TownHallGallery360BurwoodRd,weekdays9-17;samecivicartsaddress. Formalopening/tour14Nov explicitlyoutsideedition,not offered. Both namedplaces/purposesverified;no inventedcafe,durationorexhibitcontent."
+        "checkedAt": "2026-11-13",
+        "evidence": "Both official council pages read13Nov: exact opening14Nov10-12; project confirms harbourforeshorepromenade,grassy picnicspaces,playground in same RushcuttersBayPark,opening14Nov. No separate walk booking,walking duration,extra exhibition or facility opening hours invented. Named map-linked stops/purposes current,conditional on weather/access."
       }
     },
-    "https://www.melbourneshowgrounds.com/whats-on/fijian-flying-circus/": {
-      "kind": "show",
-      "dateZh": "11月11–12日",
-      "dateEn": "11–12 NOV",
-      "dates": [
-        "2026-11-11",
-        "2026-11-12"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.melbourneshowgrounds.com/whats-on/fijian-flying-circus/",
-        "evidence": "Venue and linkedofficialFever673760 freshly reviewed10Nov:Building16/Gate7LeonardsCres,no directShowgrounds stationtrains,25parking. Browser11Novselected6:30pm,then clicked12Novselected6:30pm withenabled59general/39child2-12 weekdaycategories;10Novdisabled.120min/allages/wheelchairaccess onFever. Venueweekdaylabel22NovMonday inconsistent,so no season-endweekday claimed; selected11/12 datesexplicit. No purchase or blanketavailability guarantee."
-      },
-      "introZh": "跟着主角 Loma 走进斐济奇幻故事，一起看空中杂技、听岛屿歌声与鼓乐。",
-      "introEn": "Follow Loma into a magical Fijian story, sharing aerial acrobatics, island singing and powerful drum rhythms together.",
-      "noteZh": "从 Leonards Crescent 的 Gate 7 入场；本活动没有直达 Showgrounds 站的火车。",
-      "noteEn": "Enter Gate 7 on Leonards Crescent; no trains run directly to Showgrounds station for this event.",
-      "timeShortZh": "周三、四 18:30",
-      "timeShortEn": "Wed/Thu 6:30pm",
-      "showFullTime": true,
-      "referenceZh": "Melbourne Showgrounds · Fever",
-      "referenceEn": "Melbourne Showgrounds · Fever",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.melbourneshowgrounds.com/whats-on/fijian-flying-circus/",
-        "evidence": "Venue and linkedofficialFever673760 freshly reviewed10Nov:Building16/Gate7LeonardsCres,no directShowgrounds stationtrains,25parking. Browser11Novselected6:30pm,then clicked12Novselected6:30pm withenabled59general/39child2-12 weekdaycategories;10Novdisabled.120min/allages/wheelchairaccess onFever. Venueweekdaylabel22NovMonday inconsistent,so no season-endweekday claimed; selected11/12 datesexplicit. No purchase or blanketavailability guarantee."
-      }
-    },
-    "https://fedsquare.com/events/50-years-of-3rrr-feat-courtney-barnett-party-dozen-kaiit": {
-      "kind": "show",
-      "dateZh": "11月12日",
-      "dateEn": "12 NOV",
-      "dates": [
-        "2026-11-12"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://fedsquare.com/events/50-years-of-3rrr-feat-courtney-barnett-party-dozen-kaiit",
-        "evidence": "Retained FridayMore freshly re-read10Nov and promoted to main:exactFedSquare2026 programme12Nov18:15-21:30 MainSquare,freeallages,CourtneyBarnett/PartyDozen/KAIIT. Not a children-onlyprogramme or inventedworkshop. No public bookingrequirement,cancellationoroverallcapacityclosure shown. StableURL becomes mainshareKey;no duplicateMore item."
-      },
-      "introZh": "在广场听 Courtney Barnett、Party Dozen 与 KAIIT 的现场，和孩子感受墨尔本独立音乐。",
-      "introEn": "Hear Courtney Barnett, Party Dozen and KAIIT perform in the square, sharing Melbourne’s independent music scene across generations.",
-      "timeShortZh": "周四 18:15–21:30",
-      "timeShortEn": "Thu 6:15–9:30pm",
-      "showFullTime": false,
-      "referenceZh": "Fed Square · Triple R",
-      "referenceEn": "Fed Square · Triple R",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://fedsquare.com/events/50-years-of-3rrr-feat-courtney-barnett-party-dozen-kaiit",
-        "evidence": "Retained FridayMore freshly re-read10Nov and promoted to main:exactFedSquare2026 programme12Nov18:15-21:30 MainSquare,freeallages,CourtneyBarnett/PartyDozen/KAIIT. Not a children-onlyprogramme or inventedworkshop. No public bookingrequirement,cancellationoroverallcapacityclosure shown. StableURL becomes mainshareKey;no duplicateMore item."
-      }
-    },
-    "https://www.mcg.org.au/australian-sports-museum-mcg-tours/diwali": {
+    "https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on/narraweena-fete-market-day": {
       "kind": "event",
-      "dateZh": "11月10–11日",
-      "dateEn": "10–11 NOV",
+      "dateZh": "11月14日",
+      "dateEn": "14 NOV",
       "dates": [
-        "2026-11-10",
-        "2026-11-11"
+        "2026-11-14"
       ],
       "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.mcg.org.au/australian-sports-museum-mcg-tours/diwali",
-        "evidence": "New10Nov review officialMCGDiwali page:30%eligibleonlineoffer28Oct-11Nov,Gate3photobackdrop30Oct-11Nov,museum10-17,toursseparate. Freechai7-9Nov isended and removed,not advertised. Officialgalleriespage verifiesGameOninteractives. OrganiserlinkedROLLERdiscountpage openedinbrowser,DIWALI26validdatesbanner;Museumproduct974948 selected10Novand11Nov,currentenabledadult38/child5-15 17 standardbeforeeligiblecheckoutdiscount,cartempty,nopurchase. Do not calculate finalfees/invent freeunder5category. Generalmuseumvisit beyond11Nov not used to extend this limitedoffercard."
+        "checkedAt": "2026-11-13",
+        "url": "https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on/narraweena-fete-market-day",
+        "evidence": "Fresh13Nov exact council14Nov11-16/freeentry and linked organiser https://www.nps75fete.com.au/ agree75thanniversaryfete. School https://narraween-p.schools.nsw.gov.au/contact-us confirms72-78McIntoshRd. Organiser live notice stamp-card presales closed but onsite purchase available; terms age/heightrestrictions,nonrefundablecards,schoolgames/rides/stalls use stamps,externalvendorscash/card. No eventcancellation/overall sellout. Not described as free rides or closed to public."
       },
-      "introZh": "在 Game On 区试体育互动、看澳洲运动故事，再到 Gate 3 的节庆背景前拍张合影。",
-      "introEn": "Try sporting interactives in Game On, discover Australian sporting stories and take a family photo at the Gate 3 Diwali backdrop.",
-      "timeShortZh": "周二、三 10:00–17:00",
-      "timeShortEn": "Tue/Wed 10am–5pm",
-      "showFullTime": true,
-      "referenceZh": "Australian Sports Museum · MCG",
-      "referenceEn": "Australian Sports Museum · MCG",
+      "introZh": "看校园演出、逛手作摊位，再试游戏和充气城堡，和孩子一起加入社区的周年庆。",
+      "introEn": "Enjoy performances and market stalls, then discover games and bouncing castles together at the school community’s anniversary celebration.",
+      "noteZh": "游乐项目有年龄和身高限制；印章卡预售已关闭，可现场购买，购买后不退款。",
+      "noteEn": "Rides have age and height restrictions. Stamp-card presales are closed; buy onsite, with no refunds on stamp cards.",
+      "timeShortZh": "周六 11:00–16:00",
+      "timeShortEn": "Sat 11am–4pm",
+      "showFullTime": false,
+      "referenceZh": "Northern Beaches Council · NPS P&C",
+      "referenceEn": "Northern Beaches Council · NPS P&C",
       "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.mcg.org.au/australian-sports-museum-mcg-tours/diwali",
-        "evidence": "New10Nov review officialMCGDiwali page:30%eligibleonlineoffer28Oct-11Nov,Gate3photobackdrop30Oct-11Nov,museum10-17,toursseparate. Freechai7-9Nov isended and removed,not advertised. Officialgalleriespage verifiesGameOninteractives. OrganiserlinkedROLLERdiscountpage openedinbrowser,DIWALI26validdatesbanner;Museumproduct974948 selected10Novand11Nov,currentenabledadult38/child5-15 17 standardbeforeeligiblecheckoutdiscount,cartempty,nopurchase. Do not calculate finalfees/invent freeunder5category. Generalmuseumvisit beyond11Nov not used to extend this limitedoffercard."
-      }
-    },
-    "https://museumsvictoria.com.au/scienceworks/whats-on/colour/": {
-      "kind": "exhibition",
-      "dateZh": "持续展出",
-      "dateEn": "On now",
-      "dates": [
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://museumsvictoria.com.au/scienceworks/whats-on/colour/",
-        "evidence": "ExactScienceworksColour page genuinely reread10Nov:until26Jan2027,daily10-16:30,2BookerSt,adult25child10under3freeincludingmuseum,ages5-14recommendation.21interactiveexhibits,optics,colouredlight andColourInActionprojectedcreatureactivity. Current GetTickets link present,no cancellation or overall sold-out notice; not a fabricated newopening or genericvenueentry."
-      },
-      "introZh": "一起混合彩色光、试视觉错觉、设计投影小生物，在互动实验里发现颜色的科学。",
-      "introEn": "Mix coloured light, test optical illusions and design projected creatures together, discovering the science of colour through hands-on experiments.",
-      "familyFitZh": "官方建议5–14岁",
-      "familyFitEn": "Officially recommended for ages 5–14",
-      "timeShortZh": "每天 10:00–16:30",
-      "timeShortEn": "Daily 10am–4:30pm",
-      "showFullTime": true,
-      "referenceZh": "Museums Victoria · Scienceworks",
-      "referenceEn": "Museums Victoria · Scienceworks",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://museumsvictoria.com.au/scienceworks/whats-on/colour/",
-        "evidence": "ExactScienceworksColour page genuinely reread10Nov:until26Jan2027,daily10-16:30,2BookerSt,adult25child10under3freeincludingmuseum,ages5-14recommendation.21interactiveexhibits,optics,colouredlight andColourInActionprojectedcreatureactivity. Current GetTickets link present,no cancellation or overall sold-out notice; not a fabricated newopening or genericvenueentry."
-      }
-    },
-    "https://www.acmi.net.au/whats-on/play-on/": {
-      "kind": "exhibition",
-      "dateZh": "持续展出",
-      "dateEn": "On now",
-      "dates": [
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12"
-      ],
-      "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.acmi.net.au/whats-on/play-on/",
-        "evidence": "SpecificACMIPlayOn exhibition re-read10Nov confirmsfree/allages,24Aug2026-31Jan2027,10-17,GroundFloorFedSquare,3Australianarcadegames. Official sensoryguidebright/flashing/loud,photosensitivityrisk;Englishvisualtext,buttons/joysticksfine-motor/twohands andcompanionassistance allowed. No ticket/cancellation/closure notice stated. Specificgames,not genericpermanentACMIdirectory."
-      },
-      "introZh": "轮流玩街机、走进迷你玩具世界解谜，再比较彼此的玩法，体验澳洲游戏创作的想象力。",
-      "introEn": "Take turns at the arcade controls, solve miniature toy-world puzzles and compare your approaches to imaginative Australian games.",
-      "noteZh": "有强光、闪烁与较大音量；英文提示或按钮操作可能需要同行成人协助。",
-      "noteEn": "Bright flashing visuals and loud sounds; English instructions or physical controls may require help from an accompanying adult.",
-      "timeShortZh": "每天 10:00–17:00",
-      "timeShortEn": "Daily 10am–5pm",
-      "showFullTime": true,
-      "referenceZh": "ACMI",
-      "referenceEn": "ACMI",
-      "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://www.acmi.net.au/whats-on/play-on/",
-        "evidence": "SpecificACMIPlayOn exhibition re-read10Nov confirmsfree/allages,24Aug2026-31Jan2027,10-17,GroundFloorFedSquare,3Australianarcadegames. Official sensoryguidebright/flashing/loud,photosensitivityrisk;Englishvisualtext,buttons/joysticksfine-motor/twohands andcompanionassistance allowed. No ticket/cancellation/closure notice stated. Specificgames,not genericpermanentACMIdirectory."
+        "checkedAt": "2026-11-13",
+        "url": "https://www.northernbeaches.nsw.gov.au/things-to-do/whats-on/narraweena-fete-market-day",
+        "evidence": "Fresh13Nov exact council14Nov11-16/freeentry and linked organiser https://www.nps75fete.com.au/ agree75thanniversaryfete. School https://narraween-p.schools.nsw.gov.au/contact-us confirms72-78McIntoshRd. Organiser live notice stamp-card presales closed but onsite purchase available; terms age/heightrestrictions,nonrefundablecards,schoolgames/rides/stalls use stamps,externalvendorscash/card. No eventcancellation/overall sellout. Not described as free rides or closed to public."
       },
       "noteEmphasis": {
         "zh": [
-          "强光、闪烁与较大音量"
+          "年龄和身高限制"
         ],
         "en": [
-          "Bright flashing visuals and loud sounds"
+          "age and height restrictions"
         ]
       }
     },
-    "https://museumsvictoria.com.au/melbournemuseum/whats-on/triceratops-fate-of-the-dinosaurs": {
-      "kind": "exhibition",
-      "dateZh": "持续展出",
-      "dateEn": "On now",
+    "https://www.woollahra.nsw.gov.au/Events/Samhain-the-Spirit-of-Woollahra-Festival-Family-Day": {
+      "kind": "festival",
+      "dateZh": "11月14日",
+      "dateEn": "14 NOV",
       "dates": [
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12"
+        "2026-11-14"
       ],
       "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://museumsvictoria.com.au/melbournemuseum/whats-on/triceratops-fate-of-the-dinosaurs",
-        "evidence": "ExactMelbourneMuseumTriceratops exhibition re-read10Nov:daily9-17,includedgeneralentryadult18/16andunderfree,Horridusfossil immersiveCretaceousexhibition,11NicholsonStCarlton. Current ticketlink and accessinformation present,no exhibitioncancellation or overall sold-out statement. Not described as anewdatedopening; ongoing item follows newlyfoundremainingweekprogrammes."
+        "checkedAt": "2026-11-13",
+        "url": "https://www.woollahra.nsw.gov.au/Events/Samhain-the-Spirit-of-Woollahra-Festival-Family-Day",
+        "evidence": "New13Nov exact council freefamilyday14Nov15:30-18,548NewSouthHeadRd; linkedorganiserHumanitix confirms CulturalHubLowerGround,drop-inwelcome,music16-18. Browser opened actual /tickets,GeneralAdmissionFree Quantityspinbuttonenabled,current14Novdate,no sold-outnotice;zeroquantity/noorder. Obvious3.14typo in description not copied; matching eventheader and council15:30 used. Separate13Novlibraryconcert not conflated or put into main."
       },
-      "introZh": "近看三角龙 Horridus 的化石骨架，在沉浸展陈里和孩子想象白垩纪的动物与世界。",
-      "introEn": "Meet Horridus the Triceratops fossil and explore immersive displays together, imagining animals and landscapes from the Cretaceous world.",
-      "timeShortZh": "每天 9:00–17:00",
-      "timeShortEn": "Daily 9am–5pm",
-      "showFullTime": false,
-      "referenceZh": "Museums Victoria · Melbourne Museum",
-      "referenceEn": "Museums Victoria · Melbourne Museum",
+      "introZh": "体验爱尔兰传统节庆活动，再听人声合唱与现场乐器，和孩子一起认识万圣节的起源。",
+      "introEn": "Try traditional Irish festival activities, then hear unaccompanied singing and live instruments together while discovering the origins of Halloween.",
+      "timeShortZh": "周六 15:30–18:00",
+      "timeShortEn": "Sat 3:30–6pm",
+      "showFullTime": true,
+      "referenceZh": "Woollahra Council · The Prankqueans",
+      "referenceEn": "Woollahra Council · The Prankqueans",
       "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://museumsvictoria.com.au/melbournemuseum/whats-on/triceratops-fate-of-the-dinosaurs",
-        "evidence": "ExactMelbourneMuseumTriceratops exhibition re-read10Nov:daily9-17,includedgeneralentryadult18/16andunderfree,Horridusfossil immersiveCretaceousexhibition,11NicholsonStCarlton. Current ticketlink and accessinformation present,no exhibitioncancellation or overall sold-out statement. Not described as anewdatedopening; ongoing item follows newlyfoundremainingweekprogrammes."
+        "checkedAt": "2026-11-13",
+        "url": "https://www.woollahra.nsw.gov.au/Events/Samhain-the-Spirit-of-Woollahra-Festival-Family-Day",
+        "evidence": "New13Nov exact council freefamilyday14Nov15:30-18,548NewSouthHeadRd; linkedorganiserHumanitix confirms CulturalHubLowerGround,drop-inwelcome,music16-18. Browser opened actual /tickets,GeneralAdmissionFree Quantityspinbuttonenabled,current14Novdate,no sold-outnotice;zeroquantity/noorder. Obvious3.14typo in description not copied; matching eventheader and council15:30 used. Separate13Novlibraryconcert not conflated or put into main."
       }
     },
-    "https://whatson.melbourne.vic.gov.au/things-to-do/fitzroy-gardens-outdoor-adventure": {
-      "kind": "outdoor",
-      "dateZh": "持续开放",
-      "dateEn": "Ongoing",
+    "https://thefinderskeepers.com/sydney-markets/": {
+      "kind": "event",
+      "dateZh": "11月13–15日",
+      "dateEn": "13–15 NOV",
       "dates": [
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12"
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
       ],
       "dateReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://whatson.melbourne.vic.gov.au/things-to-do/fitzroy-gardens-outdoor-adventure",
-        "evidence": "Council exact programme freshly read10Nov explicitly listsTue10/Wed11/Thu12Nov10-16,free/no booking,mapfromVisitorCentreWellingtonParade,12questions,primaryschooladulthelp/BYO pen. Official https://whatson.melbourne.vic.gov.au/things-to-do/the-conservatory rechecked10Nov explicitly closes9-13Nov2026 fordisplaychange; old route removed and closure visible. No currentVisitorCentreclosure/cancellation stated."
+        "checkedAt": "2026-11-13",
+        "url": "https://thefinderskeepers.com/sydney-markets/",
+        "evidence": "Fresh13Nov organiserSydneySS26 page and linked UniverseC2GLVM opened in browser actual GetTickets iframe:enabled GeneralAdmissionanyday7+0.49=7.49,ThreeDayPass10+0.70=10.70,LowSensorySunday9-10 7.49,under13Free,zeroquantities/noorder. Official scheduleFri13 16-21/Sat14Sun15 10-17 overrides misleading Universe aggregate4-5pm header; low sensoryactualticket not blanketfreeworkshop. Current organiser accessibleonelevel/companionpolicy,door digitalpayment and onlyservicedogs. No overall soldout/cancellation; workshop add-ons not main offer."
       },
-      "introZh": "领取寻宝地图，在花园里和孩子寻找线索、回答十二个问题，边走边观察自然细节。",
-      "introEn": "Collect an adventure map and solve twelve garden clues together, noticing natural details as you explore the gardens.",
-      "familyFitZh": "面向小学生，需成人协助；自带笔",
-      "familyFitEn": "For primary-school children with adult help; bring a pen",
-      "noteZh": "附近温室11月9–13日换展关闭。",
-      "noteEn": "The nearby Conservatory is closed for display changes on 9–13 November.",
-      "timeShortZh": "每天 10:00–16:00",
-      "timeShortEn": "Daily 10am–4pm",
-      "showFullTime": false,
-      "referenceZh": "City of Melbourne",
-      "referenceEn": "City of Melbourne",
+      "introZh": "和孩子寻找陶瓷、插画与手作小物，认识独立创作者，再逛逛市集里的美食摊位。",
+      "introEn": "Discover ceramics, illustrations and handmade objects together, meet independent makers and explore the market’s food stalls at your own pace.",
+      "noteZh": "周日9:00–10:00低感官场须选对应票种；门口购票需电子支付，仅允许服务犬入场。",
+      "noteEn": "Choose the specific Sunday 9–10am low-sensory ticket if needed. Door sales require digital payment; service dogs only.",
+      "timeShortZh": "周五晚、周六日 · 查看时刻",
+      "timeShortEn": "Fri evening / weekend · see full hours",
+      "showFullTime": true,
+      "referenceZh": "The Finders Keepers · Universe",
+      "referenceEn": "The Finders Keepers · Universe",
       "copyReview": {
-        "checkedAt": "2026-11-10",
-        "url": "https://whatson.melbourne.vic.gov.au/things-to-do/fitzroy-gardens-outdoor-adventure",
-        "evidence": "Council exact programme freshly read10Nov explicitly listsTue10/Wed11/Thu12Nov10-16,free/no booking,mapfromVisitorCentreWellingtonParade,12questions,primaryschooladulthelp/BYO pen. Official https://whatson.melbourne.vic.gov.au/things-to-do/the-conservatory rechecked10Nov explicitly closes9-13Nov2026 fordisplaychange; old route removed and closure visible. No currentVisitorCentreclosure/cancellation stated."
+        "checkedAt": "2026-11-13",
+        "url": "https://thefinderskeepers.com/sydney-markets/",
+        "evidence": "Fresh13Nov organiserSydneySS26 page and linked UniverseC2GLVM opened in browser actual GetTickets iframe:enabled GeneralAdmissionanyday7+0.49=7.49,ThreeDayPass10+0.70=10.70,LowSensorySunday9-10 7.49,under13Free,zeroquantities/noorder. Official scheduleFri13 16-21/Sat14Sun15 10-17 overrides misleading Universe aggregate4-5pm header; low sensoryactualticket not blanketfreeworkshop. Current organiser accessibleonelevel/companionpolicy,door digitalpayment and onlyservicedogs. No overall soldout/cancellation; workshop add-ons not main offer."
+      }
+    },
+    "https://www.gledswood.com.au/event-details/gledswood-farm-day-4": {
+      "kind": "outdoor",
+      "dateZh": "11月15日",
+      "dateEn": "15 NOV",
+      "dates": [
+        "2026-11-15"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.gledswood.com.au/event-details/gledswood-farm-day-4",
+        "evidence": "New13Nov exact venue15Nov2026 10-16,900CamdenValleyWayGledswoodHills,sheepshearing/workingdogs/gardengames/food/music. Browser actual ticket row entry3years+5+0.13fee,enabledQuantitycombobox andCheckout; no order placed. Organiser statesprepurchaseorgate tickets,weathercancellationrefund. NSWtourism suburbCatherineField not used to override current venuepostalname; no inventedunder3free claim or guaranteed animalhandling."
+      },
+      "introZh": "看剪羊毛和牧羊犬示范，试花园游戏与农场活动，和孩子一起享受乡间的现场音乐。",
+      "introEn": "Watch sheep shearing and working-dog demonstrations, explore garden games and farm activities, and share live music in the countryside.",
+      "noteZh": "户外活动可能因恶劣天气停办；由主办方停办时会退款。",
+      "noteEn": "This outdoor event is weather-dependent; organiser-initiated weather cancellations are refundable.",
+      "timeShortZh": "周日 10:00–16:00",
+      "timeShortEn": "Sun 10am–4pm",
+      "showFullTime": false,
+      "referenceZh": "Gledswood Homestead & Winery",
+      "referenceEn": "Gledswood Homestead & Winery",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.gledswood.com.au/event-details/gledswood-farm-day-4",
+        "evidence": "New13Nov exact venue15Nov2026 10-16,900CamdenValleyWayGledswoodHills,sheepshearing/workingdogs/gardengames/food/music. Browser actual ticket row entry3years+5+0.13fee,enabledQuantitycombobox andCheckout; no order placed. Organiser statesprepurchaseorgate tickets,weathercancellationrefund. NSWtourism suburbCatherineField not used to override current venuepostalname; no inventedunder3free claim or guaranteed animalhandling."
+      }
+    },
+    "https://powerhouse.com.au/program/opening-fest-future-voices-come-home-again": {
+      "kind": "event",
+      "dateZh": "11月14–15日",
+      "dateEn": "14–15 NOV",
+      "dates": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://powerhouse.com.au/program/opening-fest-future-voices-come-home-again",
+        "evidence": "New13Nov exact FutureVoices programme,distinctfromnightlyComeHomechoir,14/15Nov15:00 45min,QantasTerraceGround34PhillipSt,FreeStandardDrop-in,children/youngpeopleandfamiliesclimateconversations.14NovDavidKeith/KarinaGuo;15NovTomareePublicSchoolandNepeanChristianSchool. Later21/22/29Nov excludedfromcurrentdates. No publicbooking/cancellation/capacityclosure shown."
+      },
+      "introZh": "听年轻采访者和科学家聊气候、植物与动物，和孩子一起想想未来怎样照顾我们的世界。",
+      "introEn": "Hear young interviewers explore climate, plants and animals with scientists, sparking family conversations about caring for our shared future.",
+      "timeShortZh": "周六、日 15:00–15:45",
+      "timeShortEn": "Sat/Sun 3–3:45pm",
+      "showFullTime": true,
+      "referenceZh": "Powerhouse · Botanic Gardens of Sydney",
+      "referenceEn": "Powerhouse · Botanic Gardens of Sydney",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://powerhouse.com.au/program/opening-fest-future-voices-come-home-again",
+        "evidence": "New13Nov exact FutureVoices programme,distinctfromnightlyComeHomechoir,14/15Nov15:00 45min,QantasTerraceGround34PhillipSt,FreeStandardDrop-in,children/youngpeopleandfamiliesclimateconversations.14NovDavidKeith/KarinaGuo;15NovTomareePublicSchoolandNepeanChristianSchool. Later21/22/29Nov excludedfromcurrentdates. No publicbooking/cancellation/capacityclosure shown."
+      }
+    },
+    "https://whatson.melbourne.vic.gov.au/things-to-do/colours-of-asia-garden-of-wonders": {
+      "kind": "festival",
+      "dateZh": "11月13–15日",
+      "dateEn": "13–15 NOV",
+      "dates": [
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://whatson.melbourne.vic.gov.au/things-to-do/colours-of-asia-garden-of-wonders",
+        "evidence": "New13Nov exactCityofMelbourne event table13/14/15Nov11-22 and20/21/22Nov11-22,AlexandraGardens3BoathouseDr,free/nobooking,lanterngardens/musicdance/artstorytelling/streetfood/artisanstalls,AsiaOasisorganiser. Currenteditiononly13-15,not sixconsecutive days. Accesslabels are listing-owner selfreports,not independently guaranteed; no cancellation/overallcapacityclosure shown."
+      },
+      "introZh": "穿过灯笼花园，看音乐舞蹈与文化表演，再和孩子一起探索亚洲街头美食和手作摊位。",
+      "introEn": "Wander through lantern gardens, enjoy music and cultural performances, and discover Asian street food and artisan stalls together.",
+      "timeShortZh": "周五至日 11:00–22:00",
+      "timeShortEn": "Fri–Sun 11am–10pm",
+      "showFullTime": true,
+      "referenceZh": "City of Melbourne · Asia Oasis",
+      "referenceEn": "City of Melbourne · Asia Oasis",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://whatson.melbourne.vic.gov.au/things-to-do/colours-of-asia-garden-of-wonders",
+        "evidence": "New13Nov exactCityofMelbourne event table13/14/15Nov11-22 and20/21/22Nov11-22,AlexandraGardens3BoathouseDr,free/nobooking,lanterngardens/musicdance/artstorytelling/streetfood/artisanstalls,AsiaOasisorganiser. Currenteditiononly13-15,not sixconsecutive days. Accesslabels are listing-owner selfreports,not independently guaranteed; no cancellation/overallcapacityclosure shown."
+      }
+    },
+    "https://mvcc.vic.gov.au/events/whimsical-spring-festival/": {
+      "kind": "festival",
+      "dateZh": "11月14日",
+      "dateEn": "14 NOV",
+      "dates": [
+        "2026-11-14"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://mvcc.vic.gov.au/events/whimsical-spring-festival/",
+        "evidence": "New13Nov exactMooneeValleycouncil and linkedEventbrite2002182714396 confirm14Nov2026 10:30-13:30,141AWoodlandSt,freeallages,no registrationrequired(optionalupdates),markets/workshops/music. Browser expanded actual WhoCanAttend and SafetyFAQ:aimed12-25butallcommunity,under12parentguardianatalltimes,alcoholdrugsmokevapefree,staff/security/firstaid. Conditions visible; no cancellation or mandatoryticketgate invented."
+      },
+      "introZh": "穿上彩色衣服，逛创意摊位、试动手活动、听现场音乐，在公园里和孩子一起过春天。",
+      "introEn": "Wear something colourful, browse maker stalls, try creative activities and enjoy live music together in the springtime park.",
+      "familyFitZh": "欢迎全年龄；12岁以下须全程由家长或监护人陪同",
+      "familyFitEn": "All ages welcome; under 12s need a parent or guardian throughout",
+      "noteZh": "现场禁酒、毒品和吸烟／电子烟。",
+      "noteEn": "No alcohol, drugs, smoking or vaping onsite.",
+      "timeShortZh": "周六 10:30–13:30",
+      "timeShortEn": "Sat 10:30am–1:30pm",
+      "showFullTime": false,
+      "referenceZh": "Moonee Valley City Council · Valley Youth",
+      "referenceEn": "Moonee Valley City Council · Valley Youth",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://mvcc.vic.gov.au/events/whimsical-spring-festival/",
+        "evidence": "New13Nov exactMooneeValleycouncil and linkedEventbrite2002182714396 confirm14Nov2026 10:30-13:30,141AWoodlandSt,freeallages,no registrationrequired(optionalupdates),markets/workshops/music. Browser expanded actual WhoCanAttend and SafetyFAQ:aimed12-25butallcommunity,under12parentguardianatalltimes,alcoholdrugsmokevapefree,staff/security/firstaid. Conditions visible; no cancellation or mandatoryticketgate invented."
+      },
+      "route": {
+        "summaryZh": "春日节 · Bunyip 雕塑与游乐区",
+        "summaryEn": "Spring festival · Bunyip sculptures and play",
+        "steps": [
+          [
+            "先",
+            "First",
+            "Woodlands Park 春日创意节",
+            "Whimsical Festival at Woodlands Park",
+            "Woodlands Park, 141A Woodland Street, Essendon VIC"
+          ],
+          [
+            "再任选",
+            "Optional next",
+            "Woodlands Park Bunyip Sculptural Garden",
+            "Bunyip Sculptural Garden at Woodlands Park",
+            "Bunyip Sculptural Garden, Woodlands Park, Essendon VIC"
+          ]
+        ],
+        "purposes": [
+          [
+            "逛手作摊位、听现场音乐",
+            "Explore maker stalls and live music"
+          ],
+          [
+            "看 Bunyip 雕塑，再按体力去同园游乐区",
+            "See Bunyip sculptures and optionally visit the park playground"
+          ]
+        ],
+        "noteZh": "适用于11月14日：节庆10:30–13:30；雕塑与游乐区在同一公园内，按现场开放情况选去。12岁以下在节庆内须成人全程陪同。",
+        "noteEn": "For 14 November: festival 10:30am–1:30pm. Sculptures and play areas are in the same park; follow onsite access. Under 12s need an adult throughout the festival.",
+        "sources": [
+          [
+            "Whimsical festival",
+            "https://mvcc.vic.gov.au/events/whimsical-spring-festival/"
+          ],
+          [
+            "Woodlands Park and Bunyip garden",
+            "https://mvcc.vic.gov.au/my-council/upgrades-and-plans/woodlands-park-and-salmon-reserve/"
+          ]
+        ],
+        "checkedAt": "2026-11-13",
+        "evidence": "Both councilpages read13Nov. Eventexact14Nov10:30-13:30; parkproject confirms existingBunyipSculpturalGardenretained/restored,playground/natureplay and picnicspaceswithinWoodlandsPark,not a differentWoodlandsParkinMoira. No journeytimes,separateexhibition,guaranteedfacilityhoursorinventedcafe. EventparentconditionfromactualEventbriteFAQretained."
+      }
+    },
+    "https://fedsquare.com/events/polish-festival-fed-square": {
+      "kind": "festival",
+      "dateZh": "11月15日",
+      "dateEn": "15 NOV",
+      "dates": [
+        "2026-11-15"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://fedsquare.com/events/polish-festival-fed-square",
+        "evidence": "New13Nov exactFedSquare venue programme and linkedpolishfestival.com.au bothconfirmSunday15Nov2026,venue10-17,free/allages,musicfolkdance/food/potteryambermarket,MainSquareBirrarungMarrWalkTheEdge. OldgenericFedSquaremediacentre9-10Novdates are previous-yearcontent and notused. No separatecurrentticket/cancellationnotice; no freefood guarantee."
+      },
+      "introZh": "看民族服装与传统舞蹈，听广场现场音乐，再和孩子逛波兰饺子、陶瓷与琥珀摊位。",
+      "introEn": "Watch traditional costumes and folk dancing, hear live music and discover Polish dumplings, pottery and amber stalls together.",
+      "timeShortZh": "周日 10:00–17:00",
+      "timeShortEn": "Sun 10am–5pm",
+      "showFullTime": false,
+      "referenceZh": "Fed Square · Polish Festival Inc.",
+      "referenceEn": "Fed Square · Polish Festival Inc.",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://fedsquare.com/events/polish-festival-fed-square",
+        "evidence": "New13Nov exactFedSquare venue programme and linkedpolishfestival.com.au bothconfirmSunday15Nov2026,venue10-17,free/allages,musicfolkdance/food/potteryambermarket,MainSquareBirrarungMarrWalkTheEdge. OldgenericFedSquaremediacentre9-10Novdates are previous-yearcontent and notused. No separatecurrentticket/cancellationnotice; no freefood guarantee."
+      }
+    },
+    "https://www.whittlesea.vic.gov.au/Things-to-see-and-do/Events/Events-calendar/Fun-Run": {
+      "kind": "outdoor",
+      "dateZh": "11月14日",
+      "dateEn": "14 NOV",
+      "dates": [
+        "2026-11-14"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.whittlesea.vic.gov.au/Things-to-see-and-do/Events/Events-calendar/Fun-Run",
+        "evidence": "New13Nov exactWhittleseaFunRun programme confirms14Nov09start,2.3km,140threservoir/watersystemanniversary,10:30formalopening thenfreeallagesactivities,ToorourrongReservoirParkJacksCreekRd. ContactFriendsOfToorourrong,not an inventedonlinebooking. No finishhouror guaranteedraceplace stated; unknownregistration/finishvisible,not filledfromdiscovery. No cancellation notice on exactpage."
+      },
+      "introZh": "和孩子参加2.3公里趣味跑，再逛水库周年庆的社区活动，把运动和户外探索放在一起。",
+      "introEn": "Join a 2.3km family fun run, then explore the reservoir’s anniversary celebration and community activities together outdoors.",
+      "noteZh": "9:00趣味跑、10:30正式开幕；结束时间未公布，跑步登记与当天安排请先向主办方确认。",
+      "noteEn": "Fun run at 9am, formal opening at 10:30am. Finish time is not published; confirm run registration and the day’s arrangements with the organiser.",
+      "timeShortZh": "周六 9:00起",
+      "timeShortEn": "Sat from 9am",
+      "showFullTime": true,
+      "referenceZh": "City of Whittlesea · Friends of Toorourrong",
+      "referenceEn": "City of Whittlesea · Friends of Toorourrong",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.whittlesea.vic.gov.au/Things-to-see-and-do/Events/Events-calendar/Fun-Run",
+        "evidence": "New13Nov exactWhittleseaFunRun programme confirms14Nov09start,2.3km,140threservoir/watersystemanniversary,10:30formalopening thenfreeallagesactivities,ToorourrongReservoirParkJacksCreekRd. ContactFriendsOfToorourrong,not an inventedonlinebooking. No finishhouror guaranteedraceplace stated; unknownregistration/finishvisible,not filledfromdiscovery. No cancellation notice on exactpage."
+      }
+    },
+    "https://www.merri-bek.vic.gov.au/exploring-merri-bek/events/whats-on/wat-djerring-animal-facility-open-day/": {
+      "kind": "event",
+      "dateZh": "11月14日",
+      "dateEn": "14 NOV",
+      "dates": [
+        "2026-11-14"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.merri-bek.vic.gov.au/exploring-merri-bek/events/whats-on/wat-djerring-animal-facility-open-day/",
+        "evidence": "New13Nov matching exactDarebin event with its queryURL and Merri-bek programme agree14Nov11-15,20CompanionPlaceEpping,petcare/adoptioninformation/colouring/facepainting/freeBBQ,freeallwelcome. BareDarebin URL was inaccessible,so button uses matching verifiedMerri-bek exactprogramme,not a genericcouncilhomepage. No registration/cancellationnotice or invented animalfeeding/handling/petadoptionguarantee. Facility is in Epping,not Coburg merely because onepublisherisMerri-bek."
+      },
+      "introZh": "认识宠物照护与领养知识，试涂色和脸部彩绘，和孩子一起看看社区如何照顾动物。",
+      "introEn": "Discover responsible pet care and adoption information, try colouring and face painting, and explore how the community supports animals together.",
+      "timeShortZh": "周六 11:00–15:00",
+      "timeShortEn": "Sat 11am–3pm",
+      "showFullTime": false,
+      "referenceZh": "Darebin Council · Merri-bek City Council",
+      "referenceEn": "Darebin Council · Merri-bek City Council",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.merri-bek.vic.gov.au/exploring-merri-bek/events/whats-on/wat-djerring-animal-facility-open-day/",
+        "evidence": "New13Nov matching exactDarebin event with its queryURL and Merri-bek programme agree14Nov11-15,20CompanionPlaceEpping,petcare/adoptioninformation/colouring/facepainting/freeBBQ,freeallwelcome. BareDarebin URL was inaccessible,so button uses matching verifiedMerri-bek exactprogramme,not a genericcouncilhomepage. No registration/cancellationnotice or invented animalfeeding/handling/petadoptionguarantee. Facility is in Epping,not Coburg merely because onepublisherisMerri-bek."
+      }
+    },
+    "https://www.prahranmarket.com.au/event/burrata-festival/": {
+      "kind": "festival",
+      "dateZh": "11月14–15日",
+      "dateEn": "14–15 NOV",
+      "dates": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.prahranmarket.com.au/event/burrata-festival/",
+        "evidence": "Fresh13Nov exactvenuepage distinguishes Fri13openingSOLDOUT and paidmasterclassesNOWSOLDOUT fromfreeSat14/Sun15festival10-15,Trail10-16,163CommercialRd. Only14/15selected; no soldoutsession recommended. Demo10daily/noon/14rotatingchefs; giftsrequirethreeparticipatingtradersminimum10exGSTeach/while stocks,not freegiftwithoutpurchase. Current venue takesprecedence over precinct/discoverywholeevent10-16copy; important conditions visible."
+      },
+      "introZh": "一起看现场制芝士和烹饪示范，沿美食摊位发现不同的burrata做法，边逛边听音乐。",
+      "introEn": "Watch live cheese-making and cooking demonstrations together, discover different burrata dishes across market stalls and enjoy the music.",
+      "noteZh": "仅推荐周末免票活动；周五开幕夜和付费大师课均无余票。集章礼物需在三家各消费至少$10（未税），数量有限。",
+      "noteEn": "Only the free weekend programme is recommended; Friday opening night and paid masterclasses have no tickets remaining. Trail gifts require $10 minimum excluding GST at each of three traders, while stocks last.",
+      "timeShortZh": "周六、日 10:00–15:00",
+      "timeShortEn": "Sat/Sun 10am–3pm",
+      "showFullTime": true,
+      "referenceZh": "Prahran Market",
+      "referenceEn": "Prahran Market",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.prahranmarket.com.au/event/burrata-festival/",
+        "evidence": "Fresh13Nov exactvenuepage distinguishes Fri13openingSOLDOUT and paidmasterclassesNOWSOLDOUT fromfreeSat14/Sun15festival10-15,Trail10-16,163CommercialRd. Only14/15selected; no soldoutsession recommended. Demo10daily/noon/14rotatingchefs; giftsrequirethreeparticipatingtradersminimum10exGSTeach/while stocks,not freegiftwithoutpurchase. Current venue takesprecedence over precinct/discoverywholeevent10-16copy; important conditions visible."
+      },
+      "noteEmphasis": {
+        "zh": [
+          "周五开幕夜和付费大师课均无余票"
+        ],
+        "en": [
+          "Friday opening night and paid masterclasses have no tickets remaining"
+        ]
+      }
+    },
+    "https://qvm.com.au/whats-on/diwali-at-queen-victoria-market/": {
+      "kind": "festival",
+      "dateZh": "11月14日",
+      "dateEn": "14 NOV",
+      "dates": [
+        "2026-11-14"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://qvm.com.au/whats-on/diwali-at-queen-victoria-market/",
+        "evidence": "New13Nov exactQVMvenueeventdetail confirms14Nov2026 9-16 C Shed,free/nobooking/allages,stepfree/pramwheelchairfriendly/undercover,musicdancefooddecorations. Exactorganiser https://haanji.com.au/diwali-event stillsays10-17 on same14Nov. Resolveidentity/date/placevia venue; preserve timingconflict visibly rather than eraseit or assumeuniformhours. EcommercefooterItemUnavailable is genericsiteUI,not an eventsoldoutnotice. No cancellation."
+      },
+      "introZh": "在屋顶市场里看印度舞蹈、听现场歌声，和孩子一起探索节庆装饰、美食与社区文化。",
+      "introEn": "Watch Indian dance, enjoy live singing and explore festive decorations and food together beneath the market’s historic roof.",
+      "familyFitZh": "场馆标示无台阶，适合推车与轮椅",
+      "familyFitEn": "Venue lists step-free, pram- and wheelchair-friendly access",
+      "noteZh": "场馆列9:00–16:00，主办方列10:00–17:00；两处时间不同，出发前核对最新公告。",
+      "noteEn": "The venue lists 9am–4pm, while the organiser lists 10am–5pm; check the latest notice before travelling.",
+      "timeShortZh": "周六 9:00–16:00（场馆版）",
+      "timeShortEn": "Sat 9am–4pm (venue listing)",
+      "showFullTime": true,
+      "referenceZh": "Queen Victoria Market · Radio Haanji",
+      "referenceEn": "Queen Victoria Market · Radio Haanji",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://qvm.com.au/whats-on/diwali-at-queen-victoria-market/",
+        "evidence": "New13Nov exactQVMvenueeventdetail confirms14Nov2026 9-16 C Shed,free/nobooking/allages,stepfree/pramwheelchairfriendly/undercover,musicdancefooddecorations. Exactorganiser https://haanji.com.au/diwali-event stillsays10-17 on same14Nov. Resolveidentity/date/placevia venue; preserve timingconflict visibly rather than eraseit or assumeuniformhours. EcommercefooterItemUnavailable is genericsiteUI,not an eventsoldoutnotice. No cancellation."
+      }
+    },
+    "https://www.hobsonsbay.vic.gov.au/Community/Whats-on/Pollinator-week-activity-Altona-Meadows": {
+      "kind": "outdoor",
+      "dateZh": "11月14日",
+      "dateEn": "14 NOV",
+      "dates": [
+        "2026-11-14"
+      ],
+      "dateReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.hobsonsbay.vic.gov.au/Community/Whats-on/Pollinator-week-activity-Altona-Meadows",
+        "evidence": "New13Nov followedKeenleadtoexactHobsonsBayprogramme,readfullcontent:14Nov2026 10-12,free,LabcoatLearningSam,nativepollinators/wildflowers,HobsonsBayWetlandsCentre mounds,AndrewParkDr behindbasketballcourts. Exactcouncilpagecurrently carries areaH5birdflu banner(detected1Oct2026); notice not misrepresented as infection at eventsite,visiblecouncilalertreference retained. No cancellation/bookingrequirement stated,not an IpswichQLDpollinator event or assumedhealthywildlifehandling."
+      },
+      "introZh": "跟着Labcoat Learning认识本地传粉昆虫，和孩子在野花之间发现蜜蜂与植物的联系。",
+      "introEn": "Discover native pollinators with Labcoat Learning and explore how bees, insects and flowering plants support one another together outdoors.",
+      "noteZh": "从Andrew Park Drive篮球场后方进入；市议会网页有禽流感警示，出发前查看相关公告。",
+      "noteEn": "Enter behind the basketball courts from Andrew Park Drive. The council website carries a bird-flu alert; review its current notice before travelling.",
+      "timeShortZh": "周六 10:00–12:00",
+      "timeShortEn": "Sat 10am–noon",
+      "showFullTime": false,
+      "referenceZh": "Hobsons Bay City Council · Labcoat Learning",
+      "referenceEn": "Hobsons Bay City Council · Labcoat Learning",
+      "copyReview": {
+        "checkedAt": "2026-11-13",
+        "url": "https://www.hobsonsbay.vic.gov.au/Community/Whats-on/Pollinator-week-activity-Altona-Meadows",
+        "evidence": "New13Nov followedKeenleadtoexactHobsonsBayprogramme,readfullcontent:14Nov2026 10-12,free,LabcoatLearningSam,nativepollinators/wildflowers,HobsonsBayWetlandsCentre mounds,AndrewParkDr behindbasketballcourts. Exactcouncilpagecurrently carries areaH5birdflu banner(detected1Oct2026); notice not misrepresented as infection at eventsite,visiblecouncilalertreference retained. No cancellation/bookingrequirement stated,not an IpswichQLDpollinator event or assumedhealthywildlifehandling."
       }
     }
   }
